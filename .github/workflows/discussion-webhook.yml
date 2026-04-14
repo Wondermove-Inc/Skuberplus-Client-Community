@@ -1,0 +1,37 @@
+# Discussion 생성 시 Clawpod 웹훅 전송 (Ideas, Q&A만)
+
+name: Discussion Webhook
+
+on:
+  discussion:
+    types: [created]
+
+jobs:
+  notify:
+    name: Send Webhook
+    runs-on: ubuntu-latest
+    if: github.event.discussion.category.slug == 'q-a'
+    steps:
+      - name: Send webhook
+        env:
+          WEBHOOK_URL: ${{ secrets.CLAWPOD_WEBHOOK_URL }}
+          WEBHOOK_SECRET: ${{ secrets.CLAWPOD_WEBHOOK_SECRET }}
+          DISCUSSION_TITLE: ${{ github.event.discussion.title }}
+          DISCUSSION_BODY: ${{ github.event.discussion.body }}
+        run: |
+          PAYLOAD=$(jq -n -c \
+            --arg event "discussion_created" \
+            --arg repo "${{ github.repository }}" \
+            --arg discussion_number "${{ github.event.discussion.number }}" \
+            --arg title "$DISCUSSION_TITLE" \
+            --arg body "$DISCUSSION_BODY" \
+            --arg category "${{ github.event.discussion.category.slug }}" \
+            --arg author "${{ github.event.discussion.user.login }}" \
+            --arg url "${{ github.event.discussion.html_url }}" \
+            '{event: $event, repo: $repo, discussion_number: $discussion_number, title: $title, body: $body, category: $category, author: $author, url: $url}')
+          SIGNATURE=$(echo -n "$PAYLOAD" | openssl dgst -sha256 -hmac "$WEBHOOK_SECRET" | awk '{print $2}')
+          curl -f --retry 3 --max-time 30 \
+            -X POST "$WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -H "X-Hub-Signature-256: sha256=$SIGNATURE" \
+            -d "$PAYLOAD"

@@ -1,0 +1,104 @@
+# main 머지 시 Linux 패키징 + 에이전트 빌드 검증 트리거
+
+name: Build Verify
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-verify-${{ github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build & Verify (Linux)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build workspace packages
+        run: pnpm build
+
+      - name: Build app (Linux)
+        working-directory: skuberplus
+        run: pnpm build:app:linux
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # TODO: E2E smoke test — Jest ESM 호환 문제 해결 후 재활성화
+      # - name: Install E2E dependencies
+      # - name: Run E2E smoke test
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-verify-linux
+          path: |
+            skuberplus/dist/**/*.AppImage
+          retention-days: 3
+
+      - name: Send webhook (success)
+        if: success()
+        env:
+          WEBHOOK_URL: ${{ secrets.CLAWPOD_WEBHOOK_URL }}
+          WEBHOOK_SECRET: ${{ secrets.CLAWPOD_WEBHOOK_SECRET }}
+        run: |
+          PAYLOAD=$(jq -n -c \
+            --arg event "build_verify" \
+            --arg repo "${{ github.repository }}" \
+            --arg sha "${{ github.sha }}" \
+            --arg ref "${{ github.ref }}" \
+            --arg commit_message "$(git log -1 --pretty=%s)" \
+            --arg author "${{ github.actor }}" \
+            --arg run_id "${{ github.run_id }}" \
+            --arg run_url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            '{event: $event, repo: $repo, sha: $sha, ref: $ref, commit_message: $commit_message, author: $author, run_id: $run_id, run_url: $run_url}')
+          SIGNATURE=$(echo -n "$PAYLOAD" | openssl dgst -sha256 -hmac "$WEBHOOK_SECRET" | awk '{print $2}')
+          curl -f --retry 3 --max-time 30 \
+            -X POST "$WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -H "X-Hub-Signature-256: sha256=$SIGNATURE" \
+            -d "$PAYLOAD"
+
+      - name: Send webhook (failure)
+        if: failure()
+        env:
+          WEBHOOK_URL: ${{ secrets.CLAWPOD_WEBHOOK_URL }}
+          WEBHOOK_SECRET: ${{ secrets.CLAWPOD_WEBHOOK_SECRET }}
+        run: |
+          PAYLOAD=$(jq -n -c \
+            --arg event "build_verify_failed" \
+            --arg repo "${{ github.repository }}" \
+            --arg sha "${{ github.sha }}" \
+            --arg ref "${{ github.ref }}" \
+            --arg commit_message "$(git log -1 --pretty=%s)" \
+            --arg author "${{ github.actor }}" \
+            --arg run_id "${{ github.run_id }}" \
+            --arg run_url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            '{event: $event, repo: $repo, sha: $sha, ref: $ref, commit_message: $commit_message, author: $author, run_id: $run_id, run_url: $run_url}')
+          SIGNATURE=$(echo -n "$PAYLOAD" | openssl dgst -sha256 -hmac "$WEBHOOK_SECRET" | awk '{print $2}')
+          curl -f --retry 3 --max-time 30 \
+            -X POST "$WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -H "X-Hub-Signature-256: sha256=$SIGNATURE" \
+            -d "$PAYLOAD"
+
