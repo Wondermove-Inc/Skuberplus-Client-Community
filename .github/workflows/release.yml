@@ -1,0 +1,183 @@
+# 태그 push 시 패키징 + Draft 릴리즈 생성 + 웹훅 전송
+
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  # ============================================
+  # 패키징 (OS별 병렬 실행)
+  # ============================================
+  build:
+    name: Build (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            platform: linux
+          - os: macos-latest
+            platform: mac
+          - os: windows-latest
+            platform: win
+    steps:
+      - name: Enable long paths (Windows)
+        if: runner.os == 'Windows'
+        run: git config --system core.longpaths true
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build workspace packages
+        run: pnpm build
+
+      - name: Build app (Linux)
+        if: matrix.platform == 'linux'
+        working-directory: skuberplus
+        run: pnpm build:app:linux
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build app (macOS)
+        if: matrix.platform == 'mac'
+        working-directory: skuberplus
+        run: pnpm build:app:darwin
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build app (Windows)
+        if: matrix.platform == 'win'
+        working-directory: skuberplus
+        run: pnpm build:app:win32
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-${{ matrix.platform }}
+          path: |
+            skuberplus/dist/**/*.dmg
+            skuberplus/dist/**/*.zip
+            skuberplus/dist/**/*.exe
+            skuberplus/dist/**/*.AppImage
+            skuberplus/dist/**/*.deb
+            skuberplus/dist/**/*.rpm
+            skuberplus/dist/**/latest*.yml
+          retention-days: 7
+
+  # ============================================
+  # Draft 릴리즈 생성 + 웹훅 전송
+  # ============================================
+  release:
+    name: Create Draft Release
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          merge-multiple: true
+
+      - name: Get version from tag
+        id: version
+        run: echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+
+      - name: Create draft release
+        id: release
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const version = '${{ steps.version.outputs.version }}';
+
+            // Draft 릴리즈 생성
+            const release = await github.rest.repos.createRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag_name: context.ref.replace('refs/tags/', ''),
+              name: `Skuber+ Client v${version}`,
+              draft: true,
+              generate_release_notes: true,
+            });
+
+            // artifacts 디렉토리에서 파일 업로드
+            function getFiles(dir) {
+              const files = [];
+              if (!fs.existsSync(dir)) return files;
+              for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+                const fullPath = path.join(dir, entry.name);
+                if (entry.isDirectory()) {
+                  files.push(...getFiles(fullPath));
+                } else {
+                  files.push(fullPath);
+                }
+              }
+              return files;
+            }
+
+            const files = getFiles('artifacts');
+            for (const filePath of files) {
+              const name = path.basename(filePath);
+              console.log(`Uploading: ${name}`);
+              const data = fs.readFileSync(filePath);
+              await github.rest.repos.uploadReleaseAsset({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                release_id: release.data.id,
+                name,
+                data,
+              });
+            }
+
+            core.setOutput('release_id', release.data.id);
+            core.setOutput('release_url', release.data.html_url);
+
+      - name: Send webhook
+        env:
+          WEBHOOK_URL: ${{ secrets.CLAWPOD_WEBHOOK_URL }}
+          WEBHOOK_SECRET: ${{ secrets.CLAWPOD_WEBHOOK_SECRET }}
+        run: |
+          PAYLOAD=$(jq -n -c \
+            --arg event "release_draft_created" \
+            --arg repo "${{ github.repository }}" \
+            --arg version "${{ steps.version.outputs.version }}" \
+            --arg tag "${GITHUB_REF_NAME}" \
+            --arg release_id "${{ steps.release.outputs.release_id }}" \
+            --arg release_url "${{ steps.release.outputs.release_url }}" \
+            '{event: $event, repo: $repo, version: $version, tag: $tag, release_id: $release_id, release_url: $release_url}')
+          SIGNATURE=$(echo -n "$PAYLOAD" | openssl dgst -sha256 -hmac "$WEBHOOK_SECRET" | awk '{print $2}')
+          curl -f --retry 3 --max-time 30 \
+            -X POST "$WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -H "X-Hub-Signature-256: sha256=$SIGNATURE" \
+            -d "$PAYLOAD"
