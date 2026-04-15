@@ -15,15 +15,20 @@ jobs:
         env:
           WEBHOOK_URL: ${{ secrets.CLAWPOD_WEBHOOK_URL }}
           WEBHOOK_SECRET: ${{ secrets.CLAWPOD_WEBHOOK_SECRET }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_LABELS: ${{ join(github.event.issue.labels.*.name, ',') }}
         run: |
           PAYLOAD=$(jq -n -c \
             --arg event "issue_opened" \
             --arg repo "${{ github.repository }}" \
             --arg issue_number "${{ github.event.issue.number }}" \
-            --arg title "${{ github.event.issue.title }}" \
+            --arg title "$ISSUE_TITLE" \
+            --arg body "$ISSUE_BODY" \
+            --arg labels "$ISSUE_LABELS" \
             --arg author "${{ github.event.issue.user.login }}" \
             --arg url "${{ github.event.issue.html_url }}" \
-            '{event: $event, repo: $repo, issue_number: $issue_number, title: $title, author: $author, url: $url}')
+            '{event: $event, repo: $repo, issue_number: $issue_number, title: $title, body: $body, labels: $labels, author: $author, url: $url}')
           SIGNATURE=$(echo -n "$PAYLOAD" | openssl dgst -sha256 -hmac "$WEBHOOK_SECRET" | awk '{print $2}')
           curl -f --retry 3 --max-time 30 \
             -X POST "$WEBHOOK_URL" \
