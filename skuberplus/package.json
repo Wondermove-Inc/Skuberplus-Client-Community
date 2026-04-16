@@ -6,7 +6,7 @@
   "description": "skuber⁺ client - Kubernetes Management Client",
   "homepage": "https://skuberplus.app",
   "version": "0.6.5",
-  "buildNumber": "20260414171422",
+  "buildNumber": "20260414174116",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Wondermove-Inc/skuberplus-client.git"
@@ -64,7 +64,7 @@
     "postdev:build": "pnpm build:resources",
     "dev:build:main": "cross-env NODE_ENV=development webpack --config webpack/main.ts --progress --watch",
     "dev:build:renderer": "cross-env NODE_ENV=development ts-node ./webpack/dev-server.ts",
-    "test:integration": "jest -xyz --runInBand --detectOpenHandles --forceExit",
+    "test:integration": "jest --config jest.integration.config.js --runInBand --detectOpenHandles --forceExit",
     "version:build": "node ../scripts/update-build-version.js",
     "version:patch": "node ../scripts/update-build-version.js patch",
     "version:minor": "node ../scripts/update-build-version.js minor",
