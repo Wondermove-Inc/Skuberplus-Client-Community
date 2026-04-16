@@ -28,10 +28,10 @@ class NotificationService {
 
   async #loadSettings() {
     try {
-      const { safeStorage } = await import('electron');
+      const { safeStorage } = await import("electron");
       const encrypted = localStorage.getItem(STORAGE_KEY);
       if (encrypted) {
-        const webhookUrl = safeStorage.decryptString(Buffer.from(encrypted, 'base64'));
+        const webhookUrl = safeStorage.decryptString(Buffer.from(encrypted, "base64"));
         if (webhookUrl) {
           this.#settings.webhookUrl = webhookUrl;
           this.#settings.enabled = true;
@@ -44,9 +44,9 @@ class NotificationService {
 
   async #saveSettings(webhookUrl: string) {
     try {
-      const { safeStorage } = await import('electron');
+      const { safeStorage } = await import("electron");
       const encrypted = safeStorage.encryptString(webhookUrl);
-      localStorage.setItem(STORAGE_KEY, encrypted.toString('base64'));
+      localStorage.setItem(STORAGE_KEY, encrypted.toString("base64"));
       this.#settings.webhookUrl = webhookUrl;
       this.#settings.enabled = true;
     } catch (error) {
