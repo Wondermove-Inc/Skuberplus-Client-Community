@@ -56,6 +56,7 @@ pnpm lint              # 린트 검사
 3. **언어**: 주석/문서는 한국어
 4. **UI 언어**: 사용자에게 보여지는 UI 텍스트(버튼, 라벨, 메시지, 토스트, 다이얼로그 등)는 영어로 작성
 5. **DI 패턴**: `*.injectable.ts` 접미사 필수
+6. **의존성 변경 시 lock 파일 갱신 필수**: `package.json` 수정 후 반드시 `pnpm install`을 실행하여 `pnpm-lock.yaml`을 갱신하고 함께 커밋할 것. CI는 `--frozen-lockfile`로 실행되므로 lock 파일이 불일치하면 실패함
 
 ## Entry Points
 
