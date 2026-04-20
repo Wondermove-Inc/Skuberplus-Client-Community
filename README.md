@@ -410,6 +410,14 @@ Please report bugs and feature requests on [GitHub Issues](https://github.com/Wo
 
 ---
 
+## Contact
+
+- **Bug Reports & Feature Requests**: [GitHub Issues](https://github.com/Wondermove-Inc/K-Lens/issues)
+- **Questions & Discussions**: [GitHub Discussions](https://github.com/Wondermove-Inc/K-Lens/discussions)
+- **Website**: [skuberplus.com](https://www.skuberplus.com/)
+
+---
+
 ## License
 
 This project is based on [Open Lens](https://github.com/lensapp/lens).
