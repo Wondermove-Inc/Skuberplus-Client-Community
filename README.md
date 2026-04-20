@@ -24,6 +24,12 @@
 
 ---
 
+### Demo
+
+https://github.com/user-attachments/assets/f60be8d6-dd8a-464b-9e55-bf43d8f68680
+
+---
+
 ## What is K-Lens?
 
 > If `kubectl` is your CLI, **K-Lens is your cockpit.**
@@ -52,10 +58,6 @@ Built on [Open Lens](https://github.com/lensapp/lens), enhanced with AI-powered 
 | **Integrated Terminal** | Per-cluster kubectl sessions and Pod shell access |
 | **Helm Chart Management** | Install, upgrade, and rollback Helm releases |
 | **Resource Editor** | Monaco Editor-based YAML editing with live apply |
-
-### Demo
-
-https://github.com/user-attachments/assets/f60be8d6-dd8a-464b-9e55-bf43d8f68680
 
 ---
 

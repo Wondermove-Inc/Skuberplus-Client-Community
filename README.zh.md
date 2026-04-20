@@ -24,6 +24,12 @@
 
 ---
 
+### 演示
+
+https://github.com/user-attachments/assets/f60be8d6-dd8a-464b-9e55-bf43d8f68680
+
+---
+
 ## K-Lens 是什么？
 
 > 如果 `kubectl` 是你的 CLI，那么 **K-Lens 就是你的驾驶舱。**
@@ -52,10 +58,6 @@ K-Lens 将 Kubernetes 管理从终端切换的重复劳动转变为可视化、A
 | **集成终端** | 每个集群独立的 kubectl 会话与 Pod Shell 访问 |
 | **Helm Chart 管理** | 安装、升级和回滚 Helm 发布 |
 | **资源编辑器** | 基于 Monaco Editor 的 YAML 编辑，支持实时应用 |
-
-### 演示
-
-https://github.com/user-attachments/assets/f60be8d6-dd8a-464b-9e55-bf43d8f68680
 
 ---
 

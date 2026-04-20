@@ -24,6 +24,12 @@
 
 ---
 
+### 데모
+
+https://github.com/user-attachments/assets/f60be8d6-dd8a-464b-9e55-bf43d8f68680
+
+---
+
 ## K-Lens란?
 
 > `kubectl`이 CLI라면, **K-Lens는 조종석입니다.**
@@ -52,10 +58,6 @@ K-Lens는 Kubernetes 관리를 터미널 전환의 반복에서 시각적이고 
 | **통합 터미널** | 클러스터별 kubectl 세션 및 Pod 셸 접속 |
 | **Helm 차트 관리** | Helm 릴리즈 설치, 업그레이드, 롤백 지원 |
 | **리소스 편집기** | Monaco Editor 기반 YAML 편집 및 실시간 적용 |
-
-### 데모
-
-https://github.com/user-attachments/assets/f60be8d6-dd8a-464b-9e55-bf43d8f68680
 
 ---
 
