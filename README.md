@@ -357,6 +357,24 @@ pnpm build:dev
 
 ---
 
+## Roadmap
+
+| Phase | Area | Description |
+|-------|------|-------------|
+| ✅ Done | AI Diagnostics | Post-incident AI analysis, root cause detection, remediation suggestions |
+| ✅ Done | Security Scan | CVE/KSV vulnerability scanning with AI auto-fix proposals (DAIVE) |
+| ✅ Done | k-o11y | Observability dashboard integration |
+| 🚧 In Progress | AI Quality | Diagnostic accuracy improvements, response latency optimization |
+| 🚧 In Progress | Performance | Large cluster handling, rendering optimization, memory efficiency |
+| 📋 Planned | Real-time AI Monitoring | Live anomaly detection, predictive alerting, auto-scaling recommendations |
+| 📋 Planned | AI Cost Optimize | Resource waste detection, right-sizing suggestions, cost forecasting |
+| 💡 Exploring | Plugin Marketplace | Community-driven extension ecosystem |
+| 💡 Exploring | Web Version | Browser-based K-Lens for team collaboration |
+
+> Interested in a roadmap item? Fork the repo, improve or build the feature, and open a PR. Check [Issues](https://github.com/Wondermove-Inc/Skuberplus-Client-Community/issues) labeled `good first issue` or `help wanted` for entry points.
+
+---
+
 ## Contributing
 
 1. Fork and create a feature branch

@@ -357,6 +357,24 @@ pnpm build:dev
 
 ---
 
+## 路线图
+
+| 阶段 | 领域 | 说明 |
+|------|------|------|
+| ✅ 已完成 | AI 诊断 | 事后 AI 分析、根因检测、修复建议 |
+| ✅ 已完成 | 安全扫描 | CVE/KSV 漏洞扫描 + AI 自动修复建议 (DAIVE) |
+| ✅ 已完成 | k-o11y | Observability 仪表盘集成 |
+| 🚧 进行中 | AI 质量 | 诊断准确率提升、响应延迟优化 |
+| 🚧 进行中 | 性能优化 | 大规模集群处理、渲染优化、内存效率 |
+| 📋 计划中 | 实时 AI 监控 | 实时异常检测、预测告警、自动扩缩建议 |
+| 📋 计划中 | AI Cost Optimize | 资源浪费检测、合理规格建议、成本预测 |
+| 💡 探索中 | 插件市场 | 社区驱动的扩展生态 |
+| 💡 探索中 | Web 版本 | 面向团队协作的浏览器版 K-Lens |
+
+> 对路线图中的功能感兴趣？Fork 仓库，改进或实现功能，然后提交 PR。可以从 [Issues](https://github.com/Wondermove-Inc/Skuberplus-Client-Community/issues) 中标记为 `good first issue` 或 `help wanted` 的问题开始。
+
+---
+
 ## 贡献
 
 1. Fork 仓库并创建功能分支
