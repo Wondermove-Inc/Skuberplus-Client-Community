@@ -426,5 +426,5 @@ See the [LICENSE](LICENSE) file for the full license text.
 ---
 
 <p align="center">
-  <sub>Built with love by <a href="https://wondermove.net">Wondermove Inc.</a></sub>
+  <sub>Built with love by <a href="https://www.skuberplus.com/">Wondermove Inc.</a></sub>
 </p>
