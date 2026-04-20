@@ -389,6 +389,27 @@ Please report bugs and feature requests on [GitHub Issues](https://github.com/Wo
 
 ---
 
+## Contributors
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/wondermovestarlord"><img src="https://github.com/wondermovestarlord.png" width="80px;" alt=""/><br /><sub><b>wondermovestarlord</b></sub></a></td>
+    <td align="center"><a href="https://github.com/wondermoveheimdall"><img src="https://github.com/wondermoveheimdall.png" width="80px;" alt=""/><br /><sub><b>wondermoveheimdall</b></sub></a></td>
+    <td align="center"><a href="https://github.com/wonder-captain"><img src="https://github.com/wonder-captain.png" width="80px;" alt=""/><br /><sub><b>wonder-captain</b></sub></a></td>
+    <td align="center"><a href="https://github.com/flash-wondermove"><img src="https://github.com/flash-wondermove.png" width="80px;" alt=""/><br /><sub><b>flash-wondermove</b></sub></a></td>
+    <td align="center"><a href="https://github.com/superman"><img src="https://github.com/superman.png" width="80px;" alt=""/><br /><sub><b>superman</b></sub></a></td>
+    <td align="center"><a href="https://github.com/Mantis"><img src="https://github.com/Mantis.png" width="80px;" alt=""/><br /><sub><b>Mantis</b></sub></a></td>
+  </tr>
+</table>
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Wondermove-Inc/K-Lens&type=Date)](https://star-history.com/#Wondermove-Inc/K-Lens&Date)
+
+---
+
 ## License
 
 This project is based on [Open Lens](https://github.com/lensapp/lens).
