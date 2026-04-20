@@ -13,6 +13,7 @@
   <a href="https://github.com/Wondermove-Inc/Skuberplus-Client-Community/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>
   <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/node-%3E%3D22.0.0-brightgreen.svg" alt="Node.js"></a>
   <a href="https://www.electronjs.org/"><img src="https://img.shields.io/badge/electron-35.7.5-9feaf9.svg" alt="Electron"></a>
+  <a href="https://github.com/Wondermove-Inc/K-Lens/stargazers"><img src="https://img.shields.io/github/stars/Wondermove-Inc/K-Lens?style=social" alt="Stars"></a>
 </p>
 
 <p align="center">
