@@ -126,7 +126,6 @@ appImage:
     - --enable-features=WaylandWindowDecorations
     - --disable-gpu-compositing
     - --no-sandbox
-  license: build/license.txt
 
 deb:
   depends:
@@ -156,7 +155,6 @@ deb:
 ## Official Flatpak is built from the separate repository
 flatpak:
   useWaylandFlags: true
-  license: build/license.txt
 
 ## Official Snap is built from the separate repository
 snap:
@@ -218,7 +216,6 @@ mac:
   # 🎯 publish 설정은 상위 레벨 publish 사용 (latest-mac.yml 생성)
 
 pkg:
-  license: build/license.txt
 
 ## For Windows targets
 win:
@@ -252,4 +249,3 @@ nsis:
   allowElevation: true
   createStartMenuShortcut: true
   allowToChangeInstallationDirectory: true
-  license: build/license.txt
