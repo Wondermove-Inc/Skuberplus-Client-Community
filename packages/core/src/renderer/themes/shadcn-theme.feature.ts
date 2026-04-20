@@ -3,7 +3,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getFeature } from "@skuberplus/feature-core";
+import { getFeature } from "@k-lens/feature-core";
 
 /**
  * 🎯 목적: shadcn 테마 시스템 Feature

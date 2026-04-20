@@ -9,7 +9,7 @@ import { getDiForUnitTesting } from "../getDiForUnitTesting";
 import k8sRequestInjectable from "../k8s-request.injectable";
 import requestNonCoreApiVersionsInjectable from "./request-non-core-api-versions.injectable";
 
-import type { V1APIGroupList } from "@skuberplus/kubernetes-client-node";
+import type { V1APIGroupList } from "@k-lens/kubernetes-client-node";
 
 import type { AsyncFnMock } from "@async-fn/jest";
 import type { DiContainer } from "@ogre-tools/injectable";

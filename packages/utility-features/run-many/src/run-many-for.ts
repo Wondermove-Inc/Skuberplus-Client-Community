@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getOrInsert } from "@skuberplus/utilities";
+import { getOrInsert } from "@k-lens/utilities";
 import EventEmitter from "events";
 import { convertToWithIdWith, verifyRunnablesAreDAG } from "./helpers";
 

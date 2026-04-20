@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { isDefined } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { isDefined } from "@skuberplus/utilities";
 import { computed } from "mobx";
 import mainExtensionsInjectable from "../../../extensions/main-extensions.injectable";
 import catalogEntityRegistryInjectable from "../../catalog/entity-registry.injectable";

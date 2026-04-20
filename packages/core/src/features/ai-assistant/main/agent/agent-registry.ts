@@ -17,7 +17,7 @@ import * as fs from "fs";
 import * as path from "path";
 import { BUILTIN_EXPERT_ROLES } from "./expert-personas";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { ExpertRole } from "./expert-personas";
 

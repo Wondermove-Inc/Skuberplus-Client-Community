@@ -4,12 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { iter } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { iter } from "@skuberplus/utilities";
 import k8sRequestInjectable from "../k8s-request.injectable";
 import { apiVersionsRequesterInjectionToken } from "./api-versions-requester";
 
-import type { V1APIGroupList } from "@skuberplus/kubernetes-client-node";
+import type { V1APIGroupList } from "@k-lens/kubernetes-client-node";
 
 const requestNonCoreApiVersionsInjectable = getInjectable({
   id: "request-non-core-api-versions",

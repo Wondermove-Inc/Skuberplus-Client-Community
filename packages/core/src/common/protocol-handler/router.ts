@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { isDefined, iter } from "@skuberplus/utilities";
+import { isDefined, iter } from "@k-lens/utilities";
 import { ipcRenderer } from "electron";
 import { countBy } from "lodash";
 import { when } from "mobx";
@@ -12,7 +12,7 @@ import { pathToRegexp } from "path-to-regexp";
 import { matchPath } from "react-router";
 import { RoutingError, RoutingErrorType } from "./error";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { match } from "react-router";
 import type Url from "url-parse";

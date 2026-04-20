@@ -4,14 +4,14 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { secretApiInjectable } from "@skuberplus/kube-api-specifics";
+import { secretApiInjectable } from "@k-lens/kube-api-specifics";
 // 🎯 shadcn UI 컴포넌트: DrawerItem 대체
-import { DetailPanelField } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { DetailPanelField } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import React from "react";
 import { LocalRef } from "../variant-helpers";
 
-import type { SecretApi } from "@skuberplus/kube-api";
+import type { SecretApi } from "@k-lens/kube-api";
 
 import type { PodVolumeVariantSpecificProps } from "../variant-helpers";
 

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { onLoadOfApplicationInjectionToken } from "@k-lens/application";
 import { getInjectable } from "@ogre-tools/injectable";
-import { onLoadOfApplicationInjectionToken } from "@skuberplus/application";
 import { reaction } from "mobx";
 import setLoginItemSettingsInjectable from "../../../main/electron-app/features/set-login-item-settings.injectable";
 import userPreferencesStateInjectable from "../common/state.injectable";

@@ -4,14 +4,13 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
 import {
   Empty,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@skuberplus/storybook-shadcn/src/components/ui/empty";
+} from "@k-lens/storybook-shadcn/src/components/ui/empty";
 // 🎯 shadcn UI 컴포넌트 import
 import {
   Table,
@@ -20,7 +19,8 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@skuberplus/storybook-shadcn/src/components/ui/table";
+} from "@k-lens/storybook-shadcn/src/components/ui/table";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import {
   type ColumnDef,
   type ColumnSizingState,

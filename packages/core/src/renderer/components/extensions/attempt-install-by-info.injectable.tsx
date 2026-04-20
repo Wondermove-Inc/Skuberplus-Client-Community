@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
+import { isObject } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { isObject } from "@skuberplus/utilities";
 import { reduce } from "lodash";
 import React from "react";
 import { SemVer } from "semver";

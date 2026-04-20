@@ -18,15 +18,15 @@ import type {
   CatalogEntityStatus,
 } from "../../../../common/catalog";
 import "../../../../common/catalog-entities";
-import { iter } from "@skuberplus/utilities";
+import { iter } from "@k-lens/utilities";
 import { ipcRenderer } from "electron";
 import { once } from "lodash";
 import { isMainFrame } from "process";
 import { CatalogRunEvent } from "../../../../common/catalog/catalog-run-event";
 import { catalogEntityRunListener, catalogInitChannel, catalogItemsChannel } from "../../../../common/ipc/catalog";
 
-import type { Logger } from "@skuberplus/logger";
-import type { Disposer } from "@skuberplus/utilities";
+import type { Logger } from "@k-lens/logger";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { Navigate } from "../../../navigation/navigate.injectable";
 

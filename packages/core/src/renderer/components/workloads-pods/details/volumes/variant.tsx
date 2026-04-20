@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Icon } from "@skuberplus/icon";
-import { DetailPanelField } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { Icon } from "@k-lens/icon";
+import { DetailPanelField } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
 import React from "react";
 import { AwsElasticBlockStore } from "./variants/aws-elastic-block-store";
 import { AzureDisk } from "./variants/azure-disk";
@@ -38,7 +38,7 @@ import { Secret } from "./variants/secret";
 import { StorageOs } from "./variants/storage-os";
 import { VsphereVolume } from "./variants/vsphere-volume";
 
-import type { Pod, PodSpecVolume, PodVolumeKind } from "@skuberplus/kube-object";
+import type { Pod, PodSpecVolume, PodVolumeKind } from "@k-lens/kube-object";
 
 const deprecatedVolumeTypes = new Set<PodVolumeKind>(["flocker", "gitRepo", "quobyte", "storageos"]);
 

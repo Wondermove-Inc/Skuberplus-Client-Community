@@ -11,7 +11,7 @@
  * MessageChannel을 정의합니다.
  *
  * 📝 주의사항:
- * - @skuberplus/messaging 프레임워크 사용
+ * - @k-lens/messaging 프레임워크 사용
  * - Electron IPC 채널 자동 처리
  * - 레거시 라우팅 패턴과 동일한 방식
  *
@@ -21,7 +21,7 @@
 
 import { IpcRendererNavigationEvents } from "../../../../common/ipc/navigation-events";
 
-import type { MessageChannel } from "@skuberplus/messaging";
+import type { MessageChannel } from "@k-lens/messaging";
 
 /**
  * 🎯 목적: AddClusterDialog 열기 메시지 채널

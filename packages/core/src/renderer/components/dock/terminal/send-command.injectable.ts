@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
+import { noop, waitUntilDefined } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { noop, waitUntilDefined } from "@skuberplus/utilities";
 import { when } from "mobx";
 import { TerminalChannels } from "../../../../common/terminal/channels";
 import { notificationPanelStore } from "../../status-bar/items/notification-panel.store";

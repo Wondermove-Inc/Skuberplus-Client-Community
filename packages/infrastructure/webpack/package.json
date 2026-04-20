@@ -1,5 +1,5 @@
 {
-  "name": "@skuberplus/webpack",
+  "name": "@k-lens/webpack",
   "private": false,
   "version": "1.5.4-0",
   "description": "Webpack configurations and scripts for Lens packages.",
@@ -14,7 +14,7 @@
   },
   "main": "dist/index.js",
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "license": "MIT",
@@ -47,8 +47,8 @@
   },
   "devDependencies": {
     "@async-fn/jest": "^1.6.4",
-    "@skuberplus/jest": "workspace:^",
-    "@skuberplus/typescript": "workspace:^",
+    "@k-lens/jest": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
     "@ogre-tools/test-utils": "^17.11.1",
     "@types/fs-extra": "^11.0.4",
     "@types/lodash": "^4.17.20",

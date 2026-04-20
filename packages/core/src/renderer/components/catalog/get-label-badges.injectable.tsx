@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getInjectable } from "@ogre-tools/injectable";
-import { KubeObject } from "@skuberplus/kube-object";
+import { KubeObject } from "@k-lens/kube-object";
 // 🎯 shadcn UI 컴포넌트: 레거시 Badge 대체
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { getInjectable } from "@ogre-tools/injectable";
 import React from "react";
 import searchUrlPageParamInjectable from "../input/search-url-page-param.injectable";
 import styles from "./catalog.module.scss";

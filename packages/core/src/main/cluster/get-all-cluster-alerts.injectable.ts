@@ -21,16 +21,16 @@
  * - 2025-12-10 - 초기 생성 (상태바 Alerts Popover 기능)
  */
 
+import { beforeElectronIsReadyInjectionToken } from "@k-lens/application-for-electron-main";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { beforeElectronIsReadyInjectionToken } from "@skuberplus/application-for-electron-main";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import createCoreApiInjectable from "../../common/cluster/create-core-api.injectable";
 import loadKubeconfigInjectable from "../../common/cluster/load-kubeconfig.injectable";
 import { ipcMainHandle } from "../../common/ipc";
 import { clusterGetAllAlertsChannel } from "../../common/ipc/cluster";
 import clustersInjectable from "../../features/cluster/storage/common/clusters.injectable";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { IComputedValue } from "mobx";
 

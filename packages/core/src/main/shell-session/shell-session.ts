@@ -5,13 +5,13 @@
  */
 
 import { performance } from "node:perf_hooks";
-import { getOrInsertWith } from "@skuberplus/utilities";
+import { getOrInsertWith } from "@k-lens/utilities";
 import os from "os";
 import path from "path";
 import { TerminalChannels, type TerminalMessage } from "../../common/terminal/channels";
 import { clearKubeconfigEnvVars } from "../utils/clear-kube-env-vars";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { IComputedValue } from "mobx";
 import type * as pty from "node-pty";
@@ -470,14 +470,14 @@ export abstract class ShellSession {
       // WSL에서 kubectl PATH를 설정하기 위한 별도 변수
       // PATH 자체를 WSLENV로 전달하면 /etc/profile이 리셋하므로,
       // 별도 변수로 전달 후 WSL 셸 시작 시 PATH에 추가
-      env.SKUBERPLUS_KUBECTL_DIR = this.dependencies.directoryContainingKubectl;
-      env.SKUBERPLUS_BINARIES_DIR = [...this.getPathEntries()].join(path.delimiter);
+      env.KLENS_KUBECTL_DIR = this.dependencies.directoryContainingKubectl;
+      env.KLENS_BINARIES_DIR = [...this.getPathEntries()].join(path.delimiter);
       // WSLENV: Windows 환경변수를 WSL로 전달
       // - KUBECONFIG/up: 경로 변환 + Win→WSL 방향
       // - LENS_SESSION/u: Win→WSL 방향만
-      // - SKUBERPLUS_KUBECTL_DIR/up: kubectl 디렉토리 경로 변환
-      // - SKUBERPLUS_BINARIES_DIR/up: 바이너리 디렉토리 경로 변환
-      env.WSLENV = [env.WSLENV, "KUBECONFIG/up:LENS_SESSION/u:SKUBERPLUS_KUBECTL_DIR/up:SKUBERPLUS_BINARIES_DIR/up"]
+      // - KLENS_KUBECTL_DIR/up: kubectl 디렉토리 경로 변환
+      // - KLENS_BINARIES_DIR/up: 바이너리 디렉토리 경로 변환
+      env.WSLENV = [env.WSLENV, "KUBECONFIG/up:LENS_SESSION/u:KLENS_KUBECTL_DIR/up:KLENS_BINARIES_DIR/up"]
         .filter(Boolean)
         .join(":");
     } else if (shell !== undefined) {

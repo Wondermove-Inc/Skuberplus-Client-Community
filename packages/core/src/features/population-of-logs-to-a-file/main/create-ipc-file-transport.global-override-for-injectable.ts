@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { noop } from "@skuberplus/utilities";
+import { noop } from "@k-lens/utilities";
 import { getGlobalOverride } from "../../../test-utils/get-global-override";
 import createIpcFileLoggerTransportInjectable from "./create-ipc-file-transport.injectable";
 

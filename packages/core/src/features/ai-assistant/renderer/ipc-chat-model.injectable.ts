@@ -16,8 +16,8 @@
  * - 2025-12-16: 초기 생성 (Extension Host 패턴 마이그레이션)
  */
 
+import { requestFromChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { requestFromChannelInjectionToken } from "@skuberplus/messaging";
 import {
   type LLMChatRequest,
   type LLMStructuredOutputRequest,

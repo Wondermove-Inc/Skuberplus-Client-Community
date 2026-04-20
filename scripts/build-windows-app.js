@@ -13,7 +13,7 @@ const fs = require("fs");
 const path = require("path");
 
 const projectRoot = path.join(__dirname, "..");
-const appDir = path.join(projectRoot, "skuberplus");
+const appDir = path.join(projectRoot, "k-lens");
 
 function run(cmd, args, options = {}) {
   const result = spawnSync(cmd, args, {
@@ -32,7 +32,7 @@ function run(cmd, args, options = {}) {
 }
 
 if (!fs.existsSync(appDir)) {
-  console.error("Missing skuberplus directory");
+  console.error("Missing k-lens directory");
   process.exit(1);
 }
 

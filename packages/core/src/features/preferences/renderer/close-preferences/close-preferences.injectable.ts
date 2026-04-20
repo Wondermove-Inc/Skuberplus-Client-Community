@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { observableHistoryInjectionToken } from "@k-lens/routing";
 import { getInjectable } from "@ogre-tools/injectable";
-import { observableHistoryInjectionToken } from "@skuberplus/routing";
 import navigateToFrontPageInjectable from "../../../../common/front-end-routing/navigate-to-front-page.injectable";
 
 const closePreferencesInjectable = getInjectable({

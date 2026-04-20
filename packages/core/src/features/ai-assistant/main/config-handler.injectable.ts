@@ -7,7 +7,7 @@
  * Renderer에서 오는 설정 파일 관련 요청을 처리합니다.
  */
 
-import { getRequestChannelListenerInjectable } from "@skuberplus/messaging";
+import { getRequestChannelListenerInjectable } from "@k-lens/messaging";
 import {
   deleteUserOverride,
   EDITABLE_CONFIGS,

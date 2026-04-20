@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { byOrderNumber } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { byOrderNumber } from "@skuberplus/utilities";
 import { computed } from "mobx";
 import { shouldShowResourceInjectionToken } from "../../../../features/cluster/showing-kube-resources/common/allowed-resources-injection-token";
 import { workloadInjectionToken } from "./workload-injection-token";

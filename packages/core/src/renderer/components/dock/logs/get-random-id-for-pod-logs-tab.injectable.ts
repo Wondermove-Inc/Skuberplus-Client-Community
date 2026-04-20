@@ -5,7 +5,7 @@
  */
 
 import { getInjectable } from "@ogre-tools/injectable";
-import { getRandomIdInjectionToken } from "@skuberplus/random";
+import { getRandomIdInjectionToken } from "@k-lens/random";
 
 const getRandomIdForPodLogsTabInjectable = getInjectable({
   id: "get-random-id-for-pod-logs-tab",

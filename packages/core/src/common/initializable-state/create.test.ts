@@ -5,11 +5,11 @@
  */
 
 import asyncFn from "@async-fn/jest";
+import { runManyFor } from "@k-lens/run-many";
 import { createContainer, getInjectionToken } from "@ogre-tools/injectable";
-import { runManyFor } from "@skuberplus/run-many";
 import { getInitializable, getInjectablesForInitializable } from "./create";
 
-import type { Runnable } from "@skuberplus/run-many";
+import type { Runnable } from "@k-lens/run-many";
 
 import type { AsyncFnMock } from "@async-fn/jest";
 import type { DiContainer, InjectionToken } from "@ogre-tools/injectable";

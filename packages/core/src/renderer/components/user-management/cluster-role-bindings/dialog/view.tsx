@@ -33,11 +33,11 @@
 
 import "./view.scss";
 
+import { Icon } from "@k-lens/icon";
+import { Input } from "@k-lens/storybook-shadcn";
+import { TooltipPosition } from "@k-lens/tooltip";
+import { iter, ObservableHashSet } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { Input } from "@skuberplus/storybook-shadcn";
-import { TooltipPosition } from "@skuberplus/tooltip";
-import { iter, ObservableHashSet } from "@skuberplus/utilities";
 import { Check, ChevronsUpDown, X } from "lucide-react";
 import { action, computed, makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
@@ -67,7 +67,7 @@ import editClusterRoleBindingNameStateInjectable from "./edit-name-state.injecta
 import openClusterRoleBindingDialogInjectable from "./open.injectable";
 import clusterRoleBindingDialogStateInjectable from "./state.injectable";
 
-import type { ClusterRole, ServiceAccount, Subject } from "@skuberplus/kube-object";
+import type { ClusterRole, ServiceAccount, Subject } from "@k-lens/kube-object";
 
 import type { IObservableValue } from "mobx";
 

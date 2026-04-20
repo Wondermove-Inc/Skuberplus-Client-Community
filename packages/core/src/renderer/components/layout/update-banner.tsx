@@ -7,7 +7,7 @@
 
 import { ArrowUpRight, Download, RefreshCw, RotateCcw, X } from "lucide-react";
 import React from "react";
-import notificationBellIcon from "../../../../../../skuberplus/static/images/apps/notification-bell.png";
+import notificationBellIcon from "../../../../../../k-lens/static/images/apps/notification-bell.png";
 import { cn } from "../../lib/utils";
 import { Avatar, AvatarFallback, AvatarImage } from "../shadcn-ui/avatar";
 import { Button } from "../shadcn-ui/button";

@@ -20,7 +20,7 @@
  * - 2025-12-16: 초기 생성 (Phase 3 HITL 영구 저장)
  */
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 // ============================================
 // 🎯 HITL Session 타입

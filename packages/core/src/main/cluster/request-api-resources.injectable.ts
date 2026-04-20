@@ -4,14 +4,14 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
+import { backoffCaller, byOrderNumber, withConcurrencyLimit } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { backoffCaller, byOrderNumber, withConcurrencyLimit } from "@skuberplus/utilities";
 import { apiVersionsRequesterInjectionToken } from "./api-versions-requester";
 import broadcastConnectionUpdateInjectable from "./broadcast-connection-update.injectable";
 import requestKubeApiResourcesForInjectable from "./request-kube-api-resources-for.injectable";
 
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { AsyncResult } from "@k-lens/utilities";
 
 import type { Cluster } from "../../common/cluster/cluster";
 import type { KubeApiResource } from "../../common/rbac";

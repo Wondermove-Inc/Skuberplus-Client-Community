@@ -23,18 +23,18 @@
  * - 2025-12-01 - 실제 Kubernetes Metrics Server API 호출 구현
  */
 
+import { beforeElectronIsReadyInjectionToken } from "@k-lens/application-for-electron-main";
+import { MetricsAdapter } from "@k-lens/kubernetes-metrics-server";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { getUnifiedQuery } from "@k-lens/prometheus";
 import { getInjectable } from "@ogre-tools/injectable";
-import { beforeElectronIsReadyInjectionToken } from "@skuberplus/application-for-electron-main";
-import { MetricsAdapter } from "@skuberplus/kubernetes-metrics-server";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { getUnifiedQuery } from "@skuberplus/prometheus";
 import { ipcMainHandle } from "../../common/ipc";
 import getClusterByIdInjectable from "../../features/cluster/storage/common/get-by-id.injectable";
 import getMetricsInjectable from "../get-metrics.injectable";
 import loadProxyKubeconfigInjectable from "./load-proxy-kubeconfig.injectable";
 import prometheusHandlerInjectable from "./prometheus-handler/prometheus-handler.injectable";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { GetClusterById } from "../../features/cluster/storage/common/get-by-id.injectable";
 
@@ -203,7 +203,7 @@ const getClusterMetricsInjectable = getInjectable({
                 try {
                   // 🔧 KubeConfig 로드 (Proxy 경유)
                   const proxyConfig = await di.inject(loadProxyKubeconfigInjectable, cluster)();
-                  const { CoreV1Api, CustomObjectsApi } = await import("@skuberplus/kubernetes-client-node");
+                  const { CoreV1Api, CustomObjectsApi } = await import("@k-lens/kubernetes-client-node");
                   const apiClient = proxyConfig.makeApiClient(CoreV1Api);
                   const customObjectsApi = proxyConfig.makeApiClient(CustomObjectsApi);
 

@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { storesAndApisCanBeCreatedInjectionToken } from "@skuberplus/kube-api-specifics";
+import { storesAndApisCanBeCreatedInjectionToken } from "@k-lens/kube-api-specifics";
 import { computed } from "mobx";
 import activeKubernetesClusterInjectable from "../../../cluster-frame-context/active-kubernetes-cluster.injectable";
 import { getDiForUnitTesting } from "../../../getDiForUnitTesting";

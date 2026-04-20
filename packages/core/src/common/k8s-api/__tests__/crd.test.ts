@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { CustomResourceDefinition } from "@skuberplus/kube-object";
+import { CustomResourceDefinition } from "@k-lens/kube-object";
 
-import type { CustomResourceDefinitionSpec } from "@skuberplus/kube-object";
+import type { CustomResourceDefinitionSpec } from "@k-lens/kube-object";
 
 describe("Crds", () => {
   describe("getVersion()", () => {

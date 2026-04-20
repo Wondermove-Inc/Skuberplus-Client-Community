@@ -12,8 +12,8 @@
  * - 2025-12-11: 초기 생성 (Tool-Centric 아키텍처 전환)
  */
 
+import { requestFromChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { requestFromChannelInjectionToken } from "@skuberplus/messaging";
 import { shellExecuteChannel, shellExecuteInjectionToken } from "../common/shell-execute-channel";
 
 /**

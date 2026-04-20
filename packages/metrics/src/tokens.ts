@@ -19,7 +19,7 @@ import type {
   Pod,
   ReplicaSet,
   StatefulSet,
-} from "@skuberplus/kube-object";
+} from "@k-lens/kube-object";
 
 import type React from "react";
 

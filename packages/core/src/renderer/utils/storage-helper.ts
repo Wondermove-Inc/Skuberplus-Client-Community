@@ -10,7 +10,7 @@ import { isEqual, isPlainObject } from "lodash";
 // Helper for working with storages (e.g. window.localStorage, NodeJS/file-system, etc.)
 import { action, comparer, computed, makeObservable, observable, observe, toJS } from "mobx";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { Draft } from "immer";
 

@@ -16,9 +16,9 @@
  *   - 2026-01-06: 초기 생성 (클러스터 오버뷰 Warning 패널 개선)
  */
 
+import { Pod } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { Pod } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import React from "react";
 import { buildKubectlAttachCommand, buildKubectlExecCommand } from "../../../../../common/utils/shell-utils";
 import hostedClusterInjectable from "../../../../cluster-frame-context/hosted-cluster.injectable";
@@ -33,7 +33,7 @@ import kubeObjectDeleteServiceInjectable from "../../../kube-object-menu/kube-ob
 import { notificationPanelStore } from "../../../status-bar/items/notification-panel.store";
 import { kubeObjectActionHandlerInjectionToken } from "../kube-object-action-handler-injection-token";
 
-import type { Container, KubeObject } from "@skuberplus/kube-object";
+import type { Container, KubeObject } from "@k-lens/kube-object";
 
 import type { KubeObjectActionHandlers } from "../kube-object-action-handler-injection-token";
 

@@ -18,7 +18,7 @@ import {
   type SaveFileResponse,
 } from "../../../common/ipc/post-message";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 /**
  * 파일 탭 열기 핸들러 타입

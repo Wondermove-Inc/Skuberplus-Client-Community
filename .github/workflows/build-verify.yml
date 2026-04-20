@@ -39,7 +39,7 @@ jobs:
         run: pnpm build
 
       - name: Build app (Linux)
-        working-directory: skuberplus
+        working-directory: k-lens
         run: pnpm build:app:linux
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -53,7 +53,7 @@ jobs:
         with:
           name: build-verify-linux
           path: |
-            skuberplus/dist/**/*.AppImage
+            k-lens/dist/**/*.AppImage
           retention-days: 3
 
       - name: Send webhook (success)

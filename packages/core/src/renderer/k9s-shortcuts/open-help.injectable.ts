@@ -1,5 +1,5 @@
+import { keyboardShortcutInjectionToken } from "@k-lens/keyboard-shortcuts";
 import { getInjectable } from "@ogre-tools/injectable";
-import { keyboardShortcutInjectionToken } from "@skuberplus/keyboard-shortcuts";
 import keyboardHelpStoreInjectable from "../components/keyboard-help-overlay/keyboard-help-store.injectable";
 
 /**

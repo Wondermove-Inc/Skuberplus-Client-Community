@@ -4,11 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
+import { Icon } from "@k-lens/icon";
 // 🎯 shadcn UI 컴포넌트: DrawerItem 대체
-import { DetailPanelField } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { cssNames } from "@skuberplus/utilities";
+import { DetailPanelField } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { cssNames } from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 import isDevelopmentInjectable from "../../../../common/vars/is-development.injectable";

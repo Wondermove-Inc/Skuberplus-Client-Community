@@ -4,14 +4,14 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Pod } from "@skuberplus/kube-object";
+import { Pod } from "@k-lens/kube-object";
 import autoBind from "auto-bind";
 import compact from "lodash/compact";
 import groupBy from "lodash/groupBy";
 import { KubeObjectStore } from "../../../common/k8s-api/kube-object.store";
 
-import type { KubeEventApi } from "@skuberplus/kube-api";
-import type { KubeEvent, KubeObject } from "@skuberplus/kube-object";
+import type { KubeEventApi } from "@k-lens/kube-api";
+import type { KubeEvent, KubeObject } from "@k-lens/kube-object";
 
 import type { KubeObjectStoreDependencies, KubeObjectStoreOptions } from "../../../common/k8s-api/kube-object.store";
 import type { GetPodById } from "../workloads-pods/get-pod-by-id.injectable";

@@ -1,10 +1,10 @@
 # Kubernetes Metrics Server Integration
 
-이 패키지는 SkuberPlus에서 Kubernetes Metrics Server를 Prometheus의 대안으로 사용할 수 있도록 하는 기능을 제공합니다.
+이 패키지는 KLens에서 Kubernetes Metrics Server를 Prometheus의 대안으로 사용할 수 있도록 하는 기능을 제공합니다.
 
 ## 개요
 
-Kubernetes Metrics Server는 클러스터 내의 노드와 Pod에서 리소스 사용량 메트릭을 수집하는 클러스터 전역 구성 요소입니다. 이 패키지는 Metrics Server API를 통해 얻은 데이터를 Prometheus 호환 형식으로 변환하여 SkuberPlus의 기존 메트릭 UI와 호환되도록 합니다.
+Kubernetes Metrics Server는 클러스터 내의 노드와 Pod에서 리소스 사용량 메트릭을 수집하는 클러스터 전역 구성 요소입니다. 이 패키지는 Metrics Server API를 통해 얻은 데이터를 Prometheus 호환 형식으로 변환하여 KLens의 기존 메트릭 UI와 호환되도록 합니다.
 
 ## 주요 기능
 
@@ -50,7 +50,7 @@ MetricsServerApi
     ↓ (NodeMetrics, PodMetrics 객체)
 MetricsAdapter
     ↓ (Prometheus 호환 형식)
-SkuberPlus UI 컴포넌트
+KLens UI 컴포넌트
 ```
 
 ## 사용법
@@ -64,8 +64,8 @@ SkuberPlus UI 컴포넌트
 ### 프로그래밍 방식으로 사용
 
 ```typescript
-import { MetricsAdapter } from '@skuberplus/kubernetes-metrics-server';
-import { CoreV1Api } from '@skuberplus/kubernetes-client-node';
+import { MetricsAdapter } from '@k-lens/kubernetes-metrics-server';
+import { CoreV1Api } from '@k-lens/kubernetes-client-node';
 
 const apiClient = kubeConfig.makeApiClient(CoreV1Api);
 const adapter = new MetricsAdapter(apiClient);

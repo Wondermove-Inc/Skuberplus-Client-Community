@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { requestFromChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { requestFromChannelInjectionToken } from "@skuberplus/messaging";
 import { clearClusterAsDeletingChannel } from "../common/clear-as-deleting-channel";
 
 import type { ClusterId } from "../../../../common/cluster-types";

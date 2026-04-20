@@ -6,12 +6,12 @@
 
 import "./endpoint-slice-details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { EndpointSlice } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { EndpointSlice } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 // 🎯 shadcn UI 컴포넌트: DrawerTitle/Badge 대체
-import { DetailPanelSection } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
@@ -21,7 +21,7 @@ import getDetailsUrlInjectable from "../kube-detail-params/get-details-url.injec
 import { Table, TableCell, TableHead, TableRow } from "../table";
 import { WithTooltip } from "../with-tooltip";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { GetDetailsUrl } from "../kube-detail-params/get-details-url.injectable";
 import type { KubeObjectDetailsProps } from "../kube-object-details";

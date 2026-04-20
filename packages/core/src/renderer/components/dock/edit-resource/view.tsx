@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { Spinner } from "@skuberplus/spinner";
+import { Spinner } from "@k-lens/spinner";
 // 🎯 shadcn UI 컴포넌트: 레거시 Badge 대체
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { reaction, runInAction } from "mobx";
 import { observer } from "mobx-react";
 import React from "react";

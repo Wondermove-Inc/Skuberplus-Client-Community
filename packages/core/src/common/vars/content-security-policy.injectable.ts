@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { applicationInformationToken } from "@k-lens/application";
 import { getInjectable } from "@ogre-tools/injectable";
-import { applicationInformationToken } from "@skuberplus/application";
 
 const contentSecurityPolicyInjectable = getInjectable({
   id: "content-security-policy",

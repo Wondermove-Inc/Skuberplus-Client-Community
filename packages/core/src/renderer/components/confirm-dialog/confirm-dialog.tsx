@@ -6,8 +6,8 @@
 
 import "./confirm-dialog.scss";
 
+import { cssNames, noop } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { cssNames, noop } from "@skuberplus/utilities";
 import { XIcon } from "lucide-react";
 import { observer } from "mobx-react";
 import React, { useMemo, useState } from "react";
@@ -23,7 +23,7 @@ import {
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 import confirmDialogStateInjectable from "./state.injectable";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { IObservableValue } from "mobx";
 

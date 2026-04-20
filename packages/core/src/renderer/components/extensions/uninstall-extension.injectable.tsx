@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { when } from "mobx";
 import extensionDiscoveryInjectable from "../../../extensions/extension-discovery/extension-discovery.injectable";
 import extensionInstallationStateStoreInjectable from "../../../extensions/extension-installation-state-store/extension-installation-state-store.injectable";
@@ -14,7 +14,7 @@ import { extensionDisplayName } from "../../../extensions/lens-extension";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 import { getMessageFromError } from "./get-message-from-error/get-message-from-error";
 
-import type { LensExtensionId } from "@skuberplus/legacy-extensions";
+import type { LensExtensionId } from "@k-lens/legacy-extensions";
 
 const uninstallExtensionInjectable = getInjectable({
   id: "uninstall-extension",

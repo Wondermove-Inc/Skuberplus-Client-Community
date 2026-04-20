@@ -4,11 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Icon } from "@skuberplus/icon";
+import { Icon } from "@k-lens/icon";
 import React from "react";
 import { FilterType } from "./page-filters/store";
 
-import type { IconProps } from "@skuberplus/icon";
+import type { IconProps } from "@k-lens/icon";
 
 export interface FilterIconProps extends Partial<IconProps> {
   type: FilterType;

@@ -22,15 +22,15 @@
  * - 2025-11-19 - injection token 추가 (IPC handler 자동 등록)
  */
 
+import { beforeElectronIsReadyInjectionToken } from "@k-lens/application-for-electron-main";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { beforeElectronIsReadyInjectionToken } from "@skuberplus/application-for-electron-main";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { ipcMainHandle } from "../../common/ipc";
 import getClusterByIdInjectable from "../../features/cluster/storage/common/get-by-id.injectable";
 import loadProxyKubeconfigInjectable from "./load-proxy-kubeconfig.injectable";
 
-import type { V1Pod } from "@skuberplus/kubernetes-client-node";
-import type { Logger } from "@skuberplus/logger";
+import type { V1Pod } from "@k-lens/kubernetes-client-node";
+import type { Logger } from "@k-lens/logger";
 
 import type { GetClusterById } from "../../features/cluster/storage/common/get-by-id.injectable";
 
@@ -103,7 +103,7 @@ const getClusterPodStatusInjectable = getInjectable({
 
             // 🔧 KubeConfig 로드 (Proxy 경유 - kind 클러스터 지원)
             const proxyConfig = await di.inject(loadProxyKubeconfigInjectable, cluster)();
-            const { CoreV1Api } = await import("@skuberplus/kubernetes-client-node");
+            const { CoreV1Api } = await import("@k-lens/kubernetes-client-node");
             const coreApi = proxyConfig.makeApiClient(CoreV1Api);
 
             // 📊 Pod 목록 조회 (모든 네임스페이스)

@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { iter } from "@skuberplus/utilities";
+import { iter } from "@k-lens/utilities";
 import { TooltipPosition } from "./tooltip";
 
 export type RectangleDimensions = {

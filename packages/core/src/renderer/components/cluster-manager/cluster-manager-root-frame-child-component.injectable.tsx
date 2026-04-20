@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { ErrorBoundary } from "@k-lens/error-boundary";
+import { rootFrameChildComponentInjectionToken } from "@k-lens/react-application";
 import { getInjectable } from "@ogre-tools/injectable";
-import { ErrorBoundary } from "@skuberplus/error-boundary";
-import { rootFrameChildComponentInjectionToken } from "@skuberplus/react-application";
 import { computed } from "mobx";
 import React from "react";
 import { ClusterManager } from "./cluster-manager";

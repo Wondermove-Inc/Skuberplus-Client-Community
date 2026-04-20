@@ -50,7 +50,7 @@ const createApplicationWindowInjectable = getInjectable({
           defaultHeight: 900,
           defaultWidth: 1440,
           getContentSource: () => ({
-            url: `https://renderer.skuberplus.app:${lensProxyPort.get()}`,
+            url: `https://renderer.k-lens.app:${lensProxyPort.get()}`,
           }),
           resizable: true,
           // 🎯 macOS에서는 frame을 표시하여 -webkit-app-region: drag가 동작하도록 함

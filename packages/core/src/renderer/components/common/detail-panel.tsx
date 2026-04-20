@@ -22,7 +22,7 @@
  * - 2026-01-27: 애니메이션 제거 (즉시 열림/닫힘으로 변경)
  */
 
-import { Button } from "@skuberplus/storybook-shadcn";
+import { Button } from "@k-lens/storybook-shadcn";
 import { ChevronsRight } from "lucide-react";
 import React, { useEffect } from "react";
 import { DetailPanelActionsMenu } from "./detail-panel-actions-menu";

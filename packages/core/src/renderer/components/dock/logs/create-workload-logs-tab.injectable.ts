@@ -8,7 +8,7 @@ import { getInjectable } from "@ogre-tools/injectable";
 import getPodsByOwnerIdInjectable from "../../workloads-pods/get-pods-by-owner-id.injectable";
 import createLogsTabInjectable from "./create-logs-tab.injectable";
 
-import type { DaemonSet, Deployment, Job, ReplicaSet, StatefulSet } from "@skuberplus/kube-object";
+import type { DaemonSet, Deployment, Job, ReplicaSet, StatefulSet } from "@k-lens/kube-object";
 
 import type { GetPodsByOwnerId } from "../../workloads-pods/get-pods-by-owner-id.injectable";
 import type { TabId } from "../dock/store";

@@ -24,7 +24,7 @@ import { ResourceMetrics } from "../resource-metrics";
 import { PodCharts, podMetricTabs } from "../workloads-pods/pod-charts";
 import deploymentMetricsInjectable from "./metrics.injectable";
 
-import type { Deployment } from "@skuberplus/kube-object";
+import type { Deployment } from "@k-lens/kube-object";
 
 import type { IAsyncComputed } from "@ogre-tools/injectable-react";
 

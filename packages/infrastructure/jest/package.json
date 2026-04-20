@@ -1,8 +1,8 @@
 {
-  "name": "@skuberplus/jest",
+  "name": "@k-lens/jest",
   "private": false,
   "version": "1.5.4-0",
-  "description": "Jest configuration and scripts for SkuberPlus packages.",
+  "description": "Jest configuration and scripts for KLens packages.",
   "type": "commonjs",
   "publishConfig": {
     "access": "public",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wondermove-Inc/Skuberplus-Client-Community.git"
+    "url": "git+https://github.com/Wondermove-Inc/Klens-Client-Community.git"
   },
   "main": "index.js",
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "license": "MIT",
-  "homepage": "https://skuberplus.app",
+  "homepage": "https://k-lens.app",
   "scripts": {
     "clean:node_modules": "pnpm dlx rimraf@6.0.1 node_modules"
   },

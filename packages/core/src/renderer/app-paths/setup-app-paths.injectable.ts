@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { beforeApplicationIsLoadingInjectionToken } from "@k-lens/application";
+import { requestFromChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { beforeApplicationIsLoadingInjectionToken } from "@skuberplus/application";
-import { requestFromChannelInjectionToken } from "@skuberplus/messaging";
 import { appPathsChannel } from "../../common/app-paths/app-paths-channel";
 import appPathsStateInjectable from "../../common/app-paths/app-paths-state.injectable";
 

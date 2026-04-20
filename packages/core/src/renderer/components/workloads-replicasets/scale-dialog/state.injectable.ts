@@ -7,7 +7,7 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import { observable } from "mobx";
 
-import type { ReplicaSet } from "@skuberplus/kube-object";
+import type { ReplicaSet } from "@k-lens/kube-object";
 
 const replicaSetScaleDialogStateInjectable = getInjectable({
   id: "replica-set-scale-dialog-state",

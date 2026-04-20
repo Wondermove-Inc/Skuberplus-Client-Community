@@ -36,10 +36,10 @@ import type { LensTheme } from "./lens-theme";
  * Dark theme stub (metadata only)
  */
 export const darkThemeStub: LensTheme = {
-  name: "SkuberPlus Default Dark",
+  name: "KLens Default Dark",
   type: "dark",
   description: "CSS-based dark theme",
-  author: "SkuberPlus",
+  author: "KLens",
   isDefault: true,
   colors: {}, // Empty - all colors in global.css
   monacoTheme: "vs-dark",
@@ -49,10 +49,10 @@ export const darkThemeStub: LensTheme = {
  * Light theme stub (metadata only)
  */
 export const lightThemeStub: LensTheme = {
-  name: "SkuberPlus Default Light",
+  name: "KLens Default Light",
   type: "light",
   description: "CSS-based light theme",
-  author: "SkuberPlus",
+  author: "KLens",
   isDefault: false,
   colors: {}, // Empty - all colors in global.css
   monacoTheme: "vs",

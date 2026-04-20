@@ -4,11 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { isObject } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { isObject } from "@skuberplus/utilities";
 import execHelmInjectable from "./exec-helm/exec-helm.injectable";
 
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { AsyncResult } from "@k-lens/utilities";
 
 import type { ListedHelmRelease } from "../../features/helm-releases/common/channels";
 

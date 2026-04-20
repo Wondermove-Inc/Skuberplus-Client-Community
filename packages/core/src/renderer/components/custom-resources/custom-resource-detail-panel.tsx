@@ -18,11 +18,11 @@
  * - 2026-01-29: YAML 편집 기능 제거, 읽기 전용으로 변경
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Table, TableBody, TableCell, TableRow } from "@k-lens/storybook-shadcn";
+import { Separator } from "@k-lens/storybook-shadcn/src/components/ui/separator";
+import { formatJSONValue, safeJSONPathValue } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Table, TableBody, TableCell, TableRow } from "@skuberplus/storybook-shadcn";
-import { Separator } from "@skuberplus/storybook-shadcn/src/components/ui/separator";
-import { formatJSONValue, safeJSONPathValue } from "@skuberplus/utilities";
 import yaml from "js-yaml";
 import { startCase } from "lodash/fp";
 import { makeObservable, observable } from "mobx";
@@ -39,8 +39,8 @@ import kubeObjectDeleteServiceInjectable from "../kube-object-menu/kube-object-d
 import { MonacoEditor } from "../monaco-editor";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 
-import type { CustomResourceDefinition, KubeObject } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+import type { CustomResourceDefinition, KubeObject } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { HostedCluster } from "../../cluster-frame-context/hosted-cluster.injectable";
 import type { OpenConfirmDialog } from "../confirm-dialog/open.injectable";

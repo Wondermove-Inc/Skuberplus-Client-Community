@@ -21,29 +21,29 @@
  * 🔄 변경이력: 2026-01-09 - 극단적 단순화 (Auto-detect, Provider 선택 제거)
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { Button } from "@skuberplus/storybook-shadcn/src/components/ui/button";
-import { Checkbox } from "@skuberplus/storybook-shadcn/src/components/ui/checkbox";
+import { Button } from "@k-lens/storybook-shadcn/src/components/ui/button";
+import { Checkbox } from "@k-lens/storybook-shadcn/src/components/ui/checkbox";
 import {
   Command,
   CommandEmpty,
   CommandGroup,
   CommandItem,
   CommandList,
-} from "@skuberplus/storybook-shadcn/src/components/ui/command";
-import { Field, FieldDescription } from "@skuberplus/storybook-shadcn/src/components/ui/field";
-import { Input } from "@skuberplus/storybook-shadcn/src/components/ui/input";
-import { Item, ItemActions, ItemContent, ItemTitle } from "@skuberplus/storybook-shadcn/src/components/ui/item";
-import { Label } from "@skuberplus/storybook-shadcn/src/components/ui/label";
-import { Popover, PopoverContent, PopoverTrigger } from "@skuberplus/storybook-shadcn/src/components/ui/popover";
+} from "@k-lens/storybook-shadcn/src/components/ui/command";
+import { Field, FieldDescription } from "@k-lens/storybook-shadcn/src/components/ui/field";
+import { Input } from "@k-lens/storybook-shadcn/src/components/ui/input";
+import { Item, ItemActions, ItemContent, ItemTitle } from "@k-lens/storybook-shadcn/src/components/ui/item";
+import { Label } from "@k-lens/storybook-shadcn/src/components/ui/label";
+import { Popover, PopoverContent, PopoverTrigger } from "@k-lens/storybook-shadcn/src/components/ui/popover";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@skuberplus/storybook-shadcn/src/components/ui/select";
-import { Separator } from "@skuberplus/storybook-shadcn/src/components/ui/separator";
+} from "@k-lens/storybook-shadcn/src/components/ui/select";
+import { Separator } from "@k-lens/storybook-shadcn/src/components/ui/separator";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { ChevronDown, RotateCcw, X } from "lucide-react";
 import { observer } from "mobx-react";
 import React from "react";

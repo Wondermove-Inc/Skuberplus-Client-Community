@@ -9,9 +9,9 @@
  * @module features/preferences/renderer/preference-items/terminal/wsl-settings
  */
 
+import { Icon } from "@k-lens/icon";
+import { Spinner } from "@k-lens/spinner";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { Spinner } from "@skuberplus/spinner";
 import { ipcRenderer } from "electron";
 import { observer } from "mobx-react";
 import React, { useCallback, useEffect, useState } from "react";

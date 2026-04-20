@@ -6,7 +6,7 @@
 
 import { DockTabStore } from "../dock-tab-store/dock-tab.store";
 
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeObject } from "@k-lens/kube-object";
 
 import type { DockTabStoreDependencies } from "../dock-tab-store/dock-tab.store";
 

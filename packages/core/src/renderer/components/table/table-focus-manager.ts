@@ -6,7 +6,7 @@
 
 import { action, computed, makeObservable, observable } from "mobx";
 
-import type { ItemObject } from "@skuberplus/list-layout";
+import type { ItemObject } from "@k-lens/list-layout";
 
 export class TableFocusManager {
   @observable focusedIndex: number | null = null;

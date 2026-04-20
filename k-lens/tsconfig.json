@@ -1,0 +1,21 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"],
+      "@k-lens/core/renderer": ["../packages/core/src/renderer/index.ts"],
+      "@k-lens/core/common": ["../packages/core/src/common/index.ts"],
+      "@k-lens/core/main": ["../packages/core/src/main/index.ts"],
+      "@k-lens/core/styles": ["../packages/core/src/renderer/index.css"],
+      "@k-lens/core/template.html": ["../packages/core/src/renderer/template.html"]
+    },
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ]
+  },
+  "include": ["src/**/*", "../packages/core/types/*.d.ts"],
+  "exclude": ["out", "dist", "coverage", "binaries", "static"]
+}

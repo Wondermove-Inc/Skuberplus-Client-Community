@@ -13,7 +13,7 @@
  * - 2025-12-16: 초기 생성 (Phase 3 HITL 영구 저장)
  */
 
-import { getRequestChannelListenerInjectable } from "@skuberplus/messaging";
+import { getRequestChannelListenerInjectable } from "@k-lens/messaging";
 import { type HitlSessionInfo, hitlSessionListChannel } from "../../common/agent-ipc-channels";
 import agentSessionManagerInjectable from "./agent-session-manager.injectable";
 

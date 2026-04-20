@@ -63,8 +63,447 @@ importers:
         specifier: ^8.18.3
         version: 8.18.3
 
+  k-lens:
+    dependencies:
+      '@astronautlabs/jsonpath':
+        specifier: ^1.1.2
+        version: 1.1.2
+      '@hapi/call':
+        specifier: ^9.0.1
+        version: 9.0.1
+      '@hapi/subtext':
+        specifier: ^8.1.1
+        version: 8.1.1
+      '@k-lens/application':
+        specifier: workspace:^
+        version: link:../packages/technical-features/application/application
+      '@k-lens/application-for-electron-main':
+        specifier: workspace:^
+        version: link:../packages/technical-features/application/application-for-electron-main
+      '@k-lens/core':
+        specifier: workspace:^
+        version: link:../packages/core
+      '@k-lens/event-emitter':
+        specifier: workspace:^
+        version: link:../packages/utility-features/event-emitter
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../packages/technical-features/feature-core
+      '@k-lens/json-api':
+        specifier: workspace:^
+        version: link:../packages/utility-features/json-api
+      '@k-lens/kube-api':
+        specifier: workspace:^
+        version: link:../packages/utility-features/kube-api
+      '@k-lens/kube-api-specifics':
+        specifier: workspace:^
+        version: link:../packages/utility-features/kube-api-specifics
+      '@k-lens/kube-object':
+        specifier: workspace:^
+        version: link:../packages/kube-object
+      '@k-lens/kubectl-versions':
+        specifier: workspace:^
+        version: link:../packages/kubectl-versions
+      '@k-lens/kubernetes-client-node':
+        specifier: workspace:^
+        version: link:../packages/transpilation/kubernetes-client-node
+      '@k-lens/kubernetes-metrics-server':
+        specifier: workspace:^
+        version: link:../packages/technical-features/kubernetes-metrics-server
+      '@k-lens/legacy-extensions':
+        specifier: workspace:^
+        version: link:../packages/technical-features/application/legacy-extensions
+      '@k-lens/legacy-global-di':
+        specifier: workspace:^
+        version: link:../packages/legacy-global-di
+      '@k-lens/logger':
+        specifier: workspace:^
+        version: link:../packages/logger
+      '@k-lens/messaging':
+        specifier: workspace:^
+        version: link:../packages/technical-features/messaging/messaging
+      '@k-lens/messaging-for-main':
+        specifier: workspace:^
+        version: link:../packages/technical-features/messaging/messaging-for-main
+      '@k-lens/node-fetch':
+        specifier: workspace:^
+        version: link:../packages/transpilation/node-fetch
+      '@k-lens/prometheus':
+        specifier: workspace:^
+        version: link:../packages/technical-features/prometheus
+      '@k-lens/random':
+        specifier: workspace:^
+        version: link:../packages/random
+      '@k-lens/run-many':
+        specifier: workspace:^
+        version: link:../packages/utility-features/run-many
+      '@k-lens/startable-stoppable':
+        specifier: workspace:^
+        version: link:../packages/utility-features/startable-stoppable
+      '@k-lens/utilities':
+        specifier: workspace:^
+        version: link:../packages/utility-features/utilities
+      '@ogre-tools/fp':
+        specifier: ^17.11.1
+        version: 17.11.1(lodash@4.17.21)
+      '@ogre-tools/injectable':
+        specifier: ^17.11.1
+        version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
+      '@ogre-tools/injectable-extension-for-auto-registration':
+        specifier: ^17.11.1
+        version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)
+      '@ogre-tools/injectable-extension-for-mobx':
+        specifier: ^17.11.1
+        version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)(mobx@6.15.0)
+      auto-bind:
+        specifier: ^4.0.0
+        version: 4.0.0
+      await-lock:
+        specifier: ^2.2.2
+        version: 2.2.2
+      braces:
+        specifier: ^3.0.2
+        version: 3.0.3
+      byline:
+        specifier: ^5.0.0
+        version: 5.0.0
+      chalk:
+        specifier: ^4.1.2
+        version: 4.1.2
+      chokidar:
+        specifier: ^4.0.3
+        version: 4.0.3
+      clipboard-files:
+        specifier: ^3.0.0
+        version: 3.0.0
+      conf:
+        specifier: ^10.2.0
+        version: 10.2.0
+      cronstrue:
+        specifier: ^3.3.0
+        version: 3.3.0
+      crypto-js:
+        specifier: ^4.2.0
+        version: 4.2.0
+      dotenv:
+        specifier: ^17.3.1
+        version: 17.3.1
+      electron-store:
+        specifier: ^11.0.2
+        version: 11.0.2
+      electron-updater:
+        specifier: ^6.6.2
+        version: 6.6.2
+      electron-window-state:
+        specifier: ^5.0.3
+        version: 5.0.3
+      fs-extra:
+        specifier: ^11.3.2
+        version: 11.3.2
+      glob-to-regexp:
+        specifier: ^0.4.1
+        version: 0.4.1
+      grapheme-splitter:
+        specifier: ^1.0.4
+        version: 1.0.4
+      handlebars:
+        specifier: ^4.7.8
+        version: 4.7.8
+      hpagent:
+        specifier: ^1.2.0
+        version: 1.2.0
+      http-proxy-node16:
+        specifier: ^1.0.6
+        version: 1.0.6
+      immer:
+        specifier: ^10.1.3
+        version: 10.1.3
+      isomorphic-ws:
+        specifier: ^5.0.0
+        version: 5.0.0(ws@8.20.0)
+      joi:
+        specifier: ^18.0.1
+        version: 18.0.1
+      js-yaml:
+        specifier: ^4.1.0
+        version: 4.1.0
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
+      micromatch:
+        specifier: ^4.0.8
+        version: 4.0.8
+      mobx:
+        specifier: ^6.13.7
+        version: 6.15.0
+      mobx-react:
+        specifier: ^7.6.0
+        version: 7.6.0(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      mobx-react-lite:
+        specifier: 3.4.3
+        version: 3.4.3(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      moment:
+        specifier: ^2.30.1
+        version: 2.30.1
+      moment-timezone:
+        specifier: ^0.6.0
+        version: 0.6.0
+      node-pty:
+        specifier: 1.1.0-beta34
+        version: 1.1.0-beta34
+      p-limit:
+        specifier: ^3.1.0
+        version: 3.1.0
+      path-to-regexp:
+        specifier: ^6.3.0
+        version: 6.3.0
+      pnpm:
+        specifier: ^10.17.1
+        version: 10.17.1
+      proper-lockfile:
+        specifier: ^4.1.2
+        version: 4.1.2
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
+      react-router:
+        specifier: ^5.3.4
+        version: 5.3.4(react@18.3.1)
+      rfc4648:
+        specifier: ^1.5.4
+        version: 1.5.4
+      scheduler:
+        specifier: ^0.23.2
+        version: 0.23.2
+      selfsigned:
+        specifier: ^3.0.1
+        version: 3.0.1
+      semver:
+        specifier: ^7.7.2
+        version: 7.7.3
+      stoppable:
+        specifier: ^1.1.0
+        version: 1.1.0
+      stream-buffers:
+        specifier: ^3.0.3
+        version: 3.0.3
+      tar:
+        specifier: ^7.4.4
+        version: 7.5.2
+      tar-fs:
+        specifier: ^3.1.1
+        version: 3.1.1
+      tcp-port-used:
+        specifier: ^1.0.2
+        version: 1.0.2
+      tempy:
+        specifier: 1.0.1
+        version: 1.0.1
+      triple-beam:
+        specifier: ^1.4.1
+        version: 1.4.1
+      typed-regex:
+        specifier: ^0.0.8
+        version: 0.0.8
+      url-parse:
+        specifier: ^1.5.10
+        version: 1.5.10
+      use-sync-external-store:
+        specifier: ^1.6.0
+        version: 1.6.0(react@18.3.1)
+      uuid:
+        specifier: ^11.1.0
+        version: 11.1.0
+      winston:
+        specifier: ^3.17.0
+        version: 3.18.3
+      ws:
+        specifier: ^8.18.3
+        version: 8.20.0
+      zod:
+        specifier: ^4.1.11
+        version: 4.1.12
+    devDependencies:
+      '@electron/rebuild':
+        specifier: ^4.0.1
+        version: 4.0.1
+      '@k-lens/animate':
+        specifier: workspace:^
+        version: link:../packages/ui-components/animate
+      '@k-lens/button':
+        specifier: workspace:^
+        version: link:../packages/ui-components/button
+      '@k-lens/cluster-sidebar':
+        specifier: workspace:^
+        version: link:../packages/cluster-sidebar
+      '@k-lens/ensure-binaries':
+        specifier: workspace:^
+        version: link:../packages/ensure-binaries
+      '@k-lens/error-boundary':
+        specifier: workspace:^
+        version: link:../packages/ui-components/error-boundary
+      '@k-lens/generate-tray-icons':
+        specifier: workspace:^
+        version: link:../packages/generate-tray-icons
+      '@k-lens/icon':
+        specifier: workspace:^
+        version: link:../packages/ui-components/icon
+      '@k-lens/keyboard-shortcuts':
+        specifier: workspace:^
+        version: link:../packages/business-features/keyboard-shortcuts
+      '@k-lens/messaging-for-renderer':
+        specifier: workspace:^
+        version: link:../packages/technical-features/messaging/messaging-for-renderer
+      '@k-lens/notifications':
+        specifier: workspace:^
+        version: link:../packages/ui-components/notifications
+      '@k-lens/react-application':
+        specifier: workspace:^
+        version: link:../packages/technical-features/react-application
+      '@k-lens/resizing-anchor':
+        specifier: workspace:^
+        version: link:../packages/ui-components/resizing-anchor
+      '@k-lens/routing':
+        specifier: workspace:^
+        version: link:../packages/routing
+      '@k-lens/spinner':
+        specifier: workspace:^
+        version: link:../packages/ui-components/spinner
+      '@k-lens/test-utils':
+        specifier: workspace:^
+        version: link:../packages/utility-features/test-utils
+      '@k-lens/tooltip':
+        specifier: workspace:^
+        version: link:../packages/ui-components/tooltip
+      '@ogre-tools/injectable-react':
+        specifier: ^17.11.1
+        version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)(mobx-react@7.6.0(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@pmmmwh/react-refresh-webpack-plugin':
+        specifier: ^0.6.1
+        version: 0.6.1(react-refresh@0.18.0)(type-fest@4.41.0)(webpack-dev-server@5.2.2)(webpack-hot-middleware@2.26.1)(webpack@5.102.1)
+      '@side/jest-runtime':
+        specifier: ^1.1.0
+        version: 1.1.0(@jest/transform@29.7.0)(jest-runtime@29.7.0)(jest@29.7.0(@types/node@22.16.5)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@22.16.5)(typescript@5.9.3)))
+      '@types/circular-dependency-plugin':
+        specifier: 5.0.8
+        version: 5.0.8(@swc/core@1.13.5)(webpack-cli@6.0.1)
+      '@types/fs-extra':
+        specifier: ^11.0.4
+        version: 11.0.4
+      '@types/jest':
+        specifier: ^29.5.14
+        version: 29.5.14
+      '@types/lodash':
+        specifier: ^4.17.20
+        version: 4.17.20
+      '@types/node':
+        specifier: ~22.16.5
+        version: 22.16.5
+      '@types/webpack-env':
+        specifier: ^1.18.8
+        version: 1.18.8
+      circular-dependency-plugin:
+        specifier: ^5.2.2
+        version: 5.2.2(patch_hash=fc0571771d63f45e608503224f91a2c744a2b48c5088413e14660ee7da11fd51)(webpack@5.102.1)
+      concurrently:
+        specifier: ^9.2.1
+        version: 9.2.1
+      copy-webpack-plugin:
+        specifier: ^13.0.0
+        version: 13.0.1(webpack@5.102.1)
+      cross-env:
+        specifier: ^10.1.0
+        version: 10.1.0
+      css-loader:
+        specifier: ^6.11.0
+        version: 6.11.0(webpack@5.102.1)
+      electron:
+        specifier: ^35.7.5
+        version: 35.7.5
+      electron-builder:
+        specifier: ^26.0.12
+        version: 26.0.12(electron-builder-squirrel-windows@26.0.12)
+      electron-builder-squirrel-windows:
+        specifier: 26.0.12
+        version: 26.0.12(dmg-builder@26.0.12)
+      fork-ts-checker-webpack-plugin:
+        specifier: ^9.1.0
+        version: 9.1.0(typescript@5.9.3)(webpack@5.102.1)
+      html-webpack-plugin:
+        specifier: ^5.6.3
+        version: 5.6.4(webpack@5.102.1)
+      identity-obj-proxy:
+        specifier: ^3.0.0
+        version: 3.0.0
+      jest:
+        specifier: ^29.7.0
+        version: 29.7.0(@types/node@22.16.5)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@22.16.5)(typescript@5.9.3))
+      jest-environment-jsdom:
+        specifier: ^29.7.0
+        version: 29.7.0
+      mini-css-extract-plugin:
+        specifier: ^2.9.4
+        version: 2.9.4(webpack@5.102.1)
+      monaco-editor-webpack-plugin:
+        specifier: ^7.1.0
+        version: 7.1.1(monaco-editor@0.53.0)(webpack@5.102.1)
+      node-gyp:
+        specifier: ^12.1.0
+        version: 12.1.0
+      node-loader:
+        specifier: ^2.1.0
+        version: 2.1.0(webpack@5.102.1)
+      nodemon:
+        specifier: ^3.1.10
+        version: 3.1.10
+      playwright:
+        specifier: ^1.55.0
+        version: 1.56.0
+      sass-loader:
+        specifier: ^16.0.5
+        version: 16.0.5(sass@1.93.2)(webpack@5.102.1)
+      style-loader:
+        specifier: ^4.0.0
+        version: 4.0.0(webpack@5.102.1)
+      ts-jest:
+        specifier: ^29.4.4
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@22.16.5)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@22.16.5)(typescript@5.9.3)))(typescript@5.9.3)
+      ts-loader:
+        specifier: ^9.5.4
+        version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
+      ts-node:
+        specifier: ^10.9.2
+        version: 10.9.2(@swc/core@1.13.5)(@types/node@22.16.5)(typescript@5.9.3)
+      typescript:
+        specifier: ^5.9.2
+        version: 5.9.3
+      typescript-plugin-css-modules:
+        specifier: ^5.2.0
+        version: 5.2.0(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@22.16.5)(typescript@5.9.3))(typescript@5.9.3)
+      webpack:
+        specifier: ^5.101.3
+        version: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1)
+      webpack-cli:
+        specifier: ^6.0.1
+        version: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.102.1)
+      webpack-dev-server:
+        specifier: ^5.2.2
+        version: 5.2.2(webpack-cli@6.0.1)(webpack@5.102.1)
+      webpack-node-externals:
+        specifier: ^3.0.0
+        version: 3.0.0
+
   packages/business-features/keyboard-shortcuts:
     dependencies:
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../../technical-features/feature-core
+      '@k-lens/react-application':
+        specifier: workspace:^
+        version: link:../../technical-features/react-application
       '@ogre-tools/fp':
         specifier: ^17.11.1
         version: 17.11.1(lodash@4.17.21)
@@ -77,12 +516,6 @@ importers:
       '@ogre-tools/injectable-react':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)(mobx-react@7.6.0(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../../technical-features/feature-core
-      '@skuberplus/react-application':
-        specifier: workspace:^
-        version: link:../../technical-features/react-application
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
@@ -90,27 +523,27 @@ importers:
         specifier: 18.3.1
         version: 18.3.1
     devDependencies:
+      '@k-lens/application':
+        specifier: workspace:^
+        version: link:../../technical-features/application/application
+      '@k-lens/jest':
+        specifier: workspace:^
+        version: link:../../infrastructure/jest
+      '@k-lens/react-testing-library-discovery':
+        specifier: workspace:^
+        version: link:../../utility-features/react-testing-library-discovery
+      '@k-lens/typescript':
+        specifier: workspace:^
+        version: link:../../infrastructure/typescript
+      '@k-lens/utilities':
+        specifier: workspace:^
+        version: link:../../utility-features/utilities
+      '@k-lens/webpack':
+        specifier: workspace:^
+        version: link:../../infrastructure/webpack
       '@ogre-tools/injectable-extension-for-mobx':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)(mobx@6.15.0)
-      '@skuberplus/application':
-        specifier: workspace:^
-        version: link:../../technical-features/application/application
-      '@skuberplus/jest':
-        specifier: workspace:^
-        version: link:../../infrastructure/jest
-      '@skuberplus/react-testing-library-discovery':
-        specifier: workspace:^
-        version: link:../../utility-features/react-testing-library-discovery
-      '@skuberplus/typescript':
-        specifier: workspace:^
-        version: link:../../infrastructure/typescript
-      '@skuberplus/utilities':
-        specifier: workspace:^
-        version: link:../../utility-features/utilities
-      '@skuberplus/webpack':
-        specifier: workspace:^
-        version: link:../../infrastructure/webpack
       '@testing-library/react':
         specifier: ^16.3.0
         version: 16.3.0(@testing-library/dom@10.4.1)(@types/react-dom@18.3.3(@types/react@18.3.3))(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -128,7 +561,7 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       jest-environment-jsdom:
         specifier: ^29.7.0
         version: 29.7.0
@@ -137,7 +570,7 @@ importers:
         version: 6.15.0
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -151,10 +584,10 @@ importers:
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
     devDependencies:
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../infrastructure/webpack
       '@types/react':
@@ -169,6 +602,12 @@ importers:
 
   packages/cluster-sidebar:
     dependencies:
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../technical-features/feature-core
+      '@k-lens/utilities':
+        specifier: workspace:^
+        version: link:../utility-features/utilities
       '@ogre-tools/injectable':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
@@ -178,23 +617,17 @@ importers:
       '@ogre-tools/injectable-extension-for-mobx':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)(mobx@6.15.0)
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../technical-features/feature-core
-      '@skuberplus/utilities':
-        specifier: workspace:^
-        version: link:../utility-features/utilities
       mobx:
         specifier: ^6.13.7
         version: 6.15.0
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../infrastructure/jest
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../infrastructure/webpack
       '@types/lodash':
@@ -208,7 +641,7 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       jest-environment-jsdom:
         specifier: ^29.7.0
         version: 29.7.0
@@ -217,7 +650,7 @@ importers:
         version: 4.17.21
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -251,6 +684,120 @@ importers:
       '@hookform/resolvers':
         specifier: ^5.2.2
         version: 5.2.2(react-hook-form@7.65.0(react@18.3.1))
+      '@k-lens/animate':
+        specifier: workspace:^
+        version: link:../ui-components/animate
+      '@k-lens/application':
+        specifier: workspace:^
+        version: link:../technical-features/application/application
+      '@k-lens/application-for-electron-main':
+        specifier: workspace:^
+        version: link:../technical-features/application/application-for-electron-main
+      '@k-lens/button':
+        specifier: workspace:^
+        version: link:../ui-components/button
+      '@k-lens/cluster-settings':
+        specifier: workspace:^
+        version: link:../cluster-settings
+      '@k-lens/cluster-sidebar':
+        specifier: workspace:^
+        version: link:../cluster-sidebar
+      '@k-lens/error-boundary':
+        specifier: workspace:^
+        version: link:../ui-components/error-boundary
+      '@k-lens/event-emitter':
+        specifier: workspace:^
+        version: link:../utility-features/event-emitter
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../technical-features/feature-core
+      '@k-lens/icon':
+        specifier: workspace:^
+        version: link:../ui-components/icon
+      '@k-lens/json-api':
+        specifier: workspace:^
+        version: link:../utility-features/json-api
+      '@k-lens/keyboard-shortcuts':
+        specifier: workspace:^
+        version: link:../business-features/keyboard-shortcuts
+      '@k-lens/kube-api':
+        specifier: workspace:^
+        version: link:../utility-features/kube-api
+      '@k-lens/kube-api-specifics':
+        specifier: workspace:^
+        version: link:../utility-features/kube-api-specifics
+      '@k-lens/kube-object':
+        specifier: workspace:^
+        version: link:../kube-object
+      '@k-lens/kubectl-versions':
+        specifier: workspace:^
+        version: link:../kubectl-versions
+      '@k-lens/kubernetes-client-node':
+        specifier: workspace:^
+        version: link:../transpilation/kubernetes-client-node
+      '@k-lens/kubernetes-metrics-server':
+        specifier: workspace:^
+        version: link:../technical-features/kubernetes-metrics-server
+      '@k-lens/legacy-extensions':
+        specifier: workspace:^
+        version: link:../technical-features/application/legacy-extensions
+      '@k-lens/legacy-global-di':
+        specifier: workspace:^
+        version: link:../legacy-global-di
+      '@k-lens/list-layout':
+        specifier: workspace:^
+        version: link:../list-layout
+      '@k-lens/logger':
+        specifier: workspace:^
+        version: link:../logger
+      '@k-lens/messaging':
+        specifier: workspace:^
+        version: link:../technical-features/messaging/messaging
+      '@k-lens/metrics':
+        specifier: workspace:^
+        version: link:../metrics
+      '@k-lens/node-fetch':
+        specifier: workspace:^
+        version: link:../transpilation/node-fetch
+      '@k-lens/notifications':
+        specifier: workspace:^
+        version: link:../ui-components/notifications
+      '@k-lens/prometheus':
+        specifier: workspace:^
+        version: link:../technical-features/prometheus
+      '@k-lens/random':
+        specifier: workspace:^
+        version: link:../random
+      '@k-lens/react-application':
+        specifier: workspace:^
+        version: link:../technical-features/react-application
+      '@k-lens/resizing-anchor':
+        specifier: workspace:^
+        version: link:../ui-components/resizing-anchor
+      '@k-lens/resource-templates':
+        specifier: workspace:^
+        version: link:../resource-templates
+      '@k-lens/routing':
+        specifier: workspace:^
+        version: link:../routing
+      '@k-lens/run-many':
+        specifier: workspace:^
+        version: link:../utility-features/run-many
+      '@k-lens/spinner':
+        specifier: workspace:^
+        version: link:../ui-components/spinner
+      '@k-lens/startable-stoppable':
+        specifier: workspace:^
+        version: link:../utility-features/startable-stoppable
+      '@k-lens/storybook-shadcn':
+        specifier: workspace:*
+        version: link:../storybook-shadcn
+      '@k-lens/tooltip':
+        specifier: workspace:^
+        version: link:../ui-components/tooltip
+      '@k-lens/utilities':
+        specifier: workspace:^
+        version: link:../utility-features/utilities
       '@langchain/anthropic':
         specifier: 1.3.26
         version: 1.3.26(@langchain/core@1.1.39(@opentelemetry/api@1.9.0)(openai@6.10.0(ws@8.18.3)(zod@4.1.12))(ws@8.18.3))
@@ -374,120 +921,6 @@ importers:
       '@radix-ui/react-tooltip':
         specifier: ^1.2.8
         version: 1.2.8(@types/react-dom@18.3.3(@types/react@18.3.3))(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@skuberplus/animate':
-        specifier: workspace:^
-        version: link:../ui-components/animate
-      '@skuberplus/application':
-        specifier: workspace:^
-        version: link:../technical-features/application/application
-      '@skuberplus/application-for-electron-main':
-        specifier: workspace:^
-        version: link:../technical-features/application/application-for-electron-main
-      '@skuberplus/button':
-        specifier: workspace:^
-        version: link:../ui-components/button
-      '@skuberplus/cluster-settings':
-        specifier: workspace:^
-        version: link:../cluster-settings
-      '@skuberplus/cluster-sidebar':
-        specifier: workspace:^
-        version: link:../cluster-sidebar
-      '@skuberplus/error-boundary':
-        specifier: workspace:^
-        version: link:../ui-components/error-boundary
-      '@skuberplus/event-emitter':
-        specifier: workspace:^
-        version: link:../utility-features/event-emitter
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../technical-features/feature-core
-      '@skuberplus/icon':
-        specifier: workspace:^
-        version: link:../ui-components/icon
-      '@skuberplus/json-api':
-        specifier: workspace:^
-        version: link:../utility-features/json-api
-      '@skuberplus/keyboard-shortcuts':
-        specifier: workspace:^
-        version: link:../business-features/keyboard-shortcuts
-      '@skuberplus/kube-api':
-        specifier: workspace:^
-        version: link:../utility-features/kube-api
-      '@skuberplus/kube-api-specifics':
-        specifier: workspace:^
-        version: link:../utility-features/kube-api-specifics
-      '@skuberplus/kube-object':
-        specifier: workspace:^
-        version: link:../kube-object
-      '@skuberplus/kubectl-versions':
-        specifier: workspace:^
-        version: link:../kubectl-versions
-      '@skuberplus/kubernetes-client-node':
-        specifier: workspace:^
-        version: link:../transpilation/kubernetes-client-node
-      '@skuberplus/kubernetes-metrics-server':
-        specifier: workspace:^
-        version: link:../technical-features/kubernetes-metrics-server
-      '@skuberplus/legacy-extensions':
-        specifier: workspace:^
-        version: link:../technical-features/application/legacy-extensions
-      '@skuberplus/legacy-global-di':
-        specifier: workspace:^
-        version: link:../legacy-global-di
-      '@skuberplus/list-layout':
-        specifier: workspace:^
-        version: link:../list-layout
-      '@skuberplus/logger':
-        specifier: workspace:^
-        version: link:../logger
-      '@skuberplus/messaging':
-        specifier: workspace:^
-        version: link:../technical-features/messaging/messaging
-      '@skuberplus/metrics':
-        specifier: workspace:^
-        version: link:../metrics
-      '@skuberplus/node-fetch':
-        specifier: workspace:^
-        version: link:../transpilation/node-fetch
-      '@skuberplus/notifications':
-        specifier: workspace:^
-        version: link:../ui-components/notifications
-      '@skuberplus/prometheus':
-        specifier: workspace:^
-        version: link:../technical-features/prometheus
-      '@skuberplus/random':
-        specifier: workspace:^
-        version: link:../random
-      '@skuberplus/react-application':
-        specifier: workspace:^
-        version: link:../technical-features/react-application
-      '@skuberplus/resizing-anchor':
-        specifier: workspace:^
-        version: link:../ui-components/resizing-anchor
-      '@skuberplus/resource-templates':
-        specifier: workspace:^
-        version: link:../resource-templates
-      '@skuberplus/routing':
-        specifier: workspace:^
-        version: link:../routing
-      '@skuberplus/run-many':
-        specifier: workspace:^
-        version: link:../utility-features/run-many
-      '@skuberplus/spinner':
-        specifier: workspace:^
-        version: link:../ui-components/spinner
-      '@skuberplus/startable-stoppable':
-        specifier: workspace:^
-        version: link:../utility-features/startable-stoppable
-      '@skuberplus/storybook-shadcn':
-        specifier: workspace:*
-        version: link:../storybook-shadcn
-      '@skuberplus/tooltip':
-        specifier: workspace:^
-        version: link:../ui-components/tooltip
-      '@skuberplus/utilities':
-        specifier: workspace:^
-        version: link:../utility-features/utilities
       '@tabler/icons-react':
         specifier: ^3.35.0
         version: 3.35.0(react@18.3.1)
@@ -792,18 +1225,18 @@ importers:
       '@csstools/postcss-oklab-function':
         specifier: ^4.0.12
         version: 4.0.12(postcss@8.5.8)
+      '@k-lens/messaging-fake-bridge':
+        specifier: workspace:^
+        version: link:../technical-features/messaging/messaging-fake-bridge
+      '@k-lens/react-testing-library-discovery':
+        specifier: workspace:^
+        version: link:../utility-features/react-testing-library-discovery
+      '@k-lens/test-utils':
+        specifier: workspace:^
+        version: link:../utility-features/test-utils
       '@side/jest-runtime':
         specifier: ^1.1.0
         version: 1.1.0(@jest/transform@29.7.0)(jest-runtime@29.7.0)(jest@29.7.0(@types/node@22.16.5)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@22.16.5)(typescript@5.9.3)))
-      '@skuberplus/messaging-fake-bridge':
-        specifier: workspace:^
-        version: link:../technical-features/messaging/messaging-fake-bridge
-      '@skuberplus/react-testing-library-discovery':
-        specifier: workspace:^
-        version: link:../utility-features/react-testing-library-discovery
-      '@skuberplus/test-utils':
-        specifier: workspace:^
-        version: link:../utility-features/test-utils
       '@swc/core':
         specifier: ^1.13.5
         version: 1.13.5
@@ -1069,7 +1502,7 @@ importers:
 
   packages/extensions:
     dependencies:
-      '@skuberplus/core':
+      '@k-lens/core':
         specifier: workspace:^
         version: link:../core
     devDependencies:
@@ -1107,7 +1540,7 @@ importers:
         specifier: ^0.34.4
         version: 0.34.4
     devDependencies:
-      '@skuberplus/icon':
+      '@k-lens/icon':
         specifier: workspace:^
         version: link:../ui-components/icon
       '@types/jsdom':
@@ -1208,15 +1641,15 @@ importers:
       '@async-fn/jest':
         specifier: ^1.6.4
         version: 1.6.4(patch_hash=e6f6298f958eb8e8255087ea54bff3f834b249e874070c5caca2ebfa13fe4562)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@24.7.2)(typescript@5.9.3)))
+      '@k-lens/jest':
+        specifier: workspace:^
+        version: link:../jest
+      '@k-lens/typescript':
+        specifier: workspace:^
+        version: link:../typescript
       '@ogre-tools/test-utils':
         specifier: ^17.11.1
         version: 17.11.1(lodash@4.17.21)
-      '@skuberplus/jest':
-        specifier: workspace:^
-        version: link:../jest
-      '@skuberplus/typescript':
-        specifier: workspace:^
-        version: link:../typescript
       '@types/fs-extra':
         specifier: ^11.0.4
         version: 11.0.4
@@ -1241,7 +1674,7 @@ importers:
 
   packages/kube-object:
     dependencies:
-      '@skuberplus/utilities':
+      '@k-lens/utilities':
         specifier: workspace:^
         version: link:../utility-features/utilities
       auto-bind:
@@ -1257,13 +1690,13 @@ importers:
         specifier: ^0.0.8
         version: 0.0.8
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../infrastructure/jest
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../infrastructure/webpack
       '@types/lodash':
@@ -1274,13 +1707,13 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       jest-environment-jsdom:
         specifier: ^29.7.0
         version: 29.7.0
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -1293,10 +1726,10 @@ importers:
 
   packages/kubectl-versions:
     devDependencies:
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../infrastructure/webpack
       '@types/semver':
@@ -1326,15 +1759,15 @@ importers:
 
   packages/legacy-global-di:
     devDependencies:
+      '@k-lens/typescript':
+        specifier: workspace:^
+        version: link:../infrastructure/typescript
+      '@k-lens/webpack':
+        specifier: workspace:^
+        version: link:../infrastructure/webpack
       '@ogre-tools/injectable':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
-      '@skuberplus/typescript':
-        specifier: workspace:^
-        version: link:../infrastructure/typescript
-      '@skuberplus/webpack':
-        specifier: workspace:^
-        version: link:../infrastructure/webpack
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -1348,16 +1781,16 @@ importers:
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
     devDependencies:
-      '@skuberplus/kube-object':
+      '@k-lens/kube-object':
         specifier: workspace:^
         version: link:../kube-object
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../infrastructure/typescript
-      '@skuberplus/utilities':
+      '@k-lens/utilities':
         specifier: workspace:^
         version: link:../utility-features/utilities
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../infrastructure/webpack
       ts-loader:
@@ -1369,6 +1802,9 @@ importers:
 
   packages/logger:
     dependencies:
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../technical-features/feature-core
       '@ogre-tools/fp':
         specifier: ^17.11.1
         version: 17.11.1(lodash@4.17.21)
@@ -1378,9 +1814,6 @@ importers:
       '@ogre-tools/injectable-extension-for-auto-registration':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../technical-features/feature-core
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
@@ -1388,13 +1821,13 @@ importers:
         specifier: ^3.17.0
         version: 3.18.3
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../infrastructure/jest
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../infrastructure/webpack
       '@types/lodash':
@@ -1408,13 +1841,13 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       jest-environment-jsdom:
         specifier: ^29.7.0
         version: 29.7.0
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -1431,13 +1864,13 @@ importers:
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
     devDependencies:
-      '@skuberplus/kube-object':
+      '@k-lens/kube-object':
         specifier: workspace:^
         version: link:../kube-object
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../infrastructure/webpack
       '@types/react':
@@ -1455,23 +1888,23 @@ importers:
 
   packages/random:
     dependencies:
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../technical-features/feature-core
       '@ogre-tools/injectable':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
       '@ogre-tools/injectable-extension-for-auto-registration':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../technical-features/feature-core
       uuid:
         specifier: ^11.1.0
         version: 11.1.0
     devDependencies:
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../infrastructure/webpack
       '@types/webpack-env':
@@ -1488,6 +1921,9 @@ importers:
 
   packages/routing:
     dependencies:
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../technical-features/feature-core
       '@ogre-tools/fp':
         specifier: ^17.11.1
         version: 17.11.1(lodash@4.17.21)
@@ -1497,9 +1933,6 @@ importers:
       '@ogre-tools/injectable-extension-for-auto-registration':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../technical-features/feature-core
       history:
         specifier: ^4.10.1
         version: 4.10.1
@@ -1507,13 +1940,13 @@ importers:
         specifier: ^2.0.3
         version: 2.0.3
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../infrastructure/jest
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../infrastructure/webpack
       '@types/history':
@@ -1728,6 +2161,12 @@ importers:
 
   packages/technical-features/application/application:
     dependencies:
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../../feature-core
+      '@k-lens/run-many':
+        specifier: workspace:^
+        version: link:../../../utility-features/run-many
       '@ogre-tools/fp':
         specifier: ^17.11.1
         version: 17.11.1(lodash@4.17.21)
@@ -1737,26 +2176,20 @@ importers:
       '@ogre-tools/injectable-extension-for-auto-registration':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../../feature-core
-      '@skuberplus/run-many':
-        specifier: workspace:^
-        version: link:../../../utility-features/run-many
     devDependencies:
       '@async-fn/jest':
         specifier: ^1.6.4
-        version: 1.6.4(patch_hash=e6f6298f958eb8e8255087ea54bff3f834b249e874070c5caca2ebfa13fe4562)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))
-      '@skuberplus/jest':
+        version: 1.6.4(patch_hash=e6f6298f958eb8e8255087ea54bff3f834b249e874070c5caca2ebfa13fe4562)(jest@29.7.0(babel-plugin-macros@3.1.0))
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../../../infrastructure/jest
-      '@skuberplus/test-utils':
+      '@k-lens/test-utils':
         specifier: workspace:^
         version: link:../../../utility-features/test-utils
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../../infrastructure/webpack
       '@types/webpack-env':
@@ -1767,13 +2200,13 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -1786,40 +2219,40 @@ importers:
 
   packages/technical-features/application/application-for-electron-main:
     dependencies:
+      '@k-lens/application':
+        specifier: workspace:^
+        version: link:../application
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../../feature-core
+      '@k-lens/run-many':
+        specifier: workspace:^
+        version: link:../../../utility-features/run-many
       '@ogre-tools/injectable':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
       '@ogre-tools/injectable-extension-for-auto-registration':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)
-      '@skuberplus/application':
-        specifier: workspace:^
-        version: link:../application
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../../feature-core
-      '@skuberplus/run-many':
-        specifier: workspace:^
-        version: link:../../../utility-features/run-many
       electron:
         specifier: ^35.7.5
         version: 35.7.5
     devDependencies:
       '@async-fn/jest':
         specifier: ^1.6.4
-        version: 1.6.4(patch_hash=e6f6298f958eb8e8255087ea54bff3f834b249e874070c5caca2ebfa13fe4562)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))
+        version: 1.6.4(patch_hash=e6f6298f958eb8e8255087ea54bff3f834b249e874070c5caca2ebfa13fe4562)(jest@29.7.0(babel-plugin-macros@3.1.0))
+      '@k-lens/jest':
+        specifier: workspace:^
+        version: link:../../../infrastructure/jest
+      '@k-lens/typescript':
+        specifier: workspace:^
+        version: link:../../../infrastructure/typescript
+      '@k-lens/webpack':
+        specifier: workspace:^
+        version: link:../../../infrastructure/webpack
       '@ogre-tools/test-utils':
         specifier: ^17.11.1
         version: 17.11.1(lodash@4.17.21)
-      '@skuberplus/jest':
-        specifier: workspace:^
-        version: link:../../../infrastructure/jest
-      '@skuberplus/typescript':
-        specifier: workspace:^
-        version: link:../../../infrastructure/typescript
-      '@skuberplus/webpack':
-        specifier: workspace:^
-        version: link:../../../infrastructure/webpack
       '@types/webpack-env':
         specifier: ^1.18.8
         version: 1.18.8
@@ -1828,13 +2261,13 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -1851,13 +2284,13 @@ importers:
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../../../infrastructure/jest
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../../infrastructure/webpack
       identity-obj-proxy:
@@ -1865,10 +2298,10 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -1885,13 +2318,13 @@ importers:
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../../infrastructure/jest
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../infrastructure/webpack
       identity-obj-proxy:
@@ -1899,13 +2332,13 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       jest-environment-jsdom:
         specifier: ^29.7.0
         version: 29.7.0
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -1915,40 +2348,40 @@ importers:
 
   packages/technical-features/kubernetes-metrics-server:
     dependencies:
+      '@k-lens/application':
+        specifier: workspace:^
+        version: link:../application/application
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../feature-core
+      '@k-lens/kube-object':
+        specifier: workspace:^
+        version: link:../../kube-object
+      '@k-lens/prometheus':
+        specifier: workspace:^
+        version: link:../prometheus
+      '@k-lens/utilities':
+        specifier: workspace:^
+        version: link:../../utility-features/utilities
       '@ogre-tools/injectable':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
       '@ogre-tools/injectable-extension-for-auto-registration':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)
-      '@skuberplus/application':
-        specifier: workspace:^
-        version: link:../application/application
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../feature-core
-      '@skuberplus/kube-object':
-        specifier: workspace:^
-        version: link:../../kube-object
-      '@skuberplus/prometheus':
-        specifier: workspace:^
-        version: link:../prometheus
-      '@skuberplus/utilities':
-        specifier: workspace:^
-        version: link:../../utility-features/utilities
     devDependencies:
+      '@k-lens/kubernetes-client-node':
+        specifier: workspace:^
+        version: link:../../transpilation/kubernetes-client-node
+      '@k-lens/typescript':
+        specifier: workspace:^
+        version: link:../../infrastructure/typescript
+      '@k-lens/webpack':
+        specifier: workspace:^
+        version: link:../../infrastructure/webpack
       '@ogre-tools/fp':
         specifier: ^17.11.1
         version: 17.11.1(lodash@4.17.21)
-      '@skuberplus/kubernetes-client-node':
-        specifier: workspace:^
-        version: link:../../transpilation/kubernetes-client-node
-      '@skuberplus/typescript':
-        specifier: workspace:^
-        version: link:../../infrastructure/typescript
-      '@skuberplus/webpack':
-        specifier: workspace:^
-        version: link:../../infrastructure/webpack
       '@types/webpack-env':
         specifier: ^1.18.8
         version: 1.18.8
@@ -1964,16 +2397,37 @@ importers:
 
   packages/technical-features/messaging/computed-channel:
     dependencies:
+      '@k-lens/messaging':
+        specifier: workspace:^
+        version: link:../messaging
       '@ogre-tools/injectable':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
-      '@skuberplus/messaging':
-        specifier: workspace:^
-        version: link:../messaging
       mobx:
         specifier: ^6.13.7
         version: 6.15.0
     devDependencies:
+      '@k-lens/application':
+        specifier: workspace:^
+        version: link:../../application/application
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../../feature-core
+      '@k-lens/jest':
+        specifier: workspace:^
+        version: link:../../../infrastructure/jest
+      '@k-lens/messaging-fake-bridge':
+        specifier: workspace:^
+        version: link:../messaging-fake-bridge
+      '@k-lens/test-utils':
+        specifier: workspace:^
+        version: link:../../../utility-features/test-utils
+      '@k-lens/typescript':
+        specifier: workspace:^
+        version: link:../../../infrastructure/typescript
+      '@k-lens/webpack':
+        specifier: workspace:^
+        version: link:../../../infrastructure/webpack
       '@ogre-tools/fp':
         specifier: ^17.11.1
         version: 17.11.1(lodash@4.17.21)
@@ -1983,27 +2437,6 @@ importers:
       '@ogre-tools/injectable-extension-for-mobx':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)(mobx@6.15.0)
-      '@skuberplus/application':
-        specifier: workspace:^
-        version: link:../../application/application
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../../feature-core
-      '@skuberplus/jest':
-        specifier: workspace:^
-        version: link:../../../infrastructure/jest
-      '@skuberplus/messaging-fake-bridge':
-        specifier: workspace:^
-        version: link:../messaging-fake-bridge
-      '@skuberplus/test-utils':
-        specifier: workspace:^
-        version: link:../../../utility-features/test-utils
-      '@skuberplus/typescript':
-        specifier: workspace:^
-        version: link:../../../infrastructure/typescript
-      '@skuberplus/webpack':
-        specifier: workspace:^
-        version: link:../../../infrastructure/webpack
       '@testing-library/react':
         specifier: ^16.3.0
         version: 16.3.0(@testing-library/dom@10.4.1)(@types/react-dom@18.3.3(@types/react@18.3.3))(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2015,7 +2448,7 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       jest-environment-jsdom:
         specifier: ^29.7.0
         version: 29.7.0
@@ -2030,7 +2463,7 @@ importers:
         version: 18.3.1
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -2043,6 +2476,15 @@ importers:
 
   packages/technical-features/messaging/messaging:
     dependencies:
+      '@k-lens/application':
+        specifier: workspace:^
+        version: link:../../application/application
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../../feature-core
+      '@k-lens/startable-stoppable':
+        specifier: workspace:^
+        version: link:../../../utility-features/startable-stoppable
       '@ogre-tools/injectable':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
@@ -2052,29 +2494,20 @@ importers:
       '@ogre-tools/injectable-extension-for-mobx':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)(mobx@6.15.0)
-      '@skuberplus/application':
-        specifier: workspace:^
-        version: link:../../application/application
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../../feature-core
-      '@skuberplus/startable-stoppable':
-        specifier: workspace:^
-        version: link:../../../utility-features/startable-stoppable
       mobx:
         specifier: ^6.13.7
         version: 6.15.0
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../../../infrastructure/jest
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../../infrastructure/typescript
-      '@skuberplus/utilities':
+      '@k-lens/utilities':
         specifier: workspace:^
         version: link:../../../utility-features/utilities
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../../infrastructure/webpack
       '@types/webpack-env':
@@ -2085,7 +2518,7 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       jest-environment-jsdom:
         specifier: ^29.7.0
         version: 29.7.0
@@ -2094,7 +2527,7 @@ importers:
         version: 4.17.21
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -2109,41 +2542,41 @@ importers:
     dependencies:
       '@async-fn/jest':
         specifier: ^1.6.4
-        version: 1.6.4(patch_hash=e6f6298f958eb8e8255087ea54bff3f834b249e874070c5caca2ebfa13fe4562)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))
+        version: 1.6.4(patch_hash=e6f6298f958eb8e8255087ea54bff3f834b249e874070c5caca2ebfa13fe4562)(jest@29.7.0(babel-plugin-macros@3.1.0))
+      '@k-lens/messaging':
+        specifier: workspace:^
+        version: link:../messaging
       '@ogre-tools/fp':
         specifier: ^17.11.1
         version: 17.11.1(lodash@4.17.21)
-      '@skuberplus/messaging':
-        specifier: workspace:^
-        version: link:../messaging
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
     devDependencies:
+      '@k-lens/application':
+        specifier: workspace:^
+        version: link:../../application/application
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../../feature-core
+      '@k-lens/jest':
+        specifier: workspace:^
+        version: link:../../../infrastructure/jest
+      '@k-lens/test-utils':
+        specifier: workspace:^
+        version: link:../../../utility-features/test-utils
+      '@k-lens/typescript':
+        specifier: workspace:^
+        version: link:../../../infrastructure/typescript
+      '@k-lens/webpack':
+        specifier: workspace:^
+        version: link:../../../infrastructure/webpack
       '@ogre-tools/injectable':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
       '@ogre-tools/injectable-extension-for-mobx':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)(mobx@6.15.0)
-      '@skuberplus/application':
-        specifier: workspace:^
-        version: link:../../application/application
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../../feature-core
-      '@skuberplus/jest':
-        specifier: workspace:^
-        version: link:../../../infrastructure/jest
-      '@skuberplus/test-utils':
-        specifier: workspace:^
-        version: link:../../../utility-features/test-utils
-      '@skuberplus/typescript':
-        specifier: workspace:^
-        version: link:../../../infrastructure/typescript
-      '@skuberplus/webpack':
-        specifier: workspace:^
-        version: link:../../../infrastructure/webpack
       '@testing-library/react':
         specifier: ^16.3.0
         version: 16.3.0(@testing-library/dom@10.4.1)(@types/react-dom@18.3.3(@types/react@18.3.3))(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2155,7 +2588,7 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       jest-environment-jsdom:
         specifier: ^29.7.0
         version: 29.7.0
@@ -2164,7 +2597,7 @@ importers:
         version: 6.15.0
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -2177,6 +2610,12 @@ importers:
 
   packages/technical-features/messaging/messaging-for-main:
     dependencies:
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../../feature-core
+      '@k-lens/messaging':
+        specifier: workspace:^
+        version: link:../messaging
       '@ogre-tools/fp':
         specifier: ^17.11.1
         version: 17.11.1(lodash@4.17.21)
@@ -2186,12 +2625,6 @@ importers:
       '@ogre-tools/injectable-extension-for-auto-registration':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../../feature-core
-      '@skuberplus/messaging':
-        specifier: workspace:^
-        version: link:../messaging
       electron:
         specifier: ^35.7.5
         version: 35.7.5
@@ -2201,17 +2634,17 @@ importers:
     devDependencies:
       '@async-fn/jest':
         specifier: ^1.6.4
-        version: 1.6.4(patch_hash=e6f6298f958eb8e8255087ea54bff3f834b249e874070c5caca2ebfa13fe4562)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))
-      '@skuberplus/jest':
+        version: 1.6.4(patch_hash=e6f6298f958eb8e8255087ea54bff3f834b249e874070c5caca2ebfa13fe4562)(jest@29.7.0(babel-plugin-macros@3.1.0))
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../../../infrastructure/jest
-      '@skuberplus/test-utils':
+      '@k-lens/test-utils':
         specifier: workspace:^
         version: link:../../../utility-features/test-utils
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../../infrastructure/webpack
       '@types/webpack-env':
@@ -2222,10 +2655,10 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -2238,40 +2671,40 @@ importers:
 
   packages/technical-features/messaging/messaging-for-renderer:
     dependencies:
+      '@k-lens/application':
+        specifier: workspace:^
+        version: link:../../application/application
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../../feature-core
+      '@k-lens/messaging':
+        specifier: workspace:^
+        version: link:../messaging
       '@ogre-tools/injectable':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
       '@ogre-tools/injectable-extension-for-auto-registration':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)
-      '@skuberplus/application':
-        specifier: workspace:^
-        version: link:../../application/application
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../../feature-core
-      '@skuberplus/messaging':
-        specifier: workspace:^
-        version: link:../messaging
       electron:
         specifier: ^35.7.5
         version: 35.7.5
     devDependencies:
       '@async-fn/jest':
         specifier: ^1.6.4
-        version: 1.6.4(patch_hash=e6f6298f958eb8e8255087ea54bff3f834b249e874070c5caca2ebfa13fe4562)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))
+        version: 1.6.4(patch_hash=e6f6298f958eb8e8255087ea54bff3f834b249e874070c5caca2ebfa13fe4562)(jest@29.7.0(babel-plugin-macros@3.1.0))
+      '@k-lens/jest':
+        specifier: workspace:^
+        version: link:../../../infrastructure/jest
+      '@k-lens/typescript':
+        specifier: workspace:^
+        version: link:../../../infrastructure/typescript
+      '@k-lens/webpack':
+        specifier: workspace:^
+        version: link:../../../infrastructure/webpack
       '@ogre-tools/injectable-extension-for-mobx':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)(mobx@6.15.0)
-      '@skuberplus/jest':
-        specifier: workspace:^
-        version: link:../../../infrastructure/jest
-      '@skuberplus/typescript':
-        specifier: workspace:^
-        version: link:../../../infrastructure/typescript
-      '@skuberplus/webpack':
-        specifier: workspace:^
-        version: link:../../../infrastructure/webpack
       '@types/webpack-env':
         specifier: ^1.18.8
         version: 1.18.8
@@ -2280,7 +2713,7 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
@@ -2289,7 +2722,7 @@ importers:
         version: 6.15.0
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -2302,34 +2735,34 @@ importers:
 
   packages/technical-features/prometheus:
     dependencies:
+      '@k-lens/application':
+        specifier: workspace:^
+        version: link:../application/application
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../feature-core
+      '@k-lens/utilities':
+        specifier: workspace:^
+        version: link:../../utility-features/utilities
       '@ogre-tools/injectable':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
       '@ogre-tools/injectable-extension-for-auto-registration':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)
-      '@skuberplus/application':
-        specifier: workspace:^
-        version: link:../application/application
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../feature-core
-      '@skuberplus/utilities':
-        specifier: workspace:^
-        version: link:../../utility-features/utilities
     devDependencies:
+      '@k-lens/kubernetes-client-node':
+        specifier: workspace:^
+        version: link:../../transpilation/kubernetes-client-node
+      '@k-lens/typescript':
+        specifier: workspace:^
+        version: link:../../infrastructure/typescript
+      '@k-lens/webpack':
+        specifier: workspace:^
+        version: link:../../infrastructure/webpack
       '@ogre-tools/fp':
         specifier: ^17.11.1
         version: 17.11.1(lodash@4.17.21)
-      '@skuberplus/kubernetes-client-node':
-        specifier: workspace:^
-        version: link:../../transpilation/kubernetes-client-node
-      '@skuberplus/typescript':
-        specifier: workspace:^
-        version: link:../../infrastructure/typescript
-      '@skuberplus/webpack':
-        specifier: workspace:^
-        version: link:../../infrastructure/webpack
       '@types/webpack-env':
         specifier: ^1.18.8
         version: 1.18.8
@@ -2345,6 +2778,12 @@ importers:
 
   packages/technical-features/react-application:
     dependencies:
+      '@k-lens/application':
+        specifier: workspace:^
+        version: link:../application/application
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../feature-core
       '@ogre-tools/injectable':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
@@ -2357,12 +2796,6 @@ importers:
       '@ogre-tools/injectable-react':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)(mobx-react@7.6.0(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@skuberplus/application':
-        specifier: workspace:^
-        version: link:../application/application
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../feature-core
       mobx:
         specifier: ^6.13.7
         version: 6.15.0
@@ -2376,24 +2809,24 @@ importers:
         specifier: 18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
+      '@k-lens/jest':
+        specifier: workspace:^
+        version: link:../../infrastructure/jest
+      '@k-lens/react-testing-library-discovery':
+        specifier: workspace:^
+        version: link:../../utility-features/react-testing-library-discovery
+      '@k-lens/typescript':
+        specifier: workspace:^
+        version: link:../../infrastructure/typescript
+      '@k-lens/utilities':
+        specifier: workspace:^
+        version: link:../../utility-features/utilities
+      '@k-lens/webpack':
+        specifier: workspace:^
+        version: link:../../infrastructure/webpack
       '@ogre-tools/fp':
         specifier: ^17.11.1
         version: 17.11.1(lodash@4.17.21)
-      '@skuberplus/jest':
-        specifier: workspace:^
-        version: link:../../infrastructure/jest
-      '@skuberplus/react-testing-library-discovery':
-        specifier: workspace:^
-        version: link:../../utility-features/react-testing-library-discovery
-      '@skuberplus/typescript':
-        specifier: workspace:^
-        version: link:../../infrastructure/typescript
-      '@skuberplus/utilities':
-        specifier: workspace:^
-        version: link:../../utility-features/utilities
-      '@skuberplus/webpack':
-        specifier: workspace:^
-        version: link:../../infrastructure/webpack
       '@testing-library/react':
         specifier: ^16.3.0
         version: 16.3.0(@testing-library/dom@10.4.1)(@types/react-dom@18.3.3(@types/react@18.3.3))(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2411,7 +2844,7 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       jest-environment-jsdom:
         specifier: ^29.7.0
         version: 29.7.0
@@ -2420,7 +2853,7 @@ importers:
         version: 4.17.21
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -2433,10 +2866,10 @@ importers:
 
   packages/transpilation/kubernetes-client-node:
     dependencies:
-      '@skuberplus/node-fetch':
+      '@k-lens/node-fetch':
         specifier: workspace:^
         version: link:../node-fetch
-      '@skuberplus/openid-client':
+      '@k-lens/openid-client':
         specifier: workspace:^
         version: link:../openid-client
       hpagent:
@@ -2461,12 +2894,12 @@ importers:
         specifier: ^3.1.1
         version: 3.1.1
     devDependencies:
+      '@k-lens/typescript':
+        specifier: workspace:^
+        version: link:../../infrastructure/typescript
       '@kubernetes/client-node':
         specifier: ^1.3.0
         version: 1.4.0(encoding@0.1.13)
-      '@skuberplus/typescript':
-        specifier: workspace:^
-        version: link:../../infrastructure/typescript
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -2479,7 +2912,7 @@ importers:
 
   packages/transpilation/node-fetch:
     devDependencies:
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
       node-fetch:
@@ -2497,7 +2930,7 @@ importers:
 
   packages/transpilation/openid-client:
     devDependencies:
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
       openid-client:
@@ -2515,6 +2948,12 @@ importers:
 
   packages/ui-components/animate:
     dependencies:
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../../technical-features/feature-core
+      '@k-lens/utilities':
+        specifier: workspace:^
+        version: link:../../utility-features/utilities
       '@ogre-tools/injectable':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
@@ -2524,23 +2963,17 @@ importers:
       '@ogre-tools/injectable-react':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)(mobx-react@7.6.0(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../../technical-features/feature-core
-      '@skuberplus/utilities':
-        specifier: workspace:^
-        version: link:../../utility-features/utilities
       react:
         specifier: 18.3.1
         version: 18.3.1
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../../infrastructure/jest
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../infrastructure/webpack
       '@types/react':
@@ -2570,23 +3003,23 @@ importers:
 
   packages/ui-components/button:
     dependencies:
-      '@skuberplus/tooltip':
+      '@k-lens/tooltip':
         specifier: workspace:^
         version: link:../tooltip
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
-      '@skuberplus/utilities':
+      '@k-lens/utilities':
         specifier: workspace:^
         version: link:../../utility-features/utilities
       react:
         specifier: 18.3.1
         version: 18.3.1
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../../infrastructure/jest
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../infrastructure/webpack
       '@types/react':
@@ -2613,18 +3046,18 @@ importers:
 
   packages/ui-components/error-boundary:
     dependencies:
+      '@k-lens/button':
+        specifier: workspace:^
+        version: link:../button
+      '@k-lens/routing':
+        specifier: workspace:^
+        version: link:../../routing
       '@ogre-tools/injectable':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
       '@ogre-tools/injectable-react':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)(mobx-react@7.6.0(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@skuberplus/button':
-        specifier: workspace:^
-        version: link:../button
-      '@skuberplus/routing':
-        specifier: workspace:^
-        version: link:../../routing
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
@@ -2641,16 +3074,16 @@ importers:
         specifier: 18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../../infrastructure/jest
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
-      '@skuberplus/utilities':
+      '@k-lens/utilities':
         specifier: workspace:^
         version: link:../../utility-features/utilities
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../infrastructure/webpack
       '@types/react':
@@ -2680,21 +3113,21 @@ importers:
 
   packages/ui-components/icon:
     dependencies:
+      '@k-lens/logger':
+        specifier: workspace:^
+        version: link:../../logger
+      '@k-lens/tooltip':
+        specifier: workspace:^
+        version: link:../tooltip
+      '@k-lens/utilities':
+        specifier: workspace:^
+        version: link:../../utility-features/utilities
       '@ogre-tools/injectable':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
       '@ogre-tools/injectable-react':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)(mobx-react@7.6.0(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@skuberplus/logger':
-        specifier: workspace:^
-        version: link:../../logger
-      '@skuberplus/tooltip':
-        specifier: workspace:^
-        version: link:../tooltip
-      '@skuberplus/utilities':
-        specifier: workspace:^
-        version: link:../../utility-features/utilities
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
@@ -2714,13 +3147,13 @@ importers:
         specifier: ^5.3.4
         version: 5.3.4(react@18.3.1)
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../../infrastructure/jest
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../infrastructure/webpack
       '@types/history':
@@ -2759,6 +3192,21 @@ importers:
 
   packages/ui-components/notifications:
     dependencies:
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../../technical-features/feature-core
+      '@k-lens/json-api':
+        specifier: workspace:^
+        version: link:../../utility-features/json-api
+      '@k-lens/logger':
+        specifier: workspace:^
+        version: link:../../logger
+      '@k-lens/react-application':
+        specifier: workspace:^
+        version: link:../../technical-features/react-application
+      '@k-lens/utilities':
+        specifier: workspace:^
+        version: link:../../utility-features/utilities
       '@ogre-tools/fp':
         specifier: ^17.11.1
         version: 17.11.1(lodash@4.17.21)
@@ -2771,21 +3219,6 @@ importers:
       '@ogre-tools/injectable-react':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)(mobx-react@7.6.0(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../../technical-features/feature-core
-      '@skuberplus/json-api':
-        specifier: workspace:^
-        version: link:../../utility-features/json-api
-      '@skuberplus/logger':
-        specifier: workspace:^
-        version: link:../../logger
-      '@skuberplus/react-application':
-        specifier: workspace:^
-        version: link:../../technical-features/react-application
-      '@skuberplus/utilities':
-        specifier: workspace:^
-        version: link:../../utility-features/utilities
       mobx:
         specifier: ^6.13.7
         version: 6.15.0
@@ -2799,13 +3232,13 @@ importers:
         specifier: ^2.0.7
         version: 2.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../../infrastructure/jest
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../infrastructure/webpack
       '@types/lodash':
@@ -2841,7 +3274,7 @@ importers:
 
   packages/ui-components/resizing-anchor:
     dependencies:
-      '@skuberplus/utilities':
+      '@k-lens/utilities':
         specifier: workspace:^
         version: link:../../utility-features/utilities
       lodash:
@@ -2857,13 +3290,13 @@ importers:
         specifier: 18.3.1
         version: 18.3.1
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../../infrastructure/jest
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../infrastructure/webpack
       '@types/lodash':
@@ -2893,20 +3326,20 @@ importers:
 
   packages/ui-components/spinner:
     dependencies:
-      '@skuberplus/utilities':
+      '@k-lens/utilities':
         specifier: workspace:^
         version: link:../../utility-features/utilities
       react:
         specifier: 18.3.1
         version: 18.3.1
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../../infrastructure/jest
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../infrastructure/webpack
       '@types/react':
@@ -2933,7 +3366,7 @@ importers:
 
   packages/ui-components/tooltip:
     dependencies:
-      '@skuberplus/utilities':
+      '@k-lens/utilities':
         specifier: workspace:^
         version: link:../../utility-features/utilities
       auto-bind:
@@ -2955,13 +3388,13 @@ importers:
         specifier: 18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../../infrastructure/jest
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../infrastructure/webpack
       '@testing-library/jest-dom':
@@ -2990,7 +3423,7 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       jest-environment-jsdom:
         specifier: ^29.7.0
         version: 29.7.0
@@ -3002,7 +3435,7 @@ importers:
         version: 16.0.5(sass@1.93.2)(webpack@5.102.1)
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -3015,13 +3448,13 @@ importers:
 
   packages/utility-features/event-emitter:
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../../infrastructure/jest
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../infrastructure/webpack
       identity-obj-proxy:
@@ -3029,13 +3462,13 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       jest-environment-jsdom:
         specifier: ^29.7.0
         version: 29.7.0
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -3045,26 +3478,26 @@ importers:
 
   packages/utility-features/json-api:
     dependencies:
-      '@skuberplus/event-emitter':
+      '@k-lens/event-emitter':
         specifier: workspace:^
         version: link:../event-emitter
-      '@skuberplus/utilities':
+      '@k-lens/utilities':
         specifier: workspace:^
         version: link:../utilities
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
     devDependencies:
-      '@skuberplus/logger':
+      '@k-lens/logger':
         specifier: workspace:^
         version: link:../../logger
-      '@skuberplus/node-fetch':
+      '@k-lens/node-fetch':
         specifier: workspace:^
         version: link:../../transpilation/node-fetch
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../infrastructure/webpack
       '@types/lodash':
@@ -3088,21 +3521,21 @@ importers:
 
   packages/utility-features/kube-api:
     dependencies:
+      '@k-lens/json-api':
+        specifier: workspace:^
+        version: link:../json-api
+      '@k-lens/kube-object':
+        specifier: workspace:^
+        version: link:../../kube-object
+      '@k-lens/utilities':
+        specifier: workspace:^
+        version: link:../utilities
       '@ogre-tools/fp':
         specifier: ^17.11.1
         version: 17.11.1(lodash@4.17.21)
       '@ogre-tools/injectable':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
-      '@skuberplus/json-api':
-        specifier: workspace:^
-        version: link:../json-api
-      '@skuberplus/kube-object':
-        specifier: workspace:^
-        version: link:../../kube-object
-      '@skuberplus/utilities':
-        specifier: workspace:^
-        version: link:../utilities
       byline:
         specifier: ^5.0.0
         version: 5.0.0
@@ -3118,23 +3551,23 @@ importers:
     devDependencies:
       '@async-fn/jest':
         specifier: ^1.6.4
-        version: 1.6.4(patch_hash=e6f6298f958eb8e8255087ea54bff3f834b249e874070c5caca2ebfa13fe4562)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))
-      '@skuberplus/jest':
+        version: 1.6.4(patch_hash=e6f6298f958eb8e8255087ea54bff3f834b249e874070c5caca2ebfa13fe4562)(jest@29.7.0(babel-plugin-macros@3.1.0))
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../../infrastructure/jest
-      '@skuberplus/logger':
+      '@k-lens/logger':
         specifier: workspace:^
         version: link:../../logger
-      '@skuberplus/node-fetch':
+      '@k-lens/node-fetch':
         specifier: workspace:^
         version: link:../../transpilation/node-fetch
-      '@skuberplus/test-utils':
+      '@k-lens/test-utils':
         specifier: workspace:^
         version: link:../test-utils
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../infrastructure/webpack
       '@types/byline':
@@ -3148,13 +3581,13 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       rfc6902:
         specifier: ^5.1.2
         version: 5.1.2
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -3170,26 +3603,26 @@ importers:
 
   packages/utility-features/kube-api-specifics:
     dependencies:
+      '@k-lens/feature-core':
+        specifier: workspace:^
+        version: link:../../technical-features/feature-core
+      '@k-lens/kube-api':
+        specifier: workspace:^
+        version: link:../kube-api
+      '@k-lens/logger':
+        specifier: workspace:^
+        version: link:../../logger
       '@ogre-tools/injectable':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
       '@ogre-tools/injectable-extension-for-auto-registration':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../../technical-features/feature-core
-      '@skuberplus/kube-api':
-        specifier: workspace:^
-        version: link:../kube-api
-      '@skuberplus/logger':
-        specifier: workspace:^
-        version: link:../../logger
     devDependencies:
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../infrastructure/webpack
       '@types/webpack-env':
@@ -3208,10 +3641,10 @@ importers:
         specifier: ^10.4.1
         version: 10.4.1
     devDependencies:
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../infrastructure/webpack
       '@testing-library/react':
@@ -3226,7 +3659,7 @@ importers:
 
   packages/utility-features/run-many:
     dependencies:
-      '@skuberplus/utilities':
+      '@k-lens/utilities':
         specifier: workspace:^
         version: link:../utilities
       uuid:
@@ -3235,25 +3668,25 @@ importers:
     devDependencies:
       '@async-fn/jest':
         specifier: ^1.6.4
-        version: 1.6.4(patch_hash=e6f6298f958eb8e8255087ea54bff3f834b249e874070c5caca2ebfa13fe4562)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))
+        version: 1.6.4(patch_hash=e6f6298f958eb8e8255087ea54bff3f834b249e874070c5caca2ebfa13fe4562)(jest@29.7.0(babel-plugin-macros@3.1.0))
+      '@k-lens/jest':
+        specifier: workspace:^
+        version: link:../../infrastructure/jest
+      '@k-lens/test-utils':
+        specifier: workspace:^
+        version: link:../test-utils
+      '@k-lens/typescript':
+        specifier: workspace:^
+        version: link:../../infrastructure/typescript
+      '@k-lens/webpack':
+        specifier: workspace:^
+        version: link:../../infrastructure/webpack
       '@ogre-tools/fp':
         specifier: ^17.11.1
         version: 17.11.1(lodash@4.17.21)
       '@ogre-tools/injectable':
         specifier: ^17.11.1
         version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
-      '@skuberplus/jest':
-        specifier: workspace:^
-        version: link:../../infrastructure/jest
-      '@skuberplus/test-utils':
-        specifier: workspace:^
-        version: link:../test-utils
-      '@skuberplus/typescript':
-        specifier: workspace:^
-        version: link:../../infrastructure/typescript
-      '@skuberplus/webpack':
-        specifier: workspace:^
-        version: link:../../infrastructure/webpack
       '@types/uuid':
         specifier: ^11.0.0
         version: 11.0.0
@@ -3262,7 +3695,7 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       jest-environment-jsdom:
         specifier: ^29.7.0
         version: 29.7.0
@@ -3271,7 +3704,7 @@ importers:
         version: 6.15.0
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -3287,13 +3720,13 @@ importers:
 
   packages/utility-features/startable-stoppable:
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../../infrastructure/jest
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../infrastructure/webpack
       identity-obj-proxy:
@@ -3301,13 +3734,13 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       jest-environment-jsdom:
         specifier: ^29.7.0
         version: 29.7.0
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -3336,13 +3769,13 @@ importers:
         specifier: 18.3.1
         version: 18.3.1
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../../infrastructure/jest
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../infrastructure/webpack
       '@types/jest':
@@ -3403,13 +3836,13 @@ importers:
         specifier: ^0.0.8
         version: 0.0.8
     devDependencies:
-      '@skuberplus/jest':
+      '@k-lens/jest':
         specifier: workspace:^
         version: link:../../infrastructure/jest
-      '@skuberplus/typescript':
+      '@k-lens/typescript':
         specifier: workspace:^
         version: link:../../infrastructure/typescript
-      '@skuberplus/webpack':
+      '@k-lens/webpack':
         specifier: workspace:^
         version: link:../../infrastructure/webpack
       '@types/crypto-js':
@@ -3432,7 +3865,7 @@ importers:
         version: 3.0.0
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+        version: 29.7.0(babel-plugin-macros@3.1.0)
       jest-environment-jsdom:
         specifier: ^29.7.0
         version: 29.7.0
@@ -3441,7 +3874,7 @@ importers:
         version: 5.3.4(react@18.3.1)
       ts-jest:
         specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
+        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       ts-loader:
         specifier: ^9.5.4
         version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
@@ -3451,439 +3884,6 @@ importers:
       webpack:
         specifier: ^5.101.3
         version: 5.102.1
-
-  skuberplus:
-    dependencies:
-      '@astronautlabs/jsonpath':
-        specifier: ^1.1.2
-        version: 1.1.2
-      '@hapi/call':
-        specifier: ^9.0.1
-        version: 9.0.1
-      '@hapi/subtext':
-        specifier: ^8.1.1
-        version: 8.1.1
-      '@ogre-tools/fp':
-        specifier: ^17.11.1
-        version: 17.11.1(lodash@4.17.21)
-      '@ogre-tools/injectable':
-        specifier: ^17.11.1
-        version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21)
-      '@ogre-tools/injectable-extension-for-auto-registration':
-        specifier: ^17.11.1
-        version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)
-      '@ogre-tools/injectable-extension-for-mobx':
-        specifier: ^17.11.1
-        version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)(mobx@6.15.0)
-      '@skuberplus/application':
-        specifier: workspace:^
-        version: link:../packages/technical-features/application/application
-      '@skuberplus/application-for-electron-main':
-        specifier: workspace:^
-        version: link:../packages/technical-features/application/application-for-electron-main
-      '@skuberplus/core':
-        specifier: workspace:^
-        version: link:../packages/core
-      '@skuberplus/event-emitter':
-        specifier: workspace:^
-        version: link:../packages/utility-features/event-emitter
-      '@skuberplus/feature-core':
-        specifier: workspace:^
-        version: link:../packages/technical-features/feature-core
-      '@skuberplus/json-api':
-        specifier: workspace:^
-        version: link:../packages/utility-features/json-api
-      '@skuberplus/kube-api':
-        specifier: workspace:^
-        version: link:../packages/utility-features/kube-api
-      '@skuberplus/kube-api-specifics':
-        specifier: workspace:^
-        version: link:../packages/utility-features/kube-api-specifics
-      '@skuberplus/kube-object':
-        specifier: workspace:^
-        version: link:../packages/kube-object
-      '@skuberplus/kubectl-versions':
-        specifier: workspace:^
-        version: link:../packages/kubectl-versions
-      '@skuberplus/kubernetes-client-node':
-        specifier: workspace:^
-        version: link:../packages/transpilation/kubernetes-client-node
-      '@skuberplus/kubernetes-metrics-server':
-        specifier: workspace:^
-        version: link:../packages/technical-features/kubernetes-metrics-server
-      '@skuberplus/legacy-extensions':
-        specifier: workspace:^
-        version: link:../packages/technical-features/application/legacy-extensions
-      '@skuberplus/legacy-global-di':
-        specifier: workspace:^
-        version: link:../packages/legacy-global-di
-      '@skuberplus/logger':
-        specifier: workspace:^
-        version: link:../packages/logger
-      '@skuberplus/messaging':
-        specifier: workspace:^
-        version: link:../packages/technical-features/messaging/messaging
-      '@skuberplus/messaging-for-main':
-        specifier: workspace:^
-        version: link:../packages/technical-features/messaging/messaging-for-main
-      '@skuberplus/node-fetch':
-        specifier: workspace:^
-        version: link:../packages/transpilation/node-fetch
-      '@skuberplus/prometheus':
-        specifier: workspace:^
-        version: link:../packages/technical-features/prometheus
-      '@skuberplus/random':
-        specifier: workspace:^
-        version: link:../packages/random
-      '@skuberplus/run-many':
-        specifier: workspace:^
-        version: link:../packages/utility-features/run-many
-      '@skuberplus/startable-stoppable':
-        specifier: workspace:^
-        version: link:../packages/utility-features/startable-stoppable
-      '@skuberplus/utilities':
-        specifier: workspace:^
-        version: link:../packages/utility-features/utilities
-      auto-bind:
-        specifier: ^4.0.0
-        version: 4.0.0
-      await-lock:
-        specifier: ^2.2.2
-        version: 2.2.2
-      braces:
-        specifier: ^3.0.2
-        version: 3.0.3
-      byline:
-        specifier: ^5.0.0
-        version: 5.0.0
-      chalk:
-        specifier: ^4.1.2
-        version: 4.1.2
-      chokidar:
-        specifier: ^4.0.3
-        version: 4.0.3
-      clipboard-files:
-        specifier: ^3.0.0
-        version: 3.0.0
-      conf:
-        specifier: ^10.2.0
-        version: 10.2.0
-      cronstrue:
-        specifier: ^3.3.0
-        version: 3.3.0
-      crypto-js:
-        specifier: ^4.2.0
-        version: 4.2.0
-      dotenv:
-        specifier: ^17.3.1
-        version: 17.3.1
-      electron-store:
-        specifier: ^11.0.2
-        version: 11.0.2
-      electron-updater:
-        specifier: ^6.6.2
-        version: 6.6.2
-      electron-window-state:
-        specifier: ^5.0.3
-        version: 5.0.3
-      fs-extra:
-        specifier: ^11.3.2
-        version: 11.3.2
-      glob-to-regexp:
-        specifier: ^0.4.1
-        version: 0.4.1
-      grapheme-splitter:
-        specifier: ^1.0.4
-        version: 1.0.4
-      handlebars:
-        specifier: ^4.7.8
-        version: 4.7.8
-      hpagent:
-        specifier: ^1.2.0
-        version: 1.2.0
-      http-proxy-node16:
-        specifier: ^1.0.6
-        version: 1.0.6
-      immer:
-        specifier: ^10.1.3
-        version: 10.1.3
-      isomorphic-ws:
-        specifier: ^5.0.0
-        version: 5.0.0(ws@8.18.3)
-      joi:
-        specifier: ^18.0.1
-        version: 18.0.1
-      js-yaml:
-        specifier: ^4.1.0
-        version: 4.1.0
-      lodash:
-        specifier: ^4.17.21
-        version: 4.17.21
-      micromatch:
-        specifier: ^4.0.8
-        version: 4.0.8
-      mobx:
-        specifier: ^6.13.7
-        version: 6.15.0
-      mobx-react:
-        specifier: ^7.6.0
-        version: 7.6.0(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      mobx-react-lite:
-        specifier: 3.4.3
-        version: 3.4.3(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      moment:
-        specifier: ^2.30.1
-        version: 2.30.1
-      moment-timezone:
-        specifier: ^0.6.0
-        version: 0.6.0
-      node-pty:
-        specifier: 1.1.0-beta34
-        version: 1.1.0-beta34
-      p-limit:
-        specifier: ^3.1.0
-        version: 3.1.0
-      path-to-regexp:
-        specifier: ^6.3.0
-        version: 6.3.0
-      pnpm:
-        specifier: ^10.17.1
-        version: 10.17.1
-      proper-lockfile:
-        specifier: ^4.1.2
-        version: 4.1.2
-      react:
-        specifier: 18.3.1
-        version: 18.3.1
-      react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
-      react-router:
-        specifier: ^5.3.4
-        version: 5.3.4(react@18.3.1)
-      rfc4648:
-        specifier: ^1.5.4
-        version: 1.5.4
-      scheduler:
-        specifier: ^0.23.2
-        version: 0.23.2
-      selfsigned:
-        specifier: ^3.0.1
-        version: 3.0.1
-      semver:
-        specifier: ^7.7.2
-        version: 7.7.3
-      stoppable:
-        specifier: ^1.1.0
-        version: 1.1.0
-      stream-buffers:
-        specifier: ^3.0.3
-        version: 3.0.3
-      tar:
-        specifier: ^7.4.4
-        version: 7.5.2
-      tar-fs:
-        specifier: ^3.1.1
-        version: 3.1.1
-      tcp-port-used:
-        specifier: ^1.0.2
-        version: 1.0.2
-      tempy:
-        specifier: 1.0.1
-        version: 1.0.1
-      triple-beam:
-        specifier: ^1.4.1
-        version: 1.4.1
-      typed-regex:
-        specifier: ^0.0.8
-        version: 0.0.8
-      url-parse:
-        specifier: ^1.5.10
-        version: 1.5.10
-      use-sync-external-store:
-        specifier: ^1.6.0
-        version: 1.6.0(react@18.3.1)
-      uuid:
-        specifier: ^11.1.0
-        version: 11.1.0
-      winston:
-        specifier: ^3.17.0
-        version: 3.18.3
-      ws:
-        specifier: ^8.18.3
-        version: 8.18.3
-      zod:
-        specifier: ^4.1.11
-        version: 4.1.12
-    devDependencies:
-      '@electron/rebuild':
-        specifier: ^4.0.1
-        version: 4.0.1
-      '@ogre-tools/injectable-react':
-        specifier: ^17.11.1
-        version: 17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(@ogre-tools/injectable@17.11.1(@ogre-tools/fp@17.11.1(lodash@4.17.21))(lodash@4.17.21))(lodash@4.17.21)(mobx-react@7.6.0(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@pmmmwh/react-refresh-webpack-plugin':
-        specifier: ^0.6.1
-        version: 0.6.1(react-refresh@0.18.0)(type-fest@4.41.0)(webpack-dev-server@5.2.2)(webpack-hot-middleware@2.26.1)(webpack@5.102.1)
-      '@side/jest-runtime':
-        specifier: ^1.1.0
-        version: 1.1.0(@jest/transform@29.7.0)(jest-runtime@29.7.0)(jest@29.7.0(@types/node@22.16.5)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@22.16.5)(typescript@5.9.3)))
-      '@skuberplus/animate':
-        specifier: workspace:^
-        version: link:../packages/ui-components/animate
-      '@skuberplus/button':
-        specifier: workspace:^
-        version: link:../packages/ui-components/button
-      '@skuberplus/cluster-sidebar':
-        specifier: workspace:^
-        version: link:../packages/cluster-sidebar
-      '@skuberplus/ensure-binaries':
-        specifier: workspace:^
-        version: link:../packages/ensure-binaries
-      '@skuberplus/error-boundary':
-        specifier: workspace:^
-        version: link:../packages/ui-components/error-boundary
-      '@skuberplus/generate-tray-icons':
-        specifier: workspace:^
-        version: link:../packages/generate-tray-icons
-      '@skuberplus/icon':
-        specifier: workspace:^
-        version: link:../packages/ui-components/icon
-      '@skuberplus/keyboard-shortcuts':
-        specifier: workspace:^
-        version: link:../packages/business-features/keyboard-shortcuts
-      '@skuberplus/messaging-for-renderer':
-        specifier: workspace:^
-        version: link:../packages/technical-features/messaging/messaging-for-renderer
-      '@skuberplus/notifications':
-        specifier: workspace:^
-        version: link:../packages/ui-components/notifications
-      '@skuberplus/react-application':
-        specifier: workspace:^
-        version: link:../packages/technical-features/react-application
-      '@skuberplus/resizing-anchor':
-        specifier: workspace:^
-        version: link:../packages/ui-components/resizing-anchor
-      '@skuberplus/routing':
-        specifier: workspace:^
-        version: link:../packages/routing
-      '@skuberplus/spinner':
-        specifier: workspace:^
-        version: link:../packages/ui-components/spinner
-      '@skuberplus/test-utils':
-        specifier: workspace:^
-        version: link:../packages/utility-features/test-utils
-      '@skuberplus/tooltip':
-        specifier: workspace:^
-        version: link:../packages/ui-components/tooltip
-      '@types/circular-dependency-plugin':
-        specifier: 5.0.8
-        version: 5.0.8(@swc/core@1.13.5)(webpack-cli@6.0.1)
-      '@types/fs-extra':
-        specifier: ^11.0.4
-        version: 11.0.4
-      '@types/jest':
-        specifier: ^29.5.14
-        version: 29.5.14
-      '@types/lodash':
-        specifier: ^4.17.20
-        version: 4.17.20
-      '@types/node':
-        specifier: ~22.16.5
-        version: 22.16.5
-      '@types/webpack-env':
-        specifier: ^1.18.8
-        version: 1.18.8
-      circular-dependency-plugin:
-        specifier: ^5.2.2
-        version: 5.2.2(patch_hash=fc0571771d63f45e608503224f91a2c744a2b48c5088413e14660ee7da11fd51)(webpack@5.102.1)
-      concurrently:
-        specifier: ^9.2.1
-        version: 9.2.1
-      copy-webpack-plugin:
-        specifier: ^13.0.0
-        version: 13.0.1(webpack@5.102.1)
-      cross-env:
-        specifier: ^10.1.0
-        version: 10.1.0
-      css-loader:
-        specifier: ^6.11.0
-        version: 6.11.0(webpack@5.102.1)
-      electron:
-        specifier: ^35.7.5
-        version: 35.7.5
-      electron-builder:
-        specifier: ^26.0.12
-        version: 26.0.12(electron-builder-squirrel-windows@26.0.12)
-      electron-builder-squirrel-windows:
-        specifier: 26.0.12
-        version: 26.0.12(dmg-builder@26.0.12)
-      fork-ts-checker-webpack-plugin:
-        specifier: ^9.1.0
-        version: 9.1.0(typescript@5.9.3)(webpack@5.102.1)
-      html-webpack-plugin:
-        specifier: ^5.6.3
-        version: 5.6.4(webpack@5.102.1)
-      identity-obj-proxy:
-        specifier: ^3.0.0
-        version: 3.0.0
-      jest:
-        specifier: ^29.7.0
-        version: 29.7.0(@types/node@22.16.5)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@22.16.5)(typescript@5.9.3))
-      jest-environment-jsdom:
-        specifier: ^29.7.0
-        version: 29.7.0
-      mini-css-extract-plugin:
-        specifier: ^2.9.4
-        version: 2.9.4(webpack@5.102.1)
-      monaco-editor-webpack-plugin:
-        specifier: ^7.1.0
-        version: 7.1.1(monaco-editor@0.53.0)(webpack@5.102.1)
-      node-gyp:
-        specifier: ^12.1.0
-        version: 12.1.0
-      node-loader:
-        specifier: ^2.1.0
-        version: 2.1.0(webpack@5.102.1)
-      nodemon:
-        specifier: ^3.1.10
-        version: 3.1.10
-      playwright:
-        specifier: ^1.55.0
-        version: 1.56.0
-      sass-loader:
-        specifier: ^16.0.5
-        version: 16.0.5(sass@1.93.2)(webpack@5.102.1)
-      style-loader:
-        specifier: ^4.0.0
-        version: 4.0.0(webpack@5.102.1)
-      ts-jest:
-        specifier: ^29.4.4
-        version: 29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@22.16.5)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@22.16.5)(typescript@5.9.3)))(typescript@5.9.3)
-      ts-loader:
-        specifier: ^9.5.4
-        version: 9.5.4(typescript@5.9.3)(webpack@5.102.1)
-      ts-node:
-        specifier: ^10.9.2
-        version: 10.9.2(@swc/core@1.13.5)(@types/node@22.16.5)(typescript@5.9.3)
-      typescript:
-        specifier: ^5.9.2
-        version: 5.9.3
-      typescript-plugin-css-modules:
-        specifier: ^5.2.0
-        version: 5.2.0(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@22.16.5)(typescript@5.9.3))(typescript@5.9.3)
-      webpack:
-        specifier: ^5.101.3
-        version: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1)
-      webpack-cli:
-        specifier: ^6.0.1
-        version: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.102.1)
-      webpack-dev-server:
-        specifier: ^5.2.2
-        version: 5.2.2(webpack-cli@6.0.1)(webpack@5.102.1)
-      webpack-node-externals:
-        specifier: ^3.0.0
-        version: 3.0.0
 
 packages:
 
@@ -6613,9 +6613,6 @@ packages:
   '@so-ric/colorspace@1.1.6':
     resolution: {integrity: sha512-/KiKkpHNOBgkFJwu9sh48LkHSMYGyuTcSFK/qMBdnOAlrRJzRSXAOFB5qwzaVQuDl8wAvHVMkaASQDReTahxuw==}
 
-  '@standard-schema/spec@1.0.0':
-    resolution: {integrity: sha512-m2bOd0f2RT9k8QJx1JN85cZYyH1RqFBdlwtkSlf4tBDYLCiiZnv1fIIwacK6cqwXavOydf0NPToMQgpKq+dVlA==}
-
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
@@ -7400,6 +7397,7 @@ packages:
   '@xmldom/xmldom@0.8.11':
     resolution: {integrity: sha512-cQzWCtO6C8TQiYl1ruKNn2U6Ao4o4WBBcbL61yJl84x+j5sOWWFU9X7DpND8XZG3daDppSsigMdfAIl2upQBRw==}
     engines: {node: '>=10.0.0'}
+    deprecated: this version has critical issues, please update to the latest version
 
   '@xterm/addon-canvas@0.7.0':
     resolution: {integrity: sha512-LF5LYcfvefJuJ7QotNRdRSPc9YASAVDeoT5uyXS/nZshZXjYplGXRECBGiznwvhNL2I8bq1Lf5MzRwstsYQ2Iw==}
@@ -7798,9 +7796,6 @@ packages:
 
   brace-expansion@1.1.12:
     resolution: {integrity: sha512-9T9UjW3r0UW5c1Q7GTwllptXwhvYmEzFhzMfZ9H7FQWt+uZePjZPjBP/W1ZEyZ1twGWom5/56TF4lPcqjnDHcg==}
-
-  brace-expansion@2.0.2:
-    resolution: {integrity: sha512-Jt0vHyM+jmUBqojB7E1NIYadt0vI0Qxjxd2TErW94wDz+E2LAm5vKMXXwg6ZZBTHPuUlDgQHKXvjGBdfcF1ZDQ==}
 
   brace-expansion@2.0.3:
     resolution: {integrity: sha512-MCV/fYJEbqx68aE58kv2cA/kiky1G8vux3OR6/jbS+jIMe/6fJWa0DTzJU7dqijOWYwHi1t29FlfYI9uytqlpA==}
@@ -10868,10 +10863,6 @@ packages:
   minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
 
-  minimatch@5.1.6:
-    resolution: {integrity: sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==}
-    engines: {node: '>=10'}
-
   minimatch@5.1.9:
     resolution: {integrity: sha512-7o1wEA2RyMP7Iu7GNba9vc0RWWGACJOCZBJX2GJWip0ikV+wcOsgVuY9uE8CPiyQhkGFSlhuSkZPavN7u1c2Fw==}
     engines: {node: '>=10'}
@@ -10902,10 +10893,6 @@ packages:
   minipass-fetch@5.0.0:
     resolution: {integrity: sha512-fiCdUALipqgPWrOVTz9fw0XhcazULXOSU6ie40DDbX1F49p1dBrSRBuswndTx1x3vEb/g0FT7vC4c4C2u/mh3A==}
     engines: {node: ^20.17.0 || >=22.9.0}
-
-  minipass-flush@1.0.5:
-    resolution: {integrity: sha512-JmQSYYpPUqX5Jyn1mXaRwOda1uQ8HP5KAT/oDSLCzt1BYRhQU0/hDtsB1ufZfEEzMZ9aAVmsBw8+FWsIXlClWw==}
-    engines: {node: '>= 8'}
 
   minipass-flush@1.0.7:
     resolution: {integrity: sha512-TbqTz9cUwWyHS2Dy89P3ocAGUGxKjjLuR9z8w4WUTGAVgEj17/4nhgo2Du56i0Fm3Pm30g4iA8Lcqctc76jCzA==}
@@ -13776,9 +13763,9 @@ snapshots:
     dependencies:
       jest: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@24.7.2)(typescript@5.9.3))
 
-  '@async-fn/jest@1.6.4(patch_hash=e6f6298f958eb8e8255087ea54bff3f834b249e874070c5caca2ebfa13fe4562)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))':
+  '@async-fn/jest@1.6.4(patch_hash=e6f6298f958eb8e8255087ea54bff3f834b249e874070c5caca2ebfa13fe4562)(jest@29.7.0(babel-plugin-macros@3.1.0))':
     dependencies:
-      jest: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+      jest: 29.7.0(babel-plugin-macros@3.1.0)
 
   '@babel/code-frame@7.27.1':
     dependencies:
@@ -14020,8 +14007,7 @@ snapshots:
 
   '@babel/runtime@7.28.4': {}
 
-  '@babel/runtime@7.29.2':
-    optional: true
+  '@babel/runtime@7.29.2': {}
 
   '@babel/template@7.27.2':
     dependencies:
@@ -14285,7 +14271,7 @@ snapshots:
   '@emotion/babel-plugin@11.13.5':
     dependencies:
       '@babel/helper-module-imports': 7.27.1
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.29.2
       '@emotion/hash': 0.9.2
       '@emotion/memoize': 0.9.0
       '@emotion/serialize': 1.3.3
@@ -14316,7 +14302,7 @@ snapshots:
 
   '@emotion/react@11.14.0(@types/react@18.3.3)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.29.2
       '@emotion/babel-plugin': 11.13.5
       '@emotion/cache': 11.14.0
       '@emotion/serialize': 1.3.3
@@ -15140,7 +15126,7 @@ snapshots:
       '@types/stream-buffers': 3.0.7
       form-data: 4.0.4
       hpagent: 1.2.0
-      isomorphic-ws: 5.0.0(ws@8.18.3)
+      isomorphic-ws: 5.0.0(ws@8.20.0)
       js-yaml: 4.1.0
       jsonpath-plus: 10.3.0
       node-fetch: 2.7.0(encoding@0.1.13)
@@ -15149,7 +15135,7 @@ snapshots:
       socks-proxy-agent: 8.0.5
       stream-buffers: 3.0.3
       tar-fs: 3.1.1
-      ws: 8.18.3
+      ws: 8.20.0
     transitivePeerDependencies:
       - bare-abort-controller
       - bare-buffer
@@ -15360,7 +15346,7 @@ snapshots:
 
   '@mui/private-theming@5.17.1(@types/react@18.3.3)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.29.2
       '@mui/utils': 5.17.1(@types/react@18.3.3)(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
@@ -15369,7 +15355,7 @@ snapshots:
 
   '@mui/styled-engine@5.18.0(@emotion/react@11.14.0(@types/react@18.3.3)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.3)(react@18.3.1))(@types/react@18.3.3)(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.29.2
       '@emotion/cache': 11.14.0
       '@emotion/serialize': 1.3.3
       csstype: 3.1.3
@@ -16497,8 +16483,6 @@ snapshots:
       color: 5.0.2
       text-hex: 1.0.0
 
-  '@standard-schema/spec@1.0.0': {}
-
   '@standard-schema/spec@1.1.0': {}
 
   '@standard-schema/utils@0.3.0': {}
@@ -16769,7 +16753,7 @@ snapshots:
 
   '@types/circular-dependency-plugin@5.0.8(@swc/core@1.13.5)(webpack-cli@6.0.1)':
     dependencies:
-      '@types/node': 22.16.5
+      '@types/node': 24.7.2
       webpack: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1)
     transitivePeerDependencies:
       - '@swc/core'
@@ -16779,7 +16763,7 @@ snapshots:
 
   '@types/cli-progress@3.11.6':
     dependencies:
-      '@types/node': 22.16.5
+      '@types/node': 24.7.2
 
   '@types/color-convert@2.0.4':
     dependencies:
@@ -16958,7 +16942,7 @@ snapshots:
   '@types/fs-extra@11.0.4':
     dependencies:
       '@types/jsonfile': 6.1.4
-      '@types/node': 22.16.5
+      '@types/node': 24.7.2
 
   '@types/fs-extra@9.0.13':
     dependencies:
@@ -16974,15 +16958,15 @@ snapshots:
 
   '@types/gunzip-maybe@1.4.2':
     dependencies:
-      '@types/node': 22.16.5
+      '@types/node': 24.7.2
 
   '@types/hapi__call@9.0.3':
     dependencies:
-      '@types/node': 22.16.5
+      '@types/node': 24.7.2
 
   '@types/hapi__subtext@7.0.3':
     dependencies:
-      '@types/node': 22.16.5
+      '@types/node': 24.7.2
 
   '@types/hast@3.0.4':
     dependencies:
@@ -17025,7 +17009,7 @@ snapshots:
 
   '@types/jsdom@21.1.7':
     dependencies:
-      '@types/node': 22.16.5
+      '@types/node': 24.7.2
       '@types/tough-cookie': 4.0.5
       parse5: 7.3.0
 
@@ -17049,7 +17033,7 @@ snapshots:
 
   '@types/memorystream@0.3.4':
     dependencies:
-      '@types/node': 22.16.5
+      '@types/node': 24.7.2
 
   '@types/mime@1.3.5': {}
 
@@ -17082,11 +17066,11 @@ snapshots:
 
   '@types/postcss-modules-local-by-default@4.0.2':
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
 
   '@types/postcss-modules-scope@3.0.4':
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
 
   '@types/prismjs@1.26.5': {}
 
@@ -17179,7 +17163,7 @@ snapshots:
 
   '@types/stoppable@1.1.3':
     dependencies:
-      '@types/node': 22.16.5
+      '@types/node': 24.7.2
 
   '@types/stream-buffers@3.0.7':
     dependencies:
@@ -17187,7 +17171,7 @@ snapshots:
 
   '@types/tar-stream@3.1.4':
     dependencies:
-      '@types/node': 22.16.5
+      '@types/node': 24.7.2
 
   '@types/tcp-port-used@1.0.4': {}
 
@@ -17223,7 +17207,7 @@ snapshots:
 
   '@types/webpack-node-externals@3.0.4(@swc/core@1.13.5)(webpack-cli@6.0.1)':
     dependencies:
-      '@types/node': 22.16.5
+      '@types/node': 24.7.2
       webpack: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1)
     transitivePeerDependencies:
       - '@swc/core'
@@ -17233,7 +17217,7 @@ snapshots:
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 22.16.5
+      '@types/node': 24.7.2
 
   '@types/yargs-parser@21.0.3': {}
 
@@ -17329,12 +17313,12 @@ snapshots:
   '@webpack-cli/configtest@3.0.1(webpack-cli@6.0.1)(webpack@5.102.1)':
     dependencies:
       webpack: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack@5.102.1)
+      webpack-cli: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.102.1)
 
   '@webpack-cli/info@3.0.1(webpack-cli@6.0.1)(webpack@5.102.1)':
     dependencies:
       webpack: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack@5.102.1)
+      webpack-cli: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.102.1)
 
   '@webpack-cli/serve@3.0.1(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack@5.102.1)':
     dependencies:
@@ -17630,7 +17614,7 @@ snapshots:
 
   babel-plugin-macros@3.1.0:
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.29.2
       cosmiconfig: 7.1.0
       resolve: 1.22.10
 
@@ -17779,10 +17763,6 @@ snapshots:
       balanced-match: 1.0.2
       concat-map: 0.0.1
 
-  brace-expansion@2.0.2:
-    dependencies:
-      balanced-match: 1.0.2
-
   brace-expansion@2.0.3:
     dependencies:
       balanced-match: 1.0.2
@@ -17892,7 +17872,7 @@ snapshots:
       lru-cache: 10.4.3
       minipass: 7.1.2
       minipass-collect: 2.0.1
-      minipass-flush: 1.0.5
+      minipass-flush: 1.0.7
       minipass-pipeline: 1.2.4
       p-map: 7.0.3
       ssri: 12.0.0
@@ -17907,7 +17887,7 @@ snapshots:
       lru-cache: 11.2.2
       minipass: 7.1.2
       minipass-collect: 2.0.1
-      minipass-flush: 1.0.5
+      minipass-flush: 1.0.7
       minipass-pipeline: 1.2.4
       p-map: 7.0.3
       ssri: 13.0.0
@@ -18395,12 +18375,12 @@ snapshots:
 
   css-loader@6.11.0(webpack@5.102.1):
     dependencies:
-      icss-utils: 5.1.0(postcss@8.5.6)
-      postcss: 8.5.6
-      postcss-modules-extract-imports: 3.1.0(postcss@8.5.6)
-      postcss-modules-local-by-default: 4.2.0(postcss@8.5.6)
-      postcss-modules-scope: 3.2.1(postcss@8.5.6)
-      postcss-modules-values: 4.0.0(postcss@8.5.6)
+      icss-utils: 5.1.0(postcss@8.5.8)
+      postcss: 8.5.8
+      postcss-modules-extract-imports: 3.1.0(postcss@8.5.8)
+      postcss-modules-local-by-default: 4.2.0(postcss@8.5.8)
+      postcss-modules-scope: 3.2.1(postcss@8.5.8)
+      postcss-modules-values: 4.0.0(postcss@8.5.8)
       postcss-value-parser: 4.2.0
       semver: 7.7.3
     optionalDependencies:
@@ -18819,7 +18799,7 @@ snapshots:
 
   dom-helpers@5.2.1:
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.29.2
       csstype: 3.1.3
 
   dom-serializer@1.4.1:
@@ -19427,7 +19407,7 @@ snapshots:
 
   filelist@1.0.4:
     dependencies:
-      minimatch: 5.1.6
+      minimatch: 5.1.9
 
   fill-range@7.1.1:
     dependencies:
@@ -20091,9 +20071,9 @@ snapshots:
     dependencies:
       safer-buffer: 2.1.2
 
-  icss-utils@5.1.0(postcss@8.5.6):
+  icss-utils@5.1.0(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
 
   identity-obj-proxy@3.0.0:
     dependencies:
@@ -20283,10 +20263,6 @@ snapshots:
 
   isobject@3.0.1: {}
 
-  isomorphic-ws@5.0.0(ws@8.18.3):
-    dependencies:
-      ws: 8.18.3
-
   isomorphic-ws@5.0.0(ws@8.20.0):
     dependencies:
       ws: 8.20.0
@@ -20404,7 +20380,7 @@ snapshots:
       - supports-color
       - ts-node
 
-  jest-cli@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0):
+  jest-cli@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@24.7.2)(typescript@5.9.3)):
     dependencies:
       '@jest/core': 29.7.0(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@24.7.2)(typescript@5.9.3))
       '@jest/test-result': 29.7.0
@@ -20423,7 +20399,7 @@ snapshots:
       - supports-color
       - ts-node
 
-  jest-cli@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@24.7.2)(typescript@5.9.3)):
+  jest-cli@29.7.0(babel-plugin-macros@3.1.0):
     dependencies:
       '@jest/core': 29.7.0(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@24.7.2)(typescript@5.9.3))
       '@jest/test-result': 29.7.0
@@ -20560,7 +20536,7 @@ snapshots:
       '@jest/fake-timers': 29.7.0
       '@jest/types': 29.6.3
       '@types/jsdom': 20.0.1
-      '@types/node': 22.16.5
+      '@types/node': 24.7.2
       jest-mock: 29.7.0
       jest-util: 29.7.0
       jsdom: 20.0.3
@@ -20790,24 +20766,24 @@ snapshots:
       - supports-color
       - ts-node
 
-  jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0):
-    dependencies:
-      '@jest/core': 29.7.0(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@24.7.2)(typescript@5.9.3))
-      '@jest/types': 29.6.3
-      import-local: 3.2.0
-      jest-cli: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
-    transitivePeerDependencies:
-      - '@types/node'
-      - babel-plugin-macros
-      - supports-color
-      - ts-node
-
   jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@24.7.2)(typescript@5.9.3)):
     dependencies:
       '@jest/core': 29.7.0(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@24.7.2)(typescript@5.9.3))
       '@jest/types': 29.6.3
       import-local: 3.2.0
       jest-cli: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@24.7.2)(typescript@5.9.3))
+    transitivePeerDependencies:
+      - '@types/node'
+      - babel-plugin-macros
+      - supports-color
+      - ts-node
+
+  jest@29.7.0(babel-plugin-macros@3.1.0):
+    dependencies:
+      '@jest/core': 29.7.0(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@24.7.2)(typescript@5.9.3))
+      '@jest/types': 29.6.3
+      import-local: 3.2.0
+      jest-cli: 29.7.0(babel-plugin-macros@3.1.0)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -20824,7 +20800,7 @@ snapshots:
       '@hapi/pinpoint': 2.0.1
       '@hapi/tlds': 1.1.3
       '@hapi/topo': 6.0.2
-      '@standard-schema/spec': 1.0.0
+      '@standard-schema/spec': 1.1.0
 
   jose@6.1.0: {}
 
@@ -20869,7 +20845,7 @@ snapshots:
       whatwg-encoding: 2.0.0
       whatwg-mimetype: 3.0.0
       whatwg-url: 11.0.0
-      ws: 8.18.3
+      ws: 8.20.0
       xml-name-validator: 4.0.0
     transitivePeerDependencies:
       - bufferutil
@@ -20896,7 +20872,7 @@ snapshots:
       whatwg-encoding: 3.1.1
       whatwg-mimetype: 4.0.0
       whatwg-url: 15.1.0
-      ws: 8.18.3
+      ws: 8.20.0
       xml-name-validator: 5.0.0
     transitivePeerDependencies:
       - bufferutil
@@ -21238,7 +21214,7 @@ snapshots:
       http-cache-semantics: 4.2.0
       minipass: 7.1.2
       minipass-fetch: 4.0.1
-      minipass-flush: 1.0.5
+      minipass-flush: 1.0.7
       minipass-pipeline: 1.2.4
       negotiator: 1.0.0
       proc-log: 5.0.0
@@ -21254,7 +21230,7 @@ snapshots:
       http-cache-semantics: 4.2.0
       minipass: 7.1.2
       minipass-fetch: 5.0.0
-      minipass-flush: 1.0.5
+      minipass-flush: 1.0.7
       minipass-pipeline: 1.2.4
       negotiator: 1.0.0
       proc-log: 6.1.0
@@ -21793,17 +21769,13 @@ snapshots:
     dependencies:
       brace-expansion: 1.1.12
 
-  minimatch@5.1.6:
-    dependencies:
-      brace-expansion: 2.0.2
-
   minimatch@5.1.9:
     dependencies:
       brace-expansion: 2.0.3
 
   minimatch@9.0.5:
     dependencies:
-      brace-expansion: 2.0.2
+      brace-expansion: 2.0.3
 
   minimist@1.2.8: {}
 
@@ -21838,10 +21810,6 @@ snapshots:
       minizlib: 3.1.0
     optionalDependencies:
       encoding: 0.1.13
-
-  minipass-flush@1.0.5:
-    dependencies:
-      minipass: 3.3.6
 
   minipass-flush@1.0.7:
     dependencies:
@@ -22443,20 +22411,20 @@ snapshots:
       path-data-parser: 0.1.0
       points-on-curve: 0.2.0
 
-  postcss-load-config@3.1.4(postcss@8.5.6)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@22.16.5)(typescript@5.9.3)):
+  postcss-load-config@3.1.4(postcss@8.5.8)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@22.16.5)(typescript@5.9.3)):
     dependencies:
       lilconfig: 2.1.0
       yaml: 1.10.2
     optionalDependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       ts-node: 10.9.2(@swc/core@1.13.5)(@types/node@22.16.5)(typescript@5.9.3)
 
-  postcss-load-config@3.1.4(postcss@8.5.6)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@24.7.2)(typescript@5.9.3)):
+  postcss-load-config@3.1.4(postcss@8.5.8)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@24.7.2)(typescript@5.9.3)):
     dependencies:
       lilconfig: 2.1.0
       yaml: 1.10.2
     optionalDependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       ts-node: 10.9.2(@swc/core@1.13.5)(@types/node@24.7.2)(typescript@5.9.3)
 
   postcss-loader@8.2.0(postcss@8.5.8)(typescript@5.9.3)(webpack@5.102.1):
@@ -22466,30 +22434,30 @@ snapshots:
       postcss: 8.5.8
       semver: 7.7.3
     optionalDependencies:
-      webpack: 5.102.1
+      webpack: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1)
     transitivePeerDependencies:
       - typescript
 
-  postcss-modules-extract-imports@3.1.0(postcss@8.5.6):
+  postcss-modules-extract-imports@3.1.0(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
 
-  postcss-modules-local-by-default@4.2.0(postcss@8.5.6):
+  postcss-modules-local-by-default@4.2.0(postcss@8.5.8):
     dependencies:
-      icss-utils: 5.1.0(postcss@8.5.6)
-      postcss: 8.5.6
+      icss-utils: 5.1.0(postcss@8.5.8)
+      postcss: 8.5.8
       postcss-selector-parser: 7.1.0
       postcss-value-parser: 4.2.0
 
-  postcss-modules-scope@3.2.1(postcss@8.5.6):
+  postcss-modules-scope@3.2.1(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-selector-parser: 7.1.0
 
-  postcss-modules-values@4.0.0(postcss@8.5.6):
+  postcss-modules-values@4.0.0(postcss@8.5.8):
     dependencies:
-      icss-utils: 5.1.0(postcss@8.5.6)
-      postcss: 8.5.6
+      icss-utils: 5.1.0(postcss@8.5.8)
+      postcss: 8.5.8
 
   postcss-selector-parser@7.1.0:
     dependencies:
@@ -22825,7 +22793,7 @@ snapshots:
 
   react-router@5.3.4(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.29.2
       history: 4.10.1
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
@@ -24128,12 +24096,12 @@ snapshots:
       babel-jest: 29.7.0(@babel/core@7.28.4)
       jest-util: 29.7.0
 
-  ts-jest@29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0))(typescript@5.9.3):
+  ts-jest@29.4.5(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(babel-plugin-macros@3.1.0))(typescript@5.9.3):
     dependencies:
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
       handlebars: 4.7.8
-      jest: 29.7.0(@types/node@24.7.2)(babel-plugin-macros@3.1.0)
+      jest: 29.7.0(babel-plugin-macros@3.1.0)
       json5: 2.2.3
       lodash.memoize: 4.1.2
       make-error: 1.3.6
@@ -24156,7 +24124,7 @@ snapshots:
       semver: 7.7.3
       source-map: 0.7.6
       typescript: 5.9.3
-      webpack: 5.102.1
+      webpack: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1)
 
   ts-morph@26.0.0:
     dependencies:
@@ -24277,14 +24245,14 @@ snapshots:
       '@types/postcss-modules-local-by-default': 4.0.2
       '@types/postcss-modules-scope': 3.0.4
       dotenv: 16.6.1
-      icss-utils: 5.1.0(postcss@8.5.6)
+      icss-utils: 5.1.0(postcss@8.5.8)
       less: 4.4.2
       lodash.camelcase: 4.3.0
-      postcss: 8.5.6
-      postcss-load-config: 3.1.4(postcss@8.5.6)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@22.16.5)(typescript@5.9.3))
-      postcss-modules-extract-imports: 3.1.0(postcss@8.5.6)
-      postcss-modules-local-by-default: 4.2.0(postcss@8.5.6)
-      postcss-modules-scope: 3.2.1(postcss@8.5.6)
+      postcss: 8.5.8
+      postcss-load-config: 3.1.4(postcss@8.5.8)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@22.16.5)(typescript@5.9.3))
+      postcss-modules-extract-imports: 3.1.0(postcss@8.5.8)
+      postcss-modules-local-by-default: 4.2.0(postcss@8.5.8)
+      postcss-modules-scope: 3.2.1(postcss@8.5.8)
       reserved-words: 0.1.2
       sass: 1.93.2
       source-map-js: 1.2.1
@@ -24301,14 +24269,14 @@ snapshots:
       '@types/postcss-modules-local-by-default': 4.0.2
       '@types/postcss-modules-scope': 3.0.4
       dotenv: 16.6.1
-      icss-utils: 5.1.0(postcss@8.5.6)
+      icss-utils: 5.1.0(postcss@8.5.8)
       less: 4.4.2
       lodash.camelcase: 4.3.0
-      postcss: 8.5.6
-      postcss-load-config: 3.1.4(postcss@8.5.6)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@24.7.2)(typescript@5.9.3))
-      postcss-modules-extract-imports: 3.1.0(postcss@8.5.6)
-      postcss-modules-local-by-default: 4.2.0(postcss@8.5.6)
-      postcss-modules-scope: 3.2.1(postcss@8.5.6)
+      postcss: 8.5.8
+      postcss-load-config: 3.1.4(postcss@8.5.8)(ts-node@10.9.2(@swc/core@1.13.5)(@types/node@24.7.2)(typescript@5.9.3))
+      postcss-modules-extract-imports: 3.1.0(postcss@8.5.8)
+      postcss-modules-local-by-default: 4.2.0(postcss@8.5.8)
+      postcss-modules-scope: 3.2.1(postcss@8.5.8)
       reserved-words: 0.1.2
       sass: 1.93.2
       source-map-js: 1.2.1
@@ -24715,7 +24683,7 @@ snapshots:
       sockjs: 0.3.24
       spdy: 4.0.2
       webpack-dev-middleware: 7.4.5(webpack@5.102.1)
-      ws: 8.18.3
+      ws: 8.20.0
     optionalDependencies:
       webpack: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1)
       webpack-cli: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.102.1)
@@ -24802,7 +24770,7 @@ snapshots:
       watchpack: 2.4.4
       webpack-sources: 3.3.3
     optionalDependencies:
-      webpack-cli: 6.0.1(webpack@5.102.1)
+      webpack-cli: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.102.1)
     transitivePeerDependencies:
       - '@swc/core'
       - esbuild

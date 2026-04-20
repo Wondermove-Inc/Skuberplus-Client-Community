@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Icon } from "@skuberplus/icon";
+import { Icon } from "@k-lens/icon";
 import { observer } from "mobx-react";
 import React from "react";
 import { Button } from "../../shadcn-ui/button";

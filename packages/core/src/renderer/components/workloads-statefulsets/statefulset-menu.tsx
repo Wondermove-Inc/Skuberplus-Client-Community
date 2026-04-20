@@ -4,17 +4,17 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Icon } from "@k-lens/icon";
+import { statefulSetApiInjectable } from "@k-lens/kube-api-specifics";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { statefulSetApiInjectable } from "@skuberplus/kube-api-specifics";
 import React from "react";
 import hostedClusterInjectable from "../../cluster-frame-context/hosted-cluster.injectable";
 import openConfirmDialogInjectable from "../confirm-dialog/open.injectable";
 import { MenuItem } from "../menu";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 
-import type { StatefulSetApi } from "@skuberplus/kube-api";
-import type { StatefulSet } from "@skuberplus/kube-object";
+import type { StatefulSetApi } from "@k-lens/kube-api";
+import type { StatefulSet } from "@k-lens/kube-object";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { OpenConfirmDialog } from "../confirm-dialog/open.injectable";

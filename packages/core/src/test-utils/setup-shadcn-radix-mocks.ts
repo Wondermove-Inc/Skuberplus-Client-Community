@@ -214,7 +214,7 @@ jest.mock("../renderer/components/shadcn-ui/collapsible", () => {
   };
 });
 
-jest.mock("@skuberplus/storybook-shadcn/src/components/ui/collapsible", () => {
+jest.mock("@k-lens/storybook-shadcn/src/components/ui/collapsible", () => {
   const React = jest.requireActual("react") as typeof import("react");
 
   const CollapsibleContext = React.createContext<{ open: boolean; toggle: () => void }>({

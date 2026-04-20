@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { reactApplicationChildrenInjectionToken } from "@k-lens/react-application";
 import { getInjectable } from "@ogre-tools/injectable";
-import { reactApplicationChildrenInjectionToken } from "@skuberplus/react-application";
 import { computed } from "mobx";
 
 const frameApplicationRootInjectable = getInjectable({

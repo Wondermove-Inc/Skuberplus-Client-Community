@@ -4,16 +4,16 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getInjectable } from "@ogre-tools/injectable";
-import { KubeApi } from "@skuberplus/kube-api";
-import { maybeKubeApiInjectable } from "@skuberplus/kube-api-specifics";
-import { KubeObject } from "@skuberplus/kube-object";
+import { KubeApi } from "@k-lens/kube-api";
+import { maybeKubeApiInjectable } from "@k-lens/kube-api-specifics";
+import { KubeObject } from "@k-lens/kube-object";
 import {
   logErrorInjectionToken,
   loggerInjectionToken,
   logInfoInjectionToken,
   logWarningInjectionToken,
-} from "@skuberplus/logger";
+} from "@k-lens/logger";
+import { getInjectable } from "@ogre-tools/injectable";
 import assert from "assert";
 import { runInAction } from "mobx";
 import { KubeApi as ExternalKubeApi } from "../../../extensions/common-api/k8s-api";

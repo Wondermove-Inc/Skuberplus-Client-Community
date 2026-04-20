@@ -19,8 +19,8 @@
  * - 2025-11-20: sendMessageToChannel로 변경 (MessageChannel 패턴 적용)
  */
 
+import { sendMessageToChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { sendMessageToChannelInjectionToken } from "@skuberplus/messaging";
 import { action, runInAction } from "mobx";
 import currentlyInClusterFrameInjectable from "../../../routes/currently-in-cluster-frame.injectable";
 import { addClusterDialogChannel } from "./add-cluster-dialog-channel";

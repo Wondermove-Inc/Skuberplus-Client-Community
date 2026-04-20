@@ -4,16 +4,16 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { NodeApi } from "@skuberplus/kube-api";
-import { CoreV1Api, Watch } from "@skuberplus/kubernetes-client-node";
+import { NodeApi } from "@k-lens/kube-api";
+import { CoreV1Api, Watch } from "@k-lens/kubernetes-client-node";
 import { get, once } from "lodash";
 import { v4 as uuid } from "uuid";
 import { initialNodeShellImage, initialNodeShellWindowsImage } from "../../../common/cluster-types";
 import { TerminalChannels } from "../../../common/terminal/channels";
 import { ShellOpenError, ShellSession } from "../shell-session";
 
-import type { Pod } from "@skuberplus/kube-object";
-import type { KubeConfig } from "@skuberplus/kubernetes-client-node";
+import type { Pod } from "@k-lens/kube-object";
+import type { KubeConfig } from "@k-lens/kubernetes-client-node";
 
 import type { CreateKubeApi } from "../../../common/k8s-api/create-kube-api.injectable";
 import type { CreateKubeJsonApiForCluster } from "../../../common/k8s-api/create-kube-json-api-for-cluster.injectable";

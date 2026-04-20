@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="skuberplus/build/icons/128x128.png" alt="Skuber+ Logo" width="128" height="128">
+  <img src="k-lens/build/icons/128x128.png" alt="K-Lens Logo" width="128" height="128">
 </p>
 
-<h1 align="center">Skuber+ Client</h1>
+<h1 align="center">K-Lens</h1>
 
 <p align="center">
   <strong>AI-Powered Kubernetes Management Desktop IDE</strong>
@@ -24,9 +24,22 @@
 
 ---
 
-## Introduction
+## What is K-Lens?
 
-**Skuber+ Client** is a desktop IDE for intuitive Kubernetes cluster management. Built on [Open Lens](https://github.com/lensapp/lens), it adds AI-powered diagnostics, SRE automation, real-time monitoring, and enterprise features.
+> If `kubectl` is your CLI, **K-Lens is your cockpit.**
+
+K-Lens turns Kubernetes management from terminal juggling into a visual, AI-assisted workflow — connect clusters, diagnose failures, and ship fixes without leaving your desk.
+
+Built on [Open Lens](https://github.com/lensapp/lens), enhanced with AI-powered SRE diagnostics, security scanning, and real-time observability.
+
+### Why K-Lens?
+
+| Without K-Lens | With K-Lens |
+|----------------|-------------|
+| Multiple terminals running kubectl | Single UI for multi-cluster management |
+| Manual failure analysis (logs + describe) | AI auto-diagnosis + remediation suggestions |
+| Separate CVE scan tools, manual triage | One-click security scan + AI auto-fix proposals |
+| Scattered Helm, YAML, monitoring tools | All-in-one integrated IDE |
 
 ### Key Features
 
@@ -40,9 +53,13 @@
 | **Helm Chart Management** | Install, upgrade, and rollback Helm releases |
 | **Resource Editor** | Monaco Editor-based YAML editing with live apply |
 
+### Demo
+
+https://github.com/user-attachments/assets/f60be8d6-dd8a-464b-9e55-bf43d8f68680
+
 ---
 
-## Quick Start
+## Quick Start (macOS / Linux)
 
 ### Prerequisites
 
@@ -55,7 +72,7 @@
 ```bash
 # 1. Clone the repository
 git clone https://github.com/Wondermove-Inc/Skuberplus-Client-Community.git
-cd skuberplus-client
+cd k-lens
 
 # 2. Install dependencies (native module rebuild runs automatically)
 pnpm install
@@ -68,6 +85,8 @@ pnpm dev
 ```
 
 > **Note**: `pnpm install` automatically rebuilds Electron native modules.
+
+> **Windows**: Native module builds require additional steps. See [Platform Builds > Windows](#windows-x64).
 
 > **Node.js version**: v22 (LTS) and v24+ (LTS) are supported. v23 is also supported via `.npmrc` config (`--no-experimental-strip-types`).
 
@@ -85,7 +104,7 @@ pnpm build:full:app
 pnpm build              # Source build
 pnpm build:app          # App packaging (ARM64)
 
-# Output: skuberplus/dist/mac-arm64/SkuberPlus.app
+# Output: k-lens/dist/mac-arm64/KLens.app
 ```
 
 ### macOS (Intel x64)
@@ -97,7 +116,7 @@ pnpm build:full:x64
 # 2. x64 app packaging only (source build already done)
 pnpm build:app:darwin:x64
 
-# Output: skuberplus/dist/mac/SkuberPlus.app
+# Output: k-lens/dist/mac/KLens.app
 ```
 
 ### Linux
@@ -107,10 +126,10 @@ pnpm build:app:darwin:x64
 pnpm build
 
 # 2. App packaging
-cd skuberplus
+cd k-lens
 pnpm build:app:linux
 
-# Output: skuberplus/dist/linux-unpacked/
+# Output: k-lens/dist/linux-unpacked/
 ```
 
 ### Windows (x64)
@@ -145,7 +164,7 @@ pnpm run build:win
 # 6. App packaging
 node scripts/build-windows-app.js
 
-# Output: skuberplus/dist/<version>/SkuberPlusClient-<version>-x64.exe
+# Output: k-lens/dist/<version>/KLens-<version>-x64.exe
 ```
 
 > **Why `--ignore-scripts`?**
@@ -166,10 +185,10 @@ node scripts/build-windows-app.js
 
 | Platform | Path |
 |----------|------|
-| macOS (ARM64) | `skuberplus/dist/mac-arm64/SkuberPlus.app` |
-| macOS (x64) | `skuberplus/dist/mac/SkuberPlus.app` |
-| Linux | `skuberplus/dist/linux-unpacked/` |
-| Windows | `skuberplus/dist/<version>/SkuberPlusClient-<version>-x64.exe` |
+| macOS (ARM64) | `k-lens/dist/mac-arm64/KLens.app` |
+| macOS (x64) | `k-lens/dist/mac/KLens.app` |
+| Linux | `k-lens/dist/linux-unpacked/` |
+| Windows | `k-lens/dist/<version>/KLens-<version>-x64.exe` |
 
 ---
 
@@ -212,7 +231,7 @@ node scripts/build-windows-app.js
 ## Project Structure
 
 ```
-skuberplus-client/
+k-lens/
 ├── packages/                           # pnpm workspace packages (54)
 │   ├── core/                           # Core logic, UI components, K8s API
 │   ├── kube-object/                    # Kubernetes object models
@@ -242,7 +261,7 @@ skuberplus-client/
 │       ├── typescript/                 # TypeScript shared config
 │       └── jest/                       # Jest shared config
 │
-├── skuberplus/                         # Electron main application
+├── k-lens/                             # Electron main application
 │   ├── src/
 │   │   ├── main/                       # Main process
 │   │   ├── renderer/                   # Renderer process (React)
@@ -329,8 +348,8 @@ registerFeature(di, myFeature);
 If builds behave unexpectedly after source changes:
 
 ```bash
-rm -rf packages/core/static/build skuberplus/static/build \
-       packages/core/.webpack skuberplus/.webpack skuberplus/dist
+rm -rf packages/core/static/build k-lens/static/build \
+       packages/core/.webpack k-lens/.webpack k-lens/dist
 pnpm build:dev
 ```
 

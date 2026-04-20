@@ -3,12 +3,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { createPrometheusProvider, prometheusProviderInjectionToken } from "@k-lens/prometheus";
 import { getInjectable } from "@ogre-tools/injectable";
-import { createPrometheusProvider, prometheusProviderInjectionToken } from "@skuberplus/prometheus";
 import { detectMetricsServer } from "./metrics-server-detection";
 
-import type { CoreV1Api } from "@skuberplus/kubernetes-client-node";
-import type { PrometheusProvider, PrometheusServiceInfo } from "@skuberplus/prometheus";
+import type { CoreV1Api } from "@k-lens/kubernetes-client-node";
+import type { PrometheusProvider, PrometheusServiceInfo } from "@k-lens/prometheus";
 
 /**
  * Query handler for Kubernetes Metrics Server

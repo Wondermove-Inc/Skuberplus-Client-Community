@@ -51,7 +51,7 @@ import { RoleBindingDetailPanel } from "./role-binding-detail-panel";
 import { roleBindingColumns } from "./role-bindings-columns";
 import roleBindingStoreInjectable from "./store.injectable";
 
-import type { RoleBinding } from "@skuberplus/kube-object";
+import type { RoleBinding } from "@k-lens/kube-object";
 
 import type { SubscribeStores } from "../../../kube-watch-api/kube-watch-api";
 import type { DockStore } from "../../dock/dock/store";

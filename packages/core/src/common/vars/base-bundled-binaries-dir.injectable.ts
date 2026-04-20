@@ -19,7 +19,7 @@ import normalizedPlatformArchitectureInjectable from "./normalized-platform-arch
  *
  * 📝 예시:
  * - 개발: /프로젝트루트/binaries/client/darwin/arm64
- * - 프로덕션: /SkuberPlus.app/Contents/Resources/arm64
+ * - 프로덕션: /KLens.app/Contents/Resources/arm64
  */
 const baseBundledBinariesDirectoryInjectable = getInjectable({
   id: "base-bundled-binaries-directory",

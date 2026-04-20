@@ -8,8 +8,8 @@ import {
   DetailPanelField,
   DetailPanelFieldGroup,
   DetailPanelSection,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { displayMode } from "@skuberplus/utilities";
+} from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { displayMode } from "@k-lens/utilities";
 import React from "react";
 
 import type { VolumeVariantComponent } from "../variant-helpers";

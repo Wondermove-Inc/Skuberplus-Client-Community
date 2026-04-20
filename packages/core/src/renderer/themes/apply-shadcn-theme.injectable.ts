@@ -3,8 +3,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import userPreferencesStateInjectable from "../../features/user-preferences/common/state.injectable";
 import { DEFAULT_SHADCN_THEME_ID, SHADCN_THEMES } from "./shadcn-theme-types";
 import { SHADCN_THEME_VARIABLES } from "./shadcn-theme-variables";

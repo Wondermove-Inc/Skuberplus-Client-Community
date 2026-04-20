@@ -6,8 +6,8 @@
 
 import "./cluster-manager.scss";
 
+import { buildURL } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { buildURL } from "@skuberplus/utilities";
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { Redirect } from "react-router";

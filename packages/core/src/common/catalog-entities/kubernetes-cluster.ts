@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getLegacyGlobalDiForExtensionApi } from "@skuberplus/legacy-global-di";
+import { getLegacyGlobalDiForExtensionApi } from "@k-lens/legacy-global-di";
 import {
   requestClusterActivationInjectionToken,
   requestClusterDeactivationInjectionToken,

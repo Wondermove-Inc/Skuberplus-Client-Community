@@ -1,6 +1,6 @@
+import { registerFeature } from "@k-lens/feature-core";
+import { getMessageChannel, sendMessageToChannelInjectionToken } from "@k-lens/messaging";
 import { createContainer, DiContainer } from "@ogre-tools/injectable";
-import { registerFeature } from "@skuberplus/feature-core";
-import { getMessageChannel, sendMessageToChannelInjectionToken } from "@skuberplus/messaging";
 import { messagingFeatureForMain } from "../feature";
 import allowCommunicationListenerInjectable from "./allow-communication-listener.injectable";
 import getWebContentsInjectable from "./get-web-contents.injectable";

@@ -4,15 +4,15 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { byOrderNumber } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { byOrderNumber } from "@skuberplus/utilities";
 import { computed } from "mobx";
 import logErrorInjectable from "../../../common/log-error.injectable";
 import { isShown } from "../../../common/utils/composable-responsibilities/showable/showable";
 import { getCompositeFor } from "../../../common/utils/composite/get-composite/get-composite";
 import applicationMenuItemsInjectable from "./application-menu-items.injectable";
 
-import type { Orderable } from "@skuberplus/utilities";
+import type { Orderable } from "@k-lens/utilities";
 
 import type { Discriminable } from "../../../common/utils/composable-responsibilities/discriminable/discriminable";
 import type { RootComposite } from "../../../common/utils/composite/interfaces";

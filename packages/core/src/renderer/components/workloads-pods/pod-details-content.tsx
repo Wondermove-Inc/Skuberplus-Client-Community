@@ -12,10 +12,10 @@
 
 import "./pod-details.scss";
 
-import { Pod } from "@skuberplus/kube-object";
-import { Table, TableBody, TableCell, TableRow } from "@skuberplus/storybook-shadcn";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { cssNames, formatDuration } from "@skuberplus/utilities";
+import { Pod } from "@k-lens/kube-object";
+import { Table, TableBody, TableCell, TableRow } from "@k-lens/storybook-shadcn";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { cssNames, formatDuration } from "@k-lens/utilities";
 import kebabCase from "lodash/kebabCase";
 import { observer } from "mobx-react";
 import React from "react";

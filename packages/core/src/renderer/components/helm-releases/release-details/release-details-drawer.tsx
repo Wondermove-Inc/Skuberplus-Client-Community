@@ -6,8 +6,8 @@
 
 import "./release-details.scss";
 
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { cssNames } from "@skuberplus/utilities";
 import { observer } from "mobx-react";
 import React from "react";
 import navigateToHelmReleasesInjectable from "../../../../common/front-end-routing/routes/cluster/helm/releases/navigate-to-helm-releases.injectable";

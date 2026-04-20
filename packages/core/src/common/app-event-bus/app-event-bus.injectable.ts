@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { EventEmitter } from "@k-lens/event-emitter";
 import { getInjectable } from "@ogre-tools/injectable";
-import { EventEmitter } from "@skuberplus/event-emitter";
 
 import type { AppEvent } from "./event-bus";
 

@@ -6,7 +6,7 @@
 
 import "./resizing-anchor.scss";
 
-import { cssNames, noop } from "@skuberplus/utilities";
+import { cssNames, noop } from "@k-lens/utilities";
 import _ from "lodash";
 import { action, makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";

@@ -4,13 +4,13 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Icon } from "@k-lens/icon";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
 import React from "react";
 import { MenuItem } from "../menu";
 import openReplicaSetScaleDialogInjectable from "./scale-dialog/open.injectable";
 
-import type { ReplicaSet } from "@skuberplus/kube-object";
+import type { ReplicaSet } from "@k-lens/kube-object";
 
 import type { KubeObjectMenuProps } from "../kube-object-menu";
 import type { OpenReplicaSetScaleDialog } from "./scale-dialog/open.injectable";

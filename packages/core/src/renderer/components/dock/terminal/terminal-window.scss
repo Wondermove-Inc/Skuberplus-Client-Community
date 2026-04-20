@@ -3,14 +3,14 @@
  * Copyright (c) OpenLens Authors. All rights reserved.
  * Licensed under MIT License. See LICENSE in root directory for more information.
  *
- * 🎯 목적: Terminal 스타일 정의 (SkuberPlus 변수 제거, CSS 변수 기반)
+ * 🎯 목적: Terminal 스타일 정의 (KLens 변수 제거, CSS 변수 기반)
  * 📝 주의: xterm.css는 view.tsx에서 import
- * 🔄 변경이력: 2025-10-26 - SkuberPlus 변수 제거, 직접 값으로 대체
+ * 🔄 변경이력: 2025-10-26 - KLens 변수 제거, 직접 값으로 대체
  */
 
 /**
  * 🎯 목적: Terminal 컨테이너 레이아웃
- * 📝 주의: SkuberPlus 변수 제거, 순수 CSS/Tailwind 사용
+ * 📝 주의: KLens 변수 제거, 순수 CSS/Tailwind 사용
  */
 .TerminalWindow {
   flex: 1;

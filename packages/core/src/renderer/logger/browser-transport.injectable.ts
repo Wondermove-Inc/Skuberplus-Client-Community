@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerTransportInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerTransportInjectionToken } from "@skuberplus/logger";
 import BrowserConsole from "winston-transport-browserconsole";
 
 const browserLoggerTransportInjectable = getInjectable({

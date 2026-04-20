@@ -13,7 +13,7 @@ import type {
   HorizontalPodAutoscaler,
   HorizontalPodAutoscalerMetricSpec,
   HorizontalPodAutoscalerMetricStatus,
-} from "@skuberplus/kube-object";
+} from "@k-lens/kube-object";
 
 type Parser = HorizontalPodAutoscalerV1MetricParser | HorizontalPodAutoscalerV2MetricParser;
 

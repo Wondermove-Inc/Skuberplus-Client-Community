@@ -18,7 +18,7 @@ import { resolveHITLApproval, runReactLoop } from "./agent/react-loop";
 import { buildSystemPrompt } from "./agent/react-prompts";
 import { createReactTools } from "./agent/react-tools";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { AIProvider } from "../../../common/features/user-preferences/encrypt-api-key-channel";
 import type {

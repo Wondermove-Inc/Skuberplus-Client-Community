@@ -6,7 +6,7 @@
 
 import { isCompatibleExtension } from "../extension-discovery/is-compatible-extension/is-compatible-extension";
 
-import type { LensExtensionManifest } from "@skuberplus/legacy-extensions";
+import type { LensExtensionManifest } from "@k-lens/legacy-extensions";
 
 describe("Extension/App versions compatibility checks", () => {
   it("is compatible with exact version matching", () => {
@@ -26,7 +26,7 @@ describe("Extension/App versions compatibility checks", () => {
     expect(isCompatible({ extLensEngineVersion: "6.0.0", extensionApiVersion: "5.6.0" })).toBeFalsy();
   });
 
-  it("supports short version format for manifest.engines.skuberplus", () => {
+  it("supports short version format for manifest.engines.klens", () => {
     expect(isCompatible({ extLensEngineVersion: "5.5", extensionApiVersion: "5.5.1" })).toBeTruthy();
   });
 
@@ -65,7 +65,7 @@ function getExtensionManifestMock(lensEngine = "1.0"): LensExtensionManifest {
     name: "some-extension",
     version: "1.0",
     engines: {
-      skuberplus: lensEngine,
+      klens: lensEngine,
     },
   };
 }

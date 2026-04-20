@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import emitAppEventInjectable from "../../../common/app-event-bus/emit-event.injectable";
 import statInjectable from "../../../common/fs/stat.injectable";
 import createKubeApiInjectable from "../../../common/k8s-api/create-kube-api.injectable";

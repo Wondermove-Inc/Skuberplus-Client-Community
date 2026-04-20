@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="skuberplus/build/icons/128x128.png" alt="Skuber+ Logo" width="128" height="128">
+  <img src="k-lens/build/icons/128x128.png" alt="K-Lens Logo" width="128" height="128">
 </p>
 
-<h1 align="center">Skuber+ Client</h1>
+<h1 align="center">K-Lens</h1>
 
 <p align="center">
   <strong>AI 기반 Kubernetes 통합 관리 플랫폼</strong>
@@ -24,9 +24,22 @@
 
 ---
 
-## 소개
+## K-Lens란?
 
-**Skuber+ Client**는 Kubernetes 클러스터를 직관적으로 관리할 수 있는 데스크톱 IDE입니다. [Open Lens](https://github.com/lensapp/lens)를 기반으로 AI 기반 진단, SRE 자동화, 실시간 모니터링 등 엔터프라이즈 기능을 추가했습니다.
+> `kubectl`이 CLI라면, **K-Lens는 조종석입니다.**
+
+K-Lens는 Kubernetes 관리를 터미널 전환의 반복에서 시각적이고 AI가 보조하는 워크플로우로 바꿔줍니다 — 클러스터 연결, 장애 진단, 수정 적용까지 하나의 데스크톱 앱에서 완료하세요.
+
+[Open Lens](https://github.com/lensapp/lens) 기반에 AI SRE 진단, 보안 스캔, 실시간 Observability를 강화했습니다.
+
+### 왜 K-Lens인가?
+
+| K-Lens 없이 | K-Lens와 함께 |
+|-------------|--------------|
+| 터미널 여러 개 띄워서 kubectl 반복 | 단일 UI에서 멀티 클러스터 관리 |
+| 장애 원인 수동 분석 (logs + describe) | AI가 자동 진단 + 해결책 제안 |
+| CVE 스캔 따로, 결과 해석 따로 | 원클릭 보안 스캔 + AI 자동 수정 제안 |
+| Helm, YAML, 모니터링 도구 분산 | 하나의 IDE에 통합 |
 
 ### 주요 기능
 
@@ -40,9 +53,13 @@
 | **Helm 차트 관리** | Helm 릴리즈 설치, 업그레이드, 롤백 지원 |
 | **리소스 편집기** | Monaco Editor 기반 YAML 편집 및 실시간 적용 |
 
+### 데모
+
+https://github.com/user-attachments/assets/f60be8d6-dd8a-464b-9e55-bf43d8f68680
+
 ---
 
-## 빠른 시작
+## 빠른 시작 (macOS / Linux)
 
 ### 요구 사항
 
@@ -55,7 +72,7 @@
 ```bash
 # 1. 저장소 클론
 git clone https://github.com/Wondermove-Inc/Skuberplus-Client-Community.git
-cd skuberplus-client
+cd k-lens
 
 # 2. 의존성 설치 (네이티브 모듈 빌드 자동 수행)
 pnpm install
@@ -68,6 +85,8 @@ pnpm dev
 ```
 
 > **참고**: `pnpm install` 실행 시 Electron 네이티브 모듈 재빌드가 자동으로 수행됩니다.
+
+> **Windows**: 네이티브 모듈 빌드에 추가 작업이 필요합니다. [플랫폼별 빌드 > Windows](#windows-x64) 섹션을 참조하세요.
 
 > **Node.js 버전**: v22 (LTS)와 v24+ (LTS)를 지원합니다. v23도 `.npmrc` 설정(`--no-experimental-strip-types`)을 통해 지원됩니다.
 
@@ -85,7 +104,7 @@ pnpm build:full:app
 pnpm build              # 소스 빌드
 pnpm build:app          # 앱 패키징 (ARM64)
 
-# 결과물: skuberplus/dist/mac-arm64/SkuberPlus.app
+# 결과물: k-lens/dist/mac-arm64/KLens.app
 ```
 
 ### macOS (Intel x64)
@@ -97,7 +116,7 @@ pnpm build:full:x64
 # 2. x64 앱 패키징만 (소스 빌드는 이미 완료된 상태)
 pnpm build:app:darwin:x64
 
-# 결과물: skuberplus/dist/mac/SkuberPlus.app
+# 결과물: k-lens/dist/mac/KLens.app
 ```
 
 ### Linux
@@ -107,10 +126,10 @@ pnpm build:app:darwin:x64
 pnpm build
 
 # 2. 앱 패키징
-cd skuberplus
+cd k-lens
 pnpm build:app:linux
 
-# 결과물: skuberplus/dist/linux-unpacked/
+# 결과물: k-lens/dist/linux-unpacked/
 ```
 
 ### Windows (x64)
@@ -145,7 +164,7 @@ pnpm run build:win
 # 6. 앱 패키징
 node scripts/build-windows-app.js
 
-# 결과물: skuberplus/dist/<version>/SkuberPlusClient-<version>-x64.exe
+# 결과물: k-lens/dist/<version>/KLens-<version>-x64.exe
 ```
 
 > **왜 `--ignore-scripts`인가?**
@@ -166,10 +185,10 @@ node scripts/build-windows-app.js
 
 | 플랫폼 | 경로 |
 |--------|------|
-| macOS (ARM64) | `skuberplus/dist/mac-arm64/SkuberPlus.app` |
-| macOS (x64) | `skuberplus/dist/mac/SkuberPlus.app` |
-| Linux | `skuberplus/dist/linux-unpacked/` |
-| Windows | `skuberplus/dist/<version>/SkuberPlusClient-<version>-x64.exe` |
+| macOS (ARM64) | `k-lens/dist/mac-arm64/KLens.app` |
+| macOS (x64) | `k-lens/dist/mac/KLens.app` |
+| Linux | `k-lens/dist/linux-unpacked/` |
+| Windows | `k-lens/dist/<version>/KLens-<version>-x64.exe` |
 
 ---
 
@@ -212,7 +231,7 @@ node scripts/build-windows-app.js
 ## 프로젝트 구조
 
 ```
-skuberplus-client/
+k-lens/
 ├── packages/                           # pnpm 워크스페이스 패키지 (54개)
 │   ├── core/                           # 핵심 로직, UI 컴포넌트, K8s API
 │   ├── kube-object/                    # Kubernetes 오브젝트 모델
@@ -243,7 +262,7 @@ skuberplus-client/
 │       ├── typescript/                 # TypeScript 공통 설정
 │       └── jest/                       # Jest 공통 설정
 │
-├── skuberplus/                         # Electron 메인 애플리케이션
+├── k-lens/                             # Electron 메인 애플리케이션
 │   ├── src/
 │   │   ├── main/                       # Main 프로세스
 │   │   ├── renderer/                   # Renderer 프로세스 (React)
@@ -331,8 +350,8 @@ registerFeature(di, myFeature);
 소스 변경 후 빌드 이상 시:
 
 ```bash
-rm -rf packages/core/static/build skuberplus/static/build \
-       packages/core/.webpack skuberplus/.webpack skuberplus/dist
+rm -rf packages/core/static/build k-lens/static/build \
+       packages/core/.webpack k-lens/.webpack k-lens/dist
 pnpm build:dev
 ```
 

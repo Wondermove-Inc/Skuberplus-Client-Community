@@ -5,9 +5,9 @@
  */
 
 import asyncFn from "@async-fn/jest";
-import { KubeApi, PodApi } from "@skuberplus/kube-api";
-import { podApiInjectable } from "@skuberplus/kube-api-specifics";
-import { Pod } from "@skuberplus/kube-object";
+import { KubeApi, PodApi } from "@k-lens/kube-api";
+import { podApiInjectable } from "@k-lens/kube-api-specifics";
+import { Pod } from "@k-lens/kube-object";
 // NOTE: this is fine because we are testing something that only exported
 import { PodsApi } from "../../../extensions/common-api/k8s-api";
 import setupAutoRegistrationInjectable from "../../../renderer/before-frame-starts/runnables/setup-auto-registration.injectable";
@@ -24,7 +24,7 @@ import nodeFetchInjectable from "../../fetch/node-fetch.injectable";
 import createKubeApiForRemoteClusterInjectable from "../create-kube-api-for-remote-cluster.injectable";
 import createKubeJsonApiInjectable from "../create-kube-json-api.injectable";
 
-import type { KubeStatusData } from "@skuberplus/kube-object";
+import type { KubeStatusData } from "@k-lens/kube-object";
 
 import type { AsyncFnMock } from "@async-fn/jest";
 import type { DiContainer } from "@ogre-tools/injectable";

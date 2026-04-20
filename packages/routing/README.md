@@ -1,16 +1,16 @@
-# @skuberplus/routing
+# @k-lens/routing
 
 This package contains stuff related to creating Lens-applications. 
 
 ## Usage
 
 ```sh
-npm install @skuberplus/routing
+npm install @k-lens/routing
 ```
 
 ```typescript
-import { observableHistoryInjectable } from "@skuberplus/routing";
-import { searchParamsOptions } from "@skuberplus/routing";
+import { observableHistoryInjectable } from "@k-lens/routing";
+import { searchParamsOptions } from "@k-lens/routing";
 ```
 
 ## Extendability

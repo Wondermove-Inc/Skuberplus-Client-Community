@@ -1,1 +1,1 @@
-module.exports = require("@skuberplus/webpack").configForReact;
+module.exports = require("@k-lens/webpack").configForReact;

@@ -5,7 +5,7 @@
  */
 
 import asyncFn from "@async-fn/jest";
-import { iter, strictGet } from "@skuberplus/utilities";
+import { iter, strictGet } from "@k-lens/utilities";
 import EventEmitter from "events";
 import { ObservableMap, observable, runInAction } from "mobx";
 import directoryForTempInjectable from "../../../common/app-paths/directory-for-temp/directory-for-temp.injectable";

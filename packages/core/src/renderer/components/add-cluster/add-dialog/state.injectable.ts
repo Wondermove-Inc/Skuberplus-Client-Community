@@ -22,7 +22,7 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import { observable } from "mobx";
 
-import type { KubeConfig } from "@skuberplus/kubernetes-client-node";
+import type { KubeConfig } from "@k-lens/kubernetes-client-node";
 
 import type { IObservableArray, IObservableValue } from "mobx";
 

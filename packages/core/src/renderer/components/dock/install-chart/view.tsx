@@ -6,13 +6,13 @@
 
 import "./install-chart.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { Button } from "@skuberplus/button";
-import { Icon } from "@skuberplus/icon";
-import { Spinner } from "@skuberplus/spinner";
+import { Button } from "@k-lens/button";
+import { Icon } from "@k-lens/icon";
+import { Spinner } from "@k-lens/spinner";
 // 🎯 shadcn UI 컴포넌트: 레거시 Badge 대체
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { prevDefault } from "@skuberplus/utilities";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { prevDefault } from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { observer } from "mobx-react";
 import React from "react";
 import { LogsDialog } from "../../dialog/logs-dialog";

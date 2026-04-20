@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { hasDefinedTupleValue, isDefined, object } from "@k-lens/utilities";
 import { pipeline } from "@ogre-tools/fp";
 import { getInjectable } from "@ogre-tools/injectable";
-import { hasDefinedTupleValue, isDefined, object } from "@skuberplus/utilities";
 import { groupBy, reduce } from "lodash";
 import { filter, map } from "lodash/fp";
 import { clusterMetadataDetectorInjectionToken } from "./token";

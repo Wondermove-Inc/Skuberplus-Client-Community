@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { requestFromChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { requestFromChannelInjectionToken } from "@skuberplus/messaging";
 import { openPathPickingDialogChannel } from "../common/channel";
 
 import type { PathPickOpts } from "../../../renderer/components/path-picker";

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { isDefined } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { isDefined } from "@skuberplus/utilities";
 import apiBaseInjectable from "../../api-base.injectable";
 import { HelmChart } from "../helm-charts.api";
 

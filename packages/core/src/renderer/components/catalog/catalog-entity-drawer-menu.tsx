@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Icon } from "@k-lens/icon";
+import { cssNames, hasDefiniteField } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { cssNames, hasDefiniteField } from "@skuberplus/utilities";
 import { observable } from "mobx";
 import { observer } from "mobx-react";
 import React, { Component } from "react";

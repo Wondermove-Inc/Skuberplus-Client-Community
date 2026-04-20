@@ -24,7 +24,7 @@ import type { InstallOnDrop } from "./install-on-drop.injectable";
 
 const ExtensionsNotice = () => (
   <Notice className={styles.notice}>
-    <p>{"Add new features via SkuberPlus Extensions."}</p>
+    <p>{"Add new features via K-Lens Extensions."}</p>
   </Notice>
 );
 

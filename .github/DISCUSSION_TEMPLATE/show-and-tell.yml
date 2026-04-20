@@ -4,13 +4,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        Built something cool with Skuber+ Client? Share it with the community!
+        Built something cool with K-Lens? Share it with the community!
 
   - type: textarea
     id: description
     attributes:
       label: What I Built
-      description: Describe your project or how you're using Skuber+ Client.
+      description: Describe your project or how you're using K-Lens.
     validations:
       required: true
 

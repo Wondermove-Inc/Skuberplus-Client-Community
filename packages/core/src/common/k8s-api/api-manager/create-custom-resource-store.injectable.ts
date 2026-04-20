@@ -4,13 +4,13 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import clusterFrameContextForNamespacedResourcesInjectable from "../../../renderer/cluster-frame-context/for-namespaced-resources.injectable";
 import { CustomResourceStore } from "./resource.store";
 
-import type { KubeApi } from "@skuberplus/kube-api";
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeApi } from "@k-lens/kube-api";
+import type { KubeObject } from "@k-lens/kube-object";
 
 import type { KubeObjectStoreDependencies } from "../kube-object.store";
 

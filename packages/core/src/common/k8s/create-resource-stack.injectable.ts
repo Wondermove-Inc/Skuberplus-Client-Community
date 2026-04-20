@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import readDirectoryInjectable from "../fs/read-directory.injectable";
 import readFileInjectable from "../fs/read-file.injectable";
 import { kubectlApplyAllInjectionToken, kubectlDeleteAllInjectionToken } from "../kube-helpers/channels";

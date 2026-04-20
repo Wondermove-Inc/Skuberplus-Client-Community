@@ -112,7 +112,7 @@ function main() {
     // verify-architecture.sh가 없으면 개발 환경 바이너리 직접 검증
     console.log("  📝 개발 환경 Kubernetes 바이너리 검증:");
 
-    const DEV_BINARIES_DIR = path.join(__dirname, "../skuberplus/binaries/client/darwin/arm64");
+    const DEV_BINARIES_DIR = path.join(__dirname, "../k-lens/binaries/client/darwin/arm64");
     const K8S_BINARIES = ["kubectl", "helm", "skuberplus-k8s-proxy"];
 
     for (const binaryName of K8S_BINARIES) {
@@ -141,13 +141,13 @@ function main() {
   console.log("  📝 더 정확한 검증이 필요하면 Webpack stats JSON 분석 권장");
 
   const RENDERER_BUNDLE_CORE = path.join(__dirname, "../packages/core/static/build/library/renderer.js");
-  const RENDERER_BUNDLE_SKUBERPLUS = path.join(__dirname, "../skuberplus/static/build/skuberplus.js");
+  const RENDERER_BUNDLE_KLENS = path.join(__dirname, "../k-lens/static/build/k-lens.js");
 
-  if (!verifyBundleModules(RENDERER_BUNDLE_CORE, "@skuberplus/core")) {
+  if (!verifyBundleModules(RENDERER_BUNDLE_CORE, "@k-lens/core")) {
     FAILED++;
   }
 
-  if (!verifyBundleModules(RENDERER_BUNDLE_SKUBERPLUS, "skuberplus")) {
+  if (!verifyBundleModules(RENDERER_BUNDLE_KLENS, "k-lens")) {
     FAILED++;
   }
 
@@ -162,8 +162,8 @@ function main() {
     "packages/core/static/build/library/main.js",
     "packages/core/static/build/library/renderer.js",
     "packages/core/static/build/library/renderer.css",
-    "skuberplus/static/build/main.js",
-    "skuberplus/static/build/skuberplus.js",
+    "k-lens/static/build/main.js",
+    "k-lens/static/build/k-lens.js",
   ];
 
   const missingFiles = [];

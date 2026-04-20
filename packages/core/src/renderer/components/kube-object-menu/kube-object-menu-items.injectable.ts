@@ -11,7 +11,7 @@ import { filter, map, sortBy } from "lodash/fp";
 import { computed } from "mobx";
 import { kubeObjectMenuItemInjectionToken } from "./kube-object-menu-item-injection-token";
 
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeObject } from "@k-lens/kube-object";
 
 const kubeObjectMenuItemsInjectable = getInjectable({
   id: "kube-object-menu-items",

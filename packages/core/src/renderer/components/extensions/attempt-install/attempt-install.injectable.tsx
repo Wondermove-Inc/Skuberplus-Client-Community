@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { disposer } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { disposer } from "@skuberplus/utilities";
 import { remove as removeDir } from "fs-extra";
 import React from "react";
 import { ExtensionInstallationState } from "../../../../extensions/extension-installation-state-store/extension-installation-state-store";
@@ -18,8 +18,8 @@ import createTempFilesAndValidateInjectable from "./create-temp-files-and-valida
 import getExtensionDestFolderInjectable from "./get-extension-dest-folder.injectable";
 import unpackExtensionInjectable from "./unpack-extension.injectable";
 
-import type { LensExtensionId } from "@skuberplus/legacy-extensions";
-import type { Disposer } from "@skuberplus/utilities";
+import type { LensExtensionId } from "@k-lens/legacy-extensions";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { ExtensionInstallationStateStore } from "../../../../extensions/extension-installation-state-store/extension-installation-state-store";
 import type { ExtensionLoader } from "../../../../extensions/extension-loader";

@@ -1,5 +1,5 @@
+import { runManyFor } from "@k-lens/run-many";
 import { getInjectable, getInjectionToken } from "@ogre-tools/injectable";
-import { runManyFor } from "@skuberplus/run-many";
 import * as timeSlots from "./time-slots";
 
 export type StartApplication = () => Promise<void>;

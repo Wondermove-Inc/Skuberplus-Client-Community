@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Pod } from "@k-lens/kube-object";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Pod } from "@skuberplus/kube-object";
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { buildKubectlExecCommand } from "../../../common/utils/shell-utils";
@@ -16,7 +16,7 @@ import sendCommandInjectable, { type SendCommand } from "../dock/terminal/send-c
 import hideDetailsInjectable, { type HideDetails } from "../kube-detail-params/hide-details.injectable";
 import PodMenuItem from "./pod-menu-item";
 
-import type { Container, EphemeralContainer } from "@skuberplus/kube-object";
+import type { Container, EphemeralContainer } from "@k-lens/kube-object";
 
 import type { IComputedValue } from "mobx";
 

@@ -24,15 +24,15 @@
  * - 2025-12-01: Group Select → shadcn DropdownMenu 마이그레이션 (테마 토큰 적용)
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@skuberplus/storybook-shadcn/src/components/ui/dropdown-menu";
-import { iter } from "@skuberplus/utilities";
+} from "@k-lens/storybook-shadcn/src/components/ui/dropdown-menu";
+import { iter } from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { ChevronDown, Folder, Trash2 } from "lucide-react";
 import { observer } from "mobx-react";
 import React, { useEffect, useMemo, useState } from "react";
@@ -57,7 +57,7 @@ import { customResourceDefinitionColumns } from "./custom-resource-definitions-c
 import selectedCustomResourceDefinitionGroupsUrlParamInjectable from "./selected-groups-url-param.injectable";
 import customResourceDefinitionStoreInjectable from "./store.injectable";
 
-import type { CustomResourceDefinition } from "@skuberplus/kube-object";
+import type { CustomResourceDefinition } from "@k-lens/kube-object";
 
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
 import type { PageParam } from "../../navigation/page-param";

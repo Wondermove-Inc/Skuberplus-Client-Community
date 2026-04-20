@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { kubeApiInjectionToken, storesAndApisCanBeCreatedInjectionToken } from "@k-lens/kube-api-specifics";
 import { getInjectable } from "@ogre-tools/injectable";
 import { computedInjectManyInjectable } from "@ogre-tools/injectable-extension-for-mobx";
-import { kubeApiInjectionToken, storesAndApisCanBeCreatedInjectionToken } from "@skuberplus/kube-api-specifics";
 import { computed } from "mobx";
 import { ApiManager } from "./api-manager";
 import { customResourceDefinitionApiInjectionToken } from "./crd-api-token";

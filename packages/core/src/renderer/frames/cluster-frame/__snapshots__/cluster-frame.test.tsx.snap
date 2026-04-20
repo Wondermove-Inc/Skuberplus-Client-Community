@@ -2731,7 +2731,7 @@ exports[`<ClusterFrame /> given cluster with list nodes and namespaces permissio
                     <p
                       class="text-muted-foreground text-sm"
                     >
-                      Automatically start Skuber⁺ Client on login
+                      Automatically start K-Lens on login
                     </p>
                   </div>
                 </div>
@@ -5681,7 +5681,7 @@ exports[`<ClusterFrame /> given cluster with list nodes and namespaces permissio
                     <p
                       class="text-muted-foreground text-sm"
                     >
-                      Automatically start Skuber⁺ Client on login
+                      Automatically start K-Lens on login
                     </p>
                   </div>
                 </div>
@@ -8631,7 +8631,7 @@ exports[`<ClusterFrame /> given cluster without list nodes, but with namespaces 
                     <p
                       class="text-muted-foreground text-sm"
                     >
-                      Automatically start Skuber⁺ Client on login
+                      Automatically start K-Lens on login
                     </p>
                   </div>
                 </div>

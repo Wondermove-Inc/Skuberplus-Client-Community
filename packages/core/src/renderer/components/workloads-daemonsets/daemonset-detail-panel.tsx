@@ -13,13 +13,13 @@
  *   - 2025-12-01: 닫힘 애니메이션 중 데이터 유지 패턴 적용
  */
 
+import { daemonSetApiInjectable } from "@k-lens/kube-api-specifics";
+import { DaemonSet } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Table, TableBody, TableCell, TableRow } from "@k-lens/storybook-shadcn";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { Separator } from "@k-lens/storybook-shadcn/src/components/ui/separator";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { daemonSetApiInjectable } from "@skuberplus/kube-api-specifics";
-import { DaemonSet } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Table, TableBody, TableCell, TableRow } from "@skuberplus/storybook-shadcn";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { Separator } from "@skuberplus/storybook-shadcn/src/components/ui/separator";
 import { observer } from "mobx-react";
 import React from "react";
 import hostedClusterInjectable from "../../cluster-frame-context/hosted-cluster.injectable";
@@ -37,9 +37,9 @@ import { PodDetailsTolerations } from "../workloads-pods/pod-details-tolerations
 import { DaemonSetMetricsDetailsComponent } from "./metrics-details-component";
 import daemonSetStoreInjectable from "./store.injectable";
 
-import type { DaemonSetApi } from "@skuberplus/kube-api";
-import type { KubeObject } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+import type { DaemonSetApi } from "@k-lens/kube-api";
+import type { KubeObject } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { HostedCluster } from "../../cluster-frame-context/hosted-cluster.injectable";
 import type { OpenConfirmDialog } from "../confirm-dialog/open.injectable";

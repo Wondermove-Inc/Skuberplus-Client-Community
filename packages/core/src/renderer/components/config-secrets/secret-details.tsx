@@ -6,18 +6,15 @@
 
 import "./secret-details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { Button } from "@skuberplus/button";
-import { Icon } from "@skuberplus/icon";
-import { Secret } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { Button } from "@k-lens/button";
+import { Icon } from "@k-lens/icon";
+import { Secret } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
 // 🎯 shadcn UI 컴포넌트: DrawerItem/DrawerTitle 대체
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import {
-  DetailPanelField,
-  DetailPanelSection,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { base64, toggle } from "@skuberplus/utilities";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { DetailPanelField, DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { base64, toggle } from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { autorun, makeObservable, observable } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";
@@ -26,7 +23,7 @@ import { Input } from "../input";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 import secretStoreInjectable from "./store.injectable";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { KubeObjectDetailsProps } from "../kube-object-details";

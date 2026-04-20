@@ -26,8 +26,8 @@
 
 import "./view.scss";
 
+import { Input } from "@k-lens/storybook-shadcn";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Input } from "@skuberplus/storybook-shadcn";
 import { computed, makeObservable } from "mobx";
 import { observer } from "mobx-react";
 import React, { Component } from "react";

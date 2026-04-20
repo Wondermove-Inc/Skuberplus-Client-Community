@@ -6,9 +6,9 @@
 
 import "./events.scss";
 
+import { Icon } from "@k-lens/icon";
+import { cssNames, stopPropagation } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { cssNames, stopPropagation } from "@skuberplus/utilities";
 import { orderBy } from "lodash";
 import { computed, makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
@@ -27,9 +27,9 @@ import { WithTooltip } from "../with-tooltip";
 import { EventsCommonTable } from "./events-common-table";
 import eventStoreInjectable from "./store.injectable";
 
-import type { KubeEventApi } from "@skuberplus/kube-api";
-import type { KubeEvent, KubeEventData } from "@skuberplus/kube-object";
-import type { IClassName } from "@skuberplus/utilities";
+import type { KubeEventApi } from "@k-lens/kube-api";
+import type { KubeEvent, KubeEventData } from "@k-lens/kube-object";
+import type { IClassName } from "@k-lens/utilities";
 
 import type { ApiManager } from "../../../common/k8s-api/api-manager";
 import type { HeaderCustomizer, ListLayoutItemsFilter } from "../item-object-list";

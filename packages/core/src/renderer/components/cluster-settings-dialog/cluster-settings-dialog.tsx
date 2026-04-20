@@ -21,7 +21,6 @@
  * - 2025-11-18: Storybook 패턴으로 완전히 재작성 (activeEntitySettingsTab → activeMenu useState)
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
 import {
   Sidebar,
   SidebarContent,
@@ -31,7 +30,8 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-} from "@skuberplus/storybook-shadcn/src/components/ui/sidebar";
+} from "@k-lens/storybook-shadcn/src/components/ui/sidebar";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import React, { useState } from "react";
 import catalogEntityRegistryInjectable from "../../api/catalog/entity/registry.injectable";
 import {

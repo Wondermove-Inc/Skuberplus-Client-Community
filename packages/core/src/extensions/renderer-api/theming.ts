@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { asLegacyGlobalForExtensionApi } from "@skuberplus/legacy-global-di";
+import { asLegacyGlobalForExtensionApi } from "@k-lens/legacy-global-di";
 import activeThemeInjectable from "../../renderer/themes/active.injectable";
 
 import type { ThemeType } from "../../renderer/themes/lens-theme";

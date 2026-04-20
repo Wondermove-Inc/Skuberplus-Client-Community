@@ -16,8 +16,8 @@
  * - 2025-10-31: 초기 생성 (TanStack Table 컬럼 정의, ReplicaSets 참조)
  */
 
-import { Button, Checkbox } from "@skuberplus/storybook-shadcn";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { Button, Checkbox } from "@k-lens/storybook-shadcn";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 import { ArrowUpDown } from "lucide-react";
 import React from "react";
 import { KubeObjectAge } from "../kube-object/age";
@@ -25,7 +25,7 @@ import { KubeObjectAge } from "../kube-object/age";
 import { NamespaceSelectBadge } from "../namespaces/namespace-select-badge";
 import { WithTooltip } from "../with-tooltip";
 
-import type { ReplicationController } from "@skuberplus/kube-object";
+import type { ReplicationController } from "@k-lens/kube-object";
 
 import type { ColumnDef } from "@tanstack/react-table";
 

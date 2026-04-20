@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { disposer } from "@skuberplus/utilities";
+import { disposer } from "@k-lens/utilities";
 import { action, computed, makeObservable, observable } from "mobx";
 
-import type { InstalledExtension, LensExtensionId, LensExtensionManifest } from "@skuberplus/legacy-extensions";
+import type { InstalledExtension, LensExtensionId, LensExtensionManifest } from "@k-lens/legacy-extensions";
 
 import type { ProtocolHandlerRegistration } from "../common/protocol-handler/registration";
 import type { Logger } from "./common-api";

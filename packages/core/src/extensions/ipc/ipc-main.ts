@@ -4,16 +4,16 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getEnvironmentSpecificLegacyGlobalDiForExtensionApi } from "@skuberplus/legacy-global-di";
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { getEnvironmentSpecificLegacyGlobalDiForExtensionApi } from "@k-lens/legacy-global-di";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { ipcMain } from "electron";
 import { once } from "lodash";
 import { ipcMainHandle } from "../../common/ipc";
 import { Disposers } from "../lens-extension";
 import { IpcPrefix, IpcRegistrar } from "./ipc-registrar";
 
-import type { Logger } from "@skuberplus/logger";
-import type { Disposer } from "@skuberplus/utilities";
+import type { Logger } from "@k-lens/logger";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { LensMainExtension } from "../lens-main-extension";
 

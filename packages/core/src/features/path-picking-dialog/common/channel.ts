@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import type { RequestChannel } from "@skuberplus/messaging";
+import type { RequestChannel } from "@k-lens/messaging";
 
 import type { OpenDialogOptions } from "electron";
 

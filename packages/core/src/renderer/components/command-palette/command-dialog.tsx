@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { iter } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { iter } from "@skuberplus/utilities";
 import { observer } from "mobx-react";
 import React, { useCallback, useState } from "react";
 import { isKubernetesCluster } from "../../../common/catalog-entities/kubernetes-cluster";

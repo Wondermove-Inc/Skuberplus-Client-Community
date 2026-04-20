@@ -6,17 +6,14 @@
 
 import "./service-details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { type PortStatus, Service } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { Icon } from "@k-lens/icon";
+import { type PortStatus, Service } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
 // 🎯 shadcn UI 컴포넌트: DrawerItem/DrawerTitle/Badge 대체
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import {
-  DetailPanelField,
-  DetailPanelSection,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { formatDuration } from "@skuberplus/utilities/dist";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { DetailPanelField, DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { formatDuration } from "@k-lens/utilities/dist";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";
 import subscribeStoresInjectable from "../../kube-watch-api/subscribe-stores.injectable";
@@ -28,7 +25,7 @@ import { WithTooltip } from "../with-tooltip";
 import { ServiceDetailsEndpointSlices } from "./service-details-endpoint-slices";
 import { ServicePortComponent } from "./service-port-component";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
 import type { PortForwardStore } from "../../port-forward";

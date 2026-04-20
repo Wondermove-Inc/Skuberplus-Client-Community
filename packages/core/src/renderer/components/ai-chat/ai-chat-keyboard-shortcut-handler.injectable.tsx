@@ -15,9 +15,9 @@
  * - 2026-01-17: 초기 생성 (Root Frame 마이그레이션)
  */
 
+import { rootFrameChildComponentInjectionToken } from "@k-lens/react-application";
 import { getInjectable } from "@ogre-tools/injectable";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { rootFrameChildComponentInjectionToken } from "@skuberplus/react-application";
 import { computed } from "mobx";
 import { useEffect } from "react";
 import { AI_ASSISTANT_TOGGLE_CHANNEL } from "../../../features/application-menu/main/menu-items/view/toggle-ai-assistant/toggle-ai-assistant-menu-item.injectable";

@@ -4,13 +4,13 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { sendMessageToChannelInjectionToken } from "@skuberplus/messaging";
+import { sendMessageToChannelInjectionToken } from "@k-lens/messaging";
 import { MESSAGE } from "triple-beam";
 import { getDiForUnitTesting } from "../../../renderer/getDiForUnitTesting";
 import ipcLogTransportInjectable from "./ipc-transport.injectable";
 import rendererLogFileIdInjectable from "./renderer-log-file-id.injectable";
 
-import type { SendMessageToChannel } from "@skuberplus/messaging";
+import type { SendMessageToChannel } from "@k-lens/messaging";
 
 import type { DiContainer } from "@ogre-tools/injectable";
 

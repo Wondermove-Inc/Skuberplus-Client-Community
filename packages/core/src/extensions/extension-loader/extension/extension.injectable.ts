@@ -4,13 +4,13 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { disposer } from "@k-lens/utilities";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
-import { disposer } from "@skuberplus/utilities";
 import { reaction, runInAction } from "mobx";
 import { injectableDifferencingRegistratorWith } from "../../../common/utils/registrator-helper";
 import { extensionRegistratorInjectionToken } from "../extension-registrator-injection-token";
 
-import type { LegacyLensExtension } from "@skuberplus/legacy-extensions";
+import type { LegacyLensExtension } from "@k-lens/legacy-extensions";
 
 export interface Extension {
   register: () => void;

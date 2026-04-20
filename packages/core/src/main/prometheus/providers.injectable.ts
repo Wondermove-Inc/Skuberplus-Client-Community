@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { prometheusProviderInjectionToken } from "@k-lens/prometheus";
 import { getInjectable } from "@ogre-tools/injectable";
 import { computedInjectManyInjectable } from "@ogre-tools/injectable-extension-for-mobx";
-import { prometheusProviderInjectionToken } from "@skuberplus/prometheus";
 
 const prometheusProvidersInjectable = getInjectable({
   id: "prometheus-providers",

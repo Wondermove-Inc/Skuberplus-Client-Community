@@ -7,7 +7,7 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import kubeObjectHandlersInjectable from "../../kube-object/handlers.injectable";
 
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeObject } from "@k-lens/kube-object";
 
 import type { KubeObjectOnContextMenuOpenContext } from "../../kube-object/handler";
 

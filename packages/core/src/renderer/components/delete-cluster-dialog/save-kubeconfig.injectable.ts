@@ -4,12 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { dumpYaml } from "@k-lens/kubernetes-client-node";
 import { getInjectable } from "@ogre-tools/injectable";
-import { dumpYaml } from "@skuberplus/kubernetes-client-node";
 import * as lockFile from "proper-lockfile";
 import writeFileInjectable from "../../../common/fs/write-file.injectable";
 
-import type { KubeConfig } from "@skuberplus/kubernetes-client-node";
+import type { KubeConfig } from "@k-lens/kubernetes-client-node";
 
 export type SaveKubeconfig = (config: KubeConfig, path: string) => Promise<void>;
 

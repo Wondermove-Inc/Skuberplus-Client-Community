@@ -17,7 +17,7 @@
  * - 2025-11-30: CPU/Memory 실제 메트릭 데이터 연동, "Updated soon" 오버레이 제거
  */
 
-import { Input } from "@skuberplus/storybook-shadcn/src/components/ui/input";
+import { Input } from "@k-lens/storybook-shadcn/src/components/ui/input";
 import {
   type ColumnDef,
   type ColumnSizingInfoState,

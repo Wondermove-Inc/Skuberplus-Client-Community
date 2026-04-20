@@ -4,11 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { requestFromChannelInjectionToken } from "@k-lens/messaging/dist";
 import { getInjectable, type Injectable } from "@ogre-tools/injectable";
-import { requestFromChannelInjectionToken } from "@skuberplus/messaging/dist";
 import { downloadBinaryChannel } from "../../common/fetch/download-binary-channel";
 
-import type { AsyncResult } from "@skuberplus/utilities/dist";
+import type { AsyncResult } from "@k-lens/utilities/dist";
 
 import type { DownloadBinaryOptions } from "../../main/fetch/download-binary.injectable";
 

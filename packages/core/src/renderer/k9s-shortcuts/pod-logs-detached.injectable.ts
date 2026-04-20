@@ -1,12 +1,12 @@
+import { keyboardShortcutInjectionToken } from "@k-lens/keyboard-shortcuts";
 import { getInjectable } from "@ogre-tools/injectable";
-import { keyboardShortcutInjectionToken } from "@skuberplus/keyboard-shortcuts";
 import { v4 as uuid } from "uuid";
 import { LOG_WINDOW_OPEN_CHANNEL } from "../../common/ipc/log-window-channel";
 import hostedClusterIdInjectable from "../cluster-frame-context/hosted-cluster-id.injectable";
 import tableFocusManagerInjectable from "../components/table/table-focus-manager.injectable";
 import ipcRendererInjectable from "../utils/channel/ipc-renderer.injectable";
 
-import type { Pod } from "@skuberplus/kube-object";
+import type { Pod } from "@k-lens/kube-object";
 
 import type { LogWindowOpenPayload } from "../../common/ipc/log-window-channel";
 

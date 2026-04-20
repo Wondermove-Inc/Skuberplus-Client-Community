@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Button } from "@k-lens/button";
+import { isDefined, iter } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Button } from "@skuberplus/button";
-import { isDefined, iter } from "@skuberplus/utilities";
 import fse from "fs-extra";
 import { debounce } from "lodash";
 import { action, computed, makeObservable, observable } from "mobx";
@@ -24,7 +24,7 @@ import { MonacoEditor } from "../monaco-editor";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 import styles from "./add-cluster.module.scss";
 
-import type { KubeConfig } from "@skuberplus/kubernetes-client-node";
+import type { KubeConfig } from "@k-lens/kubernetes-client-node";
 
 import type { EmitAppEvent } from "../../../common/app-event-bus/emit-event.injectable";
 import type { NavigateToCatalog } from "../../../common/front-end-routing/routes/catalog/navigate-to-catalog.injectable";

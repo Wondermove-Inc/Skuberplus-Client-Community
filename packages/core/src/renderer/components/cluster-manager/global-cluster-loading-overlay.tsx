@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { hasTypedProperty, isObject, isString } from "@skuberplus/utilities";
+import { hasTypedProperty, isObject, isString } from "@k-lens/utilities";
 import { makeObservable, observable } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";

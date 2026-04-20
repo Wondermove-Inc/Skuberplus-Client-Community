@@ -1,19 +1,19 @@
-# @skuberplus/error-boundary
+# @k-lens/error-boundary
 
 This package contains stuff related to creating Lens-applications. 
 
 ## Usage
 
 ```sh
-npm install @skuberplus/icon
+npm install @k-lens/icon
 ```
 
 ```typescript
-import "@skuberplus/icon/styles";
+import "@k-lens/icon/styles";
 
-import type { BaseIconProps } from "@skuberplus/icon";
-import type { IconProps } from "@skuberplus/icon";
-import { Icon } from "@skuberplus/icon";
+import type { BaseIconProps } from "@k-lens/icon";
+import type { IconProps } from "@k-lens/icon";
+import { Icon } from "@k-lens/icon";
 ```
 
 ## Extendability

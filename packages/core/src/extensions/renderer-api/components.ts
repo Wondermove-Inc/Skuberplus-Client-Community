@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { asLegacyGlobalForExtensionApi, asLegacyGlobalFunctionForExtensionApi } from "@skuberplus/legacy-global-di";
+import { asLegacyGlobalForExtensionApi, asLegacyGlobalFunctionForExtensionApi } from "@k-lens/legacy-global-di";
 import commandOverlayInjectable from "../../renderer/components/command-palette/command-overlay.injectable";
 import { ConfirmDialog as _ConfirmDialog } from "../../renderer/components/confirm-dialog";
 import confirmInjectable from "../../renderer/components/confirm-dialog/confirm.injectable";
@@ -27,16 +27,16 @@ import type {
   ConfirmDialogProps,
 } from "../../renderer/components/confirm-dialog";
 
-export * from "@skuberplus/button";
-export * from "@skuberplus/icon";
+export * from "@k-lens/button";
+export * from "@k-lens/icon";
 export {
   type CreateNotificationOptions,
   type NotificationId,
   type NotificationMessage,
   type ShowNotification,
-} from "@skuberplus/notifications";
-export * from "@skuberplus/spinner";
-export * from "@skuberplus/tooltip";
+} from "@k-lens/notifications";
+export * from "@k-lens/spinner";
+export * from "@k-lens/tooltip";
 export * from "../../renderer/components/add-remove-buttons";
 export * from "../../renderer/components/avatar";
 export * from "../../renderer/components/badge";

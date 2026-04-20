@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { onKeyboardShortcut } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { onKeyboardShortcut } from "@skuberplus/utilities";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React from "react";
 import { broadcastMessage } from "../../../common/ipc";

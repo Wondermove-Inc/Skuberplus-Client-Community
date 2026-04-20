@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { sidebarItemInjectionToken } from "@k-lens/cluster-sidebar";
 import { getInjectable } from "@ogre-tools/injectable";
-import { sidebarItemInjectionToken } from "@skuberplus/cluster-sidebar";
 import { Users } from "lucide-react";
 import React from "react";
 import podSecurityPoliciesRouteInjectable from "../../../common/front-end-routing/routes/cluster/user-management/pod-security-policies/pod-security-policies-route.injectable";

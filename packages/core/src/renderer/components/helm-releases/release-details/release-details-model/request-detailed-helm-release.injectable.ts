@@ -9,7 +9,7 @@ import requestHelmReleaseInjectable from "../../../../../features/helm-releases/
 import requestListHelmReleasesInjectable from "../../../../../features/helm-releases/renderer/request-list-helm-releases.injectable";
 import { toHelmRelease } from "../../to-helm-release";
 
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { AsyncResult } from "@k-lens/utilities";
 
 import type { HelmRelease } from "../../../../../common/k8s-api/endpoints/helm-releases.api";
 import type {

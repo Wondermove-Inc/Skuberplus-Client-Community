@@ -1,1 +1,0 @@
-deb [signed-by=/etc/apt/keyrings/skuberplus.asc] https://github.com/Wondermove-Inc/skuberplus-client/releases/latest/download ./

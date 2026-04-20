@@ -2,7 +2,7 @@ import {
   getMessageChannel,
   getMessageChannelListenerInjectable,
   sendMessageToChannelInjectionToken,
-} from "@skuberplus/messaging";
+} from "@k-lens/messaging";
 import { reaction } from "mobx";
 import { computedChannelObserverInjectionToken } from "./computed-channel.injectable";
 

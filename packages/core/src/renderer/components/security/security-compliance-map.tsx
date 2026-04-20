@@ -20,7 +20,7 @@
  * @packageDocumentation
  */
 
-import { Card, CardContent, CardHeader, CardTitle } from "@skuberplus/storybook-shadcn/src/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@k-lens/storybook-shadcn/src/components/ui/card";
 import { ShieldCheck } from "lucide-react";
 import React, { useMemo } from "react";
 import {

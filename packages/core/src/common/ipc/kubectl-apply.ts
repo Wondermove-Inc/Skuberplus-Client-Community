@@ -10,7 +10,7 @@
  * @module ipc/kubectl-apply
  */
 
-import { getRequestChannel } from "@skuberplus/messaging";
+import { getRequestChannel } from "@k-lens/messaging";
 
 import type { ClusterId } from "../cluster-types";
 

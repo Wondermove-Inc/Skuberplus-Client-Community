@@ -1,15 +1,15 @@
-# @skuberplus/spinner
+# @k-lens/spinner
 
 This package contains stuff related to creating Lens-applications. 
 
 ## Usage
 
 ```sh
-npm install @skuberplus/spinner
+npm install @k-lens/spinner
 ```
 
 ```typescript
-import { Spinner } from "@skuberplus/spinner";
+import { Spinner } from "@k-lens/spinner";
 ```
 
 ## Extendability

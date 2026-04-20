@@ -44,7 +44,7 @@ import { PdbDetailPanel } from "./pdb-detail-panel";
 import { podDisruptionBudgetColumns } from "./pod-disruption-budgets-columns";
 import podDisruptionBudgetStoreInjectable from "./store.injectable";
 
-import type { PodDisruptionBudget } from "@skuberplus/kube-object";
+import type { PodDisruptionBudget } from "@k-lens/kube-object";
 
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
 import type { PodDisruptionBudgetStore } from "./store";

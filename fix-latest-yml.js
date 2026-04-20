@@ -7,8 +7,8 @@
  *
  * 📝 주의사항:
  * - 빌드 후 수동으로 실행
- * - skuberplus/dist/latest-mac.yml 파일을 수정
- * - url/path에 버전 폴더 경로 추가 (예: 0.0.1/Skuber+Client-...)
+ * - k-lens/dist/latest-mac.yml 파일을 수정
+ * - url/path에 버전 폴더 경로 추가 (예: 0.0.1/KLens-...)
  *
  * 🔄 변경이력: 2025-12-03 - 초기 생성
  */
@@ -17,9 +17,9 @@ const fs = require("fs");
 const path = require("path");
 
 // yaml 파서 대신 간단한 텍스트 처리 사용
-const distDir = path.join(__dirname, "skuberplus", "dist");
+const distDir = path.join(__dirname, "k-lens", "dist");
 const latestMacYmlPath = path.join(distDir, "latest-mac.yml");
-const packageJsonPath = path.join(__dirname, "skuberplus", "package.json");
+const packageJsonPath = path.join(__dirname, "k-lens", "package.json");
 
 console.log("[fix-latest-yml] 🚀 latest-mac.yml 후처리 시작...");
 
@@ -44,12 +44,12 @@ console.log(content);
 console.log("---");
 
 // url: 패턴 수정 (버전 경로가 없는 경우에만)
-// url: SkuberPlusClient-0.0.1-arm64.zip → url: 0.0.1/SkuberPlusClient-0.0.1-arm64.zip
-content = content.replace(/url: (?![\d.]+\/)(SkuberPlusClient-[\d.]+-[^/\n]+)/g, `url: ${version}/$1`);
+// url: KLens-0.0.1-arm64.zip → url: 0.0.1/KLens-0.0.1-arm64.zip
+content = content.replace(/url: (?![\d.]+\/)(KLens-[\d.]+-[^/\n]+)/g, `url: ${version}/$1`);
 
 // path: 패턴 수정 (버전 경로가 없는 경우에만)
-// path: SkuberPlusClient-0.0.1-arm64.zip → path: 0.0.1/SkuberPlusClient-0.0.1-arm64.zip
-content = content.replace(/path: (?![\d.]+\/)(SkuberPlusClient-[\d.]+-[^/\n]+)/g, `path: ${version}/$1`);
+// path: KLens-0.0.1-arm64.zip → path: 0.0.1/KLens-0.0.1-arm64.zip
+content = content.replace(/path: (?![\d.]+\/)(KLens-[\d.]+-[^/\n]+)/g, `path: ${version}/$1`);
 
 // 저장
 fs.writeFileSync(latestMacYmlPath, content, "utf-8");

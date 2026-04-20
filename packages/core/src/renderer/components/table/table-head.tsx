@@ -6,7 +6,7 @@
 
 import "./table-head.scss";
 
-import { cssNames } from "@skuberplus/utilities";
+import { cssNames } from "@k-lens/utilities";
 import React, { Component } from "react";
 
 export type TableHeadElem = React.ReactElement<TableHeadProps>;

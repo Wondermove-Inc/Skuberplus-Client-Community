@@ -4,12 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { waitUntilDefined } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { waitUntilDefined } from "@skuberplus/utilities";
 import apiManagerInjectable from "../../../common/k8s-api/api-manager/manager.injectable";
 import customResourceDefinitionStoreInjectable from "../custom-resource-definitions/store.injectable";
 
-import type { Namespace } from "@skuberplus/kube-object";
+import type { Namespace } from "@k-lens/kube-object";
 
 export type RequestDeleteSubNamespaceAnchor = (namespace: Namespace) => Promise<void>;
 

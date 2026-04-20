@@ -7,7 +7,7 @@
 import React from "react";
 import { NamespaceSelectBadge } from "../../namespaces/namespace-select-badge";
 
-import type { Pod } from "@skuberplus/kube-object";
+import type { Pod } from "@k-lens/kube-object";
 
 /**
  * 🎯 목적: Pod의 네임스페이스를 Badge 형태로 표시

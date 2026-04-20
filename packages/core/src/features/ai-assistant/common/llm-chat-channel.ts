@@ -11,15 +11,15 @@
  *
  * 📝 주의사항:
  * - API 키는 Main Process에서만 접근 (Renderer 노출 방지)
- * - @skuberplus/messaging 프레임워크 사용
+ * - @k-lens/messaging 프레임워크 사용
  * - LangChain BaseMessage를 직렬화하여 IPC 전송
  *
  * 🔄 변경이력:
  * - 2025-12-16: 초기 생성 (Extension Host 패턴 마이그레이션)
  */
 
+import { getRequestChannel } from "@k-lens/messaging";
 import { getInjectionToken } from "@ogre-tools/injectable";
-import { getRequestChannel } from "@skuberplus/messaging";
 
 import type { AIProvider } from "../../../common/features/user-preferences/encrypt-api-key-channel";
 

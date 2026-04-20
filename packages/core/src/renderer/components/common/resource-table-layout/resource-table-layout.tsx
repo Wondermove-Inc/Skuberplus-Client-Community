@@ -26,7 +26,7 @@
  * - 2025-11-01: NamespaceSelectSingle 컴포넌트 통합 (Events 패턴 기반)
  */
 
-import { Input } from "@skuberplus/storybook-shadcn";
+import { Input } from "@k-lens/storybook-shadcn";
 import { Search } from "lucide-react";
 import React from "react";
 import { NamespaceSelectMulti } from "../../namespaces/namespace-select-multi";

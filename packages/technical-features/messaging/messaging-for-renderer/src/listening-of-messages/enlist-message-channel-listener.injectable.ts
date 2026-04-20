@@ -1,5 +1,5 @@
+import { enlistMessageChannelListenerInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { enlistMessageChannelListenerInjectionToken } from "@skuberplus/messaging";
 import ipcRendererInjectable from "../ipc/ipc-renderer.injectable";
 
 import type { IpcRendererEvent } from "electron";

@@ -8,7 +8,7 @@
 // API docs: https://react-window.now.sh
 import "./virtual-list.scss";
 
-import { cssNames, noop } from "@skuberplus/utilities";
+import { cssNames, noop } from "@k-lens/utilities";
 import isEqual from "lodash/isEqual";
 import { observer } from "mobx-react";
 import React, { createRef, forwardRef, useCallback, useEffect, useImperativeHandle, useRef, useState } from "react";

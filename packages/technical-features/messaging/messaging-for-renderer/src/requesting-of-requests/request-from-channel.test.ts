@@ -1,11 +1,11 @@
 import asyncFn from "@async-fn/jest";
+import { registerFeature } from "@k-lens/feature-core";
+import { requestFromChannelInjectionToken } from "@k-lens/messaging";
 import { createContainer, DiContainer } from "@ogre-tools/injectable";
-import { registerFeature } from "@skuberplus/feature-core";
-import { requestFromChannelInjectionToken } from "@skuberplus/messaging";
 import { messagingFeatureForRenderer } from "../feature";
 import invokeIpcInjectable from "./invoke-ipc.injectable";
 
-import type { RequestChannel } from "@skuberplus/messaging";
+import type { RequestChannel } from "@k-lens/messaging";
 
 import type { AsyncFnMock } from "@async-fn/jest";
 

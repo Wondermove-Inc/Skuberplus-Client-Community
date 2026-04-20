@@ -1,9 +1,9 @@
+import { keyboardShortcutInjectionToken } from "@k-lens/keyboard-shortcuts";
 import { getInjectable } from "@ogre-tools/injectable";
-import { keyboardShortcutInjectionToken } from "@skuberplus/keyboard-shortcuts";
 import createEditResourceTabInjectable from "../components/dock/edit-resource/edit-resource-tab.injectable";
 import tableFocusManagerInjectable from "../components/table/table-focus-manager.injectable";
 
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeObject } from "@k-lens/kube-object";
 
 /**
  * `e` key — Edit the focused resource (opens YAML editor tab).

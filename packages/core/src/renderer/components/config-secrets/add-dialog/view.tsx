@@ -25,11 +25,11 @@
 
 import "./view.scss";
 
+import { secretApiInjectable } from "@k-lens/kube-api-specifics";
+import { reverseSecretTypeMap, SecretType } from "@k-lens/kube-object";
+import { Input } from "@k-lens/storybook-shadcn";
+import { base64, iter, object } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { secretApiInjectable } from "@skuberplus/kube-api-specifics";
-import { reverseSecretTypeMap, SecretType } from "@skuberplus/kube-object";
-import { Input } from "@skuberplus/storybook-shadcn";
-import { base64, iter, object } from "@skuberplus/utilities";
 import { Plus, Trash2 } from "lucide-react";
 import { action, makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
@@ -45,7 +45,7 @@ import { notificationPanelStore } from "../../status-bar/items/notification-pane
 import closeAddSecretDialogInjectable from "./close.injectable";
 import isAddSecretDialogOpenInjectable from "./is-open.injectable";
 
-import type { SecretApi } from "@skuberplus/kube-api";
+import type { SecretApi } from "@k-lens/kube-api";
 
 import type { IComputedValue } from "mobx";
 

@@ -6,7 +6,7 @@
 
 import { IpcRendererNavigationEvents } from "../ipc/navigation-events";
 
-import type { MessageChannel } from "@skuberplus/messaging";
+import type { MessageChannel } from "@k-lens/messaging";
 
 export type ClusterFrameNavigationChannel = MessageChannel<string>;
 

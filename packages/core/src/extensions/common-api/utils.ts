@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { asLegacyGlobalFunctionForExtensionApi, getLegacyGlobalDiForExtensionApi } from "@skuberplus/legacy-global-di";
-import * as utilities from "@skuberplus/utilities";
+import { asLegacyGlobalFunctionForExtensionApi, getLegacyGlobalDiForExtensionApi } from "@k-lens/legacy-global-di";
+import * as utilities from "@k-lens/utilities";
 import openLinkInBrowserInjectable, {
   type OpenLinkInBrowser,
 } from "../../common/utils/open-link-in-browser.injectable";

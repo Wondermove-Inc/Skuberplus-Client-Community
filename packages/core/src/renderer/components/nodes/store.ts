@@ -4,16 +4,16 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { cpuUnitsToNumber, unitsToBytes } from "@skuberplus/utilities/dist";
+import { cpuUnitsToNumber, unitsToBytes } from "@k-lens/utilities/dist";
 import autoBind from "auto-bind";
 import { sum } from "lodash";
 import { computed, makeObservable, observable } from "mobx";
 import { getMetricsSource } from "../../../common/cluster/get-metrics-source";
 import { KubeObjectStore } from "../../../common/k8s-api/kube-object.store";
 
-import type { JsonApi } from "@skuberplus/json-api";
-import type { NodeApi, NodeMetricsApi } from "@skuberplus/kube-api";
-import type { Node, NodeMetrics } from "@skuberplus/kube-object";
+import type { JsonApi } from "@k-lens/json-api";
+import type { NodeApi, NodeMetricsApi } from "@k-lens/kube-api";
+import type { Node, NodeMetrics } from "@k-lens/kube-object";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { KubeObjectStoreDependencies, KubeObjectStoreOptions } from "../../../common/k8s-api/kube-object.store";
@@ -176,7 +176,7 @@ export class NodeStore extends KubeObjectStore<Node, NodeApi> {
    * 🔄 변경이력: 2026-01-12 - 단위 변환 수정 (코어→millicores, 바이트→Ki)
    */
   private createMockNodeMetricFromResults(node: Node, cpuResult: any, memoryResult: any): NodeMetrics {
-    const { NodeMetrics: NodeMetricsClass } = require("@skuberplus/kube-object");
+    const { NodeMetrics: NodeMetricsClass } = require("@k-lens/kube-object");
     const cpuValue = this.extractMetricValueFromResult(cpuResult);
     const memoryValue = this.extractMetricValueFromResult(memoryResult);
 

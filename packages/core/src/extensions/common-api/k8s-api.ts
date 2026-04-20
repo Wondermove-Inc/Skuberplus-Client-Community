@@ -15,20 +15,20 @@ import {
   NodeApi,
   PersistentVolumeClaimApi,
   PodApi,
-} from "@skuberplus/kube-api";
-import { maybeKubeApiInjectable, storesAndApisCanBeCreatedInjectionToken } from "@skuberplus/kube-api-specifics";
-import { KubeJsonApiDataFor, KubeObject, KubeObjectMetadata } from "@skuberplus/kube-object";
+} from "@k-lens/kube-api";
+import { maybeKubeApiInjectable, storesAndApisCanBeCreatedInjectionToken } from "@k-lens/kube-api-specifics";
+import { KubeJsonApiDataFor, KubeObject, KubeObjectMetadata } from "@k-lens/kube-object";
 import {
   asLegacyGlobalForExtensionApi,
   asLegacyGlobalFunctionForExtensionApi,
   getLegacyGlobalDiForExtensionApi,
-} from "@skuberplus/legacy-global-di";
+} from "@k-lens/legacy-global-di";
 import {
   logErrorInjectionToken,
   loggerInjectionToken,
   logInfoInjectionToken,
   logWarningInjectionToken,
-} from "@skuberplus/logger";
+} from "@k-lens/logger";
 import createResourceStackInjectable from "../../common/k8s/create-resource-stack.injectable";
 import apiManagerInjectable from "../../common/k8s-api/api-manager/manager.injectable";
 import createKubeApiForClusterInjectable from "../../common/k8s-api/create-kube-api-for-cluster.injectable";
@@ -39,13 +39,13 @@ import { KubeObjectStore as InternalKubeObjectStore } from "../../common/k8s-api
 import clusterFrameContextForNamespacedResourcesInjectable from "../../renderer/cluster-frame-context/for-namespaced-resources.injectable";
 import getPodsByOwnerIdInjectable from "../../renderer/components/workloads-pods/get-pods-by-owner-id.injectable";
 
-import type { JsonApiConfig } from "@skuberplus/json-api";
+import type { JsonApiConfig } from "@k-lens/json-api";
 import type {
   DerivedKubeApiOptions,
   KubeJsonApi as InternalKubeJsonApi,
   KubeApiDependencies,
   KubeApiOptions,
-} from "@skuberplus/kube-api";
+} from "@k-lens/kube-api";
 
 import type { NodeFetchRequestInit } from "../../common/fetch/node-fetch.injectable";
 import type { ResourceApplyingStack } from "../../common/k8s/resource-stack";
@@ -152,7 +152,7 @@ export {
   KubeObject,
   KubeStatus,
   stringifyLabels,
-} from "@skuberplus/kube-object";
+} from "@k-lens/kube-object";
 
 export type {
   BaseKubeJsonApiObjectMetadata,
@@ -164,7 +164,7 @@ export type {
   KubeStatusData,
   NamespaceScopedMetadata,
   OwnerReference,
-} from "@skuberplus/kube-object";
+} from "@k-lens/kube-object";
 
 export type { CreateKubeApiForLocalClusterConfig as ILocalKubeApiConfig } from "../../common/k8s-api/create-kube-api-for-cluster.injectable";
 export type { CreateKubeApiForRemoteClusterConfig as IRemoteKubeApiConfig } from "../../common/k8s-api/create-kube-api-for-remote-cluster.injectable";
@@ -337,7 +337,7 @@ export {
   ServiceAccount,
   StatefulSet,
   StorageClass,
-} from "@skuberplus/kube-object";
+} from "@k-lens/kube-object";
 
 /**
  * The `KubeObject` that can be used in extensions with additional property to

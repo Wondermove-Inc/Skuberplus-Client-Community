@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { urlBuilderFor } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { urlBuilderFor } from "@skuberplus/utilities";
 import apiBaseInjectable from "../../api-base.injectable";
 
 export interface HelmReleaseRevision {

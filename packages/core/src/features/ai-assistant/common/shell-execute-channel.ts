@@ -21,8 +21,8 @@
  * - 2026-01-09: helm, k9s 제거 (helm 전용 채널 분리, k9s interactive 부적합)
  */
 
+import { getRequestChannel } from "@k-lens/messaging";
 import { getInjectionToken } from "@ogre-tools/injectable";
-import { getRequestChannel } from "@skuberplus/messaging";
 
 /**
  * 🎯 shell 실행 요청 인자

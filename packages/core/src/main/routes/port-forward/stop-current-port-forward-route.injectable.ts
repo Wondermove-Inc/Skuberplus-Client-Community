@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { apiPrefix } from "../../../common/vars";
 import { clusterRoute } from "../../router/route";
 import { getRouteInjectable } from "../../router/router.injectable";

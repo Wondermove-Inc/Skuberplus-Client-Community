@@ -4,17 +4,17 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { EndpointSlice } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { prevDefault } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { EndpointSlice } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { prevDefault } from "@skuberplus/utilities";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 import showDetailsInjectable from "../kube-detail-params/show-details.injectable";
 import { Table, TableCell, TableHead, TableRow } from "../table";
 import { WithTooltip } from "../with-tooltip";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { ShowDetails } from "../kube-detail-params/show-details.injectable";
 

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { createClusterPrometheusHandler } from "./prometheus-handler";
 
 import type { Cluster } from "../../../common/cluster/cluster";

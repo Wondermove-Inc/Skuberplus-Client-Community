@@ -16,15 +16,15 @@
  * - 2025-10-30: 초기 생성 (Pod 컬럼 패턴 기반, Deployment 적용)
  */
 
-import { Button, Checkbox } from "@skuberplus/storybook-shadcn";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { Button, Checkbox } from "@k-lens/storybook-shadcn";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 import { ArrowUpDown } from "lucide-react";
 import React from "react";
 // Cell 컴포넌트 imports
 import { KubeObjectAge } from "../kube-object/age";
 import { NamespaceSelectBadge } from "../namespaces/namespace-select-badge";
 
-import type { Deployment } from "@skuberplus/kube-object";
+import type { Deployment } from "@k-lens/kube-object";
 
 import type { ColumnDef, Row } from "@tanstack/react-table";
 

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import writeFileInjectable from "../../../../common/fs/write-file.injectable";
 import tempDirectoryPathInjectable from "../../../../common/os/temp-directory-path.injectable";
 import joinPathsInjectable from "../../../../common/path/join-paths.injectable";
@@ -14,7 +14,7 @@ import { notificationPanelStore } from "../../status-bar/items/notification-pane
 import { getMessageFromError } from "../get-message-from-error/get-message-from-error";
 import { validatePackage } from "./validate-package";
 
-import type { LensExtensionId, LensExtensionManifest } from "@skuberplus/legacy-extensions";
+import type { LensExtensionId, LensExtensionManifest } from "@k-lens/legacy-extensions";
 
 import type { InstallRequest } from "./attempt-install.injectable";
 

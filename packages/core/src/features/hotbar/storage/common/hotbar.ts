@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { tuple } from "@skuberplus/utilities";
+import { tuple } from "@k-lens/utilities";
 import { type IObservableArray, type IObservableValue, observable, runInAction, toJS } from "mobx";
 import * as uuid from "uuid";
 import { getShortName } from "../../../../common/catalog/helpers";
@@ -12,7 +12,7 @@ import { broadcastMessage } from "../../../../common/ipc";
 import { hotbarTooManyItemsChannel } from "../../../../common/ipc/hotbar";
 import { defaultHotbarCells } from "./types";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { CatalogEntity } from "../../../../common/catalog";
 import type { CreateHotbarData, HotbarItem } from "./types";

@@ -6,7 +6,7 @@
  * Renderer ↔ Main 간 커스텀 스킬 관리 통신 채널
  */
 
-import { getRequestChannel } from "@skuberplus/messaging";
+import { getRequestChannel } from "@k-lens/messaging";
 
 // ============================================
 // Types

@@ -6,13 +6,13 @@
 
 import "./item-list-layout.scss";
 
-import { cssNames, isDefined } from "@skuberplus/utilities";
+import { cssNames, isDefined } from "@k-lens/utilities";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 import { SearchInputUrl } from "../input";
 
-import type { ItemObject } from "@skuberplus/list-layout";
-import type { IClassName, StrictReactNode } from "@skuberplus/utilities";
+import type { ItemObject } from "@k-lens/list-layout";
+import type { IClassName, StrictReactNode } from "@k-lens/utilities";
 
 import type { HeaderCustomizer, HeaderPlaceholders, ItemListStore, ListLayoutSearchFilter } from "./list-layout";
 import type { Filter } from "./page-filters/store";

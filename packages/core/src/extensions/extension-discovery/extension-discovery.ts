@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { isErrnoException } from "@skuberplus/utilities";
+import { isErrnoException } from "@k-lens/utilities";
 import AwaitLock from "await-lock";
 import { ipcRenderer } from "electron";
 import { EventEmitter } from "events";
@@ -20,8 +20,8 @@ import type {
   InstalledExtension,
   LensExtensionId,
   LensExtensionManifest,
-} from "@skuberplus/legacy-extensions";
-import type { Logger } from "@skuberplus/logger";
+} from "@k-lens/legacy-extensions";
+import type { Logger } from "@k-lens/logger";
 
 import type TypedEventEmitter from "typed-emitter";
 
@@ -124,7 +124,7 @@ export class ExtensionDiscovery {
   }
 
   get localFolderPath(): string {
-    return this.dependencies.joinPaths(this.dependencies.homeDirectoryPath, ".skuberplus", "extensions");
+    return this.dependencies.joinPaths(this.dependencies.homeDirectoryPath, ".k-lens", "extensions");
   }
 
   get packageJsonPath(): string {

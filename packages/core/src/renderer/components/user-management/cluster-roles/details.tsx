@@ -6,13 +6,13 @@
 
 import "./details.scss";
 
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 // 🎯 shadcn UI 컴포넌트: DrawerTitle 대체
-import { DetailPanelSection } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 
-import type { ClusterRole } from "@skuberplus/kube-object";
+import type { ClusterRole } from "@k-lens/kube-object";
 
 import type { KubeObjectDetailsProps } from "../../kube-object-details";
 

@@ -18,8 +18,8 @@
  * - 2025-12-11: 초기 생성 (Tool-Centric 아키텍처 전환)
  */
 
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { getRequestChannelListenerInjectable } from "@skuberplus/messaging";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { getRequestChannelListenerInjectable } from "@k-lens/messaging";
 import execFileInjectable from "../../../common/fs/exec-file.injectable";
 import { getInstallSuggestion, isAllowedShellCommand, shellExecuteChannel } from "../common/shell-execute-channel";
 

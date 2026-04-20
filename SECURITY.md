@@ -35,4 +35,4 @@ If you discover a security vulnerability, please **do not open a public issue**.
 4. Security patch release
 5. Reporter notified of outcome
 
-We will handle all reported vulnerabilities responsibly. Thank you for helping keep Skuber+ Client secure.
+We will handle all reported vulnerabilities responsibly. Thank you for helping keep K-Lens secure.

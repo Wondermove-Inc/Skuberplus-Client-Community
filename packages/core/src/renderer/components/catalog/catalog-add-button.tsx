@@ -5,9 +5,9 @@
  */
 
 import "./catalog-add-button.scss";
+import { Icon } from "@k-lens/icon";
 import { SpeedDial, SpeedDialAction } from "@mui/material";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
 import autoBindReact from "auto-bind/react";
 import { EventEmitter } from "events";
 import { action, makeObservable, observable } from "mobx";

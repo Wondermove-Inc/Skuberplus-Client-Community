@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { asLegacyGlobalFunctionForExtensionApi } from "@skuberplus/legacy-global-di";
+import { asLegacyGlobalFunctionForExtensionApi } from "@k-lens/legacy-global-di";
 import hideEntityDetailsInjectable, {
   type HideEntityDetails,
 } from "../../renderer/components/catalog/entity-details/hide.injectable";
@@ -29,7 +29,7 @@ import createPageParamInjectable, {
 import isActiveRouteInjectable, { type IsRouteActive } from "../../renderer/navigation/is-route-active.injectable";
 import navigateInjectable, { type Navigate } from "../../renderer/navigation/navigate.injectable";
 
-export type { URLParams } from "@skuberplus/utilities";
+export type { URLParams } from "@k-lens/utilities";
 
 export type { PageParam, PageParamInit } from "../../renderer/navigation/page-param";
 

@@ -9,14 +9,14 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Icon } from "@k-lens/icon";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
 import { observer } from "mobx-react";
 import React from "react";
 import styles from "./sidebar-items.module.scss";
 import sidebarStorageInjectable from "./sidebar-storage/sidebar-storage.injectable";
 
-import type { SidebarItemDeclaration } from "@skuberplus/cluster-sidebar";
+import type { SidebarItemDeclaration } from "@k-lens/cluster-sidebar";
 
 import type { StorageLayer } from "../../utils/storage-helper";
 import type { SidebarStorageState } from "./sidebar-storage/sidebar-storage.injectable";

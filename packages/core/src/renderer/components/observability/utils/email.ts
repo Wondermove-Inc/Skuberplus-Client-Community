@@ -17,7 +17,7 @@ import { CONTACT_EMAIL } from "./constants";
 const createContactEmailBody = (): string => {
   return `Hello,
 
-I'd like to get in touch regarding Skuber+.
+I'd like to get in touch regarding K-Lens.
 
 
 Name:
@@ -35,7 +35,7 @@ Looking forward to your response.`;
  * Contact Sales 이메일 클라이언트(Outlook 등)를 엽니다.
  */
 export const openContactSalesEmail = () => {
-  const subject = "Inquiry about Skuber+ Observability";
+  const subject = "Inquiry about k-o11y";
   const body = createContactEmailBody();
 
   // encodeURIComponent를 사용하여 올바른 URL 인코딩 적용

@@ -4,13 +4,13 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { sortBySemverVersion } from "@skuberplus/utilities";
+import { sortBySemverVersion } from "@k-lens/utilities";
 import { getDiForUnitTesting } from "../../getDiForUnitTesting";
 import helmChartManagerInjectable from "../helm-chart-manager.injectable";
 import listHelmChartsInjectable from "../helm-service/list-helm-charts.injectable";
 import getActiveHelmRepositoriesInjectable from "../repositories/get-active-helm-repositories/get-active-helm-repositories.injectable";
 
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { AsyncResult } from "@k-lens/utilities";
 
 import type { HelmRepo } from "../../../common/helm/helm-repo";
 

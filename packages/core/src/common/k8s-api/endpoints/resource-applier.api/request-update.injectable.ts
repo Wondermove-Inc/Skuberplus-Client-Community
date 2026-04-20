@@ -7,8 +7,8 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import apiBaseInjectable from "../../api-base.injectable";
 
-import type { KubeJsonApiData } from "@skuberplus/kube-object";
-import type { AsyncResult, Result } from "@skuberplus/utilities";
+import type { KubeJsonApiData } from "@k-lens/kube-object";
+import type { AsyncResult, Result } from "@k-lens/utilities";
 
 export type RequestKubeObjectCreation = (resourceDescriptor: string) => AsyncResult<KubeJsonApiData, string>;
 

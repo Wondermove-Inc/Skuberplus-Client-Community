@@ -7,7 +7,7 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import execHelmInjectable from "../exec-helm/exec-helm.injectable";
 
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { AsyncResult } from "@k-lens/utilities";
 
 export type HelmEnv = Record<string, string> & {
   HELM_REPOSITORY_CACHE?: string;

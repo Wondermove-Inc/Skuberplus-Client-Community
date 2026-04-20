@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { getRequestChannel } from "@k-lens/messaging";
 import { getInjectionToken } from "@ogre-tools/injectable";
-import { getRequestChannel } from "@skuberplus/messaging";
 
-import type { AsyncResult, Result } from "@skuberplus/utilities";
+import type { AsyncResult, Result } from "@k-lens/utilities";
 
 import type { ClusterId } from "../cluster-types";
 

@@ -6,7 +6,7 @@
 
 import { getInjectionToken } from "@ogre-tools/injectable";
 
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeObject } from "@k-lens/kube-object";
 
 import type { IComputedValue } from "mobx";
 

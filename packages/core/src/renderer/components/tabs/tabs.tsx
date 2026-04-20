@@ -6,12 +6,12 @@
 
 import "./tabs.scss";
 
-import { Icon } from "@skuberplus/icon";
-import { cssNames } from "@skuberplus/utilities";
+import { Icon } from "@k-lens/icon";
+import { cssNames } from "@k-lens/utilities";
 import autoBindReact from "auto-bind/react";
 import React, { PureComponent } from "react";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { DOMAttributes } from "react";
 

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { delay } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { delay } from "@skuberplus/utilities";
 import { broadcastMessage } from "../../../common/ipc";
 import { bundledExtensionsLoaded } from "../../../common/ipc/extension-handling";
 import catalogEntityRegistryInjectable from "../../api/catalog/entity/registry.injectable";

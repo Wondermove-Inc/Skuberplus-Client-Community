@@ -6,8 +6,8 @@
 
 import { KubeObjectStore } from "../kube-object.store";
 
-import type { KubeApi } from "@skuberplus/kube-api";
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeApi } from "@k-lens/kube-api";
+import type { KubeObject } from "@k-lens/kube-object";
 
 import type { KubeObjectStoreDependencies } from "../kube-object.store";
 

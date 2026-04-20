@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Icon } from "@k-lens/icon";
+import { Tooltip, TooltipPosition } from "@k-lens/tooltip";
+import { cssNames, isMiddleClick, prevDefault } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { Tooltip, TooltipPosition } from "@skuberplus/tooltip";
-import { cssNames, isMiddleClick, prevDefault } from "@skuberplus/utilities";
 import autoBindReact from "auto-bind/react";
 import { observable } from "mobx";
 import { observer } from "mobx-react";
@@ -21,7 +21,7 @@ import { Tab } from "../tabs";
 import dockStoreInjectable from "./dock/store.injectable";
 import styles from "./dock-tab.module.scss";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { CatalogEntityRegistry } from "../../api/catalog/entity/registry";
 import type { TabProps } from "../tabs";

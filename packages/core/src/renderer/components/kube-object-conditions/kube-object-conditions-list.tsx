@@ -4,14 +4,14 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { KubeObject } from "@skuberplus/kube-object";
+import { KubeObject } from "@k-lens/kube-object";
 import { observer } from "mobx-react";
 import React from "react";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "../shadcn-ui/hover-card";
 import { getClassName, getTooltip } from "./components";
 import { sortConditions } from "./utils";
 
-import type { KubeObjectMetadata, KubeObjectStatus } from "@skuberplus/kube-object";
+import type { KubeObjectMetadata, KubeObjectStatus } from "@k-lens/kube-object";
 
 export interface KubeObjectConditionsListProps {
   object: KubeObject;

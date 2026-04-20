@@ -6,7 +6,7 @@
 
 import { getInjectionToken } from "@ogre-tools/injectable";
 
-import type { Runnable, RunnableSync } from "@skuberplus/run-many";
+import type { Runnable, RunnableSync } from "@k-lens/run-many";
 
 export const afterQuitOfFrontEndInjectionToken = getInjectionToken<RunnableSync>({
   id: "after-quit-of-front-end",

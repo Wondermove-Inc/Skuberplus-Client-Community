@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { buildURL } from "@skuberplus/utilities";
+import { buildURL } from "@k-lens/utilities";
 import { KubeObject } from "../kube-object";
 
 import type { BaseKubeObjectCondition, ClusterScopedMetadata } from "../api-types";

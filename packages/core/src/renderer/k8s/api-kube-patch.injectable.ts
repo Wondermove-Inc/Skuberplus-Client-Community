@@ -7,7 +7,7 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import apiKubeInjectable from "./api-kube.injectable";
 
-import type { KubeJsonApi } from "@skuberplus/kube-api";
+import type { KubeJsonApi } from "@k-lens/kube-api";
 
 export type ApiKubePatch = KubeJsonApi["patch"];
 

@@ -6,7 +6,7 @@
 
 import { KubeObject } from "../kube-object";
 
-import type { OptionVariant } from "@skuberplus/utilities";
+import type { OptionVariant } from "@k-lens/utilities";
 
 import type { BaseKubeObjectCondition, LabelSelector, NamespaceScopedMetadata } from "../api-types";
 import type { CrossVersionObjectReference } from "../types/cross-version-object-reference";

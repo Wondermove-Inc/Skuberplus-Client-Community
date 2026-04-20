@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Button } from "@k-lens/button";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Button } from "@skuberplus/button";
 import React from "react";
 import showDialogForAddingCustomHelmRepositoryInjectable from "./dialog-visibility/show-dialog-for-adding-custom-helm-repository.injectable";
 

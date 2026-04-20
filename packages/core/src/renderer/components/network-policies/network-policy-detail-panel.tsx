@@ -23,12 +23,12 @@
  *   - 2025-12-01: 닫힘 애니메이션 중 데이터 유지 패턴 적용
  */
 
+import { NetworkPolicy } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Table, TableBody, TableCell, TableRow } from "@k-lens/storybook-shadcn";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { Separator } from "@k-lens/storybook-shadcn/src/components/ui/separator";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { NetworkPolicy } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Table, TableBody, TableCell, TableRow } from "@skuberplus/storybook-shadcn";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { Separator } from "@skuberplus/storybook-shadcn/src/components/ui/separator";
 import { observer } from "mobx-react";
 import React from "react";
 import hostedClusterInjectable from "../../cluster-frame-context/hosted-cluster.injectable";
@@ -46,8 +46,8 @@ import type {
   NetworkPolicyPeer,
   NetworkPolicyPort,
   PolicyIpBlock,
-} from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+} from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { OpenConfirmDialog } from "../confirm-dialog/open.injectable";

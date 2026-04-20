@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { prefixedLoggerInjectable } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { prefixedLoggerInjectable } from "@skuberplus/logger";
 import path from "path";
 import readFileBufferInjectable from "../../../common/fs/read-file-buffer.injectable";
 import joinPathsInjectable from "../../../common/path/join-paths.injectable";

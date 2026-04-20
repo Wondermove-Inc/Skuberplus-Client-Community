@@ -14,7 +14,7 @@
  *
  */
 
-import { getMessageChannelListenerInjectable } from "@skuberplus/messaging";
+import { getMessageChannelListenerInjectable } from "@k-lens/messaging";
 import { type AgentStreamEvent, agentStreamChannel } from "../../../features/ai-assistant/common/agent-ipc-channels";
 import agentStreamEventBusInjectable from "../../../features/ai-assistant/renderer/agent-stream-event-bus.injectable";
 

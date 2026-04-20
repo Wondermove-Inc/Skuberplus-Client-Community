@@ -19,7 +19,7 @@ export function getClusterIdFromHost(host: string): ClusterId | undefined {
 
   if (subDomains[subDomains.length - 1] === "localhost") {
     subDomains.pop();
-  } else if (subDomains.length >= 3 && subDomains.slice(-3).join(".") === "renderer.skuberplus.app") {
+  } else if (subDomains.length >= 3 && subDomains.slice(-3).join(".") === "renderer.k-lens.app") {
     subDomains.splice(-3);
   }
 

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { afterApplicationIsLoadedInjectionToken } from "@k-lens/application";
 import { getInjectable } from "@ogre-tools/injectable";
-import { afterApplicationIsLoadedInjectionToken } from "@skuberplus/application";
 import shouldStartHiddenInjectable from "../../electron-app/features/should-start-hidden.injectable";
 import openDeepLinkInjectable from "../../protocol-handler/lens-protocol-router-main/open-deep-link-for-url/open-deep-link.injectable";
 import commandLineArgumentsInjectable from "../../utils/command-line-arguments.injectable";

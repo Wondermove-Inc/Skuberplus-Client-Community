@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Empty, EmptyDescription, EmptyHeader, EmptyMedia } from "@skuberplus/storybook-shadcn/src/components/ui/empty";
+import { Empty, EmptyDescription, EmptyHeader, EmptyMedia } from "@k-lens/storybook-shadcn/src/components/ui/empty";
 import { MousePointer } from "lucide-react";
 import React from "react";
 import styles from "./empty-tabs-screen.module.scss";

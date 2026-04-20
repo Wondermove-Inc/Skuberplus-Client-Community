@@ -4,12 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getInjectable } from "@ogre-tools/injectable";
 // 🎯 shadcn UI 컴포넌트: DrawerItem/DrawerTitle 대체
-import {
-  DetailPanelField,
-  DetailPanelSection,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { DetailPanelField, DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { getInjectable } from "@ogre-tools/injectable";
 import React from "react";
 import { KubernetesCluster } from "../../../../../common/catalog-entities";
 import { catalogEntityDetailItemInjectionToken } from "../token";

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Button } from "@skuberplus/button";
-import { Icon } from "@skuberplus/icon";
+import { Button } from "@k-lens/button";
+import { Icon } from "@k-lens/icon";
 import { makeObservable, observable, reaction } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";

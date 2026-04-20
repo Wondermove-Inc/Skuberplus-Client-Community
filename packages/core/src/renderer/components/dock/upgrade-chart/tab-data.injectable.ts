@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { waitUntilDefined } from "@k-lens/utilities";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
-import { waitUntilDefined } from "@skuberplus/utilities";
 import upgradeChartTabStoreInjectable from "./store.injectable";
 
 const upgradeChartTabDataInjectable = getInjectable({

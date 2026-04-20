@@ -17,9 +17,9 @@
  * - 2025-11-04: 초기 생성 (TanStack Table 컬럼 정의, Pod 및 Namespace 패턴 참고)
  */
 
-import { formatNodeTaint } from "@skuberplus/kube-object";
-import { Button, Checkbox } from "@skuberplus/storybook-shadcn";
-import { TooltipPosition } from "@skuberplus/tooltip";
+import { formatNodeTaint } from "@k-lens/kube-object";
+import { Button, Checkbox } from "@k-lens/storybook-shadcn";
+import { TooltipPosition } from "@k-lens/tooltip";
 import { ArrowUpDown } from "lucide-react";
 import React from "react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/shadcn-ui/tooltip";
@@ -30,7 +30,7 @@ import { KubeObjectStatusIcon } from "../kube-object-status-icon";
 import { LineProgress } from "../line-progress";
 import { WithTooltip } from "../with-tooltip";
 
-import type { Node } from "@skuberplus/kube-object";
+import type { Node } from "@k-lens/kube-object";
 
 import type { ColumnDef } from "@tanstack/react-table";
 

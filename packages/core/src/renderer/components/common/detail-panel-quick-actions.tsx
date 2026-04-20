@@ -21,7 +21,7 @@
  * - 2026-01-27: 초기 생성 (액션 버튼 UX 개선)
  */
 
-import { Button } from "@skuberplus/storybook-shadcn";
+import { Button } from "@k-lens/storybook-shadcn";
 import {
   ArrowUpToLine,
   Box,

@@ -4,12 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { createKubeApiURL, parseKubeApi } from "@skuberplus/kube-api";
-import { getOrInsertWith, iter, lowerAndPluralize } from "@skuberplus/utilities";
+import { createKubeApiURL, parseKubeApi } from "@k-lens/kube-api";
+import { getOrInsertWith, iter, lowerAndPluralize } from "@k-lens/utilities";
 import { action, autorun, observable } from "mobx";
 
-import type { KubeApi } from "@skuberplus/kube-api";
-import type { KubeObject, ObjectReference } from "@skuberplus/kube-object";
+import type { KubeApi } from "@k-lens/kube-api";
+import type { KubeObject, ObjectReference } from "@k-lens/kube-object";
 
 import type { IComputedValue } from "mobx";
 

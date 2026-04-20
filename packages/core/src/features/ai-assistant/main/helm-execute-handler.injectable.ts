@@ -22,8 +22,8 @@
  * - 2026-01-08: 초기 생성 (Helm 전용 채널 구현)
  */
 
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { getRequestChannelListenerInjectable } from "@skuberplus/messaging";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { getRequestChannelListenerInjectable } from "@k-lens/messaging";
 import { execFile, spawn } from "child_process";
 import pLimit from "p-limit";
 import { promisify } from "util";

@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Deployment } from "@skuberplus/kube-object";
+import { Deployment } from "@k-lens/kube-object";
 import moment from "moment";
 import { KubeApi } from "../kube-api";
 

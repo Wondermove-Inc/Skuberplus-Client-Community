@@ -4,14 +4,14 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { DetailPanelField } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { DetailPanelField } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
 import React from "react";
 import { Link } from "react-router-dom";
 import getDetailsUrlInjectable from "../../../kube-detail-params/get-details-url.injectable";
 
-import type { KubeApiQueryParams, ResourceDescriptor } from "@skuberplus/kube-api";
-import type { LocalObjectReference, Pod, PodVolumeVariants, SecretReference } from "@skuberplus/kube-object";
+import type { KubeApiQueryParams, ResourceDescriptor } from "@k-lens/kube-api";
+import type { LocalObjectReference, Pod, PodVolumeVariants, SecretReference } from "@k-lens/kube-object";
 
 import type { GetDetailsUrl } from "../../../kube-detail-params/get-details-url.injectable";
 

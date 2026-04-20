@@ -1,4 +1,4 @@
-import type { ContainerWithType, EphemeralContainerWithType, PodContainerStatus } from "@skuberplus/kube-object/dist";
+import type { ContainerWithType, EphemeralContainerWithType, PodContainerStatus } from "@k-lens/kube-object/dist";
 
 export function containerStatusClassName(
   container: ContainerWithType | EphemeralContainerWithType,

@@ -4,11 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getOrInsertMap, iter, strictSet } from "@skuberplus/utilities";
+import { getOrInsertMap, iter, strictSet } from "@k-lens/utilities";
 import { once } from "lodash";
 import { action, computed, makeObservable, observable } from "mobx";
 
-import type { Disposer } from "@skuberplus/utilities";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { CatalogCategory, CatalogEntityData, CatalogEntityKindData } from "./catalog-entity";
 

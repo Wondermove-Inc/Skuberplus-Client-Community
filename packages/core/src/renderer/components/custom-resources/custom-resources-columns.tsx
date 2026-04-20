@@ -17,8 +17,8 @@
  * - 2025-12-17: 초기 생성 (CustomResourceDefinitions 패턴 기반)
  */
 
-import { Button, Checkbox } from "@skuberplus/storybook-shadcn";
-import { formatJSONValue, safeJSONPathValue } from "@skuberplus/utilities";
+import { Button, Checkbox } from "@k-lens/storybook-shadcn";
+import { formatJSONValue, safeJSONPathValue } from "@k-lens/utilities";
 import { startCase } from "lodash/fp";
 import { ArrowUpDown } from "lucide-react";
 import React from "react";
@@ -26,7 +26,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import { KubeObjectAge } from "../kube-object/age";
 import { NamespaceSelectBadge } from "../namespaces/namespace-select-badge";
 
-import type { AdditionalPrinterColumnsV1, CustomResourceDefinition, KubeObject } from "@skuberplus/kube-object";
+import type { AdditionalPrinterColumnsV1, CustomResourceDefinition, KubeObject } from "@k-lens/kube-object";
 
 import type { ColumnDef } from "@tanstack/react-table";
 

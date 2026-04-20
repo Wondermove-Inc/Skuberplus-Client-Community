@@ -8,7 +8,7 @@ import { getInjectable } from "@ogre-tools/injectable";
 
 const directoryForIntegrationTestingInjectable = getInjectable({
   id: "directory-for-integration-testing",
-  instantiate: () => process.env.SKUBERPLUS_INTEGRATION_TESTING_DIR,
+  instantiate: () => process.env.KLENS_INTEGRATION_TESTING_DIR,
   causesSideEffects: true,
 });
 

@@ -1,10 +1,10 @@
+import { startApplicationInjectionToken } from "@k-lens/application";
+import { registerFeature } from "@k-lens/feature-core";
+import { getMessageChannelListenerInjectable, testUtils } from "@k-lens/messaging";
+import { getMessageBridgeFake, MessageBridgeFake } from "@k-lens/messaging-fake-bridge";
+import { renderFor, runWithThrownMobxReactions } from "@k-lens/test-utils";
 import { createContainer, DiContainer, getInjectable } from "@ogre-tools/injectable";
 import { registerMobX } from "@ogre-tools/injectable-extension-for-mobx";
-import { startApplicationInjectionToken } from "@skuberplus/application";
-import { registerFeature } from "@skuberplus/feature-core";
-import { getMessageChannelListenerInjectable, testUtils } from "@skuberplus/messaging";
-import { getMessageBridgeFake, MessageBridgeFake } from "@skuberplus/messaging-fake-bridge";
-import { renderFor, runWithThrownMobxReactions } from "@skuberplus/test-utils";
 import { act, RenderResult } from "@testing-library/react";
 import { computed, IComputedValue, IObservableValue, observable, reaction, runInAction } from "mobx";
 import { observer } from "mobx-react";
@@ -16,7 +16,7 @@ import {
   computedChannelAdministrationChannel,
 } from "./computed-channel-administration-channel.injectable";
 
-import type { MessageChannel } from "@skuberplus/messaging";
+import type { MessageChannel } from "@k-lens/messaging";
 
 const testChannel: MessageChannel<string> = { id: "some-channel-id" };
 const testChannel2: MessageChannel<string> = { id: "some-other-channel-id" };

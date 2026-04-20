@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { formatNodeTaint } from "@skuberplus/kube-object";
+import { formatNodeTaint } from "@k-lens/kube-object";
 
 describe("formatNodeTaint tests", () => {
   it("should use value if defined", () => {

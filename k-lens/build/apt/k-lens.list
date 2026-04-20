@@ -1,0 +1,1 @@
+deb [signed-by=/etc/apt/keyrings/k-lens.asc] https://github.com/Wondermove-Inc/k-lens/releases/latest/download ./

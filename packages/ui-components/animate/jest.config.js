@@ -1,3 +1,3 @@
-const { configForReact } = require("@skuberplus/jest").monorepoPackageConfig(__dirname);
+const { configForReact } = require("@k-lens/jest").monorepoPackageConfig(__dirname);
 
 module.exports = configForReact;

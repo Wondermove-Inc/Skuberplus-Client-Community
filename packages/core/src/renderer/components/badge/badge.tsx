@@ -4,14 +4,14 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { withTooltip } from "@skuberplus/tooltip";
-import { cssNames } from "@skuberplus/utilities";
+import { withTooltip } from "@k-lens/tooltip";
+import { cssNames } from "@k-lens/utilities";
 import { action, observable } from "mobx";
 import { observer } from "mobx-react";
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./badge.module.scss";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 export interface BadgeProps extends React.HTMLAttributes<HTMLDivElement> {
   small?: boolean;

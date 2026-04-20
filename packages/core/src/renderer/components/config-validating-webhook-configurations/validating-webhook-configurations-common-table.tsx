@@ -34,7 +34,7 @@ import { ValidatingWebhookConfigurationDetailPanel } from "./validating-webhook-
 import validatingWebhookConfigurationsStoreInjectable from "./validating-webhook-configuration-store.injectable";
 import { validatingWebhookConfigurationColumns } from "./validating-webhook-configurations-columns";
 
-import type { ValidatingWebhookConfiguration } from "@skuberplus/kube-object";
+import type { ValidatingWebhookConfiguration } from "@k-lens/kube-object";
 
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
 import type { ValidatingWebhookConfigurationStore } from "./validating-webhook-configuration-store";

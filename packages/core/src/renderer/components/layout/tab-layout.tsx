@@ -6,17 +6,17 @@
 
 import "./tab-layout.scss";
 
+import { ErrorBoundary } from "@k-lens/error-boundary";
+import { observableHistoryInjectionToken } from "@k-lens/routing";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { ErrorBoundary } from "@skuberplus/error-boundary";
-import { observableHistoryInjectionToken } from "@skuberplus/routing";
-import { cssNames } from "@skuberplus/utilities";
 import { observer } from "mobx-react";
 import React from "react";
 import { matchPath, Redirect, Route, Switch } from "react-router";
 import navigateInjectable from "../../navigation/navigate.injectable";
 import { Tab, Tabs } from "../tabs";
 
-import type { IClassName, StrictReactNode } from "@skuberplus/utilities";
+import type { IClassName, StrictReactNode } from "@k-lens/utilities";
 
 import type { ObservableHistory } from "mobx-observable-history";
 

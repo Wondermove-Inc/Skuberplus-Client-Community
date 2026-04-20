@@ -5,8 +5,8 @@
  */
 
 import asyncFn from "@async-fn/jest";
-import { Secret, SecretType } from "@skuberplus/kube-object";
-import { base64 } from "@skuberplus/utilities";
+import { Secret, SecretType } from "@k-lens/kube-object";
+import { base64 } from "@k-lens/utilities";
 import { act } from "@testing-library/react";
 import React from "react";
 import { getDiForUnitTesting } from "../../getDiForUnitTesting";

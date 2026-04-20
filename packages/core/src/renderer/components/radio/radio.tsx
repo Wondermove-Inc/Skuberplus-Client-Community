@@ -6,10 +6,10 @@
 
 import "./radio.scss";
 
-import { cssNames, noop } from "@skuberplus/utilities";
+import { cssNames, noop } from "@k-lens/utilities";
 import React, { useContext, useRef } from "react";
 
-import type { SingleOrMany, StrictReactNode } from "@skuberplus/utilities";
+import type { SingleOrMany, StrictReactNode } from "@k-lens/utilities";
 
 export interface RadioGroupProps<T> {
   className?: string;

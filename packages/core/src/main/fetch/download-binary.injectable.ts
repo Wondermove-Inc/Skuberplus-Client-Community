@@ -8,7 +8,7 @@ import { getInjectable } from "@ogre-tools/injectable";
 import { withTimeout } from "../../common/fetch/timeout-controller";
 import proxyFetchInjectable from "./proxy-fetch.injectable";
 
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { AsyncResult } from "@k-lens/utilities";
 
 import type { NodeFetchRequestInit, NodeFetchResponse } from "../../common/fetch/node-fetch.injectable";
 

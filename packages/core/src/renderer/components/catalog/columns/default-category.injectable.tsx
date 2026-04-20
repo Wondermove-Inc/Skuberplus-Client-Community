@@ -9,8 +9,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { KubeObject } from "@k-lens/kube-object";
 import { getInjectable } from "@ogre-tools/injectable";
-import { KubeObject } from "@skuberplus/kube-object";
 import React from "react";
 import styles from "../catalog.module.scss";
 import getLabelBadgesInjectable from "../get-label-badges.injectable";

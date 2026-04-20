@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import emitAppEventInjectable from "../../common/app-event-bus/emit-event.injectable";
 import execFileInjectable from "../../common/fs/exec-file.injectable";
 import removePathInjectable from "../../common/fs/remove.injectable";

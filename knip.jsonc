@@ -11,12 +11,12 @@
         "pnpm"
       ]
     },
-    "skuberplus": {
+    "k-lens": {
       "entry": [
         "integration/**/*.tests.ts",
         "src/{main,renderer}/library.ts",
         "src/**/*.injectable.ts",
-        "static/build/{skuberplus,main}.js!",
+        "static/build/{k-lens,main}.js!",
         "webpack/main.ts"
       ],
       "project": ["*.js", "build/*.js", "integration/**/*.ts", "src/**/*.ts!", "static/build/*.js!", "webpack/*.ts"],
@@ -35,32 +35,32 @@
         "ts-node",
         // all packages used in require() calls in webpacked files
         "@astronautlabs/jsonpath",
-        "@skuberplus/animate",
-        "@skuberplus/button",
-        "@skuberplus/cluster-sidebar",
-        "@skuberplus/error-boundary",
-        "@skuberplus/event-emitter",
-        "@skuberplus/icon",
-        "@skuberplus/json-api",
-        "@skuberplus/keyboard-shortcuts",
-        "@skuberplus/kube-api",
-        "@skuberplus/kube-object",
-        "@skuberplus/kubectl-versions",
-        "@skuberplus/kubernetes-client-node",
-        "@skuberplus/legacy-extensions",
-        "@skuberplus/legacy-global-di",
-        "@skuberplus/messaging",
-        "@skuberplus/messaging-for-renderer",
-        "@skuberplus/node-fetch",
-        "@skuberplus/notifications",
-        "@skuberplus/react-application",
-        "@skuberplus/resizing-anchor",
-        "@skuberplus/routing",
-        "@skuberplus/run-many",
-        "@skuberplus/spinner",
-        "@skuberplus/startable-stoppable",
-        "@skuberplus/tooltip",
-        "@skuberplus/utilities",
+        "@k-lens/animate",
+        "@k-lens/button",
+        "@k-lens/cluster-sidebar",
+        "@k-lens/error-boundary",
+        "@k-lens/event-emitter",
+        "@k-lens/icon",
+        "@k-lens/json-api",
+        "@k-lens/keyboard-shortcuts",
+        "@k-lens/kube-api",
+        "@k-lens/kube-object",
+        "@k-lens/kubectl-versions",
+        "@k-lens/kubernetes-client-node",
+        "@k-lens/legacy-extensions",
+        "@k-lens/legacy-global-di",
+        "@k-lens/messaging",
+        "@k-lens/messaging-for-renderer",
+        "@k-lens/node-fetch",
+        "@k-lens/notifications",
+        "@k-lens/react-application",
+        "@k-lens/resizing-anchor",
+        "@k-lens/routing",
+        "@k-lens/run-many",
+        "@k-lens/spinner",
+        "@k-lens/startable-stoppable",
+        "@k-lens/tooltip",
+        "@k-lens/utilities",
         "@hapi/call",
         "@hapi/subtext",
         "@ogre-tools/injectable-react",
@@ -100,7 +100,7 @@
         "winston",
         "zod"
       ],
-      "ignoreBinaries": ["distwin-unpackedSkuberPlus.exe", "npm:dev:build", "^start:"],
+      "ignoreBinaries": ["distwin-unpackedKLens.exe", "npm:dev:build", "^start:"],
       "ignoreUnresolved": [
         // used by node-fetch
         "./request",
@@ -178,7 +178,7 @@
       "ignore": ["static/build/**/*.d.ts"],
       "ignoreDependencies": [
         // dependency with static artifacts only
-        "@skuberplus/resource-templates",
+        "@k-lens/resource-templates",
         // used for `require.context` in webpacked files
         "@types/webpack-env",
         // it is really runtime dependency but implicitly used in Electron app
@@ -241,7 +241,7 @@
     "packages/generate-tray-icons": {
       "entry": ["bin/generate-tray-icons.js!", "dist/index.js!"],
       "project": ["bin/*.js!", "dist/*.js!", "src/*.ts"],
-      "ignoreDependencies": ["@skuberplus/icon"],
+      "ignoreDependencies": ["@k-lens/icon"],
       "typescript": {
         "config": ["tsconfig.json"]
       }

@@ -7,11 +7,11 @@
 import "./priority-classes.scss";
 
 // 🎯 shadcn UI 컴포넌트: DrawerItem 대체
-import { DetailPanelField } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { DetailPanelField } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 
-import type { PriorityClass } from "@skuberplus/kube-object";
+import type { PriorityClass } from "@k-lens/kube-object";
 
 import type { KubeObjectDetailsProps } from "../kube-object-details";
 

@@ -1,4 +1,4 @@
-import { getGlobalOverride } from "@skuberplus/test-utils";
+import { getGlobalOverride } from "@k-lens/test-utils";
 import { pathNames } from "./app-path-names";
 import appPathsStateInjectable from "./app-paths-state.injectable";
 

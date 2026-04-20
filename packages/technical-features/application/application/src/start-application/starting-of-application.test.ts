@@ -1,7 +1,7 @@
 import asyncFn, { AsyncFnMock } from "@async-fn/jest";
+import { registerFeature } from "@k-lens/feature-core";
+import { getPromiseStatus } from "@k-lens/test-utils";
 import { createContainer, DiContainer, getInjectable } from "@ogre-tools/injectable";
-import { registerFeature } from "@skuberplus/feature-core";
-import { getPromiseStatus } from "@skuberplus/test-utils";
 import { applicationFeature } from "../feature";
 import { startApplicationInjectionToken } from "./start-application.injectable";
 import * as timeSlots from "./time-slots";

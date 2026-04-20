@@ -1,11 +1,11 @@
-# @skuberplus/webpack
+# @k-lens/webpack
 
 This package contains webpack configurations for Lens packages.
 
 ## Install
 
 ```sh
-npm install @skuberplus/webpack
+npm install @k-lens/webpack
 ```
 
 ## Features
@@ -17,14 +17,14 @@ This configuration should be used when creating package that will be executed wi
 
 **webpack.config.js**
 ```javascript
-module.exports = require("@skuberplus/webpack").configForNode;
+module.exports = require("@k-lens/webpack").configForNode;
 ```
 ### React package
 This configuration should be used when creating package tha will be executed within **Browser** environment.
 
 **webpack.config.js**
 ```javascript
-module.exports = require("@skuberplus/webpack").configForReact;
+module.exports = require("@k-lens/webpack").configForReact;
 ```
 
 ### Multi export package
@@ -35,7 +35,7 @@ This configuration should be used when package contains **multiple entrypoint** 
 ```javascript
 const packageJson = require("./package.json");
 
-module.exports = require("@skuberplus/webpack").getMultiExportConfig(packageJson);
+module.exports = require("@k-lens/webpack").getMultiExportConfig(packageJson);
 ```
 
 **package.json**

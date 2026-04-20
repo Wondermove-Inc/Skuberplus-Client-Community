@@ -4,14 +4,14 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { podListLayoutColumnInjectionToken } from "@k-lens/list-layout";
+import { getConvertedParts } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { podListLayoutColumnInjectionToken } from "@skuberplus/list-layout";
-import { getConvertedParts } from "@skuberplus/utilities";
 import React from "react";
 import { WithTooltip } from "../../with-tooltip";
 import { COLUMN_PRIORITY } from "./column-priority";
 
-import type { Pod } from "@skuberplus/kube-object";
+import type { Pod } from "@k-lens/kube-object";
 
 const columnId = "name";
 

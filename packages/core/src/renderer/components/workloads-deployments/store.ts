@@ -4,11 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { PodStatusPhase } from "@skuberplus/kube-object";
+import { PodStatusPhase } from "@k-lens/kube-object";
 import { KubeObjectStore } from "../../../common/k8s-api/kube-object.store";
 
-import type { DeploymentApi } from "@skuberplus/kube-api";
-import type { Deployment } from "@skuberplus/kube-object";
+import type { DeploymentApi } from "@k-lens/kube-api";
+import type { Deployment } from "@k-lens/kube-object";
 
 import type { KubeObjectStoreDependencies, KubeObjectStoreOptions } from "../../../common/k8s-api/kube-object.store";
 import type { PodStore } from "../workloads-pods/store";

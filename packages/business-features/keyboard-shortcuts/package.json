@@ -1,8 +1,8 @@
 {
-  "name": "@skuberplus/keyboard-shortcuts",
+  "name": "@k-lens/keyboard-shortcuts",
   "private": false,
   "version": "1.5.4-0",
-  "description": "Keyboard shortcuts for SkuberPlus",
+  "description": "Keyboard shortcuts for KLens",
   "type": "commonjs",
   "files": [
     "dist"
@@ -13,16 +13,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wondermove-Inc/Skuberplus-Client-Community.git"
+    "url": "git+https://github.com/Wondermove-Inc/Klens-Client-Community.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "license": "MIT",
-  "homepage": "https://skuberplus.app",
+  "homepage": "https://k-lens.app",
   "scripts": {
     "build": "lens-webpack-build",
     "clean": "pnpm dlx rimraf@6.0.1 dist",
@@ -30,8 +30,8 @@
     "test:unit": "jest --coverage --runInBand"
   },
   "dependencies": {
-    "@skuberplus/feature-core": "workspace:^",
-    "@skuberplus/react-application": "workspace:^",
+    "@k-lens/feature-core": "workspace:^",
+    "@k-lens/react-application": "workspace:^",
     "@ogre-tools/fp": "^17.11.1",
     "@ogre-tools/injectable": "^17.11.1",
     "@ogre-tools/injectable-extension-for-auto-registration": "^17.11.1",
@@ -40,12 +40,12 @@
     "react": "^18.3.1"
   },
   "devDependencies": {
-    "@skuberplus/application": "workspace:^",
-    "@skuberplus/jest": "workspace:^",
-    "@skuberplus/react-testing-library-discovery": "workspace:^",
-    "@skuberplus/typescript": "workspace:^",
-    "@skuberplus/utilities": "workspace:^",
-    "@skuberplus/webpack": "workspace:^",
+    "@k-lens/application": "workspace:^",
+    "@k-lens/jest": "workspace:^",
+    "@k-lens/react-testing-library-discovery": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
+    "@k-lens/utilities": "workspace:^",
+    "@k-lens/webpack": "workspace:^",
     "@ogre-tools/injectable-extension-for-mobx": "^17.11.1",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",

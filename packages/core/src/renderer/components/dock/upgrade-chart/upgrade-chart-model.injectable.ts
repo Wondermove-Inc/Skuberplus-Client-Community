@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { waitUntilDefined } from "@k-lens/utilities";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
 import { asyncComputed } from "@ogre-tools/injectable-react";
-import { waitUntilDefined } from "@skuberplus/utilities";
 import { action, computed, observable, when } from "mobx";
 import requestHelmReleaseConfigurationInjectable from "../../../../common/k8s-api/endpoints/helm-releases.api/request-configuration.injectable";
 import helmChartVersionsInjectable from "../../helm-charts/helm-charts/versions.injectable";
@@ -14,7 +14,7 @@ import releasesInjectable from "../../helm-releases/releases.injectable";
 import updateReleaseInjectable from "../../helm-releases/update-release/update-release.injectable";
 import upgradeChartTabDataInjectable from "./tab-data.injectable";
 
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { AsyncResult } from "@k-lens/utilities";
 
 import type { IComputedValue } from "mobx";
 import type { SingleValue } from "react-select";

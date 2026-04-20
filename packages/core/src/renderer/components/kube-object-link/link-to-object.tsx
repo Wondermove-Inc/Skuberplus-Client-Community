@@ -4,16 +4,16 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { stopPropagation } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { stopPropagation } from "@skuberplus/utilities";
 import React from "react";
 import apiManagerInjectable from "../../../common/k8s-api/api-manager/manager.injectable";
 import getMaybeDetailsUrlInjectable from "../kube-detail-params/get-maybe-details-url.injectable";
 import { MaybeLink } from "../maybe-link";
 import { WithTooltip } from "../with-tooltip";
 
-import type { KubeObject, LocalObjectReference, ObjectReference } from "@skuberplus/kube-object";
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { KubeObject, LocalObjectReference, ObjectReference } from "@k-lens/kube-object";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { ApiManager } from "../../../common/k8s-api/api-manager";
 import type { GetMaybeDetailsUrl } from "../kube-detail-params/get-maybe-details-url.injectable";

@@ -9,7 +9,7 @@ import { SearchInput } from "../input";
 import { ReactTable } from "../table/react-table";
 import styles from "./list.module.scss";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { UseTableOptions } from "react-table";
 

@@ -10,8 +10,8 @@
  * Manages slash command skills: list, create, edit, delete, toggle, reset.
  */
 
+import { type RequestFromChannel, requestFromChannelInjectionToken } from "@k-lens/messaging";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { type RequestFromChannel, requestFromChannelInjectionToken } from "@skuberplus/messaging";
 import { ChevronDown, ChevronRight, Edit3, RotateCcw, Sparkles, Trash2 } from "lucide-react";
 import * as React from "react";
 import {

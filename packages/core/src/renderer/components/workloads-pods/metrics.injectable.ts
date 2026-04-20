@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { podMetricsApiInjectable } from "@k-lens/kube-api-specifics";
+import { PodMetrics } from "@k-lens/kube-object";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
 import { asyncComputed } from "@ogre-tools/injectable-react";
-import { podMetricsApiInjectable } from "@skuberplus/kube-api-specifics";
-import { PodMetrics } from "@skuberplus/kube-object";
 import { now } from "mobx-utils";
 import { getMetricsSource } from "../../../common/cluster/get-metrics-source";
 import requestPodMetricsInjectable from "../../../common/k8s-api/endpoints/metrics.api/request-pod-metrics.injectable";
@@ -16,7 +16,7 @@ import { retryMetricsRequest } from "../common/retry-metrics-request";
 import podMetricsCacheInjectable from "./metrics-cache.injectable";
 import podStoreInjectable from "./store.injectable";
 
-import type { Pod } from "@skuberplus/kube-object";
+import type { Pod } from "@k-lens/kube-object";
 
 import type { PodMetricData } from "../../../common/k8s-api/endpoints/metrics.api/request-pod-metrics.injectable";
 

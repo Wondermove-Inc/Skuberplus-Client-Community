@@ -1,5 +1,5 @@
+import { keyboardShortcutInjectionToken } from "@k-lens/keyboard-shortcuts";
 import { getInjectable } from "@ogre-tools/injectable";
-import { keyboardShortcutInjectionToken } from "@skuberplus/keyboard-shortcuts";
 import dockStoreInjectable from "../components/dock/dock/store.injectable";
 import focusPanelManagerInjectable from "../components/layout/focus-panel-manager/focus-panel-manager.injectable";
 

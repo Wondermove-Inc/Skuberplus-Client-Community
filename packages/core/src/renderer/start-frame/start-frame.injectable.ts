@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { onLoadOfApplicationInjectionToken } from "@k-lens/application";
+import { runManyFor } from "@k-lens/run-many";
 import { getInjectable } from "@ogre-tools/injectable";
-import { onLoadOfApplicationInjectionToken } from "@skuberplus/application";
-import { runManyFor } from "@skuberplus/run-many";
 import * as tokens from "../before-frame-starts/tokens";
 import currentlyInClusterFrameInjectable from "../routes/currently-in-cluster-frame.injectable";
 

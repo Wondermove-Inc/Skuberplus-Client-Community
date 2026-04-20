@@ -9,7 +9,7 @@ import { asyncComputed } from "@ogre-tools/injectable-react";
 import { now } from "mobx-utils";
 import requestIngressMetricsInjectable from "../../../common/k8s-api/endpoints/metrics.api/request-ingress-metrics.injectable";
 
-import type { Ingress } from "@skuberplus/kube-object";
+import type { Ingress } from "@k-lens/kube-object";
 
 const ingressMetricsInjectable = getInjectable({
   id: "ingress-metrics",

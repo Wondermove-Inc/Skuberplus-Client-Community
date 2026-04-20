@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { asLegacyGlobalForExtensionApi } from "@skuberplus/legacy-global-di";
+import { asLegacyGlobalForExtensionApi } from "@k-lens/legacy-global-di";
 import appEventBusInjectable from "../../common/app-event-bus/app-event-bus.injectable";
 
-import type { EventEmitter, EventEmitterCallback, EventEmitterOptions } from "@skuberplus/event-emitter";
+import type { EventEmitter, EventEmitterCallback, EventEmitterOptions } from "@k-lens/event-emitter";
 
 import type { AppEvent } from "../../common/app-event-bus/event-bus";
 

@@ -4,11 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { PodStatusPhase } from "@skuberplus/kube-object";
+import { PodStatusPhase } from "@k-lens/kube-object";
 import { KubeObjectStore } from "../../../common/k8s-api/kube-object.store";
 
-import type { JobApi } from "@skuberplus/kube-api";
-import type { CronJob, Job, Pod } from "@skuberplus/kube-object";
+import type { JobApi } from "@k-lens/kube-api";
+import type { CronJob, Job, Pod } from "@k-lens/kube-object";
 
 import type { KubeObjectStoreDependencies, KubeObjectStoreOptions } from "../../../common/k8s-api/kube-object.store";
 import type { GetPodsByOwnerId } from "../workloads-pods/get-pods-by-owner-id.injectable";

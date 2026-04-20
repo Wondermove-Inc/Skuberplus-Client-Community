@@ -7,8 +7,8 @@
 import "./list.scss";
 
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Spinner } from "@skuberplus/spinner";
-import { array, cssNames } from "@skuberplus/utilities";
+import { Spinner } from "@k-lens/spinner";
+import { array, cssNames } from "@k-lens/utilities";
 import AnsiUp from "ansi_up";
 import autoBindReact from "auto-bind/react";
 import DOMPurify from "dompurify";

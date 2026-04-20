@@ -6,15 +6,15 @@
 
 import "./kube-object-status-icon.scss";
 
+import { Icon } from "@k-lens/icon";
+import { cssNames, formatDuration, getOrInsert, isDefined } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { cssNames, formatDuration, getOrInsert, isDefined } from "@skuberplus/utilities";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 import { KubeObjectStatusLevel } from "../../../common/k8s-api/kube-object-status";
 import kubeObjectStatusTextsForObjectInjectable from "./kube-object-status-texts-for-object.injectable";
 
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeObject } from "@k-lens/kube-object";
 
 import type { IComputedValue } from "mobx";
 

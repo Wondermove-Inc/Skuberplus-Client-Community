@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { beforeApplicationIsLoadingInjectionToken } from "@k-lens/application";
 import { getInjectable } from "@ogre-tools/injectable";
-import { beforeApplicationIsLoadingInjectionToken } from "@skuberplus/application";
 import loadUserPreferencesStorageInjectable from "../../../user-preferences/main/load-storage.injectable";
 import clustersPersistentStorageInjectable from "../common/storage.injectable";
 

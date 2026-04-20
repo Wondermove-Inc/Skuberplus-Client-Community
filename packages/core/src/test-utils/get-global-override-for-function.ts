@@ -1,5 +1,5 @@
 /**
- * Internal helper mirroring `@skuberplus/test-utils` without importing its React-based utilities.
+ * Internal helper mirroring `@k-lens/test-utils` without importing its React-based utilities.
  */
 
-export { getGlobalOverrideForFunction } from "@skuberplus/test-utils/src/get-global-override-for-function";
+export { getGlobalOverrideForFunction } from "@k-lens/test-utils/src/get-global-override-for-function";

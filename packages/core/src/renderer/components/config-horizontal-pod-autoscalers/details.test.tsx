@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { HorizontalPodAutoscaler } from "@skuberplus/kube-object";
+import { HorizontalPodAutoscaler } from "@k-lens/kube-object";
 import React from "react";
 import directoryForKubeConfigsInjectable from "../../../common/app-paths/directory-for-kube-configs/directory-for-kube-configs.injectable";
 import directoryForUserDataInjectable from "../../../common/app-paths/directory-for-user-data/directory-for-user-data.injectable";
@@ -15,7 +15,7 @@ import storesAndApisCanBeCreatedInjectable from "../../stores-apis-can-be-create
 import { renderFor } from "../test-utils/renderFor";
 import { HorizontalPodAutoscalerDetails } from "./details";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { RenderResult } from "@testing-library/react";
 

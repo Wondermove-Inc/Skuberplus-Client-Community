@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { PodMetrics } from "@skuberplus/kube-object";
+import { PodMetrics } from "@k-lens/kube-object";
 import { KubeApi } from "../kube-api";
 
-import type { PodMetricsData } from "@skuberplus/kube-object";
+import type { PodMetricsData } from "@k-lens/kube-object";
 
 import type { DerivedKubeApiOptions, KubeApiDependencies } from "../kube-api";
 

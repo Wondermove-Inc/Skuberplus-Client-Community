@@ -10,7 +10,7 @@
  */
 import "./pie-chart.scss";
 
-import { cssNames } from "@skuberplus/utilities";
+import { cssNames } from "@k-lens/utilities";
 import ChartJS from "chart.js";
 import { observer } from "mobx-react";
 import React, { useEffect, useState } from "react";

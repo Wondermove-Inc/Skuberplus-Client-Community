@@ -21,9 +21,9 @@
  * @packageDocumentation
  */
 
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { Button } from "@skuberplus/storybook-shadcn/src/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@skuberplus/storybook-shadcn/src/components/ui/card";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { Button } from "@k-lens/storybook-shadcn/src/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@k-lens/storybook-shadcn/src/components/ui/card";
 import {
   Table,
   TableBody,
@@ -31,7 +31,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@skuberplus/storybook-shadcn/src/components/ui/table";
+} from "@k-lens/storybook-shadcn/src/components/ui/table";
 import { observer } from "mobx-react";
 import React, { useMemo, useState } from "react";
 import {

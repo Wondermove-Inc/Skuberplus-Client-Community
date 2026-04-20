@@ -14,13 +14,13 @@
 
 import "./ingress-class-details.module.scss";
 
+import { IngressClass } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Table, TableBody, TableCell, TableRow } from "@k-lens/storybook-shadcn";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { Separator } from "@k-lens/storybook-shadcn/src/components/ui/separator";
+import { stopPropagation } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { IngressClass } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Table, TableBody, TableCell, TableRow } from "@skuberplus/storybook-shadcn";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { Separator } from "@skuberplus/storybook-shadcn/src/components/ui/separator";
-import { stopPropagation } from "@skuberplus/utilities";
 import { makeObservable } from "mobx";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
@@ -37,8 +37,8 @@ import kubeObjectDeleteServiceInjectable from "../kube-object-menu/kube-object-d
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 import { ingressClassSetDefaultInjectable } from "./ingress-class-set-default.injectable";
 
-import type { KubeObject } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+import type { KubeObject } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { ApiManager } from "../../../common/k8s-api/api-manager";

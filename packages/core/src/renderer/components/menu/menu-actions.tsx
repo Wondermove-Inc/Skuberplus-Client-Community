@@ -6,10 +6,10 @@
 
 import "./menu-actions.scss";
 
+import { Icon } from "@k-lens/icon";
+import { getRandomIdInjectionToken } from "@k-lens/random";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { getRandomIdInjectionToken } from "@skuberplus/random";
-import { cssNames } from "@skuberplus/utilities";
 import autoBindReact from "auto-bind/react";
 import isString from "lodash/isString";
 import { makeObservable, observable, reaction } from "mobx";
@@ -18,9 +18,9 @@ import React, { Component, isValidElement } from "react";
 import openConfirmDialogInjectable from "../confirm-dialog/open.injectable";
 import { Menu, MenuItem } from "./menu";
 
-import type { IconProps } from "@skuberplus/icon";
-import type { TooltipDecoratorProps } from "@skuberplus/tooltip";
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { IconProps } from "@k-lens/icon";
+import type { TooltipDecoratorProps } from "@k-lens/tooltip";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { OpenConfirmDialog } from "../confirm-dialog/open.injectable";
 import type { MenuProps } from "./menu";

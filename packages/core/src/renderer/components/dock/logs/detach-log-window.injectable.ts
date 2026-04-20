@@ -9,7 +9,7 @@ import { LOG_WINDOW_OPEN_CHANNEL } from "../../../../common/ipc/log-window-chann
 import hostedClusterIdInjectable from "../../../cluster-frame-context/hosted-cluster-id.injectable";
 import ipcRendererInjectable from "../../../utils/channel/ipc-renderer.injectable";
 
-import type { Pod } from "@skuberplus/kube-object";
+import type { Pod } from "@k-lens/kube-object";
 
 import type { LogWindowOpenPayload } from "../../../../common/ipc/log-window-channel";
 import type { LogTabData } from "./tab-store";

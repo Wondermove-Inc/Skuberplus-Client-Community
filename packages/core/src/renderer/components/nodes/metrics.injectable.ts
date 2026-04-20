@@ -14,7 +14,7 @@ import { retryMetricsRequest } from "../common/retry-metrics-request";
 import genericMetricsCacheInjectable from "../generic-metrics-cache.injectable";
 import nodeStoreInjectable from "./store.injectable";
 
-import type { Node } from "@skuberplus/kube-object";
+import type { Node } from "@k-lens/kube-object";
 
 import type { ClusterMetricData } from "../../../common/k8s-api/endpoints/metrics.api/request-cluster-metrics-by-node-names.injectable";
 

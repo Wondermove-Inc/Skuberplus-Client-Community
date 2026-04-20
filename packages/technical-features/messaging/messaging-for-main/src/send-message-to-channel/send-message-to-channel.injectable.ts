@@ -1,6 +1,6 @@
+import { SendMessageToChannel, sendMessageToChannelInjectionToken } from "@k-lens/messaging";
 import { pipeline } from "@ogre-tools/fp";
 import { getInjectable } from "@ogre-tools/injectable";
-import { SendMessageToChannel, sendMessageToChannelInjectionToken } from "@skuberplus/messaging";
 import { flatMap, reject } from "lodash/fp";
 import frameIdsInjectable from "./frameIds.injectable";
 import getWebContentsInjectable from "./get-web-contents.injectable";

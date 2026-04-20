@@ -19,8 +19,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { cssNames } from "@skuberplus/utilities";
 import React from "react";
 import isLinuxInjectable from "../../../../../../common/vars/is-linux.injectable";
 import toggleMaximizeWindowInjectable from "../../toggle-maximize-window/toggle-maximize-window.injectable";

@@ -18,7 +18,7 @@
 
 import { getInjectionToken } from "@ogre-tools/injectable";
 
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeObject } from "@k-lens/kube-object";
 
 /**
  * 🎯 액션 핸들러들의 모음 인터페이스

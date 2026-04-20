@@ -6,7 +6,7 @@
 
 import { getInjectionToken } from "@ogre-tools/injectable";
 
-import type { ChannelRequester } from "@skuberplus/messaging";
+import type { ChannelRequester } from "@k-lens/messaging";
 
 import type { activateClusterChannel, deactivateClusterChannel } from "./channels";
 

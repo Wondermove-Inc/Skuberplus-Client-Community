@@ -92,18 +92,18 @@ describe("Security Feature Flags", () => {
   });
 
   describe("applySecurityFeatureEnvironmentOverrides", () => {
-    it("환경변수 SKUBERPLUS_FEATURE_SECURITY_SCAN_PANEL=false 오버라이드 적용", () => {
-      process.env.SKUBERPLUS_FEATURE_SECURITY_SCAN_PANEL = "false";
+    it("환경변수 KLENS_FEATURE_SECURITY_SCAN_PANEL=false 오버라이드 적용", () => {
+      process.env.KLENS_FEATURE_SECURITY_SCAN_PANEL = "false";
       applySecurityFeatureEnvironmentOverrides();
       expect(isSecurityFeatureEnabled("SECURITY_SCAN_PANEL")).toBe(false);
-      delete process.env.SKUBERPLUS_FEATURE_SECURITY_SCAN_PANEL;
+      delete process.env.KLENS_FEATURE_SECURITY_SCAN_PANEL;
     });
 
-    it("환경변수 SKUBERPLUS_FEATURE_RBAC_AUDIT=true 오버라이드 적용", () => {
-      process.env.SKUBERPLUS_FEATURE_RBAC_AUDIT = "true";
+    it("환경변수 KLENS_FEATURE_RBAC_AUDIT=true 오버라이드 적용", () => {
+      process.env.KLENS_FEATURE_RBAC_AUDIT = "true";
       applySecurityFeatureEnvironmentOverrides();
       expect(isSecurityFeatureEnabled("RBAC_AUDIT")).toBe(true);
-      delete process.env.SKUBERPLUS_FEATURE_RBAC_AUDIT;
+      delete process.env.KLENS_FEATURE_RBAC_AUDIT;
     });
 
     it("환경변수 없으면 기본값 유지", () => {

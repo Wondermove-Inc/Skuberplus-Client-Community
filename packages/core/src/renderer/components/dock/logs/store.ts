@@ -4,12 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getOrInsertWith, interval, waitUntilDefined } from "@skuberplus/utilities";
+import { getOrInsertWith, interval, waitUntilDefined } from "@k-lens/utilities";
 import { observable } from "mobx";
 import { ALL_CONTAINERS } from "./tab-store";
 
-import type { Pod, PodLogsQuery } from "@skuberplus/kube-object";
-import type { IntervalFn } from "@skuberplus/utilities";
+import type { Pod, PodLogsQuery } from "@k-lens/kube-object";
+import type { IntervalFn } from "@k-lens/utilities";
 import type { IComputedValue } from "mobx";
 
 import type { TabId } from "../dock/store";

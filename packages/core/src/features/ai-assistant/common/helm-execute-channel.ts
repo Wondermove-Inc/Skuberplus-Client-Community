@@ -13,7 +13,7 @@
  * - 위험 플래그 차단
  *
  * 📝 주의사항:
- * - @skuberplus/messaging 프레임워크 사용
+ * - @k-lens/messaging 프레임워크 사용
  * - Whitelist 기반 명령 검증 (Main에서 수행)
  * - HITL 승인은 Renderer에서 처리
  *
@@ -21,8 +21,8 @@
  * - 2026-01-08: 초기 생성 (Helm 전용 채널 구현)
  */
 
+import { getRequestChannel } from "@k-lens/messaging";
 import { getInjectionToken } from "@ogre-tools/injectable";
-import { getRequestChannel } from "@skuberplus/messaging";
 
 import type { ClusterId } from "../../../common/cluster-types";
 

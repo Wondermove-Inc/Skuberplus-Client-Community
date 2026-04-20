@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { MetricsSourceType } from "../../../common/cluster-types";

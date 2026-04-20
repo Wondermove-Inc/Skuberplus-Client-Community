@@ -91,7 +91,7 @@
 
 ```typescript
 // 이미 프로젝트에 포함되어 있음
-import { PromptBuilder, PromptRegistry } from '@skuberplus/core/ai-assistant/common/prompts';
+import { PromptBuilder, PromptRegistry } from '@k-lens/core/ai-assistant/common/prompts';
 ```
 
 ### 2. 간단한 프롬프트 생성

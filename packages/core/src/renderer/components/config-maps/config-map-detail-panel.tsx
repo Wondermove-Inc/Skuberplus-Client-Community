@@ -20,13 +20,13 @@
 
 import "./config-map-details.scss";
 
+import { ConfigMap } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Table, TableBody, TableCell, TableRow } from "@k-lens/storybook-shadcn";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { Separator } from "@k-lens/storybook-shadcn/src/components/ui/separator";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { ConfigMap } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Table, TableBody, TableCell, TableRow } from "@skuberplus/storybook-shadcn";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { DetailPanelSection } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { Separator } from "@skuberplus/storybook-shadcn/src/components/ui/separator";
 import { computed, makeObservable, observable, reaction, runInAction } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";
@@ -47,8 +47,8 @@ import { MonacoEditor } from "../monaco-editor";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 import configMapStoreInjectable from "./store.injectable";
 
-import type { KubeObject } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+import type { KubeObject } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { ApiManager } from "../../../common/k8s-api/api-manager";
 import type { HostedCluster } from "../../cluster-frame-context/hosted-cluster.injectable";

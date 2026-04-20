@@ -16,10 +16,10 @@
  * - 2025-11-04: shadcn Badge 기반으로 재작성 (Core Badge에서 마이그레이션)
  */
 
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@k-lens/storybook-shadcn/src/components/ui/tooltip";
+import { prevDefault } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@skuberplus/storybook-shadcn/src/components/ui/tooltip";
-import { prevDefault } from "@skuberplus/utilities";
 import React from "react";
 import filterByNamespaceInjectable from "./namespace-select-filter-model/filter-by-namespace.injectable";
 

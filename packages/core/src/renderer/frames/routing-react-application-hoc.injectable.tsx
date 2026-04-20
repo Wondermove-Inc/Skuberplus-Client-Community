@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { reactApplicationHigherOrderComponentInjectionToken } from "@k-lens/react-application";
+import { historyInjectionToken } from "@k-lens/routing";
 import { getInjectable } from "@ogre-tools/injectable";
-import { reactApplicationHigherOrderComponentInjectionToken } from "@skuberplus/react-application";
-import { historyInjectionToken } from "@skuberplus/routing";
 import React from "react";
 import { Router } from "react-router";
 

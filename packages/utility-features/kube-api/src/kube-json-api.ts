@@ -4,11 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { JsonApi } from "@skuberplus/json-api";
+import { JsonApi } from "@k-lens/json-api";
 
-import type { JsonApiError } from "@skuberplus/json-api";
-import type { KubeJsonApiData } from "@skuberplus/kube-object";
-import type { Response } from "@skuberplus/node-fetch";
+import type { JsonApiError } from "@k-lens/json-api";
+import type { KubeJsonApiData } from "@k-lens/kube-object";
+import type { Response } from "@k-lens/node-fetch";
 
 export interface KubeJsonApiError extends JsonApiError {
   code: number;

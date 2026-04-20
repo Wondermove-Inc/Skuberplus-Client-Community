@@ -4,7 +4,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Have an idea for Skuber+ Client? We'd love to hear it!
+        Have an idea for K-Lens? We'd love to hear it!
 
   - type: textarea
     id: idea

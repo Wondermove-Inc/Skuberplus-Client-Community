@@ -13,8 +13,8 @@
  * @packageDocumentation
  */
 
+import { sidebarItemInjectionToken } from "@k-lens/cluster-sidebar";
 import { getInjectable } from "@ogre-tools/injectable";
-import { sidebarItemInjectionToken } from "@skuberplus/cluster-sidebar";
 import { ShieldCheck } from "lucide-react";
 import React from "react";
 import securityRouteInjectable from "../../../common/front-end-routing/routes/cluster/security/security-route.injectable";

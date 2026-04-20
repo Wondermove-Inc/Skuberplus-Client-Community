@@ -18,13 +18,13 @@
 
 import "./event-details.scss";
 
+import { KubeEvent } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Table, TableBody, TableCell, TableRow } from "@k-lens/storybook-shadcn";
+import { DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { Separator } from "@k-lens/storybook-shadcn/src/components/ui/separator";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { KubeEvent } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Table, TableBody, TableCell, TableRow } from "@skuberplus/storybook-shadcn";
-import { DetailPanelSection } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { Separator } from "@skuberplus/storybook-shadcn/src/components/ui/separator";
-import { cssNames } from "@skuberplus/utilities";
 import kebabCase from "lodash/kebabCase";
 import { observer } from "mobx-react";
 import React, { useEffect, useRef, useState } from "react";
@@ -41,8 +41,8 @@ import kubeObjectDeleteServiceInjectable from "../kube-object-menu/kube-object-d
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 import { DurationAbsoluteTimestamp } from "./duration-absolute";
 
-import type { KubeObject } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+import type { KubeObject } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { ApiManager } from "../../../common/k8s-api/api-manager";

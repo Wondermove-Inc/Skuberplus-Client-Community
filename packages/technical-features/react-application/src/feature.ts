@@ -1,6 +1,6 @@
+import { applicationFeature } from "@k-lens/application";
+import { getFeature } from "@k-lens/feature-core";
 import { autoRegister } from "@ogre-tools/injectable-extension-for-auto-registration";
-import { applicationFeature } from "@skuberplus/application";
-import { getFeature } from "@skuberplus/feature-core";
 
 export const reactApplicationFeature = getFeature({
   id: "react-application",

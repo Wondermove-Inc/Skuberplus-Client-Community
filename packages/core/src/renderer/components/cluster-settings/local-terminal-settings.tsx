@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Icon } from "@k-lens/icon";
+import { Spinner } from "@k-lens/spinner";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { Spinner } from "@skuberplus/spinner";
 import { action, runInAction } from "mobx";
 import { observer } from "mobx-react";
 import React from "react";

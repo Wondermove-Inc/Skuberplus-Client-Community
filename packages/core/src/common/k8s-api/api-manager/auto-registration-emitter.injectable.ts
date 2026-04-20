@@ -7,7 +7,7 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import EventEmitter from "events";
 
-import type { KubeApi } from "@skuberplus/kube-api";
+import type { KubeApi } from "@k-lens/kube-api";
 
 import type TypedEventEmitter from "typed-emitter";
 

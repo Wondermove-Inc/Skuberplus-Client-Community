@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import directoryForTempInjectable from "../../common/app-paths/directory-for-temp/directory-for-temp.injectable";
 import lensProxyCertificateInjectable from "../../common/certificate/lens-proxy-certificate.injectable";
 import loadKubeconfigInjectable from "../../common/cluster/load-kubeconfig.injectable";

@@ -1,5 +1,5 @@
 {
-  "name": "@skuberplus/test-utils",
+  "name": "@k-lens/test-utils",
   "version": "1.5.4-0",
   "description": "A collection of utilities for testing",
   "type": "commonjs",
@@ -14,11 +14,11 @@
     "dist"
   ],
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "license": "MIT",
-  "homepage": "https://skuberplus.app",
+  "homepage": "https://k-lens.app",
   "scripts": {
     "clean": "pnpm dlx rimraf@6.0.1 dist",
     "clean:node_modules": "pnpm dlx rimraf@6.0.1 node_modules",
@@ -33,9 +33,9 @@
     "react": "^17.0.2"
   },
   "devDependencies": {
-    "@skuberplus/jest": "workspace:^",
-    "@skuberplus/typescript": "workspace:^",
-    "@skuberplus/webpack": "workspace:^",
+    "@k-lens/jest": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
+    "@k-lens/webpack": "workspace:^",
     "@types/jest": "^29.5.14",
     "@types/lodash": "^4.17.20",
     "@types/node": "~22.16.5",

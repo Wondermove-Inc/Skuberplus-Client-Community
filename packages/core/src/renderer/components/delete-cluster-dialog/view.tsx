@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Button } from "@k-lens/button";
+import { Icon } from "@k-lens/icon";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Button } from "@skuberplus/button";
-import { Icon } from "@skuberplus/icon";
 import { runInAction } from "mobx";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
@@ -141,7 +141,7 @@ class NonInjectedDeleteClusterDialog extends Component<Dependencies> {
         <div>
           {"Delete the "}
           <b>{cluster.getMeta().name}</b>
-          {" context from SkuberPlus's internal kubeconfig?"}
+          {" context from K-Lens's internal kubeconfig?"}
         </div>
       );
     }

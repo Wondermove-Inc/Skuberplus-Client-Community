@@ -14,13 +14,13 @@
  * 🔄 변경이력: 2026-01-09 - Prometheus fallback 지원을 위한 의존성 추가
  */
 
-import { getInjectable } from "@ogre-tools/injectable";
 import {
   nodeApiInjectable,
   nodeMetricsApiInjectable,
   storesAndApisCanBeCreatedInjectionToken,
-} from "@skuberplus/kube-api-specifics";
-import { loggerInjectionToken } from "@skuberplus/logger";
+} from "@k-lens/kube-api-specifics";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { getInjectable } from "@ogre-tools/injectable";
 import assert from "assert";
 import apiBaseInjectable from "../../../common/k8s-api/api-base.injectable";
 import { kubeObjectStoreInjectionToken } from "../../../common/k8s-api/api-manager/kube-object-store-token";

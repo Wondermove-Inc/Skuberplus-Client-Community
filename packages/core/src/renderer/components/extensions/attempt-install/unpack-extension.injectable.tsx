@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
+import { noop } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { noop } from "@skuberplus/utilities";
 import fse from "fs-extra";
 import { when } from "mobx";
 import path from "path";
@@ -18,7 +18,7 @@ import { notificationPanelStore } from "../../status-bar/items/notification-pane
 import { getMessageFromError } from "../get-message-from-error/get-message-from-error";
 import getExtensionDestFolderInjectable from "./get-extension-dest-folder.injectable";
 
-import type { Disposer } from "@skuberplus/utilities";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { InstallRequestValidated } from "./create-temp-files-and-validate.injectable";
 

@@ -4,16 +4,16 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { PodMetrics } from "@skuberplus/kube-object";
-import { cpuUnitsToNumber, unitsToBytes } from "@skuberplus/utilities";
+import { PodMetrics } from "@k-lens/kube-object";
+import { cpuUnitsToNumber, unitsToBytes } from "@k-lens/utilities";
 import countBy from "lodash/countBy";
 import { observable } from "mobx";
 import { getMetricsSource } from "../../../common/cluster/get-metrics-source";
 import { KubeObjectStore } from "../../../common/k8s-api/kube-object.store";
 
-import type { JsonApi } from "@skuberplus/json-api";
-import type { PodApi, PodMetricsApi } from "@skuberplus/kube-api";
-import type { KubeObject, NamespaceScopedMetadata, Pod } from "@skuberplus/kube-object";
+import type { JsonApi } from "@k-lens/json-api";
+import type { PodApi, PodMetricsApi } from "@k-lens/kube-api";
+import type { KubeObject, NamespaceScopedMetadata, Pod } from "@k-lens/kube-object";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { KubeObjectStoreDependencies, KubeObjectStoreOptions } from "../../../common/k8s-api/kube-object.store";

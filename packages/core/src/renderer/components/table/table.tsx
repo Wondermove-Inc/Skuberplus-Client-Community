@@ -6,8 +6,8 @@
 
 import "./table.scss";
 
+import { cssNames, isDefined } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { cssNames, isDefined } from "@skuberplus/utilities";
 import assert from "assert";
 import autoBindReact from "auto-bind/react";
 import { computed, makeObservable } from "mobx";
@@ -22,8 +22,8 @@ import { TableHead } from "./table-head";
 import tableModelInjectable from "./table-model/table-model.injectable";
 import { TableRow } from "./table-row";
 
-import type { ItemObject } from "@skuberplus/list-layout";
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { ItemObject } from "@k-lens/list-layout";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { PageParam } from "../../navigation/page-param";
 import type { VirtualListRef } from "../virtual-list/virtual-list";

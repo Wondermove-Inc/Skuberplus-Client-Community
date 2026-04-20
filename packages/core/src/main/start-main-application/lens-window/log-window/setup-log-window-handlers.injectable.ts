@@ -3,8 +3,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { beforeApplicationIsLoadingInjectionToken } from "@k-lens/application";
 import { getInjectable } from "@ogre-tools/injectable";
-import { beforeApplicationIsLoadingInjectionToken } from "@skuberplus/application";
 import { ipcMainHandle } from "../../../../common/ipc";
 import { LOG_WINDOW_OPEN_CHANNEL, LOG_WINDOW_REQUEST_INIT_CHANNEL } from "../../../../common/ipc/log-window-channel";
 import lensProxyPortInjectable from "../../../lens-proxy/lens-proxy-port.injectable";

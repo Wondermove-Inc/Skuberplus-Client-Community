@@ -20,7 +20,7 @@
  * - 2025-12-16: Main/Renderer Feature 분리 (Webpack 빌드 에러 해결)
  */
 
-import { getFeature } from "@skuberplus/feature-core";
+import { getFeature } from "@k-lens/feature-core";
 
 // ============================================
 // 🎯 Main Process Injectables (Extension Host)

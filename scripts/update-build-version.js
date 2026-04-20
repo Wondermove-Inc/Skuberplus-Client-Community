@@ -18,7 +18,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const PACKAGE_JSON_PATH = path.resolve(__dirname, "..", "skuberplus", "package.json");
+const PACKAGE_JSON_PATH = path.resolve(__dirname, "..", "k-lens", "package.json");
 
 /**
  * 🎯 목적: 현재 시간을 YYYYMMDDHHMMSS 형식으로 반환

@@ -51,7 +51,7 @@ import { PodDetailPanel } from "./pod-detail-panel";
 import { type PodWithMetrics, podColumns } from "./pods-columns";
 import podStoreInjectable from "./store.injectable";
 
-import type { Pod } from "@skuberplus/kube-object";
+import type { Pod } from "@k-lens/kube-object";
 
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
 import type { AppActivityState } from "../../utils/app-activity-state.injectable";

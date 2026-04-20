@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { historyInjectionToken } from "@skuberplus/routing";
+import { historyInjectionToken } from "@k-lens/routing";
 import { createMemoryHistory } from "history";
 import { getGlobalOverride } from "../../test-utils/get-global-override";
 

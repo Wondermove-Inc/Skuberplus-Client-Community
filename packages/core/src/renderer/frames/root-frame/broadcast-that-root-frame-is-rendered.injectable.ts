@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { sendMessageToChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { sendMessageToChannelInjectionToken } from "@skuberplus/messaging";
 import { rootFrameHasRenderedChannel } from "../../../common/root-frame/root-frame-rendered-channel";
 
 const broadcastThatRootFrameIsRenderedInjectable = getInjectable({

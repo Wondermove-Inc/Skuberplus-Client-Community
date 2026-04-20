@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Icon } from "@k-lens/icon";
+import { Node } from "@k-lens/kube-object";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { Node } from "@skuberplus/kube-object";
 import React from "react";
 import { App } from "../../../extensions/common-api";
 import openConfirmDialogInjectable, { type OpenConfirmDialog } from "../confirm-dialog/open.injectable";

@@ -17,8 +17,8 @@
  * - 2025-12-16: 초기 생성 (Phase 2 Extension Host 패턴)
  */
 
+import { getMessageChannel, getRequestChannel } from "@k-lens/messaging";
 import { getInjectionToken } from "@ogre-tools/injectable";
-import { getMessageChannel, getRequestChannel } from "@skuberplus/messaging";
 
 import type { AIProvider } from "../../../common/features/user-preferences/encrypt-api-key-channel";
 import type { MonitorAlert, MonitorConfig, MonitorRule, MonitorStatus } from "./monitor-types";

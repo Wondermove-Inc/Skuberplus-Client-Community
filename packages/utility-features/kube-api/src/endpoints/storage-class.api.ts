@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { StorageClass } from "@skuberplus/kube-object";
+import { StorageClass } from "@k-lens/kube-object";
 import { KubeApi } from "../kube-api";
 
-import type { StorageClassData } from "@skuberplus/kube-object";
+import type { StorageClassData } from "@k-lens/kube-object";
 
 import type { DerivedKubeApiOptions, KubeApiDependencies } from "../kube-api";
 

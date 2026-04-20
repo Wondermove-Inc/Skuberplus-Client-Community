@@ -8,7 +8,7 @@ import { getInjectable } from "@ogre-tools/injectable";
 import { watch } from "chokidar";
 import type { Stats } from "fs";
 
-import type { SingleOrMany } from "@skuberplus/utilities";
+import type { SingleOrMany } from "@k-lens/utilities";
 
 import type TypedEventEmitter from "typed-emitter";
 

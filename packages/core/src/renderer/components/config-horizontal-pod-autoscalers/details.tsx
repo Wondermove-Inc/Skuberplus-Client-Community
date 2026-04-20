@@ -6,14 +6,10 @@
 
 import "./details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { HorizontalPodAutoscaler } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { HorizontalPodAutoscaler } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
 // 🎯 shadcn UI 컴포넌트: DrawerItem/DrawerTitle 대체
-import {
-  DetailPanelField,
-  DetailPanelSection,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { DetailPanelField, DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
 // 🎯 shadcn Table 컴포넌트로 마이그레이션 (화이트 테마 지원)
 import {
   Table,
@@ -22,7 +18,8 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@skuberplus/storybook-shadcn/src/components/ui/table";
+} from "@k-lens/storybook-shadcn/src/components/ui/table";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
@@ -32,8 +29,8 @@ import { KubeObjectConditionsDrawer } from "../kube-object-conditions";
 import { getMetricName } from "./get-metric-name";
 import getHorizontalPodAutoscalerMetrics from "./get-metrics.injectable";
 
-import type { HorizontalPodAutoscalerMetricSpec, HorizontalPodAutoscalerMetricTarget } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+import type { HorizontalPodAutoscalerMetricSpec, HorizontalPodAutoscalerMetricTarget } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { ApiManager } from "../../../common/k8s-api/api-manager";
 import type { GetDetailsUrl } from "../kube-detail-params/get-details-url.injectable";

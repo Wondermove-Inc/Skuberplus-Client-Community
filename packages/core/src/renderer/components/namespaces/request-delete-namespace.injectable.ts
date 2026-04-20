@@ -8,7 +8,7 @@ import { getInjectable } from "@ogre-tools/injectable";
 import requestDeleteNormalNamespaceInjectable from "./request-delete-normal-namespace.injectable";
 import requestDeleteSubNamespaceAnchorInjectable from "./request-delete-sub-namespace.injectable";
 
-import type { Namespace } from "@skuberplus/kube-object";
+import type { Namespace } from "@k-lens/kube-object";
 
 export type RequestDeleteNamespace = (namespace: Namespace) => Promise<void>;
 

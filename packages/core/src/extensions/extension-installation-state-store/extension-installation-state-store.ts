@@ -4,14 +4,14 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { disposer } from "@skuberplus/utilities";
+import { disposer } from "@k-lens/utilities";
 import { ipcRenderer } from "electron";
 import { action, computed, observable } from "mobx";
 import * as uuid from "uuid";
 import { broadcastMessage } from "../../common/ipc";
 
-import type { Logger } from "@skuberplus/logger";
-import type { ExtendableDisposer } from "@skuberplus/utilities";
+import type { Logger } from "@k-lens/logger";
+import type { ExtendableDisposer } from "@k-lens/utilities";
 
 export enum ExtensionInstallationState {
   INSTALLING = "installing",

@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { byOrderNumber } from "@k-lens/utilities";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
 import { computedInjectManyInjectable } from "@ogre-tools/injectable-extension-for-mobx";
-import { byOrderNumber } from "@skuberplus/utilities";
 import { computed } from "mobx";
 import { entitySettingInjectionToken } from "./token";
 

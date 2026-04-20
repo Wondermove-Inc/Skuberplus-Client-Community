@@ -11,14 +11,14 @@ types → config → repo → service → runtime → ui
 ## 패키지 의존성 구조
 
 ```
-@skuberplus/core (최상위)
-├── @skuberplus/business-features/*
-├── @skuberplus/cluster-sidebar
-├── @skuberplus/cluster-settings
-├── @skuberplus/feature-core
-├── @skuberplus/react-application
-├── @skuberplus/application
-└── @skuberplus/utility-features/*
+@k-lens/core (최상위)
+├── @k-lens/business-features/*
+├── @k-lens/cluster-sidebar
+├── @k-lens/cluster-settings
+├── @k-lens/feature-core
+├── @k-lens/react-application
+├── @k-lens/application
+└── @k-lens/utility-features/*
 ```
 
 ### 규칙

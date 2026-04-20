@@ -16,7 +16,7 @@
  * - 2025-10-31: 초기 생성 (shadcn UI 마이그레이션)
  */
 
-import { Button } from "@skuberplus/storybook-shadcn";
+import { Button } from "@k-lens/storybook-shadcn";
 import { ArrowUpDown } from "lucide-react";
 import React from "react";
 import { NamespaceSelectBadge } from "../namespaces/namespace-select-badge";

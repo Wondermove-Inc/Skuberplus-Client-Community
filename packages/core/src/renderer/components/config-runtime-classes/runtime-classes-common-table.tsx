@@ -34,7 +34,7 @@ import { RuntimeClassDetailPanel } from "./runtime-class-detail-panel";
 import { runtimeClassColumns } from "./runtime-classes-columns";
 import runtimeClassStoreInjectable from "./store.injectable";
 
-import type { RuntimeClass } from "@skuberplus/kube-object";
+import type { RuntimeClass } from "@k-lens/kube-object";
 
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
 import type { RuntimeClassStore } from "./store";

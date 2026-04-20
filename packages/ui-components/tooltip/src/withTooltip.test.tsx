@@ -9,7 +9,7 @@ import userEvent, { UserEvent } from "@testing-library/user-event";
 import React from "react";
 import { withTooltip } from "./withTooltip";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 import "@testing-library/jest-dom";
 
 type MyComponentProps = {

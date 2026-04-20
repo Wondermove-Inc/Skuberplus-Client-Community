@@ -20,27 +20,27 @@
  * - 2025-11-05 - 실제 데이터 표시 및 Warnings 테이블 추가
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
 import {
   ChartConfig,
   ChartContainer,
   ChartLegendContent,
   ChartTooltipContent,
-} from "@skuberplus/storybook-shadcn/src/components/ui/chart";
+} from "@k-lens/storybook-shadcn/src/components/ui/chart";
 import {
   Empty,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@skuberplus/storybook-shadcn/src/components/ui/empty";
-import { ToggleGroup, ToggleGroupItem } from "@skuberplus/storybook-shadcn/src/components/ui/toggle-group";
+} from "@k-lens/storybook-shadcn/src/components/ui/empty";
+import { ToggleGroup, ToggleGroupItem } from "@k-lens/storybook-shadcn/src/components/ui/toggle-group";
 import {
   Tooltip as ShadcnTooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@skuberplus/storybook-shadcn/src/components/ui/tooltip";
+} from "@k-lens/storybook-shadcn/src/components/ui/tooltip";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { AlertTriangle, Info } from "lucide-react";
 import { observer } from "mobx-react";
 import React, { useCallback, useMemo, useRef, useState } from "react";

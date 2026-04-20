@@ -33,8 +33,8 @@ import {
   ChartContainer,
   ChartLegendContent,
   ChartTooltipContent,
-} from "@skuberplus/storybook-shadcn/src/components/ui/chart";
-import { bytesToUnits } from "@skuberplus/utilities";
+} from "@k-lens/storybook-shadcn/src/components/ui/chart";
+import { bytesToUnits } from "@k-lens/utilities";
 import { mapValues } from "lodash";
 import { observer } from "mobx-react";
 import React, { useContext } from "react";
@@ -43,7 +43,7 @@ import { isMetricsEmpty, normalizeMetrics } from "../../../common/k8s-api/endpoi
 import { ResourceMetricsContext } from "../resource-metrics";
 import { NoMetrics } from "../resource-metrics/no-metrics";
 
-import type { ChartConfig } from "@skuberplus/storybook-shadcn/src/components/ui/chart";
+import type { ChartConfig } from "@k-lens/storybook-shadcn/src/components/ui/chart";
 
 import type { AtLeastOneMetricTab } from "../resource-metrics";
 

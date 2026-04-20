@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { CustomResourceDefinition, KubeObject } from "@skuberplus/kube-object";
+import { CustomResourceDefinition, KubeObject } from "@k-lens/kube-object";
 import React from "react";
 import { getDiForUnitTesting } from "../../../getDiForUnitTesting";
 import { renderFor } from "../../test-utils/renderFor";

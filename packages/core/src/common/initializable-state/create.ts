@@ -7,7 +7,7 @@
 import { getInjectable, getInjectionToken } from "@ogre-tools/injectable";
 import assert from "assert";
 
-import type { Runnable } from "@skuberplus/run-many";
+import type { Runnable } from "@k-lens/run-many";
 
 import type { DiContainerForInjection, Injectable, InjectionToken } from "@ogre-tools/injectable";
 

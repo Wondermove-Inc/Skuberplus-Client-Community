@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { hasTypedProperty, isObject, isString, json } from "@skuberplus/utilities";
+import { hasTypedProperty, isObject, isString, json } from "@k-lens/utilities";
 import fs from "fs";
 import { ensureDir, pathExists } from "fs-extra";
 import { noop } from "lodash/fp";
@@ -12,7 +12,7 @@ import * as lockFile from "proper-lockfile";
 import { coerce, SemVer } from "semver";
 import { defaultPackageMirror, packageMirrors } from "../../features/user-preferences/common/preferences-helpers";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { ExecFile } from "../../common/fs/exec-file.injectable";
 import type { Unlink } from "../../common/fs/unlink.injectable";
@@ -22,7 +22,7 @@ import type { JoinPaths } from "../../common/path/join-paths.injectable";
 import type { NormalizedPlatform } from "../../common/vars/normalized-platform.injectable";
 import type { DownloadBinary } from "../fetch/download-binary.injectable";
 
-const initScriptVersionString = "# skuberplus-initscript v3";
+const initScriptVersionString = "# k-lens-initscript v3";
 
 export interface KubectlDependencies {
   readonly directoryForKubectlBinaries: string;

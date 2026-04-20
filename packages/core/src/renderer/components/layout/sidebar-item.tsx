@@ -24,7 +24,7 @@ import { notificationPanelStore } from "../status-bar/items/notification-panel.s
 // 🎯 DAIVE imports
 import sidebarStorageInjectable from "./sidebar-storage/sidebar-storage.injectable";
 
-import type { SidebarItemDeclaration } from "@skuberplus/cluster-sidebar";
+import type { SidebarItemDeclaration } from "@k-lens/cluster-sidebar";
 
 import type { StorageLayer } from "../../utils/storage-helper";
 import type { SidebarStorageState } from "./sidebar-storage/sidebar-storage.injectable";

@@ -6,14 +6,14 @@
 
 import "./animate.scss";
 
+import { cssNames, noop } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { cssNames, noop } from "@skuberplus/utilities";
 import React, { useEffect, useState } from "react";
 import { defaultEnterDurationForAnimatedInjectable } from "./default-enter-duration.injectable";
 import { defaultLeaveDurationForAnimatedInjectable } from "./default-leave-duration.injectable";
 import { requestAnimationFrameInjectable } from "./request-animation-frame.injectable";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { RequestAnimationFrame } from "./request-animation-frame.injectable";
 

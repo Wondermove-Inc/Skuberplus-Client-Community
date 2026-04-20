@@ -4,15 +4,15 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { messageChannelListenerInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { messageChannelListenerInjectionToken } from "@skuberplus/messaging";
 import { appNavigationChannel } from "../../common/front-end-routing/app-navigation-channel";
 import { clusterFrameNavigationChannel } from "../../common/front-end-routing/cluster-frame-navigation-channel";
 import { navigateToUrlInjectionToken } from "../../common/front-end-routing/navigate-to-url-injection-token";
 import currentlyInClusterFrameInjectable from "../routes/currently-in-cluster-frame.injectable";
 import focusWindowInjectable from "./focus-window.injectable";
 
-import type { MessageChannel, MessageChannelListener } from "@skuberplus/messaging";
+import type { MessageChannel, MessageChannelListener } from "@k-lens/messaging";
 
 const navigationChannelListenerInjectable = getInjectable({
   id: "navigation-channel-listener",

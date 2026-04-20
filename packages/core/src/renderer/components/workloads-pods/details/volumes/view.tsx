@@ -4,13 +4,13 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Icon } from "@skuberplus/icon";
-import { DetailPanelSection } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { Icon } from "@k-lens/icon";
+import { DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
 import { observer } from "mobx-react";
 import React from "react";
 import { VolumeVariant } from "./variant";
 
-import type { Pod } from "@skuberplus/kube-object";
+import type { Pod } from "@k-lens/kube-object";
 
 export interface PodVolumesProps {
   pod: Pod;

@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { apiKubeInjectionToken } from "@k-lens/kube-api";
+import { storesAndApisCanBeCreatedInjectionToken } from "@k-lens/kube-api-specifics";
 import { getInjectable } from "@ogre-tools/injectable";
-import { apiKubeInjectionToken } from "@skuberplus/kube-api";
-import { storesAndApisCanBeCreatedInjectionToken } from "@skuberplus/kube-api-specifics";
 import assert from "assert";
 import { apiBaseServerAddressInjectionToken } from "../../common/k8s-api/api-base-configs";
 import createKubeJsonApiInjectable from "../../common/k8s-api/create-kube-json-api.injectable";

@@ -10,7 +10,7 @@
  * @packageDocumentation
  */
 
-import { Button } from "@skuberplus/storybook-shadcn/src/components/ui/button";
+import { Button } from "@k-lens/storybook-shadcn/src/components/ui/button";
 import React from "react";
 
 import type { AnySecurityFinding } from "../../../common/security/security-finding";

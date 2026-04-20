@@ -12,13 +12,13 @@
 
 import "./namespace-details.scss";
 
+import { Namespace } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Spinner } from "@k-lens/spinner";
+import { Table, TableBody, TableCell, TableRow } from "@k-lens/storybook-shadcn";
+import { Separator } from "@k-lens/storybook-shadcn/src/components/ui/separator";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Namespace } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Spinner } from "@skuberplus/spinner";
-import { Table, TableBody, TableCell, TableRow } from "@skuberplus/storybook-shadcn";
-import { Separator } from "@skuberplus/storybook-shadcn/src/components/ui/separator";
-import { cssNames } from "@skuberplus/utilities";
 import { computed, makeObservable, observable } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";
@@ -39,8 +39,8 @@ import { NamespaceMetricsDetailsComponent } from "./metrics-details-component";
 import { NamespaceTreeView } from "./namespace-tree-view";
 import namespaceStoreInjectable from "./store.injectable";
 
-import type { KubeObject } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+import type { KubeObject } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";

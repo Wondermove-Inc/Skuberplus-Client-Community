@@ -1,5 +1,5 @@
 {
-  "name": "@skuberplus/list-layout",
+  "name": "@k-lens/list-layout",
   "private": false,
   "version": "1.5.4-0",
   "description": "Injection tokens for list layout",
@@ -13,16 +13,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wondermove-Inc/Skuberplus-Client-Community.git"
+    "url": "git+https://github.com/Wondermove-Inc/Klens-Client-Community.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "license": "MIT",
-  "homepage": "https://skuberplus.app",
+  "homepage": "https://k-lens.app",
   "scripts": {
     "build": "lens-webpack-build",
     "clean": "pnpm dlx rimraf@6.0.1 dist",
@@ -32,10 +32,10 @@
     "@ogre-tools/injectable": "^17.11.1"
   },
   "devDependencies": {
-    "@skuberplus/kube-object": "workspace:^",
-    "@skuberplus/typescript": "workspace:^",
-    "@skuberplus/utilities": "workspace:^",
-    "@skuberplus/webpack": "workspace:^",
+    "@k-lens/kube-object": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
+    "@k-lens/utilities": "workspace:^",
+    "@k-lens/webpack": "workspace:^",
     "@ogre-tools/injectable": "^17.11.1",
     "ts-loader": "^9.5.4",
     "webpack": "^5.101.3"

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { applicationInformationToken } from "@k-lens/application";
 import { getInjectable } from "@ogre-tools/injectable";
-import { applicationInformationToken } from "@skuberplus/application";
 import { docsUrl, forumsUrl } from "../../../common/vars";
 import { weblinkStoreMigrationInjectionToken } from "../../../features/weblinks/common/migration-token";
 import { lensDocumentationWeblinkId, lensForumsWeblinkId } from "../../../features/weblinks/main/links";

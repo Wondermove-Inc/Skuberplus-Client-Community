@@ -8,8 +8,8 @@
  * Users can view, create, edit, delete, and toggle custom skills (MD files).
  */
 
+import { type RequestFromChannel, requestFromChannelInjectionToken } from "@k-lens/messaging";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { type RequestFromChannel, requestFromChannelInjectionToken } from "@skuberplus/messaging";
 import { ChevronDown, ChevronRight, Edit3, FileText, Plus, Sparkles, Trash2 } from "lucide-react";
 import * as React from "react";
 import {

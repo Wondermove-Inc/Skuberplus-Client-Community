@@ -50,7 +50,7 @@ import { DaemonSetDetailPanel } from "./daemonset-detail-panel";
 import { daemonSetColumns } from "./daemonsets-columns";
 import daemonSetStoreInjectable from "./store.injectable";
 
-import type { DaemonSet } from "@skuberplus/kube-object";
+import type { DaemonSet } from "@k-lens/kube-object";
 
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
 import type { DockStore } from "../dock/dock/store";

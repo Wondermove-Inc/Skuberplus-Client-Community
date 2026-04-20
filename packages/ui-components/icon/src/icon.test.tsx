@@ -4,19 +4,19 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { registerFeature } from "@k-lens/feature-core";
+import { setLegacyGlobalDiForExtensionApi } from "@k-lens/legacy-global-di";
+import { loggerFeature, loggerInjectionToken } from "@k-lens/logger";
+import { renderFor } from "@k-lens/test-utils";
 import { createContainer } from "@ogre-tools/injectable";
 import { registerMobX } from "@ogre-tools/injectable-extension-for-mobx";
 import { registerInjectableReact } from "@ogre-tools/injectable-react";
-import { registerFeature } from "@skuberplus/feature-core";
-import { setLegacyGlobalDiForExtensionApi } from "@skuberplus/legacy-global-di";
-import { loggerFeature, loggerInjectionToken } from "@skuberplus/logger";
-import { renderFor } from "@skuberplus/test-utils";
 import { runInAction } from "mobx";
 import React from "react";
 import { Icon } from "./icon";
 
-import type { Logger } from "@skuberplus/logger";
-import type { DiRender } from "@skuberplus/test-utils";
+import type { Logger } from "@k-lens/logger";
+import type { DiRender } from "@k-lens/test-utils";
 
 describe("<Icon> href technical tests", () => {
   let render: DiRender;

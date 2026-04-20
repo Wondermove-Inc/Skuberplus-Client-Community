@@ -6,13 +6,13 @@
 
 import "./config-map-details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { Button } from "@skuberplus/button";
-import { ConfigMap } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { Button } from "@k-lens/button";
+import { ConfigMap } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 // 🎯 shadcn UI 컴포넌트: DrawerTitle 대체
-import { DetailPanelSection } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { autorun, makeObservable, observable } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";
@@ -21,7 +21,7 @@ import { MonacoEditor } from "../monaco-editor";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 import configMapStoreInjectable from "./store.injectable";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { HostedCluster } from "../../cluster-frame-context/hosted-cluster.injectable";
 import type { KubeObjectDetailsProps } from "../kube-object-details";

@@ -3,9 +3,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { storesAndApisCanBeCreatedInjectionToken } from "@k-lens/kube-api-specifics";
+import { iter } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { storesAndApisCanBeCreatedInjectionToken } from "@skuberplus/kube-api-specifics";
-import { iter } from "@skuberplus/utilities";
 import { Command as CommandPrimitive } from "cmdk";
 import { Search } from "lucide-react";
 import { observer } from "mobx-react";

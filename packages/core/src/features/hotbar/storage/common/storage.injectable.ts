@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { iter } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { iter } from "@skuberplus/utilities";
 import { action, comparer } from "mobx";
 import catalogCatalogEntityInjectable from "../../../../common/catalog-entities/general-catalog-entities/implementations/catalog-catalog-entity.injectable";
 import storeMigrationVersionInjectable from "../../../../common/vars/store-migration-version.injectable";

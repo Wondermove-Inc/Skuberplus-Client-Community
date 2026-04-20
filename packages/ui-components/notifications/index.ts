@@ -5,7 +5,7 @@
  */
 
 /**
- * 🎯 목적: @skuberplus/notifications 패키지의 public API
+ * 🎯 목적: @k-lens/notifications 패키지의 public API
  * 📝 주의사항: Sonner Toast로 마이그레이션됨 (2025-11-25)
  * 🔄 변경이력:
  *   - 기존 MobX Store 기반 구현에서 Sonner로 전환

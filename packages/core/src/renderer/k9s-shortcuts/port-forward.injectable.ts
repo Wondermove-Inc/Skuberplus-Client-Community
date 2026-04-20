@@ -1,5 +1,5 @@
+import { keyboardShortcutInjectionToken } from "@k-lens/keyboard-shortcuts";
 import { getInjectable } from "@ogre-tools/injectable";
-import { keyboardShortcutInjectionToken } from "@skuberplus/keyboard-shortcuts";
 import tableFocusManagerInjectable from "../components/table/table-focus-manager.injectable";
 import portForwardDialogModelInjectable from "../port-forward/port-forward-dialog-model/port-forward-dialog-model.injectable";
 

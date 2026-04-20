@@ -4,13 +4,13 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Icon } from "@k-lens/icon";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
 import React from "react";
 import openServiceAccountKubeConfigDialogInjectable from "../../kubeconfig-dialog/open-service-account-kube-config-dialog.injectable";
 import { MenuItem } from "../../menu";
 
-import type { ServiceAccount } from "@skuberplus/kube-object";
+import type { ServiceAccount } from "@k-lens/kube-object";
 
 import type { KubeObjectMenuProps } from "../../kube-object-menu";
 import type { OpenServiceAccountKubeConfigDialog } from "../../kubeconfig-dialog/open-service-account-kube-config-dialog.injectable";

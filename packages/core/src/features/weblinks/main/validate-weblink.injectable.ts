@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { chainSignal } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { chainSignal } from "@skuberplus/utilities";
 import nodeFetchInjectable from "../../../common/fetch/node-fetch.injectable";
 import { withTimeout } from "../../../common/fetch/timeout-controller";
 

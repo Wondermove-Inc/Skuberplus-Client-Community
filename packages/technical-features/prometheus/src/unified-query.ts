@@ -15,7 +15,7 @@ import { bytesSent } from "./provider";
  * - 조인 연산으로 인해 약간의 성능 오버헤드가 있으나 DAIVE 용도에서는 무시 가능
  *
  * 🔄 변경이력:
- * - 2026-01-09: 6개 Provider 통합 (helm, helm14, lens, operator, stacklight, skuberplus)
+ * - 2026-01-09: 6개 Provider 통합 (helm, helm14, lens, operator, stacklight, k-lens)
  */
 
 export interface QueryOptions {
@@ -46,7 +46,7 @@ export type QueryCategory = "cluster" | "nodes" | "pods" | "pvc" | "ingress";
  * 📝 주의사항:
  * - 1m 윈도우는 Prometheus 스크래핑 타이밍에 민감하여 간헐적으로 빈 결과 반환
  * - 5m 윈도우로 설정하여 안정적인 데이터 반환 보장
- * - Helm/SkuberPlus Provider와 동일한 값 사용 (일관성)
+ * - Helm/KLens Provider와 동일한 값 사용 (일관성)
  *
  * 🔄 변경이력: 2026-01-12 - 1m → 5m 변경 (CPU 차트 간헐적 미표시 문제 해결)
  */

@@ -10,7 +10,7 @@
  * 주요 변경사항:
  * - SCSS → Tailwind CSS 100% 변환
  * - HTML elements → shadcn/ui 컴포넌트 (Card, Button)
- * - @skuberplus/icon → lucide-react 아이콘 (로고 제외)
+ * - @k-lens/icon → lucide-react 아이콘 (로고 제외)
  * - MobX observer + DI 패턴 유지
  * - MainLayout wrapper 유지
  *
@@ -23,8 +23,8 @@
  * - 2025-10-21: 초기 생성 (shadcn 마이그레이션)
  */
 
+import { Icon } from "@k-lens/icon";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
 import { CircleHelp, FolderSync, Plus } from "lucide-react";
 import { observer } from "mobx-react";
 import React from "react";

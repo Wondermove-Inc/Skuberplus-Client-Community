@@ -1,5 +1,5 @@
 {
-  "name": "@skuberplus/kube-api",
+  "name": "@k-lens/kube-api",
   "private": false,
   "version": "1.5.4-0",
   "description": "Kube api",
@@ -13,16 +13,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wondermove-Inc/Skuberplus-Client-Community.git"
+    "url": "git+https://github.com/Wondermove-Inc/Klens-Client-Community.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "license": "MIT",
-  "homepage": "https://skuberplus.app",
+  "homepage": "https://k-lens.app",
   "scripts": {
     "build": "lens-webpack-build",
     "clean": "pnpm dlx rimraf@6.0.1 dist",
@@ -31,9 +31,9 @@
     "test:unit": "jest --coverage --runInBand --detectOpenHandles --forceExit"
   },
   "dependencies": {
-    "@skuberplus/json-api": "workspace:^",
-    "@skuberplus/kube-object": "workspace:^",
-    "@skuberplus/utilities": "workspace:^",
+    "@k-lens/json-api": "workspace:^",
+    "@k-lens/kube-object": "workspace:^",
+    "@k-lens/utilities": "workspace:^",
     "@ogre-tools/fp": "^17.11.1",
     "@ogre-tools/injectable": "^17.11.1",
     "byline": "^5.0.0",
@@ -43,12 +43,12 @@
   },
   "devDependencies": {
     "@async-fn/jest": "^1.6.4",
-    "@skuberplus/jest": "workspace:^",
-    "@skuberplus/logger": "workspace:^",
-    "@skuberplus/node-fetch": "workspace:^",
-    "@skuberplus/test-utils": "workspace:^",
-    "@skuberplus/typescript": "workspace:^",
-    "@skuberplus/webpack": "workspace:^",
+    "@k-lens/jest": "workspace:^",
+    "@k-lens/logger": "workspace:^",
+    "@k-lens/node-fetch": "workspace:^",
+    "@k-lens/test-utils": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
+    "@k-lens/webpack": "workspace:^",
     "@types/byline": "^4.2.36",
     "@types/lodash": "^4.17.20",
     "identity-obj-proxy": "^3.0.0",

@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getRequestChannelListenerInjectable } from "@skuberplus/messaging";
+import { getRequestChannelListenerInjectable } from "@k-lens/messaging";
 import emitAppEventInjectable from "../../common/app-event-bus/emit-event.injectable";
 import { kubectlApplyAllChannel } from "../../common/kube-helpers/channels";
 import getClusterByIdInjectable from "../../features/cluster/storage/common/get-by-id.injectable";

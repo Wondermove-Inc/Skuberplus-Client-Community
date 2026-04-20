@@ -7,7 +7,7 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import requestMetricsInjectable from "./request-metrics.injectable";
 
-import type { DaemonSet } from "@skuberplus/kube-object";
+import type { DaemonSet } from "@k-lens/kube-object";
 
 import type { MetricData } from "../metrics.api";
 

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Icon } from "@skuberplus/icon";
-import { cssNames } from "@skuberplus/utilities";
+import { Icon } from "@k-lens/icon";
+import { cssNames } from "@k-lens/utilities";
 import React from "react";
 import styles from "./removable-item.module.scss";
 

@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { onLoadOfApplicationInjectionToken } from "@k-lens/application";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { unionPATHs } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { onLoadOfApplicationInjectionToken } from "@skuberplus/application";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { unionPATHs } from "@skuberplus/utilities";
 import { type IReactionDisposer, reaction } from "mobx";
 import isSnapPackageInjectable from "../../../common/vars/is-snap-package.injectable";
 import electronAppInjectable from "../../../main/electron-app/electron-app.injectable";

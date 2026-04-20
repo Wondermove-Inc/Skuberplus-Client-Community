@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { podListLayoutColumnInjectionToken } from "@k-lens/list-layout";
+import { bytesToUnits } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { podListLayoutColumnInjectionToken } from "@skuberplus/list-layout";
-import { bytesToUnits } from "@skuberplus/utilities";
 import React from "react";
 import podStoreInjectable from "../../workloads-pods/store.injectable";
 import { COLUMN_PRIORITY } from "./column-priority";

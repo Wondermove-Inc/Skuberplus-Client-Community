@@ -4,12 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { KubeConfig, newClusters, newContexts, newUsers } from "@skuberplus/kubernetes-client-node";
-import { isDefined } from "@skuberplus/utilities";
+import { KubeConfig, newClusters, newContexts, newUsers } from "@k-lens/kubernetes-client-node";
+import { isDefined } from "@k-lens/utilities";
 import Joi from "joi";
 import yaml from "js-yaml";
 
-import type { Cluster, Context, User } from "@skuberplus/kubernetes-client-node";
+import type { Cluster, Context, User } from "@k-lens/kubernetes-client-node";
 
 import type { DumpOptions } from "js-yaml";
 import type { PartialDeep } from "type-fest";

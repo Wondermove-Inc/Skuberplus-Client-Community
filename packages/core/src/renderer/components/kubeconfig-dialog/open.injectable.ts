@@ -4,12 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 import kubeconfigDialogStateInjectable from "./state.injectable";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 export interface OpenKubeconfigDialogArgs {
   title?: StrictReactNode;

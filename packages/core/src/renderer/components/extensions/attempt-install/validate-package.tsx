@@ -4,11 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { isObject, isString, listTarEntries, readFileFromTar } from "@skuberplus/utilities";
+import { isObject, isString, listTarEntries, readFileFromTar } from "@k-lens/utilities";
 import path from "path";
 import { manifestFilename } from "../../../../extensions/extension-discovery/extension-discovery";
 
-import type { LensExtensionManifest } from "@skuberplus/legacy-extensions";
+import type { LensExtensionManifest } from "@k-lens/legacy-extensions";
 
 export async function validatePackage(filePath: string): Promise<LensExtensionManifest> {
   const tarFiles = await listTarEntries(filePath);
@@ -38,8 +38,8 @@ export async function validatePackage(filePath: string): Promise<LensExtensionMa
     throw new Error(`${manifestFilename} must specify "main" and/or "renderer" field`);
   }
 
-  if (!isObject(manifest.engines) || !isString(manifest.engines.skuberplus)) {
-    throw new Error(`${manifestFilename} must specify "skuberplus" in "engines" field`);
+  if (!isObject(manifest.engines) || !isString(manifest.engines.klens)) {
+    throw new Error(`${manifestFilename} must specify "k-lens" in "engines" field`);
   }
 
   return manifest as unknown as LensExtensionManifest;

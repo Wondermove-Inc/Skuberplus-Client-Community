@@ -21,7 +21,7 @@
  * - 2026-01-05: DAIVE v2.1 상태 관리 injectable 추가 (통합 작업)
  */
 
-import { getFeature } from "@skuberplus/feature-core";
+import { getFeature } from "@k-lens/feature-core";
 
 // ============================================
 // 🎯 Renderer Process Injectables

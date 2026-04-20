@@ -18,7 +18,7 @@ import {
 } from "../../../../common/security/security-finding";
 import { SecurityComplianceMap } from "../security-compliance-map";
 
-jest.mock("@skuberplus/storybook-shadcn/src/components/ui/card", () => ({
+jest.mock("@k-lens/storybook-shadcn/src/components/ui/card", () => ({
   Card: ({ children }: any) => <div>{children}</div>,
   CardContent: ({ children }: any) => <div>{children}</div>,
   CardHeader: ({ children }: any) => <div>{children}</div>,

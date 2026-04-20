@@ -4,13 +4,13 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { onceDefined } from "@skuberplus/utilities";
+import { onceDefined } from "@k-lens/utilities";
 import assert from "assert";
 import { action, makeObservable, observable, when } from "mobx";
 import { getClusterFrameUrl } from "../../../common/utils";
 
-import type { Logger } from "@skuberplus/logger";
-import type { Disposer } from "@skuberplus/utilities";
+import type { Logger } from "@k-lens/logger";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { ClusterId } from "../../../common/cluster-types";
 import type { GetClusterById } from "../../../features/cluster/storage/common/get-by-id.injectable";

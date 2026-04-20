@@ -1,5 +1,5 @@
+import { SendMessageToChannel, sendMessageToChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { SendMessageToChannel, sendMessageToChannelInjectionToken } from "@skuberplus/messaging";
 import sendToIpcInjectable from "./send-to-ipc.injectable";
 
 const messageToChannelInjectable = getInjectable({

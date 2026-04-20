@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { requestFromChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { requestFromChannelInjectionToken } from "@skuberplus/messaging";
 import { lensProxyCertificateChannel } from "../../common/certificate/lens-proxy-certificate-channel";
 
 const requestLensProxyCertificateInjectable = getInjectable({

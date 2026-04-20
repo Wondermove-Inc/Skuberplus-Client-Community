@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { prefixedLoggerInjectable } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { prefixedLoggerInjectable } from "@skuberplus/logger";
 import { action } from "mobx";
 import { toJS } from "../../../common/utils";
 import storeMigrationVersionInjectable from "../../../common/vars/store-migration-version.injectable";

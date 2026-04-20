@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { prefixedLoggerInjectable } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { prefixedLoggerInjectable } from "@skuberplus/logger";
 import AwaitLock from "await-lock";
 import directoryForUserDataInjectable from "../../common/app-paths/directory-for-user-data/directory-for-user-data.injectable";
 import removePathInjectable from "../../common/fs/remove.injectable";

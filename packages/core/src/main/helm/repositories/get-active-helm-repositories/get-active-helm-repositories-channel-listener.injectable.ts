@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getRequestChannelListenerInjectable } from "@skuberplus/messaging";
+import { getRequestChannelListenerInjectable } from "@k-lens/messaging";
 import { getActiveHelmRepositoriesChannel } from "../../../../common/helm/get-active-helm-repositories-channel";
 import getActiveHelmRepositoriesInjectable from "./get-active-helm-repositories.injectable";
 

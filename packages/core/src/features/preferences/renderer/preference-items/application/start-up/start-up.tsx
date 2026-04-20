@@ -21,7 +21,7 @@ const NonInjectedStartUp = observer(({ state }: Dependencies) => (
   <section id="other">
     <SubTitle title="Start-up" />
     <Switch checked={state.openAtLogin} onChange={() => (state.openAtLogin = !state.openAtLogin)}>
-      Automatically start SkuberPlus on login
+      Automatically start K-Lens on login
     </Switch>
   </section>
 ));

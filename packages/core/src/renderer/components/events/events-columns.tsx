@@ -16,8 +16,8 @@
  * - 2025-11-03: 초기 생성 (KubeDataTable 마이그레이션)
  */
 
-import { Button, Checkbox } from "@skuberplus/storybook-shadcn";
-import { cssNames } from "@skuberplus/utilities";
+import { Button, Checkbox } from "@k-lens/storybook-shadcn";
+import { cssNames } from "@k-lens/utilities";
 import { ArrowUpDown } from "lucide-react";
 import moment from "moment-timezone";
 import React from "react";
@@ -26,7 +26,7 @@ import { KubeObjectAge } from "../kube-object/age";
 import { NamespaceSelectBadge } from "../namespaces/namespace-select-badge";
 import { WithTooltip } from "../with-tooltip";
 
-import type { KubeEvent } from "@skuberplus/kube-object";
+import type { KubeEvent } from "@k-lens/kube-object";
 
 import type { ColumnDef } from "@tanstack/react-table";
 

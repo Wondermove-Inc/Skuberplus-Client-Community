@@ -4,8 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getInjectable } from "@ogre-tools/injectable";
-import { getFeature } from "@skuberplus/feature-core";
+import { getFeature } from "@k-lens/feature-core";
 import {
   daemonSetDetailsMetricsInjectionToken,
   deploymentDetailsMetricsInjectionToken,
@@ -18,7 +17,8 @@ import {
   podDetailsMetricsInjectionToken,
   replicaSetDetailsMetricsInjectionToken,
   statefulSetDetailsMetricsInjectionToken,
-} from "@skuberplus/metrics";
+} from "@k-lens/metrics";
+import { getInjectable } from "@ogre-tools/injectable";
 import { NamespaceMetricsDetailsComponent } from "../../renderer/components/namespaces/metrics-details-component";
 import { IngressMetricsDetailsComponent } from "../../renderer/components/network-ingresses/metrics-details-component";
 import { NodeMetricsDetailsComponent } from "../../renderer/components/nodes/metrics-details-component";

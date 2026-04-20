@@ -7,7 +7,7 @@
 import React, { useState } from "react";
 import { Menu } from "../menu";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { HTMLAttributes } from "react";
 

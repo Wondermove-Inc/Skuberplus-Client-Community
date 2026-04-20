@@ -1,3 +1,3 @@
-# @skuberplus/test-utils
+# @k-lens/test-utils
 
 This package contains many useful utilities for testing.

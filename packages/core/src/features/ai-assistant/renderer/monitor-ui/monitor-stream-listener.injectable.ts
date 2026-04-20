@@ -3,7 +3,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getMessageChannelListenerInjectable } from "@skuberplus/messaging";
+import { getMessageChannelListenerInjectable } from "@k-lens/messaging";
 import { getClusterIdFromHost } from "../../../../common/utils";
 import { monitorAlertChannel, monitorStatusUpdateChannel } from "../../common/agent-ipc-channels";
 import { monitorState } from "./monitor-state";

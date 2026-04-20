@@ -4,12 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { urlBuilderFor } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { urlBuilderFor } from "@skuberplus/utilities";
 import apiBaseInjectable from "../../../common/k8s-api/api-base.injectable";
 import openKubeconfigDialogInjectable from "./open.injectable";
 
-import type { ServiceAccount } from "@skuberplus/kube-object";
+import type { ServiceAccount } from "@k-lens/kube-object";
 
 export type OpenServiceAccountKubeConfigDialog = (account: ServiceAccount) => void;
 

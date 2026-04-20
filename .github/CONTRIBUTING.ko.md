@@ -1,6 +1,6 @@
-# Contributing to Skuber+ Client
+# Contributing to K-Lens
 
-Skuber+ Client에 기여해 주셔서 감사합니다!
+K-Lens에 기여해 주셔서 감사합니다!
 
 ---
 

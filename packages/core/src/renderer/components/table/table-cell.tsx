@@ -6,13 +6,13 @@
 
 import "./table-cell.scss";
 
-import { Icon } from "@skuberplus/icon";
-import { cssNames } from "@skuberplus/utilities";
+import { Icon } from "@k-lens/icon";
+import { cssNames } from "@k-lens/utilities";
 import autoBindReact from "auto-bind/react";
 import React, { Component } from "react";
 import { Checkbox } from "../checkbox";
 
-import type { TableCellProps } from "@skuberplus/list-layout";
+import type { TableCellProps } from "@k-lens/list-layout";
 
 export interface ExtendedTableCellProps extends TableCellProps {
   tableId?: string;

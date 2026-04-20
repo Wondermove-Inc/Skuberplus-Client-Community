@@ -8,8 +8,8 @@
 // API docs: https://material-ui.com/lab/api/slider/
 import "./slider.scss";
 
+import { cssNames } from "@k-lens/utilities";
 import MaterialSlider from "@mui/material/Slider";
-import { cssNames } from "@skuberplus/utilities";
 import assert from "assert";
 import React, { Component } from "react";
 

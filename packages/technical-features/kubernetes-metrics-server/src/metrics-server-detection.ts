@@ -3,9 +3,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { isRequestError } from "@skuberplus/utilities";
+import { isRequestError } from "@k-lens/utilities";
 
-import type { CoreV1Api } from "@skuberplus/kubernetes-client-node";
+import type { CoreV1Api } from "@k-lens/kubernetes-client-node";
 
 export interface MetricsServerDetectionResult {
   isAvailable: boolean;

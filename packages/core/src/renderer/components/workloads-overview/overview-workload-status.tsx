@@ -10,7 +10,7 @@
  */
 import "./overview-workload-status.scss";
 
-import { object } from "@skuberplus/utilities";
+import { object } from "@k-lens/utilities";
 import capitalize from "lodash/capitalize";
 import { observer } from "mobx-react";
 import React, { useEffect, useState } from "react";

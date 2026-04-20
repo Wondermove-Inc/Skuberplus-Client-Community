@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { createKubeApiURL, parseKubeApi } from "@k-lens/kube-api";
+import { waitUntilDefined } from "@k-lens/utilities";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
-import { createKubeApiURL, parseKubeApi } from "@skuberplus/kube-api";
-import { waitUntilDefined } from "@skuberplus/utilities";
 import assert from "assert";
 import yaml from "js-yaml";
 import { action, computed, observable, runInAction } from "mobx";
@@ -18,7 +18,7 @@ import editResourceTabStoreInjectable from "../store.injectable";
 import requestKubeResourceInjectable from "./request-kube-resource.injectable";
 import requestPatchKubeResourceInjectable from "./request-patch-kube-resource.injectable";
 
-import type { KubeObject, RawKubeObject } from "@skuberplus/kube-object";
+import type { KubeObject, RawKubeObject } from "@k-lens/kube-object";
 
 import type { Cluster } from "../../../../../common/cluster/cluster";
 import type { EditingResource, EditResourceTabStore } from "../store";
@@ -87,7 +87,7 @@ function getEditSelfLinkFor(object: RawKubeObject): string | undefined {
 /**
  * The annotation name that Lens uses to receive the desired api version
  */
-export const EditResourceAnnotationName = "skuberplus.app/resource-version";
+export const EditResourceAnnotationName = "k-lens.app/resource-version";
 
 export class EditResourceModel {
   constructor(protected readonly dependencies: Dependencies) {}

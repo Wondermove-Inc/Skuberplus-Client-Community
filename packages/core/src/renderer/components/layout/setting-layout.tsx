@@ -6,15 +6,15 @@
 
 import "./setting-layout.scss";
 
-import { getLegacyGlobalDiForExtensionApi } from "@skuberplus/legacy-global-di";
-import { observableHistoryInjectionToken } from "@skuberplus/routing";
-import { cssNames } from "@skuberplus/utilities";
+import { getLegacyGlobalDiForExtensionApi } from "@k-lens/legacy-global-di";
+import { observableHistoryInjectionToken } from "@k-lens/routing";
+import { cssNames } from "@k-lens/utilities";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 import navigateToCatalogInjectable from "../../../common/front-end-routing/routes/catalog/navigate-to-catalog.injectable";
 import { CloseButton } from "./close-button";
 
-import type { IClassName, StrictReactNode } from "@skuberplus/utilities";
+import type { IClassName, StrictReactNode } from "@k-lens/utilities";
 
 export interface SettingLayoutProps extends React.DOMAttributes<any> {
   className?: IClassName;

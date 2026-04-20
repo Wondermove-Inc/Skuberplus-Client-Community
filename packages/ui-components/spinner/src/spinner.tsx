@@ -6,7 +6,7 @@
 
 import "./spinner.scss";
 
-import { cssNames } from "@skuberplus/utilities";
+import { cssNames } from "@k-lens/utilities";
 import React, { Component } from "react";
 
 export interface SpinnerProps extends React.HTMLProps<any> {

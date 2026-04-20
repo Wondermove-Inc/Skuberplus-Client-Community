@@ -47,7 +47,7 @@ export function AIAssistant({ onClose, onStart, className }: AIAssistantProps) {
       {/* 🎯 목적: 헤더 섹션 */}
       <div className="relative flex flex-col gap-0.5">
         <div className="flex items-center justify-between">
-          <h3 className="text-foreground text-lg leading-7 font-semibold">Skuber+ AI Assistant</h3>
+          <h3 className="text-foreground text-lg leading-7 font-semibold">K-Lens AI Assistant</h3>
 
           {/* 🎯 목적: 닫기 버튼 */}
           <Button

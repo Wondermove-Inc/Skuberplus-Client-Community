@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { object } from "@k-lens/utilities";
 import { pipeline } from "@ogre-tools/fp";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
-import { object } from "@skuberplus/utilities";
 import { map } from "lodash/fp";
 import createPageParamInjectable from "../navigation/create-page-param.injectable";
 

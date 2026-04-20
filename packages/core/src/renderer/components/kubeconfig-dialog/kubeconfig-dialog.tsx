@@ -9,10 +9,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Button } from "@k-lens/button";
+import { Icon } from "@k-lens/icon";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Button } from "@skuberplus/button";
-import { Icon } from "@skuberplus/icon";
-import { cssNames } from "@skuberplus/utilities";
 import { clipboard } from "electron";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
@@ -24,7 +24,7 @@ import { Wizard, WizardStep } from "../wizard";
 import styles from "./kubeconfig-dialog.module.scss";
 import kubeconfigDialogStateInjectable from "./state.injectable";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { IObservableValue } from "mobx";
 

@@ -4,14 +4,14 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { disposer } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { disposer } from "@skuberplus/utilities";
 import { computed, observable, reaction } from "mobx";
 import catalogCategoryRegistryInjectable from "../../../common/catalog/category-registry.injectable";
 import catalogEntityRegistryInjectable from "../../api/catalog/entity/registry.injectable";
 import selectedCatalogEntityParamInjectable from "./entity-details/selected-uid.injectable";
 
-import type { Disposer } from "@skuberplus/utilities";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { IComputedValue, IObservableValue } from "mobx";
 

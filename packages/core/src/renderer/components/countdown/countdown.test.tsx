@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { noop } from "@k-lens/utilities";
 import { createContainer } from "@ogre-tools/injectable";
-import { noop } from "@skuberplus/utilities";
 import { observe } from "mobx";
 import React from "react";
 import { advanceFakeTime, testUsingFakeTime } from "../../../test-utils/use-fake-time";

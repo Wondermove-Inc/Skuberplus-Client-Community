@@ -16,7 +16,7 @@
  * - 2025-10-31: 초기 생성 (Pod 패턴 적용, 9개 컬럼)
  */
 
-import { Button, Checkbox } from "@skuberplus/storybook-shadcn";
+import { Button, Checkbox } from "@k-lens/storybook-shadcn";
 import { kebabCase } from "lodash/fp";
 import { ArrowUpDown } from "lucide-react";
 import moment from "moment-timezone";

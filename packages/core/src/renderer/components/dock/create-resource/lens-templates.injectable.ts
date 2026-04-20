@@ -14,7 +14,7 @@ const lensCreateResourceTemplatesInjectable = getInjectable({
 
   instantiate: (di): RawTemplates => {
     const parsePath = di.inject(parsePathInjectable);
-    const templatesContext = require.context("@skuberplus/resource-templates/templates", true, /^\.\/.*\.(yaml|yml)$/);
+    const templatesContext = require.context("@k-lens/resource-templates/templates", true, /^\.\/.*\.(yaml|yml)$/);
 
     return {
       label: "lens",

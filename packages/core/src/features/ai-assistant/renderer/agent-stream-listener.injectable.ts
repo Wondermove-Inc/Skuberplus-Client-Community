@@ -17,7 +17,7 @@
  *               (window.top 체크가 Electron IPC 콜백에서 신뢰할 수 없어 URL 패턴으로 변경)
  */
 
-import { getMessageChannelListenerInjectable } from "@skuberplus/messaging";
+import { getMessageChannelListenerInjectable } from "@k-lens/messaging";
 import { getClusterIdFromHost } from "../../../common/utils";
 import { type AgentStreamEvent, agentStreamChannel } from "../common/agent-ipc-channels";
 import agentStreamEventBusInjectable from "./agent-stream-event-bus.injectable";

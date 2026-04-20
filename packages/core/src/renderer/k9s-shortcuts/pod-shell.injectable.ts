@@ -1,11 +1,11 @@
+import { keyboardShortcutInjectionToken } from "@k-lens/keyboard-shortcuts";
 import { getInjectable } from "@ogre-tools/injectable";
-import { keyboardShortcutInjectionToken } from "@skuberplus/keyboard-shortcuts";
 import { buildKubectlExecCommand } from "../../common/utils/shell-utils";
 import createTerminalTabInjectable from "../components/dock/terminal/create-terminal-tab.injectable";
 import sendCommandInjectable from "../components/dock/terminal/send-command.injectable";
 import tableFocusManagerInjectable from "../components/table/table-focus-manager.injectable";
 
-import type { Container, Pod } from "@skuberplus/kube-object";
+import type { Container, Pod } from "@k-lens/kube-object";
 
 /**
  * `s` key — Shell into the focused Pod.

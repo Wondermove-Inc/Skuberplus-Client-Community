@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
+import { getOrInsert, iter, object } from "@k-lens/utilities";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { getOrInsert, iter, object } from "@skuberplus/utilities";
 
 import type { InjectionToken } from "@ogre-tools/injectable";
 

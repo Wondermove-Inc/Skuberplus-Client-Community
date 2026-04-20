@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { beforeAnythingInjectionToken } from "@k-lens/application-for-electron-main";
 import { pipeline } from "@ogre-tools/fp";
 import { getInjectable } from "@ogre-tools/injectable";
-import { beforeAnythingInjectionToken } from "@skuberplus/application-for-electron-main";
 import { fromPairs, map } from "lodash/fp";
 import { pathNames } from "../../common/app-paths/app-path-names";
 import appPathsStateInjectable from "../../common/app-paths/app-paths-state.injectable";

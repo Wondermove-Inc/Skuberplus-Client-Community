@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import assert from "assert";
 import emitAppEventInjectable from "../../../../common/app-event-bus/emit-event.injectable";
 import clusterOverviewRouteInjectable from "../../../../common/front-end-routing/routes/cluster/overview/cluster-overview-route.injectable";

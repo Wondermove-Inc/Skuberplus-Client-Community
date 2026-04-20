@@ -1,9 +1,9 @@
+import { startApplicationInjectionToken } from "@k-lens/application";
+import { registerFeature } from "@k-lens/feature-core";
+import { Discover, discoverFor } from "@k-lens/react-testing-library-discovery";
 import { createContainer, DiContainer, getInjectable } from "@ogre-tools/injectable";
 import { registerMobX } from "@ogre-tools/injectable-extension-for-mobx";
 import { registerInjectableReact } from "@ogre-tools/injectable-react";
-import { startApplicationInjectionToken } from "@skuberplus/application";
-import { registerFeature } from "@skuberplus/feature-core";
-import { Discover, discoverFor } from "@skuberplus/react-testing-library-discovery";
 import { act, render } from "@testing-library/react";
 import { computed, IObservableValue, observable, runInAction } from "mobx";
 import React from "react";

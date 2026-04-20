@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { disposer, noop } from "@skuberplus/utilities";
+import { disposer, noop } from "@k-lens/utilities";
 import { observable, when } from "mobx";
 import URLParse from "url-parse";
 import * as proto from "../../../common/protocol-handler";

@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { RuntimeClass } from "@skuberplus/kube-object";
+import { RuntimeClass } from "@k-lens/kube-object";
 import { KubeApi } from "../kube-api";
 
-import type { RuntimeClassData } from "@skuberplus/kube-object";
+import type { RuntimeClassData } from "@k-lens/kube-object";
 
 import type { DerivedKubeApiOptions, KubeApiDependencies } from "../kube-api";
 

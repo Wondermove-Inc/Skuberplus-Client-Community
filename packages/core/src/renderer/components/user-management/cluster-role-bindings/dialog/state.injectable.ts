@@ -7,7 +7,7 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import { observable } from "mobx";
 
-import type { ClusterRoleBinding } from "@skuberplus/kube-object";
+import type { ClusterRoleBinding } from "@k-lens/kube-object";
 
 export type ClusterRoleBindingDialogState =
   | {

@@ -6,8 +6,8 @@
 
 import { KubeObjectStore } from "../../../common/k8s-api/kube-object.store";
 
-import type { CronJobApi } from "@skuberplus/kube-api";
-import type { CronJob } from "@skuberplus/kube-object";
+import type { CronJobApi } from "@k-lens/kube-api";
+import type { CronJob } from "@k-lens/kube-object";
 
 import type { KubeObjectStoreDependencies, KubeObjectStoreOptions } from "../../../common/k8s-api/kube-object.store";
 import type { GetJobsByOwner } from "../workloads-jobs/get-jobs-by-owner.injectable";

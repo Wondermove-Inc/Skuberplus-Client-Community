@@ -4,15 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { NetworkPolicy } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { NetworkPolicy } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
 // 🎯 shadcn UI 컴포넌트: DrawerItem/DrawerTitle/Badge 대체
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import {
-  DetailPanelField,
-  DetailPanelSection,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { DetailPanelField, DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { isEmpty } from "lodash";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
@@ -25,8 +22,8 @@ import type {
   NetworkPolicyPeer,
   NetworkPolicyPort,
   PolicyIpBlock,
-} from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+} from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { KubeObjectDetailsProps } from "../kube-object-details";
 

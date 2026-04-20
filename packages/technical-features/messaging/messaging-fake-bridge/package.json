@@ -1,5 +1,5 @@
 {
-  "name": "@skuberplus/messaging-fake-bridge",
+  "name": "@k-lens/messaging-fake-bridge",
   "private": false,
   "version": "1.5.4-0",
   "description": "Fake implementation to bridge multiple dependency injection containers.",
@@ -13,16 +13,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wondermove-Inc/Skuberplus-Client-Community.git"
+    "url": "git+https://github.com/Wondermove-Inc/Klens-Client-Community.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "license": "MIT",
-  "homepage": "https://skuberplus.app",
+  "homepage": "https://k-lens.app",
   "scripts": {
     "clean": "pnpm dlx rimraf@6.0.1 dist",
     "clean:node_modules": "pnpm dlx rimraf@6.0.1 node_modules",
@@ -31,17 +31,17 @@
   },
   "dependencies": {
     "@async-fn/jest": "^1.6.4",
-    "@skuberplus/messaging": "workspace:^",
+    "@k-lens/messaging": "workspace:^",
     "@ogre-tools/fp": "^17.11.1",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@skuberplus/application": "workspace:^",
-    "@skuberplus/feature-core": "workspace:^",
-    "@skuberplus/jest": "workspace:^",
-    "@skuberplus/test-utils": "workspace:^",
-    "@skuberplus/typescript": "workspace:^",
-    "@skuberplus/webpack": "workspace:^",
+    "@k-lens/application": "workspace:^",
+    "@k-lens/feature-core": "workspace:^",
+    "@k-lens/jest": "workspace:^",
+    "@k-lens/test-utils": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
+    "@k-lens/webpack": "workspace:^",
     "@ogre-tools/injectable": "^17.11.1",
     "@ogre-tools/injectable-extension-for-mobx": "^17.11.1",
     "@testing-library/react": "^16.3.0",

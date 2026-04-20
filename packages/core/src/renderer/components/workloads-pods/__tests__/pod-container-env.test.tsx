@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { ConfigMap, Pod, Secret, SecretType } from "@skuberplus/kube-object";
+import { ConfigMap, Pod, Secret, SecretType } from "@k-lens/kube-object";
 import React from "react";
 import { getDiForUnitTesting } from "../../../getDiForUnitTesting";
 import configMapStoreInjectable from "../../config-maps/store.injectable";
@@ -12,7 +12,7 @@ import secretStoreInjectable from "../../config-secrets/store.injectable";
 import { renderFor } from "../../test-utils/renderFor";
 import { ContainerEnvironment } from "../pod-container-env";
 
-import type { Container } from "@skuberplus/kube-object";
+import type { Container } from "@k-lens/kube-object";
 
 import type { ConfigMapStore } from "../../config-maps/store";
 import type { SecretStore } from "../../config-secrets/store";

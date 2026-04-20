@@ -14,8 +14,8 @@
  *   - 2025-12-01: marked + DOMPurify에서 react-markdown으로 마이그레이션
  */
 
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@skuberplus/storybook-shadcn";
-import { cssNames } from "@skuberplus/utilities";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@k-lens/storybook-shadcn";
+import { cssNames } from "@k-lens/utilities";
 import { shell } from "electron";
 import React from "react";
 import ReactMarkdown from "react-markdown";

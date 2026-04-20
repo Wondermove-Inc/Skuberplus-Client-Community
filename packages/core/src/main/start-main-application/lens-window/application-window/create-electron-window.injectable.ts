@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { applicationInformationToken } from "@k-lens/application";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { applicationInformationToken } from "@skuberplus/application";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { BrowserWindow, screen } from "electron";
 import pathExistsSyncInjectable from "../../../../common/fs/path-exists-sync.injectable";
 import getAbsolutePathInjectable from "../../../../common/path/get-absolute-path.injectable";

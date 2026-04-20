@@ -145,7 +145,7 @@ function verifyNodePtyArchitecture() {
     log("warning", "해결 방법:");
     console.log("");
     console.log(`  1. ${archLabel} 환경에서 재빌드:`);
-    console.log(`     cd skuberplus && pnpm electron-rebuild --arch=${targetArch}`);
+    console.log(`     cd k-lens && pnpm electron-rebuild --arch=${targetArch}`);
     console.log("");
     console.log("  2. 또는 postinstall 재실행:");
     console.log("     pnpm install");

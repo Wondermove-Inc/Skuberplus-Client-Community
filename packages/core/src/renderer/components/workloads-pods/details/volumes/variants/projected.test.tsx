@@ -4,12 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Pod } from "@skuberplus/kube-object";
+import { Pod } from "@k-lens/kube-object";
 import { render } from "@testing-library/react";
 import React from "react";
 import { Projected } from "./projected";
 
-import type { ProjectedSource } from "@skuberplus/kube-object";
+import type { ProjectedSource } from "@k-lens/kube-object";
 
 describe("<Projected />", () => {
   it("renders", () => {

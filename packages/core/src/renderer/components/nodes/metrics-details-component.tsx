@@ -10,7 +10,7 @@ import { ResourceMetrics } from "../resource-metrics";
 import nodeMetricsInjectable from "./metrics.injectable";
 import { NodeCharts } from "./node-charts";
 
-import type { Node } from "@skuberplus/kube-object";
+import type { Node } from "@k-lens/kube-object";
 
 import type { IAsyncComputed } from "@ogre-tools/injectable-react";
 

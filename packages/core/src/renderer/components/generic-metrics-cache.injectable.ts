@@ -6,7 +6,7 @@
 
 import { getInjectable } from "@ogre-tools/injectable";
 
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeObject } from "@k-lens/kube-object";
 
 /**
  * 🎯 목적: 시계열 메트릭 데이터 포인트 타입

@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getMessageChannelListenerInjectable } from "@skuberplus/messaging";
+import { getMessageChannelListenerInjectable } from "@k-lens/messaging";
 import { MESSAGE } from "triple-beam";
 import { ipcFileLoggerChannel } from "../common/ipc-file-logger-channel";
 import ipcFileLoggerInjectable from "./ipc-file-logger.injectable";

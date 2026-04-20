@@ -12,7 +12,7 @@ import {
   isRecord,
   isString,
   isTypedArray,
-} from "@skuberplus/utilities";
+} from "@k-lens/utilities";
 
 import type {
   KubeJsonApiData,

@@ -5,8 +5,8 @@
  */
 
 import { performance } from "node:perf_hooks";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import emitAppEventInjectable from "../../../common/app-event-bus/emit-event.injectable";
 import directoryForBinariesInjectable from "../../../common/app-paths/directory-for-binaries/directory-for-binaries.injectable";
 import statInjectable from "../../../common/fs/stat.injectable";

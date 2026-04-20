@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { storesAndApisCanBeCreatedInjectionToken } from "@k-lens/kube-api-specifics";
 import { getInjectable } from "@ogre-tools/injectable";
-import { storesAndApisCanBeCreatedInjectionToken } from "@skuberplus/kube-api-specifics";
 import activeKubernetesClusterInjectable from "./cluster-frame-context/active-kubernetes-cluster.injectable";
 import hostedClusterIdInjectable from "./cluster-frame-context/hosted-cluster-id.injectable";
 import matchedClusterIdInjectable from "./navigation/matched-cluster-id.injectable";

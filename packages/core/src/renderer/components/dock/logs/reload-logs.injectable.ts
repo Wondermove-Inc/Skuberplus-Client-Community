@@ -7,7 +7,7 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import logStoreInjectable from "./store.injectable";
 
-import type { Pod } from "@skuberplus/kube-object";
+import type { Pod } from "@k-lens/kube-object";
 import type { IComputedValue } from "mobx";
 
 import type { LogTabData } from "./tab-store";

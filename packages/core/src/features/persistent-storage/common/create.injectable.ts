@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
+import { enlistMessageChannelListenerInjectionToken, sendMessageToChannelInjectionToken } from "@k-lens/messaging";
+import { disposer, isPromiseLike } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { enlistMessageChannelListenerInjectionToken, sendMessageToChannelInjectionToken } from "@skuberplus/messaging";
-import { disposer, isPromiseLike } from "@skuberplus/utilities";
 import { isEqual, kebabCase } from "lodash";
 import { reaction } from "mobx";
 import { nextTick } from "process";
@@ -18,7 +18,7 @@ import { persistentStorageIpcChannelPrefixesInjectionToken } from "./channel-pre
 import { shouldPersistentStorageDisableSyncInIpcListenerInjectionToken } from "./disable-sync";
 import { persistStateToConfigInjectionToken } from "./save-to-file";
 
-import type { MessageChannel } from "@skuberplus/messaging";
+import type { MessageChannel } from "@k-lens/messaging";
 
 import type { Options } from "conf/dist/source";
 import type { IEqualsComparer } from "mobx";

@@ -29,7 +29,7 @@ export const getExtensionFakeForMain = ({ id, name, mainOptions = {} }: FakeExte
         name,
         version: "1.0.0",
         engines: {
-          skuberplus: "^0.1.0",
+          klens: "^0.1.0",
         },
       },
       manifestPath: "irrelevant",
@@ -49,7 +49,7 @@ export const getExtensionFakeForRenderer = ({ id, name, rendererOptions = {} }: 
         name,
         version: "1.0.0",
         engines: {
-          skuberplus: "^0.1.0",
+          klens: "^0.1.0",
         },
       },
       manifestPath: "irrelevant",

@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 
-import type { AuthorizationV1Api, V1ResourceAttributes } from "@skuberplus/kubernetes-client-node";
+import type { AuthorizationV1Api, V1ResourceAttributes } from "@k-lens/kubernetes-client-node";
 
 /**
  * Requests the permissions for actions on the kube cluster

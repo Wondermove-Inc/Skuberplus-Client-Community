@@ -10,8 +10,8 @@ import React from "react";
 import metricsDetailsComponentEnabledInjectable from "../../../../api/catalog/entity/metrics-details-component-enabled.injectable";
 import { DetailsMetricsContainer } from "./details-metrics-container";
 
-import type { KubeObject } from "@skuberplus/kube-object";
-import type { KubeObjectDetailMetrics } from "@skuberplus/metrics";
+import type { KubeObject } from "@k-lens/kube-object";
+import type { KubeObjectDetailMetrics } from "@k-lens/metrics";
 
 import type { InjectionToken } from "@ogre-tools/injectable";
 

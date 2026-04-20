@@ -6,10 +6,10 @@
 
 import "./sub-header.scss";
 
-import { cssNames } from "@skuberplus/utilities";
+import { cssNames } from "@k-lens/utilities";
 import React, { Component } from "react";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 export interface SubHeaderProps {
   className?: string;

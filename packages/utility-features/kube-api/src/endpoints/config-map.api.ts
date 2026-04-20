@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { ConfigMap } from "@skuberplus/kube-object";
+import { ConfigMap } from "@k-lens/kube-object";
 import { KubeApi } from "../kube-api";
 
-import type { ConfigMapData } from "@skuberplus/kube-object";
+import type { ConfigMapData } from "@k-lens/kube-object";
 
 import type { DerivedKubeApiOptions, KubeApiDependencies } from "../kube-api";
 

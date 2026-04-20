@@ -5,7 +5,7 @@
  */
 
 import Anthropic from "@anthropic-ai/sdk";
-import { getRequestChannelListenerInjectable } from "@skuberplus/messaging";
+import { getRequestChannelListenerInjectable } from "@k-lens/messaging";
 import OpenAI from "openai";
 import {
   type VerifyApiKeyResponse,

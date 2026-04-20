@@ -20,14 +20,14 @@ import {
 import { SecurityFindingsTable } from "../security-findings-table";
 
 // shadcn mock
-jest.mock("@skuberplus/storybook-shadcn/src/components/ui/card", () => ({
+jest.mock("@k-lens/storybook-shadcn/src/components/ui/card", () => ({
   Card: ({ children }: any) => <div>{children}</div>,
   CardContent: ({ children }: any) => <div>{children}</div>,
   CardHeader: ({ children }: any) => <div>{children}</div>,
   CardTitle: ({ children }: any) => <h3>{children}</h3>,
 }));
 
-jest.mock("@skuberplus/storybook-shadcn/src/components/ui/badge", () => ({
+jest.mock("@k-lens/storybook-shadcn/src/components/ui/badge", () => ({
   Badge: ({ children, variant }: any) => (
     <span data-testid="source-badge" data-variant={variant}>
       {children}
@@ -35,17 +35,17 @@ jest.mock("@skuberplus/storybook-shadcn/src/components/ui/badge", () => ({
   ),
 }));
 
-jest.mock("@skuberplus/storybook-shadcn/src/components/ui/button", () => ({
+jest.mock("@k-lens/storybook-shadcn/src/components/ui/button", () => ({
   Button: ({ children, onClick }: any) => <button onClick={onClick}>{children}</button>,
 }));
 
-jest.mock("@skuberplus/storybook-shadcn/src/components/ui/input", () => ({
+jest.mock("@k-lens/storybook-shadcn/src/components/ui/input", () => ({
   Input: ({ value, onChange, placeholder }: any) => (
     <input data-testid="resource-search" value={value} onChange={onChange} placeholder={placeholder} />
   ),
 }));
 
-jest.mock("@skuberplus/storybook-shadcn/src/components/ui/toggle-group", () => ({
+jest.mock("@k-lens/storybook-shadcn/src/components/ui/toggle-group", () => ({
   ToggleGroup: ({ children, value, onValueChange, type }: any) => (
     <div data-testid={`toggle-group-${type}`} data-value={Array.isArray(value) ? value.join(",") : value}>
       {React.Children.map(children, (child) =>

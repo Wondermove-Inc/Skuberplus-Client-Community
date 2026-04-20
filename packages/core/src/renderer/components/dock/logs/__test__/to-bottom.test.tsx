@@ -7,7 +7,7 @@
 import React from "react";
 import "@testing-library/jest-dom";
 
-import { noop } from "@skuberplus/utilities";
+import { noop } from "@k-lens/utilities";
 import { fireEvent } from "@testing-library/react";
 import { getDiForUnitTesting } from "../../../../getDiForUnitTesting";
 import { renderFor } from "../../../test-utils/renderFor";

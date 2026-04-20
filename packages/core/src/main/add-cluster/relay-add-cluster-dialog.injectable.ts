@@ -25,7 +25,7 @@
  * - 2025-11-20: 초기 생성 (ClusterFrame → RootFrame 통신 relay)
  */
 
-import { getMessageChannelListenerInjectable, sendMessageToChannelInjectionToken } from "@skuberplus/messaging";
+import { getMessageChannelListenerInjectable, sendMessageToChannelInjectionToken } from "@k-lens/messaging";
 import { addClusterDialogChannel } from "../../renderer/components/add-cluster/add-dialog/add-cluster-dialog-channel";
 
 /**

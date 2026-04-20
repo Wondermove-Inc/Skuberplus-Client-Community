@@ -4,12 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { HashSet } from "@skuberplus/utilities";
+import { HashSet } from "@k-lens/utilities";
 import { KubeObjectStore } from "../../../../common/k8s-api/kube-object.store";
 import { hashSubject } from "../hashers";
 
-import type { ClusterRoleBindingApi } from "@skuberplus/kube-api";
-import type { ClusterRoleBinding, ClusterRoleBindingData, Subject } from "@skuberplus/kube-object";
+import type { ClusterRoleBindingApi } from "@k-lens/kube-api";
+import type { ClusterRoleBinding, ClusterRoleBindingData, Subject } from "@k-lens/kube-object";
 
 export class ClusterRoleBindingStore extends KubeObjectStore<
   ClusterRoleBinding,

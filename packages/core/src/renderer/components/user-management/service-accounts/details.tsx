@@ -6,14 +6,11 @@
 
 import "./details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { Spinner } from "@skuberplus/spinner";
+import { Icon } from "@k-lens/icon";
+import { Spinner } from "@k-lens/spinner";
 // 🎯 shadcn UI 컴포넌트: DrawerItem/DrawerTitle 대체
-import {
-  DetailPanelField,
-  DetailPanelSection,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { DetailPanelField, DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { autorun, observable, runInAction } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";
@@ -22,7 +19,7 @@ import secretStoreInjectable from "../../config-secrets/store.injectable";
 import getDetailsUrlInjectable from "../../kube-detail-params/get-details-url.injectable";
 import { ServiceAccountsSecret } from "./secret";
 
-import type { Secret, ServiceAccount } from "@skuberplus/kube-object";
+import type { Secret, ServiceAccount } from "@k-lens/kube-object";
 
 import type { SecretStore } from "../../config-secrets/store";
 import type { GetDetailsUrl } from "../../kube-detail-params/get-details-url.injectable";

@@ -20,7 +20,7 @@ import clusterFrameHandlerInjectable from "./cluster-frame-handler.injectable";
 import { ClusterStatus } from "./cluster-status";
 import clusterViewRouteParametersInjectable from "./cluster-view-route-parameters.injectable";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { IComputedValue } from "mobx";
 

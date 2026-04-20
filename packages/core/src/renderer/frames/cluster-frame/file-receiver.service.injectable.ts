@@ -9,8 +9,8 @@
  * @module cluster-frame/file-receiver-service-injectable
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import mainTabStoreInjectable from "../../components/main-tabs/main-tab-store.injectable";
 import { FileReceiverService } from "./file-receiver.service";
 

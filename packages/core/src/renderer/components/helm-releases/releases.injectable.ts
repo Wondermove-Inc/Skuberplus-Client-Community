@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { prefixedLoggerInjectable } from "@k-lens/logger";
+import { iter } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
 import { asyncComputed } from "@ogre-tools/injectable-react";
-import { prefixedLoggerInjectable } from "@skuberplus/logger";
-import { iter } from "@skuberplus/utilities";
 import assert from "assert";
 import requestListHelmReleasesInjectable from "../../../features/helm-releases/renderer/request-list-helm-releases.injectable";
 import clusterFrameContextForNamespacedResourcesInjectable from "../../cluster-frame-context/for-namespaced-resources.injectable";

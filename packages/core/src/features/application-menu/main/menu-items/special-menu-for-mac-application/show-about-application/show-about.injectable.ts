@@ -28,7 +28,7 @@ const showAboutInjectable = getInjectable({
       const appInfo = [`${displayAppName}: ${buildVersion}`, applicationCopyright];
 
       // 🎯 TODO: 버전 체크 엔드포인트 설정 후 활성화
-      // const latestVersion = await getLatestVersion("@skuberplus/core");
+      // const latestVersion = await getLatestVersion("@k-lens/core");
       // if (latestVersion && semver.gt(latestVersion, buildVersion)) {
       //   appInfo.push("", `Latest version: ${latestVersion}`);
       // }

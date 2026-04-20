@@ -6,9 +6,9 @@
 
 import "./view.scss";
 
+import { jobApiInjectable } from "@k-lens/kube-api-specifics";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { jobApiInjectable } from "@skuberplus/kube-api-specifics";
-import { cssNames } from "@skuberplus/utilities";
 import { makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
@@ -21,8 +21,8 @@ import { Wizard, WizardStep } from "../../wizard";
 import closeCronJobTriggerDialogInjectable from "./close.injectable";
 import cronJobTriggerDialogStateInjectable from "./state.injectable";
 
-import type { JobApi } from "@skuberplus/kube-api";
-import type { CronJob } from "@skuberplus/kube-object";
+import type { JobApi } from "@k-lens/kube-api";
+import type { CronJob } from "@k-lens/kube-object";
 
 import type { IObservableValue } from "mobx";
 

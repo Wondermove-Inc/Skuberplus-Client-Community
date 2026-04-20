@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { formatEndpointSubset } from "@skuberplus/kube-object";
+import { formatEndpointSubset } from "@k-lens/kube-object";
 
 describe("endpoint tests", () => {
   describe("EndpointSubset", () => {

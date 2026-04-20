@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { clusterFrameChildComponentInjectionToken } from "@k-lens/react-application";
 import { getInjectable } from "@ogre-tools/injectable";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { clusterFrameChildComponentInjectionToken } from "@skuberplus/react-application";
 import { ipcRenderer } from "electron";
 import { computed, reaction } from "mobx";
 import { observer } from "mobx-react";
@@ -147,7 +147,7 @@ const NonInjectedClusterFrameLayout = observer((props: Dependencies) => {
         const payload: SaveExplorerUrlPayload = { url: `/cluster/${props.hostedClusterId}` };
         ipcRenderer.send(panelSyncChannels.saveExplorerUrl, payload);
       }
-      // 🎯 Skuber+ Observability 페이지로 이동
+      // 🎯 k-o11y 페이지로 이동
       props.navigateToObservability();
     } else {
       toast("이 기능은 개발 예정입니다", {

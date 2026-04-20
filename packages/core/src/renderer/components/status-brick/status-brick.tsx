@@ -6,11 +6,11 @@
 
 import "./status-brick.scss";
 
-import { Tooltip, TooltipContent, TooltipTrigger } from "@skuberplus/storybook-shadcn/src/components/ui/tooltip";
-import { cssNames } from "@skuberplus/utilities";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@k-lens/storybook-shadcn/src/components/ui/tooltip";
+import { cssNames } from "@k-lens/utilities";
 import React from "react";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 /**
  * 🎯 목적: Pod 컨테이너 상태를 표시하는 색상 블록 컴포넌트

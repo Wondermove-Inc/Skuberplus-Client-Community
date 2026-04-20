@@ -1,11 +1,11 @@
+import { keyboardShortcutInjectionToken } from "@k-lens/keyboard-shortcuts";
 import { getInjectable } from "@ogre-tools/injectable";
-import { keyboardShortcutInjectionToken } from "@skuberplus/keyboard-shortcuts";
 import tableFocusManagerInjectable from "../components/table/table-focus-manager.injectable";
 import openDeploymentScaleDialogInjectable from "../components/workloads-deployments/scale/open.injectable";
 import openReplicaSetScaleDialogInjectable from "../components/workloads-replicasets/scale-dialog/open.injectable";
 import openStatefulSetScaleDialogInjectable from "../components/workloads-statefulsets/scale/open-dialog.injectable";
 
-import type { Deployment, ReplicaSet, StatefulSet } from "@skuberplus/kube-object";
+import type { Deployment, ReplicaSet, StatefulSet } from "@k-lens/kube-object";
 
 /**
  * `s` key — Scale the focused Deployment, StatefulSet, or ReplicaSet.

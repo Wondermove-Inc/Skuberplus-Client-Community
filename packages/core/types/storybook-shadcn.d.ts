@@ -1,10 +1,10 @@
 /**
- * 🎯 목적: @skuberplus/storybook-shadcn 패키지의 TypeScript 타입 선언
+ * 🎯 목적: @k-lens/storybook-shadcn 패키지의 TypeScript 타입 선언
  * 📝 주의사항: workspace 패키지이므로 런타임에는 webpack이 해결함
  * 🔄 변경이력: 2025-10-17 - 초기 생성 (Welcome 화면 DataTable 통합용)
  */
 
-declare module "@skuberplus/storybook-shadcn" {
+declare module "@k-lens/storybook-shadcn" {
   import type * as React from "react";
 
   // Table 컴포넌트들

@@ -61,7 +61,7 @@ describe("PHASE 4: Type Cleanup", () => {
         name: "Default",
         type: "dark",
         description: "Default theme",
-        author: "SkuberPlus",
+        author: "KLens",
         monacoTheme: "vs-dark",
         colors: {},
         isDefault: true,
@@ -75,7 +75,7 @@ describe("PHASE 4: Type Cleanup", () => {
     it("should have dark theme stub with empty colors", () => {
       expect(darkThemeStub).toBeDefined();
       expect(darkThemeStub.type).toBe("dark");
-      expect(darkThemeStub.name).toBe("SkuberPlus Default Dark");
+      expect(darkThemeStub.name).toBe("KLens Default Dark");
       expect(darkThemeStub.colors).toEqual({});
       expect(darkThemeStub.monacoTheme).toBe("vs-dark");
       expect(darkThemeStub.isDefault).toBe(true);
@@ -84,7 +84,7 @@ describe("PHASE 4: Type Cleanup", () => {
     it("should have light theme stub with empty colors", () => {
       expect(lightThemeStub).toBeDefined();
       expect(lightThemeStub.type).toBe("light");
-      expect(lightThemeStub.name).toBe("SkuberPlus Default Light");
+      expect(lightThemeStub.name).toBe("KLens Default Light");
       expect(lightThemeStub.colors).toEqual({});
       expect(lightThemeStub.monacoTheme).toBe("vs");
       expect(lightThemeStub.isDefault).toBe(false);

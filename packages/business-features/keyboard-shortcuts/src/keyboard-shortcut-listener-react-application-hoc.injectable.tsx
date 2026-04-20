@@ -1,5 +1,5 @@
+import { reactApplicationHigherOrderComponentInjectionToken } from "@k-lens/react-application";
 import { getInjectable } from "@ogre-tools/injectable";
-import { reactApplicationHigherOrderComponentInjectionToken } from "@skuberplus/react-application";
 import { KeyboardShortcutListener } from "./keyboard-shortcut-listener";
 
 export const keyboardShortcutListenerReactApplicationHocInjectable = getInjectable({

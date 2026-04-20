@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { beforeElectronIsReadyInjectionToken } from "@k-lens/application-for-electron-main";
+import { runManySyncFor } from "@k-lens/run-many";
 import { getInjectable } from "@ogre-tools/injectable";
-import { beforeElectronIsReadyInjectionToken } from "@skuberplus/application-for-electron-main";
-import { runManySyncFor } from "@skuberplus/run-many";
 import isIntegrationTestingInjectable from "../../../common/vars/is-integration-testing.injectable";
 import { afterQuitOfFrontEndInjectionToken } from "../../start-main-application/runnable-tokens/phases";
 import electronAppInjectable from "../electron-app.injectable";

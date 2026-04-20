@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { hasTypedProperty, isObject, isString } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { hasTypedProperty, isObject, isString } from "@skuberplus/utilities";
 import { computed, makeObservable, observable } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";
@@ -17,7 +17,7 @@ import catalogEntityRegistryInjectable from "../../api/catalog/entity/registry.i
 import { LoadingOverlay } from "../shadcn-ui/loading-overlay";
 import styles from "./cluster-status.module.scss";
 
-import type { IClassName } from "@skuberplus/utilities";
+import type { IClassName } from "@k-lens/utilities";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { KubeAuthUpdate } from "../../../common/cluster-types";

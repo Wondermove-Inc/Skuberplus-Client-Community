@@ -9,7 +9,7 @@ import { once } from "lodash";
 import { Disposers } from "../lens-extension";
 import { IpcPrefix, IpcRegistrar } from "./ipc-registrar";
 
-import type { Disposer } from "@skuberplus/utilities";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { LensRendererExtension } from "../lens-renderer-extension";
 

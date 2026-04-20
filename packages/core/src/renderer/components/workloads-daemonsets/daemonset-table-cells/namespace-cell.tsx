@@ -7,7 +7,7 @@
 import React from "react";
 import { NamespaceSelectBadge } from "../../namespaces/namespace-select-badge";
 
-import type { DaemonSet } from "@skuberplus/kube-object";
+import type { DaemonSet } from "@k-lens/kube-object";
 
 /**
  * 🎯 목적: DaemonSet의 네임스페이스를 Badge 형태로 표시

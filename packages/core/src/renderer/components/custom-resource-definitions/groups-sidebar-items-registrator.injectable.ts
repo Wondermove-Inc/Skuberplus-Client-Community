@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { sidebarItemsRefreshTriggerInjectable } from "@k-lens/cluster-sidebar";
 import { getInjectable } from "@ogre-tools/injectable";
-import { sidebarItemsRefreshTriggerInjectable } from "@skuberplus/cluster-sidebar";
 import { comparer, reaction } from "mobx";
 import { injectableDifferencingRegistratorWith } from "../../../common/utils/registrator-helper";
 import { beforeClusterFrameStartsSecondInjectionToken } from "../../before-frame-starts/tokens";

@@ -10,8 +10,8 @@
  * Manages expert panel agents: list, create, edit, delete, toggle, reset.
  */
 
+import { type RequestFromChannel, requestFromChannelInjectionToken } from "@k-lens/messaging";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { type RequestFromChannel, requestFromChannelInjectionToken } from "@skuberplus/messaging";
 import { Edit3, Plus, RotateCcw, Trash2 } from "lucide-react";
 import * as React from "react";
 import {

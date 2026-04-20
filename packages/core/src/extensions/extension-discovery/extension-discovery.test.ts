@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { delay } from "@skuberplus/utilities";
+import { delay } from "@k-lens/utilities";
 import { observable, runInAction, when } from "mobx";
 import directoryForUserDataInjectable from "../../common/app-paths/directory-for-user-data/directory-for-user-data.injectable";
 import pathExistsInjectable from "../../common/fs/path-exists.injectable";
@@ -72,13 +72,13 @@ describe("ExtensionDiscovery", () => {
     let addHandler!: (filePath: string) => void;
 
     readJsonFileMock.mockImplementation((p) => {
-      expect(p).toBe(joinPaths(homeDirectoryPath, ".skuberplus/extensions/my-extension/package.json"));
+      expect(p).toBe(joinPaths(homeDirectoryPath, ".k-lens/extensions/my-extension/package.json"));
 
       return {
         name: "my-extension",
         version: "1.0.0",
         engines: {
-          skuberplus: "0.1.0",
+          klens: "0.1.0",
         },
       };
     });
@@ -111,7 +111,7 @@ describe("ExtensionDiscovery", () => {
           name: "my-extension",
           version: "1.0.0",
           engines: {
-            skuberplus: "0.1.0",
+            klens: "0.1.0",
           },
         },
         manifestPath: "/some-directory-for-user-data/node_modules/my-extension/package.json",

@@ -6,12 +6,12 @@
 
 import "./replicaset-details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { ReplicaSet } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { ReplicaSet } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
 // 🎯 shadcn UI 컴포넌트: DrawerItem/Badge 대체
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { DetailPanelField } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { DetailPanelField } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";
 import subscribeStoresInjectable from "../../kube-watch-api/subscribe-stores.injectable";
@@ -22,7 +22,7 @@ import { PodDetailsTolerations } from "../workloads-pods/pod-details-tolerations
 import podStoreInjectable from "../workloads-pods/store.injectable";
 import replicaSetStoreInjectable from "./store.injectable";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
 import type { KubeObjectDetailsProps } from "../kube-object-details";

@@ -10,7 +10,7 @@ import type { ClusterPrometheusPreferences, MetricsSourceType } from "../cluster
  *
  * 📝 마이그레이션 매핑:
  * - undefined, "auto-detect-smart", "auto-detect-metrics-server" → "metrics-server"
- * - "auto-detect-prometheus", "helm", "helm14", "lens", "operator", "stacklight", "skuberplus" → "prometheus"
+ * - "auto-detect-prometheus", "helm", "helm14", "lens", "operator", "stacklight", "k-lens" → "prometheus"
  *
  * ⚠️ 주의사항:
  * - 이미 metricsSource가 설정된 경우 마이그레이션 건너뜀
@@ -62,7 +62,7 @@ function mapProviderTypeToMetricsSource(oldType: string | undefined): MetricsSou
   }
 
   // Prometheus로 매핑되는 케이스
-  // "auto-detect-prometheus", "helm", "helm14", "lens", "operator", "stacklight", "skuberplus"
+  // "auto-detect-prometheus", "helm", "helm14", "lens", "operator", "stacklight", "k-lens"
   return "prometheus";
 }
 

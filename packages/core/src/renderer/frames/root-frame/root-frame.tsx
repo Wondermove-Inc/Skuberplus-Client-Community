@@ -4,13 +4,13 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { rootFrameChildComponentInjectionToken } from "@k-lens/react-application";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { rootFrameChildComponentInjectionToken } from "@skuberplus/react-application";
 import { Observer } from "mobx-react";
 import React, { Component } from "react";
 import broadcastThatRootFrameIsRenderedInjectable from "./broadcast-that-root-frame-is-rendered.injectable";
 
-import type { RootFrameChildComponent } from "@skuberplus/react-application";
+import type { RootFrameChildComponent } from "@k-lens/react-application";
 
 interface Dependencies {
   broadcastThatRootFrameIsRendered: () => void;

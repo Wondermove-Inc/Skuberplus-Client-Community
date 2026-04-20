@@ -1,6 +1,6 @@
 module.exports = {
-  ...require("@skuberplus/jest").monorepoPackageConfig(__dirname).configForNode,
+  ...require("@k-lens/jest").monorepoPackageConfig(__dirname).configForNode,
   moduleNameMapper: {
-    "^@skuberplus/kube-api$": "<rootDir>/index.ts",
+    "^@k-lens/kube-api$": "<rootDir>/index.ts",
   },
 };

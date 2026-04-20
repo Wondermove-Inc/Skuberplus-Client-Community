@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { asLegacyGlobalForExtensionApi } from "@skuberplus/legacy-global-di";
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { asLegacyGlobalForExtensionApi } from "@k-lens/legacy-global-di";
+import { loggerInjectionToken } from "@k-lens/logger";
 
 // APIs
 export { App } from "./app";
@@ -16,8 +16,8 @@ export * as Store from "./stores";
 export * as Types from "./types";
 export { Util } from "./utils";
 
-export type { InstalledExtension, LensExtensionManifest } from "@skuberplus/legacy-extensions";
-export type { Logger } from "@skuberplus/logger";
+export type { InstalledExtension, LensExtensionManifest } from "@k-lens/legacy-extensions";
+export type { Logger } from "@k-lens/logger";
 
 export type { PackageJson } from "type-fest";
 

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { ToggleGroup, ToggleGroupItem } from "@k-lens/storybook-shadcn/src/components/ui/toggle-group";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { ToggleGroup, ToggleGroupItem } from "@skuberplus/storybook-shadcn/src/components/ui/toggle-group";
 import { observer } from "mobx-react";
 import React, { useState } from "react";
 import styles from "./cluster-metric-switchers.module.scss";

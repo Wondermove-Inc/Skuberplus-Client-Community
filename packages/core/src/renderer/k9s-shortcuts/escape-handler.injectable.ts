@@ -1,9 +1,9 @@
-import { getInjectable } from "@ogre-tools/injectable";
 import {
   KeyboardLayer,
   keyboardLayerManagerInjectable,
   keyboardShortcutInjectionToken,
-} from "@skuberplus/keyboard-shortcuts";
+} from "@k-lens/keyboard-shortcuts";
+import { getInjectable } from "@ogre-tools/injectable";
 
 /**
  * Escape key handler that consumes layers from top to bottom:

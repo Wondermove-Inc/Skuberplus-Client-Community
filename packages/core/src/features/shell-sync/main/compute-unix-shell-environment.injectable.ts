@@ -4,16 +4,16 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
+import { object } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { object } from "@skuberplus/utilities";
 import getBasenameOfPathInjectable from "../../../common/path/get-basename.injectable";
 import spawnInjectable from "../../../main/child-process/spawn.injectable";
 import randomUUIDInjectable from "../../../main/crypto/random-uuid.injectable";
 import processEnvInjectable from "./env.injectable";
 import processExecPathInjectable from "./execPath.injectable";
 
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { AsyncResult } from "@k-lens/utilities";
 
 import type { EnvironmentVariables } from "./compute-shell-environment.injectable";
 

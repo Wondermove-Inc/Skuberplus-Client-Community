@@ -16,12 +16,12 @@
  *   - 2025-11-06: shadcn DetailPanelActionsMenu 통합 (Edit, Delete)
  */
 
+import { StorageClass } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Table, TableBody, TableCell, TableRow } from "@k-lens/storybook-shadcn";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { Separator } from "@k-lens/storybook-shadcn/src/components/ui/separator";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { StorageClass } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Table, TableBody, TableCell, TableRow } from "@skuberplus/storybook-shadcn";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { Separator } from "@skuberplus/storybook-shadcn/src/components/ui/separator";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 import hostedClusterInjectable from "../../cluster-frame-context/hosted-cluster.injectable";
@@ -33,8 +33,8 @@ import { KubeObjectMetaSection } from "../kube-object-details/kube-object-meta-s
 import kubeObjectDeleteServiceInjectable from "../kube-object-menu/kube-object-delete-service.injectable";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 
-import type { KubeObject } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+import type { KubeObject } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { OpenConfirmDialog } from "../confirm-dialog/open.injectable";

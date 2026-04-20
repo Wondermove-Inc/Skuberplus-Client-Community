@@ -6,18 +6,18 @@
  *   - ReplicationController 전용 기능: Scale 슬라이더, Spec/Status 섹션
  * 🔄 변경이력:
  *   - 2025-11-11: 초기 생성 (Deployment Detail Panel 패턴 기반)
- *   - 2025-11-11: 원래 SkuberPlus 기능 복원 (Scale 슬라이더, Spec/Status 섹션)
+ *   - 2025-11-11: 원래 KLens 기능 복원 (Scale 슬라이더, Spec/Status 섹션)
  *   - 2025-12-01: 닫힘 애니메이션 중 데이터 유지 패턴 적용
  */
 
+import { replicationControllerApiInjectable } from "@k-lens/kube-api-specifics";
+import { ReplicationController } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Table, TableBody, TableCell, TableRow } from "@k-lens/storybook-shadcn";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { Separator } from "@k-lens/storybook-shadcn/src/components/ui/separator";
+import { Slider } from "@k-lens/storybook-shadcn/src/components/ui/slider";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { replicationControllerApiInjectable } from "@skuberplus/kube-api-specifics";
-import { ReplicationController } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Table, TableBody, TableCell, TableRow } from "@skuberplus/storybook-shadcn";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { Separator } from "@skuberplus/storybook-shadcn/src/components/ui/separator";
-import { Slider } from "@skuberplus/storybook-shadcn/src/components/ui/slider";
 import { action, makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
@@ -31,9 +31,9 @@ import { KubeObjectMetaSection } from "../kube-object-details/kube-object-meta-s
 import kubeObjectDeleteServiceInjectable from "../kube-object-menu/kube-object-delete-service.injectable";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 
-import type { ReplicationControllerApi } from "@skuberplus/kube-api";
-import type { KubeObject } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+import type { ReplicationControllerApi } from "@k-lens/kube-api";
+import type { KubeObject } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { OpenConfirmDialog } from "../confirm-dialog/open.injectable";
@@ -72,7 +72,7 @@ interface Dependencies {
  * @remarks
  * - Class Component 사용: MobX observable 상태 관리를 위해
  * - Scale 슬라이더 값 변경 시 Kubernetes API 호출
- * - 원래 SkuberPlus 구현 기능 복원 (replication-controller-details.tsx 참조)
+ * - 원래 KLens 구현 기능 복원 (replication-controller-details.tsx 참조)
  */
 class NonInjectedReplicationControllerDetailPanel extends Component<
   ReplicationControllerDetailPanelProps & Dependencies

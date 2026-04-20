@@ -17,10 +17,10 @@
  * - 2025-11-18: Annotations 일부 보기 + Expand/Collapse 기능 추가 (기본: 3개까지 표시)
  */
 
-import { KubeObject } from "@skuberplus/kube-object";
-import { Table, TableBody, TableCell, TableRow } from "@skuberplus/storybook-shadcn";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { Button } from "@skuberplus/storybook-shadcn/src/components/ui/button";
+import { KubeObject } from "@k-lens/kube-object";
+import { Table, TableBody, TableCell, TableRow } from "@k-lens/storybook-shadcn";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { Button } from "@k-lens/storybook-shadcn/src/components/ui/button";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import React, { useState } from "react";
 import { KubeObjectAge } from "../kube-object/age";

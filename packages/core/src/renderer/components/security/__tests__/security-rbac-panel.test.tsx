@@ -12,14 +12,14 @@ import React from "react";
 import { FindingType, type RbacFinding, ScannerSource, Severity } from "../../../../common/security/security-finding";
 import { SecurityRbacPanel } from "../security-rbac-panel";
 
-jest.mock("@skuberplus/storybook-shadcn/src/components/ui/card", () => ({
+jest.mock("@k-lens/storybook-shadcn/src/components/ui/card", () => ({
   Card: ({ children }: any) => <div>{children}</div>,
   CardContent: ({ children }: any) => <div>{children}</div>,
   CardHeader: ({ children }: any) => <div>{children}</div>,
   CardTitle: ({ children }: any) => <h3>{children}</h3>,
 }));
 
-jest.mock("@skuberplus/storybook-shadcn/src/components/ui/badge", () => ({
+jest.mock("@k-lens/storybook-shadcn/src/components/ui/badge", () => ({
   Badge: ({ children }: any) => <span data-testid="badge">{children}</span>,
 }));
 

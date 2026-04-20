@@ -6,11 +6,11 @@
 
 import "./service-port-component.scss";
 
+import { Button } from "@k-lens/button";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Spinner } from "@k-lens/spinner";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Button } from "@skuberplus/button";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Spinner } from "@skuberplus/spinner";
-import { cssNames } from "@skuberplus/utilities";
 import { action, makeObservable, observable, reaction } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";
@@ -23,8 +23,8 @@ import portForwardDialogModelInjectable from "../../port-forward/port-forward-di
 import portForwardStoreInjectable from "../../port-forward/port-forward-store/port-forward-store.injectable";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 
-import type { Service, ServicePort } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+import type { Service, ServicePort } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { ForwardedPort, PortForwardStore } from "../../port-forward";

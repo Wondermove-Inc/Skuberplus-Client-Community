@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { sidebarItemsInjectable } from "@k-lens/cluster-sidebar";
 import { getInjectable } from "@ogre-tools/injectable";
-import { sidebarItemsInjectable } from "@skuberplus/cluster-sidebar";
 import { computed } from "mobx";
 import mainTabStoreInjectable from "../components/main-tabs/main-tab-store.injectable";
 

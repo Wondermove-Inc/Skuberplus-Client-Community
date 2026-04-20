@@ -11,7 +11,7 @@
  * 📝 agent-ipc-handler.injectable.ts에서 분리 (구조 정리)
  */
 
-import { getRequestChannelListenerInjectable } from "@skuberplus/messaging";
+import { getRequestChannelListenerInjectable } from "@k-lens/messaging";
 import clustersInjectable from "../../cluster/storage/common/clusters.injectable";
 import userPreferencesStateInjectable from "../../user-preferences/common/state.injectable";
 import encryptApiKeyInjectable from "../../user-preferences/main/encrypt-api-key.injectable";

@@ -6,11 +6,11 @@
 
 import "./info-panel.scss";
 
+import { Button } from "@k-lens/button";
+import { Icon } from "@k-lens/icon";
+import { Spinner } from "@k-lens/spinner";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Button } from "@skuberplus/button";
-import { Icon } from "@skuberplus/icon";
-import { Spinner } from "@skuberplus/spinner";
-import { cssNames } from "@skuberplus/utilities";
 import { computed, makeObservable, observable, reaction } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";
@@ -19,7 +19,7 @@ import mainTabStoreInjectable from "../main-tabs/main-tab-store.injectable";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 import dockStoreInjectable from "./dock/store.injectable";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { Navigate } from "../../navigation/navigate.injectable";
 import type { MainTabStore } from "../main-tabs/main-tab-store";

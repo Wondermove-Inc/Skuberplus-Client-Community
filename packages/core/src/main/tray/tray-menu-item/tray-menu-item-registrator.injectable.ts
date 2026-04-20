@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { getRandomIdInjectionToken } from "@k-lens/random";
+import { isBoolean, isString } from "@k-lens/utilities";
 import { pipeline } from "@ogre-tools/fp";
 import { getInjectable } from "@ogre-tools/injectable";
-import { getRandomIdInjectionToken } from "@skuberplus/random";
-import { isBoolean, isString } from "@skuberplus/utilities";
 import { computed } from "mobx";
 import withErrorLoggingInjectable from "../../../common/utils/with-error-logging/with-error-logging.injectable";
 import { withErrorSuppression } from "../../../common/utils/with-error-suppression/with-error-suppression";

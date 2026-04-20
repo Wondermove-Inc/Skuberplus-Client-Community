@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { sortBySemverVersion } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { sortBySemverVersion } from "@skuberplus/utilities";
 import requestHelmChartVersionsInjectable from "../../../../common/k8s-api/endpoints/helm-charts.api/request-versions.injectable";
 
 import type { HelmChart } from "../../../../common/k8s-api/endpoints/helm-charts.api";

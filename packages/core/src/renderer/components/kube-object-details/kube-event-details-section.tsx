@@ -19,16 +19,15 @@
  * - 2026-01-19: 하이브리드 온디맨드 + Watch 방식으로 개선 (디테일 패널 이벤트 정확도 향상)
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { KubeEvent, KubeObject } from "@skuberplus/kube-object";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { KubeEvent, KubeObject } from "@k-lens/kube-object";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 import {
   Empty,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@skuberplus/storybook-shadcn/src/components/ui/empty";
+} from "@k-lens/storybook-shadcn/src/components/ui/empty";
 import {
   Table,
   TableBody,
@@ -36,7 +35,8 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@skuberplus/storybook-shadcn/src/components/ui/table";
+} from "@k-lens/storybook-shadcn/src/components/ui/table";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { CheckCircle, Loader2 } from "lucide-react";
 import { observer } from "mobx-react";
 import React, { useEffect, useState } from "react";

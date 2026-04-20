@@ -17,17 +17,17 @@
  * - 2025-10-31: Full-Width Resizable 패턴 적용 (TanStack Table 공식 권장)
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { Button, Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@skuberplus/storybook-shadcn";
-import { Empty, EmptyDescription, EmptyHeader, EmptyMedia } from "@skuberplus/storybook-shadcn/src/components/ui/empty";
-import { Input } from "@skuberplus/storybook-shadcn/src/components/ui/input";
+import { Button, Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@k-lens/storybook-shadcn";
+import { Empty, EmptyDescription, EmptyHeader, EmptyMedia } from "@k-lens/storybook-shadcn/src/components/ui/empty";
+import { Input } from "@k-lens/storybook-shadcn/src/components/ui/input";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@skuberplus/storybook-shadcn/src/components/ui/select";
+} from "@k-lens/storybook-shadcn/src/components/ui/select";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import {
   flexRender,
   getCoreRowModel,
@@ -45,7 +45,7 @@ import { ContextMenu, ContextMenuContent, ContextMenuTrigger } from "../../shadc
 import tableFocusManagerInjectable from "../../table/table-focus-manager.injectable";
 import { useColumnResizing } from "./use-column-resizing";
 
-import type { ItemObject } from "@skuberplus/list-layout";
+import type { ItemObject } from "@k-lens/list-layout";
 
 import type { Cell } from "@tanstack/react-table";
 

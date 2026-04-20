@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getOrInsertSetFor, isDefined } from "@skuberplus/utilities";
+import { getOrInsertSetFor, isDefined } from "@k-lens/utilities";
 import assert from "assert";
 import * as uuid from "uuid";
 

@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { beforeApplicationIsLoadingInjectionToken } from "@k-lens/application";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { beforeApplicationIsLoadingInjectionToken } from "@skuberplus/application";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { Agent } from "https";
 import lensProxyCertificateInjectable from "../../../common/certificate/lens-proxy-certificate.injectable";
 import nodeFetchInjectable from "../../../common/fetch/node-fetch.injectable";
@@ -34,17 +34,17 @@ const setupLensProxyInjectable = getInjectable({
       const fetch = di.inject(nodeFetchInjectable);
 
       try {
-        logger.info("🔌 Starting SkuberPlus Proxy");
+        logger.info("🔌 Starting K-Lens Proxy");
         await lensProxy.listen(); // lensProxy.port available
       } catch (error: any) {
-        showErrorPopup("SkuberPlus Error", `Could not start proxy: ${error?.message || "unknown error"}`);
+        showErrorPopup("K-Lens Error", `Could not start proxy: ${error?.message || "unknown error"}`);
 
         return forceAppExit();
       }
 
       // test proxy connection
       try {
-        logger.info("🔎 Testing SkuberPlus Proxy connection ...");
+        logger.info("🔎 Testing K-Lens Proxy connection ...");
         const versionResponse = await fetch(`https://127.0.0.1:${lensProxyPort.get()}/version`, {
           agent: new Agent({
             ca: lensProxyCertificate.get()?.cert,
@@ -59,19 +59,19 @@ const setupLensProxyInjectable = getInjectable({
           return forceAppExit();
         }
 
-        logger.info("⚡ SkuberPlus Proxy connection OK");
+        logger.info("⚡ K-Lens Proxy connection OK");
       } catch (error) {
-        logger.error(`🛑 SkuberPlus Proxy: failed connection test: ${error}`);
+        logger.error(`🛑 K-Lens Proxy: failed connection test: ${error}`);
 
         const hostsPath = isWindows ? "C:\\windows\\system32\\drivers\\etc\\hosts" : "/etc/hosts";
         const message = [
           `Failed connection test: ${error}`,
-          "Check to make sure that no other versions of SkuberPlus are running",
+          "Check to make sure that no other versions of K-Lens are running",
           `Check ${hostsPath} to make sure that it is clean and that the localhost loopback is at the top and set to 127.0.0.1`,
           "If you have HTTP_PROXY or http_proxy set in your environment, make sure that the localhost and the ipv4 loopback address 127.0.0.1 are added to the NO_PROXY environment variable.",
         ];
 
-        showErrorPopup("SkuberPlus Proxy Error", message.join("\n\n"));
+        showErrorPopup("K-Lens Proxy Error", message.join("\n\n"));
 
         return forceAppExit();
       }

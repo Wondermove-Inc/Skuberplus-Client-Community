@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
 // 🎯 shadcn UI 컴포넌트 import
-import { Empty, EmptyDescription, EmptyHeader, EmptyTitle } from "@skuberplus/storybook-shadcn/src/components/ui/empty";
+import { Empty, EmptyDescription, EmptyHeader, EmptyTitle } from "@k-lens/storybook-shadcn/src/components/ui/empty";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";
 import { ClusterMetricsResourceType } from "../../../common/cluster-types";

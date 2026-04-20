@@ -9,7 +9,7 @@ import { orderBy } from "lodash";
 import browseAllColumnsInjectable from "./browse-all.injectable";
 import getColumnsForCategoryInjectable from "./specific-category.injectable";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { CatalogCategory, CatalogEntity } from "../../../../common/catalog";
 import type { ItemListLayoutProps } from "../../item-object-list";

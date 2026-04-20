@@ -20,8 +20,8 @@
  * - 2025-12-23: stdin 지원 추가 (spawn 사용)
  */
 
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { getRequestChannelListenerInjectable } from "@skuberplus/messaging";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { getRequestChannelListenerInjectable } from "@k-lens/messaging";
 import { spawn } from "child_process";
 import pLimit from "p-limit";
 import execFileInjectable from "../../../common/fs/exec-file.injectable";

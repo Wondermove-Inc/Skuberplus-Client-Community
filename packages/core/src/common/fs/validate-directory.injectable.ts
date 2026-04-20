@@ -4,12 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { isErrnoException } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { isErrnoException } from "@skuberplus/utilities";
 import { lowerFirst } from "lodash/fp";
 import statInjectable from "./stat.injectable";
 
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { AsyncResult } from "@k-lens/utilities";
 
 import type { Stats } from "fs-extra";
 

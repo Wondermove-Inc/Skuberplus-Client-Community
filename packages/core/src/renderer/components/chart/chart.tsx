@@ -7,8 +7,8 @@
 import "./chart.scss";
 
 // 🎯 shadcn UI 컴포넌트: 레거시 Badge 대체
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { cssNames } from "@skuberplus/utilities";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { cssNames } from "@k-lens/utilities";
 import ChartJS from "chart.js";
 import { remove } from "lodash";
 import React, { Component } from "react";

@@ -20,16 +20,12 @@
 
 import "./resource-quota-details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { ResourceQuota } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@skuberplus/storybook-shadcn";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import {
-  DetailPanelField,
-  DetailPanelSection,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { Separator } from "@skuberplus/storybook-shadcn/src/components/ui/separator";
+import { ResourceQuota } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@k-lens/storybook-shadcn";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { DetailPanelField, DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { Separator } from "@k-lens/storybook-shadcn/src/components/ui/separator";
 import {
   cpuUnitsToNumber,
   cssNames,
@@ -37,7 +33,8 @@ import {
   metricUnitsToNumber,
   object,
   unitsToBytes,
-} from "@skuberplus/utilities";
+} from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import kebabCase from "lodash/kebabCase";
 import { makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
@@ -52,8 +49,8 @@ import kubeObjectDeleteServiceInjectable from "../kube-object-menu/kube-object-d
 import { LineProgress } from "../line-progress";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 
-import type { KubeObject } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+import type { KubeObject } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { HostedCluster } from "../../cluster-frame-context/hosted-cluster.injectable";
 import type { OpenConfirmDialog } from "../confirm-dialog/open.injectable";

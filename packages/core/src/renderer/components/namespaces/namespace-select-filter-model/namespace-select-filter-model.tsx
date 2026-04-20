@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Icon } from "@skuberplus/icon";
-import { observableCrate } from "@skuberplus/utilities";
+import { Icon } from "@k-lens/icon";
+import { observableCrate } from "@k-lens/utilities";
 import { action, comparer, computed, observable } from "mobx";
 import React from "react";
 

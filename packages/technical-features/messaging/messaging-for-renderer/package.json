@@ -1,5 +1,5 @@
 {
-  "name": "@skuberplus/messaging-for-renderer",
+  "name": "@k-lens/messaging-for-renderer",
   "private": false,
   "version": "1.5.4-0",
   "description": "Implementations for 'messaging' in Electron renderer",
@@ -13,16 +13,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wondermove-Inc/Skuberplus-Client-Community.git"
+    "url": "git+https://github.com/Wondermove-Inc/Klens-Client-Community.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "license": "MIT",
-  "homepage": "https://skuberplus.app",
+  "homepage": "https://k-lens.app",
   "scripts": {
     "clean": "pnpm dlx rimraf@6.0.1 dist",
     "clean:node_modules": "pnpm dlx rimraf@6.0.1 node_modules",
@@ -30,18 +30,18 @@
     "test:unit": "jest --coverage --runInBand"
   },
   "dependencies": {
-    "@skuberplus/application": "workspace:^",
-    "@skuberplus/feature-core": "workspace:^",
-    "@skuberplus/messaging": "workspace:^",
+    "@k-lens/application": "workspace:^",
+    "@k-lens/feature-core": "workspace:^",
+    "@k-lens/messaging": "workspace:^",
     "@ogre-tools/injectable": "^17.11.1",
     "@ogre-tools/injectable-extension-for-auto-registration": "^17.11.1",
     "electron": "^35.7.5"
   },
   "devDependencies": {
     "@async-fn/jest": "^1.6.4",
-    "@skuberplus/jest": "workspace:^",
-    "@skuberplus/typescript": "workspace:^",
-    "@skuberplus/webpack": "workspace:^",
+    "@k-lens/jest": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
+    "@k-lens/webpack": "workspace:^",
     "@ogre-tools/injectable-extension-for-mobx": "^17.11.1",
     "@types/webpack-env": "^1.18.8",
     "identity-obj-proxy": "^3.0.0",

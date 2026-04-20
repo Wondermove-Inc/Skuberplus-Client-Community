@@ -5,7 +5,7 @@
  */
 
 /**
- * 🎯 목적: Skuber+ Observability 화면 컴포넌트
+ * 🎯 목적: k-o11y 화면 컴포넌트
  *
  * 주요 기능:
  * - 모니터링 대시보드
@@ -59,7 +59,7 @@ interface Dependencies {
 }
 
 /**
- * 🎯 목적: Skuber+ Observability 메인 컴포넌트
+ * 🎯 목적: k-o11y 메인 컴포넌트
  *
  * 📝 주요 기능:
  * - Observability 웹뷰를 iframe으로 표시

@@ -6,19 +6,19 @@
 
 import "./drawer.scss";
 
+import { Animate } from "@k-lens/animate";
+import { Icon } from "@k-lens/icon";
+import { ResizeDirection, ResizeGrowthDirection, ResizeSide, ResizingAnchor } from "@k-lens/resizing-anchor";
+import { historyInjectionToken } from "@k-lens/routing";
+import { cssNames, noop } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Animate } from "@skuberplus/animate";
-import { Icon } from "@skuberplus/icon";
-import { ResizeDirection, ResizeGrowthDirection, ResizeSide, ResizingAnchor } from "@skuberplus/resizing-anchor";
-import { historyInjectionToken } from "@skuberplus/routing";
-import { cssNames, noop } from "@skuberplus/utilities";
 import { clipboard } from "electron";
 import React, { Component } from "react";
 import { createPortal } from "react-dom";
 import drawerStorageInjectable, { defaultDrawerWidth } from "./drawer-storage/drawer-storage.injectable";
 
-import type { AnimateName } from "@skuberplus/animate";
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { AnimateName } from "@k-lens/animate";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { History } from "history";
 

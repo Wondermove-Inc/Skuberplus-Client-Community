@@ -21,7 +21,7 @@
 import React from "react";
 import { BadgeBoolean } from "../../badge";
 
-import type { Job } from "@skuberplus/kube-object";
+import type { Job } from "@k-lens/kube-object";
 
 export const ResumedCell = ({ job }: { job: Job }) => {
   // suspend가 false이면 resumed (실행 중)

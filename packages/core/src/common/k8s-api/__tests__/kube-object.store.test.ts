@@ -4,11 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { KubeObject } from "@skuberplus/kube-object";
-import { noop } from "@skuberplus/utilities";
+import { KubeObject } from "@k-lens/kube-object";
+import { noop } from "@k-lens/utilities";
 import { KubeObjectStore } from "../kube-object.store";
 
-import type { KubeApi } from "@skuberplus/kube-api";
+import type { KubeApi } from "@k-lens/kube-api";
 
 import type { KubeObjectStoreLoadingParams } from "../kube-object.store";
 

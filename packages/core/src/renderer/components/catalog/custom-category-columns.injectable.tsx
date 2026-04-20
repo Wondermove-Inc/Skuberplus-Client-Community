@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { getOrInsert, getOrInsertMap } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
 import { computedInjectManyInjectable } from "@ogre-tools/injectable-extension-for-mobx";
-import { getOrInsert, getOrInsertMap } from "@skuberplus/utilities";
 import { computed } from "mobx";
 import { customCatalogCategoryColumnInjectionToken } from "./columns/custom-token";
 

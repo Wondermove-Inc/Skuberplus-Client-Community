@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Namespace } from "@k-lens/kube-object";
 import * as MuiUtils from "@mui/utils";
-import { Namespace } from "@skuberplus/kube-object";
 import { fireEvent } from "@testing-library/react";
 import React from "react";
 import { getDiForUnitTesting } from "../../getDiForUnitTesting";
@@ -13,7 +13,7 @@ import { renderFor } from "../test-utils/renderFor";
 import hierarchicalNamespacesInjectable from "./hierarchical-namespaces.injectable";
 import { NamespaceTreeView } from "./namespace-tree-view";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { DiContainer } from "@ogre-tools/injectable";
 

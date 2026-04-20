@@ -14,7 +14,7 @@
  * - 2025-10-30: 초기 생성 (순환 참조 해결)
  */
 
-import type { Job } from "@skuberplus/kube-object";
+import type { Job } from "@k-lens/kube-object";
 
 /**
  * 🎯 목적: Job 상태 텍스트 반환

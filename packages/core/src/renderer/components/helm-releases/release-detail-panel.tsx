@@ -15,10 +15,10 @@
  *   - 2025-11-06: shadcn DetailPanelActionsMenu 통합 (Edit, Delete)
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Table, TableBody, TableCell, TableRow } from "@k-lens/storybook-shadcn";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Table, TableBody, TableCell, TableRow } from "@skuberplus/storybook-shadcn";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
 import { kebabCase } from "lodash/fp";
 import { observer } from "mobx-react";
 import moment from "moment-timezone";
@@ -29,7 +29,7 @@ import createUpgradeChartTabInjectable from "../dock/upgrade-chart/create-upgrad
 import deleteReleaseInjectable from "./delete-release/delete-release.injectable";
 import openHelmReleaseRollbackDialogInjectable from "./dialog/open.injectable";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { HelmRelease } from "../../../common/k8s-api/endpoints/helm-releases.api";
 import type { OpenConfirmDialog } from "../confirm-dialog/open.injectable";

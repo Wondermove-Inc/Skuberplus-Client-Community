@@ -16,8 +16,8 @@
  * @packageDocumentation
  */
 
-import { Button } from "@skuberplus/storybook-shadcn/src/components/ui/button";
-import { Card, CardContent } from "@skuberplus/storybook-shadcn/src/components/ui/card";
+import { Button } from "@k-lens/storybook-shadcn/src/components/ui/button";
+import { Card, CardContent } from "@k-lens/storybook-shadcn/src/components/ui/card";
 import { Play, RefreshCw, Square } from "lucide-react";
 import { observer } from "mobx-react";
 import React from "react";

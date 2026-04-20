@@ -17,8 +17,8 @@
  * - 2025-10-30: 초기 생성 (Deployment 컬럼 패턴 기반, CronJob 적용)
  */
 
-import { Button, Checkbox } from "@skuberplus/storybook-shadcn";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { Button, Checkbox } from "@k-lens/storybook-shadcn";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 import { ArrowUpDown } from "lucide-react";
 import React from "react";
 // Cell 컴포넌트 imports
@@ -27,7 +27,7 @@ import { NamespaceSelectBadge } from "../namespaces/namespace-select-badge";
 import { WithTooltip } from "../with-tooltip";
 import { humanizeSchedule } from "./utils";
 
-import type { CronJob } from "@skuberplus/kube-object";
+import type { CronJob } from "@k-lens/kube-object";
 
 import type { ColumnDef } from "@tanstack/react-table";
 

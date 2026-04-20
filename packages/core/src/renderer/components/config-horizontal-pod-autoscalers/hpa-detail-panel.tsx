@@ -20,12 +20,12 @@
 
 import "./details.scss";
 
+import { HorizontalPodAutoscaler } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@k-lens/storybook-shadcn";
+import { DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { Separator } from "@k-lens/storybook-shadcn/src/components/ui/separator";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { HorizontalPodAutoscaler } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@skuberplus/storybook-shadcn";
-import { DetailPanelSection } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { Separator } from "@skuberplus/storybook-shadcn/src/components/ui/separator";
 import { makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
@@ -48,8 +48,8 @@ import type {
   HorizontalPodAutoscalerMetricSpec,
   HorizontalPodAutoscalerMetricTarget,
   KubeObject,
-} from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+} from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { ApiManager } from "../../../common/k8s-api/api-manager";
 import type { HostedCluster } from "../../cluster-frame-context/hosted-cluster.injectable";

@@ -7,7 +7,7 @@
 import EventEmitter from "events";
 import { makeObservable, observable } from "mobx";
 
-import type { Defaulted } from "@skuberplus/utilities";
+import type { Defaulted } from "@k-lens/utilities";
 
 import type TypedEventEmitter from "typed-emitter";
 import type { Arguments } from "typed-emitter";

@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { requestFromChannelInjectionToken } from "@skuberplus/messaging";
+import { requestFromChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectablesForInitializable } from "../../../../common/initializable-state/create";
 import { beforeFrameStartsSecondInjectionToken } from "../../../../renderer/before-frame-starts/tokens";
 import {

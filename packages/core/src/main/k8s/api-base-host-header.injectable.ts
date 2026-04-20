@@ -13,7 +13,7 @@ const apiBaseHostHeaderInjectable = getInjectable({
   instantiate: (di) => {
     const lensProxyPort = di.inject(lensProxyPortInjectable);
 
-    return `renderer.skuberplus.app:${lensProxyPort.get()}`;
+    return `renderer.k-lens.app:${lensProxyPort.get()}`;
   },
   injectionToken: apiBaseHostHeaderInjectionToken,
 });

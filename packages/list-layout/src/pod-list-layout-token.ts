@@ -6,7 +6,7 @@
 
 import { getInjectionToken } from "@ogre-tools/injectable";
 
-import type { Pod } from "@skuberplus/kube-object";
+import type { Pod } from "@k-lens/kube-object";
 
 import type { SpecificKubeListLayoutColumn } from "./kube-list-layout-column";
 

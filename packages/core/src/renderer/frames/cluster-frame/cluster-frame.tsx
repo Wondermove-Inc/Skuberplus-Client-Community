@@ -6,18 +6,18 @@
 
 import "../../components/preferences-dialog/preferences-dialog-cluster-frame-child-component.injectable"; // 🎯 ClusterFrame에 PreferencesDialog 등록 (순환 의존성 방지를 위해 여기서 import)
 import "./panel-sync-listener.injectable"; // 🎯 ClusterFrame에 Panel Sync IPC 리스너 등록 (TopBar 버튼과 iframe 간 동기화)
+import { ErrorBoundary } from "@k-lens/error-boundary";
+import { clusterFrameChildComponentInjectionToken } from "@k-lens/react-application";
+import { disposer } from "@k-lens/utilities";
 import { computedInjectManyInjectable } from "@ogre-tools/injectable-extension-for-mobx";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { ErrorBoundary } from "@skuberplus/error-boundary";
-import { clusterFrameChildComponentInjectionToken } from "@skuberplus/react-application";
-import { disposer } from "@skuberplus/utilities";
 import { Observer, observer } from "mobx-react";
 import React, { useEffect } from "react";
 import namespaceStoreInjectable from "../../components/namespaces/store.injectable";
 import subscribeStoresInjectable from "../../kube-watch-api/subscribe-stores.injectable";
 import watchHistoryStateInjectable from "../../remote-helpers/watch-history-state.injectable";
 
-import type { ClusterFrameChildComponent } from "@skuberplus/react-application";
+import type { ClusterFrameChildComponent } from "@k-lens/react-application";
 
 import type { IComputedValue } from "mobx";
 

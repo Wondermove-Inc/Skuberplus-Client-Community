@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { onLoadOfApplicationInjectionToken } from "@k-lens/application";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { onLoadOfApplicationInjectionToken } from "@skuberplus/application";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { startsWith, toLower } from "lodash/fp";
 import openDeepLinkInjectable from "../../protocol-handler/lens-protocol-router-main/open-deep-link-for-url/open-deep-link.injectable";
 import showApplicationWindowInjectable from "../../start-main-application/lens-window/show-application-window.injectable";

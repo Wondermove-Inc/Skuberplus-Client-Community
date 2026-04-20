@@ -7,8 +7,8 @@ import { action, computed, makeObservable, observable } from "mobx";
 import { SearchStore } from "../../search-store/search-store";
 import { LogStore } from "../dock/logs/store";
 
-import type { ResourceDescriptor } from "@skuberplus/kube-api";
-import type { PodLogsQuery } from "@skuberplus/kube-object";
+import type { ResourceDescriptor } from "@k-lens/kube-api";
+import type { PodLogsQuery } from "@k-lens/kube-object";
 
 import type { IComputedValue } from "mobx";
 
@@ -54,7 +54,7 @@ async function fetchPodsInNamespace(
  * 직접 fetch로 K8s Pod 로그 API 호출
  * podApi 의존성 없이 LensProxy를 통해 직접 요청
  *
- * @param apiBaseUrl 클러스터 서브도메인 포함 URL (예: https://{clusterId}.renderer.skuberplus.app:{port})
+ * @param apiBaseUrl 클러스터 서브도메인 포함 URL (예: https://{clusterId}.renderer.k-lens.app:{port})
  */
 function createDirectCallForLogs(apiBaseUrl: string): CallForLogs {
   return async (params: ResourceDescriptor, query?: PodLogsQuery): Promise<string> => {
@@ -144,7 +144,7 @@ export class StandaloneLogViewModel {
     this.initData = initData;
 
     // 클러스터 서브도메인 URL로 API 호출 (로그 창 자체는 서브도메인 없이 로드됨)
-    this.apiBaseUrl = `https://${initData.clusterId}.renderer.skuberplus.app:${initData.proxyPort}`;
+    this.apiBaseUrl = `https://${initData.clusterId}.renderer.k-lens.app:${initData.proxyPort}`;
 
     this.callForLogs = createDirectCallForLogs(this.apiBaseUrl);
     this.logStore = new LogStore({ callForLogs: this.callForLogs });

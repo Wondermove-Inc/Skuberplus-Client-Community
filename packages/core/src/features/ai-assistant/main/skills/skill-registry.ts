@@ -18,7 +18,7 @@ import * as path from "path";
 import { getEffectiveContent } from "../../agents/md-loader";
 import { REACT_SKILL_CONFIGS } from "./command-configs";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { ReactSkillBehavior } from "./react-skill";
 

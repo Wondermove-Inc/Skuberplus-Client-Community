@@ -13,9 +13,9 @@
  * - 2026-01-19: - 긴 클러스터 이름 Tooltip 추가 (hover 시 전체 이름 표시)
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
 // 🎯 DAIVE DI injectables (9개)
-import { sidebarItemsInjectable } from "@skuberplus/cluster-sidebar";
+import { sidebarItemsInjectable } from "@k-lens/cluster-sidebar";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { ipcRenderer } from "electron";
 // 🎯 lucide-react 아이콘 (shadcn 표준)
 // 📝 Server: 클러스터 트리 아이콘 + 비활성 상태 기본 아이콘, Settings: 드롭다운 메뉴 "클러스터 설정" 아이콘
@@ -95,7 +95,7 @@ import { getProviderInfo, inferCloudProvider } from "./cluster-provider-utils";
 import { UpdateBanner } from "./update-banner";
 
 // 🎯 타입 정의
-import type { SidebarItemDeclaration } from "@skuberplus/cluster-sidebar";
+import type { SidebarItemDeclaration } from "@k-lens/cluster-sidebar";
 
 import type { IComputedValue } from "mobx";
 

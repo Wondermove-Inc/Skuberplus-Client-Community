@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { observableHistoryInjectionToken } from "@k-lens/routing";
+import { byOrderNumber } from "@k-lens/utilities";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
-import { observableHistoryInjectionToken } from "@skuberplus/routing";
-import { byOrderNumber } from "@skuberplus/utilities";
 import { action } from "mobx";
 import catalogEntitySettingItemsInjectable from "./settings.injectable";
 

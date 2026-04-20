@@ -6,9 +6,9 @@
 
 import "./search-input.scss";
 
+import { Icon } from "@k-lens/icon";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { cssNames } from "@skuberplus/utilities";
 import autoBindReact from "auto-bind/react";
 import { observer } from "mobx-react";
 import React, { Component, createRef } from "react";

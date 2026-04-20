@@ -13,7 +13,7 @@ import { ResourceMetrics } from "../resource-metrics";
 import { ContainerCharts } from "./container-charts";
 import podContainerMetricsInjectable from "./container-metrics.injectable";
 
-import type { Container, Pod } from "@skuberplus/kube-object";
+import type { Container, Pod } from "@k-lens/kube-object";
 
 import type { IAsyncComputed } from "@ogre-tools/injectable-react";
 

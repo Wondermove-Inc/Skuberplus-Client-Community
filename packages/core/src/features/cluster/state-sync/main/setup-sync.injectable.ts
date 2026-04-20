@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { beforeApplicationIsLoadingInjectionToken } from "@k-lens/application";
 import { getInjectable } from "@ogre-tools/injectable";
-import { beforeApplicationIsLoadingInjectionToken } from "@skuberplus/application";
 import { isEqual } from "lodash";
 import { autorun } from "mobx";
 import clustersInjectable from "../../storage/common/clusters.injectable";

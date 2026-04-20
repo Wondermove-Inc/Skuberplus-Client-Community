@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { getOrInsertWith } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { getOrInsertWith } from "@skuberplus/utilities";
 import createIpcFileLoggerTransportInjectable from "./create-ipc-file-transport.injectable";
 
 import type { LogEntry, transports } from "winston";

@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { prefixedLoggerInjectable } from "@k-lens/logger";
+import { delay, getOrInsert, isErrnoException } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { prefixedLoggerInjectable } from "@skuberplus/logger";
-import { delay, getOrInsert, isErrnoException } from "@skuberplus/utilities";
 import { readFile } from "fs/promises";
 import { computed, observable } from "mobx";
 import watchInjectable from "../../../../common/fs/watch/watch.injectable";
@@ -31,7 +31,7 @@ const userCreateResourceTemplatesInjectable = getInjectable({
     const logger = di.inject(prefixedLoggerInjectable, "USER-CREATE-RESOURCE-TEMPLATES");
     const parsePath = di.inject(parsePathInjectable);
 
-    const userTemplatesFolder = joinPaths(homeDirectoryPath, ".skuberplus", "templates");
+    const userTemplatesFolder = joinPaths(homeDirectoryPath, ".k-lens", "templates");
     const groupTemplates = (templates: Map<string, string>): RawTemplates[] => {
       const res = new Map<string, RawTemplate[]>();
 

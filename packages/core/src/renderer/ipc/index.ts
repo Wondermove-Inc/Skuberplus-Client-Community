@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getLegacyGlobalDiForExtensionApi } from "@skuberplus/legacy-global-di";
+import { getLegacyGlobalDiForExtensionApi } from "@k-lens/legacy-global-di";
 import { clusterSetFrameIdHandler, clusterStates } from "../../common/ipc/cluster";
 import { extensionDiscoveryStateChannel, extensionLoaderFromMainChannel } from "../../common/ipc/extension-handling";
 import {
@@ -16,7 +16,7 @@ import {
 import { toJS } from "../../common/utils";
 import ipcRendererInjectable from "../utils/channel/ipc-renderer.injectable";
 
-import type { InstalledExtension, LensExtensionId } from "@skuberplus/legacy-extensions";
+import type { InstalledExtension, LensExtensionId } from "@k-lens/legacy-extensions";
 
 import type { Location } from "history";
 

@@ -275,7 +275,7 @@ export const NotificationsPopover: React.FC = observer(() => {
 
     const fileName = filePath.split("/").pop() || "diff";
     const timestamp = Date.now();
-    const virtualPath = `/tmp/skuberplus-diff/${fileName}-${timestamp}.diff`;
+    const virtualPath = `/tmp/k-lens-diff/${fileName}-${timestamp}.diff`;
 
     const clusterFrames = document.querySelectorAll<HTMLIFrameElement>('iframe[id^="cluster-frame-"]');
     let activeFrame: HTMLIFrameElement | null = null;

@@ -16,8 +16,8 @@
  * - 2026-03-20: 초기 생성 (Phase 1 — Personalization → AI Settings 교체)
  */
 
+import { type RequestFromChannel, requestFromChannelInjectionToken } from "@k-lens/messaging";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { type RequestFromChannel, requestFromChannelInjectionToken } from "@skuberplus/messaging";
 import { AlertTriangle } from "lucide-react";
 import * as React from "react";
 import {

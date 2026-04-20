@@ -1,6 +1,6 @@
+import { getFeature } from "@k-lens/feature-core";
+import { messagingFeature } from "@k-lens/messaging";
 import { autoRegister } from "@ogre-tools/injectable-extension-for-auto-registration";
-import { getFeature } from "@skuberplus/feature-core";
-import { messagingFeature } from "@skuberplus/messaging";
 
 export const computedChannelFeature = getFeature({
   id: "computed-channel",

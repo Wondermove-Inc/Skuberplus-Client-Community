@@ -4,7 +4,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Have a question about Skuber+ Client? Ask here and the community will help!
+        Have a question about K-Lens? Ask here and the community will help!
 
   - type: textarea
     id: question

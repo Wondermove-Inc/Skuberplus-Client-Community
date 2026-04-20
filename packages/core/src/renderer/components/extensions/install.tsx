@@ -9,11 +9,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Button } from "@k-lens/button";
+import { Icon } from "@k-lens/icon";
+import { TooltipPosition } from "@k-lens/tooltip";
+import { prevDefault } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Button } from "@skuberplus/button";
-import { Icon } from "@skuberplus/icon";
-import { TooltipPosition } from "@skuberplus/tooltip";
-import { prevDefault } from "@skuberplus/utilities";
 import { observer } from "mobx-react";
 import React, { useEffect, useRef, useState } from "react";
 import extensionInstallationStateStoreInjectable from "../../../extensions/extension-installation-state-store/extension-installation-state-store.injectable";

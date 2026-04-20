@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { clusterFrameChildComponentInjectionToken } from "@k-lens/react-application";
 import { pipeline } from "@ogre-tools/fp";
 import { getInjectable } from "@ogre-tools/injectable";
-import { clusterFrameChildComponentInjectionToken } from "@skuberplus/react-application";
 import { map } from "lodash/fp";
 import { extensionRegistratorInjectionToken } from "../../../extensions/extension-loader/extension-registrator-injection-token";
 

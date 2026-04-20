@@ -1,9 +1,9 @@
 {
-  "name": "@skuberplus/extensions",
-  "productName": "SkuberPlus extensions",
-  "description": "SkuberPlus - Free IDE for Kubernetes: extensions",
+  "name": "@k-lens/extensions",
+  "productName": "KLens extensions",
+  "description": "KLens - Free IDE for Kubernetes: extensions",
   "version": "1.5.4-0",
-  "copyright": "© 2024-2025 SkuberPlus Authors",
+  "copyright": "© 2024-2025 KLens Authors",
   "license": "MIT",
   "main": "dist/extension-api.js",
   "types": "dist/extension-api.d.ts",
@@ -13,7 +13,7 @@
     "dist/**/*.js"
   ],
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "publishConfig": {
@@ -26,7 +26,7 @@
     "clean:node_modules": "pnpm dlx rimraf@6.0.1 node_modules"
   },
   "dependencies": {
-    "@skuberplus/core": "workspace:^"
+    "@k-lens/core": "workspace:^"
   },
   "devDependencies": {
     "@types/node": "~22.16.5",

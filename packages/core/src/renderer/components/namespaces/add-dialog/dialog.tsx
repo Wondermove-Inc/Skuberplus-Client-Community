@@ -24,8 +24,8 @@
 
 import "./dialog.scss";
 
+import { Input } from "@k-lens/storybook-shadcn";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Input } from "@skuberplus/storybook-shadcn";
 import autoBindReact from "auto-bind/react";
 import { action, computed, makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
@@ -39,7 +39,7 @@ import { notificationPanelStore } from "../../status-bar/items/notification-pane
 import namespaceStoreInjectable from "../store.injectable";
 import addNamespaceDialogStateInjectable from "./state.injectable";
 
-import type { Namespace } from "@skuberplus/kube-object";
+import type { Namespace } from "@k-lens/kube-object";
 
 import type { IObservableValue } from "mobx";
 

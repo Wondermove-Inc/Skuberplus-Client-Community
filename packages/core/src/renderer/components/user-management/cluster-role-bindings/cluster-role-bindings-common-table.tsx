@@ -50,7 +50,7 @@ import { clusterRoleBindingColumns } from "./cluster-role-bindings-columns";
 import openClusterRoleBindingDialogInjectable from "./dialog/open.injectable";
 import clusterRoleBindingStoreInjectable from "./store.injectable";
 
-import type { ClusterRoleBinding } from "@skuberplus/kube-object";
+import type { ClusterRoleBinding } from "@k-lens/kube-object";
 
 import type { SubscribeStores } from "../../../kube-watch-api/kube-watch-api";
 import type { DockStore } from "../../dock/dock/store";

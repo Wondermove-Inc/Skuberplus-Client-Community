@@ -1,7 +1,7 @@
+import { onLoadOfApplicationInjectionToken } from "@k-lens/application";
 import { pipeline } from "@ogre-tools/fp";
 import { getInjectable } from "@ogre-tools/injectable";
 import { computedInjectManyInjectable } from "@ogre-tools/injectable-extension-for-mobx";
-import { onLoadOfApplicationInjectionToken } from "@skuberplus/application";
 import { filter, groupBy, map, nth, toPairs } from "lodash/fp";
 import { reaction } from "mobx";
 import { computedChannelObserverInjectionToken } from "./computed-channel.injectable";

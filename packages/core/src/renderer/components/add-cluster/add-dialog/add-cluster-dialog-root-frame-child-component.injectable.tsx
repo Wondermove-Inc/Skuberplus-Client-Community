@@ -18,8 +18,8 @@
  * 🔄 변경이력: 2025-11-20 - ClusterFrame에서 Dialog 표시 안 되는 버그 수정
  */
 
+import { rootFrameChildComponentInjectionToken } from "@k-lens/react-application";
 import { getInjectable } from "@ogre-tools/injectable";
-import { rootFrameChildComponentInjectionToken } from "@skuberplus/react-application";
 import { computed } from "mobx";
 import { AddClusterDialog } from "./view";
 

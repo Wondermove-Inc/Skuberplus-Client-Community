@@ -6,9 +6,9 @@
 
 import "./input.scss";
 
-import { Icon } from "@skuberplus/icon";
-import { Tooltip } from "@skuberplus/tooltip";
-import { cssNames, debouncePromise, isPromiseSettledFulfilled } from "@skuberplus/utilities";
+import { Icon } from "@k-lens/icon";
+import { Tooltip } from "@k-lens/tooltip";
+import { cssNames, debouncePromise, isPromiseSettledFulfilled } from "@k-lens/utilities";
 import autoBindReact from "auto-bind/react";
 import { debounce } from "lodash";
 import uniqueId from "lodash/uniqueId";
@@ -16,8 +16,8 @@ import React, { Component } from "react";
 import * as uuid from "uuid";
 import * as Validators from "./input_validators";
 
-import type { TooltipProps } from "@skuberplus/tooltip";
-import type { SingleOrMany, StrictReactNode } from "@skuberplus/utilities";
+import type { TooltipProps } from "@k-lens/tooltip";
+import type { SingleOrMany, StrictReactNode } from "@k-lens/utilities";
 
 import type { DOMAttributes, InputHTMLAttributes, TextareaHTMLAttributes } from "react";
 

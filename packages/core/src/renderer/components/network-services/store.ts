@@ -6,7 +6,7 @@
 
 import { KubeObjectStore } from "../../../common/k8s-api/kube-object.store";
 
-import type { ServiceApi } from "@skuberplus/kube-api";
-import type { Service } from "@skuberplus/kube-object";
+import type { ServiceApi } from "@k-lens/kube-api";
+import type { Service } from "@k-lens/kube-object";
 
 export class ServiceStore extends KubeObjectStore<Service, ServiceApi> {}

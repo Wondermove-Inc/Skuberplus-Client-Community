@@ -1,4 +1,4 @@
-# Skuber+ Client CI Pipeline
+# K-Lens CI Pipeline
 # Runs on pull requests and pushes to main
 
 name: CI

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { deploymentDetailsMetricsInjectionToken } from "@k-lens/metrics";
 import { getInjectable } from "@ogre-tools/injectable";
-import { deploymentDetailsMetricsInjectionToken } from "@skuberplus/metrics";
 import { ClusterMetricsResourceType } from "../../../../../common/cluster-types";
 import { kubeObjectDetailItemInjectionToken } from "../kube-object-detail-item-injection-token";
 import { getMetricsKubeObjectDetailItemInjectable } from "./get-metrics-kube-object-detail-item.injectable";

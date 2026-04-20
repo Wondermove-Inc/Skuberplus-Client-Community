@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { KubeObject } from "@k-lens/kube-object";
 import { getInjectable } from "@ogre-tools/injectable";
-import { KubeObject } from "@skuberplus/kube-object";
 import apiManagerInjectable from "../../../common/k8s-api/api-manager/manager.injectable";
 import hostedClusterInjectable from "../../cluster-frame-context/hosted-cluster.injectable";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";

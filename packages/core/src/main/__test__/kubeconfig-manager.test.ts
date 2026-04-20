@@ -5,7 +5,7 @@
  */
 
 import asyncFn from "@async-fn/jest";
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { loggerInjectionToken } from "@k-lens/logger";
 import directoryForTempInjectable from "../../common/app-paths/directory-for-temp/directory-for-temp.injectable";
 import directoryForUserDataInjectable from "../../common/app-paths/directory-for-user-data/directory-for-user-data.injectable";
 import { Cluster } from "../../common/cluster/cluster";
@@ -24,7 +24,7 @@ import kubectlBinaryNameInjectable from "../kubectl/binary-name.injectable";
 import kubectlDownloadingNormalizedArchInjectable from "../kubectl/normalized-arch.injectable";
 import lensProxyPortInjectable from "../lens-proxy/lens-proxy-port.injectable";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { AsyncFnMock } from "@async-fn/jest";
 import type { DiContainer } from "@ogre-tools/injectable";

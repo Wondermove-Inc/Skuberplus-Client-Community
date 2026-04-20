@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { observableHistoryInjectionToken } from "@k-lens/routing";
 import { getInjectable } from "@ogre-tools/injectable";
-import { observableHistoryInjectionToken } from "@skuberplus/routing";
 import getDetailsUrlInjectable from "./get-details-url.injectable";
 
 /**

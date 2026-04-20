@@ -8,7 +8,7 @@
  * 🎯 목적: 메인 Hotbar 아이템 생성 Injectable
  *
  * 주요 기능:
- * - Explorer와 Skuber+ Observability 아이템 생성
+ * - Explorer와 k-o11y 아이템 생성
  * - MobX computed로 자동 반응성 제공
  *
  * 🔄 변경이력:
@@ -28,7 +28,7 @@ import type { HotbarItem } from "./hotbar";
  * @returns MobX computed - Hotbar 아이템 배열 (자동 반응성)
  *
  * 📝 동작:
- * - Explorer와 Skuber+ Observability 기본 아이템 반환
+ * - Explorer와 k-o11y 기본 아이템 반환
  */
 const hotbarItemsInjectable = getInjectable({
   id: "main-hotbar-items",
@@ -44,7 +44,7 @@ const hotbarItemsInjectable = getInjectable({
         {
           id: "skuber-observability",
           icon: Telescope,
-          label: "Skuber⁺ Observability",
+          label: "k-o11y",
         },
       ];
     });

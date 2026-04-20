@@ -9,8 +9,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { action, computed, makeObservable, observable, reaction, runInAction, when } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";
@@ -40,7 +40,7 @@ import onCatalogEntityListClickInjectable from "./entity-details/on-catalog-clic
 import showEntityDetailsInjectable from "./entity-details/show.injectable";
 import { HotbarToggleMenuItem } from "./hotbar-toggle-menu-item";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { IComputedValue } from "mobx";
 

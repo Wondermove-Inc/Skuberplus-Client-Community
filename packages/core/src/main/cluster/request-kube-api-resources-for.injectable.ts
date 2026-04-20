@@ -7,8 +7,8 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import k8sRequestInjectable from "../k8s-request.injectable";
 
-import type { V1APIResourceList } from "@skuberplus/kubernetes-client-node";
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { V1APIResourceList } from "@k-lens/kubernetes-client-node";
+import type { AsyncResult } from "@k-lens/utilities";
 
 import type { Cluster } from "../../common/cluster/cluster";
 import type { KubeApiResource } from "../../common/rbac";

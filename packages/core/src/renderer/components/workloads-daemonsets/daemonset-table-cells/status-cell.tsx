@@ -7,7 +7,7 @@
 import React from "react";
 import { KubeObjectStatusIcon } from "../../kube-object-status-icon";
 
-import type { DaemonSet } from "@skuberplus/kube-object";
+import type { DaemonSet } from "@k-lens/kube-object";
 
 /**
  * 🎯 목적: DaemonSet의 상태 아이콘 표시

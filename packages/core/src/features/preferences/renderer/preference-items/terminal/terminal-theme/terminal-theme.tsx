@@ -28,7 +28,7 @@ const NonInjectedTerminalTheme = observer(({ state }: Dependencies) => {
   const themeOptions = [
     {
       value: "", // TODO: replace with a sentinel value that isn't string (and serialize it differently)
-      label: "Match SkuberPlus Theme",
+      label: "Match K-Lens Theme",
     },
     ...availableThemes.map((theme) => ({
       value: theme.name,

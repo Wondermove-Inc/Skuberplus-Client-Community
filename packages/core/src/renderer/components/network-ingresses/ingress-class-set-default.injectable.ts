@@ -4,11 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { ingressClassApiInjectable } from "@k-lens/kube-api-specifics";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
-import { ingressClassApiInjectable } from "@skuberplus/kube-api-specifics";
 import ingressClassStoreInjectable from "./ingress-class-store.injectable";
 
-import type { IngressClass } from "@skuberplus/kube-object";
+import type { IngressClass } from "@k-lens/kube-object";
 
 export const ingressClassSetDefaultInjectable = getInjectable({
   id: "ingressClassSetDefaultInjectable",

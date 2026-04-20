@@ -9,7 +9,7 @@
  *
  * ✨ 특징:
  * - VS Code Activity Bar 스타일 (3rem 고정 폭)
- * - Explorer → Skuber+ Ecosystem 순서의 단일 아이콘 그룹
+ * - Explorer → K-Lens Ecosystem 순서의 단일 아이콘 그룹
  * - 좌측 인디케이터, Badge, 이미지 아이콘, 텍스트 아이콘 지원
  * - 하단 Settings 푸터
  *
@@ -65,7 +65,7 @@ interface HotbarProps {
 }
 
 /**
- * 🎯 목적: 기본 메인 아이콘 목록 (Explorer → Skuber+)
+ * 🎯 목적: 기본 메인 아이콘 목록 (Explorer → K-Lens)
  */
 const defaultHotbarItems: HotbarItem[] = [
   {
@@ -83,17 +83,17 @@ const defaultHotbarItems: HotbarItem[] = [
   {
     id: "skuber-observability",
     icon: CircleGauge,
-    label: "Skuber⁺ Observability",
+    label: "k-o11y",
   },
   // {
   //   id: "skuber-management",
   //   icon: FolderKanban,
-  //   label: "Updated Soon Skuber+ Management",
+  //   label: "Updated Soon K-Lens Management",
   // },
   // {
   //   id: "skuber-optimization",
   //   icon: Server,
-  //   label: "Updated Soon Skuber+ Optimization",
+  //   label: "Updated Soon K-Lens Optimization",
   // },
 ];
 

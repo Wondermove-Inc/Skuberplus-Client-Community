@@ -8,7 +8,7 @@ import React from "react";
 import { HorizontalLine } from "../../../../renderer/components/horizontal-line/horizontal-line";
 import styles from "./preference-tab-root.module.scss";
 
-import type { Orderable } from "@skuberplus/utilities";
+import type { Orderable } from "@k-lens/utilities";
 
 import type { Discriminable } from "../../../../common/utils/composable-responsibilities/discriminable/discriminable";
 import type { RootComposite } from "../../../../common/utils/composite/interfaces";

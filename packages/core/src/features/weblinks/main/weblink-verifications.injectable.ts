@@ -7,7 +7,7 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import { observable } from "mobx";
 
-import type { Disposer } from "@skuberplus/utilities";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { WebLink } from "../../../common/catalog-entities";
 

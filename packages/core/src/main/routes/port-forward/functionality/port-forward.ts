@@ -14,7 +14,7 @@ import type { ChildProcessWithoutNullStreams } from "child_process";
 // 동시 여러 포트 포워딩 허용하되 과도한 fd 소모 방지
 const portForwardLimit = pLimit(10);
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { GetPortFromStream } from "../../../utils/get-port-from-stream.injectable";
 

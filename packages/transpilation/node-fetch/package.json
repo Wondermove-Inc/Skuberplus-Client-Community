@@ -1,7 +1,7 @@
 {
-  "name": "@skuberplus/node-fetch",
+  "name": "@k-lens/node-fetch",
   "version": "1.5.4-0",
-  "description": "Node fetch for SkuberPlus",
+  "description": "Node fetch for KLens",
   "license": "MIT",
   "private": false,
   "publishConfig": {
@@ -20,7 +20,7 @@
     "build": "webpack"
   },
   "devDependencies": {
-    "@skuberplus/typescript": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
     "node-fetch": "^3.3.2",
     "ts-loader": "^9.5.4",
     "typescript": "^5.9.2",

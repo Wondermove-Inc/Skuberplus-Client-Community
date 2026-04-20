@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Icon } from "@k-lens/icon";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
 import { observer } from "mobx-react";
 import React from "react";
 import { checkThatAllDiscriminablesAreExhausted } from "../../../../common/utils/composable-responsibilities/discriminable/discriminable";

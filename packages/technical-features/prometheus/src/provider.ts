@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { isRequestError } from "@k-lens/utilities";
 import { getInjectionToken } from "@ogre-tools/injectable";
-import { isRequestError } from "@skuberplus/utilities";
 
-import type { CoreV1Api } from "@skuberplus/kubernetes-client-node";
+import type { CoreV1Api } from "@k-lens/kubernetes-client-node";
 
 export interface PrometheusService extends PrometheusServiceInfo {
   kind: string;

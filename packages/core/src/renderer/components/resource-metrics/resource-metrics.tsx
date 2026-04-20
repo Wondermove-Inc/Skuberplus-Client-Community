@@ -6,15 +6,15 @@
 
 import "./resource-metrics.scss";
 
-import { Spinner } from "@skuberplus/spinner";
-import { ToggleGroup, ToggleGroupItem } from "@skuberplus/storybook-shadcn/src/components/ui/toggle-group";
-import { cssNames } from "@skuberplus/utilities";
+import { Spinner } from "@k-lens/spinner";
+import { ToggleGroup, ToggleGroupItem } from "@k-lens/storybook-shadcn/src/components/ui/toggle-group";
+import { cssNames } from "@k-lens/utilities";
 import { isComputed } from "mobx";
 import { observer } from "mobx-react-lite";
 import { now } from "mobx-utils";
 import React, { createContext, useState } from "react";
 
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeObject } from "@k-lens/kube-object";
 
 import type { IAsyncComputed } from "@ogre-tools/injectable-react";
 

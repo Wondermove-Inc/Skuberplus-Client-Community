@@ -8,7 +8,7 @@ import autoBind from "auto-bind";
 import uniqueId from "lodash/uniqueId";
 import { action, makeObservable, observable } from "mobx";
 
-import type { JsonApiErrorParsed } from "@skuberplus/json-api";
+import type { JsonApiErrorParsed } from "@k-lens/json-api";
 
 import type React from "react";
 import type { SetRequired } from "type-fest";

@@ -6,8 +6,8 @@
  * @module renderer/kubectl/apply-file
  */
 
+import { requestFromChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { requestFromChannelInjectionToken } from "@skuberplus/messaging";
 import {
   type KubectlFileRequest,
   type KubectlFileResponse,

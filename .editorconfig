@@ -8,6 +8,6 @@ end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[skuberplus/build/*-deb.sh]
+[k-lens/build/*-deb.sh]
 indent_style = tab
 indent_size = 8

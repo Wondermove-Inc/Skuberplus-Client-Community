@@ -10,8 +10,8 @@ import execHelmInjectable from "../../exec-helm/exec-helm.injectable";
 import execFileWithInputInjectable from "./call-for-kube-resources-by-manifest/exec-file-with-input/exec-file-with-input.injectable";
 import getHelmReleaseResourcesInjectable from "./get-helm-release-resources.injectable";
 
-import type { KubeJsonApiData } from "@skuberplus/kube-object";
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { KubeJsonApiData } from "@k-lens/kube-object";
+import type { AsyncResult } from "@k-lens/utilities";
 
 import type { AsyncFnMock } from "@async-fn/jest";
 

@@ -6,14 +6,14 @@
 
 import "./runtime-classes.scss";
 
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 // 🎯 shadcn UI 컴포넌트: DrawerItem 대체
-import { DetailPanelField } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { DetailPanelField } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 import { RuntimeClassDetailsTolerations } from "./runtime-classes-details-tolerations";
 
-import type { RuntimeClass } from "@skuberplus/kube-object";
+import type { RuntimeClass } from "@k-lens/kube-object";
 
 import type { KubeObjectDetailsProps } from "../kube-object-details";
 

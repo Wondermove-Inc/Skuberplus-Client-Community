@@ -6,13 +6,13 @@
 
 import "./editable-list.scss";
 
-import { Icon } from "@skuberplus/icon";
+import { Icon } from "@k-lens/icon";
 import autoBindReact from "auto-bind/react";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 import { Input } from "../input";
 
-import type { SingleOrMany, StrictReactNode } from "@skuberplus/utilities";
+import type { SingleOrMany, StrictReactNode } from "@k-lens/utilities";
 
 import type { InputProps, InputValidator } from "../input";
 

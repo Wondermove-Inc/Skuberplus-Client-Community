@@ -16,7 +16,7 @@
  * - 2025-10-30: 초기 생성 (TanStack Table 컬럼 정의, Pod 패턴 참조)
  */
 
-import { Button, Checkbox } from "@skuberplus/storybook-shadcn";
+import { Button, Checkbox } from "@k-lens/storybook-shadcn";
 import { AlertTriangle, ArrowUpDown } from "lucide-react";
 import React from "react";
 import { KubeObjectAge } from "../kube-object/age";
@@ -29,7 +29,7 @@ import { StatusCell } from "./job-table-cells/status-cell";
 // Status 로직 재사용
 import { getStatusText } from "./job-utils";
 
-import type { Job } from "@skuberplus/kube-object";
+import type { Job } from "@k-lens/kube-object";
 
 import type { ColumnDef } from "@tanstack/react-table";
 

@@ -10,7 +10,7 @@ import helmBinaryPathInjectable from "../helm-binary-path.injectable";
 import execHelmEnvInjectable from "./exec-env.injectable";
 import type { ExecFileException } from "child_process";
 
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { AsyncResult } from "@k-lens/utilities";
 
 export type ExecHelm = (args: string[]) => AsyncResult<string, ExecFileException & { stderr: string }>;
 

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { sidebarItemInjectionToken } from "@k-lens/cluster-sidebar";
 import { getInjectable } from "@ogre-tools/injectable";
-import { sidebarItemInjectionToken } from "@skuberplus/cluster-sidebar";
 import { Waypoints } from "lucide-react";
 import React from "react";
 import portForwardsRouteInjectable from "../../../common/front-end-routing/routes/cluster/network/port-forwards/port-forwards-route.injectable";

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { observableHistoryInjectionToken } from "@k-lens/routing";
 import { getInjectable } from "@ogre-tools/injectable";
-import { observableHistoryInjectionToken } from "@skuberplus/routing";
 import { runInAction } from "mobx";
 import { navigateToUrlInjectionToken } from "../../common/front-end-routing/navigate-to-url-injection-token";
 import broadcastMessageInjectable from "../../common/ipc/broadcast-message.injectable";

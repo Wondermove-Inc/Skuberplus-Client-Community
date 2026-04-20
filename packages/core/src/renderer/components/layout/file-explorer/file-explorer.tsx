@@ -551,7 +551,7 @@ const FileExplorerInternal = observer(function FileExplorerInternal({
         // Windows/Linux: HTML5 DnD 유지
         // Windows: OLE DnD가 블록킹 → HTML5 drop 차단
         // Linux: GTK DnD가 블록킹 → HTML5 drop 차단
-        e.dataTransfer.setData("application/x-skuberplus-path", entry.path);
+        e.dataTransfer.setData("application/x-k-lens-path", entry.path);
         e.dataTransfer.effectAllowed = "copyMove";
         // DownloadURL: Chrome/Electron이 앱 밖으로 드래그 시 OS에 파일 전달 (VS Code 동일 패턴)
         // 📝 폴더는 DownloadURL 미지원 (VS Code도 동일 한계)
@@ -577,7 +577,7 @@ const FileExplorerInternal = observer(function FileExplorerInternal({
 
       // 외부 파일 드래그 감지
       // Windows HTML5 DnD: 커스텀 MIME 타입으로도 내부 드래그 식별
-      const hasInternalData = e.dataTransfer.types.includes("application/x-skuberplus-path");
+      const hasInternalData = e.dataTransfer.types.includes("application/x-k-lens-path");
       if (e.dataTransfer.types.includes("Files") && !store.dragSourcePath && !hasInternalData) {
         store.setExternalDrag(true);
         e.dataTransfer.dropEffect = "copy";
@@ -625,7 +625,7 @@ const FileExplorerInternal = observer(function FileExplorerInternal({
       const targetDir = entry.isDirectory ? entry.path : entry.path.substring(0, entry.path.lastIndexOf("/"));
 
       // 🆕 Windows HTML5 DnD 내부 드래그 우선 처리
-      const html5Path = e.dataTransfer.getData("application/x-skuberplus-path");
+      const html5Path = e.dataTransfer.getData("application/x-k-lens-path");
       if (html5Path && store.dragSourcePath) {
         const result = await store.moveEntry(store.dragSourcePath, targetDir);
         if (result === "dest_exists") {
@@ -720,7 +720,7 @@ const FileExplorerInternal = observer(function FileExplorerInternal({
 
       // 외부 파일 드래그 감지
       // Windows HTML5 DnD: 커스텀 MIME 타입으로도 내부 드래그 식별
-      const hasInternalData = e.dataTransfer.types.includes("application/x-skuberplus-path");
+      const hasInternalData = e.dataTransfer.types.includes("application/x-k-lens-path");
       if (e.dataTransfer.types.includes("Files") && !store.dragSourcePath && !hasInternalData) {
         store.setExternalDrag(true);
         e.dataTransfer.dropEffect = "copy";
@@ -746,7 +746,7 @@ const FileExplorerInternal = observer(function FileExplorerInternal({
       const targetDir = store.rootPath;
 
       // 🆕 Windows HTML5 DnD 내부 드래그 우선 처리
-      const html5Path = e.dataTransfer.getData("application/x-skuberplus-path");
+      const html5Path = e.dataTransfer.getData("application/x-k-lens-path");
       if (html5Path && store.dragSourcePath) {
         const result = await store.moveEntry(store.dragSourcePath, targetDir);
         if (result === "dest_exists") {

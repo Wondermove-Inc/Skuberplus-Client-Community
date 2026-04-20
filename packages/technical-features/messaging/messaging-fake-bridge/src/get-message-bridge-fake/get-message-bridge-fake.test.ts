@@ -1,8 +1,6 @@
 import asyncFn, { AsyncFnMock } from "@async-fn/jest";
-import { createContainer, DiContainer, Injectable } from "@ogre-tools/injectable";
-import { registerMobX } from "@ogre-tools/injectable-extension-for-mobx";
-import { startApplicationInjectionToken } from "@skuberplus/application";
-import { registerFeature } from "@skuberplus/feature-core";
+import { startApplicationInjectionToken } from "@k-lens/application";
+import { registerFeature } from "@k-lens/feature-core";
 import {
   getMessageChannel,
   getMessageChannelListenerInjectable,
@@ -13,8 +11,10 @@ import {
   requestFromChannelInjectionToken,
   sendMessageToChannelInjectionToken,
   testUtils,
-} from "@skuberplus/messaging";
-import { getPromiseStatus } from "@skuberplus/test-utils";
+} from "@k-lens/messaging";
+import { getPromiseStatus } from "@k-lens/test-utils";
+import { createContainer, DiContainer, Injectable } from "@ogre-tools/injectable";
+import { registerMobX } from "@ogre-tools/injectable-extension-for-mobx";
 import { runInAction } from "mobx";
 import { getMessageBridgeFake } from "./get-message-bridge-fake";
 

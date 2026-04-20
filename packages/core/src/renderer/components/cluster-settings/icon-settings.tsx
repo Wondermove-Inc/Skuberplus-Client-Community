@@ -4,12 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { computedInjectManyInjectable } from "@ogre-tools/injectable-extension-for-mobx";
-import { withInjectables } from "@ogre-tools/injectable-react";
 import {
   clusterIconSettingsComponentInjectionToken,
   clusterIconSettingsMenuInjectionToken,
-} from "@skuberplus/cluster-settings";
+} from "@k-lens/cluster-settings";
+import { computedInjectManyInjectable } from "@ogre-tools/injectable-extension-for-mobx";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { observer } from "mobx-react";
 import React from "react";
 import { Avatar } from "../avatar";
@@ -17,7 +17,7 @@ import { FilePicker, OverSizeLimitStyle } from "../file-picker";
 import { MenuActions, MenuItem } from "../menu";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 
-import type { ClusterIconMenuItem, ClusterIconSettingsComponent } from "@skuberplus/cluster-settings";
+import type { ClusterIconMenuItem, ClusterIconSettingsComponent } from "@k-lens/cluster-settings";
 
 import type { IComputedValue } from "mobx";
 

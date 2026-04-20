@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { sidebarItemInjectionToken } from "@k-lens/cluster-sidebar";
+import { noop } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { sidebarItemInjectionToken } from "@skuberplus/cluster-sidebar";
-import { noop } from "@skuberplus/utilities";
 
 const customResourcesSidebarItemInjectable = getInjectable({
   id: "sidebar-item-custom-resources",

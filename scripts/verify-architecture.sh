@@ -52,17 +52,17 @@ echo "  📝 참고: 빌드 도구용 모듈(lightningcss, tailwindcss 등)은 x
 echo ""
 
 # 🎯 패키징된 앱 검증 (존재하는 경우)
-if [ -d "skuberplus/dist/mac-arm64/DAIVE.app" ]; then
+if [ -d "k-lens/dist/mac-arm64/DAIVE.app" ]; then
   echo "📦 패키징된 앱 검증:"
 
   # pty.node 검증
-  PACKAGED_PTY="skuberplus/dist/mac-arm64/DAIVE.app/Contents/Resources/node_modules/node-pty/build/Release/pty.node"
+  PACKAGED_PTY="k-lens/dist/mac-arm64/DAIVE.app/Contents/Resources/node_modules/node-pty/build/Release/pty.node"
   if [ -f "$PACKAGED_PTY" ]; then
     if file "$PACKAGED_PTY" | grep -q "arm64"; then
       echo "  ✅ 패키징된 pty.node: arm64 (정상)"
     else
       echo "  ❌ 패키징된 pty.node: x86_64 (ARM Mac에서는 arm64가 필요합니다)"
-      echo "  🔧 해결 방법: pnpm electron-rebuild --arch=arm64 && cd skuberplus && pnpm dlx electron-builder --publish never --macos --arm64"
+      echo "  🔧 해결 방법: pnpm electron-rebuild --arch=arm64 && cd k-lens && pnpm dlx electron-builder --publish never --macos --arm64"
       exit 1
     fi
   else
@@ -70,7 +70,7 @@ if [ -d "skuberplus/dist/mac-arm64/DAIVE.app" ]; then
   fi
 
   # 메인 바이너리 검증
-  MAIN_BINARY="skuberplus/dist/mac-arm64/DAIVE.app/Contents/MacOS/DAIVE"
+  MAIN_BINARY="k-lens/dist/mac-arm64/DAIVE.app/Contents/MacOS/DAIVE"
   if [ -f "$MAIN_BINARY" ]; then
     if file "$MAIN_BINARY" | grep -q "arm64"; then
       echo "  ✅ 메인 바이너리: arm64 (정상)"

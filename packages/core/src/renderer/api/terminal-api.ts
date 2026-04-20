@@ -12,7 +12,7 @@ import url from "url";
 import { TerminalChannels, type TerminalMessage } from "../../common/terminal/channels";
 import { WebSocketApi } from "./websocket-api";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { WebSocketApiDependencies, WebSocketEvents } from "./websocket-api";
 

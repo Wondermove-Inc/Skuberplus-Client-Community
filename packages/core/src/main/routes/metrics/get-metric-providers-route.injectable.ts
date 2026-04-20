@@ -9,7 +9,7 @@ import prometheusProvidersInjectable from "../../prometheus/providers.injectable
 import { route } from "../../router/route";
 import { getRouteInjectable } from "../../router/router.injectable";
 
-import type { PrometheusProvider } from "@skuberplus/prometheus";
+import type { PrometheusProvider } from "@k-lens/prometheus";
 
 const getMetricProvidersRouteInjectable = getRouteInjectable({
   id: "get-metric-providers-route",

@@ -8,8 +8,8 @@
  * @module main/wsl/setup-wsl-handlers
  */
 
+import { afterApplicationIsLoadedInjectionToken } from "@k-lens/application";
 import { getInjectable } from "@ogre-tools/injectable";
-import { afterApplicationIsLoadedInjectionToken } from "@skuberplus/application";
 import { ipcMainHandle } from "../../common/ipc";
 import { wslChannels } from "../../common/ipc/wsl";
 import wslServiceInjectable from "./wsl-service.injectable";

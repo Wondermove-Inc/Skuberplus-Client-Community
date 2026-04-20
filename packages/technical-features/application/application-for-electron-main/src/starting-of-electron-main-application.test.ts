@@ -1,8 +1,8 @@
 import asyncFn, { AsyncFnMock } from "@async-fn/jest";
+import { beforeApplicationIsLoadingInjectionToken, startApplicationInjectionToken } from "@k-lens/application";
+import { registerFeature } from "@k-lens/feature-core";
+import { runManyFor, runManySyncFor } from "@k-lens/run-many";
 import { createContainer, DiContainer, getInjectable } from "@ogre-tools/injectable";
-import { beforeApplicationIsLoadingInjectionToken, startApplicationInjectionToken } from "@skuberplus/application";
-import { registerFeature } from "@skuberplus/feature-core";
-import { runManyFor, runManySyncFor } from "@skuberplus/run-many";
 import { applicationFeatureForElectronMain } from "./feature";
 import * as timeSlots from "./start-application/time-slots";
 import whenAppIsReadyInjectable from "./start-application/when-app-is-ready.injectable";

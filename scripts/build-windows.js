@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 /**
- * Purpose: Build SkuberPlus on Windows without corepack or arch wrappers.
+ * Purpose: Build K-Lens on Windows without corepack or arch wrappers.
  * Notes:
  * - Runs workspace builds directly with pnpm.
- * - Builds @skuberplus/webpack first to provide lens-webpack-build.
+ * - Builds @k-lens/webpack first to provide lens-webpack-build.
  */
 
 const { spawnSync } = require("child_process");
@@ -33,20 +33,20 @@ console.log("Windows build start");
 console.log("1) Check Node.js version");
 run("node", ["scripts/check-node-version.js"]);
 
-console.log("2) Build @skuberplus/webpack first");
-run("pnpm", ["--filter", "@skuberplus/webpack", "build"], {
+console.log("2) Build @k-lens/webpack first");
+run("pnpm", ["--filter", "@k-lens/webpack", "build"], {
   env: { NODE_ENV: "production" },
 });
 
 console.log("3) Build remaining workspaces (exclude root)");
-run("pnpm", ["-r", "--filter", "!skuberplus-client", "build"], {
+run("pnpm", ["-r", "--filter", "!k-lens", "build"], {
   env: { NODE_ENV: "production" },
 });
 
-console.log("4) Build SkuberPlus app bundle");
+console.log("4) Build K-Lens app bundle");
 run("pnpm", ["build"], {
   env: { NODE_ENV: "production" },
-  cwd: path.join(projectRoot, "skuberplus"),
+  cwd: path.join(projectRoot, "k-lens"),
 });
 
 console.log("Windows build complete");

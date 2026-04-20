@@ -6,8 +6,8 @@
 
 import "./react-table.scss";
 
-import { Icon } from "@skuberplus/icon";
-import { cssNames } from "@skuberplus/utilities";
+import { Icon } from "@k-lens/icon";
+import { cssNames } from "@k-lens/utilities";
 import React, { useCallback, useMemo } from "react";
 import { useFlexLayout, useSortBy, useTable } from "react-table";
 

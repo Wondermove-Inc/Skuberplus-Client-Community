@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { formatDuration } from "@skuberplus/utilities";
+import { formatDuration } from "@k-lens/utilities";
 import moment from "moment";
 import { KubeObject } from "../kube-object";
 

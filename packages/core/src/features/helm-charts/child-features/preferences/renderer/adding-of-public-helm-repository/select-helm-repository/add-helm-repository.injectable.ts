@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { requestFromChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { requestFromChannelInjectionToken } from "@skuberplus/messaging";
 import { addHelmRepositoryChannel } from "../../../../../../../common/helm/add-helm-repository-channel";
 import { notificationPanelStore } from "../../../../../../../renderer/components/status-bar/items/notification-panel.store";
 import activeHelmRepositoriesInjectable from "../../active-helm-repositories.injectable";

@@ -17,8 +17,8 @@
  * - 2025-10-29: 메트릭 전처리 방식으로 변경 (성능 최적화)
  */
 
-import { Button, Checkbox } from "@skuberplus/storybook-shadcn";
-import { bytesToUnits } from "@skuberplus/utilities";
+import { Button, Checkbox } from "@k-lens/storybook-shadcn";
+import { bytesToUnits } from "@k-lens/utilities";
 import { ArrowUpDown } from "lucide-react";
 import React from "react";
 import { KubeObjectAge } from "../kube-object/age";
@@ -27,7 +27,7 @@ import { ContainersCell } from "./pod-table-cells/containers-cell";
 import { NamespaceCell } from "./pod-table-cells/namespace-cell";
 import { StatusCell } from "./pod-table-cells/status-cell";
 
-import type { Pod } from "@skuberplus/kube-object";
+import type { Pod } from "@k-lens/kube-object";
 
 import type { ColumnDef } from "@tanstack/react-table";
 

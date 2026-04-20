@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import openLinkInBrowserInjectable from "../../common/utils/open-link-in-browser.injectable";
 import { notificationPanelStore } from "../components/status-bar/items/notification-panel.store";
 import { portForwardAddress } from "./port-forward-utils";

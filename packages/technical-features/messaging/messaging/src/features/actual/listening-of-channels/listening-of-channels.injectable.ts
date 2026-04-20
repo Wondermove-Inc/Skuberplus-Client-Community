@@ -1,6 +1,6 @@
+import { getStartableStoppable, type StartableStoppable } from "@k-lens/startable-stoppable";
 import { getInjectable, getInjectionToken } from "@ogre-tools/injectable";
 import { computedInjectManyInjectable } from "@ogre-tools/injectable-extension-for-mobx";
-import { getStartableStoppable, type StartableStoppable } from "@skuberplus/startable-stoppable";
 import { type IComputedValue, reaction } from "mobx";
 import { enlistMessageChannelListenerInjectionToken } from "../message/enlist-message-channel-listener-injection-token";
 import {

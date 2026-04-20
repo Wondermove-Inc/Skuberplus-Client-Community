@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { bundledExtensionInjectionToken } from "@k-lens/legacy-extensions";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { bundledExtensionInjectionToken } from "@skuberplus/legacy-extensions";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import getDirnameOfPathInjectable from "../../common/path/get-dirname.injectable";
 import joinPathsInjectable from "../../common/path/join-paths.injectable";
 import updateExtensionsStateInjectable from "../../features/extensions/enabled/common/update-state.injectable";

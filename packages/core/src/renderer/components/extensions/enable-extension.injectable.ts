@@ -8,7 +8,7 @@ import { getInjectable } from "@ogre-tools/injectable";
 import extensionLoaderInjectable from "../../../extensions/extension-loader/extension-loader.injectable";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 
-import type { LensExtensionId } from "@skuberplus/legacy-extensions";
+import type { LensExtensionId } from "@k-lens/legacy-extensions";
 
 export type EnableExtension = (extId: LensExtensionId) => void;
 

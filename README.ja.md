@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="skuberplus/build/icons/128x128.png" alt="Skuber+ Logo" width="128" height="128">
+  <img src="k-lens/build/icons/128x128.png" alt="K-Lens Logo" width="128" height="128">
 </p>
 
-<h1 align="center">Skuber+ Client</h1>
+<h1 align="center">K-Lens</h1>
 
 <p align="center">
   <strong>AI駆動型 Kubernetes管理デスクトップIDE</strong>
@@ -24,9 +24,22 @@
 
 ---
 
-## はじめに
+## K-Lensとは？
 
-**Skuber+ Client** は、Kubernetesクラスターを直感的に管理するためのデスクトップIDEです。[Open Lens](https://github.com/lensapp/lens) をベースに、AI診断、SRE自動化、リアルタイムモニタリング、エンタープライズ向け機能を追加しています。
+> `kubectl`がCLIなら、**K-Lensはコックピットです。**
+
+K-Lensは、Kubernetes管理をターミナルの切り替え作業から、ビジュアルでAIアシスト付きのワークフローに変えます — クラスター接続、障害診断、修正適用まで、すべてデスクトップアプリ一つで完結します。
+
+[Open Lens](https://github.com/lensapp/lens) をベースに、AI SRE診断、セキュリティスキャン、リアルタイムObservabilityを強化しています。
+
+### なぜK-Lensか？
+
+| K-Lensなし | K-Lensあり |
+|------------|-----------|
+| 複数のターミナルでkubectlを繰り返し | 単一UIでマルチクラスター管理 |
+| 障害原因を手動分析（logs + describe） | AIが自動診断 + 解決策を提案 |
+| CVEスキャンと結果解析が別々 | ワンクリックセキュリティスキャン + AI自動修正提案 |
+| Helm、YAML、モニタリングツールが分散 | 一つのIDEに統合 |
 
 ### 主な機能
 
@@ -40,9 +53,13 @@
 | **Helm Chart管理** | Helmリリースのインストール、アップグレード、ロールバック |
 | **リソースエディタ** | Monaco Editorベースのリアルタイム適用対応YAMLエディタ |
 
+### デモ
+
+https://github.com/user-attachments/assets/f60be8d6-dd8a-464b-9e55-bf43d8f68680
+
 ---
 
-## クイックスタート
+## クイックスタート (macOS / Linux)
 
 ### 前提条件
 
@@ -55,7 +72,7 @@
 ```bash
 # 1. リポジトリをクローン
 git clone https://github.com/Wondermove-Inc/Skuberplus-Client-Community.git
-cd skuberplus-client
+cd k-lens
 
 # 2. 依存関係のインストール（ネイティブモジュールのリビルドが自動実行されます）
 pnpm install
@@ -68,6 +85,8 @@ pnpm dev
 ```
 
 > **備考**: `pnpm install` を実行すると、Electronネイティブモジュールのリビルドが自動的に行われます。
+
+> **Windows**: ネイティブモジュールのビルドに追加手順が必要です。[プラットフォームビルド > Windows](#windows-x64)を参照してください。
 
 > **Node.jsバージョン**: v22（LTS）とv24+（LTS）をサポートしています。v23も`.npmrc`設定（`--no-experimental-strip-types`）により対応しています。
 
@@ -85,7 +104,7 @@ pnpm build:full:app
 pnpm build              # ソースビルド
 pnpm build:app          # アプリパッケージング（ARM64）
 
-# 出力先: skuberplus/dist/mac-arm64/SkuberPlus.app
+# 出力先: k-lens/dist/mac-arm64/KLens.app
 ```
 
 ### macOS (Intel x64)
@@ -97,7 +116,7 @@ pnpm build:full:x64
 # 2. x64アプリパッケージングのみ（ソースビルド済みの場合）
 pnpm build:app:darwin:x64
 
-# 出力先: skuberplus/dist/mac/SkuberPlus.app
+# 出力先: k-lens/dist/mac/KLens.app
 ```
 
 ### Linux
@@ -107,10 +126,10 @@ pnpm build:app:darwin:x64
 pnpm build
 
 # 2. アプリパッケージング
-cd skuberplus
+cd k-lens
 pnpm build:app:linux
 
-# 出力先: skuberplus/dist/linux-unpacked/
+# 出力先: k-lens/dist/linux-unpacked/
 ```
 
 ### Windows (x64)
@@ -145,7 +164,7 @@ pnpm run build:win
 # 6. アプリパッケージング
 node scripts/build-windows-app.js
 
-# 出力先: skuberplus/dist/<version>/SkuberPlusClient-<version>-x64.exe
+# 出力先: k-lens/dist/<version>/KLens-<version>-x64.exe
 ```
 
 > **`--ignore-scripts` を使う理由**
@@ -166,10 +185,10 @@ node scripts/build-windows-app.js
 
 | プラットフォーム | パス |
 |------------------|------|
-| macOS (ARM64) | `skuberplus/dist/mac-arm64/SkuberPlus.app` |
-| macOS (x64) | `skuberplus/dist/mac/SkuberPlus.app` |
-| Linux | `skuberplus/dist/linux-unpacked/` |
-| Windows | `skuberplus/dist/<version>/SkuberPlusClient-<version>-x64.exe` |
+| macOS (ARM64) | `k-lens/dist/mac-arm64/KLens.app` |
+| macOS (x64) | `k-lens/dist/mac/KLens.app` |
+| Linux | `k-lens/dist/linux-unpacked/` |
+| Windows | `k-lens/dist/<version>/KLens-<version>-x64.exe` |
 
 ---
 
@@ -212,7 +231,7 @@ node scripts/build-windows-app.js
 ## プロジェクト構成
 
 ```
-skuberplus-client/
+k-lens/
 ├── packages/                           # pnpmワークスペースパッケージ（54個）
 │   ├── core/                           # コアロジック、UIコンポーネント、K8s API
 │   ├── kube-object/                    # Kubernetesオブジェクトモデル
@@ -242,7 +261,7 @@ skuberplus-client/
 │       ├── typescript/                 # TypeScript共通設定
 │       └── jest/                       # Jest共通設定
 │
-├── skuberplus/                         # Electronメインアプリケーション
+├── k-lens/                             # Electronメインアプリケーション
 │   ├── src/
 │   │   ├── main/                       # メインプロセス
 │   │   ├── renderer/                   # レンダラープロセス（React）
@@ -329,8 +348,8 @@ registerFeature(di, myFeature);
 ソース変更後にビルドが想定通り動作しない場合は、以下を実行してください。
 
 ```bash
-rm -rf packages/core/static/build skuberplus/static/build \
-       packages/core/.webpack skuberplus/.webpack skuberplus/dist
+rm -rf packages/core/static/build k-lens/static/build \
+       packages/core/.webpack k-lens/.webpack k-lens/dist
 pnpm build:dev
 ```
 

@@ -36,7 +36,7 @@ export function getMetricsSource(preferences?: ClusterPreferences): MetricsSourc
   }
 
   // 다른 모든 oldType 값은 Prometheus로 간주
-  // (auto-detect-prometheus, helm, helm14, lens, operator, stacklight, skuberplus 등)
+  // (auto-detect-prometheus, helm, helm14, lens, operator, stacklight, k-lens 등)
   if (oldType) {
     return "prometheus";
   }

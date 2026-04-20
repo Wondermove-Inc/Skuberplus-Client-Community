@@ -19,10 +19,10 @@
 
 import "./pod-details-list.scss";
 
+import { Spinner } from "@k-lens/spinner";
+import { DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { interval } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Spinner } from "@skuberplus/spinner";
-import { DetailPanelSection } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { interval } from "@skuberplus/utilities";
 import { reaction } from "mobx";
 import { observer } from "mobx-react";
 import React, { useEffect, useMemo, useState } from "react";
@@ -31,7 +31,7 @@ import { PodDetailPanel } from "./pod-detail-panel";
 import { getPodDetailsListColumns, type PodDetailsWithMetrics } from "./pod-details-list-columns";
 import podStoreInjectable from "./store.injectable";
 
-import type { KubeObject, Pod } from "@skuberplus/kube-object";
+import type { KubeObject, Pod } from "@k-lens/kube-object";
 
 import type { PodStore } from "./store";
 

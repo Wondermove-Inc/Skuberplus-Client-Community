@@ -16,8 +16,8 @@
  * - 2026-01-08: 초기 생성 (Helm 전용 채널 구현)
  */
 
+import { requestFromChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { requestFromChannelInjectionToken } from "@skuberplus/messaging";
 import { helmExecuteChannel, helmExecuteInjectionToken } from "../common/helm-execute-channel";
 
 /**

@@ -16,7 +16,7 @@
  * - 2025-11-12: 초기 생성 (레거시 Table → KubeDataTable 마이그레이션)
  */
 
-import { bytesToUnits, cssNames } from "@skuberplus/utilities";
+import { bytesToUnits, cssNames } from "@k-lens/utilities";
 import kebabCase from "lodash/kebabCase";
 import { AlertTriangle } from "lucide-react";
 import React from "react";
@@ -25,7 +25,7 @@ import { KubeObjectStatusIcon } from "../kube-object-status-icon";
 import { LineProgress } from "../line-progress";
 import { WithTooltip } from "../with-tooltip";
 
-import type { Pod } from "@skuberplus/kube-object";
+import type { Pod } from "@k-lens/kube-object";
 
 import type { ColumnDef } from "@tanstack/react-table";
 

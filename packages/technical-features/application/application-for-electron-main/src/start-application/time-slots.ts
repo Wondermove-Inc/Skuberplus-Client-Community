@@ -1,6 +1,6 @@
 import { getInjectionToken } from "@ogre-tools/injectable";
 
-import type { RunnableSync } from "@skuberplus/run-many";
+import type { RunnableSync } from "@k-lens/run-many";
 
 export const beforeAnythingInjectionToken = getInjectionToken<RunnableSync>({
   id: "before-anything",

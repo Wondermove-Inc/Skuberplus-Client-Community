@@ -24,7 +24,7 @@ import { ResourceMetrics } from "../resource-metrics";
 import { PodCharts, podMetricTabs } from "../workloads-pods/pod-charts";
 import namespaceMetricsInjectable from "./metrics.injectable";
 
-import type { Namespace } from "@skuberplus/kube-object";
+import type { Namespace } from "@k-lens/kube-object";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { MetricsSourceType } from "../../../common/cluster-types";

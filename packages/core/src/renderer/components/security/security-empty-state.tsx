@@ -19,8 +19,8 @@
  * @packageDocumentation
  */
 
-import { Button } from "@skuberplus/storybook-shadcn/src/components/ui/button";
-import { Empty, EmptyDescription, EmptyHeader, EmptyTitle } from "@skuberplus/storybook-shadcn/src/components/ui/empty";
+import { Button } from "@k-lens/storybook-shadcn/src/components/ui/button";
+import { Empty, EmptyDescription, EmptyHeader, EmptyTitle } from "@k-lens/storybook-shadcn/src/components/ui/empty";
 import { Loader2, ScanLine, ServerOff, ShieldCheck, ShieldX } from "lucide-react";
 import React from "react";
 

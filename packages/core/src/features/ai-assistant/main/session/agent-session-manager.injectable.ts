@@ -9,8 +9,8 @@
  * Main Process에서 Session Manager를 DI 컨테이너에 등록합니다.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { AgentSessionManager, type AgentSessionManagerDependencies } from "./agent-session-manager";
 
 const agentSessionManagerInjectable = getInjectable({

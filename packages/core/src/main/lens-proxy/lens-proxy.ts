@@ -12,7 +12,7 @@ import { apiKubePrefix, apiPrefix } from "../../common/vars";
 import { getBoolean } from "../utils/parse-query";
 import type http from "http";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type httpProxy from "http-proxy-node16";
 import type { SelfSignedCert } from "selfsigned";
@@ -199,9 +199,7 @@ export class LensProxy {
          * through all the ports possible and we will not be able to get a safe
          * port.
          */
-        throw new Error(
-          "Failed to start SkuberPlus Proxy due to seeing too many unsafe ports. Please restart SkuberPlus.",
-        );
+        throw new Error("Failed to start K-Lens Proxy due to seeing too many unsafe ports. Please restart K-Lens.");
       } else {
         seenPorts.add(port);
       }

@@ -8,8 +8,8 @@
  * @module main/wsl/wsl-service
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { execSync } from "child_process";
 import isWindowsInjectable from "../../common/vars/is-windows.injectable";
 

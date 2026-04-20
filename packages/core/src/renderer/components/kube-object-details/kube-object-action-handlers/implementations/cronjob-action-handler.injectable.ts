@@ -16,9 +16,9 @@
  *   - 2026-01-06: 초기 생성 (클러스터 오버뷰 Warning 패널 개선)
  */
 
+import { CronJob } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { CronJob } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import React from "react";
 import hostedClusterInjectable from "../../../../cluster-frame-context/hosted-cluster.injectable";
 import openConfirmDialogInjectable from "../../../confirm-dialog/open.injectable";
@@ -29,7 +29,7 @@ import cronJobStoreInjectable from "../../../workloads-cronjobs/store.injectable
 import openCronJobTriggerDialogInjectable from "../../../workloads-cronjobs/trigger-dialog/open.injectable";
 import { kubeObjectActionHandlerInjectionToken } from "../kube-object-action-handler-injection-token";
 
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeObject } from "@k-lens/kube-object";
 
 import type { KubeObjectActionHandlers } from "../kube-object-action-handler-injection-token";
 

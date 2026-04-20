@@ -25,7 +25,7 @@
  * - 2026-01-29: 초기 생성 (AI File System Integration)
  */
 
-import { getRequestChannelListenerInjectable } from "@skuberplus/messaging";
+import { getRequestChannelListenerInjectable } from "@k-lens/messaging";
 // @ts-expect-error - diff 패키지에 타입 정의 없음
 import { createTwoFilesPatch } from "diff";
 import { BrowserWindow, shell } from "electron";

@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { winstonLoggerInjectable } from "@k-lens/logger";
+import { sendMessageToChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { winstonLoggerInjectable } from "@skuberplus/logger";
-import { sendMessageToChannelInjectionToken } from "@skuberplus/messaging";
 import { closeIpcFileLoggerChannel } from "../common/ipc-file-logger-channel";
 import ipcLogTransportInjectable from "./ipc-transport.injectable";
 import rendererLogFileIdInjectable from "./renderer-log-file-id.injectable";

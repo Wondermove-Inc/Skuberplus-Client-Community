@@ -6,7 +6,7 @@
 
 import { getInjectionToken } from "@ogre-tools/injectable";
 
-import type { KubeApi } from "@skuberplus/kube-api";
+import type { KubeApi } from "@k-lens/kube-api";
 
 export const customResourceDefinitionApiInjectionToken = getInjectionToken<KubeApi>({
   id: "custom-resource-definition-api-token",

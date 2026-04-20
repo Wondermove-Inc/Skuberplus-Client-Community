@@ -7,7 +7,7 @@
 import type { DiContainer } from "@ogre-tools/injectable";
 import "@testing-library/jest-dom";
 
-import { podListLayoutColumnInjectionToken } from "@skuberplus/list-layout";
+import { podListLayoutColumnInjectionToken } from "@k-lens/list-layout";
 import React from "react";
 import appPathsStateInjectable from "../../../common/app-paths/app-paths-state.injectable";
 import directoryForKubeConfigsInjectable from "../../../common/app-paths/directory-for-kube-configs/directory-for-kube-configs.injectable";

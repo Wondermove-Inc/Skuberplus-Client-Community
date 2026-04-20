@@ -1,5 +1,5 @@
 const {
   configForNode: { coverageThreshold, ...config },
-} = require("@skuberplus/jest").monorepoPackageConfig(__dirname);
+} = require("@k-lens/jest").monorepoPackageConfig(__dirname);
 
 module.exports = config;

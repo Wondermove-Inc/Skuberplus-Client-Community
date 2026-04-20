@@ -1,8 +1,8 @@
+import { requestFromChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { requestFromChannelInjectionToken } from "@skuberplus/messaging";
 import invokeIpcInjectable from "./invoke-ipc.injectable";
 
-import type { RequestFromChannel } from "@skuberplus/messaging";
+import type { RequestFromChannel } from "@k-lens/messaging";
 
 const requestFromChannelInjectable = getInjectable({
   id: "request-from-channel",

@@ -4,12 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { JsonApiErrorParsed } from "@k-lens/json-api";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { JsonApiErrorParsed } from "@skuberplus/json-api";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { showErrorNotificationInjectable } from "./show-error-notification.injectable";
 
-import type { Disposer } from "@skuberplus/utilities";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { CreateNotificationOptions } from "./message-utils";
 

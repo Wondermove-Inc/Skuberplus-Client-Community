@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getEnvironmentSpecificLegacyGlobalDiForExtensionApi } from "@skuberplus/legacy-global-di";
+import { getEnvironmentSpecificLegacyGlobalDiForExtensionApi } from "@k-lens/legacy-global-di";
 import removeWeblinkInjectable from "../../features/weblinks/common/remove.injectable";
 import { CatalogCategory, CatalogEntity, categoryVersion } from "../catalog/catalog-entity";
 import productNameInjectable from "../vars/product-name.injectable";

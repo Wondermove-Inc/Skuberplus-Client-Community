@@ -18,9 +18,9 @@
  * - 2025-12-16: 초기 생성 (Extension Host 패턴 마이그레이션)
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
+import { getRequestChannelListenerInjectable } from "@k-lens/messaging";
 import { AIMessage, HumanMessage, SystemMessage, ToolMessage } from "@langchain/core/messages";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { getRequestChannelListenerInjectable } from "@skuberplus/messaging";
 import { classifyLLMError, llmChatChannel, llmStructuredOutputChannel } from "../common/llm-chat-channel";
 import llmModelFactoryInjectable from "./llm-model-factory.injectable";
 

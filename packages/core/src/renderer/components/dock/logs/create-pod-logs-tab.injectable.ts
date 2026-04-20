@@ -7,7 +7,7 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import createLogsTabInjectable from "./create-logs-tab.injectable";
 
-import type { Container, Pod } from "@skuberplus/kube-object";
+import type { Container, Pod } from "@k-lens/kube-object";
 
 import type { TabId } from "../dock/store";
 

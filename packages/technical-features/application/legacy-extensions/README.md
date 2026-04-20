@@ -1,4 +1,4 @@
-# @skuberplus/legacy-extensions
+# @k-lens/legacy-extensions
 
 This package contains stuff related to creating Lens-applications.
 

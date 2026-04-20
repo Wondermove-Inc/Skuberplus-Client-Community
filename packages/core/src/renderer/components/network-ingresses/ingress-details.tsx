@@ -6,20 +6,17 @@
 
 import "./ingress-details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { computeRuleDeclarations, Ingress } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { computeRuleDeclarations, Ingress } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
 // 🎯 shadcn UI 컴포넌트: DrawerItem/DrawerTitle 대체
-import {
-  DetailPanelField,
-  DetailPanelSection,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { DetailPanelField, DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 import { Table, TableCell, TableHead, TableRow } from "../table";
 
-import type { ILoadBalancerIngress } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+import type { ILoadBalancerIngress } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { KubeObjectDetailsProps } from "../kube-object-details";
 

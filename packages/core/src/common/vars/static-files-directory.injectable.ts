@@ -18,7 +18,7 @@ import joinPathsInjectable from "../path/join-paths.injectable";
  * @returns static 파일 디렉토리의 절대 경로
  *
  * 📝 주의사항:
- * - 개발 모드: /프로젝트루트/skuberplus/static
+ * - 개발 모드: /프로젝트루트/k-lens/static
  * - 프로덕션: /App/Contents/Resources/app/static
  */
 const staticFilesDirectoryInjectable = getInjectable({

@@ -47,7 +47,7 @@ import { ClusterRoleDetailPanel } from "./cluster-role-detail-panel";
 import { clusterRoleColumns } from "./cluster-roles-columns";
 import clusterRoleStoreInjectable from "./store.injectable";
 
-import type { ClusterRole } from "@skuberplus/kube-object";
+import type { ClusterRole } from "@k-lens/kube-object";
 
 import type { SubscribeStores } from "../../../kube-watch-api/kube-watch-api";
 import type { ClusterRoleStore } from "./store";

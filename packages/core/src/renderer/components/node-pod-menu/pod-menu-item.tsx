@@ -4,19 +4,14 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Icon } from "@skuberplus/icon";
-import { prevDefault } from "@skuberplus/utilities";
+import { Icon } from "@k-lens/icon";
+import { prevDefault } from "@k-lens/utilities";
 import React from "react";
 import { MenuItem, SubMenu } from "../menu";
 import { StatusBrick } from "../status-brick";
 import { containerStatusClassName } from "../workloads-pods/container-status-class-name";
 
-import type {
-  Container,
-  ContainerWithType,
-  EphemeralContainerWithType,
-  PodContainerStatus,
-} from "@skuberplus/kube-object";
+import type { Container, ContainerWithType, EphemeralContainerWithType, PodContainerStatus } from "@k-lens/kube-object";
 
 export interface NodePodMenuItemProps {
   material?: string;

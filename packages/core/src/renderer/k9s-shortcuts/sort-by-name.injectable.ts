@@ -1,5 +1,5 @@
+import { keyboardShortcutInjectionToken } from "@k-lens/keyboard-shortcuts";
 import { getInjectable } from "@ogre-tools/injectable";
-import { keyboardShortcutInjectionToken } from "@skuberplus/keyboard-shortcuts";
 import orderByUrlParamInjectable from "../components/table/order-by-url-param.injectable";
 import sortByUrlParamInjectable from "../components/table/sort-by-url-param.injectable";
 

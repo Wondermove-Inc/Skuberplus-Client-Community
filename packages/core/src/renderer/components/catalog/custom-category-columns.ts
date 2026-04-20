@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import type { TableCellProps } from "@skuberplus/list-layout";
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { TableCellProps } from "@k-lens/list-layout";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { CatalogEntity } from "../../../common/catalog";
 

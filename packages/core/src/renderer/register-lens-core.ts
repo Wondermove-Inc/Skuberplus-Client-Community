@@ -4,11 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { setLegacyGlobalDiForExtensionApi } from "@k-lens/legacy-global-di";
 import { autoRegister } from "@ogre-tools/injectable-extension-for-auto-registration";
-import { setLegacyGlobalDiForExtensionApi } from "@skuberplus/legacy-global-di";
 import { runInAction } from "mobx";
 
-import type { Environments } from "@skuberplus/legacy-global-di";
+import type { Environments } from "@k-lens/legacy-global-di";
 
 import type { DiContainer } from "@ogre-tools/injectable";
 

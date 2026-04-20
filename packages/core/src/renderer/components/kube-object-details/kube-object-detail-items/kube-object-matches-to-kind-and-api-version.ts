@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeObject } from "@k-lens/kube-object";
 
 export const kubeObjectMatchesToKindAndApiVersion =
   (kind: string, apiVersions: string[]) =>

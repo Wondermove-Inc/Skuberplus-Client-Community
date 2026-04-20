@@ -1,16 +1,16 @@
-# @skuberplus/application
+# @k-lens/application
 
 This package contains stuff related to creating Lens-applications. 
 
 ## Usage
 
 ```sh
-npm install @skuberplus/application-for-electron-main
+npm install @k-lens/application-for-electron-main
 ```
 
 ```typescript
-import { applicationFeature, startApplicationInjectionToken } from "@skuberplus/application";
-import { registerFeature } from "@skuberplus/feature-core";
+import { applicationFeature, startApplicationInjectionToken } from "@k-lens/application";
+import { registerFeature } from "@k-lens/feature-core";
 import { createContainer } from "@ogre-tools/injectable";
 
 const di = createContainer("some-container");

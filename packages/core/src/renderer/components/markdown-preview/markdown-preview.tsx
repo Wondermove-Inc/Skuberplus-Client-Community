@@ -14,7 +14,7 @@
  * @module markdown-preview/markdown-preview
  */
 
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@skuberplus/storybook-shadcn";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@k-lens/storybook-shadcn";
 import { shell } from "electron";
 import React, { useMemo } from "react";
 import ReactMarkdown from "react-markdown";

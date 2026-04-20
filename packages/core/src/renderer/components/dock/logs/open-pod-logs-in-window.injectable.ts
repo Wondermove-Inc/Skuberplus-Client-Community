@@ -18,7 +18,7 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import detachLogWindowInjectable from "./detach-log-window.injectable";
 
-import type { Pod } from "@skuberplus/kube-object";
+import type { Pod } from "@k-lens/kube-object";
 
 import type { LogTabData } from "./tab-store";
 

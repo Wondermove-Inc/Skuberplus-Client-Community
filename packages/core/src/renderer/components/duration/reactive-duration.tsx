@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { formatDuration } from "@skuberplus/utilities";
+import { formatDuration } from "@k-lens/utilities";
 import React, { useEffect, useRef } from "react";
 
 export interface ReactiveDurationProps {

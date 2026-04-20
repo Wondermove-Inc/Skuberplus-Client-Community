@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { KubeEvent } from "@skuberplus/kube-object";
+import { KubeEvent } from "@k-lens/kube-object";
 import { KubeApi } from "../kube-api";
 
-import type { KubeEventData } from "@skuberplus/kube-object";
+import type { KubeEventData } from "@k-lens/kube-object";
 
 import type { DerivedKubeApiOptions, KubeApiDependencies } from "../kube-api";
 

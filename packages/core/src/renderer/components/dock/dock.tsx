@@ -6,9 +6,9 @@
 
 import "./dock.scss";
 
+import { ErrorBoundary } from "@k-lens/error-boundary";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { ErrorBoundary } from "@skuberplus/error-boundary";
-import { cssNames } from "@skuberplus/utilities";
 import { ipcRenderer } from "electron";
 import { computed, makeObservable, observable, reaction } from "mobx";
 import { observer } from "mobx-react";

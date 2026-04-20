@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { maybeKubeApiInjectable } from "@skuberplus/kube-api-specifics";
-import { PodDisruptionBudget } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { maybeKubeApiInjectable } from "@k-lens/kube-api-specifics";
+import { PodDisruptionBudget } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
 import React from "react";
 import { Cluster } from "../../../../common/cluster/cluster";
 import selectedNamespacesStorageInjectable from "../../../../features/namespace-filtering/renderer/storage.injectable";

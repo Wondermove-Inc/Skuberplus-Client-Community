@@ -6,7 +6,7 @@
 
 import { PassThrough } from "stream";
 
-import type { Headers as NodeFetchHeaders, Response } from "@skuberplus/node-fetch";
+import type { Headers as NodeFetchHeaders, Response } from "@k-lens/node-fetch";
 
 export const createMockResponseFromString = (url: string, data: string, statusCode = 200) => {
   const res: jest.Mocked<Response> = {

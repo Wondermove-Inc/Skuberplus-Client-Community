@@ -7,7 +7,7 @@
 import EventEmitter from "events";
 import { convertToWithIdWith, verifyRunnablesAreDAG } from "./helpers";
 
-import type { Disposer } from "@skuberplus/utilities";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { DiContainerForInjection, InjectionToken } from "@ogre-tools/injectable";
 import type TypedEventEmitter from "typed-emitter";

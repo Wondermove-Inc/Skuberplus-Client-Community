@@ -48,7 +48,7 @@ import {
 import { HpaDetailPanel } from "./hpa-detail-panel";
 import horizontalPodAutoscalerStoreInjectable from "./store.injectable";
 
-import type { HorizontalPodAutoscaler } from "@skuberplus/kube-object";
+import type { HorizontalPodAutoscaler } from "@k-lens/kube-object";
 
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
 import type { HorizontalPodAutoscalerStore } from "./store";

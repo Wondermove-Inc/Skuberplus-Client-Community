@@ -6,7 +6,7 @@
 
 import React from "react";
 
-import type { JsonApiErrorParsed } from "@skuberplus/json-api";
+import type { JsonApiErrorParsed } from "@k-lens/json-api";
 
 /**
  * 🎯 목적: NotificationMessage 타입을 Sonner가 처리할 수 있는 문자열로 변환

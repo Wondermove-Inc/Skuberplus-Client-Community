@@ -6,8 +6,8 @@
 
 import { KubeObjectStore } from "../../../../common/k8s-api/kube-object.store";
 
-import type { ServiceAccountApi } from "@skuberplus/kube-api";
-import type { ServiceAccount, ServiceAccountData } from "@skuberplus/kube-object";
+import type { ServiceAccountApi } from "@k-lens/kube-api";
+import type { ServiceAccount, ServiceAccountData } from "@k-lens/kube-object";
 
 export class ServiceAccountStore extends KubeObjectStore<ServiceAccount, ServiceAccountApi, ServiceAccountData> {
   protected async createItem(params: { name: string; namespace?: string }) {

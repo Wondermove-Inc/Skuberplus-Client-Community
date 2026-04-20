@@ -25,8 +25,8 @@
  * - 2025-11-04: 초기 생성 (Pod 및 Namespace 패턴 참고)
  */
 
+import { bytesToUnits, interval } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { bytesToUnits, interval } from "@skuberplus/utilities";
 import { observer } from "mobx-react";
 import React, { useEffect, useMemo, useState } from "react";
 import requestAllNodeMetricsInjectable from "../../../common/k8s-api/endpoints/metrics.api/request-metrics-for-all-nodes.injectable";

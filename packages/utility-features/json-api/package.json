@@ -1,5 +1,5 @@
 {
-  "name": "@skuberplus/json-api",
+  "name": "@k-lens/json-api",
   "private": false,
   "version": "1.5.4-0",
   "description": "JSON api client",
@@ -13,16 +13,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wondermove-Inc/Skuberplus-Client-Community.git"
+    "url": "git+https://github.com/Wondermove-Inc/Klens-Client-Community.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "license": "MIT",
-  "homepage": "https://skuberplus.app",
+  "homepage": "https://k-lens.app",
   "scripts": {
     "build": "lens-webpack-build",
     "clean": "pnpm dlx rimraf@6.0.1 dist",
@@ -30,15 +30,15 @@
     "dev": "webpack --mode=development --watch"
   },
   "dependencies": {
-    "@skuberplus/event-emitter": "workspace:^",
-    "@skuberplus/utilities": "workspace:^",
+    "@k-lens/event-emitter": "workspace:^",
+    "@k-lens/utilities": "workspace:^",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@skuberplus/logger": "workspace:^",
-    "@skuberplus/node-fetch": "workspace:^",
-    "@skuberplus/typescript": "workspace:^",
-    "@skuberplus/webpack": "workspace:^",
+    "@k-lens/logger": "workspace:^",
+    "@k-lens/node-fetch": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
+    "@k-lens/webpack": "workspace:^",
     "@types/lodash": "^4.17.20",
     "@types/node": "~22.16.5",
     "rfc6902": "^5.1.2",

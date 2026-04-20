@@ -15,12 +15,12 @@
  *   - 2025-11-10: 초기 생성 (RoleBinding DetailPanel 패턴 참고)
  */
 
+import { Icon } from "@k-lens/icon";
+import { ServiceAccount } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Table, TableBody, TableCell, TableHead, TableRow } from "@k-lens/storybook-shadcn";
+import { Separator } from "@k-lens/storybook-shadcn/src/components/ui/separator";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { ServiceAccount } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Table, TableBody, TableCell, TableHead, TableRow } from "@skuberplus/storybook-shadcn";
-import { Separator } from "@skuberplus/storybook-shadcn/src/components/ui/separator";
 import { observer } from "mobx-react";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -36,8 +36,8 @@ import kubeObjectDeleteServiceInjectable from "../../kube-object-menu/kube-objec
 import { notificationPanelStore } from "../../status-bar/items/notification-panel.store";
 import { ServiceAccountsSecret } from "./secret";
 
-import type { KubeObject, Secret } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+import type { KubeObject, Secret } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { HostedCluster } from "../../../cluster-frame-context/hosted-cluster.injectable";
 import type { SecretStore } from "../../config-secrets/store";

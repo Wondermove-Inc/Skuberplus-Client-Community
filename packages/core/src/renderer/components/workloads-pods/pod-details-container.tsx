@@ -6,14 +6,14 @@
 
 import "./pod-details-container.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { podDetailsContainerMetricsInjectionToken } from "@skuberplus/metrics";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { podDetailsContainerMetricsInjectionToken } from "@k-lens/metrics";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 import {
   DetailPanelField,
   DetailPanelFieldGroup,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { cssNames, isDefined } from "@skuberplus/utilities";
+} from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { cssNames, isDefined } from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";
 import { ClusterMetricsResourceType } from "../../../common/cluster-types";
@@ -25,8 +25,8 @@ import { containerStatusClassName } from "./container-status-class-name";
 import { ContainerEnvironment } from "./pod-container-env";
 import { PodContainerPort } from "./pod-container-port";
 
-import type { ContainerWithType, EphemeralContainerWithType, Pod, PodContainerStatus } from "@skuberplus/kube-object";
-import type { PodDetailsContainerMetricsComponent } from "@skuberplus/metrics";
+import type { ContainerWithType, EphemeralContainerWithType, Pod, PodContainerStatus } from "@k-lens/kube-object";
+import type { PodDetailsContainerMetricsComponent } from "@k-lens/metrics";
 
 import type { IComputedValue } from "mobx";
 

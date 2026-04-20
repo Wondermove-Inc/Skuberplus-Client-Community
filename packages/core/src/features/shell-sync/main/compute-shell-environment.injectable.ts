@@ -5,13 +5,13 @@
  */
 
 import { performance } from "node:perf_hooks";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import defaultShellInjectable from "../../../common/vars/default-shell.injectable";
 import isWindowsInjectable from "../../../common/vars/is-windows.injectable";
 import computeUnixShellEnvironmentInjectable from "./compute-unix-shell-environment.injectable";
 
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { AsyncResult } from "@k-lens/utilities";
 
 export type EnvironmentVariables = Partial<Record<string, string>>;
 export type ComputeShellEnvironment = (shell?: string | null) => AsyncResult<EnvironmentVariables | undefined, string>;

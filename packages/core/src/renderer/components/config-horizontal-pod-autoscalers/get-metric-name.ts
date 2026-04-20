@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import type { HpaMetricType, LabelSelector } from "@skuberplus/kube-object";
+import type { HpaMetricType, LabelSelector } from "@k-lens/kube-object";
 
 type MetricNames = Partial<
   Record<

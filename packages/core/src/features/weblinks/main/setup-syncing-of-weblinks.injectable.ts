@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { onLoadOfApplicationInjectionToken } from "@k-lens/application";
+import { iter } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { onLoadOfApplicationInjectionToken } from "@skuberplus/application";
-import { iter } from "@skuberplus/utilities";
 import { computed } from "mobx";
 import catalogEntityRegistryInjectable from "../../../main/catalog/entity-registry.injectable";
 import weblinkVerificationStartableStoppableInjectable from "./weblink-verification.injectable";

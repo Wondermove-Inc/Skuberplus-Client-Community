@@ -21,8 +21,8 @@
  * - 2025-10-24: 초기 생성
  */
 
+import { isDefined, iter } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { isDefined, iter } from "@skuberplus/utilities";
 import * as fse from "fs-extra";
 import { debounce } from "lodash";
 import { AlertCircle } from "lucide-react";
@@ -55,7 +55,7 @@ import { notificationPanelStore } from "../../status-bar/items/notification-pane
 import closeAddClusterDialogInjectable from "./close.injectable";
 import addClusterDialogStateInjectable from "./state.injectable";
 
-import type { KubeConfig } from "@skuberplus/kubernetes-client-node";
+import type { KubeConfig } from "@k-lens/kubernetes-client-node";
 
 import type { EmitAppEvent } from "../../../../common/app-event-bus/emit-event.injectable";
 import type { NavigateToCatalog } from "../../../../common/front-end-routing/routes/catalog/navigate-to-catalog.injectable";

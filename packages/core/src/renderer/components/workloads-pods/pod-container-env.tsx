@@ -6,10 +6,10 @@
 
 import "./pod-container-env.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
 // 🎯 shadcn UI 컴포넌트: DrawerItem 대체
-import { DetailPanelField } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { object } from "@skuberplus/utilities";
+import { DetailPanelField } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { object } from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import _ from "lodash";
 import { autorun } from "mobx";
 import { observer } from "mobx-react";
@@ -18,7 +18,7 @@ import configMapStoreInjectable from "../config-maps/store.injectable";
 import secretStoreInjectable from "../config-secrets/store.injectable";
 import { SecretKey } from "./secret-key";
 
-import type { Container } from "@skuberplus/kube-object";
+import type { Container } from "@k-lens/kube-object";
 
 import type { ConfigMapStore } from "../config-maps/store";
 import type { SecretStore } from "../config-secrets/store";

@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getOrInsertMap } from "@skuberplus/utilities";
+import { getOrInsertMap } from "@k-lens/utilities";
 import crypto from "crypto";
 import { promisify } from "util";
 import { ipcMainHandle } from "../../../../common/ipc";

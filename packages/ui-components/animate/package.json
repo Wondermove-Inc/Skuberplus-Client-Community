@@ -1,8 +1,8 @@
 {
-  "name": "@skuberplus/animate",
+  "name": "@k-lens/animate",
   "private": false,
   "version": "1.5.4-0",
-  "description": "Highly extendable animate in the SkuberPlus.",
+  "description": "Highly extendable animate in the KLens.",
   "type": "commonjs",
   "files": [
     "dist"
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wondermove-Inc/Skuberplus-Client-Community.git"
+    "url": "git+https://github.com/Wondermove-Inc/Klens-Client-Community.git"
   },
   "main": "dist/index.js",
   "exports": {
@@ -22,27 +22,27 @@
   },
   "types": "dist/index.d.ts",
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "license": "MIT",
-  "homepage": "https://skuberplus.app",
+  "homepage": "https://k-lens.app",
   "scripts": {
     "build": "lens-webpack-build",
     "clean:node_modules": "pnpm dlx rimraf@6.0.1 node_modules"
   },
   "dependencies": {
-    "@skuberplus/feature-core": "workspace:^",
-    "@skuberplus/utilities": "workspace:^",
+    "@k-lens/feature-core": "workspace:^",
+    "@k-lens/utilities": "workspace:^",
     "@ogre-tools/injectable": "^17.11.1",
     "@ogre-tools/injectable-extension-for-auto-registration": "^17.11.1",
     "@ogre-tools/injectable-react": "^17.11.1",
     "react": "^18.3.1"
   },
   "devDependencies": {
-    "@skuberplus/jest": "workspace:^",
-    "@skuberplus/typescript": "workspace:^",
-    "@skuberplus/webpack": "workspace:^",
+    "@k-lens/jest": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
+    "@k-lens/webpack": "workspace:^",
     "@types/react": "^18.3.3",
     "@types/webpack-env": "^1.18.8",
     "css-loader": "^6.11.0",

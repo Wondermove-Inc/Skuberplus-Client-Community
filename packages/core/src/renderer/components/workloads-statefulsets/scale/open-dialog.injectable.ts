@@ -7,7 +7,7 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import statefulSetDialogStateInjectable from "./dialog-state.injectable";
 
-import type { StatefulSet } from "@skuberplus/kube-object";
+import type { StatefulSet } from "@k-lens/kube-object";
 
 export type OpenStatefulSetScaleDialog = (obj: StatefulSet) => void;
 

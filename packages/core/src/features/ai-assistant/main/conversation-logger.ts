@@ -12,7 +12,7 @@
  * - 네이티브 모듈 불필요
  *
  * 📁 저장 구조:
- * ~/Library/Application Support/Skuber+ Client/
+ * ~/Library/Application Support/K-Lens/
  *   ai-assistant/
  *     conversations/
  *       2025-01-12-abc123.jsonl

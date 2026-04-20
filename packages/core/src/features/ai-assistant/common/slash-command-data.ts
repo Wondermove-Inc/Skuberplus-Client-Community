@@ -191,7 +191,7 @@ How can I help you?`,
   {
     id: SlashCommandId.FINOPS,
     name: "/finops",
-    description: "Kubernetes cluster cost analysis and Skuber+ Cost Optimize recommendation",
+    description: "Kubernetes cluster cost analysis and K-Lens Cost Optimize recommendation",
     category: SlashCommandCategory.INFRASTRUCTURE,
     icon: "dollar-sign",
     keywords: ["finops", "cost", "billing", "optimization", "savings", "budget", "expense"],

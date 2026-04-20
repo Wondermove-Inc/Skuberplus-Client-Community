@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
+import { reactRootLifecycleInjectionToken } from "@k-lens/react-application";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { reactRootLifecycleInjectionToken } from "@skuberplus/react-application";
 import closeRendererLogFileInjectable from "../../../features/population-of-logs-to-a-file/renderer/close-renderer-log-file.injectable";
 import hostedClusterInjectable from "../../cluster-frame-context/hosted-cluster.injectable";
 import podMetricsCacheInjectable from "../../components/workloads-pods/metrics-cache.injectable";

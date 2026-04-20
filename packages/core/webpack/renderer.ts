@@ -33,7 +33,7 @@ const loggingOptions = getWebpackLoggingOptions();
 export function webpackLensRenderer(): webpack.Configuration {
   return {
     target: "electron-renderer",
-    name: "skuberplus-app-renderer",
+    name: "k-lens-app-renderer",
     mode: isDevelopment ? "development" : "production",
     // https://webpack.js.org/configuration/devtool/ (see description of each option)
     // 🔒 보안: 프로덕션 빌드에서 소스맵 비활성화 (소스코드 보호)

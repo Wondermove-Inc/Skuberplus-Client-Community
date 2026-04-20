@@ -17,13 +17,13 @@
  *   - 2025-10-30: 초기 생성 (Pod 반응형 패턴 적용)
  */
 
-import { Button, Checkbox } from "@skuberplus/storybook-shadcn";
+import { Button, Checkbox } from "@k-lens/storybook-shadcn";
 import { AlertTriangle, ArrowUpDown } from "lucide-react";
 import React from "react";
 import { KubeObjectAge } from "../kube-object/age";
 import { KubeObjectStatusIcon } from "../kube-object-status-icon";
 
-import type { RuntimeClass } from "@skuberplus/kube-object";
+import type { RuntimeClass } from "@k-lens/kube-object";
 
 import type { ColumnDef } from "@tanstack/react-table";
 

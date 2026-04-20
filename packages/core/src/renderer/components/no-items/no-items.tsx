@@ -6,10 +6,10 @@
 
 import "./no-items.scss";
 
-import { cssNames } from "@skuberplus/utilities";
+import { cssNames } from "@k-lens/utilities";
 import React from "react";
 
-import type { IClassName, StrictReactNode } from "@skuberplus/utilities";
+import type { IClassName, StrictReactNode } from "@k-lens/utilities";
 
 export interface NoItemsProps {
   className?: IClassName;

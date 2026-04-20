@@ -21,14 +21,14 @@
  * - 2025-11-01: shadcn Select 컴포넌트로 리팩토링
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@skuberplus/storybook-shadcn/src/components/ui/select";
+} from "@k-lens/storybook-shadcn/src/components/ui/select";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { observer } from "mobx-react";
 import React from "react";
 import namespaceStoreInjectable from "./store.injectable";

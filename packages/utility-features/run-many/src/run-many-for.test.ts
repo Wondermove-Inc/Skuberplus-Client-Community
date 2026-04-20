@@ -5,8 +5,8 @@
  */
 
 import asyncFn from "@async-fn/jest";
+import { flushPromises, getPromiseStatus } from "@k-lens/test-utils";
 import { createContainer, getInjectable, getInjectionToken } from "@ogre-tools/injectable";
-import { flushPromises, getPromiseStatus } from "@skuberplus/test-utils";
 import { runInAction } from "mobx";
 import { runManyFor } from "./run-many-for";
 

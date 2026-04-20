@@ -5,7 +5,7 @@
  */
 
 /**
- * 🎯 목적: Skuber+ Observability 화면 라우트 정의
+ * 🎯 목적: k-o11y 화면 라우트 정의
  *
  * 📝 주의사항:
  * - clusterFrame: false (클러스터 독립적인 화면)
@@ -13,7 +13,7 @@
  * - isEnabled: computed(() => true) (MobX computed 사용)
  *
  * 🔄 변경이력:
- * - 2025-12-02: 초기 생성 (Skuber+ Observability 화면)
+ * - 2025-12-02: 초기 생성 (k-o11y 화면)
  */
 
 import { getInjectable } from "@ogre-tools/injectable";

@@ -15,8 +15,8 @@
 
 @config "../../../tailwind.config.js";
 
-// 🎯 목적: SkuberPlus base 스타일을 @layer base로 이동하여 Tailwind utilities가 override 가능하도록 함
-// 📝 효과: Welcome shadcn UI가 Tailwind 클래스 적용됨, 기존 SkuberPlus UI는 변경 없음
+// 🎯 목적: KLens base 스타일을 @layer base로 이동하여 Tailwind utilities가 override 가능하도록 함
+// 📝 효과: Welcome shadcn UI가 Tailwind 클래스 적용됨, 기존 KLens UI는 변경 없음
 // 🔗 참고: docs/problem/2025-10-22-app-scss-global-reset-breaking-shadcn.md
 @layer base {
   :root {

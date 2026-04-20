@@ -1,6 +1,6 @@
-# Contributing to Skuber+ Client
+# Contributing to K-Lens
 
-Thank you for your interest in contributing to Skuber+ Client!
+Thank you for your interest in contributing to K-Lens!
 
 > **[한국어 버전 (Korean)](.github/CONTRIBUTING.ko.md)**
 

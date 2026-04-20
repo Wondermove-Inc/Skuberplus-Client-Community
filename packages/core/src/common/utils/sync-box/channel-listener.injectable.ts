@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getMessageChannelListenerInjectable } from "@skuberplus/messaging";
+import { getMessageChannelListenerInjectable } from "@k-lens/messaging";
 import { syncBoxChannel } from "./channels";
 import syncBoxStateInjectable from "./sync-box-state.injectable";
 

@@ -5,7 +5,7 @@
  */
 
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { cssNames } from "@skuberplus/utilities";
+import { cssNames } from "@k-lens/utilities";
 import { observer } from "mobx-react";
 import React, { createRef, useCallback, useEffect } from "react";
 import subscribeStoresInjectable from "../../../kube-watch-api/subscribe-stores.injectable";

@@ -4,13 +4,13 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { cssNames } from "@skuberplus/utilities";
+import { cssNames } from "@k-lens/utilities";
 import randomColor from "randomcolor";
 import React from "react";
 import { computeDefaultShortName } from "../../../common/catalog/helpers";
 import styles from "./avatar.module.scss";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { ImgHTMLAttributes, MouseEventHandler } from "react";
 

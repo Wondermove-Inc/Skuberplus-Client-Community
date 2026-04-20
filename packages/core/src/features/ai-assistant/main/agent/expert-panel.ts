@@ -20,7 +20,7 @@ import { AIMessage, HumanMessage, SystemMessage, ToolMessage } from "@langchain/
 import { buildSynthesizerPrompt } from "./expert-personas";
 import { filterToolsForAgent, getToolApprovalInfo } from "./react-tools";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { BaseChatModel } from "@langchain/core/language_models/chat_models";
 import type { BaseMessage } from "@langchain/core/messages";

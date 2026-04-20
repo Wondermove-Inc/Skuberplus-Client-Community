@@ -20,19 +20,19 @@
 
 import "./port-forward-details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { podApiInjectable, serviceApiInjectable } from "@skuberplus/kube-api-specifics";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { Button } from "@skuberplus/storybook-shadcn/src/components/ui/button";
-import { DetailPanel } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel";
+import { podApiInjectable, serviceApiInjectable } from "@k-lens/kube-api-specifics";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { Button } from "@k-lens/storybook-shadcn/src/components/ui/button";
+import { DetailPanel } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@skuberplus/storybook-shadcn/src/components/ui/dropdown-menu";
-import { Table, TableBody, TableCell, TableRow } from "@skuberplus/storybook-shadcn/src/components/ui/table";
+} from "@k-lens/storybook-shadcn/src/components/ui/dropdown-menu";
+import { Table, TableBody, TableCell, TableRow } from "@k-lens/storybook-shadcn/src/components/ui/table";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { CirclePlay, Edit, ExternalLink, MoreVertical, OctagonPause, Trash } from "lucide-react";
 import { observer } from "mobx-react";
 import React from "react";
@@ -46,7 +46,7 @@ import openConfirmDialogInjectable from "../confirm-dialog/open.injectable";
 import getDetailsUrlInjectable from "../kube-detail-params/get-details-url.injectable";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 
-import type { PodApi, ServiceApi } from "@skuberplus/kube-api";
+import type { PodApi, ServiceApi } from "@k-lens/kube-api";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { PortForwardItem, PortForwardStore } from "../../port-forward";

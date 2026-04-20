@@ -6,16 +6,16 @@
 
 import "./pod-details-secrets.scss";
 
+import { secretApiInjectable } from "@k-lens/kube-api-specifics";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { secretApiInjectable } from "@skuberplus/kube-api-specifics";
 import { reaction } from "mobx";
 import { observer } from "mobx-react";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import getDetailsUrlInjectable from "../kube-detail-params/get-details-url.injectable";
 
-import type { SecretApi } from "@skuberplus/kube-api";
-import type { Pod, Secret } from "@skuberplus/kube-object";
+import type { SecretApi } from "@k-lens/kube-api";
+import type { Pod, Secret } from "@k-lens/kube-object";
 
 import type { GetDetailsUrl } from "../kube-detail-params/get-details-url.injectable";
 

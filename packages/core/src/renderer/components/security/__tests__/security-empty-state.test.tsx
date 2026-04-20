@@ -12,7 +12,7 @@ import React from "react";
 import { SecurityEmptyState } from "../security-empty-state";
 
 // shadcn empty mock
-jest.mock("@skuberplus/storybook-shadcn/src/components/ui/empty", () => ({
+jest.mock("@k-lens/storybook-shadcn/src/components/ui/empty", () => ({
   Empty: ({ children, style }: any) => (
     <div data-testid="empty-container" style={style}>
       {children}
@@ -23,7 +23,7 @@ jest.mock("@skuberplus/storybook-shadcn/src/components/ui/empty", () => ({
   EmptyDescription: ({ children }: any) => <p>{children}</p>,
 }));
 
-jest.mock("@skuberplus/storybook-shadcn/src/components/ui/button", () => ({
+jest.mock("@k-lens/storybook-shadcn/src/components/ui/button", () => ({
   Button: ({ children, onClick, variant }: any) => (
     <button data-testid="action-btn" data-variant={variant} onClick={onClick}>
       {children}

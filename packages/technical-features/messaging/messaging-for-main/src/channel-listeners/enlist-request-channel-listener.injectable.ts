@@ -1,8 +1,8 @@
+import { enlistRequestChannelListenerInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { enlistRequestChannelListenerInjectionToken } from "@skuberplus/messaging";
 import ipcMainInjectable from "../ipc-main/ipc-main.injectable";
 
-import type { RequestChannel, RequestChannelListener } from "@skuberplus/messaging";
+import type { RequestChannel, RequestChannelListener } from "@k-lens/messaging";
 
 import type { IpcMainInvokeEvent } from "electron";
 

@@ -6,17 +6,17 @@
 
 import "./limit-range-details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { LimitPart, LimitRange, Resource } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { LimitPart, LimitRange, Resource } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 // 🎯 shadcn UI 컴포넌트: DrawerItem 대체
-import { DetailPanelField } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { DetailPanelField } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 
-import type { LimitRangeItem } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+import type { LimitRangeItem } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { KubeObjectDetailsProps } from "../kube-object-details";
 

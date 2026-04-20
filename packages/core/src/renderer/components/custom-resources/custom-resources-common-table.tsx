@@ -47,7 +47,7 @@ import { Button } from "../shadcn-ui/button";
 import { CustomResourceDetailPanel } from "./custom-resource-detail-panel";
 import { createCustomResourceColumns } from "./custom-resources-columns";
 
-import type { CustomResourceDefinition, KubeObject } from "@skuberplus/kube-object";
+import type { CustomResourceDefinition, KubeObject } from "@k-lens/kube-object";
 
 import type { ApiManager } from "../../../common/k8s-api/api-manager";
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";

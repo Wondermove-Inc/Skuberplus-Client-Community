@@ -4,15 +4,15 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { KubeApi } from "@k-lens/kube-api";
+import { logErrorInjectionToken, logInfoInjectionToken, logWarningInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { KubeApi } from "@skuberplus/kube-api";
-import { logErrorInjectionToken, logInfoInjectionToken, logWarningInjectionToken } from "@skuberplus/logger";
 import { apiKubePrefix } from "../vars";
 import isDevelopmentInjectable from "../vars/is-development.injectable";
 import apiBaseInjectable from "./api-base.injectable";
 import createKubeJsonApiInjectable from "./create-kube-json-api.injectable";
 
-import type { KubeJsonApiDataFor, KubeObject, KubeObjectConstructor } from "@skuberplus/kube-object";
+import type { KubeJsonApiDataFor, KubeObject, KubeObjectConstructor } from "@k-lens/kube-object";
 
 import type { KubeApiConstructor } from "./create-kube-api-for-remote-cluster.injectable";
 
@@ -58,7 +58,7 @@ const createKubeApiForClusterInjectable = getInjectable({
         },
         {
           headers: {
-            Host: `${cluster.metadata.uid}.renderer.skuberplus.app:${new URL(apiBase.config.serverAddress).port}`,
+            Host: `${cluster.metadata.uid}.renderer.k-lens.app:${new URL(apiBase.config.serverAddress).port}`,
           },
         },
       );

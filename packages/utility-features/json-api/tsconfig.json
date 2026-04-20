@@ -1,5 +1,5 @@
 {
-  "extends": "@skuberplus/typescript/config/base.json",
+  "extends": "@k-lens/typescript/config/base.json",
   "include": ["**/*.ts"],
   "compilerOptions": {
     "moduleResolution": "node"

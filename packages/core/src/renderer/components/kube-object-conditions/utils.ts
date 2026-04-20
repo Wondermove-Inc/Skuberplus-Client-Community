@@ -1,6 +1,6 @@
 import moment from "moment-timezone";
 
-import type { Condition } from "@skuberplus/kube-object/dist";
+import type { Condition } from "@k-lens/kube-object/dist";
 
 function timeToUnix(dateStr?: string): number {
   const m = moment(dateStr);

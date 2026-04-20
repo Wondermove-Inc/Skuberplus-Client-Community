@@ -17,7 +17,7 @@ export const apiPrefix = "/api"; // local router apis
 export const apiKubePrefix = "/api-kube"; // k8s cluster apis
 
 // Links
-export const issuesTrackerUrl = "https://github.com/Wondermove-Inc/Skuberplus-Client-Community/issues" as string;
-export const supportUrl = "https://github.com/Wondermove-Inc/Skuberplus-Client-Community" as string;
-export const docsUrl = "https://github.com/Wondermove-Inc/Skuberplus-Client-Community/wiki" as string;
-export const forumsUrl = "https://github.com/Wondermove-Inc/Skuberplus-Client-Community/discussions" as string;
+export const issuesTrackerUrl = "https://github.com/Wondermove-Inc/K-Lens-Community/issues" as string;
+export const supportUrl = "https://github.com/Wondermove-Inc/K-Lens-Community" as string;
+export const docsUrl = "https://github.com/Wondermove-Inc/K-Lens-Community/wiki" as string;
+export const forumsUrl = "https://github.com/Wondermove-Inc/K-Lens-Community/discussions" as string;

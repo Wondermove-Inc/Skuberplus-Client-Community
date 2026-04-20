@@ -16,9 +16,9 @@
  * - DI 패턴 유지 (withInjectables)
  */
 
+import { Input } from "@k-lens/storybook-shadcn/src/components/ui/input";
+import { Label } from "@k-lens/storybook-shadcn/src/components/ui/label";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Input } from "@skuberplus/storybook-shadcn/src/components/ui/input";
-import { Label } from "@skuberplus/storybook-shadcn/src/components/ui/label";
 import { observer } from "mobx-react";
 import React from "react";
 import getClusterByIdInjectable from "../../../../features/cluster/storage/common/get-by-id.injectable";

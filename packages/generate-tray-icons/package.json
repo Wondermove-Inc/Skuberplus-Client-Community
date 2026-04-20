@@ -1,5 +1,5 @@
 {
-  "name": "@skuberplus/generate-tray-icons",
+  "name": "@k-lens/generate-tray-icons",
   "version": "1.5.4-0",
   "description": "CLI generating tray icons for building a lens-like application",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "sharp": "^0.34.4"
   },
   "devDependencies": {
-    "@skuberplus/icon": "workspace:^",
+    "@k-lens/icon": "workspace:^",
     "@types/jsdom": "^21.1.7",
     "@types/node": "~22.16.5",
     "typescript": "^5.9.2"

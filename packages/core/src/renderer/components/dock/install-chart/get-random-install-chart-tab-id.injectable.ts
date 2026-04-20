@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { getRandomIdInjectionToken } from "@k-lens/random";
 import { getInjectable } from "@ogre-tools/injectable";
-import { getRandomIdInjectionToken } from "@skuberplus/random";
 
 const getRandomInstallChartTabIdInjectable = getInjectable({
   id: "get-random-install-chart-tab-id",

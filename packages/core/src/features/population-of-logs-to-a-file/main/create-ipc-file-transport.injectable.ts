@@ -9,7 +9,7 @@ import { transports } from "winston";
 import directoryForLogsInjectable from "../../../common/app-paths/directory-for-logs.injectable";
 
 // 🎯 App paths 초기화 순서 해결
-// skuberplus/src/main/index.ts에서 registerLensCore() 직후 setupAppPaths를 명시적으로 실행하므로,
+// k-lens/src/main/index.ts에서 registerLensCore() 직후 setupAppPaths를 명시적으로 실행하므로,
 // 이 injectable이 인스턴스화될 때는 app paths가 이미 설정되어 있습니다.
 const createIpcFileLoggerTransportInjectable = getInjectable({
   id: "create-ipc-file-logger-transport",

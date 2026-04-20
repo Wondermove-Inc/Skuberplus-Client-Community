@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { getOrInsertWith, iter } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { getOrInsertWith, iter } from "@skuberplus/utilities";
 import GlobToRegExp from "glob-to-regexp";
 import { computed, observable } from "mobx";
 import path from "path";
@@ -15,7 +15,7 @@ import watchInjectable from "../../../common/fs/watch/watch.injectable";
 import diffChangedKubeconfigInjectable from "./diff-changed-kubeconfig.injectable";
 import kubeconfigSyncLoggerInjectable from "./logger.injectable";
 
-import type { Disposer } from "@skuberplus/utilities";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { IComputedValue, ObservableMap } from "mobx";
 

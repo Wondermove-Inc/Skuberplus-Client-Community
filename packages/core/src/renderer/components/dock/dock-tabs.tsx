@@ -67,7 +67,7 @@ interface Dependencies {
 /**
  * 🎯 목적: DockTabs 컴포넌트 (shadcn Panel 구조로 마이그레이션)
  * - base-structure-template.stories.tsx Panel 구조 100% 재현
- * - SkuberPlus Core 기능 100% 보존
+ * - KLens Core 기능 100% 보존
  */
 const NonInjectedDockTabs = ({
   tabs,

@@ -6,7 +6,7 @@
 
 import "./table-row.scss";
 
-import { cssNames } from "@skuberplus/utilities";
+import { cssNames } from "@k-lens/utilities";
 import React, { Component } from "react";
 
 import type { CSSProperties } from "react";

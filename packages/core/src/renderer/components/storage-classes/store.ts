@@ -6,8 +6,8 @@
 
 import { KubeObjectStore } from "../../../common/k8s-api/kube-object.store";
 
-import type { StorageClassApi } from "@skuberplus/kube-api";
-import type { StorageClass, StorageClassData } from "@skuberplus/kube-object";
+import type { StorageClassApi } from "@k-lens/kube-api";
+import type { StorageClass, StorageClassData } from "@k-lens/kube-object";
 
 import type { KubeObjectStoreDependencies, KubeObjectStoreOptions } from "../../../common/k8s-api/kube-object.store";
 import type { GetPersistentVolumesByStorageClass } from "../storage-volumes/get-persistent-volumes-by-storage-class.injectable";

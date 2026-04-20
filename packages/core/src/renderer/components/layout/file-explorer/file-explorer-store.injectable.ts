@@ -16,8 +16,8 @@
  * @module file-explorer/file-explorer-store.injectable
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { ipcRenderer } from "electron";
 import { reaction } from "mobx";
 import * as path from "path";

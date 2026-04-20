@@ -1,4 +1,4 @@
-import { getMessageChannel, getMessageChannelListenerInjectable } from "@skuberplus/messaging";
+import { getMessageChannel, getMessageChannelListenerInjectable } from "@k-lens/messaging";
 import frameIdsInjectable from "./frameIds.injectable";
 
 const frameCommunicationAdminChannel = getMessageChannel<undefined>("frame-communication-admin-channel");

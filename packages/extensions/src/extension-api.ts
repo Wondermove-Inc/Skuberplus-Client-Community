@@ -4,5 +4,5 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-export { commonExtensionApi as Common, mainExtensionApi as Main } from "@skuberplus/core/main";
-export { rendererExtensionApi as Renderer } from "@skuberplus/core/renderer";
+export { commonExtensionApi as Common, mainExtensionApi as Main } from "@k-lens/core/main";
+export { rendererExtensionApi as Renderer } from "@k-lens/core/renderer";

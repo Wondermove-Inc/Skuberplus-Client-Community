@@ -16,15 +16,15 @@
  * - 2025-10-30: 초기 생성 (TanStack Table 컬럼 정의)
  */
 
-import { Button, Checkbox } from "@skuberplus/storybook-shadcn";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { Button, Checkbox } from "@k-lens/storybook-shadcn";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 import { AlertTriangle, ArrowUpDown } from "lucide-react";
 import React from "react";
 import { KubeObjectAge } from "../kube-object/age";
 import { KubeObjectStatusIcon } from "../kube-object-status-icon";
 import { NamespaceSelectBadge } from "../namespaces/namespace-select-badge";
 
-import type { Service } from "@skuberplus/kube-object";
+import type { Service } from "@k-lens/kube-object";
 
 import type { ColumnDef } from "@tanstack/react-table";
 

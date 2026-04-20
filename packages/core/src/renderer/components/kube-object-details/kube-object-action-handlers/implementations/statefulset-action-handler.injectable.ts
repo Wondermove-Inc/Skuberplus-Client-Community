@@ -16,10 +16,10 @@
  *   - 2026-01-06: 초기 생성 (클러스터 오버뷰 Warning 패널 개선)
  */
 
+import { statefulSetApiInjectable } from "@k-lens/kube-api-specifics";
+import { StatefulSet } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { statefulSetApiInjectable } from "@skuberplus/kube-api-specifics";
-import { StatefulSet } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import React from "react";
 import hostedClusterInjectable from "../../../../cluster-frame-context/hosted-cluster.injectable";
 import openConfirmDialogInjectable from "../../../confirm-dialog/open.injectable";
@@ -29,7 +29,7 @@ import { notificationPanelStore } from "../../../status-bar/items/notification-p
 import openStatefulSetScaleDialogInjectable from "../../../workloads-statefulsets/scale/open-dialog.injectable";
 import { kubeObjectActionHandlerInjectionToken } from "../kube-object-action-handler-injection-token";
 
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeObject } from "@k-lens/kube-object";
 
 import type { KubeObjectActionHandlers } from "../kube-object-action-handler-injection-token";
 

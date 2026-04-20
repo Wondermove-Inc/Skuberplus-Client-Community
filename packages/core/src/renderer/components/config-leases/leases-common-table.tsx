@@ -34,7 +34,7 @@ import { LeaseDetailPanel } from "./lease-detail-panel";
 import { leaseColumns } from "./leases-columns";
 import leaseStoreInjectable from "./store.injectable";
 
-import type { Lease } from "@skuberplus/kube-object";
+import type { Lease } from "@k-lens/kube-object";
 
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
 import type { LeaseStore } from "./store";

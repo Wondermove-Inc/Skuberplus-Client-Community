@@ -6,15 +6,11 @@
 
 import "./resource-quota-details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { ResourceQuota } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { ResourceQuota } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 // 🎯 shadcn UI 컴포넌트: DrawerItem/DrawerTitle 대체
-import {
-  DetailPanelField,
-  DetailPanelSection,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { DetailPanelField, DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
 import {
   cpuUnitsToNumber,
   cssNames,
@@ -22,14 +18,15 @@ import {
   metricUnitsToNumber,
   object,
   unitsToBytes,
-} from "@skuberplus/utilities";
+} from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import kebabCase from "lodash/kebabCase";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 import { LineProgress } from "../line-progress";
 import { Table, TableCell, TableHead, TableRow } from "../table";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { KubeObjectDetailsProps } from "../kube-object-details";
 

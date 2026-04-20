@@ -9,7 +9,7 @@ import { conforms, eq, includes } from "lodash/fp";
 import { computed } from "mobx";
 import kubeObjectStatusTextsInjectable from "./kube-object-status-texts.injectable";
 
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeObject } from "@k-lens/kube-object";
 
 const kubeObjectStatusTextsForObjectInjectable = getInjectable({
   id: "kube-object-status-texts-for-object",

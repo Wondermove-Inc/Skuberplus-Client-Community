@@ -5,10 +5,10 @@
  */
 
 import asyncFn from "@async-fn/jest";
-import { HorizontalPodAutoscalerApi } from "@skuberplus/kube-api";
-import { ingressApiInjectable, maybeKubeApiInjectable } from "@skuberplus/kube-api-specifics";
-import { Ingress } from "@skuberplus/kube-object";
-import { logErrorInjectionToken, logInfoInjectionToken, logWarningInjectionToken } from "@skuberplus/logger";
+import { HorizontalPodAutoscalerApi } from "@k-lens/kube-api";
+import { ingressApiInjectable, maybeKubeApiInjectable } from "@k-lens/kube-api-specifics";
+import { Ingress } from "@k-lens/kube-object";
+import { logErrorInjectionToken, logInfoInjectionToken, logWarningInjectionToken } from "@k-lens/logger";
 import setupAutoRegistrationInjectable from "../../../renderer/before-frame-starts/runnables/setup-auto-registration.injectable";
 import hostedClusterInjectable from "../../../renderer/cluster-frame-context/hosted-cluster.injectable";
 import { getDiForUnitTesting } from "../../../renderer/getDiForUnitTesting";
@@ -21,7 +21,7 @@ import { Cluster } from "../../cluster/cluster";
 import nodeFetchInjectable from "../../fetch/node-fetch.injectable";
 import apiManagerInjectable from "../api-manager/manager.injectable";
 
-import type { IngressApi } from "@skuberplus/kube-api";
+import type { IngressApi } from "@k-lens/kube-api";
 
 import type { AsyncFnMock } from "@async-fn/jest";
 import type { DiContainer } from "@ogre-tools/injectable";

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { lensBuildEnvironmentInjectionToken } from "@skuberplus/application";
-import { asLegacyGlobalForExtensionApi, getLegacyGlobalDiForExtensionApi } from "@skuberplus/legacy-global-di";
+import { lensBuildEnvironmentInjectionToken } from "@k-lens/application";
+import { asLegacyGlobalForExtensionApi, getLegacyGlobalDiForExtensionApi } from "@k-lens/legacy-global-di";
 import { issuesTrackerUrl } from "../../common/vars";
 import appNameInjectable from "../../common/vars/app-name.injectable";
 import isFlatpakPackageInjectable from "../../common/vars/is-flatpak-package.injectable";

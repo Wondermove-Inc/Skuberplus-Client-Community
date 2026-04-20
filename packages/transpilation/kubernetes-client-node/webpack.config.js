@@ -24,10 +24,10 @@ export default {
       !request.startsWith("jsonpath-plus")
     ) {
       if (request === "node-fetch") {
-        return Promise.resolve(["node-commonjs @skuberplus/node-fetch", "default"]);
+        return Promise.resolve(["node-commonjs @k-lens/node-fetch", "default"]);
       }
       if (request === "openid-client") {
-        return Promise.resolve(["node-commonjs @skuberplus/openid-client", "default"]);
+        return Promise.resolve(["node-commonjs @k-lens/openid-client", "default"]);
       }
       return Promise.resolve(`node-commonjs ${request}`);
     }

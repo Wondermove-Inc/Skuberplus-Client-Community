@@ -9,15 +9,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { type KubeEvent, KubeObject } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { type KubeEvent, KubeObject } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
 // 🎯 shadcn UI 컴포넌트: DrawerItem/DrawerTitle 대체
-import {
-  DetailPanelField,
-  DetailPanelSection,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { cssNames } from "@skuberplus/utilities";
+import { DetailPanelField, DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { cssNames } from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { disposeOnUnmount, observer } from "mobx-react";
 import moment from "moment-timezone";
 import React, { Component } from "react";
@@ -26,7 +23,7 @@ import { DurationAbsoluteTimestamp } from "./duration-absolute";
 import styles from "./kube-event-details.module.scss";
 import eventStoreInjectable from "./store.injectable";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
 import type { EventStore } from "./store";

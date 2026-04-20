@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Cluster } from "@skuberplus/kube-object";
+import { Cluster } from "@k-lens/kube-object";
 import { KubeApi } from "../kube-api";
 
 import type { DerivedKubeApiOptions, KubeApiDependencies } from "../kube-api";

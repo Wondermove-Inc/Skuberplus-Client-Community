@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { winstonLoggerInjectable } from "@skuberplus/logger";
-import { noop } from "@skuberplus/utilities";
+import { winstonLoggerInjectable } from "@k-lens/logger";
+import { noop } from "@k-lens/utilities";
 import { getGlobalOverride } from "../test-utils/get-global-override";
 
 import type winston from "winston";

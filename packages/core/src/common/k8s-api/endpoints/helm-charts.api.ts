@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { array } from "@skuberplus/utilities";
+import { array } from "@k-lens/utilities";
 import autoBind from "auto-bind";
 import Joi from "joi";
 

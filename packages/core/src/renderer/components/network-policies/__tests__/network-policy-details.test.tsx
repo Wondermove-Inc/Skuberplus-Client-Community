@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { NetworkPolicy } from "@skuberplus/kube-object";
+import { NetworkPolicy } from "@k-lens/kube-object";
 import { findByTestId, findByText } from "@testing-library/react";
 import React from "react";
 import { getDiForUnitTesting } from "../../../getDiForUnitTesting";

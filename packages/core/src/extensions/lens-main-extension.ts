@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getEnvironmentSpecificLegacyGlobalDiForExtensionApi } from "@skuberplus/legacy-global-di";
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { getEnvironmentSpecificLegacyGlobalDiForExtensionApi } from "@k-lens/legacy-global-di";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { isObservableArray } from "mobx";
 import catalogEntityRegistryInjectable from "../main/catalog/entity-registry.injectable";
 import navigateForExtensionInjectable from "../main/start-main-application/lens-window/navigate-for-extension.injectable";

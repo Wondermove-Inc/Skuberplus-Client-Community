@@ -15,7 +15,7 @@ import apiManagerInjectable from "../../../common/k8s-api/api-manager/manager.in
 import getDetailsUrlInjectable from "../kube-detail-params/get-details-url.injectable";
 import { Table, TableCell, TableHead, TableRow } from "../table";
 
-import type { EndpointAddress, EndpointSubset, Endpoints } from "@skuberplus/kube-object";
+import type { EndpointAddress, EndpointSubset, Endpoints } from "@k-lens/kube-object";
 
 import type { ApiManager } from "../../../common/k8s-api/api-manager";
 import type { GetDetailsUrl } from "../kube-detail-params/get-details-url.injectable";

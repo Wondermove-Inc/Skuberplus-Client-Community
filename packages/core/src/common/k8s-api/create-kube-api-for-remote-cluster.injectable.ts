@@ -4,17 +4,17 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { KubeApi } from "@k-lens/kube-api";
+import { logErrorInjectionToken, logInfoInjectionToken, logWarningInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { KubeApi } from "@skuberplus/kube-api";
-import { logErrorInjectionToken, logInfoInjectionToken, logWarningInjectionToken } from "@skuberplus/logger";
 import { Agent } from "https";
 import isDevelopmentInjectable from "../vars/is-development.injectable";
 import createKubeJsonApiInjectable from "./create-kube-json-api.injectable";
 import type { AgentOptions } from "https";
 
-import type { KubeApiOptions } from "@skuberplus/kube-api";
-import type { KubeJsonApiDataFor, KubeObject, KubeObjectConstructor } from "@skuberplus/kube-object";
-import type { RequestInit } from "@skuberplus/node-fetch";
+import type { KubeApiOptions } from "@k-lens/kube-api";
+import type { KubeJsonApiDataFor, KubeObject, KubeObjectConstructor } from "@k-lens/kube-object";
+import type { RequestInit } from "@k-lens/node-fetch";
 
 export interface CreateKubeApiForRemoteClusterConfig {
   cluster: {

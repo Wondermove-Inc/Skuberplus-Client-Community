@@ -4,19 +4,19 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { animateFeature, requestAnimationFrameInjectable } from "@k-lens/animate";
+import { clusterSidebarFeature } from "@k-lens/cluster-sidebar";
+import { registerFeature } from "@k-lens/feature-core";
+import { kubeApiSpecificsFeature, storesAndApisCanBeCreatedInjectionToken } from "@k-lens/kube-api-specifics";
+import { setLegacyGlobalDiForExtensionApi } from "@k-lens/legacy-global-di";
+import { loggerFeature } from "@k-lens/logger";
+import { messagingFeature, testUtils as messagingTestUtils } from "@k-lens/messaging";
+import { notificationsFeature } from "@k-lens/notifications";
+import { randomFeature } from "@k-lens/random";
+import { routingFeature } from "@k-lens/routing";
 import { createContainer, isInjectable } from "@ogre-tools/injectable";
 import { registerMobX } from "@ogre-tools/injectable-extension-for-mobx";
 import { registerInjectableReact } from "@ogre-tools/injectable-react";
-import { animateFeature, requestAnimationFrameInjectable } from "@skuberplus/animate";
-import { clusterSidebarFeature } from "@skuberplus/cluster-sidebar";
-import { registerFeature } from "@skuberplus/feature-core";
-import { kubeApiSpecificsFeature, storesAndApisCanBeCreatedInjectionToken } from "@skuberplus/kube-api-specifics";
-import { setLegacyGlobalDiForExtensionApi } from "@skuberplus/legacy-global-di";
-import { loggerFeature } from "@skuberplus/logger";
-import { messagingFeature, testUtils as messagingTestUtils } from "@skuberplus/messaging";
-import { notificationsFeature } from "@skuberplus/notifications";
-import { randomFeature } from "@skuberplus/random";
-import { routingFeature } from "@skuberplus/routing";
 import { chunk, noop } from "lodash/fp";
 import { runInAction } from "mobx";
 // 🎯 클러스터 컨텍스트 관련 injectable 오버라이드용

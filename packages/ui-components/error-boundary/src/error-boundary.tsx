@@ -6,18 +6,18 @@
 
 import "./error-boundary.scss";
 
+import { Button } from "@k-lens/button";
+import { observableHistoryInjectionToken } from "@k-lens/routing";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Button } from "@skuberplus/button";
-import { observableHistoryInjectionToken } from "@skuberplus/routing";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { ObservableHistory } from "mobx-observable-history";
 import type { ErrorInfo } from "react";
 
-const issuesTrackerUrl = "https://github.com/Wondermove-Inc/Skuberplus-Client-Community/issues";
+const issuesTrackerUrl = "https://github.com/Wondermove-Inc/K-Lens-Community/issues";
 
 export interface ErrorBoundaryProps {
   children?: StrictReactNode;

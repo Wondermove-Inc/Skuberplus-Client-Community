@@ -16,7 +16,7 @@
  * - 2025-11-05: 초기 생성 (RoleBindings 패턴 기반)
  */
 
-import { Button, Checkbox } from "@skuberplus/storybook-shadcn";
+import { Button, Checkbox } from "@k-lens/storybook-shadcn";
 import { AlertTriangle, ArrowUpDown } from "lucide-react";
 import React from "react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/shadcn-ui/tooltip";
@@ -24,7 +24,7 @@ import { KubeObjectAge } from "../../kube-object/age";
 import { LinkToClusterRole } from "../../kube-object-link";
 import { KubeObjectStatusIcon } from "../../kube-object-status-icon";
 
-import type { ClusterRoleBinding } from "@skuberplus/kube-object";
+import type { ClusterRoleBinding } from "@k-lens/kube-object";
 
 import type { ColumnDef } from "@tanstack/react-table";
 

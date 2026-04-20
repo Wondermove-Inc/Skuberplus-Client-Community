@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Deployment, Pod } from "@skuberplus/kube-object";
+import { Deployment, Pod } from "@k-lens/kube-object";
 import { observable } from "mobx";
 import directoryForKubeConfigsInjectable from "../../../common/app-paths/directory-for-kube-configs/directory-for-kube-configs.injectable";
 import directoryForUserDataInjectable from "../../../common/app-paths/directory-for-user-data/directory-for-user-data.injectable";
@@ -15,7 +15,7 @@ import storesAndApisCanBeCreatedInjectable from "../../stores-apis-can-be-create
 import deploymentStoreInjectable from "../workloads-deployments/store.injectable";
 import podStoreInjectable from "../workloads-pods/store.injectable";
 
-import type { PodSpec } from "@skuberplus/kube-object";
+import type { PodSpec } from "@k-lens/kube-object";
 
 import type { DeploymentStore } from "../workloads-deployments/store";
 

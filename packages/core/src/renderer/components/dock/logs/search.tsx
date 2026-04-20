@@ -7,7 +7,7 @@
 import "./search.scss";
 
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
+import { Icon } from "@k-lens/icon";
 import { observer } from "mobx-react";
 import React, { useEffect, useRef } from "react";
 import isMacInjectable from "../../../../common/vars/is-mac.injectable";

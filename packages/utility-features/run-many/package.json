@@ -1,5 +1,5 @@
 {
-  "name": "@skuberplus/run-many",
+  "name": "@k-lens/run-many",
   "version": "1.5.4-0",
   "type": "commonjs",
   "description": "A package containing runMany and runManySync",
@@ -14,11 +14,11 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "license": "MIT",
-  "homepage": "https://skuberplus.app",
+  "homepage": "https://k-lens.app",
   "scripts": {
     "clean": "pnpm dlx rimraf@6.0.1 dist",
     "clean:node_modules": "pnpm dlx rimraf@6.0.1 node_modules",
@@ -26,15 +26,15 @@
     "test:unit": "jest --coverage --runInBand"
   },
   "dependencies": {
-    "@skuberplus/utilities": "workspace:^",
+    "@k-lens/utilities": "workspace:^",
     "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@async-fn/jest": "^1.6.4",
-    "@skuberplus/jest": "workspace:^",
-    "@skuberplus/test-utils": "workspace:^",
-    "@skuberplus/typescript": "workspace:^",
-    "@skuberplus/webpack": "workspace:^",
+    "@k-lens/jest": "workspace:^",
+    "@k-lens/test-utils": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
+    "@k-lens/webpack": "workspace:^",
     "@ogre-tools/fp": "^17.11.1",
     "@ogre-tools/injectable": "^17.11.1",
     "@types/uuid": "^11.0.0",

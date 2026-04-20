@@ -19,17 +19,17 @@
  * @packageDocumentation
  */
 
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { Button } from "@skuberplus/storybook-shadcn/src/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@skuberplus/storybook-shadcn/src/components/ui/card";
-import { Input } from "@skuberplus/storybook-shadcn/src/components/ui/input";
-import { ToggleGroup, ToggleGroupItem } from "@skuberplus/storybook-shadcn/src/components/ui/toggle-group";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { Button } from "@k-lens/storybook-shadcn/src/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@k-lens/storybook-shadcn/src/components/ui/card";
+import { Input } from "@k-lens/storybook-shadcn/src/components/ui/input";
+import { ToggleGroup, ToggleGroupItem } from "@k-lens/storybook-shadcn/src/components/ui/toggle-group";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@skuberplus/storybook-shadcn/src/components/ui/tooltip";
+} from "@k-lens/storybook-shadcn/src/components/ui/tooltip";
 import { ArrowDown, ArrowUp, ArrowUpDown, MoreVertical, X } from "lucide-react";
 import React, { useCallback, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";

@@ -16,8 +16,8 @@
  * @packageDocumentation
  */
 
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "@skuberplus/storybook-shadcn/src/components/ui/card";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@k-lens/storybook-shadcn/src/components/ui/card";
 import { ShieldAlert } from "lucide-react";
 import React, { useMemo } from "react";
 import {

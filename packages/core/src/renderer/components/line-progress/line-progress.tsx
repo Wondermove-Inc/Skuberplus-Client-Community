@@ -6,12 +6,12 @@
 
 import "./line-progress.scss";
 
-import { cssNames } from "@skuberplus/utilities";
+import { cssNames } from "@k-lens/utilities";
 import React from "react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../shadcn-ui/tooltip";
 
-import type { TooltipPosition } from "@skuberplus/tooltip";
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { TooltipPosition } from "@k-lens/tooltip";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 /**
  * 툴팁 prop 객체 형태 (preferredPositions 지원)

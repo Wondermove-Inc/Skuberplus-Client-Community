@@ -1,5 +1,5 @@
 {
-  "name": "@skuberplus/cluster-sidebar",
+  "name": "@k-lens/cluster-sidebar",
   "private": false,
   "version": "1.5.4-0",
   "description": "Injection tokens for adding new sidebar items within the Cluster View",
@@ -13,16 +13,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wondermove-Inc/Skuberplus-Client-Community.git"
+    "url": "git+https://github.com/Wondermove-Inc/Klens-Client-Community.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "license": "MIT",
-  "homepage": "https://skuberplus.app",
+  "homepage": "https://k-lens.app",
   "scripts": {
     "build": "lens-webpack-build",
     "clean": "pnpm dlx rimraf@6.0.1 dist",
@@ -30,17 +30,17 @@
     "test:unit": "jest --coverage --runInBand"
   },
   "dependencies": {
-    "@skuberplus/feature-core": "workspace:^",
-    "@skuberplus/utilities": "workspace:^",
+    "@k-lens/feature-core": "workspace:^",
+    "@k-lens/utilities": "workspace:^",
     "@ogre-tools/injectable": "^17.11.1",
     "@ogre-tools/injectable-extension-for-auto-registration": "^17.11.1",
     "@ogre-tools/injectable-extension-for-mobx": "^17.11.1",
     "mobx": "^6.13.7"
   },
   "devDependencies": {
-    "@skuberplus/jest": "workspace:^",
-    "@skuberplus/typescript": "workspace:^",
-    "@skuberplus/webpack": "workspace:^",
+    "@k-lens/jest": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
+    "@k-lens/webpack": "workspace:^",
     "@types/lodash": "^4.17.20",
     "@types/webpack-env": "^1.18.8",
     "identity-obj-proxy": "^3.0.0",

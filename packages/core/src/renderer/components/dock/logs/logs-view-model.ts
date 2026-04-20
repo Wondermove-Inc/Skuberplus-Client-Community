@@ -4,13 +4,13 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { isDefined } from "@skuberplus/utilities";
+import { isDefined } from "@k-lens/utilities";
 import assert from "assert";
 import { computed } from "mobx";
 import { isAllContainersSelected } from "./tab-store";
 
-import type { ResourceDescriptor } from "@skuberplus/kube-api";
-import type { Pod, PodLogsQuery } from "@skuberplus/kube-object";
+import type { ResourceDescriptor } from "@k-lens/kube-api";
+import type { Pod, PodLogsQuery } from "@k-lens/kube-object";
 import type { IComputedValue } from "mobx";
 
 import type { SearchStore } from "../../../search-store/search-store";

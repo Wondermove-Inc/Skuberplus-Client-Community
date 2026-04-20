@@ -1,6 +1,7 @@
 /* c8 ignore start */
+
+import { enlistRequestChannelListenerInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { enlistRequestChannelListenerInjectionToken } from "@skuberplus/messaging";
 
 const enlistRequestChannelListenerInjectable = getInjectable({
   id: "enlist-request-channel-listener-for-renderer",

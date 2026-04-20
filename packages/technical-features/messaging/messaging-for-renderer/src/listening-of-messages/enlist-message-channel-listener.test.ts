@@ -1,6 +1,6 @@
+import { registerFeature } from "@k-lens/feature-core";
+import { type EnlistMessageChannelListener, enlistMessageChannelListenerInjectionToken } from "@k-lens/messaging";
 import { createContainer } from "@ogre-tools/injectable";
-import { registerFeature } from "@skuberplus/feature-core";
-import { type EnlistMessageChannelListener, enlistMessageChannelListenerInjectionToken } from "@skuberplus/messaging";
 import { messagingFeatureForRenderer } from "../feature";
 import ipcRendererInjectable from "../ipc/ipc-renderer.injectable";
 

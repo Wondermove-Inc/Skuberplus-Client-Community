@@ -1,6 +1,6 @@
 import { getInjectionToken } from "@ogre-tools/injectable";
 
-import type { Disposer } from "@skuberplus/utilities";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { MessageChannel, MessageChannelListener } from "./message-channel-listener-injection-token";
 

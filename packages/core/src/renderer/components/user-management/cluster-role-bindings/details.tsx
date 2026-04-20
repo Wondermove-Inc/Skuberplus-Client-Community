@@ -6,10 +6,10 @@
 
 import "./details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
 // 🎯 shadcn UI 컴포넌트: DrawerTitle 대체
-import { DetailPanelSection } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { ObservableHashSet, prevDefault } from "@skuberplus/utilities";
+import { DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { ObservableHashSet, prevDefault } from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import autoBindReact from "auto-bind/react";
 import { reaction } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
@@ -23,7 +23,7 @@ import { hashSubject } from "../hashers";
 import openClusterRoleBindingDialogInjectable from "./dialog/open.injectable";
 import clusterRoleBindingStoreInjectable from "./store.injectable";
 
-import type { ClusterRoleBinding } from "@skuberplus/kube-object";
+import type { ClusterRoleBinding } from "@k-lens/kube-object";
 
 import type { OpenConfirmDialog } from "../../confirm-dialog/open.injectable";
 import type { KubeObjectDetailsProps } from "../../kube-object-details";

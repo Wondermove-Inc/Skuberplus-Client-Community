@@ -14,9 +14,9 @@
 
 import "./pod-details.scss";
 
+import { Pod } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Pod } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { observer } from "mobx-react";
 import React from "react";
 import { buildKubectlAttachCommand, buildKubectlExecCommand } from "../../../common/utils/shell-utils";
@@ -35,8 +35,8 @@ import { notificationPanelStore } from "../status-bar/items/notification-panel.s
 import { PodDetailsContent } from "./pod-details-content";
 import PodMetricsDetailsComponent from "./pod-metrics-details-component";
 
-import type { Container, KubeObject } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+import type { Container, KubeObject } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { HostedCluster } from "../../cluster-frame-context/hosted-cluster.injectable";
 import type { OpenConfirmDialog } from "../confirm-dialog/open.injectable";

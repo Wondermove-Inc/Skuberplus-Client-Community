@@ -139,7 +139,7 @@ export const ObservabilityHeader = ({ isDark }: ObservabilityHeaderProps) => {
         <div className="flex items-center gap-3">
           <SkuberLogo />
           <div className="flex flex-col">
-            <span className="text-foreground text-2xl font-medium">Skuber⁺ Observability</span>
+            <span className="text-foreground text-2xl font-medium">k-o11y</span>
             <span className="text-muted-foreground text-xs font-normal leading-none">WONDERMOVE, Inc.</span>
           </div>
         </div>

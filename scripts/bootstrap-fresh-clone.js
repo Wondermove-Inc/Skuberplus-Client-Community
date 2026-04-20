@@ -4,7 +4,7 @@
  *
  * 단계:
  * 1. ELECTRON_SKIP_BINARY_DOWNLOAD=1 pnpm install (이미 설치돼 있으면 건너뜀)
- * 2. 자주 필요한 패키지(@skuberplus/core 등) 빌드
+ * 2. 자주 필요한 패키지(@k-lens/core 등) 빌드 (패키지명은 별도 마이그레이션 예정)
  * 3. 전체 pnpm build (필요 시 --skip 옵션으로 건너뛸 수 있음)
  *
  * 사용 예:
@@ -20,12 +20,12 @@ import path from "node:path";
 const repoRoot = path.resolve(path.join(import.meta.url.replace("file://", ""), "..", ".."));
 const requireFromRoot = createRequire(path.join(repoRoot, "package.json"));
 const workspaceBuildTargets = [
-  "@skuberplus/core",
-  "@skuberplus/logger",
-  "@skuberplus/metrics",
-  "@skuberplus/routing",
-  "@skuberplus/list-layout",
-  "@skuberplus/generate-tray-icons",
+  "@k-lens/core",
+  "@k-lens/logger",
+  "@k-lens/metrics",
+  "@k-lens/routing",
+  "@k-lens/list-layout",
+  "@k-lens/generate-tray-icons",
 ];
 
 function run(command, options = {}) {
@@ -83,4 +83,4 @@ if (skipFullBuild) {
   run("pnpm build");
 }
 
-console.log("\n✅ bootstrap-fresh-clone 완료! 이제 `pnpm --filter ./skuberplus run dev`를 실행할 수 있습니다.");
+console.log("\n✅ bootstrap-fresh-clone 완료! 이제 `pnpm --filter ./k-lens run dev`를 실행할 수 있습니다.");

@@ -1,5 +1,5 @@
 {
-  "name": "@skuberplus/cluster-settings",
+  "name": "@k-lens/cluster-settings",
   "version": "1.5.4-0",
   "description": "Injection token exporter for cluster settings configuration",
   "license": "MIT",
@@ -23,8 +23,8 @@
     "@ogre-tools/injectable": "^17.11.1"
   },
   "devDependencies": {
-    "@skuberplus/typescript": "workspace:^",
-    "@skuberplus/webpack": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
+    "@k-lens/webpack": "workspace:^",
     "@types/react": "^18.3.3",
     "ts-loader": "^9.5.4",
     "webpack": "^5.101.3"

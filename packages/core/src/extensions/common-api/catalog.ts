@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { asLegacyGlobalForExtensionApi } from "@skuberplus/legacy-global-di";
+import { asLegacyGlobalForExtensionApi } from "@k-lens/legacy-global-di";
 import kubernetesClusterCategoryInjectable from "../../common/catalog/categories/kubernetes-cluster.injectable";
 
 import type { KubernetesClusterCategory } from "../../common/catalog-entities/kubernetes-cluster";

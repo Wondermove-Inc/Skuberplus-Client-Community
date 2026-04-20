@@ -23,7 +23,7 @@ export default function generateExtensionTypes(): webpack.Configuration {
       // need to be an absolute path
       path: path.resolve("./dist/"),
       // can be use in commonjs environments
-      // e.g. require('@skuberplus/extensions')
+      // e.g. require('@k-lens/extensions')
       libraryTarget: "commonjs",
     },
     cache: isDevelopment,
@@ -35,7 +35,7 @@ export default function generateExtensionTypes(): webpack.Configuration {
       /require.extensions is not supported by webpack./, // handlebars
     ],
     stats: "errors-warnings",
-    externals: ["@skuberplus/core/common", "@skuberplus/core/main", "@skuberplus/core/renderer"],
+    externals: ["@k-lens/core/common", "@k-lens/core/main", "@k-lens/core/renderer"],
     module: {
       rules: [
         {
@@ -48,7 +48,7 @@ export default function generateExtensionTypes(): webpack.Configuration {
           options: {
             // !! ts-loader will use tsconfig.json at folder root
             // !! changes in tsconfig.json may have side effects
-            // !! on '@skuberplus/extensions' module
+            // !! on '@k-lens/extensions' module
             compilerOptions: {
               declaration: true, // output .d.ts
               sourceMap: false, // to override sourceMap: true in tsconfig.json

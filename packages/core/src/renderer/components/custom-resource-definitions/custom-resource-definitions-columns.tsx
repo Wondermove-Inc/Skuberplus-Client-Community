@@ -16,15 +16,15 @@
  * - 2025-11-05: 초기 생성 (RoleBindings 패턴 기반)
  */
 
-import { Button, Checkbox } from "@skuberplus/storybook-shadcn";
-import { stopPropagation } from "@skuberplus/utilities";
+import { Button, Checkbox } from "@k-lens/storybook-shadcn";
+import { stopPropagation } from "@k-lens/utilities";
 import { ArrowUpDown } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/shadcn-ui/tooltip";
 import { KubeObjectAge } from "../kube-object/age";
 
-import type { CustomResourceDefinition } from "@skuberplus/kube-object";
+import type { CustomResourceDefinition } from "@k-lens/kube-object";
 
 import type { ColumnDef } from "@tanstack/react-table";
 

@@ -5,12 +5,12 @@
  */
 
 // 🎯 shadcn UI 컴포넌트: DrawerItem 대체
-import { DetailPanelField } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { bytesToUnits, unitsToBytes } from "@skuberplus/utilities";
+import { DetailPanelField } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { bytesToUnits, unitsToBytes } from "@k-lens/utilities";
 import React from "react";
 import { WithTooltip } from "../with-tooltip";
 
-import type { Node } from "@skuberplus/kube-object";
+import type { Node } from "@k-lens/kube-object";
 
 export interface NodeDetailsResourcesProps {
   node: Node;

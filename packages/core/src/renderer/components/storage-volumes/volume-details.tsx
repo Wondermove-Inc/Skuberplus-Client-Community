@@ -7,24 +7,21 @@
 import startCase from "lodash/startCase";
 import "./volume-details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { persistentVolumeClaimApiInjectable, storageClassApiInjectable } from "@skuberplus/kube-api-specifics";
-import { PersistentVolume } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { persistentVolumeClaimApiInjectable, storageClassApiInjectable } from "@k-lens/kube-api-specifics";
+import { PersistentVolume } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
 // 🎯 shadcn UI 컴포넌트: DrawerItem/DrawerTitle/Badge 대체
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import {
-  DetailPanelField,
-  DetailPanelSection,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { stopPropagation } from "@skuberplus/utilities";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { DetailPanelField, DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { stopPropagation } from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import getDetailsUrlInjectable from "../kube-detail-params/get-details-url.injectable";
 
-import type { PersistentVolumeClaimApi, StorageClassApi } from "@skuberplus/kube-api";
-import type { Logger } from "@skuberplus/logger";
+import type { PersistentVolumeClaimApi, StorageClassApi } from "@k-lens/kube-api";
+import type { Logger } from "@k-lens/logger";
 
 import type { GetDetailsUrl } from "../kube-detail-params/get-details-url.injectable";
 import type { KubeObjectDetailsProps } from "../kube-object-details";

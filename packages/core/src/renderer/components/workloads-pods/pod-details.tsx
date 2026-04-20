@@ -17,12 +17,12 @@
 
 import "./pod-details.scss";
 
+import { Pod } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { DetailPanelField } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { formatDuration } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Pod } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { DetailPanelField } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { formatDuration } from "@skuberplus/utilities";
 import kebabCase from "lodash/kebabCase";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
@@ -36,7 +36,7 @@ import { PodDetailsAffinities } from "./pod-details-affinities";
 import { PodDetailsSecrets } from "./pod-details-secrets";
 import { PodDetailsTolerations } from "./pod-details-tolerations";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { KubeObjectDetailsProps } from "../kube-object-details";
 

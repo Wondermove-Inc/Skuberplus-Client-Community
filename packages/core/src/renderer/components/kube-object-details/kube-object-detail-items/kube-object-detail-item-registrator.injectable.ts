@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { getRandomIdInjectionToken } from "@k-lens/random";
 import { getInjectable } from "@ogre-tools/injectable";
-import { getRandomIdInjectionToken } from "@skuberplus/random";
 import { computed } from "mobx";
 import { extensionRegistratorInjectionToken } from "../../../../extensions/extension-loader/extension-registrator-injection-token";
 import extensionShouldBeEnabledForClusterFrameInjectable from "../../../extension-loader/extension-should-be-enabled-for-cluster-frame.injectable";

@@ -6,7 +6,7 @@
 
 import { KubeObjectStore } from "../../../common/k8s-api/kube-object.store";
 
-import type { PersistentVolumeClaimApi } from "@skuberplus/kube-api";
-import type { PersistentVolumeClaim } from "@skuberplus/kube-object";
+import type { PersistentVolumeClaimApi } from "@k-lens/kube-api";
+import type { PersistentVolumeClaim } from "@k-lens/kube-object";
 
 export class PersistentVolumeClaimStore extends KubeObjectStore<PersistentVolumeClaim, PersistentVolumeClaimApi> {}

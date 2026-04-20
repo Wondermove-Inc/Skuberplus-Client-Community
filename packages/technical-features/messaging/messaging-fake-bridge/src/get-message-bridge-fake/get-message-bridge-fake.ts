@@ -1,11 +1,11 @@
 import asyncFn, { type AsyncFnMock } from "@async-fn/jest";
-import { pipeline } from "@ogre-tools/fp";
 import {
   enlistMessageChannelListenerInjectionToken,
   enlistRequestChannelListenerInjectionToken,
   requestFromChannelInjectionToken,
   sendMessageToChannelInjectionToken,
-} from "@skuberplus/messaging";
+} from "@k-lens/messaging";
+import { pipeline } from "@ogre-tools/fp";
 import { filter, map } from "lodash/fp";
 
 import type {
@@ -15,7 +15,7 @@ import type {
   RequestChannel,
   RequestChannelHandler,
   RequestFromChannel,
-} from "@skuberplus/messaging";
+} from "@k-lens/messaging";
 
 import type { DiContainer } from "@ogre-tools/injectable";
 import type { act } from "@testing-library/react";

@@ -4,7 +4,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Start a discussion about anything related to Skuber+ Client.
+        Start a discussion about anything related to K-Lens.
 
   - type: textarea
     id: topic

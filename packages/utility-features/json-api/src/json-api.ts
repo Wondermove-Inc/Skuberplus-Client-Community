@@ -4,17 +4,17 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { EventEmitter } from "@skuberplus/event-emitter";
-import { isObject, isString, json } from "@skuberplus/utilities";
+import { EventEmitter } from "@k-lens/event-emitter";
+import { isObject, isString, json } from "@k-lens/utilities";
 import { Agent as HttpAgent } from "http";
 import { Agent as HttpsAgent } from "https";
 import { merge } from "lodash";
 import { stringify } from "querystring";
 
-import type { Logger } from "@skuberplus/logger";
-import type Fetch from "@skuberplus/node-fetch";
-import type { RequestInit, Response } from "@skuberplus/node-fetch";
-import type { Defaulted } from "@skuberplus/utilities";
+import type { Logger } from "@k-lens/logger";
+import type Fetch from "@k-lens/node-fetch";
+import type { RequestInit, Response } from "@k-lens/node-fetch";
+import type { Defaulted } from "@k-lens/utilities";
 
 import type { Patch } from "rfc6902";
 import type { PartialDeep, ValueOf } from "type-fest";

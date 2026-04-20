@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerTransportInjectionToken } from "@k-lens/logger";
+import { sendMessageToChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerTransportInjectionToken } from "@skuberplus/logger";
-import { sendMessageToChannelInjectionToken } from "@skuberplus/messaging";
 import { MESSAGE } from "triple-beam";
 import { closeIpcFileLoggerChannel, ipcFileLoggerChannel } from "../common/ipc-file-logger-channel";
 import IpcLogTransport from "./ipc-transport";

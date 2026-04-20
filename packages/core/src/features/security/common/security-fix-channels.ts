@@ -16,7 +16,7 @@
  * @packageDocumentation
  */
 
-import { getMessageChannel, getRequestChannel } from "@skuberplus/messaging";
+import { getMessageChannel, getRequestChannel } from "@k-lens/messaging";
 
 // ============================================
 // Shared types

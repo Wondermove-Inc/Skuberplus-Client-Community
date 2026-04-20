@@ -26,7 +26,7 @@ import navigateInjectable from "../../navigation/navigate.injectable";
 // 🆕 파일 에디터 탭 컴포넌트
 import { FileEditorTab, SaveConfirmDialog } from "../file-editor";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { DropResult } from "@hello-pangea/dnd";
 import type { IComputedValue } from "mobx";

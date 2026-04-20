@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { priorityClassApiInjectable } from "@k-lens/kube-api-specifics";
+import { stopPropagation } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { priorityClassApiInjectable } from "@skuberplus/kube-api-specifics";
-import { stopPropagation } from "@skuberplus/utilities";
 import React from "react";
 import getMaybeDetailsUrlInjectable, {
   type GetMaybeDetailsUrl,
@@ -14,7 +14,7 @@ import getMaybeDetailsUrlInjectable, {
 import { MaybeLink } from "../maybe-link";
 import { WithTooltip } from "../with-tooltip";
 
-import type { PriorityClassApi } from "@skuberplus/kube-api";
+import type { PriorityClassApi } from "@k-lens/kube-api";
 
 interface Dependencies {
   getMaybeDetailsUrl: GetMaybeDetailsUrl;

@@ -6,15 +6,12 @@
 
 import "./event-details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { KubeEvent } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { KubeEvent } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
 // 🎯 shadcn UI 컴포넌트: DrawerItem/DrawerTitle 대체
-import {
-  DetailPanelField,
-  DetailPanelSection,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { cssNames } from "@skuberplus/utilities";
+import { DetailPanelField, DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { cssNames } from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import kebabCase from "lodash/kebabCase";
 import { observer } from "mobx-react";
 import React from "react";
@@ -24,7 +21,7 @@ import getDetailsUrlInjectable from "../kube-detail-params/get-details-url.injec
 import { Table, TableCell, TableHead, TableRow } from "../table";
 import { DurationAbsoluteTimestamp } from "./duration-absolute";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { ApiManager } from "../../../common/k8s-api/api-manager";
 import type { GetDetailsUrl } from "../kube-detail-params/get-details-url.injectable";

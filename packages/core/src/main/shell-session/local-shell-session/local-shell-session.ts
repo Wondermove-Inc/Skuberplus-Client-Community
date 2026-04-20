@@ -115,7 +115,7 @@ export class LocalShellSession extends ShellSession {
         return ["--login"];
       case "wsl": {
         // WSL에서 kubectl을 사용하기 위해 PATH에 kubectl/binaries 디렉토리 추가
-        // 전략: WSLENV로 전달된 SKUBERPLUS_KUBECTL_DIR, SKUBERPLUS_BINARIES_DIR 변수를
+        // 전략: WSLENV로 전달된 KLENS_KUBECTL_DIR, KLENS_BINARIES_DIR 변수를
         // bash -c에서 PATH에 추가한 후 exec bash로 인터랙티브 셸 시작
         // (PATH를 직접 WSLENV로 전달하면 /etc/profile이 리셋하므로 별도 변수 사용)
         const wslArgs: string[] = [];
@@ -132,8 +132,8 @@ export class LocalShellSession extends ShellSession {
         // /tmp에 확장자 없는 심링크를 만들어 kubectl 등의 명령어를 바로 사용 가능하게 함
         const initCmd = [
           "_SKB_BIN=$(mktemp -d)",
-          'for f in "$SKUBERPLUS_KUBECTL_DIR"/*.exe "$SKUBERPLUS_BINARIES_DIR"/*.exe; do [ -f "$f" ] && ln -sf "$f" "$_SKB_BIN/$(basename "${f%.exe}")" 2>/dev/null; done',
-          'export PATH="$_SKB_BIN:$SKUBERPLUS_KUBECTL_DIR:$SKUBERPLUS_BINARIES_DIR:$PATH"',
+          'for f in "$KLENS_KUBECTL_DIR"/*.exe "$KLENS_BINARIES_DIR"/*.exe; do [ -f "$f" ] && ln -sf "$f" "$_SKB_BIN/$(basename "${f%.exe}")" 2>/dev/null; done',
+          'export PATH="$_SKB_BIN:$KLENS_KUBECTL_DIR:$KLENS_BINARIES_DIR:$PATH"',
           "exec bash",
         ].join("; ");
 

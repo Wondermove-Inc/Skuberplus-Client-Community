@@ -16,7 +16,7 @@
  * - 2026-01-23: Configure Metrics Source 링크 제거 (레거시 라우트 연결 이슈)
  */
 
-import { Icon } from "@skuberplus/icon";
+import { Icon } from "@k-lens/icon";
 import React from "react";
 
 export type NoMetricsVariant = "default" | "prometheus-required";

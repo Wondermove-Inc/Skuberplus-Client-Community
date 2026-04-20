@@ -16,7 +16,7 @@
  * @packageDocumentation
  */
 
-import { getMessageChannel, getRequestChannel } from "@skuberplus/messaging";
+import { getMessageChannel, getRequestChannel } from "@k-lens/messaging";
 
 import type { AnySecurityFinding } from "../../../common/security/security-finding";
 import type { ScannerStatus } from "./scanner-engine";

@@ -11,8 +11,8 @@ import isDevelopmentInjectable from "./is-development.injectable";
 /**
  * 🎯 목적: UI 표시용 앱 이름 생성 (윈도우 타이틀, About 다이얼로그 등)
  *
- * displayProductName 사용하여 UI에 "Skuber⁺ Client" 표시
- * 개발 모드에서는 "Skuber⁺ ClientDev" 표시
+ * displayProductName 사용하여 UI에 "K-Lens" 표시
+ * 개발 모드에서는 "K-LensDev" 표시
  *
  * ⚠️ 주의: 파일 시스템 경로에는 app-name.injectable.ts를 사용하세요.
  *

@@ -10,7 +10,7 @@ import rendererExtensionsInjectable from "../../../../extensions/renderer-extens
 import customResourceDefinitionsInjectable from "../../custom-resource-definitions/definitions.injectable";
 import internalCommandsInjectable, { isKubernetesClusterActive } from "./internal-commands.injectable";
 
-import type { CustomResourceDefinition } from "@skuberplus/kube-object";
+import type { CustomResourceDefinition } from "@k-lens/kube-object";
 
 import type { IComputedValue } from "mobx";
 

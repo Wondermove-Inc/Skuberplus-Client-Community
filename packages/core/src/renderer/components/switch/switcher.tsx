@@ -7,7 +7,7 @@
 import React from "react";
 import { Switch } from "./switch";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 export interface SwitcherProps {
   disabled?: boolean;

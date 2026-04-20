@@ -19,7 +19,7 @@ import {
   mcpConfigStore,
 } from "../../common/mcp-config";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { StructuredToolInterface } from "@langchain/core/tools";
 

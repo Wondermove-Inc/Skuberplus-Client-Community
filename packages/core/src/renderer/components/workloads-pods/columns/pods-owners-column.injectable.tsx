@@ -4,11 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getInjectable } from "@ogre-tools/injectable";
-import { podListLayoutColumnInjectionToken } from "@skuberplus/list-layout";
+import { podListLayoutColumnInjectionToken } from "@k-lens/list-layout";
 // 🎯 shadcn UI 컴포넌트: 레거시 Badge 대체
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { stopPropagation } from "@skuberplus/utilities";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { stopPropagation } from "@k-lens/utilities";
+import { getInjectable } from "@ogre-tools/injectable";
 import React from "react";
 import { Link } from "react-router-dom";
 import apiManagerInjectable from "../../../../common/k8s-api/api-manager/manager.injectable";

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import type { KubeObject } from "@skuberplus/kube-object";
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { KubeObject } from "@k-lens/kube-object";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { SearchFilter, TableCellProps, TableSortCallback } from "./list-layout-column";
 

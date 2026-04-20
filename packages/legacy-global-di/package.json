@@ -1,8 +1,8 @@
 {
-  "name": "@skuberplus/legacy-global-di",
+  "name": "@k-lens/legacy-global-di",
   "private": false,
   "version": "1.5.4-0",
-  "description": "Injection tokens for implementing metrics for SkuberPlus",
+  "description": "Injection tokens for implementing metrics for KLens",
   "type": "commonjs",
   "publishConfig": {
     "access": "public",
@@ -13,24 +13,24 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wondermove-Inc/Skuberplus-Client-Community.git"
+    "url": "git+https://github.com/Wondermove-Inc/Klens-Client-Community.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "license": "MIT",
-  "homepage": "https://skuberplus.app",
+  "homepage": "https://k-lens.app",
   "scripts": {
     "build": "lens-webpack-build",
     "clean": "pnpm dlx rimraf@6.0.1 dist",
     "clean:node_modules": "pnpm dlx rimraf@6.0.1 node_modules"
   },
   "devDependencies": {
-    "@skuberplus/typescript": "workspace:^",
-    "@skuberplus/webpack": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
+    "@k-lens/webpack": "workspace:^",
     "@ogre-tools/injectable": "^17.11.1",
     "ts-loader": "^9.5.4",
     "webpack": "^5.101.3"

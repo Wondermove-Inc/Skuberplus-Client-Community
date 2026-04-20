@@ -1,8 +1,8 @@
 {
-  "name": "@skuberplus/prometheus",
+  "name": "@k-lens/prometheus",
   "private": false,
   "version": "1.5.4-0",
-  "description": "Prometheus support for SkuberPlus",
+  "description": "Prometheus support for KLens",
   "type": "commonjs",
   "publishConfig": {
     "access": "public",
@@ -13,16 +13,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wondermove-Inc/Skuberplus-Client-Community.git"
+    "url": "git+https://github.com/Wondermove-Inc/Klens-Client-Community.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "license": "MIT",
-  "homepage": "https://skuberplus.app",
+  "homepage": "https://k-lens.app",
   "scripts": {
     "build": "lens-webpack-build",
     "clean": "pnpm dlx rimraf@6.0.1 dist",
@@ -30,16 +30,16 @@
     "dev": "webpack --mode=development --watch"
   },
   "dependencies": {
-    "@skuberplus/application": "workspace:^",
-    "@skuberplus/feature-core": "workspace:^",
-    "@skuberplus/utilities": "workspace:^",
+    "@k-lens/application": "workspace:^",
+    "@k-lens/feature-core": "workspace:^",
+    "@k-lens/utilities": "workspace:^",
     "@ogre-tools/injectable": "^17.11.1",
     "@ogre-tools/injectable-extension-for-auto-registration": "^17.11.1"
   },
   "devDependencies": {
-    "@skuberplus/kubernetes-client-node": "workspace:^",
-    "@skuberplus/typescript": "workspace:^",
-    "@skuberplus/webpack": "workspace:^",
+    "@k-lens/kubernetes-client-node": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
+    "@k-lens/webpack": "workspace:^",
     "@ogre-tools/fp": "^17.11.1",
     "@types/webpack-env": "^1.18.8",
     "ts-loader": "^9.5.4",

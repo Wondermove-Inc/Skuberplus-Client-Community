@@ -8,5 +8,5 @@
  * 🎯 목적: Observability 관련 상수
  */
 
-export const LEARN_MORE_URL = "https://brand.skuberplus.com/en/observability";
-export const CONTACT_EMAIL = "sales@skuberplus.com";
+export const LEARN_MORE_URL = "https://brand.k-lens.com/en/observability";
+export const CONTACT_EMAIL = "sales@k-lens.com";

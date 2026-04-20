@@ -6,9 +6,9 @@
 
 import "./terminal-dock-tab.scss";
 
+import { Icon } from "@k-lens/icon";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { cssNames } from "@skuberplus/utilities";
 import autoBindReact from "auto-bind/react";
 import { reaction } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";

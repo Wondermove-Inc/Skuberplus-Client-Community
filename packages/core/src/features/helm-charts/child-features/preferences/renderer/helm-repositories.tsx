@@ -16,8 +16,8 @@
  * - 2025-11-11: RemovableItem → shadcn UI로 마이그레이션
  */
 
+import { Spinner } from "@k-lens/spinner";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Spinner } from "@skuberplus/spinner";
 import { Trash2 } from "lucide-react";
 import { observer } from "mobx-react";
 import React from "react";

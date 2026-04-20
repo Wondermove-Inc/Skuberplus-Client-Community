@@ -10,8 +10,8 @@
  * @packageDocumentation
  */
 
+import { messageChannelListenerInjectionToken, requestFromChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
-import { messageChannelListenerInjectionToken, requestFromChannelInjectionToken } from "@skuberplus/messaging";
 import {
   securityScanCompleteChannel,
   securityScanErrorChannel,
@@ -19,7 +19,7 @@ import {
 } from "../common/security-ipc-channels";
 import { SecurityScanStore } from "./security-scan-store";
 
-import type { MessageChannelListener } from "@skuberplus/messaging";
+import type { MessageChannelListener } from "@k-lens/messaging";
 
 import type { ScanCompletePayload, ScanErrorPayload, ScanProgressPayload } from "../common/security-ipc-channels";
 

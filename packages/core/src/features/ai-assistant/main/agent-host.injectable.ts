@@ -17,8 +17,8 @@
  * - 2025-12-16: 초기 생성 (Phase 2 Extension Host 패턴)
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { spawn } from "child_process";
 import pLimit from "p-limit";
 

@@ -12,7 +12,7 @@
  * - 2026-03-19: 초기 생성
  */
 
-import { getRequestChannelListenerInjectable } from "@skuberplus/messaging";
+import { getRequestChannelListenerInjectable } from "@k-lens/messaging";
 import {
   type UserProfileRequest,
   type UserProfileResponse,

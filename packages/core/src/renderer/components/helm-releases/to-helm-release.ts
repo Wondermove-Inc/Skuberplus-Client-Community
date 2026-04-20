@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { formatDuration } from "@skuberplus/utilities";
+import { formatDuration } from "@k-lens/utilities";
 import { capitalize } from "lodash";
 import { getMillisecondsFromUnixEpoch } from "../../../common/utils/date/get-current-date-time";
 

@@ -6,7 +6,7 @@
 
 import { KubeObjectStore } from "../../../common/k8s-api/kube-object.store";
 
-import type { PodDisruptionBudgetApi } from "@skuberplus/kube-api";
-import type { PodDisruptionBudget } from "@skuberplus/kube-object";
+import type { PodDisruptionBudgetApi } from "@k-lens/kube-api";
+import type { PodDisruptionBudget } from "@k-lens/kube-object";
 
 export class PodDisruptionBudgetStore extends KubeObjectStore<PodDisruptionBudget, PodDisruptionBudgetApi> {}

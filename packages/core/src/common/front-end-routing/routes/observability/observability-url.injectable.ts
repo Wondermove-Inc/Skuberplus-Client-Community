@@ -16,8 +16,8 @@
  * - 2025-12-02: 초기 생성
  */
 
+import { applicationInformationToken } from "@k-lens/application";
 import { getInjectable } from "@ogre-tools/injectable";
-import { applicationInformationToken } from "@skuberplus/application";
 
 const observabilityUrlInjectable = getInjectable({
   id: "observability-url",

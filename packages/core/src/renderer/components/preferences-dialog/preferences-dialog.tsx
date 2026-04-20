@@ -313,7 +313,7 @@ const AppContent = observer(
                 }}
               />
             </div>
-            <p className="text-muted-foreground text-sm">Automatically start Skuber⁺ Client on login</p>
+            <p className="text-muted-foreground text-sm">Automatically start K-Lens on login</p>
           </div>
         </div>
 
@@ -482,8 +482,8 @@ const ProxyContent = observer(function ProxyContent({
             />
           </div>
           <p className="text-muted-foreground text-sm">
-            This Will Make Skuber⁺ Client Trust Any Certificate Authority Without Any Validations. Needed With Some
-            Corporate Proxies That Do Certificate Re-Writing. Does Not Affect Cluster Communications!
+            This Will Make K-Lens Trust Any Certificate Authority Without Any Validations. Needed With Some Corporate
+            Proxies That Do Certificate Re-Writing. Does Not Affect Cluster Communications!
           </p>
         </div>
       </div>
@@ -2227,7 +2227,7 @@ const ExtensionContent = observer(
       <div className="flex flex-col gap-6">
         {/* Add app 입력 섹션 */}
         <Field>
-          <FieldLabel className="text-sm font-medium">Connect Skuber⁺ Observability</FieldLabel>
+          <FieldLabel className="text-sm font-medium">Connect k-o11y</FieldLabel>
           <p className="text-muted-foreground text-sm">
             Enter the Observability server URL to enable monitoring and diagnostics.
           </p>

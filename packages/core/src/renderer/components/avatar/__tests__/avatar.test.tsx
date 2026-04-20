@@ -7,7 +7,7 @@
 import React from "react";
 import "@testing-library/jest-dom";
 
-import { Icon } from "@skuberplus/icon";
+import { Icon } from "@k-lens/icon";
 import { getDiForUnitTesting } from "../../../getDiForUnitTesting";
 import { type DiRender, renderFor } from "../../test-utils/renderFor";
 import { Avatar } from "../avatar";

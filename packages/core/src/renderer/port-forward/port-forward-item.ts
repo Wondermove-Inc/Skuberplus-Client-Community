@@ -6,7 +6,7 @@
 
 import autoBind from "auto-bind";
 
-import type { ItemObject } from "@skuberplus/list-layout";
+import type { ItemObject } from "@k-lens/list-layout";
 
 export type ForwardedPortStatus = "Active" | "Disabled";
 export interface ForwardedPort {

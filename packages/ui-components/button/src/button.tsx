@@ -6,8 +6,8 @@
 
 import "./button.scss";
 
-import { withTooltip } from "@skuberplus/tooltip";
-import { cssNames, type StrictReactNode } from "@skuberplus/utilities";
+import { withTooltip } from "@k-lens/tooltip";
+import { cssNames, type StrictReactNode } from "@k-lens/utilities";
 import React, { type ButtonHTMLAttributes } from "react";
 
 export interface ButtonProps extends ButtonHTMLAttributes<any> {

@@ -6,8 +6,8 @@
 
 import { getInjectionToken } from "@ogre-tools/injectable";
 
-import type { BaseIconProps } from "@skuberplus/icon";
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { BaseIconProps } from "@k-lens/icon";
+import type { KubeObject } from "@k-lens/kube-object";
 
 import type { IObservableArray } from "mobx";
 import type { RequireAtLeastOne } from "type-fest";

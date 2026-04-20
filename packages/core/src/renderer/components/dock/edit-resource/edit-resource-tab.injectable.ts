@@ -15,7 +15,7 @@ import mainTabStoreInjectable from "../../main-tabs/main-tab-store.injectable";
 import getRandomIdForEditResourceTabInjectable from "./get-random-id-for-edit-resource-tab.injectable";
 import editResourceTabStoreInjectable from "./store.injectable";
 
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeObject } from "@k-lens/kube-object";
 
 import type { IComputedValue } from "mobx";
 

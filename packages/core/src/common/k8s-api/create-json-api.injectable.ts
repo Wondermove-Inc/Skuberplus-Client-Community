@@ -4,15 +4,15 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { JsonApi } from "@k-lens/json-api";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { JsonApi } from "@skuberplus/json-api";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { Agent } from "https";
 import lensProxyCertificateInjectable from "../certificate/lens-proxy-certificate.injectable";
 import nodeFetchInjectable from "../fetch/node-fetch.injectable";
 
-import type { JsonApiConfig, JsonApiData, JsonApiDependencies, JsonApiParams } from "@skuberplus/json-api";
-import type { RequestInit } from "@skuberplus/node-fetch";
+import type { JsonApiConfig, JsonApiData, JsonApiDependencies, JsonApiParams } from "@k-lens/json-api";
+import type { RequestInit } from "@k-lens/node-fetch";
 
 export type CreateJsonApi = <Data = JsonApiData, Params extends JsonApiParams<Data> = JsonApiParams<Data>>(
   config: JsonApiConfig,

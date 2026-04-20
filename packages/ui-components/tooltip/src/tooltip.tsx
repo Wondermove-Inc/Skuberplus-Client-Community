@@ -6,7 +6,7 @@
 
 import "./tooltip.scss";
 
-import { cssNames } from "@skuberplus/utilities";
+import { cssNames } from "@k-lens/utilities";
 import autoBindReact from "auto-bind/react";
 import { action, makeObservable, observable, runInAction } from "mobx";
 import { observer } from "mobx-react";
@@ -14,7 +14,7 @@ import React, { Component } from "react";
 import { createPortal } from "react-dom";
 import { computeNextPosition } from "./helpers";
 
-import type { IClassName, StrictReactNode } from "@skuberplus/utilities";
+import type { IClassName, StrictReactNode } from "@k-lens/utilities";
 
 export enum TooltipPosition {
   TOP = "top",

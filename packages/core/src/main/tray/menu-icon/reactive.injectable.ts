@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { getStartableStoppable } from "@k-lens/startable-stoppable";
 import { getInjectable } from "@ogre-tools/injectable";
-import { getStartableStoppable } from "@skuberplus/startable-stoppable";
 import { reaction } from "mobx";
 import electronTrayInjectable from "../electron-tray/electron-tray.injectable";
 import trayIconInjectable from "./tray-icon.injectable";

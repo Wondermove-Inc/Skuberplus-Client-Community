@@ -6,18 +6,18 @@
 
 import "./menu.scss";
 
+import { Animate, requestAnimationFrameInjectable } from "@k-lens/animate";
+import { Icon } from "@k-lens/icon";
+import { cssNames, noop } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Animate, requestAnimationFrameInjectable } from "@skuberplus/animate";
-import { Icon } from "@skuberplus/icon";
-import { cssNames, noop } from "@skuberplus/utilities";
 import autoBindReact from "auto-bind/react";
 import isEqual from "lodash/isEqual";
 import React, { Component, Fragment } from "react";
 import { createPortal } from "react-dom";
 
-import type { RequestAnimationFrame } from "@skuberplus/animate";
-import type { IconProps } from "@skuberplus/icon";
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { RequestAnimationFrame } from "@k-lens/animate";
+import type { IconProps } from "@k-lens/icon";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { ReactElement } from "react";
 

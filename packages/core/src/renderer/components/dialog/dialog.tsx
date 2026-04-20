@@ -6,16 +6,16 @@
 
 import "./dialog.scss";
 
+import { Animate, requestAnimationFrameInjectable } from "@k-lens/animate";
+import { observableHistoryInjectionToken } from "@k-lens/routing";
+import { cssNames, noop, stopPropagation } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Animate, requestAnimationFrameInjectable } from "@skuberplus/animate";
-import { observableHistoryInjectionToken } from "@skuberplus/routing";
-import { cssNames, noop, stopPropagation } from "@skuberplus/utilities";
 import { reaction } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { PureComponent } from "react";
 import { createPortal } from "react-dom";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { ObservableHistory } from "mobx-observable-history";
 

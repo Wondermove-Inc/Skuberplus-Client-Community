@@ -3,7 +3,7 @@ module.exports = {
   collectCoverage: false,
   globalSetup: "<rootDir>/src/jest.timezone.ts",
   moduleNameMapper: {
-    "^@skuberplus/tooltip$": "<rootDir>/node_modules/@skuberplus/tooltip/index.ts",
+    "^@k-lens/tooltip$": "<rootDir>/node_modules/@k-lens/tooltip/index.ts",
     "\\.(css|scss)$": "identity-obj-proxy",
     "\\.(svg|png|jpg|eot|woff2?|ttf|md)$": "<rootDir>/__mocks__/assetMock.ts",
     "^@/(.*)$": "<rootDir>/src/renderer/$1",

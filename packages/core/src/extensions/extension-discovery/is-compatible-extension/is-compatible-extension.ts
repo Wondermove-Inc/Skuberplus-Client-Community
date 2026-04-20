@@ -6,7 +6,7 @@
 
 import semver from "semver";
 
-import type { LensExtensionManifest } from "@skuberplus/legacy-extensions";
+import type { LensExtensionManifest } from "@k-lens/legacy-extensions";
 
 interface Dependencies {
   extensionApiVersion: string;
@@ -16,19 +16,19 @@ export const isCompatibleExtension = ({
   extensionApiVersion,
 }: Dependencies): ((manifest: LensExtensionManifest) => boolean) => {
   return (manifest: LensExtensionManifest): boolean => {
-    const manifestLensEngine = manifest.engines.skuberplus;
+    const manifestLensEngine = manifest.engines.klens;
 
     if (!manifestLensEngine) {
-      throw new Error(`Extension manifest must specify "engines.skuberplus" field`);
+      throw new Error(`Extension manifest must specify "engines.klens" field`);
     }
 
     const validVersion = manifestLensEngine.match(/^[\^0-9]\d*\.\d+\b/); // must start from ^ or number
 
     if (!validVersion) {
       const errorInfo = [
-        `Invalid format for "manifest.engines.skuberplus"="${manifestLensEngine}"`,
+        `Invalid format for "manifest.engines.klens"="${manifestLensEngine}"`,
         `Range versions can only be specified starting with '^'.`,
-        `Otherwise it's recommended to use plain %MAJOR.%MINOR to match with supported SkuberPlus version.`,
+        `Otherwise it's recommended to use plain %MAJOR.%MINOR to match with supported K-Lens version.`,
       ].join("\n");
 
       throw new Error(errorInfo);

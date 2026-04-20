@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="skuberplus/build/icons/128x128.png" alt="Skuber+ Logo" width="128" height="128">
+  <img src="k-lens/build/icons/128x128.png" alt="K-Lens Logo" width="128" height="128">
 </p>
 
-<h1 align="center">Skuber+ Client</h1>
+<h1 align="center">K-Lens</h1>
 
 <p align="center">
   <strong>AI 驱动的 Kubernetes 管理桌面 IDE</strong>
@@ -24,9 +24,22 @@
 
 ---
 
-## 简介
+## K-Lens 是什么？
 
-**Skuber+ Client** 是一款用于直观管理 Kubernetes 集群的桌面 IDE。基于 [Open Lens](https://github.com/lensapp/lens) 构建，新增了 AI 驱动的诊断分析、SRE 自动化、实时监控和企业级功能。
+> 如果 `kubectl` 是你的 CLI，那么 **K-Lens 就是你的驾驶舱。**
+
+K-Lens 将 Kubernetes 管理从终端切换的重复劳动转变为可视化、AI 辅助的工作流 — 连接集群、诊断故障、应用修复，全部在一个桌面应用中完成。
+
+基于 [Open Lens](https://github.com/lensapp/lens)，增强了 AI SRE 诊断、安全扫描和实时 Observability。
+
+### 为什么选择 K-Lens？
+
+| 没有 K-Lens | 使用 K-Lens |
+|-------------|------------|
+| 多个终端重复执行 kubectl | 单一 UI 管理多集群 |
+| 手动分析故障原因（logs + describe） | AI 自动诊断 + 修复建议 |
+| CVE 扫描和结果分析分开进行 | 一键安全扫描 + AI 自动修复建议 |
+| Helm、YAML、监控工具分散 | 集成在一个 IDE 中 |
 
 ### 主要功能
 
@@ -40,9 +53,13 @@
 | **Helm Chart 管理** | 安装、升级和回滚 Helm 发布 |
 | **资源编辑器** | 基于 Monaco Editor 的 YAML 编辑，支持实时应用 |
 
+### 演示
+
+https://github.com/user-attachments/assets/f60be8d6-dd8a-464b-9e55-bf43d8f68680
+
 ---
 
-## 快速开始
+## 快速开始 (macOS / Linux)
 
 ### 前置条件
 
@@ -55,7 +72,7 @@
 ```bash
 # 1. 克隆仓库
 git clone https://github.com/Wondermove-Inc/Skuberplus-Client-Community.git
-cd skuberplus-client
+cd k-lens
 
 # 2. 安装依赖（原生模块会自动重新编译）
 pnpm install
@@ -68,6 +85,8 @@ pnpm dev
 ```
 
 > **提示**：`pnpm install` 会自动重新编译 Electron 原生模块。
+
+> **Windows**：原生模块构建需要额外步骤。请参阅 [平台构建 > Windows](#windows-x64)。
 
 > **Node.js 版本**：支持 v22（LTS）和 v24+（LTS）。v23 也通过 `.npmrc` 配置（`--no-experimental-strip-types`）支持。
 
@@ -85,7 +104,7 @@ pnpm build:full:app
 pnpm build              # 源码编译
 pnpm build:app          # 应用打包（ARM64）
 
-# 输出路径：skuberplus/dist/mac-arm64/SkuberPlus.app
+# 输出路径：k-lens/dist/mac-arm64/KLens.app
 ```
 
 ### macOS (Intel x64)
@@ -97,7 +116,7 @@ pnpm build:full:x64
 # 2. 仅 x64 应用打包（源码已编译完成）
 pnpm build:app:darwin:x64
 
-# 输出路径：skuberplus/dist/mac/SkuberPlus.app
+# 输出路径：k-lens/dist/mac/KLens.app
 ```
 
 ### Linux
@@ -107,10 +126,10 @@ pnpm build:app:darwin:x64
 pnpm build
 
 # 2. 应用打包
-cd skuberplus
+cd k-lens
 pnpm build:app:linux
 
-# 输出路径：skuberplus/dist/linux-unpacked/
+# 输出路径：k-lens/dist/linux-unpacked/
 ```
 
 ### Windows (x64)
@@ -145,7 +164,7 @@ pnpm run build:win
 # 6. 应用打包
 node scripts/build-windows-app.js
 
-# 输出路径：skuberplus/dist/<version>/SkuberPlusClient-<version>-x64.exe
+# 输出路径：k-lens/dist/<version>/KLens-<version>-x64.exe
 ```
 
 > **为什么要使用 `--ignore-scripts`？**
@@ -166,10 +185,10 @@ node scripts/build-windows-app.js
 
 | 平台 | 路径 |
 |------|------|
-| macOS (ARM64) | `skuberplus/dist/mac-arm64/SkuberPlus.app` |
-| macOS (x64) | `skuberplus/dist/mac/SkuberPlus.app` |
-| Linux | `skuberplus/dist/linux-unpacked/` |
-| Windows | `skuberplus/dist/<version>/SkuberPlusClient-<version>-x64.exe` |
+| macOS (ARM64) | `k-lens/dist/mac-arm64/KLens.app` |
+| macOS (x64) | `k-lens/dist/mac/KLens.app` |
+| Linux | `k-lens/dist/linux-unpacked/` |
+| Windows | `k-lens/dist/<version>/KLens-<version>-x64.exe` |
 
 ---
 
@@ -212,7 +231,7 @@ node scripts/build-windows-app.js
 ## 项目结构
 
 ```
-skuberplus-client/
+k-lens/
 ├── packages/                           # pnpm workspace 包（54 个）
 │   ├── core/                           # 核心逻辑、UI 组件、K8s API
 │   ├── kube-object/                    # Kubernetes 对象模型
@@ -242,7 +261,7 @@ skuberplus-client/
 │       ├── typescript/                 # TypeScript 共享配置
 │       └── jest/                       # Jest 共享配置
 │
-├── skuberplus/                         # Electron 主应用
+├── k-lens/                             # Electron 主应用
 │   ├── src/
 │   │   ├── main/                       # 主进程
 │   │   ├── renderer/                   # 渲染进程（React）
@@ -329,8 +348,8 @@ registerFeature(di, myFeature);
 如果源码修改后构建出现异常行为：
 
 ```bash
-rm -rf packages/core/static/build skuberplus/static/build \
-       packages/core/.webpack skuberplus/.webpack skuberplus/dist
+rm -rf packages/core/static/build k-lens/static/build \
+       packages/core/.webpack k-lens/.webpack k-lens/dist
 pnpm build:dev
 ```
 

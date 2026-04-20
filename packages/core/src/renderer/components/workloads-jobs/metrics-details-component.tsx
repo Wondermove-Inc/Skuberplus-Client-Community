@@ -24,7 +24,7 @@ import { ResourceMetrics } from "../resource-metrics";
 import { PodCharts, podMetricTabs } from "../workloads-pods/pod-charts";
 import jobMetricsInjectable from "./metrics.injectable";
 
-import type { Job } from "@skuberplus/kube-object";
+import type { Job } from "@k-lens/kube-object";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { MetricsSourceType } from "../../../common/cluster-types";

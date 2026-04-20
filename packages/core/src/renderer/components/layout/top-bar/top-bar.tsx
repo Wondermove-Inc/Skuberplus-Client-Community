@@ -9,8 +9,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { cssNames } from "@skuberplus/utilities";
 import { observer } from "mobx-react-lite";
 import React, { useEffect, useMemo } from "react";
 import watchHistoryStateInjectable from "../../../remote-helpers/watch-history-state.injectable";

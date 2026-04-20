@@ -4,11 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 import React from "react";
 import { getStatusClasses } from "../../../utils/semantic-status";
 
-import type { Pod } from "@skuberplus/kube-object";
+import type { Pod } from "@k-lens/kube-object";
 
 /**
  * 🎯 목적: Pod 상태를 Badge 컴포넌트로 표시

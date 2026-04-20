@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { clusterFrameChildComponentInjectionToken } from "@k-lens/react-application";
 import { getInjectable } from "@ogre-tools/injectable";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { clusterFrameChildComponentInjectionToken } from "@skuberplus/react-application";
 import { computed, reaction } from "mobx";
 import { useEffect } from "react";
 import { panelSyncChannels } from "../../../common/ipc/panel-sync";

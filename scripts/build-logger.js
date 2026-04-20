@@ -9,9 +9,9 @@
  * - CI 환경에서 색상 비활성화
  *
  * 사용 예시:
- *   node scripts/build-logger.js start "@skuberplus/core" "빌드 시작..."
- *   node scripts/build-logger.js success "@skuberplus/core" "빌드 완료" 7.2
- *   node scripts/build-logger.js error "skuberplus" "빌드 실패"
+ *   node scripts/build-logger.js start "@k-lens/core" "빌드 시작..."
+ *   node scripts/build-logger.js success "@k-lens/core" "빌드 완료" 7.2
+ *   node scripts/build-logger.js error "k-lens" "빌드 실패"
  *
  * 🔄 변경이력: 2025-10-15 - 초기 생성 (PHASE1 빌드 로깅 표준화)
  */
@@ -32,7 +32,7 @@ function getTimestamp() {
 /**
  * 빌드 시작 로그 출력
  *
- * @param {string} packageName - 패키지명 (예: "@skuberplus/core", "skuberplus")
+ * @param {string} packageName - 패키지명 (예: "@k-lens/core", "k-lens")
  * @param {string} message - 시작 메시지
  */
 function logStart(packageName, message) {
@@ -159,7 +159,7 @@ function logArchitectureMismatch(packageName, binaryName, expectedArch, actualAr
  *
  * @param {string} packageName - 패키지명
  * @param {string} binaryName - 바이너리명 (예: "skuberplus-k8s-proxy")
- * @param {string} expectedPath - 예상 경로 (예: "skuberplus/binaries/client/darwin/arm64/")
+ * @param {string} expectedPath - 예상 경로 (예: "k-lens/binaries/client/darwin/arm64/")
  */
 function logBinaryMissing(packageName, binaryName, expectedPath) {
   logError(packageName, "빌드 실패: 바이너리 파일 없음", {
@@ -167,7 +167,7 @@ function logBinaryMissing(packageName, binaryName, expectedPath) {
     location: expectedPath,
     cause: "ARM64 바이너리가 소스 디렉토리에 존재하지 않음",
     solution: [
-      "1. skuberplus/binaries/client/darwin/arm64/ 디렉토리 확인",
+      "1. k-lens/binaries/client/darwin/arm64/ 디렉토리 확인",
       "2. 바이너리 다운로드 또는 빌드",
       "3. Git에 커밋하여 영구 보존",
     ],

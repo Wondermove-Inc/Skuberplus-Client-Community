@@ -20,23 +20,23 @@
 
 import "./vpa-details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
 import {
   ContainerScalingMode,
   ControlledValues,
   ResourceName,
   UpdateMode,
   VerticalPodAutoscaler,
-} from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+} from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 import {
   DetailPanelField,
   DetailPanelFieldGroup,
   DetailPanelSection,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { Separator } from "@skuberplus/storybook-shadcn/src/components/ui/separator";
-import { cssNames } from "@skuberplus/utilities";
+} from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { Separator } from "@k-lens/storybook-shadcn/src/components/ui/separator";
+import { cssNames } from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import startCase from "lodash/startCase";
 import { makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
@@ -53,13 +53,8 @@ import { KubeObjectMetaSection } from "../kube-object-details/kube-object-meta-s
 import kubeObjectDeleteServiceInjectable from "../kube-object-menu/kube-object-delete-service.injectable";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 
-import type {
-  KubeObject,
-  PodResourcePolicy,
-  PodUpdatePolicy,
-  VerticalPodAutoscalerStatus,
-} from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+import type { KubeObject, PodResourcePolicy, PodUpdatePolicy, VerticalPodAutoscalerStatus } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { ApiManager } from "../../../common/k8s-api/api-manager";
 import type { HostedCluster } from "../../cluster-frame-context/hosted-cluster.injectable";

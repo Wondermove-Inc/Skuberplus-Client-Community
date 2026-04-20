@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import getBasenameOfPathInjectable from "../../../common/path/get-basename.injectable";
 import extensionInstallationStateStoreInjectable from "../../../extensions/extension-installation-state-store/extension-installation-state-store.injectable";
 import downloadBinaryViaChannelInjectable from "../../../renderer/fetch/download-binary-via-channel.injectable";
@@ -16,7 +16,7 @@ import attemptInstallByInfoInjectable from "./attempt-install-by-info.injectable
 import { getMessageFromError } from "./get-message-from-error/get-message-from-error";
 import readFileNotifyInjectable from "./read-file-notify/read-file-notify.injectable";
 
-import type { ExtendableDisposer } from "@skuberplus/utilities";
+import type { ExtendableDisposer } from "@k-lens/utilities";
 
 export type InstallExtensionFromInput = (input: string) => Promise<void>;
 

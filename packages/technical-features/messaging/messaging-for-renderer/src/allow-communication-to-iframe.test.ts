@@ -1,8 +1,8 @@
+import { startApplicationInjectionToken } from "@k-lens/application";
+import { registerFeature } from "@k-lens/feature-core";
+import { sendMessageToChannelInjectionToken } from "@k-lens/messaging";
 import { createContainer, DiContainer } from "@ogre-tools/injectable";
 import { registerMobX } from "@ogre-tools/injectable-extension-for-mobx";
-import { startApplicationInjectionToken } from "@skuberplus/application";
-import { registerFeature } from "@skuberplus/feature-core";
-import { sendMessageToChannelInjectionToken } from "@skuberplus/messaging";
 import { runInAction } from "mobx";
 import { frameCommunicationAdminChannel } from "./allow-communication-to-iframe.injectable";
 import { messagingFeatureForRenderer } from "./feature";

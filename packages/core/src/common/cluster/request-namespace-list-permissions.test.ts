@@ -10,7 +10,7 @@ import { getDiForUnitTesting } from "../../main/getDiForUnitTesting";
 import { cast } from "../../test-utils/cast";
 import createRequestNamespaceListPermissionsInjectable from "./create-request-namespace-list-permissions.injectable";
 
-import type { AuthorizationV1Api, V1SubjectRulesReviewStatus } from "@skuberplus/kubernetes-client-node";
+import type { AuthorizationV1Api, V1SubjectRulesReviewStatus } from "@k-lens/kubernetes-client-node";
 
 import type { AsyncFnMock } from "@async-fn/jest";
 import type { DiContainer } from "@ogre-tools/injectable";

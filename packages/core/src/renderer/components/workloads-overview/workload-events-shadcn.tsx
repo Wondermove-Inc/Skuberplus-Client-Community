@@ -17,14 +17,13 @@
  * - 2025-11-05: 초기 생성 (기존 Events 컴포넌트를 shadcn UI로 마이그레이션)
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
 import {
   Empty,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@skuberplus/storybook-shadcn/src/components/ui/empty";
+} from "@k-lens/storybook-shadcn/src/components/ui/empty";
 import {
   Table,
   TableBody,
@@ -32,7 +31,8 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@skuberplus/storybook-shadcn/src/components/ui/table";
+} from "@k-lens/storybook-shadcn/src/components/ui/table";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { AlertCircle, CheckCircle } from "lucide-react";
 import { computed, makeObservable } from "mobx";
 import { observer } from "mobx-react";
@@ -42,7 +42,7 @@ import { ReactiveDuration } from "../duration/reactive-duration";
 import eventStoreInjectable from "../events/store.injectable";
 import { KubeObjectAge } from "../kube-object/age";
 
-import type { KubeEvent } from "@skuberplus/kube-object";
+import type { KubeEvent } from "@k-lens/kube-object";
 
 import type { EventStore } from "../events/store";
 

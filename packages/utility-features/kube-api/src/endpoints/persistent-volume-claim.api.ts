@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { PersistentVolumeClaim } from "@skuberplus/kube-object";
+import { PersistentVolumeClaim } from "@k-lens/kube-object";
 import { KubeApi } from "../kube-api";
 
 import type { DerivedKubeApiOptions, KubeApiDependencies } from "../kube-api";

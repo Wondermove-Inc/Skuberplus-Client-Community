@@ -20,7 +20,7 @@ const syncGeneralCatalogEntitiesInjectable = getInjectable({
     const reactiveGeneralCatalogEntities = computed(() => generalCatalogEntities);
 
     return () => {
-      catalogEntityRegistry.addComputedSource("skuberplus:general", reactiveGeneralCatalogEntities);
+      catalogEntityRegistry.addComputedSource("k-lens:general", reactiveGeneralCatalogEntities);
     };
   },
 });

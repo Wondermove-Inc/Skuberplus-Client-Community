@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { isKubeStatusData, KubeStatus, Pod } from "@skuberplus/kube-object";
+import { isKubeStatusData, KubeStatus, Pod } from "@k-lens/kube-object";
 import { KubeApi } from "../kube-api";
 
-import type { KubeStatusData, PodLogsQuery } from "@skuberplus/kube-object";
+import type { KubeStatusData, PodLogsQuery } from "@k-lens/kube-object";
 
 import type {
   DeleteResourceDescriptor,

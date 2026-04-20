@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { NodeMetrics } from "@skuberplus/kube-object";
+import { NodeMetrics } from "@k-lens/kube-object";
 import { KubeApi } from "../kube-api";
 
-import type { NodeMetricsData } from "@skuberplus/kube-object";
+import type { NodeMetricsData } from "@k-lens/kube-object";
 
 import type { DerivedKubeApiOptions, KubeApiDependencies } from "../kube-api";
 

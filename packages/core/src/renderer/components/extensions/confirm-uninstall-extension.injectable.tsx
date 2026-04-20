@@ -10,7 +10,7 @@ import { extensionDisplayName } from "../../../extensions/lens-extension";
 import confirmInjectable from "../confirm-dialog/confirm.injectable";
 import uninstallExtensionInjectable from "./uninstall-extension.injectable";
 
-import type { InstalledExtension, LensExtensionId } from "@skuberplus/legacy-extensions";
+import type { InstalledExtension, LensExtensionId } from "@k-lens/legacy-extensions";
 
 import type { Confirm } from "../confirm-dialog/confirm.injectable";
 

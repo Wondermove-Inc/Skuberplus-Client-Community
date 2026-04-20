@@ -1,12 +1,12 @@
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { Button } from "@skuberplus/storybook-shadcn/src/components/ui/button";
+import { Button } from "@k-lens/storybook-shadcn/src/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@skuberplus/storybook-shadcn/src/components/ui/dropdown-menu";
+} from "@k-lens/storybook-shadcn/src/components/ui/dropdown-menu";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { ChevronDown, Star } from "lucide-react";
 import { observer } from "mobx-react";
 import React from "react";

@@ -3,9 +3,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { rootFrameChildComponentInjectionToken } from "@k-lens/react-application";
 import { getInjectable } from "@ogre-tools/injectable";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { rootFrameChildComponentInjectionToken } from "@skuberplus/react-application";
 import { computed, reaction } from "mobx";
 import { useEffect } from "react";
 import aiChatPanelStoreInjectable from "../../../../renderer/components/ai-chat/ai-chat-panel-store.injectable";

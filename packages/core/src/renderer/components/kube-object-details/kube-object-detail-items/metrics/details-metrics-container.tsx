@@ -7,8 +7,8 @@
 import { observer } from "mobx-react";
 import React from "react";
 
-import type { KubeObject } from "@skuberplus/kube-object";
-import type { KubeObjectDetailMetrics } from "@skuberplus/metrics";
+import type { KubeObject } from "@k-lens/kube-object";
+import type { KubeObjectDetailMetrics } from "@k-lens/metrics";
 
 import type { IComputedValue } from "mobx";
 

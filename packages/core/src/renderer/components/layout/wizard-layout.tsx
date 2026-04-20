@@ -6,11 +6,11 @@
 
 import "./wizard-layout.scss";
 
-import { cssNames } from "@skuberplus/utilities";
+import { cssNames } from "@k-lens/utilities";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 
-import type { IClassName, StrictReactNode } from "@skuberplus/utilities";
+import type { IClassName, StrictReactNode } from "@k-lens/utilities";
 
 export interface WizardLayoutProps extends React.DOMAttributes<any> {
   className?: IClassName;

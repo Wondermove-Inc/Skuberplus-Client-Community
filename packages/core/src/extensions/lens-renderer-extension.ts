@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { getEnvironmentSpecificLegacyGlobalDiForExtensionApi } from "@k-lens/legacy-global-di";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { pipeline } from "@ogre-tools/fp";
-import { getEnvironmentSpecificLegacyGlobalDiForExtensionApi } from "@skuberplus/legacy-global-di";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { fromPairs, map, matches, toPairs } from "lodash/fp";
 import catalogCategoryRegistryInjectable from "../common/catalog/category-registry.injectable";
 import catalogEntityRegistryInjectable from "../renderer/api/catalog/entity/registry.injectable";
@@ -17,8 +17,8 @@ import routesInjectable from "../renderer/routes/routes.injectable";
 import ensureHashedDirectoryForExtensionInjectable from "./extension-loader/file-system-provisioner-store/ensure-hashed-directory-for-extension.injectable";
 import { Disposers, LensExtension } from "./lens-extension";
 
-import type { ClusterFrameChildComponent } from "@skuberplus/react-application";
-import type { Disposer } from "@skuberplus/utilities";
+import type { ClusterFrameChildComponent } from "@k-lens/react-application";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { IComputedValue } from "mobx";
 

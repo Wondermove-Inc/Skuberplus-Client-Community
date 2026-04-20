@@ -13,14 +13,14 @@
  * get-cluster-pod-status.injectable.ts 패턴을 따른다.
  */
 
+import { beforeElectronIsReadyInjectionToken } from "@k-lens/application-for-electron-main";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { beforeElectronIsReadyInjectionToken } from "@skuberplus/application-for-electron-main";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { ipcMainHandle } from "../../common/ipc";
 import getClusterByIdInjectable from "../../features/cluster/storage/common/get-by-id.injectable";
 import k8sRequestInjectable from "../k8s-request.injectable";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { GetClusterById } from "../../features/cluster/storage/common/get-by-id.injectable";
 import type { K8sRequest } from "../k8s-request.injectable";

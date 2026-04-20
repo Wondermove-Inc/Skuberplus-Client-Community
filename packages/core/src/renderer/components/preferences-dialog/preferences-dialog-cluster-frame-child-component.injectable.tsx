@@ -18,9 +18,9 @@
  * - 2025-11-14 - PreferencesDialog를 래핑해서 props 주입하는 방식으로 수정
  */
 
+import { clusterFrameChildComponentInjectionToken } from "@k-lens/react-application";
 import { getInjectable } from "@ogre-tools/injectable";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { clusterFrameChildComponentInjectionToken } from "@skuberplus/react-application";
 import { computed } from "mobx";
 import { observer } from "mobx-react";
 import React from "react";

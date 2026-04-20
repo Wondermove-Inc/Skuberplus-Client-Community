@@ -13,8 +13,8 @@
  * @packageDocumentation
  */
 
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { getRequestChannelListenerInjectable } from "@skuberplus/messaging";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { getRequestChannelListenerInjectable } from "@k-lens/messaging";
 import execFileInjectable from "../../../common/fs/exec-file.injectable";
 import kubeconfigManagerInjectable from "../../../main/kubeconfig-manager/kubeconfig-manager.injectable";
 import createKubectlInjectable from "../../../main/kubectl/create-kubectl.injectable";

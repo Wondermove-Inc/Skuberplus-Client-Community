@@ -4,12 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { disposer, getOrInsert, noop, WrappedAbortController } from "@skuberplus/utilities";
+import { disposer, getOrInsert, noop, WrappedAbortController } from "@k-lens/utilities";
 import { once } from "lodash";
 import { comparer, reaction } from "mobx";
 
-import type { Logger } from "@skuberplus/logger";
-import type { Disposer } from "@skuberplus/utilities";
+import type { Logger } from "@k-lens/logger";
+import type { Disposer } from "@k-lens/utilities";
 
 import type {
   KubeObjectStoreLoadAllParams,

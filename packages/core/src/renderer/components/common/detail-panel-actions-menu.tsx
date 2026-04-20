@@ -24,14 +24,14 @@
  * - 2026-01-27: 위험 액션만 남기고 Quick Actions로 분리 (UX 개선)
  */
 
-import { Button } from "@skuberplus/storybook-shadcn";
+import { Button } from "@k-lens/storybook-shadcn";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@skuberplus/storybook-shadcn/src/components/ui/dropdown-menu";
+} from "@k-lens/storybook-shadcn/src/components/ui/dropdown-menu";
 import { CircleArrowOutUpRight, CircleX, Eraser, MoreVertical, Pin, PinOff, Trash } from "lucide-react";
 import React from "react";
 

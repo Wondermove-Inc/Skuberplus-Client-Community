@@ -5,8 +5,8 @@
  */
 
 import asyncFn from "@async-fn/jest";
-import { Namespace } from "@skuberplus/kube-object";
-import { disposer } from "@skuberplus/utilities";
+import { Namespace } from "@k-lens/kube-object";
+import { disposer } from "@k-lens/utilities";
 import { fireEvent } from "@testing-library/react";
 import React from "react";
 import directoryForKubeConfigsInjectable from "../../../common/app-paths/directory-for-kube-configs/directory-for-kube-configs.injectable";
@@ -24,7 +24,7 @@ import { renderFor } from "../test-utils/renderFor";
 import { NamespaceSelectFilter } from "./namespace-select-filter";
 import namespaceStoreInjectable from "./store.injectable";
 
-import type { Disposer } from "@skuberplus/utilities";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { AsyncFnMock } from "@async-fn/jest";
 import type { DiContainer } from "@ogre-tools/injectable";

@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { DeploymentApi, KubeJsonApi } from "@skuberplus/kube-api";
+import { DeploymentApi, KubeJsonApi } from "@k-lens/kube-api";
 
 describe("DeploymentApi", () => {
   let deploymentApi: DeploymentApi;

@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { ApiException, type KubeConfig } from "@k-lens/kubernetes-client-node";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { disposer, isDefined, isRequestError, withConcurrencyLimit } from "@k-lens/utilities";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
-import { ApiException, type KubeConfig } from "@skuberplus/kubernetes-client-node";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { disposer, isDefined, isRequestError, withConcurrencyLimit } from "@skuberplus/utilities";
 import { BrowserWindow, app as electronApp } from "electron";
 import { comparer, type IObservableValue, reaction, runInAction } from "mobx";
 import createAuthorizationApiInjectable from "../../common/cluster/create-authorization-api.injectable";
@@ -31,7 +31,7 @@ import removeProxyKubeconfigInjectable from "./remove-proxy-kubeconfig.injectabl
 import requestApiResourcesInjectable from "./request-api-resources.injectable";
 import visibleClusterInjectable from "./visible-cluster.injectable";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { Cluster } from "../../common/cluster/cluster";
 import type { CreateAuthorizationApi } from "../../common/cluster/create-authorization-api.injectable";

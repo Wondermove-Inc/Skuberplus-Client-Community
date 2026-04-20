@@ -26,7 +26,7 @@ import * as os from "os";
 import * as path from "path";
 import { DAIVE_DOCUMENTS_ROOT, sanitizeClusterName } from "../../ai-assistant/main/ai-file-utils";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { KubectlExecuteFunction } from "../../ai-assistant/main/agent/main-tools";
 import type {

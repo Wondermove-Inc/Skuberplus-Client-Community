@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import type { MessageChannel } from "@skuberplus/messaging";
+import type { MessageChannel } from "@k-lens/messaging";
 
 export type RootFrameHasRenderedChannel = MessageChannel<void>;
 

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { prefixedLoggerInjectable } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { prefixedLoggerInjectable } from "@skuberplus/logger";
 import shellSessionProcessesInjectable from "../../shell-session/processes.injectable";
 import { onQuitOfBackEndInjectionToken } from "../runnable-tokens/phases";
 

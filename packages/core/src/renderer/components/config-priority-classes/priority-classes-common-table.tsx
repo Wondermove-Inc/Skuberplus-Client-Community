@@ -39,7 +39,7 @@ import { PriorityClassDetailPanel } from "./priority-class-detail-panel";
 import { priorityClassColumns } from "./priority-classes-columns";
 import priorityClassStoreInjectable from "./store.injectable";
 
-import type { PriorityClass } from "@skuberplus/kube-object";
+import type { PriorityClass } from "@k-lens/kube-object";
 
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
 import type { PriorityClassStore } from "./store";

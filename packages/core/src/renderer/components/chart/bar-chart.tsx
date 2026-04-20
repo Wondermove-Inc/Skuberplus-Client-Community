@@ -8,7 +8,7 @@
  * 🎯 THEME-011: activeTheme injectable 제거
  * 📝 CSS 변수 기반 차트 색상으로 마이그레이션
  */
-import { bytesToUnits, cssNames, isObject } from "@skuberplus/utilities";
+import { bytesToUnits, cssNames, isObject } from "@k-lens/utilities";
 import assert from "assert";
 import Color from "color";
 import merge from "lodash/merge";

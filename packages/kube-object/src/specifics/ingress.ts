@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { hasTypedProperty, isString, iter } from "@skuberplus/utilities";
+import { hasTypedProperty, isString, iter } from "@k-lens/utilities";
 import { KubeObject } from "../kube-object";
 
 import type { RequireExactlyOne } from "type-fest";

@@ -35,11 +35,11 @@
 
 import "./view.scss";
 
+import { Icon } from "@k-lens/icon";
+import { roleApiInjectable } from "@k-lens/kube-api-specifics";
+import { Input } from "@k-lens/storybook-shadcn";
+import { iter, ObservableHashSet } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { roleApiInjectable } from "@skuberplus/kube-api-specifics";
-import { Input } from "@skuberplus/storybook-shadcn";
-import { iter, ObservableHashSet } from "@skuberplus/utilities";
 import { Check, ChevronsUpDown, X } from "lucide-react";
 import { action, computed, makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
@@ -76,8 +76,8 @@ import roleBindingStoreInjectable from "../store.injectable";
 import closeRoleBindingDialogInjectable from "./close.injectable";
 import roleBindingDialogStateInjectable from "./state.injectable";
 
-import type { RoleApi } from "@skuberplus/kube-api";
-import type { ClusterRole, Role, ServiceAccount, Subject } from "@skuberplus/kube-object";
+import type { RoleApi } from "@k-lens/kube-api";
+import type { ClusterRole, Role, ServiceAccount, Subject } from "@k-lens/kube-object";
 
 import type { IObservableValue } from "mobx";
 

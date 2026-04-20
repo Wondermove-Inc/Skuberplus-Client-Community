@@ -4,15 +4,15 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { disposer } from "@skuberplus/utilities";
+import { disposer } from "@k-lens/utilities";
 import autoBind from "auto-bind";
 import { action, makeObservable, observable, reaction } from "mobx";
 import { waitUntilFree } from "tcp-port-used";
 import { ItemStore } from "../../../common/item.store";
 import { PortForwardItem } from "../port-forward-item";
 
-import type { JsonApi } from "@skuberplus/json-api";
-import type { Logger } from "@skuberplus/logger";
+import type { JsonApi } from "@k-lens/json-api";
+import type { Logger } from "@k-lens/logger";
 
 import type { StorageLayer } from "../../utils/storage-helper";
 import type { ForwardedPort } from "../port-forward-item";

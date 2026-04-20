@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { ReplicationController } from "@skuberplus/kube-object";
+import { ReplicationController } from "@k-lens/kube-object";
 import { KubeApi } from "../kube-api";
 
-import type { Scale } from "@skuberplus/kube-object";
+import type { Scale } from "@k-lens/kube-object";
 
 import type { DerivedKubeApiOptions, KubeApiDependencies, NamespacedResourceDescriptor } from "../kube-api";
 

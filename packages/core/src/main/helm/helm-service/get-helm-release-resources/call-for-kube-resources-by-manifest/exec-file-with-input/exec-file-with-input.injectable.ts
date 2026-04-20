@@ -4,13 +4,13 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { isNumber } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { isNumber } from "@skuberplus/utilities";
 import assert from "assert";
 import nonPromiseExecFileInjectable from "./non-promise-exec-file.injectable";
 import type { ChildProcess } from "child_process";
 
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { AsyncResult } from "@k-lens/utilities";
 
 export type ExecFileWithInput = (options: {
   filePath: string;

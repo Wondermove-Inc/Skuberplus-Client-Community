@@ -9,9 +9,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
+import { cssNames, disposer } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { cssNames, disposer } from "@skuberplus/utilities";
 import autoBindReact from "auto-bind/react";
 import { debounce, merge } from "lodash";
 import { action, computed, makeObservable, observable, reaction } from "mobx";
@@ -23,7 +23,7 @@ import getEditorHeightFromLinesCountInjectable from "./get-editor-height-from-li
 import styles from "./monaco-editor.module.scss";
 import { type MonacoValidator, monacoValidators } from "./monaco-validators";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { UserPreferencesState } from "../../../features/user-preferences/common/state.injectable";
 import type { MonacoTheme } from "./monaco-themes";

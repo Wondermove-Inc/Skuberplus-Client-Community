@@ -6,7 +6,7 @@
 
 import { getInjectionToken } from "@ogre-tools/injectable";
 
-import type { Orderable } from "@skuberplus/utilities";
+import type { Orderable } from "@k-lens/utilities";
 
 import type {
   BaseWindow,

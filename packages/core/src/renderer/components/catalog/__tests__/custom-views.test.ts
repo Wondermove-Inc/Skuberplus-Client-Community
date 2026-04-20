@@ -9,7 +9,7 @@ import rendererExtensionsInjectable from "../../../../extensions/renderer-extens
 import { getDiForUnitTesting } from "../../../getDiForUnitTesting";
 import customCategoryViewsInjectable from "../custom-views.injectable";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { DiContainer } from "@ogre-tools/injectable";
 

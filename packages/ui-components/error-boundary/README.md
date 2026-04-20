@@ -1,15 +1,15 @@
-# @skuberplus/error-boundary
+# @k-lens/error-boundary
 
 This package contains stuff related to creating Lens-applications. 
 
 ## Usage
 
 ```sh
-npm install @skuberplus/error-boundary
+npm install @k-lens/error-boundary
 ```
 
 ```typescript
-import "@skuberplus/error-boundary/styles";
+import "@k-lens/error-boundary/styles";
 ```
 
 ## Extendability

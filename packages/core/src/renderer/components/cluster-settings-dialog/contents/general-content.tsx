@@ -18,11 +18,11 @@
  * - DI 패턴 유지 (withInjectables)
  */
 
+import { Avatar, AvatarFallback, AvatarImage } from "@k-lens/storybook-shadcn/src/components/ui/avatar";
+import { Button } from "@k-lens/storybook-shadcn/src/components/ui/button";
+import { Input } from "@k-lens/storybook-shadcn/src/components/ui/input";
+import { Label } from "@k-lens/storybook-shadcn/src/components/ui/label";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Avatar, AvatarFallback, AvatarImage } from "@skuberplus/storybook-shadcn/src/components/ui/avatar";
-import { Button } from "@skuberplus/storybook-shadcn/src/components/ui/button";
-import { Input } from "@skuberplus/storybook-shadcn/src/components/ui/input";
-import { Label } from "@skuberplus/storybook-shadcn/src/components/ui/label";
 import { shell } from "electron";
 import { RefreshCw } from "lucide-react";
 import { observer } from "mobx-react";

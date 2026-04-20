@@ -18,7 +18,7 @@ import isProductionInjectable from "./is-production.injectable";
  *
  * 📝 주의사항:
  * - 개발 모드: process.cwd() 사용 (프로젝트 루트)
- * - 프로덕션: process.resourcesPath 사용 (SkuberPlus.app/Contents/Resources)
+ * - 프로덕션: process.resourcesPath 사용 (KLens.app/Contents/Resources)
  * - process.resourcesPath에 'node_modules'가 포함되면 개발 모드로 간주
  */
 const lensResourcesDirInjectable = getInjectable({

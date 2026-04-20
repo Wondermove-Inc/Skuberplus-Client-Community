@@ -1,6 +1,6 @@
+import { registerFeature } from "@k-lens/feature-core";
+import { getFeature } from "@k-lens/feature-core/src/feature";
 import { createContainer, getInjectable } from "@ogre-tools/injectable";
-import { registerFeature } from "@skuberplus/feature-core";
-import { getFeature } from "@skuberplus/feature-core/src/feature";
 import TransportStream from "winston-transport";
 import { loggerFeature } from "./feature";
 import {

@@ -14,8 +14,8 @@
  * - 2025-11-17: shadcn 기반 공통 ScaleDialog 컴포넌트로 마이그레이션
  */
 
+import { statefulSetApiInjectable } from "@k-lens/kube-api-specifics";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { statefulSetApiInjectable } from "@skuberplus/kube-api-specifics";
 import { makeObservable, observable, reaction } from "mobx";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
@@ -24,8 +24,8 @@ import { ScaleDialog } from "../../scale-dialog";
 import { notificationPanelStore } from "../../status-bar/items/notification-panel.store";
 import statefulSetDialogStateInjectable from "./dialog-state.injectable";
 
-import type { StatefulSetApi } from "@skuberplus/kube-api";
-import type { StatefulSet } from "@skuberplus/kube-object";
+import type { StatefulSetApi } from "@k-lens/kube-api";
+import type { StatefulSet } from "@k-lens/kube-object";
 
 import type { IObservableValue, IReactionDisposer } from "mobx";
 

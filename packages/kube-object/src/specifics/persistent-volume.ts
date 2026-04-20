@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { unitsToBytes } from "@skuberplus/utilities";
+import { unitsToBytes } from "@k-lens/utilities";
 import { KubeObject } from "../kube-object";
 
 import type { ClusterScopedMetadata, LabelSelector, ObjectReference, TypedLocalObjectReference } from "../api-types";

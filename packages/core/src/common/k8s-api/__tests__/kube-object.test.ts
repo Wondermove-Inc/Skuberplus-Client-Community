@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { KubeObject } from "@skuberplus/kube-object";
+import { KubeObject } from "@k-lens/kube-object";
 
 describe("KubeObject", () => {
   describe("isJsonApiData", () => {

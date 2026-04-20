@@ -22,14 +22,14 @@
  *   - 2025-11-19: Pod 패턴으로 전환 (상수 columns, 메트릭 전처리)
  */
 
-import { Button, Checkbox } from "@skuberplus/storybook-shadcn";
+import { Button, Checkbox } from "@k-lens/storybook-shadcn";
 import { AlertTriangle, ArrowUpDown } from "lucide-react";
 import React from "react";
 import { KubeObjectAge } from "../kube-object/age";
 import { KubeObjectStatusIcon } from "../kube-object-status-icon";
 import { NamespaceSelectBadge } from "../namespaces/namespace-select-badge";
 
-import type { HorizontalPodAutoscaler } from "@skuberplus/kube-object";
+import type { HorizontalPodAutoscaler } from "@k-lens/kube-object";
 
 import type { ColumnDef } from "@tanstack/react-table";
 

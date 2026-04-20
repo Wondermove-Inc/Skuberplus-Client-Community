@@ -4,12 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { patchTypeHeaders } from "@k-lens/kube-api";
 import { getInjectable } from "@ogre-tools/injectable";
-import { patchTypeHeaders } from "@skuberplus/kube-api";
 import { getErrorMessage } from "../../../../../common/utils/get-error-message";
 import apiKubePatchInjectable from "../../../../k8s/api-kube-patch.injectable";
 
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { AsyncResult } from "@k-lens/utilities";
 
 import type { JsonPatch } from "../../../../../common/k8s-api/kube-object.store";
 

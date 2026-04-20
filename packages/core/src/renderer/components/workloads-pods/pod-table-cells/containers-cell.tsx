@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { object } from "@skuberplus/utilities";
+import { object } from "@k-lens/utilities";
 import startCase from "lodash/startCase";
 import React from "react";
 import { StatusBrick } from "../../status-brick";
@@ -18,7 +18,7 @@ import type {
   EphemeralContainerWithType,
   Pod,
   PodContainerStatus,
-} from "@skuberplus/kube-object";
+} from "@k-lens/kube-object";
 
 /**
  * 🎯 목적: 컨테이너 상태 정보를 툴팁용 JSX로 렌더링

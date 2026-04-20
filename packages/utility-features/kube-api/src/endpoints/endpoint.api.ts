@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Endpoints } from "@skuberplus/kube-object";
+import { Endpoints } from "@k-lens/kube-object";
 import { KubeApi } from "../kube-api";
 
-import type { EndpointsData } from "@skuberplus/kube-object";
+import type { EndpointsData } from "@k-lens/kube-object";
 
 import type { DerivedKubeApiOptions, KubeApiDependencies } from "../kube-api";
 

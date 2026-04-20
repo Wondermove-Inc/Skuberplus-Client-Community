@@ -6,21 +6,18 @@
 
 import "./pod-security-policy-details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { PodSecurityPolicy } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { PodSecurityPolicy } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 // 🎯 shadcn UI 컴포넌트: DrawerItem/DrawerTitle 대체
-import {
-  DetailPanelField,
-  DetailPanelSection,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { DetailPanelField, DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 import { Table, TableCell, TableHead, TableRow } from "../table";
 
-import type { Logger } from "@skuberplus/logger";
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { Logger } from "@k-lens/logger";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { KubeObjectDetailsProps } from "../kube-object-details";
 

@@ -1,5 +1,5 @@
+import { keyboardShortcutInjectionToken } from "@k-lens/keyboard-shortcuts";
 import { getInjectable } from "@ogre-tools/injectable";
-import { keyboardShortcutInjectionToken } from "@skuberplus/keyboard-shortcuts";
 import tableFocusManagerInjectable from "../components/table/table-focus-manager.injectable";
 
 const tableEnterShortcutInjectable = getInjectable({

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { object } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { object } from "@skuberplus/utilities";
 import { action } from "mobx";
 import storeMigrationVersionInjectable from "../../../common/vars/store-migration-version.injectable";
 import createPersistentStorageInjectable from "../../../features/persistent-storage/common/create.injectable";

@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { ClusterRole } from "@skuberplus/kube-object";
+import { ClusterRole } from "@k-lens/kube-object";
 import userEvent from "@testing-library/user-event";
 import React from "react";
 import directoryForKubeConfigsInjectable from "../../../../../common/app-paths/directory-for-kube-configs/directory-for-kube-configs.injectable";

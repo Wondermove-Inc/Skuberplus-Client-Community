@@ -12,8 +12,8 @@ const kubeAuthProxyCertificateInjectable = getInjectable({
   instantiate: (di, hostname) =>
     generate(
       [
-        { name: "commonName", value: "SkuberPlus Certificate Authority" },
-        { name: "organizationName", value: "SkuberPlus" },
+        { name: "commonName", value: "KLens Certificate Authority" },
+        { name: "organizationName", value: "KLens" },
       ],
       {
         keySize: 2048,

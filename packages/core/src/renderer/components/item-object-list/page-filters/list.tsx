@@ -6,11 +6,11 @@
 
 import "./list.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
+import { Icon } from "@k-lens/icon";
 // 🎯 shadcn UI 컴포넌트: 레거시 Badge 대체
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { cssNames } from "@skuberplus/utilities";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { cssNames } from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { observer } from "mobx-react";
 import React from "react";
 import searchUrlPageParamInjectable from "../../input/search-url-page-param.injectable";

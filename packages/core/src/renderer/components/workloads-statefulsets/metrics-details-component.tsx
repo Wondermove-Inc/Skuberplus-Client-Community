@@ -24,7 +24,7 @@ import { ResourceMetrics } from "../resource-metrics";
 import { PodCharts, podMetricTabs } from "../workloads-pods/pod-charts";
 import statefulSetMetricsInjectable from "./metrics.injectable";
 
-import type { StatefulSet } from "@skuberplus/kube-object";
+import type { StatefulSet } from "@k-lens/kube-object";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { MetricsSourceType } from "../../../common/cluster-types";

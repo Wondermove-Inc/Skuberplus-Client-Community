@@ -20,7 +20,7 @@ import { createConfigTools } from "./config-tools";
 import { createMainTools, type MainToolsDependencies } from "./main-tools";
 import { createProfileTools } from "./profile-tools";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { StructuredToolInterface } from "@langchain/core/tools";
 

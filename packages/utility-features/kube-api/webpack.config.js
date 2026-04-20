@@ -1,4 +1,4 @@
-const baseConfig = require("@skuberplus/webpack").configForReact;
+const baseConfig = require("@k-lens/webpack").configForReact;
 const nodeExternals = require("webpack-node-externals");
 
 const REQUIRED_RENDERER_MODULES = ["byline", "rfc4648", "isomorphic-ws", "stream-buffers", "request", "tslib"];

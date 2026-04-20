@@ -4,12 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { persistentVolumeClaimApiInjectable } from "@k-lens/kube-api-specifics";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { persistentVolumeClaimApiInjectable } from "@skuberplus/kube-api-specifics";
 import React from "react";
 import { LocalRef } from "../variant-helpers";
 
-import type { PersistentVolumeClaimApi } from "@skuberplus/kube-api";
+import type { PersistentVolumeClaimApi } from "@k-lens/kube-api";
 
 import type { PodVolumeVariantSpecificProps } from "../variant-helpers";
 

@@ -6,7 +6,7 @@
 
 import { getInjectionToken } from "@ogre-tools/injectable";
 
-import type { LegacyLensExtension } from "@skuberplus/legacy-extensions";
+import type { LegacyLensExtension } from "@k-lens/legacy-extensions";
 
 import type { Injectable } from "@ogre-tools/injectable";
 import type { IComputedValue } from "mobx";

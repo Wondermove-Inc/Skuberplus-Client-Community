@@ -6,14 +6,14 @@
 
 import "./pod-disruption-budgets-details.scss";
 
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 // 🎯 shadcn UI 컴포넌트: DrawerItem 대체
-import { DetailPanelField } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { DetailPanelField } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
 import { observer } from "mobx-react";
 import React from "react";
 import { KubeObjectConditionsDrawer } from "../kube-object-conditions";
 
-import type { PodDisruptionBudget } from "@skuberplus/kube-object";
+import type { PodDisruptionBudget } from "@k-lens/kube-object";
 
 import type { KubeObjectDetailsProps } from "../kube-object-details";
 

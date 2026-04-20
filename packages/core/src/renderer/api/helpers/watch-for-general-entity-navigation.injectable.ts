@@ -4,15 +4,15 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { observableHistoryInjectionToken } from "@k-lens/routing";
+import { disposer } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { observableHistoryInjectionToken } from "@skuberplus/routing";
-import { disposer } from "@skuberplus/utilities";
 import { reaction, when } from "mobx";
 import generalCategoryInjectable from "../../../common/catalog/categories/general.injectable";
 import isActiveRouteInjectable from "../../navigation/is-route-active.injectable";
 import catalogEntityRegistryInjectable from "../catalog/entity/registry.injectable";
 
-import type { Disposer } from "@skuberplus/utilities";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { GeneralEntity } from "../../../common/catalog-entities";
 

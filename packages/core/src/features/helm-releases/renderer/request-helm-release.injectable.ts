@@ -4,11 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { requestFromChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { requestFromChannelInjectionToken } from "@skuberplus/messaging";
 import { getHelmReleaseChannel } from "../common/channels";
 
-import type { ChannelRequester } from "@skuberplus/messaging";
+import type { ChannelRequester } from "@k-lens/messaging";
 
 export type RequestHelmRelease = ChannelRequester<typeof getHelmReleaseChannel>;
 

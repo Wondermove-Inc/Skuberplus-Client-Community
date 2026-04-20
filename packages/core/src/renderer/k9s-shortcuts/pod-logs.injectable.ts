@@ -1,9 +1,9 @@
+import { keyboardShortcutInjectionToken } from "@k-lens/keyboard-shortcuts";
 import { getInjectable } from "@ogre-tools/injectable";
-import { keyboardShortcutInjectionToken } from "@skuberplus/keyboard-shortcuts";
 import createPodLogsTabInjectable from "../components/dock/logs/create-pod-logs-tab.injectable";
 import tableFocusManagerInjectable from "../components/table/table-focus-manager.injectable";
 
-import type { Pod } from "@skuberplus/kube-object";
+import type { Pod } from "@k-lens/kube-object";
 
 /**
  * `l` key — View logs for the focused Pod.

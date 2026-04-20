@@ -10,7 +10,7 @@ import { ResourceMetrics } from "../resource-metrics";
 import { IngressCharts } from "./ingress-charts";
 import ingressMetricsInjectable from "./metrics.injectable";
 
-import type { Ingress } from "@skuberplus/kube-object";
+import type { Ingress } from "@k-lens/kube-object";
 
 import type { IAsyncComputed } from "@ogre-tools/injectable-react";
 

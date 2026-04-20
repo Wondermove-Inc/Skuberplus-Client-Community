@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { getOrInsertSet, toggle } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { getOrInsertSet, toggle } from "@skuberplus/utilities";
 import { action } from "mobx";
 import userPreferencesStateInjectable from "./state.injectable";
 

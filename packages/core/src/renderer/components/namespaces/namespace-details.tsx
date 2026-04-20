@@ -6,13 +6,13 @@
 
 import "./namespace-details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { Namespace } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Spinner } from "@skuberplus/spinner";
+import { Namespace } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Spinner } from "@k-lens/spinner";
 // 🎯 shadcn UI 컴포넌트: DrawerItem 대체
-import { DetailPanelField } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { cssNames } from "@skuberplus/utilities";
+import { DetailPanelField } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { cssNames } from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { computed, makeObservable } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";
@@ -24,7 +24,7 @@ import getDetailsUrlInjectable from "../kube-detail-params/get-details-url.injec
 import { NamespaceTreeView } from "./namespace-tree-view";
 import namespaceStoreInjectable from "./store.injectable";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
 import type { LimitRangeStore } from "../config-limit-ranges/store";

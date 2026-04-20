@@ -20,16 +20,16 @@
 
 import "./pod-disruption-budgets-details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { PodDisruptionBudget } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Table, TableBody, TableCell, TableRow } from "@skuberplus/storybook-shadcn";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { PodDisruptionBudget } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Table, TableBody, TableCell, TableRow } from "@k-lens/storybook-shadcn";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 import {
   DetailPanelField,
   DetailPanelFieldGroup,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { Separator } from "@skuberplus/storybook-shadcn/src/components/ui/separator";
+} from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { Separator } from "@k-lens/storybook-shadcn/src/components/ui/separator";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { observer } from "mobx-react";
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
@@ -47,8 +47,8 @@ import kubeObjectDeleteServiceInjectable from "../kube-object-menu/kube-object-d
 import { LocaleDate } from "../locale-date";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 
-import type { KubeObject } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+import type { KubeObject } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { ApiManager } from "../../../common/k8s-api/api-manager";
 import type { HostedCluster } from "../../cluster-frame-context/hosted-cluster.injectable";

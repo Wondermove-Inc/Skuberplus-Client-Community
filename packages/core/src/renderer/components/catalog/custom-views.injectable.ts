@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { getOrInsert, getOrInsertMap } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { getOrInsert, getOrInsertMap } from "@skuberplus/utilities";
 import { orderBy } from "lodash";
 import { computed } from "mobx";
 import rendererExtensionsInjectable from "../../../extensions/renderer-extensions.injectable";

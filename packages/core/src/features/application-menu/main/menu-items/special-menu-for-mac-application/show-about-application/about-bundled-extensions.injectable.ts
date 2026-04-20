@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { applicationInformationToken } from "@k-lens/application";
+import { bundledExtensionInjectionToken } from "@k-lens/legacy-extensions";
+import { object } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { applicationInformationToken } from "@skuberplus/application";
-import { bundledExtensionInjectionToken } from "@skuberplus/legacy-extensions";
-import { object } from "@skuberplus/utilities";
 import semanticBuildVersionInjectable from "../../../../../vars/common/semantic-build-version.injectable";
 
 const specificVersionsInjectable = getInjectable({
@@ -23,7 +23,7 @@ const specificVersionsInjectable = getInjectable({
 
     const corePackageVersions = object
       .entries(applicationInformation.dependencies)
-      .filter(([name]) => name.startsWith("@skuberplus/"))
+      .filter(([name]) => name.startsWith("@k-lens/"))
       .map(([name, version]) => `${name}: ${version}`);
     const bundledExtensionVersions = bundledExtensions.map((ext) => `${ext.manifest.name}: ${ext.manifest.version}`);
 

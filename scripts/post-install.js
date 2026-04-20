@@ -87,11 +87,11 @@ function rebuildNativeModules() {
   }
 
   try {
-    // 🔧 skuberplus의 electron-rebuild 스크립트 사용
-    // 이유: skuberplus에 Electron이 설치되어 있고, pnpm의 경로 문제를 회피
-    log("start", "skuberplus electron-rebuild 실행 중...");
+    // 🔧 k-lens의 electron-rebuild 스크립트 사용
+    // 이유: k-lens에 Electron이 설치되어 있고, pnpm의 경로 문제를 회피
+    log("start", "k-lens electron-rebuild 실행 중...");
 
-    execSync("cd skuberplus && pnpm electron-rebuild", {
+    execSync("cd k-lens && pnpm electron-rebuild", {
       cwd: projectRoot,
       stdio: "inherit",
     });
@@ -101,7 +101,7 @@ function rebuildNativeModules() {
     log("error", `Electron 네이티브 모듈 재빌드 실패: ${error.message}`);
     log("warning", "일부 기능(터미널 등)이 작동하지 않을 수 있습니다.");
     log("warning", "수동 재빌드 명령어:");
-    console.log("  cd skuberplus && pnpm electron-rebuild");
+    console.log("  cd k-lens && pnpm electron-rebuild");
     process.exit(1);
   }
 }

@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { onLoadOfApplicationInjectionToken } from "@k-lens/application";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { onLoadOfApplicationInjectionToken } from "@skuberplus/application";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import showApplicationWindowInjectable from "../../start-main-application/lens-window/show-application-window.injectable";
 import electronAppInjectable from "../electron-app.injectable";
 

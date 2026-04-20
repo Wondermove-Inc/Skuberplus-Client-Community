@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { beforeApplicationIsLoadingInjectionToken } from "@k-lens/application";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { beforeApplicationIsLoadingInjectionToken } from "@skuberplus/application";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import appNameInjectable from "../../common/vars/app-name.injectable";
 import { buildVersionInitializable } from "../../features/vars/build-version/common/token";
 import { buildVersionInitializationInjectable } from "../../features/vars/build-version/main/init.injectable";

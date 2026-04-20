@@ -4,20 +4,20 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { pipeline } from "@ogre-tools/fp";
-import { getInjectable } from "@ogre-tools/injectable";
-import { applicationFeature, startApplicationInjectionToken } from "@skuberplus/application";
+import { applicationFeature, startApplicationInjectionToken } from "@k-lens/application";
 import {
   applicationFeatureForElectronMain,
   testUtils as applicationForElectronTestUtils,
-} from "@skuberplus/application-for-electron-main";
-import { registerFeature } from "@skuberplus/feature-core";
-import { namespaceApiInjectable, storesAndApisCanBeCreatedInjectionToken } from "@skuberplus/kube-api-specifics";
-import { Namespace } from "@skuberplus/kube-object";
-import { sendMessageToChannelInjectionToken } from "@skuberplus/messaging";
-import { getMessageBridgeFake } from "@skuberplus/messaging-fake-bridge";
-import { discoverFor } from "@skuberplus/react-testing-library-discovery";
-import { historyInjectionToken } from "@skuberplus/routing";
+} from "@k-lens/application-for-electron-main";
+import { registerFeature } from "@k-lens/feature-core";
+import { namespaceApiInjectable, storesAndApisCanBeCreatedInjectionToken } from "@k-lens/kube-api-specifics";
+import { Namespace } from "@k-lens/kube-object";
+import { sendMessageToChannelInjectionToken } from "@k-lens/messaging";
+import { getMessageBridgeFake } from "@k-lens/messaging-fake-bridge";
+import { discoverFor } from "@k-lens/react-testing-library-discovery";
+import { historyInjectionToken } from "@k-lens/routing";
+import { pipeline } from "@ogre-tools/fp";
+import { getInjectable } from "@ogre-tools/injectable";
 import { act, fireEvent, queryByText } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import assert from "assert";

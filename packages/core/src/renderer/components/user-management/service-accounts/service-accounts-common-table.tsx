@@ -46,7 +46,7 @@ import { ServiceAccountDetailPanel } from "./service-account-detail-panel";
 import { serviceAccountColumns } from "./service-accounts-columns";
 import serviceAccountStoreInjectable from "./store.injectable";
 
-import type { ServiceAccount } from "@skuberplus/kube-object";
+import type { ServiceAccount } from "@k-lens/kube-object";
 
 import type { SubscribeStores } from "../../../kube-watch-api/kube-watch-api";
 import type { ServiceAccountStore } from "./store";

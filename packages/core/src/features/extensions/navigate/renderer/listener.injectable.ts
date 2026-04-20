@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getMessageChannelListenerInjectable } from "@skuberplus/messaging";
+import { getMessageChannelListenerInjectable } from "@k-lens/messaging";
 import extensionLoaderInjectable from "../../../../extensions/extension-loader/extension-loader.injectable";
 import { navigateForExtensionChannel } from "../common/channel";
 

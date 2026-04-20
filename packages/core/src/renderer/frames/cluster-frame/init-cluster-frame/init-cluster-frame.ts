@@ -8,7 +8,7 @@ import { when } from "mobx";
 import { notificationPanelStore } from "../../../components/status-bar/items/notification-panel.store";
 import { requestSetClusterFrameId } from "../../../ipc";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { EmitAppEvent } from "../../../../common/app-event-bus/emit-event.injectable";
 import type { Cluster } from "../../../../common/cluster/cluster";

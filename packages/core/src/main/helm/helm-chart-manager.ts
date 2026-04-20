@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { iter, put, sortBySemverVersion } from "@skuberplus/utilities";
+import { iter, put, sortBySemverVersion } from "@k-lens/utilities";
 import * as yaml from "js-yaml";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { ReadFile } from "../../common/fs/read-file.injectable";
 import type { Stat } from "../../common/fs/stat.injectable";

@@ -8,8 +8,8 @@
  * @packageDocumentation
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { MCPConnectionManager } from "./mcp-connection-manager";
 
 /**

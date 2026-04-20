@@ -8,7 +8,7 @@ import { getInjectable } from "@ogre-tools/injectable";
 import { action } from "mobx";
 import enabledExtensionsStateInjectable from "./state.injectable";
 
-import type { LensExtensionId } from "@skuberplus/legacy-extensions";
+import type { LensExtensionId } from "@k-lens/legacy-extensions";
 
 import type { IObservableMapInitialValues } from "mobx";
 

@@ -9,13 +9,13 @@
  *
  * 주요 변경사항:
  * - shadcn welcome template 구조 100% 채택
- * - Tailwind CSS token 기반 스타일 (SkuberPlus CSS 완전 격리)
+ * - Tailwind CSS token 기반 스타일 (KLens CSS 완전 격리)
  * - DI 패턴 유지 (withInjectables + 4개 의존성)
  * - Props로 기능 제어 (showTabs, showHeader, showCards, showHelp)
  *
  * 📝 주의사항:
  * - 모든 스타일은 Tailwind CSS token 사용
- * - CSS 격리: welcome-isolation.css로 SkuberPlus CSS와 완전 분리
+ * - CSS 격리: welcome-isolation.css로 KLens CSS와 완전 분리
  * - 4개 DI 의존성 반드시 유지
  * - handleSyncKubeconfig 핸들러 유지
  *
@@ -44,7 +44,7 @@ import type { IComputedValue, IObservableValue } from "mobx";
 
 import type { HotbarItem } from "../shadcn-ui/hotbar";
 
-// 🎨 CSS 격리 제거: Tailwind 클래스 우선순위가 SkuberPlus 전역 리셋보다 높으므로 불필요
+// 🎨 CSS 격리 제거: Tailwind 클래스 우선순위가 KLens 전역 리셋보다 높으므로 불필요
 // globals.css가 webpack entry로 로드되며, CSS 변수는 :root에 정의되어 있음
 
 import { toast } from "sonner";
@@ -103,7 +103,7 @@ export interface WelcomeProps {
  * - catalogRegistry 추가 (DataTable용 cluster 데이터 소스)
  * - sidebarStorage injectable 추가 (Hotbar 클릭 이벤트용)
  * - navigateToAddCluster: Add Cluster 페이지로 이동
- * - navigateToObservability: Skuber+ Observability 페이지로 이동
+ * - navigateToObservability: k-o11y 페이지로 이동
  * - openConfirmDialog: 확인 다이얼로그 열기 (클러스터 삭제 확인용)
  * - requestDeleteCluster: 클러스터 삭제 요청 (IPC)
  * - 총 9개 의존성
@@ -176,7 +176,7 @@ const NonInjectedWelcome = observer(
      * 🎯 목적: Hotbar 아이콘 클릭 핸들러
      * 📝 동작:
      *   - Explorer: Sidebar 토글 (열기/닫기), 사용자가 조절한 폭은 유지됨
-     *   - skuber-observability: Skuber+ Observability 화면으로 이동
+     *   - skuber-observability: k-o11y 화면으로 이동
      *   - 다른 아이콘: "개발 필요" Toast 표시
      */
     const handleHotbarItemClick = (itemId: string) => {
@@ -194,7 +194,7 @@ const NonInjectedWelcome = observer(
         if (current !== "/welcome") {
           previousExplorerUrl.set(current);
         }
-        // 🎯 Skuber+ Observability 화면으로 이동
+        // 🎯 k-o11y 화면으로 이동
         navigateToObservability();
       } else {
         // 🎯 다른 아이콘: "개발 필요" Toast 표시
@@ -680,7 +680,7 @@ const NonInjectedWelcome = observer(
  * withInjectables를 통해 9개 의존성 주입:
  * - productName: 제품명 (DAIVE)
  * - navigateToAddCluster: Add Cluster 페이지로 이동하는 함수
- * - navigateToObservability: Skuber+ Observability 페이지로 이동하는 함수
+ * - navigateToObservability: k-o11y 페이지로 이동하는 함수
  * - navigateToPreferences: 전역 설정 페이지로 이동하는 함수
  * - openPathPickingDialog: 파일 선택 다이얼로그를 여는 함수
  * - addSyncEntries: kubeconfig 파일을 동기화 목록에 추가하는 함수

@@ -7,7 +7,7 @@
 import "./resource-selector.scss";
 
 // 🎯 shadcn UI 컴포넌트: 레거시 Badge 대체
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 import { Check, ChevronsUpDown } from "lucide-react";
 import { observer } from "mobx-react";
 import React from "react";
@@ -26,7 +26,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "../../shadcn-ui/popover
 import { Tooltip, TooltipContent, TooltipTrigger } from "../../shadcn-ui/tooltip";
 import { ALL_CONTAINERS } from "./tab-store";
 
-import type { Container, Pod } from "@skuberplus/kube-object";
+import type { Container, Pod } from "@k-lens/kube-object";
 
 import type { LogTabViewModel } from "./logs-view-model";
 

@@ -9,7 +9,7 @@ import { asyncComputed } from "@ogre-tools/injectable-react";
 import apiManagerInjectable from "../../../common/k8s-api/api-manager/manager.injectable";
 import kubeDetailsUrlParamInjectable from "../kube-detail-params/kube-details-url.injectable";
 
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeObject } from "@k-lens/kube-object";
 
 export type CurrentKubeObject =
   | undefined

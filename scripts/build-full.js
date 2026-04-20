@@ -5,7 +5,7 @@
  *
  * 실행 순서:
  * 1. 소스 빌드 (pnpm build)
- * 2. Electron 앱 패키징 (cd skuberplus && pnpm build:app)
+ * 2. Electron 앱 패키징 (cd k-lens && pnpm build:app)
  * 3. 빌드 경고/에러 수집 및 분석 (collect-build-warnings.js)
  * 4. 패키징된 앱 검증 (verify-packaged-app.js)
  *
@@ -212,7 +212,7 @@ function main() {
   const targetArch = archIndex !== -1 ? process.argv[archIndex + 1] : "arm64";
 
   console.log("======================================");
-  log("INFO", "skuber+ client 전체 빌드 프로세스 시작");
+  log("INFO", "K-Lens 전체 빌드 프로세스 시작");
   if (targetArch === "x64") {
     log("INFO", "x64 크로스 빌드 모드 활성화");
   }
@@ -241,12 +241,12 @@ function main() {
     // ============================================
     if (targetArch === "x64") {
       durations.appPackaging = runCommand(
-        "cd skuberplus && TARGET_ARCH=x64 corepack pnpm build:app:darwin:x64",
+        "cd k-lens && TARGET_ARCH=x64 corepack pnpm build:app:darwin:x64",
         "Electron 앱 패키징 (x64 크로스 빌드)",
         buildLogPath,
       );
     } else {
-      durations.appPackaging = runCommand("cd skuberplus && pnpm build:app", "Electron 앱 패키징", buildLogPath);
+      durations.appPackaging = runCommand("cd k-lens && pnpm build:app", "Electron 앱 패키징", buildLogPath);
     }
 
     // ============================================
@@ -282,14 +282,14 @@ function main() {
     console.log("");
     const distFolder = targetArch === "x64" ? "mac" : "mac-arm64";
     console.log("✅ 빌드가 성공적으로 완료되었습니다.");
-    console.log(`   패키징된 앱: skuberplus/dist/${distFolder}/skuber+ client.app`);
+    console.log(`   패키징된 앱: k-lens/dist/${distFolder}/K-Lens.app`);
     console.log("");
     console.log("📄 빌드 로그:");
     console.log(`   ${buildLogPath}`);
     console.log("");
     console.log("🚀 앱 실행:");
     console.log("   pnpm start");
-    console.log(`   또는: open skuberplus/dist/${distFolder}/skuber+ client.app`);
+    console.log(`   또는: open k-lens/dist/${distFolder}/K-Lens.app`);
 
     process.exit(0);
   } catch (error) {

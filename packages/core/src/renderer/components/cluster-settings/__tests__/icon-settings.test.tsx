@@ -4,11 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { type DiContainer, getInjectable } from "@ogre-tools/injectable";
 import {
   clusterIconSettingsComponentInjectionToken,
   clusterIconSettingsMenuInjectionToken,
-} from "@skuberplus/cluster-settings";
+} from "@k-lens/cluster-settings";
+import { type DiContainer, getInjectable } from "@ogre-tools/injectable";
 import { act, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { runInAction } from "mobx";
@@ -19,7 +19,7 @@ import { getDiForUnitTesting } from "../../../getDiForUnitTesting";
 import { renderFor } from "../../test-utils/renderFor";
 import { ClusterIconSetting } from "../icon-settings";
 
-import type { ClusterIconSettingComponentProps } from "@skuberplus/cluster-settings";
+import type { ClusterIconSettingComponentProps } from "@k-lens/cluster-settings";
 
 import type { RenderResult } from "@testing-library/react";
 import type { UserEvent } from "@testing-library/user-event";

@@ -14,14 +14,14 @@ import { SecurityGrade } from "../../../../common/security/security-score";
 import { SecurityScoreCard } from "../security-score-card";
 
 // shadcn 컴포넌트 mock
-jest.mock("@skuberplus/storybook-shadcn/src/components/ui/card", () => ({
+jest.mock("@k-lens/storybook-shadcn/src/components/ui/card", () => ({
   Card: ({ children, className }: any) => <div className={className}>{children}</div>,
   CardContent: ({ children }: any) => <div>{children}</div>,
   CardHeader: ({ children }: any) => <div>{children}</div>,
   CardTitle: ({ children }: any) => <h3>{children}</h3>,
 }));
 
-jest.mock("@skuberplus/storybook-shadcn/src/components/ui/badge", () => ({
+jest.mock("@k-lens/storybook-shadcn/src/components/ui/badge", () => ({
   Badge: ({ children, variant }: any) => <span data-variant={variant}>{children}</span>,
 }));
 

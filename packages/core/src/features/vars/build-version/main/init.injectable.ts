@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { beforeApplicationIsLoadingInjectionToken } from "@skuberplus/application";
+import { beforeApplicationIsLoadingInjectionToken } from "@k-lens/application";
 import { getInjectablesForInitializable } from "../../../../common/initializable-state/create";
 import getBuildVersionInjectable from "../../../../main/electron-app/features/get-build-version.injectable";
 import { buildVersionInitializable } from "../common/token";

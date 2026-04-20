@@ -4,11 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { isErrnoException } from "@skuberplus/utilities";
+import { isErrnoException } from "@k-lens/utilities";
 import { dumpConfigYaml } from "../../common/kube-helpers";
 
-import type { KubeConfig } from "@skuberplus/kubernetes-client-node";
-import type { Logger } from "@skuberplus/logger";
+import type { KubeConfig } from "@k-lens/kubernetes-client-node";
+import type { Logger } from "@k-lens/logger";
 
 import type { SelfSignedCert } from "selfsigned";
 import type { PartialDeep } from "type-fest";

@@ -5,8 +5,8 @@
 
 import "./log-window-page.scss";
 
+import { Spinner } from "@k-lens/spinner";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Spinner } from "@skuberplus/spinner";
 import { ipcRenderer } from "electron";
 import { observer } from "mobx-react";
 import React, { useEffect, useRef, useState } from "react";

@@ -5,16 +5,16 @@
  */
 
 import asyncFn from "@async-fn/jest";
-import { Deployment, Pod } from "@skuberplus/kube-object";
-import { flushPromises } from "@skuberplus/test-utils";
+import { Deployment, Pod } from "@k-lens/kube-object";
+import { flushPromises } from "@k-lens/test-utils";
 import { PassThrough } from "stream";
 import { DeploymentApi, NamespaceApi, PodApi } from "./endpoints";
 import { KubeJsonApi } from "./kube-json-api";
 import { createMockResponseFromStream, createMockResponseFromString } from "./mock-responses";
 
-import type { KubeJsonApiData, KubeJsonApiDataFor } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
-import type Fetch from "@skuberplus/node-fetch";
+import type { KubeJsonApiData, KubeJsonApiDataFor } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
+import type Fetch from "@k-lens/node-fetch";
 
 import type { AsyncFnMock } from "@async-fn/jest";
 

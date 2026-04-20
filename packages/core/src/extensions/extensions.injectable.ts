@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { iter } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { iter } from "@skuberplus/utilities";
 import { computed } from "mobx";
 import isExtensionEnabledInjectable from "../features/extensions/enabled/common/is-enabled.injectable";
 import extensionInstancesInjectable from "./extension-loader/extension-instances.injectable";

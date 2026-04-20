@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { isDefined } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { isDefined } from "@skuberplus/utilities";
 import { action, toJS } from "mobx";
 import z from "zod";
 import createPersistentStorageInjectable from "../../../persistent-storage/common/create.injectable";
@@ -14,7 +14,7 @@ import { enabledExtensionsMigrationDeclarationInjectionToken } from "../main/mig
 import enabledExtensionsStateInjectable from "./state.injectable";
 import { enabledExtensionsPersistentStorageVersionInitializable } from "./storage-version";
 
-import type { LensExtensionId } from "@skuberplus/legacy-extensions";
+import type { LensExtensionId } from "@k-lens/legacy-extensions";
 
 import type { LensExtensionState } from "./state.injectable";
 

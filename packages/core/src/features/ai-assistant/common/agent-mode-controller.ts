@@ -23,7 +23,7 @@ import {
   StepType,
 } from "./agent-mode-types";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 // 타입 재export
 export {

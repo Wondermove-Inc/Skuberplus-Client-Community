@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { JsonApiErrorParsed } from "@skuberplus/json-api";
+import { JsonApiErrorParsed } from "@k-lens/json-api";
 
 export const getErrorMessage = (error: unknown): string => {
   if (typeof error === "string") {

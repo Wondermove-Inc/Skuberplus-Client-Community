@@ -1,5 +1,5 @@
 {
-  "name": "@skuberplus/react-testing-library-discovery",
+  "name": "@k-lens/react-testing-library-discovery",
   "private": false,
   "version": "1.5.4-0",
   "description": "A way to discover HTML-elements using react-testing-library",
@@ -13,16 +13,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wondermove-Inc/Skuberplus-Client-Community.git"
+    "url": "git+https://github.com/Wondermove-Inc/Klens-Client-Community.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "license": "MIT",
-  "homepage": "https://skuberplus.app",
+  "homepage": "https://k-lens.app",
   "scripts": {
     "clean": "pnpm dlx rimraf@6.0.1 dist",
     "clean:node_modules": "pnpm dlx rimraf@6.0.1 node_modules",
@@ -32,8 +32,8 @@
     "@testing-library/dom": "^10.4.1"
   },
   "devDependencies": {
-    "@skuberplus/typescript": "workspace:^",
-    "@skuberplus/webpack": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
+    "@k-lens/webpack": "workspace:^",
     "@testing-library/react": "^16.3.0",
     "ts-loader": "^9.5.4",
     "webpack": "^5.101.3"

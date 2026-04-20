@@ -19,7 +19,7 @@ import {
   postMessageChannels,
 } from "../../../common/ipc/post-message";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 /** 응답 대기 타임아웃 (ms) */
 const RESPONSE_TIMEOUT = 10000;

@@ -4,13 +4,13 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Icon } from "@k-lens/icon";
+import { base64, cssNames, isObject } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { base64, cssNames, isObject } from "@skuberplus/utilities";
 import React, { useState } from "react";
 import secretStoreInjectable from "../config-secrets/store.injectable";
 
-import type { EnvVarKeySelector } from "@skuberplus/kube-object";
+import type { EnvVarKeySelector } from "@k-lens/kube-object";
 
 import type { SetRequired } from "type-fest";
 

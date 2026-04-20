@@ -9,14 +9,14 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+// 🎯 shadcn UI 컴포넌트: DrawerTitle 대체
+import { DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { prevDefault } from "@k-lens/utilities";
 import TreeItem, { useTreeItem } from "@mui/lab/TreeItem";
 import TreeView from "@mui/lab/TreeView";
 import { SvgIcon } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { withInjectables } from "@ogre-tools/injectable-react";
-// 🎯 shadcn UI 컴포넌트: DrawerTitle 대체
-import { DetailPanelSection } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { prevDefault } from "@skuberplus/utilities";
 import clsx from "clsx";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -25,7 +25,7 @@ import hierarchicalNamespacesInjectable from "./hierarchical-namespaces.injectab
 import styles from "./namespace-tree-view.module.scss";
 import { SubnamespaceBadge } from "./subnamespace-badge";
 
-import type { Namespace } from "@skuberplus/kube-object";
+import type { Namespace } from "@k-lens/kube-object";
 
 import type { TreeItemContentProps } from "@mui/lab/TreeItem/TreeItemContent";
 

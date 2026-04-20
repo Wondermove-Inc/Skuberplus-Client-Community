@@ -14,17 +14,17 @@
  *   - 2025-12-04: DetailPanelField 컴포넌트로 리팩토링
  */
 
-import { KubeObject } from "@skuberplus/kube-object";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { KubeObject } from "@k-lens/kube-object";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 // 🎯 shadcn UI 컴포넌트: DrawerItem 대체
-import { DetailPanelField } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@skuberplus/storybook-shadcn/src/components/ui/tooltip";
+import { DetailPanelField } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@k-lens/storybook-shadcn/src/components/ui/tooltip";
 import { observer } from "mobx-react";
 import React from "react";
 import { getClassName, getTooltip } from "./components";
 import { sortConditions } from "./utils";
 
-import type { KubeObjectMetadata, KubeObjectStatus } from "@skuberplus/kube-object";
+import type { KubeObjectMetadata, KubeObjectStatus } from "@k-lens/kube-object";
 
 export interface KubeObjectConditionsDrawerProps {
   object: KubeObject;

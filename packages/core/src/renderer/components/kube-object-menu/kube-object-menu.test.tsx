@@ -10,8 +10,8 @@ import React from "react";
 import type { RenderResult } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
+import { KubeObject } from "@k-lens/kube-object";
 import { getInjectable } from "@ogre-tools/injectable";
-import { KubeObject } from "@skuberplus/kube-object";
 import userEvent from "@testing-library/user-event";
 import { computed, runInAction } from "mobx";
 import directoryForTempInjectable from "../../../common/app-paths/directory-for-temp/directory-for-temp.injectable";

@@ -10,7 +10,7 @@ import { ResourceMetrics } from "../resource-metrics";
 import persistentVolumeClaimMetricsInjectable from "./metrics.injectable";
 import { VolumeClaimDiskChart } from "./volume-claim-disk-chart";
 
-import type { PersistentVolumeClaim } from "@skuberplus/kube-object";
+import type { PersistentVolumeClaim } from "@k-lens/kube-object";
 
 import type { IAsyncComputed } from "@ogre-tools/injectable-react";
 

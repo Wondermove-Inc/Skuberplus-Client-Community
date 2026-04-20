@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getRequestChannel } from "@skuberplus/messaging";
+import { getRequestChannel } from "@k-lens/messaging";
 
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { AsyncResult } from "@k-lens/utilities";
 
 import type { HelmRepo } from "./helm-repo";
 

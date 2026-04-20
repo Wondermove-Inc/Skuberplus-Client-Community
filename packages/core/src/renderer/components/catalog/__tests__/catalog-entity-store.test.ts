@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { noop } from "@skuberplus/utilities";
+import { noop } from "@k-lens/utilities";
 import { CatalogEntity, categoryVersion } from "../../../../common/catalog";
 import catalogCategoryRegistryInjectable from "../../../../common/catalog/category-registry.injectable";
 import catalogEntityRegistryInjectable from "../../../api/catalog/entity/registry.injectable";

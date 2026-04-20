@@ -5,13 +5,13 @@
  */
 
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { loggerInjectionToken } from "@k-lens/logger";
 import openSaveFileDialogInjectable from "../../../utils/save-file.injectable";
 import { notificationPanelStore } from "../../status-bar/items/notification-panel.store";
 import callForLogsInjectable from "./call-for-logs.injectable";
 
-import type { ResourceDescriptor } from "@skuberplus/kube-api";
-import type { PodLogsQuery } from "@skuberplus/kube-object";
+import type { ResourceDescriptor } from "@k-lens/kube-api";
+import type { PodLogsQuery } from "@k-lens/kube-object";
 
 const downloadAllLogsInjectable = getInjectable({
   id: "download-all-logs",

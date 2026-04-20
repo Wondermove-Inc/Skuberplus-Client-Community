@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { asLegacyGlobalFunctionForExtensionApi } from "@skuberplus/legacy-global-di";
+import { asLegacyGlobalFunctionForExtensionApi } from "@k-lens/legacy-global-di";
 import {
   type ResolveSystemProxy,
   resolveSystemProxyInjectionToken,

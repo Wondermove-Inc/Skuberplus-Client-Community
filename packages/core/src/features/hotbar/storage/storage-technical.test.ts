@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { anyObject } from "jest-mock-extended";
 import { computed } from "mobx";
 import directoryForUserDataInjectable from "../../../common/app-paths/directory-for-user-data/directory-for-user-data.injectable";
@@ -20,7 +20,7 @@ import setAsActiveHotbarInjectable from "./common/set-as-active.injectable";
 import hotbarsPersistentStorageInjectable from "./common/storage.injectable";
 import { defaultHotbarCells } from "./common/types";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { DiContainer } from "@ogre-tools/injectable";
 import type { IComputedValue } from "mobx";

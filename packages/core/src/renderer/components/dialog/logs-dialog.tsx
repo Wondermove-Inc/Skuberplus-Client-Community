@@ -6,9 +6,9 @@
 
 import "./logs-dialog.scss";
 
+import { Button } from "@k-lens/button";
+import { Icon } from "@k-lens/icon";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Button } from "@skuberplus/button";
-import { Icon } from "@skuberplus/icon";
 import { clipboard } from "electron";
 import { kebabCase } from "lodash/fp";
 import React from "react";

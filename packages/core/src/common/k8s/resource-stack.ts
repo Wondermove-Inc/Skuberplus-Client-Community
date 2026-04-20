@@ -4,15 +4,15 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getLegacyGlobalDiForExtensionApi } from "@skuberplus/legacy-global-di";
-import { hasTypedProperty, isObject } from "@skuberplus/utilities";
+import { getLegacyGlobalDiForExtensionApi } from "@k-lens/legacy-global-di";
+import { hasTypedProperty, isObject } from "@k-lens/utilities";
 import yaml from "js-yaml";
 import { defaultYamlDumpOptions } from "../kube-helpers";
 import productNameInjectable from "../vars/product-name.injectable";
 import { precompileHandlebarsTemplate } from "./compile-handlebars-template";
 
-import type { Logger } from "@skuberplus/logger";
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { Logger } from "@k-lens/logger";
+import type { AsyncResult } from "@k-lens/utilities";
 
 import type { TemplateDelegate } from "handlebars";
 

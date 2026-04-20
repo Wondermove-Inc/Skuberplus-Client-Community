@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { sidebarItemInjectionToken } from "@k-lens/cluster-sidebar";
+import { buildURL, computedAnd, noop } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { sidebarItemInjectionToken } from "@skuberplus/cluster-sidebar";
-import { buildURL, computedAnd, noop } from "@skuberplus/utilities";
 import { matches } from "lodash";
 import { Briefcase } from "lucide-react";
 import { computed } from "mobx";
@@ -18,8 +18,8 @@ import customResourcesSidebarItemInjectable from "../custom-resources/sidebar-it
 import createMainTabInjectable from "../main-tabs/create-main-tab.injectable";
 import customResourceDefinitionsInjectable from "./definitions.injectable";
 
-import type { SidebarItemRegistration } from "@skuberplus/cluster-sidebar";
-import type { CustomResourceDefinition } from "@skuberplus/kube-object";
+import type { SidebarItemRegistration } from "@k-lens/cluster-sidebar";
+import type { CustomResourceDefinition } from "@k-lens/kube-object";
 
 const titleCaseSplitRegex = /(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])/;
 

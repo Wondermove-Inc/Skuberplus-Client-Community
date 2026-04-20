@@ -4,11 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { iter } from "@skuberplus/utilities";
+import { iter } from "@k-lens/utilities";
 import { action, computed, makeObservable, observable, observe } from "mobx";
 
-import type { Logger } from "@skuberplus/logger";
-import type { Disposer } from "@skuberplus/utilities";
+import type { Logger } from "@k-lens/logger";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { IComputedValue, ObservableMap } from "mobx";
 

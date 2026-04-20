@@ -123,7 +123,7 @@ export function Welcome({
 
             {/* 제목 및 설명 */}
             <div className="flex flex-col items-center gap-3">
-              <h1 className="text-foreground text-4xl leading-none font-medium">Skuber⁺ Client</h1>
+              <h1 className="text-foreground text-4xl leading-none font-medium">K-Lens</h1>
               <p className="text-muted-foreground text-base leading-none">
                 Kubernetes IDE · Simplified Cluster Management
               </p>

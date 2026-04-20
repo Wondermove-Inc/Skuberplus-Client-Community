@@ -8,8 +8,8 @@
 // API docs: https://react-select.com/
 import "./select.scss";
 
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { cssNames } from "@skuberplus/utilities";
 import autoBindReact from "auto-bind/react";
 import { action, computed, makeObservable } from "mobx";
 import { observer } from "mobx-react";
@@ -17,7 +17,7 @@ import React, { Component } from "react";
 import ReactSelect, { components, createFilter } from "react-select";
 import activeThemeTypeInjectable from "../../themes/active-type.injectable";
 
-import type { ObservableHashSet, StrictReactNode } from "@skuberplus/utilities";
+import type { ObservableHashSet, StrictReactNode } from "@k-lens/utilities";
 
 import type { IComputedValue, ObservableSet } from "mobx";
 import type {

@@ -9,10 +9,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Icon } from "@k-lens/icon";
+import { Spinner } from "@k-lens/spinner";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { Spinner } from "@skuberplus/spinner";
-import { cssNames } from "@skuberplus/utilities";
 import { observer } from "mobx-react";
 import React from "react";
 import extensionDiscoveryInjectable from "../../../extensions/extension-discovery/extension-discovery.injectable";
@@ -25,7 +25,7 @@ import enableExtensionInjectable from "./enable-extension.injectable";
 import styles from "./installed-extensions.module.scss";
 import userExtensionsInjectable from "./user-extensions/user-extensions.injectable";
 
-import type { InstalledExtension } from "@skuberplus/legacy-extensions";
+import type { InstalledExtension } from "@k-lens/legacy-extensions";
 
 import type { IComputedValue } from "mobx";
 import type { Row } from "react-table";

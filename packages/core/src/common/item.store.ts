@@ -8,7 +8,7 @@ import autoBind from "auto-bind";
 import orderBy from "lodash/orderBy";
 import { action, computed, makeObservable, observable, when } from "mobx";
 
-import type { ItemObject } from "@skuberplus/list-layout";
+import type { ItemObject } from "@k-lens/list-layout";
 
 export abstract class ItemStore<Item extends ItemObject> {
   protected defaultSorting = (item: Item) => item.getName();

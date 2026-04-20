@@ -4,15 +4,15 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { registerFeature } from "@k-lens/feature-core";
+import { kubeApiSpecificsFeature } from "@k-lens/kube-api-specifics";
+import { setLegacyGlobalDiForExtensionApi } from "@k-lens/legacy-global-di";
+import { loggerFeature } from "@k-lens/logger";
+import { messagingFeature, testUtils as messagingTestUtils } from "@k-lens/messaging";
+import { notificationsFeature } from "@k-lens/notifications";
+import { randomFeature } from "@k-lens/random";
 import { createContainer, isInjectable } from "@ogre-tools/injectable";
 import { registerMobX } from "@ogre-tools/injectable-extension-for-mobx";
-import { registerFeature } from "@skuberplus/feature-core";
-import { kubeApiSpecificsFeature } from "@skuberplus/kube-api-specifics";
-import { setLegacyGlobalDiForExtensionApi } from "@skuberplus/legacy-global-di";
-import { loggerFeature } from "@skuberplus/logger";
-import { messagingFeature, testUtils as messagingTestUtils } from "@skuberplus/messaging";
-import { notificationsFeature } from "@skuberplus/notifications";
-import { randomFeature } from "@skuberplus/random";
 import { chunk } from "lodash/fp";
 import { runInAction } from "mobx";
 import broadcastMessageInjectable from "../common/ipc/broadcast-message.injectable";

@@ -23,12 +23,12 @@ pnpm build:full:app
 1. 백그라운드 프로세스 자동 정리 (개발 서버 종료)
 2. 소스 빌드 (`pnpm build`)
 3. Storybook 빌드 (선택적)
-4. Electron 앱 패키징 (`cd skuberplus && pnpm build:app`)
+4. Electron 앱 패키징 (`cd k-lens && pnpm build:app`)
 5. 빌드 경고/에러 수집 및 분석
 6. 패키징된 앱 검증
 
 **출력**:
-- `skuberplus/dist/mac-arm64/skuber+ client.app` - 패키징된 Electron 앱
+- `k-lens/dist/mac-arm64/K-Lens.app` - 패키징된 Electron 앱
 - `packages/storybook-shadcn/storybook-static/` - Storybook 정적 파일
 - `build.log` - 전체 빌드 로그
 
@@ -42,9 +42,9 @@ pnpm build:full:app
 **표준 로깅 유틸리티**
 
 ```bash
-node scripts/build-logger.js start "@skuberplus/core" "빌드 시작..."
-node scripts/build-logger.js success "@skuberplus/core" "빌드 완료" 7.2
-node scripts/build-logger.js error "skuberplus" "빌드 실패"
+node scripts/build-logger.js start "@k-lens/core" "빌드 시작..."
+node scripts/build-logger.js success "@k-lens/core" "빌드 완료" 7.2
+node scripts/build-logger.js error "k-lens" "빌드 실패"
 ```
 
 **기능**:
@@ -54,8 +54,8 @@ node scripts/build-logger.js error "skuberplus" "빌드 실패"
 
 **로그 형식**:
 ```
-[10:23:45] [@skuberplus/core] [🚀 START] Pre-build starting...
-[10:23:52] [@skuberplus/core] [✅ SUCCESS] Pre-build complete (7.2s)
+[10:23:45] [@k-lens/core] [🚀 START] Pre-build starting...
+[10:23:52] [@k-lens/core] [✅ SUCCESS] Pre-build complete (7.2s)
 ```
 
 ---
@@ -102,9 +102,9 @@ node scripts/verify-build.js
    - 필수 모듈 (js-yaml, tar, byline 등) 포함 확인
 
 3. **빌드 출력 파일**:
-   - `skuberplus/static/build/main.js`
-   - `skuberplus/static/build/renderer.js`
-   - `skuberplus/static/build/renderer.css`
+   - `k-lens/static/build/main.js`
+   - `k-lens/static/build/renderer.js`
+   - `k-lens/static/build/renderer.css`
 
 **특징**:
 - 경고 발생 시에도 빌드 중단 없음

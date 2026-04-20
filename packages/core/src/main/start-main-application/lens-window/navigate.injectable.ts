@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { iter } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { iter } from "@skuberplus/utilities";
 import assert from "assert";
 import clusterFramesInjectable from "../../../common/cluster-frames.injectable";
 import { IpcRendererNavigationEvents } from "../../../common/ipc/navigation-events";

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { EventEmitter } from "@skuberplus/event-emitter";
-import { isDefined, iter } from "@skuberplus/utilities";
+import { EventEmitter } from "@k-lens/event-emitter";
+import { isDefined, iter } from "@k-lens/utilities";
 import assert from "assert";
 import { ipcMain, ipcRenderer } from "electron";
 import { isEqual } from "lodash";
@@ -25,8 +25,8 @@ import type {
   LegacyLensExtension,
   LensExtensionConstructor,
   LensExtensionId,
-} from "@skuberplus/legacy-extensions";
-import type { Logger } from "@skuberplus/logger";
+} from "@k-lens/legacy-extensions";
+import type { Logger } from "@k-lens/logger";
 
 import type { ObservableMap } from "mobx";
 

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { getOrInsert } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { getOrInsert } from "@skuberplus/utilities";
 import { action } from "mobx";
 import * as uuid from "uuid";
 import weblinksStateInjectable from "./state.injectable";

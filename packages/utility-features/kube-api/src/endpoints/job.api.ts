@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Job } from "@skuberplus/kube-object";
+import { Job } from "@k-lens/kube-object";
 import { KubeApi } from "../kube-api";
 
 import type { DerivedKubeApiOptions, KubeApiDependencies, NamespacedResourceDescriptor } from "../kube-api";

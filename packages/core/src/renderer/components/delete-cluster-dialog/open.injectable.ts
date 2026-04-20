@@ -8,7 +8,7 @@ import { getInjectable } from "@ogre-tools/injectable";
 import { isCurrentContext } from "./is-current-context";
 import deleteClusterDialogStateInjectable from "./state.injectable";
 
-import type { KubeConfig } from "@skuberplus/kubernetes-client-node";
+import type { KubeConfig } from "@k-lens/kubernetes-client-node";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 

@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
+import { delay } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { delay } from "@skuberplus/utilities";
 import { bundledExtensionsLoaded } from "../../../../common/ipc/extension-handling";
 import ipcMainInjectionToken from "../../../../common/ipc/ipc-main-injection-token";
 

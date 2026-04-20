@@ -14,12 +14,12 @@ import { SecurityScanControl } from "../security-scan-control";
 import type { ScanState } from "../../../../features/security/renderer/security-scan-store";
 
 // shadcn 컴포넌트 mock
-jest.mock("@skuberplus/storybook-shadcn/src/components/ui/card", () => ({
+jest.mock("@k-lens/storybook-shadcn/src/components/ui/card", () => ({
   Card: ({ children }: any) => <div>{children}</div>,
   CardContent: ({ children }: any) => <div>{children}</div>,
 }));
 
-jest.mock("@skuberplus/storybook-shadcn/src/components/ui/button", () => ({
+jest.mock("@k-lens/storybook-shadcn/src/components/ui/button", () => ({
   Button: ({ children, onClick, variant }: any) => (
     <button data-variant={variant} onClick={onClick}>
       {children}

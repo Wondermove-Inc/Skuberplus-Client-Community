@@ -6,11 +6,11 @@
 
 import "./kube-object-list-layout.scss";
 
+import { Icon } from "@k-lens/icon";
+import { kubeObjectListLayoutColumnInjectionToken } from "@k-lens/list-layout";
+import { TooltipPosition } from "@k-lens/tooltip";
+import { cssNames, hasTypedProperty, isDefined, isObject, isString } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { kubeObjectListLayoutColumnInjectionToken } from "@skuberplus/list-layout";
-import { TooltipPosition } from "@skuberplus/tooltip";
-import { cssNames, hasTypedProperty, isDefined, isObject, isString } from "@skuberplus/utilities";
 import { sortBy } from "lodash";
 import { computed, observable, reaction } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
@@ -24,10 +24,10 @@ import toggleKubeDetailsPaneInjectable from "../kube-detail-params/toggle-detail
 import { KubeObjectMenu } from "../kube-object-menu";
 import { NamespaceSelectFilter } from "../namespaces/namespace-select-filter";
 
-import type { KubeApi } from "@skuberplus/kube-api";
-import type { KubeJsonApiDataFor, KubeObject } from "@skuberplus/kube-object";
-import type { GeneralKubeObjectListLayoutColumn, SpecificKubeListLayoutColumn } from "@skuberplus/list-layout";
-import type { Disposer } from "@skuberplus/utilities";
+import type { KubeApi } from "@k-lens/kube-api";
+import type { KubeJsonApiDataFor, KubeObject } from "@k-lens/kube-object";
+import type { GeneralKubeObjectListLayoutColumn, SpecificKubeListLayoutColumn } from "@k-lens/list-layout";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { ClusterContext } from "../../cluster-frame-context/cluster-frame-context";
 import type { SubscribableStore, SubscribeStores } from "../../kube-watch-api/kube-watch-api";

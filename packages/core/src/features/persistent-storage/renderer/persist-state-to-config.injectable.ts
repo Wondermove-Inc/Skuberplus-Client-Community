@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { noop } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { noop } from "@skuberplus/utilities";
 import { persistStateToConfigInjectionToken } from "../common/save-to-file";
 
 const persistStateToConfigInjectable = getInjectable({

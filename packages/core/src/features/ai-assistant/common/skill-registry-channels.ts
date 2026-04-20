@@ -10,7 +10,7 @@
  * Used by the Skills settings tab in Preferences Dialog.
  */
 
-import { getRequestChannel } from "@skuberplus/messaging";
+import { getRequestChannel } from "@k-lens/messaging";
 
 import type { SkillDefinition } from "../main/skills/skill-registry";
 

@@ -1,1 +1,1 @@
-module.exports = require("@skuberplus/webpack").configForNode;
+module.exports = require("@k-lens/webpack").configForNode;

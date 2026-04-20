@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getRequestChannel } from "@skuberplus/messaging";
+import { getRequestChannel } from "@k-lens/messaging";
 
 // 🎯 목적: AI Provider 타입 정의 (ollama 추가)
 export type AIProvider = "openai" | "anthropic" | "google" | "ollama" | "openrouter";

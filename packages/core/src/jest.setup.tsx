@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import skuberplusFetch from "@skuberplus/node-fetch";
+import klensFetch from "@k-lens/node-fetch";
 // glob은 자체 타입을 제공
 import * as glob from "glob";
 import { enableMapSet, setAutoFreeze } from "immer";
@@ -18,7 +18,7 @@ import "./test-utils/setup-shadcn-radix-mocks";
 // 🎯 shadcn 컴포넌트는 테스트에서 Radix hook을 호출하면서 Invalid hook call을 유발하기 때문에
 //    공통 mock을 선행 로드해 안전한 DOM stub으로 대체한다.
 
-import type * as K8slensTooltip from "@skuberplus/tooltip";
+import type * as K8slensTooltip from "@k-lens/tooltip";
 
 declare global {
   interface InjectablePaths {
@@ -50,7 +50,7 @@ process.on("unhandledRejection", (err: any) => {
   global.fail(err);
 });
 
-global.fetch = skuberplusFetch as unknown as typeof fetch;
+global.fetch = klensFetch as unknown as typeof fetch;
 
 global.TextEncoder = TextEncoder as unknown as typeof global.TextEncoder;
 global.TextDecoder = TextDecoderNode as unknown as typeof TextDecoder;
@@ -186,8 +186,8 @@ jest.mock("./common/ipc/ipc", () => ({
 
 jest.mock("@hello-pangea/dnd");
 jest.mock("./renderer/components/monaco-editor/monaco-editor");
-jest.mock("@skuberplus/tooltip", () => ({
-  ...jest.requireActual("@skuberplus/tooltip"),
+jest.mock("@k-lens/tooltip", () => ({
+  ...jest.requireActual("@k-lens/tooltip"),
   withTooltip: ((Target) =>
     ({ tooltip, tooltipOverrideDisabled, ...props }: any) => {
       if (tooltip) {

@@ -6,7 +6,7 @@
 
 import { KubeObjectStore } from "../../../common/k8s-api/kube-object.store";
 
-import type { ConfigMapApi } from "@skuberplus/kube-api";
-import type { ConfigMap, ConfigMapData } from "@skuberplus/kube-object";
+import type { ConfigMapApi } from "@k-lens/kube-api";
+import type { ConfigMap, ConfigMapData } from "@k-lens/kube-object";
 
 export class ConfigMapStore extends KubeObjectStore<ConfigMap, ConfigMapApi, ConfigMapData> {}

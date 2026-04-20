@@ -46,7 +46,7 @@ import { RoleDetailPanel } from "./role-detail-panel";
 import { roleColumns } from "./roles-columns";
 import roleStoreInjectable from "./store.injectable";
 
-import type { Role } from "@skuberplus/kube-object";
+import type { Role } from "@k-lens/kube-object";
 
 import type { SubscribeStores } from "../../../kube-watch-api/kube-watch-api";
 import type { RoleStore } from "./store";

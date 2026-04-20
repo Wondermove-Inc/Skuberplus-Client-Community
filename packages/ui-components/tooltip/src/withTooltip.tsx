@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { isReactNode, type StrictReactNode } from "@skuberplus/utilities";
+import { isReactNode, type StrictReactNode } from "@k-lens/utilities";
 import uniqueId from "lodash/uniqueId";
 import React, { useState } from "react";
 import { Tooltip, type TooltipContentFormatters, type TooltipProps } from "./tooltip";

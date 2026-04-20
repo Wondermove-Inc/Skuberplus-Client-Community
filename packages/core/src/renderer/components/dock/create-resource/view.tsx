@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Spinner } from "@k-lens/spinner";
+import { isObject } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Spinner } from "@skuberplus/spinner";
-import { isObject } from "@skuberplus/utilities";
 import yaml from "js-yaml";
 import { makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
@@ -25,7 +25,7 @@ import { InfoPanel } from "../info-panel";
 import createResourceTemplatesInjectable from "./create-resource-templates.injectable";
 import createResourceTabStoreInjectable from "./store.injectable";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { IComputedValue } from "mobx";
 import type { GroupBase } from "react-select";

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { bytesToUnits, noop } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { bytesToUnits, noop } from "@skuberplus/utilities";
 import { constants } from "fs";
 import createReadFileStreamInjectable from "../../../common/fs/create-read-file-stream.injectable";
 import computeKubeconfigDiffInjectable from "./compute-diff.injectable";
@@ -13,7 +13,7 @@ import kubeconfigSyncLoggerInjectable from "./logger.injectable";
 import type { Stats } from "fs";
 import type { Readable } from "stream";
 
-import type { Disposer } from "@skuberplus/utilities";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { ObservableMap } from "mobx";
 

@@ -1,7 +1,7 @@
 import asyncFn from "@async-fn/jest";
+import { registerFeature } from "@k-lens/feature-core";
 import { createContainer, DiContainer } from "@ogre-tools/injectable";
 import { getPromiseStatus } from "@ogre-tools/test-utils";
-import { registerFeature } from "@skuberplus/feature-core";
 import electronAppInjectable from "../electron/electron-app.injectable";
 import { applicationFeatureForElectronMain } from "../feature";
 import whenAppIsReadyInjectable from "./when-app-is-ready.injectable";

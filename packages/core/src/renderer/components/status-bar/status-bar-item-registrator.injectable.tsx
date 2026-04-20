@@ -4,15 +4,15 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
+import { getRandomIdInjectionToken } from "@k-lens/random";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { getRandomIdInjectionToken } from "@skuberplus/random";
 import { computed } from "mobx";
 import React from "react";
 import { extensionRegistratorInjectionToken } from "../../../extensions/extension-loader/extension-registrator-injection-token";
 import { statusBarItemInjectionToken } from "./status-bar-item-injection-token";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { Injectable } from "@ogre-tools/injectable";
 

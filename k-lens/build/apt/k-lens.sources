@@ -1,0 +1,4 @@
+Types: deb
+URIs: https://github.com/Wondermove-Inc/k-lens/releases/latest/download
+Suites: ./
+Signed-By: /etc/apt/keyrings/k-lens.asc

@@ -2,7 +2,7 @@
  * 🎯 목적: storybook-shadcn 컴포넌트를 다른 패키지에서 사용할 수 있도록 export
  * 📝 주의사항: 모든 shadcn UI 컴포넌트와 템플릿을 export
  * 🔄 변경이력:
- *   - 2025-10-17: 초기 생성 (SkuberPlus Welcome 화면 통합용)
+ *   - 2025-10-17: 초기 생성 (KLens Welcome 화면 통합용)
  *   - 2025-10-20: 모든 shadcn 컴포넌트 (54개) 및 템플릿 (1개) export 추가
  *   - 2025-10-31: DetailPanel 공통 컴포넌트 추가 (55개)
  */

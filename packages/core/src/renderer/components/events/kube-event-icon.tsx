@@ -6,14 +6,14 @@
 
 import "./kube-event-icon.scss";
 
+import { Icon } from "@k-lens/icon";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { cssNames } from "@skuberplus/utilities";
 import React, { Component } from "react";
 import { KubeObjectAge } from "../kube-object/age";
 import eventStoreInjectable from "./store.injectable";
 
-import type { KubeEvent, KubeObject } from "@skuberplus/kube-object";
+import type { KubeEvent, KubeObject } from "@k-lens/kube-object";
 
 import type { EventStore } from "./store";
 

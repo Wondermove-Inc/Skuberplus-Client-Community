@@ -6,7 +6,7 @@ export type BundledLensExtensionConstructor = new (ext: BundledInstalledExtensio
 export interface BaseInstalledExtension {
   readonly id: LensExtensionId;
   // Absolute path to the non-symlinked source folder,
-  // e.g. "/Users/user/.skuberplus/extensions/helloworld"
+  // e.g. "/Users/user/.k-lens/extensions/helloworld"
   readonly absolutePath: string;
   // Absolute to the symlinked package.json file
   readonly manifestPath: string;
@@ -63,11 +63,11 @@ export interface LensExtensionManifest extends BundledLensExtensionManifest {
   renderer?: string; // path to %ext/dist/renderer.js
 
   /**
-   * Supported SkuberPlus version engine by extension could be defined in `manifest.engines.skuberplus`
+   * Supported KLens version engine by extension could be defined in `manifest.engines.klens`
    * Only MAJOR.MINOR version is taken in consideration.
    */
   engines: {
-    skuberplus: string; // "semver"-package format
+    klens: string; // "semver"-package format
     [x: string]: string | undefined;
   };
 }

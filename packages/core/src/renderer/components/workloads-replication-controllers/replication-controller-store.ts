@@ -6,7 +6,7 @@
 
 import { KubeObjectStore } from "../../../common/k8s-api/kube-object.store";
 
-import type { ReplicationControllerApi } from "@skuberplus/kube-api";
-import type { ReplicationController } from "@skuberplus/kube-object";
+import type { ReplicationControllerApi } from "@k-lens/kube-api";
+import type { ReplicationController } from "@k-lens/kube-object";
 
 export class ReplicationControllerStore extends KubeObjectStore<ReplicationController, ReplicationControllerApi> {}

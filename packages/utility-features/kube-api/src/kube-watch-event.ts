@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import type { KubeStatusData } from "@skuberplus/kube-object";
+import type { KubeStatusData } from "@k-lens/kube-object";
 
 export type IKubeWatchEvent<T> =
   | {

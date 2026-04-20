@@ -19,11 +19,11 @@
  * - 2025-11-xx: Badge variant 매핑 적용 (Complete=secondary 등)
  */
 
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 import React from "react";
 import { getStatusText, getStatusVariant } from "../job-utils";
 
-import type { Job } from "@skuberplus/kube-object";
+import type { Job } from "@k-lens/kube-object";
 
 export const StatusCell = ({ job }: { job: Job }) => {
   const statusText = getStatusText(job);

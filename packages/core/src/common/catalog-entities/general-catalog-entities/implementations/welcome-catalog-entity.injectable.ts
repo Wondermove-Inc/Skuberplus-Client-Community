@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { buildURL } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { buildURL } from "@skuberplus/utilities";
 import welcomeRouteInjectable from "../../../front-end-routing/routes/welcome/welcome-route.injectable";
 import { GeneralEntity } from "../../index";
 import { generalCatalogEntityInjectionToken } from "../general-catalog-entity-injection-token";

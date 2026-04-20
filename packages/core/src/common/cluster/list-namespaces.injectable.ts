@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { isDefined } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { isDefined } from "@skuberplus/utilities";
 
-import type { CoreV1Api } from "@skuberplus/kubernetes-client-node";
+import type { CoreV1Api } from "@k-lens/kubernetes-client-node";
 
 export type ListNamespaces = () => Promise<string[]>;
 export type CreateListNamespaces = (api: CoreV1Api) => ListNamespaces;

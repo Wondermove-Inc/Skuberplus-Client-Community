@@ -10,7 +10,7 @@ import uniqueId from "lodash/uniqueId";
 import React from "react";
 import { Table, TableCell, TableHead, TableRow } from "../table";
 
-import type { Toleration } from "@skuberplus/kube-object";
+import type { Toleration } from "@k-lens/kube-object";
 
 export interface PodTolerationsProps {
   tolerations: Toleration[];

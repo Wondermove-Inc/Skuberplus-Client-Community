@@ -4,14 +4,14 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Pod } from "@k-lens/kube-object";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Pod } from "@skuberplus/kube-object";
 import React from "react";
 import createPodLogsTabInjectable, { type PodLogsTabData } from "../dock/logs/create-pod-logs-tab.injectable";
 import hideDetailsInjectable, { type HideDetails } from "../kube-detail-params/hide-details.injectable";
 import PodMenuItem from "./pod-menu-item";
 
-import type { Container } from "@skuberplus/kube-object";
+import type { Container } from "@k-lens/kube-object";
 
 export interface NonInjectablePodLogsMenuProps {
   object: any;

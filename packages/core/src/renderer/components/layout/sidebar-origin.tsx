@@ -9,10 +9,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { sidebarItemsInjectable } from "@k-lens/cluster-sidebar";
+import { Icon } from "@k-lens/icon";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { sidebarItemsInjectable } from "@skuberplus/cluster-sidebar";
-import { Icon } from "@skuberplus/icon";
-import { cssNames } from "@skuberplus/utilities";
 import { observer } from "mobx-react";
 import React, { useEffect, useState } from "react";
 import { isKubernetesCluster, LensKubernetesClusterStatus } from "../../../common/catalog-entities/kubernetes-cluster";
@@ -27,7 +27,7 @@ import { getClusterColor } from "./cluster-colors";
 import styles from "./sidebar.module.scss";
 import { SidebarItem } from "./sidebar-item";
 
-import type { SidebarItemDeclaration } from "@skuberplus/cluster-sidebar";
+import type { SidebarItemDeclaration } from "@k-lens/cluster-sidebar";
 
 import type { IComputedValue } from "mobx";
 

@@ -23,7 +23,7 @@ import {
   kubeObjectActionHandlerInjectionToken,
 } from "./kube-object-action-handler-injection-token";
 
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeObject } from "@k-lens/kube-object";
 
 export interface KubeObjectActionHandlerResolver {
   /**

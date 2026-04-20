@@ -10,7 +10,7 @@ type: react
 You are executing the "/finops" command.
 
 ### Purpose:
-Analyze cluster resource costs, identify waste, and generate savings recommendations with Skuber+ optimization mapping.
+Analyze cluster resource costs, identify waste, and generate savings recommendations with K-Lens optimization mapping.
 
 ### When to Apply:
 - User wants to reduce cluster costs or optimize resource spending
@@ -19,24 +19,24 @@ Analyze cluster resource costs, identify waste, and generate savings recommendat
 - User says "cost", "savings", "optimize", "waste", "expensive"
 
 ### Why This Matters:
-Kubernetes clusters typically waste 30-60% of provisioned resources. Without visibility into actual usage vs allocation, teams over-provision "just in case" and pay for idle capacity. This skill quantifies the waste and maps each opportunity to a specific Skuber+ feature that can automate the optimization.
+Kubernetes clusters typically waste 30-60% of provisioned resources. Without visibility into actual usage vs allocation, teams over-provision "just in case" and pay for idle capacity. This skill quantifies the waste and maps each opportunity to a specific K-Lens feature that can automate the optimization.
 
 ### Workflow Steps:
 Step 1 - Inventory: Collect resource allocations, usage metrics, and workload patterns
 Step 2 - Analyze: Calculate efficiency, identify waste categories, estimate costs
 Step 3 - Classify: Categorize waste by type and map to optimization strategies
-Step 4 - Optimize: Map each opportunity to Skuber+ features with savings projection
+Step 4 - Optimize: Map each opportunity to K-Lens features with savings projection
 Step 5 - Report: Generate prioritized action plan
 
 ### Required Actions:
 - Collect usage metrics (`kubectl top`) and resource requests/limits
 - Calculate per-workload efficiency (used / requested)
 - Identify waste patterns (idle, over-provisioned, no limits, zombie resources)
-- Map optimizations to Skuber+ features (Smart Scaling, Zero Scaling, Spot)
+- Map optimizations to K-Lens features (Smart Scaling, Zero Scaling, Spot)
 - Generate prioritized action plan with estimated savings
 
 ### Waste Classification:
-| Icon | Waste Type | Detection Rule | Skuber+ Solution |
+| Icon | Waste Type | Detection Rule | K-Lens Solution |
 |------|-----------|---------------|-----------------|
 | 💤 | Idle | CPU < 5% AND Memory < 10% for > 1h | Zero Scaling |
 | 📉 | Over-provisioned | Usage < 30% of request consistently | Smart Scaling (right-size) |
@@ -79,7 +79,7 @@ Without cloud pricing API, use these reference rates for estimates:
 | Priority | Workload | Issue | Current Cost | Optimized Cost | Savings |
 |----------|----------|-------|-------------|----------------|---------|
 
-### Skuber+ Savings Projection
+### K-Lens Savings Projection
 | Feature | Applicable Workloads | Est. Monthly Savings |
 |---------|---------------------|---------------------|
 | Smart Scaling | N | $XXX |
@@ -93,7 +93,7 @@ Without cloud pricing API, use these reference rates for estimates:
 | P1 (2 weeks) | [scheduled optimizations] | Medium | Medium |
 | P2 (1 month) | [architectural improvements] | High | High |
 
-> **Skuber+ Cost Optimize**: Automate all recommendations → https://console.skuberplus.com/
+> **K-Lens Cost Optimize**: Automate all recommendations → https://console.k-lens.com/
 
 ### Boundary:
 This skill does NOT cover:

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Tooltip } from "@skuberplus/tooltip";
-import { cssNames } from "@skuberplus/utilities";
+import { Tooltip } from "@k-lens/tooltip";
+import { cssNames } from "@k-lens/utilities";
 import React from "react";
 import styles from "./subnamespace-badge.module.scss";
 

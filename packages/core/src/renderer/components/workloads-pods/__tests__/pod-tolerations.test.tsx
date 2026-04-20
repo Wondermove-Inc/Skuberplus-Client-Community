@@ -13,7 +13,7 @@ import { getDiForUnitTesting } from "../../../getDiForUnitTesting";
 import { renderFor } from "../../test-utils/renderFor";
 import { PodTolerations } from "../pod-tolerations";
 
-import type { Toleration } from "@skuberplus/kube-object";
+import type { Toleration } from "@k-lens/kube-object";
 
 import type { DiRender } from "../../test-utils/renderFor";
 

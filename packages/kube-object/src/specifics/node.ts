@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { cpuUnitsToNumber, isObject, unitsToBytes } from "@skuberplus/utilities";
+import { cpuUnitsToNumber, isObject, unitsToBytes } from "@k-lens/utilities";
 import { TypedRegEx } from "typed-regex";
 import { KubeObject } from "../kube-object";
 

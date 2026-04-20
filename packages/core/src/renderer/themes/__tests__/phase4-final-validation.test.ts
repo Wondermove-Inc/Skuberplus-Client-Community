@@ -134,11 +134,11 @@ describe("PHASE 4: Final E2E Validation", () => {
     });
 
     it("should use consistent naming convention", () => {
-      expect(darkThemeStub.name).toContain("SkuberPlus");
-      expect(lightThemeStub.name).toContain("SkuberPlus");
+      expect(darkThemeStub.name).toContain("KLens");
+      expect(lightThemeStub.name).toContain("KLens");
 
-      expect(darkThemeStub.author).toBe("SkuberPlus");
-      expect(lightThemeStub.author).toBe("SkuberPlus");
+      expect(darkThemeStub.author).toBe("KLens");
+      expect(lightThemeStub.author).toBe("KLens");
     });
 
     it("should have one default theme", () => {

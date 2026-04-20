@@ -6,12 +6,12 @@
 
 import "./details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { CustomResourceDefinition, KubeObject } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { CustomResourceDefinition, KubeObject } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
 // 🎯 shadcn UI 컴포넌트: DrawerItem 대체
-import { DetailPanelField } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { cssNames, safeJSONPathValue } from "@skuberplus/utilities";
+import { DetailPanelField } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { cssNames, safeJSONPathValue } from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { startCase } from "lodash/fp";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
@@ -19,9 +19,9 @@ import { BadgeBoolean } from "../badge";
 import { Input } from "../input";
 import { KubeObjectConditionsDrawer } from "../kube-object-conditions";
 
-import type { AdditionalPrinterColumnsV1 } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { AdditionalPrinterColumnsV1 } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { KubeObjectDetailsProps } from "../kube-object-details";
 

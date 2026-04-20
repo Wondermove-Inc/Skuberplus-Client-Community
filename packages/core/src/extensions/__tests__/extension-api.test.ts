@@ -105,7 +105,7 @@ describe("Extensions API", () => {
         expect(typeof extensions.Common.Util.getAppVersion).toBe("function");
       });
 
-      it("should export utility functions from @skuberplus/utilities", () => {
+      it("should export utility functions from @k-lens/utilities", () => {
         expect(extensions.Common.Util).toHaveProperty("debouncePromise");
         expect(typeof extensions.Common.Util.debouncePromise).toBe("function");
         expect(extensions.Common.Util).toHaveProperty("delay");

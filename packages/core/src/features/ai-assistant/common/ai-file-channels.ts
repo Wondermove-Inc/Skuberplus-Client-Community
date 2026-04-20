@@ -23,8 +23,8 @@
  * - 2026-01-29: 초기 생성 (AI File System Integration)
  */
 
+import { getRequestChannel } from "@k-lens/messaging";
 import { getInjectionToken } from "@ogre-tools/injectable";
-import { getRequestChannel } from "@skuberplus/messaging";
 
 // ============================================
 // 🎯 Common Types

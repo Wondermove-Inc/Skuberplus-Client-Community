@@ -6,7 +6,7 @@
 
 import { KubeObjectStore } from "../../../common/k8s-api/kube-object.store";
 
-import type { EndpointSliceApi } from "@skuberplus/kube-api";
-import type { EndpointSlice, EndpointSliceData } from "@skuberplus/kube-object";
+import type { EndpointSliceApi } from "@k-lens/kube-api";
+import type { EndpointSlice, EndpointSliceData } from "@k-lens/kube-object";
 
 export class EndpointSliceStore extends KubeObjectStore<EndpointSlice, EndpointSliceApi, EndpointSliceData> {}

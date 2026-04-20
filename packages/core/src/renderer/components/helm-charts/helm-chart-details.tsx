@@ -6,14 +6,14 @@
 
 import "./helm-chart-details.scss";
 
+import { Button } from "@k-lens/button";
+import { Spinner } from "@k-lens/spinner";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+// 🎯 shadcn UI 컴포넌트: DrawerItem 대체
+import { DetailPanelField } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { stopPropagation } from "@k-lens/utilities";
 import { styled, Tooltip } from "@mui/material";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Button } from "@skuberplus/button";
-import { Spinner } from "@skuberplus/spinner";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-// 🎯 shadcn UI 컴포넌트: DrawerItem 대체
-import { DetailPanelField } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { stopPropagation } from "@skuberplus/utilities";
 import assert from "assert";
 import autoBindReact from "auto-bind/react";
 import { observer } from "mobx-react";

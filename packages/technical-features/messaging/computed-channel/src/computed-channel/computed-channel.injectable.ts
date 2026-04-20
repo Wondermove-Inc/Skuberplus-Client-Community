@@ -1,9 +1,9 @@
+import { getMessageChannelListenerInjectable, sendMessageToChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable, getInjectionToken } from "@ogre-tools/injectable";
-import { getMessageChannelListenerInjectable, sendMessageToChannelInjectionToken } from "@skuberplus/messaging";
 import { computed, type IComputedValue, observable, onBecomeObserved, onBecomeUnobserved, runInAction } from "mobx";
 import { computedChannelAdministrationChannel } from "./computed-channel-administration-channel.injectable";
 
-import type { MessageChannel } from "@skuberplus/messaging";
+import type { MessageChannel } from "@k-lens/messaging";
 
 export type ComputedChannelFactory = <T>(channel: MessageChannel<T>, pendingValue: T) => IComputedValue<T>;
 

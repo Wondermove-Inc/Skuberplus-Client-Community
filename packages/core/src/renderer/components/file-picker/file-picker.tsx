@@ -6,8 +6,8 @@
 
 import "./file-picker.scss";
 
-import { Icon } from "@skuberplus/icon";
-import { Spinner } from "@skuberplus/spinner";
+import { Icon } from "@k-lens/icon";
+import { Spinner } from "@k-lens/spinner";
 import fse from "fs-extra";
 import _ from "lodash";
 import { makeObservable, observable } from "mobx";
@@ -15,7 +15,7 @@ import { observer } from "mobx-react";
 import path from "path";
 import React, { Component } from "react";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 export interface FileUploadProps {
   uploadDir: string;

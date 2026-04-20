@@ -4,16 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { Button } from "@skuberplus/storybook-shadcn/src/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@skuberplus/storybook-shadcn/src/components/ui/card";
-import { ChartConfig, ChartContainer, ChartTooltipContent } from "@skuberplus/storybook-shadcn/src/components/ui/chart";
+import { Button } from "@k-lens/storybook-shadcn/src/components/ui/button";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@k-lens/storybook-shadcn/src/components/ui/card";
+import { ChartConfig, ChartContainer, ChartTooltipContent } from "@k-lens/storybook-shadcn/src/components/ui/chart";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -21,7 +14,8 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@skuberplus/storybook-shadcn/src/components/ui/dropdown-menu";
+} from "@k-lens/storybook-shadcn/src/components/ui/dropdown-menu";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { ChevronDown } from "lucide-react";
 import { observer } from "mobx-react";
 import React from "react";

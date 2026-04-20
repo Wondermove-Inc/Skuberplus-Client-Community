@@ -6,8 +6,8 @@
 
 import "./item-list-layout.scss";
 
+import { cssNames, noop } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { cssNames, noop } from "@skuberplus/utilities";
 import autoBindReact from "auto-bind/react";
 import groupBy from "lodash/groupBy";
 import { computed, makeObservable, untracked } from "mobx";
@@ -25,8 +25,8 @@ import { FilterType } from "./page-filters/store";
 import pageFiltersStoreInjectable from "./page-filters/store.injectable";
 import itemListLayoutStorageInjectable from "./storage.injectable";
 
-import type { ItemObject, TableCellProps } from "@skuberplus/list-layout";
-import type { IClassName, SingleOrMany, StrictReactNode } from "@skuberplus/utilities";
+import type { ItemObject, TableCellProps } from "@k-lens/list-layout";
+import type { IClassName, SingleOrMany, StrictReactNode } from "@k-lens/utilities";
 
 import type { IComputedValue } from "mobx";
 import type { Primitive } from "type-fest";

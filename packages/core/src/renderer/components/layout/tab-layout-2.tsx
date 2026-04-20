@@ -6,14 +6,14 @@
 
 import "./tab-layout.scss";
 
-import { ErrorBoundary } from "@skuberplus/error-boundary";
-import { cssNames } from "@skuberplus/utilities";
+import { ErrorBoundary } from "@k-lens/error-boundary";
+import { cssNames } from "@k-lens/utilities";
 import { observer } from "mobx-react";
 import React from "react";
 import { Tab, Tabs } from "../tabs";
 
-import type { SidebarItemDeclaration } from "@skuberplus/cluster-sidebar";
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { SidebarItemDeclaration } from "@k-lens/cluster-sidebar";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 export interface TabLayoutProps {
   tabs?: SidebarItemDeclaration[];

@@ -22,7 +22,7 @@
  * - 2026-03-13: Monitor 핸들러 분리 + Registry 팩토리 적용
  */
 
-import { getRequestChannelListenerInjectable, sendMessageToChannelInjectionToken } from "@skuberplus/messaging";
+import { getRequestChannelListenerInjectable, sendMessageToChannelInjectionToken } from "@k-lens/messaging";
 import {
   agentRequestChannel,
   agentStreamChannel,

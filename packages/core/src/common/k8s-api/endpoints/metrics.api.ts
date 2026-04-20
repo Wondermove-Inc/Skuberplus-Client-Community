@@ -6,7 +6,7 @@
 
 // Metrics api
 
-import { isDefined, object } from "@skuberplus/utilities";
+import { isDefined, object } from "@k-lens/utilities";
 import moment from "moment";
 
 export interface MetricData {

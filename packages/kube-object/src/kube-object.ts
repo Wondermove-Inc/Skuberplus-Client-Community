@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { formatDuration, isObject, isString } from "@skuberplus/utilities";
+import { formatDuration, isObject, isString } from "@k-lens/utilities";
 import autoBind from "auto-bind";
 import { omit } from "lodash";
 import moment from "moment";

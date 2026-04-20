@@ -65,8 +65,8 @@ export interface SaveExplorerUrlPayload {
  * Root Frame에서 폭 조절 시 모든 Cluster Frame에 브로드캐스트
  *
  * 📝 배경: 각 프레임이 다른 origin을 가져 localStorage가 격리됨
- * - Root Frame: http://renderer.skuberplus.app
- * - Cluster Frame: http://{clusterId}.renderer.skuberplus.app
+ * - Root Frame: http://renderer.k-lens.app
+ * - Cluster Frame: http://{clusterId}.renderer.k-lens.app
  *
  * 🔄 변경이력:
  * - 2026-01-19 - 초기 생성 (사이드바 폭 전역 유지 문제 해결)

@@ -1,16 +1,16 @@
-# @skuberplus/application-for-electron-main
+# @k-lens/application-for-electron-main
 
-This Feature extends `@skuberplus/application` with Electron specifics.
+This Feature extends `@k-lens/application` with Electron specifics.
 
 ## Usage
 ```sh
-npm install @skuberplus/application-for-electron-main
+npm install @k-lens/application-for-electron-main
 ```
 
 ```typescript
-import { applicationFeature, startApplicationInjectionToken } from "@skuberplus/application";
-import { applicationFeatureForElectronMain } from "@skuberplus/application-for-electron-main";
-import { registerFeature } from "@skuberplus/feature-core";
+import { applicationFeature, startApplicationInjectionToken } from "@k-lens/application";
+import { applicationFeatureForElectronMain } from "@k-lens/application-for-electron-main";
+import { registerFeature } from "@k-lens/feature-core";
 import { createContainer } from "@ogre-tools/injectable";
 
 const di = createContainer("some-container");

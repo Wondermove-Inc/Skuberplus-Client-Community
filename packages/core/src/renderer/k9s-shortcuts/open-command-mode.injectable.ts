@@ -1,5 +1,5 @@
+import { keyboardShortcutInjectionToken } from "@k-lens/keyboard-shortcuts";
 import { getInjectable } from "@ogre-tools/injectable";
-import { keyboardShortcutInjectionToken } from "@skuberplus/keyboard-shortcuts";
 import { broadcastMessage } from "../../common/ipc";
 import hostedClusterIdInjectable from "../cluster-frame-context/hosted-cluster-id.injectable";
 import inlineCommandPaletteStoreInjectable from "../components/command-palette/inline-command-palette-store.injectable";

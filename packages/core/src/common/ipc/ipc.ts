@@ -8,15 +8,15 @@
 // https://www.electronjs.org/docs/api/ipc-main
 // https://www.electronjs.org/docs/api/ipc-renderer
 
-import { getLegacyGlobalDiForExtensionApi } from "@skuberplus/legacy-global-di";
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { getLegacyGlobalDiForExtensionApi } from "@k-lens/legacy-global-di";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { ipcMain, ipcRenderer, webContents } from "electron";
 import ipcRendererInjectable from "../../renderer/utils/channel/ipc-renderer.injectable";
 import clusterFramesInjectable from "../cluster-frames.injectable";
 import { toJS } from "../utils/toJS";
 import ipcMainInjectionToken from "./ipc-main-injection-token";
 
-import type { Disposer } from "@skuberplus/utilities";
+import type { Disposer } from "@k-lens/utilities";
 
 export const broadcastMainChannel = "ipc:broadcast-main";
 

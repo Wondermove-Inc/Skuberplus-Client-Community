@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { beforeElectronIsReadyInjectionToken } from "@k-lens/application-for-electron-main";
 import { getInjectable } from "@ogre-tools/injectable";
-import { beforeElectronIsReadyInjectionToken } from "@skuberplus/application-for-electron-main";
 import electronAppInjectable from "../../electron-app/electron-app.injectable";
 
 const setupHostnamesInjectable = getInjectable({
@@ -17,11 +17,7 @@ const setupHostnamesInjectable = getInjectable({
 
       app.commandLine.appendSwitch(
         "host-rules",
-        [
-          "MAP localhost 127.0.0.1",
-          "MAP renderer.skuberplus.app 127.0.0.1",
-          "MAP *.renderer.skuberplus.app 127.0.0.1",
-        ].join(),
+        ["MAP localhost 127.0.0.1", "MAP renderer.k-lens.app 127.0.0.1", "MAP *.renderer.k-lens.app 127.0.0.1"].join(),
       );
 
       // 🎯 Mixed Content 허용: HTTPS 페이지에서 HTTP 리소스 로딩 가능

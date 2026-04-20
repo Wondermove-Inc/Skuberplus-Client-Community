@@ -20,7 +20,7 @@
 import React from "react";
 import { NamespaceSelectBadge } from "../../namespaces/namespace-select-badge";
 
-import type { Job } from "@skuberplus/kube-object";
+import type { Job } from "@k-lens/kube-object";
 
 export const NamespaceCell = ({ job }: { job: Job }) => {
   return <NamespaceSelectBadge namespace={job.getNs()} />;

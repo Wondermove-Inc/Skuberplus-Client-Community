@@ -1,19 +1,19 @@
-# @skuberplus/animate
+# @k-lens/animate
 
 This package contains stuff related to creating Lens-applications. 
 
 ## Usage
 
 ```sh
-npm install @skuberplus/animate
+npm install @k-lens/animate
 ```
 
 ```typescript
-import { animateFeature } from "@skuberplus/animate";
-import { animateFeature, requestAnimationFrameInjectable } from "@skuberplus/animate";
-import { Animate } from "@skuberplus/animate";
-import type { AnimateName } from "@skuberplus/animate";
-import type { RequestAnimationFrame } from "@skuberplus/animate";
+import { animateFeature } from "@k-lens/animate";
+import { animateFeature, requestAnimationFrameInjectable } from "@k-lens/animate";
+import { Animate } from "@k-lens/animate";
+import type { AnimateName } from "@k-lens/animate";
+import type { RequestAnimationFrame } from "@k-lens/animate";
 ```
 
 ## Extendability

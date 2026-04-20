@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Icon } from "@k-lens/icon";
+import { Tooltip } from "@k-lens/tooltip";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { Tooltip } from "@skuberplus/tooltip";
 import { observable } from "mobx";
 import { observer } from "mobx-react";
 import React, { useState } from "react";

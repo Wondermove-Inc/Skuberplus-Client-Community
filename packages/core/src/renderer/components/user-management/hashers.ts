@@ -6,7 +6,7 @@
 
 import { MD5 } from "crypto-js";
 
-import type { Subject } from "@skuberplus/kube-object";
+import type { Subject } from "@k-lens/kube-object";
 
 export function hashSubject(subject: Subject): string {
   return MD5(

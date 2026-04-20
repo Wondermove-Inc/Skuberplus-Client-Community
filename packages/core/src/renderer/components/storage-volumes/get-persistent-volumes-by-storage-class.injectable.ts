@@ -7,7 +7,7 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import persistentVolumeStoreInjectable from "./store.injectable";
 
-import type { PersistentVolume, StorageClass } from "@skuberplus/kube-object";
+import type { PersistentVolume, StorageClass } from "@k-lens/kube-object";
 
 export type GetPersistentVolumesByStorageClass = (obj: StorageClass) => PersistentVolume[];
 

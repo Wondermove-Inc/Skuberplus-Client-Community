@@ -12,7 +12,7 @@ import { defaultYamlDumpOptions } from "../../../../../common/kube-helpers";
 import { getErrorMessage } from "../../../../../common/utils/get-error-message";
 import execFileWithInputInjectable from "./exec-file-with-input/exec-file-with-input.injectable";
 
-import type { KubeJsonApiData } from "@skuberplus/kube-object";
+import type { KubeJsonApiData } from "@k-lens/kube-object";
 
 import type { JsonObject } from "type-fest";
 

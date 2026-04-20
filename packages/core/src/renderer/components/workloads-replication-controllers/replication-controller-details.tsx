@@ -4,14 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { replicationControllerApiInjectable } from "@skuberplus/kube-api-specifics";
+import { replicationControllerApiInjectable } from "@k-lens/kube-api-specifics";
 // 🎯 shadcn UI 컴포넌트: DrawerItem/DrawerTitle/Badge 대체
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import {
-  DetailPanelField,
-  DetailPanelSection,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { DetailPanelField, DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { action, makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
@@ -20,8 +17,8 @@ import { Slider } from "../slider";
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 import styles from "./replication-controller-details.module.scss";
 
-import type { ReplicationControllerApi } from "@skuberplus/kube-api";
-import type { ReplicationController } from "@skuberplus/kube-object";
+import type { ReplicationControllerApi } from "@k-lens/kube-api";
+import type { ReplicationController } from "@k-lens/kube-object";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { KubeObjectDetailsProps } from "../kube-object-details";

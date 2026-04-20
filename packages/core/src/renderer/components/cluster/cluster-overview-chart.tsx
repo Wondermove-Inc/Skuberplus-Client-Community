@@ -4,21 +4,15 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import { Button } from "@skuberplus/storybook-shadcn/src/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@skuberplus/storybook-shadcn/src/components/ui/card";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { Button } from "@k-lens/storybook-shadcn/src/components/ui/button";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@k-lens/storybook-shadcn/src/components/ui/card";
 import {
   ChartConfig,
   ChartContainer,
   ChartLegendContent,
   ChartTooltipContent,
-} from "@skuberplus/storybook-shadcn/src/components/ui/chart";
+} from "@k-lens/storybook-shadcn/src/components/ui/chart";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -26,21 +20,15 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@skuberplus/storybook-shadcn/src/components/ui/dropdown-menu";
+} from "@k-lens/storybook-shadcn/src/components/ui/dropdown-menu";
 import {
   Empty,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@skuberplus/storybook-shadcn/src/components/ui/empty";
-import {
-  Item,
-  ItemContent,
-  ItemGroup,
-  ItemMedia,
-  ItemTitle,
-} from "@skuberplus/storybook-shadcn/src/components/ui/item";
+} from "@k-lens/storybook-shadcn/src/components/ui/empty";
+import { Item, ItemContent, ItemGroup, ItemMedia, ItemTitle } from "@k-lens/storybook-shadcn/src/components/ui/item";
 import {
   Table,
   TableBody,
@@ -48,8 +36,8 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@skuberplus/storybook-shadcn/src/components/ui/table";
-import { ToggleGroup, ToggleGroupItem } from "@skuberplus/storybook-shadcn/src/components/ui/toggle-group";
+} from "@k-lens/storybook-shadcn/src/components/ui/table";
+import { ToggleGroup, ToggleGroupItem } from "@k-lens/storybook-shadcn/src/components/ui/toggle-group";
 import { BadgeCheck, ChevronDown, TriangleAlert } from "lucide-react";
 import React from "react";
 import {

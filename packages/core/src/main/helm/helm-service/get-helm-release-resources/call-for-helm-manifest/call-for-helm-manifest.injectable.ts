@@ -4,13 +4,13 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { isObject } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { isObject } from "@skuberplus/utilities";
 import yaml from "js-yaml";
 import execHelmInjectable from "../../../exec-helm/exec-helm.injectable";
 
-import type { KubeJsonApiData, KubeJsonApiDataList } from "@skuberplus/kube-object";
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { KubeJsonApiData, KubeJsonApiDataList } from "@k-lens/kube-object";
+import type { AsyncResult } from "@k-lens/utilities";
 
 const requestHelmManifestInjectable = getInjectable({
   id: "request-helm-manifest",

@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Icon } from "@k-lens/icon";
+import { PodStatusPhase } from "@k-lens/kube-object";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { PodStatusPhase } from "@skuberplus/kube-object";
-import { cssNames } from "@skuberplus/utilities";
 import identity from "lodash/identity";
 import { observable, reaction, runInAction } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
@@ -24,7 +24,7 @@ import kubeObjectDeleteServiceInjectable from "./kube-object-delete-service.inje
 import kubeObjectMenuItemsInjectable from "./kube-object-menu-items.injectable";
 import onKubeObjectContextMenuOpenInjectable from "./on-context-menu-open.injectable";
 
-import type { KubeObject, Pod } from "@skuberplus/kube-object";
+import type { KubeObject, Pod } from "@k-lens/kube-object";
 
 import type { IComputedValue } from "mobx";
 

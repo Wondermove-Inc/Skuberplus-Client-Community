@@ -1,6 +1,6 @@
+import { getFeature } from "@k-lens/feature-core";
+import { reactApplicationFeature } from "@k-lens/react-application";
 import { autoRegister } from "@ogre-tools/injectable-extension-for-auto-registration";
-import { getFeature } from "@skuberplus/feature-core";
-import { reactApplicationFeature } from "@skuberplus/react-application";
 
 export const keyboardShortcutsFeature = getFeature({
   id: "keyboard-shortcuts",

@@ -9,9 +9,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { ErrorBoundary } from "@k-lens/error-boundary";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { ErrorBoundary } from "@skuberplus/error-boundary";
-import { cssNames } from "@skuberplus/utilities";
 import { ipcRenderer } from "electron";
 import { debounce } from "lodash";
 import { observer } from "mobx-react";
@@ -21,7 +21,7 @@ import { ResizeHandle } from "../resize/resize-handle";
 import { SidebarProvider } from "../shadcn-ui/sidebar";
 import sidebarStorageInjectable, { defaultSidebarWidth } from "./sidebar-storage/sidebar-storage.injectable";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { StorageLayer } from "../../utils/storage-helper";
 import type { SidebarStorageState } from "./sidebar-storage/sidebar-storage.injectable";

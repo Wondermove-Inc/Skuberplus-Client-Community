@@ -20,9 +20,9 @@
 
 import "./kube-object-details.scss";
 
+import { Spinner } from "@k-lens/spinner";
+import { DetailPanel } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Spinner } from "@skuberplus/spinner";
-import { DetailPanel } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel";
 import { observer } from "mobx-react";
 import React from "react";
 import hideDetailsInjectable from "../kube-detail-params/hide-details.injectable";
@@ -30,7 +30,7 @@ import currentKubeObjectInDetailsInjectable from "./current-kube-object-in-detai
 import kubeObjectActionHandlerResolverInjectable from "./kube-object-action-handlers/kube-object-action-handler-resolver.injectable";
 import kubeObjectDetailItemsInjectable from "./kube-object-detail-items/kube-object-detail-items.injectable";
 
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeObject } from "@k-lens/kube-object";
 
 import type { IAsyncComputed } from "@ogre-tools/injectable-react";
 import type { IComputedValue } from "mobx";

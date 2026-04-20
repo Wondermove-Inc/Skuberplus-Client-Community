@@ -28,7 +28,7 @@ import { MarkdownViewer } from "../markdown-viewer/markdown-viewer";
 import { Button } from "../shadcn-ui/button";
 import { Textarea } from "../shadcn-ui/textarea";
 
-import type { RequestFromChannel } from "@skuberplus/messaging";
+import type { RequestFromChannel } from "@k-lens/messaging";
 
 // ============================================
 // 🎯 ProfileViewer 컴포넌트

@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Spinner } from "@k-lens/spinner";
+import { iter, tuple } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Spinner } from "@skuberplus/spinner";
-import { iter, tuple } from "@skuberplus/utilities";
 import { computed, makeObservable, observable, reaction } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";
@@ -20,7 +20,7 @@ import { RemovableItem } from "../../../removable-item/removable-item";
 import discoverAllKubeconfigSyncKindsInjectable from "./discover-all-sync-kinds.injectable";
 import discoverKubeconfigSyncKindInjectable from "./discover-sync-kind.injectable";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { UserPreferencesState } from "../../../../../user-preferences/common/state.injectable";
 import type { DiscoverAllKubeconfigSyncKinds } from "./discover-all-sync-kinds.injectable";

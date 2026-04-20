@@ -7,8 +7,8 @@
 import "@xterm/xterm/css/xterm.css"; // 🎯 xterm 기본 CSS import
 import "./terminal-window.scss";
 
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { cssNames } from "@skuberplus/utilities";
 import assert from "assert";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";

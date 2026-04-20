@@ -8,9 +8,9 @@ import * as yaml from "js-yaml";
 import tempy from "tempy";
 import { defaultYamlDumpOptions } from "../../common/kube-helpers";
 
-import type { KubernetesObject } from "@skuberplus/kubernetes-client-node";
-import type { Logger } from "@skuberplus/logger";
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { KubernetesObject } from "@k-lens/kubernetes-client-node";
+import type { Logger } from "@k-lens/logger";
+import type { AsyncResult } from "@k-lens/utilities";
 
 import type { Patch } from "rfc6902";
 

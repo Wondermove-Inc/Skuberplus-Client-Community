@@ -6,7 +6,7 @@
 
 import { getInjectionToken } from "@ogre-tools/injectable";
 
-import type { Runnable } from "@skuberplus/run-many";
+import type { Runnable } from "@k-lens/run-many";
 
 // NOTE: these are run before any other token, mostly to set up things that all other runnables need
 export const beforeFrameStartsFirstInjectionToken = getInjectionToken<Runnable>({

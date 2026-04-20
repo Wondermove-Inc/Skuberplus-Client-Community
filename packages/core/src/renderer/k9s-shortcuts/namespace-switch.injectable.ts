@@ -1,6 +1,6 @@
+import { keyboardShortcutInjectionToken } from "@k-lens/keyboard-shortcuts";
+import { storesAndApisCanBeCreatedInjectionToken } from "@k-lens/kube-api-specifics";
 import { getInjectable } from "@ogre-tools/injectable";
-import { keyboardShortcutInjectionToken } from "@skuberplus/keyboard-shortcuts";
-import { storesAndApisCanBeCreatedInjectionToken } from "@skuberplus/kube-api-specifics";
 import namespaceStoreInjectable from "../components/namespaces/store.injectable";
 import namespaceFavoritesStoreInjectable from "./namespace-favorites-store.injectable";
 

@@ -14,10 +14,9 @@
  * - 2025-11-17: shadcn 기반 Dialog, Field, Input, Checkbox로 마이그레이션
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Button } from "@skuberplus/storybook-shadcn/src/components/ui/button";
-import { Checkbox } from "@skuberplus/storybook-shadcn/src/components/ui/checkbox";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Button } from "@k-lens/storybook-shadcn/src/components/ui/button";
+import { Checkbox } from "@k-lens/storybook-shadcn/src/components/ui/checkbox";
 import {
   Dialog,
   DialogContent,
@@ -25,15 +24,16 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@skuberplus/storybook-shadcn/src/components/ui/dialog";
-import { Input } from "@skuberplus/storybook-shadcn/src/components/ui/input";
-import { Label } from "@skuberplus/storybook-shadcn/src/components/ui/label";
+} from "@k-lens/storybook-shadcn/src/components/ui/dialog";
+import { Input } from "@k-lens/storybook-shadcn/src/components/ui/input";
+import { Label } from "@k-lens/storybook-shadcn/src/components/ui/label";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@skuberplus/storybook-shadcn/src/components/ui/tooltip";
+} from "@k-lens/storybook-shadcn/src/components/ui/tooltip";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { InfoIcon } from "lucide-react";
 import { makeObservable, observable, reaction } from "mobx";
 import { observer } from "mobx-react";
@@ -44,7 +44,7 @@ import openPortForwardInjectable from "./open-port-forward.injectable";
 import portForwardDialogModelInjectable from "./port-forward-dialog-model/port-forward-dialog-model.injectable";
 import portForwardStoreInjectable from "./port-forward-store/port-forward-store.injectable";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { IReactionDisposer } from "mobx";
 

@@ -32,10 +32,10 @@
 
 import "./view.scss";
 
+import { Icon } from "@k-lens/icon";
+import { resourceQuotaApiInjectable } from "@k-lens/kube-api-specifics";
+import { Input } from "@k-lens/storybook-shadcn";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { resourceQuotaApiInjectable } from "@skuberplus/kube-api-specifics";
-import { Input } from "@skuberplus/storybook-shadcn";
 import { X } from "lucide-react";
 import { computed, makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
@@ -52,8 +52,8 @@ import { notificationPanelStore } from "../../status-bar/items/notification-pane
 import closeAddQuotaDialogInjectable from "./close.injectable";
 import isAddQuotaDialogOpenInjectable from "./is-open.injectable";
 
-import type { ResourceQuotaApi } from "@skuberplus/kube-api";
-import type { ResourceQuotaValues } from "@skuberplus/kube-object";
+import type { ResourceQuotaApi } from "@k-lens/kube-api";
+import type { ResourceQuotaValues } from "@k-lens/kube-object";
 
 import type { IComputedValue } from "mobx";
 

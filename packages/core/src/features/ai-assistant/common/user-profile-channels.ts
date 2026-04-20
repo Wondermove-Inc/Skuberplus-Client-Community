@@ -17,7 +17,7 @@
  * - 2026-03-19: 초기 생성
  */
 
-import { getRequestChannel } from "@skuberplus/messaging";
+import { getRequestChannel } from "@k-lens/messaging";
 
 import type { FeedbackEntry, UserProfile } from "./user-profile-types";
 

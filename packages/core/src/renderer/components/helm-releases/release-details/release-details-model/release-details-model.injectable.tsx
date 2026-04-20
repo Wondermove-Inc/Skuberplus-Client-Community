@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { waitUntilDefined } from "@k-lens/utilities";
 import { pipeline } from "@ogre-tools/fp";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
-import { waitUntilDefined } from "@skuberplus/utilities";
 import assert from "assert";
 import { groupBy, map } from "lodash/fp";
 import { action, computed, observable, runInAction } from "mobx";
@@ -21,7 +21,7 @@ import updateReleaseInjectable from "../../update-release/update-release.injecta
 import getResourceDetailsUrlInjectable from "./get-resource-details-url.injectable";
 import requestDetailedHelmReleaseInjectable from "./request-detailed-helm-release.injectable";
 
-import type { KubeJsonApiData } from "@skuberplus/kube-object";
+import type { KubeJsonApiData } from "@k-lens/kube-object";
 
 import type { IAsyncComputed } from "@ogre-tools/injectable-react";
 import type { IObservableValue } from "mobx";

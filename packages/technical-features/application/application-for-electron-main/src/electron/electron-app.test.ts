@@ -1,5 +1,5 @@
+import { registerFeature } from "@k-lens/feature-core";
 import { createContainer } from "@ogre-tools/injectable";
-import { registerFeature } from "@skuberplus/feature-core";
 import { app } from "electron";
 import { applicationFeatureForElectronMain } from "../feature";
 import electronAppInjectable from "./electron-app.injectable";

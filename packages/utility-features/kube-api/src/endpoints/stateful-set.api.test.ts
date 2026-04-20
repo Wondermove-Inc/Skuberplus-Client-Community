@@ -5,8 +5,8 @@
  */
 
 import asyncFn from "@async-fn/jest";
-import { KubeJsonApi, StatefulSetApi } from "@skuberplus/kube-api";
-import { flushPromises } from "@skuberplus/test-utils";
+import { KubeJsonApi, StatefulSetApi } from "@k-lens/kube-api";
+import { flushPromises } from "@k-lens/test-utils";
 
 import type { AsyncFnMock } from "@async-fn/jest";
 

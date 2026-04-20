@@ -9,8 +9,8 @@
  * @module main/kubectl/apply-file-handler
  */
 
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { getRequestChannelListenerInjectable } from "@skuberplus/messaging";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { getRequestChannelListenerInjectable } from "@k-lens/messaging";
 import { spawn } from "child_process";
 import * as path from "path";
 import {

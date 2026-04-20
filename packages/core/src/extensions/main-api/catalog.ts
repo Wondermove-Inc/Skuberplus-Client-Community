@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { asLegacyGlobalForExtensionApi } from "@skuberplus/legacy-global-di";
+import { asLegacyGlobalForExtensionApi } from "@k-lens/legacy-global-di";
 import catalogCategoryRegistryInjectable from "../../common/catalog/category-registry.injectable";
 import catalogEntityRegistryInjectable from "../../main/catalog/entity-registry.injectable";
 

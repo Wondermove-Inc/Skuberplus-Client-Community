@@ -10,7 +10,7 @@
  * Used by the Agents settings tab in Preferences Dialog.
  */
 
-import { getRequestChannel } from "@skuberplus/messaging";
+import { getRequestChannel } from "@k-lens/messaging";
 
 import type { AgentDefinition } from "../main/agent/agent-registry";
 

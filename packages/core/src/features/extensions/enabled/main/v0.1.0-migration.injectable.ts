@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { isObject } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { isObject } from "@skuberplus/utilities";
 import { enabledExtensionsMigrationDeclarationInjectionToken } from "./migrations";
 
 const enabledExtensionsMigrationV650Injectable = getInjectable({

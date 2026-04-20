@@ -16,8 +16,8 @@
  * - 2025-11-12: 레거시 Badge → shadcn Tooltip 마이그레이션
  */
 
-import { Tooltip, TooltipContent, TooltipTrigger } from "@skuberplus/storybook-shadcn/src/components/ui/tooltip";
-import { StrictReactNode } from "@skuberplus/utilities/dist";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@k-lens/storybook-shadcn/src/components/ui/tooltip";
+import { StrictReactNode } from "@k-lens/utilities/dist";
 import React from "react";
 import { LocaleDate } from "../locale-date";
 

@@ -7,7 +7,7 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import jobStoreInjectable from "./store.injectable";
 
-import type { CronJob, Job } from "@skuberplus/kube-object";
+import type { CronJob, Job } from "@k-lens/kube-object";
 
 export type GetJobsByOwner = (cronJob: CronJob) => Job[];
 

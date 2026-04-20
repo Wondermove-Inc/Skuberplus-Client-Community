@@ -1,17 +1,17 @@
-# @skuberplus/feature-core
+# @k-lens/feature-core
 
 Feature is set of injectables that are registered and deregistered simultaneously.
 
 ## Install
 ```sh
-npm install @skuberplus/feature-core
+npm install @k-lens/feature-core
 ```
 
 ## Usage
 
 ```typescript
 import { createContainer } from "@ogre-tools/injectable"
-import { getFeature, registerFeature, deregisterFeature } from "@skuberplus/feature-core"
+import { getFeature, registerFeature, deregisterFeature } from "@k-lens/feature-core"
 
 // Notice that this Feature is usually exported from another NPM package.
 const someFeature = getFeature({

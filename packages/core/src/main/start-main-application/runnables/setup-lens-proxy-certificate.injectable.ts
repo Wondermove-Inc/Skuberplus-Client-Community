@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { beforeElectronIsReadyInjectionToken } from "@k-lens/application-for-electron-main";
 import { getInjectable } from "@ogre-tools/injectable";
-import { beforeElectronIsReadyInjectionToken } from "@skuberplus/application-for-electron-main";
 import { generate } from "selfsigned";
 import lensProxyCertificateInjectable from "../../../common/certificate/lens-proxy-certificate.injectable";
 
@@ -18,8 +18,8 @@ const setupLensProxyCertificateInjectable = getInjectable({
 
       const cert = generate(
         [
-          { name: "commonName", value: "SkuberPlus Certificate Authority" },
-          { name: "organizationName", value: "SkuberPlus" },
+          { name: "commonName", value: "KLens Certificate Authority" },
+          { name: "organizationName", value: "KLens" },
         ],
         {
           keySize: 2048,
@@ -33,8 +33,8 @@ const setupLensProxyCertificateInjectable = getInjectable({
             {
               name: "subjectAltName",
               altNames: [
-                { type: 2, value: "*.renderer.skuberplus.app" },
-                { type: 2, value: "renderer.skuberplus.app" },
+                { type: 2, value: "*.renderer.k-lens.app" },
+                { type: 2, value: "renderer.k-lens.app" },
                 { type: 2, value: "localhost" },
                 { type: 7, ip: "127.0.0.1" },
               ],

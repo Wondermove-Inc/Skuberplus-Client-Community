@@ -33,7 +33,7 @@ import {
   statefulSetApiInjectable,
   storageClassApiInjectable,
   verticalPodAutoscalerApiInjectable,
-} from "@skuberplus/kube-api-specifics";
+} from "@k-lens/kube-api-specifics";
 import horizontalPodAutoscalerStoreInjectable from "../../renderer/components/config-horizontal-pod-autoscalers/store.injectable";
 import limitRangeStoreInjectable from "../../renderer/components/config-limit-ranges/store.injectable";
 import configMapStoreInjectable from "../../renderer/components/config-maps/store.injectable";

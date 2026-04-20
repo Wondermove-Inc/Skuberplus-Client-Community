@@ -6,15 +6,15 @@
 
 import "./wizard.scss";
 
-import { Button } from "@skuberplus/button";
-import { Spinner } from "@skuberplus/spinner";
-import { cssNames, prevDefault } from "@skuberplus/utilities";
+import { Button } from "@k-lens/button";
+import { Spinner } from "@k-lens/spinner";
+import { cssNames, prevDefault } from "@k-lens/utilities";
 import { debounce } from "lodash";
 import React, { Component } from "react";
 import { SubTitle } from "../layout/sub-title";
 import { Stepper } from "../stepper";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 export interface WizardCommonProps<D> {
   data?: Partial<D>;

@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import type { SingleOrMany } from "@skuberplus/utilities";
+import type { SingleOrMany } from "@k-lens/utilities";
 
 import type { Injectable } from "@ogre-tools/injectable";
 

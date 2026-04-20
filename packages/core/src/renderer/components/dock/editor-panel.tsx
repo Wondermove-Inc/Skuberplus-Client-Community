@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { cssNames, disposer } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { cssNames, disposer } from "@skuberplus/utilities";
 import throttle from "lodash/throttle";
 import { reaction } from "mobx";
 import { observer } from "mobx-react";

@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { onLoadOfApplicationInjectionToken } from "@k-lens/application";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { onLoadOfApplicationInjectionToken } from "@skuberplus/application";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import extensionDiscoveryInjectable from "../../../extensions/extension-discovery/extension-discovery.injectable";
 import extensionLoaderInjectable from "../../../extensions/extension-loader/extension-loader.injectable";
 import setupShellInjectable from "../../../features/shell-sync/main/setup-shell.injectable";
@@ -45,7 +45,7 @@ const initializeExtensionsInjectable = getInjectable({
 
         extensionLoader.initExtensions(extensions);
       } catch (error: any) {
-        showErrorPopup("SkuberPlus Error", `Could not load extensions${error?.message ? `: ${error.message}` : ""}`);
+        showErrorPopup("K-Lens Error", `Could not load extensions${error?.message ? `: ${error.message}` : ""}`);
 
         console.error(error);
         console.trace();

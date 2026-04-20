@@ -13,8 +13,8 @@
  * @packageDocumentation
  */
 
+import { rootFrameChildComponentInjectionToken } from "@k-lens/react-application";
 import { getInjectable } from "@ogre-tools/injectable";
-import { rootFrameChildComponentInjectionToken } from "@skuberplus/react-application";
 import { computed } from "mobx";
 import { AIChatPanelForClusterFrame } from "./ai-chat-panel";
 import aiChatPanelStoreInjectable from "./ai-chat-panel-store.injectable";

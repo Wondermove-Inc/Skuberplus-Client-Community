@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { hasOptionalTypedProperty, hasTypedProperty, isNumber, isObject, isString } from "@skuberplus/utilities";
+import { hasOptionalTypedProperty, hasTypedProperty, isNumber, isObject, isString } from "@k-lens/utilities";
 
 import type { KubeStatusData } from "./api-types";
 

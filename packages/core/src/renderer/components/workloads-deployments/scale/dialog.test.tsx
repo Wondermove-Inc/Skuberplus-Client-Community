@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { deploymentApiInjectable } from "@skuberplus/kube-api-specifics";
-import { Deployment } from "@skuberplus/kube-object";
+import { deploymentApiInjectable } from "@k-lens/kube-api-specifics";
+import { Deployment } from "@k-lens/kube-object";
 import { fireEvent, waitFor } from "@testing-library/react";
 import React from "react";
 import { getDiForUnitTesting } from "../../../getDiForUnitTesting";
@@ -14,7 +14,7 @@ import { renderFor } from "../../test-utils/renderFor";
 import { DeploymentScaleDialog } from "./dialog";
 import openDeploymentScaleDialogInjectable from "./open.injectable";
 
-import type { DeploymentApi } from "@skuberplus/kube-api";
+import type { DeploymentApi } from "@k-lens/kube-api";
 
 import type { DiRender } from "../../test-utils/renderFor";
 import type { OpenDeploymentScaleDialog } from "./open.injectable";

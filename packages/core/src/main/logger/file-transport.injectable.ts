@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerTransportInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerTransportInjectionToken } from "@skuberplus/logger";
 import { transports } from "winston";
 import appPathsStateInjectable from "../../common/app-paths/app-paths-state.injectable";
 

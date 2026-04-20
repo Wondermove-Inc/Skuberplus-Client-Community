@@ -6,9 +6,9 @@
 
 import "./namespace-select.scss";
 
+import { Icon } from "@k-lens/icon";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
-import { cssNames } from "@skuberplus/utilities";
 import { computed } from "mobx";
 import { observer } from "mobx-react";
 import React, { useEffect, useState } from "react";

@@ -6,7 +6,7 @@
 
 import { getInjectable } from "@ogre-tools/injectable";
 
-import type { Disposer } from "@skuberplus/utilities";
+import type { Disposer } from "@k-lens/utilities";
 
 export type AddWindowEventListener = typeof addWindowEventListener;
 export type WindowEventListener<K extends keyof WindowEventMap> = (this: Window, ev: WindowEventMap[K]) => any;

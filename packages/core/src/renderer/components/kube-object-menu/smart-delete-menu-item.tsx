@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Icon } from "@skuberplus/icon";
-import { KubeObject } from "@skuberplus/kube-object";
+import { Icon } from "@k-lens/icon";
+import { KubeObject } from "@k-lens/kube-object";
 import React from "react";
 import { MenuItem } from "../menu";
 

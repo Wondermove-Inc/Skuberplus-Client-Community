@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getRequestChannelListenerInjectable } from "@skuberplus/messaging";
+import { getRequestChannelListenerInjectable } from "@k-lens/messaging";
 import { downloadBinaryChannel } from "../../common/fetch/download-binary-channel";
 import downloadBinaryInjectable from "./download-binary.injectable";
 

@@ -4,14 +4,14 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { KubeJsonApi } from "@k-lens/kube-api";
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { KubeJsonApi } from "@skuberplus/kube-api";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { Agent } from "https";
 import lensProxyCertificateInjectable from "../certificate/lens-proxy-certificate.injectable";
 import nodeFetchInjectable, { type NodeFetchRequestInit } from "../fetch/node-fetch.injectable";
 
-import type { JsonApiConfig, JsonApiDependencies } from "@skuberplus/json-api";
+import type { JsonApiConfig, JsonApiDependencies } from "@k-lens/json-api";
 
 export type CreateKubeJsonApi = (config: JsonApiConfig, reqInit?: NodeFetchRequestInit) => KubeJsonApi;
 

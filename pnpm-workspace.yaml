@@ -1,5 +1,5 @@
 packages:
-  - skuberplus
+  - k-lens
   - packages/**
   # 🚫 Git Submodule 빌드 제외 (현재 프로젝트의 Storybook 설정 사용)
   - '!packages/storybook-shadcn/vendor/**'

@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import type { IconProps } from "@skuberplus/icon";
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { IconProps } from "@k-lens/icon";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { IComputedValue } from "mobx";
 import type React from "react";

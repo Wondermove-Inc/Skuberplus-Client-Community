@@ -4,13 +4,13 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { nodeMetricsApiInjectable } from "@k-lens/kube-api-specifics";
 import { getInjectable } from "@ogre-tools/injectable";
-import { nodeMetricsApiInjectable } from "@skuberplus/kube-api-specifics";
 import { action, computed, observable } from "mobx";
 import nodeStoreInjectable from "../../nodes/store.injectable";
 import clusterOverviewStorageInjectable from "./storage.injectable";
 
-import type { Node } from "@skuberplus/kube-object";
+import type { Node } from "@k-lens/kube-object";
 
 import type { MetricNodeRole } from "./storage.injectable";
 

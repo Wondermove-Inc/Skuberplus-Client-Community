@@ -3,11 +3,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { NodeMetrics, PodMetrics } from "@skuberplus/kube-object";
-import { isRequestError } from "@skuberplus/utilities";
+import { NodeMetrics, PodMetrics } from "@k-lens/kube-object";
+import { isRequestError } from "@k-lens/utilities";
 
-import type { NodeMetricsData, PodMetricsData } from "@skuberplus/kube-object";
-import type { CoreV1Api } from "@skuberplus/kubernetes-client-node";
+import type { NodeMetricsData, PodMetricsData } from "@k-lens/kube-object";
+import type { CoreV1Api } from "@k-lens/kubernetes-client-node";
 
 /**
  * API wrapper for Kubernetes Metrics Server

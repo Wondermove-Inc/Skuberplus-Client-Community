@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import addClusterInjectable from "../../features/cluster/storage/common/add.injectable";
 import clustersInjectable from "../../features/cluster/storage/common/clusters.injectable";
 import getClusterByIdInjectable from "../../features/cluster/storage/common/get-by-id.injectable";

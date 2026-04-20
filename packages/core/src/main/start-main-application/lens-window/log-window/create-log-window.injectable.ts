@@ -63,7 +63,7 @@ const createLogWindowInjectable = getInjectable({
               // 클러스터 서브도메인을 사용하지 않음: clusterFrames Map 충돌 방지
               // (같은 clusterId로 두 번째 프레임 등록 시 부모 창의 프레임 등록을 덮어씀)
               // API 호출은 standalone-log-view-model에서 클러스터 서브도메인으로 직접 fetch
-              url: `https://renderer.skuberplus.app:${proxyPort}/log-window?windowId=${payload.windowId}`,
+              url: `https://renderer.k-lens.app:${proxyPort}/log-window?windowId=${payload.windowId}`,
             }),
             resizable: true,
             windowFrameUtilitiesAreShown: true,

@@ -10,7 +10,7 @@ import { getDiForUnitTesting } from "../../../../../getDiForUnitTesting";
 import execFileWithInputInjectable from "./exec-file-with-input.injectable";
 import nonPromiseExecFileInjectable from "./non-promise-exec-file.injectable";
 
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { AsyncResult } from "@k-lens/utilities";
 
 import type { ExecFileWithInput } from "./exec-file-with-input.injectable";
 

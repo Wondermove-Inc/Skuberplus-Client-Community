@@ -1,19 +1,19 @@
-# @skuberplus/logger
+# @k-lens/logger
 
 This package contains stuff related to creating Lens-applications. 
 
 ## Usage
 
 ```sh
-npm install @skuberplus/logger
+npm install @k-lens/logger
 ```
 
 ```typescript
-import { loggerFeature } from "@skuberplus/logger";
-import type { Logger } from "@skuberplus/logger";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { winstonLoggerInjectable } from "@skuberplus/logger";
-import { prefixedLoggerInjectable } from "@skuberplus/logger";
+import { loggerFeature } from "@k-lens/logger";
+import type { Logger } from "@k-lens/logger";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { winstonLoggerInjectable } from "@k-lens/logger";
+import { prefixedLoggerInjectable } from "@k-lens/logger";
 ```
 
 ## Extendability

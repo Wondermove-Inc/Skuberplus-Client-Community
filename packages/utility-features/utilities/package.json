@@ -1,5 +1,5 @@
 {
-  "name": "@skuberplus/utilities",
+  "name": "@k-lens/utilities",
   "description": "A collection of useful types",
   "version": "1.5.4-0",
   "type": "commonjs",
@@ -14,11 +14,11 @@
     "dist"
   ],
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "license": "MIT",
-  "homepage": "https://skuberplus.app",
+  "homepage": "https://k-lens.app",
   "scripts": {
     "clean": "pnpm dlx rimraf@6.0.1 dist",
     "clean:node_modules": "pnpm dlx rimraf@6.0.1 node_modules",
@@ -41,9 +41,9 @@
     "typed-regex": "^0.0.8"
   },
   "devDependencies": {
-    "@skuberplus/jest": "workspace:^",
-    "@skuberplus/typescript": "workspace:^",
-    "@skuberplus/webpack": "workspace:^",
+    "@k-lens/jest": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
+    "@k-lens/webpack": "workspace:^",
     "@types/crypto-js": "^4.2.2",
     "@types/lodash": "^4.17.20",
     "@types/react": "^17.0.88",

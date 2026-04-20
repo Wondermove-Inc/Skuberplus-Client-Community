@@ -14,7 +14,7 @@
               },
               ":NODE:",
               ":BLANK_LINE:",
-              "@skuberplus/**",
+              "@k-lens/**",
               ":BLANK_LINE:",
               ":PACKAGE:",
               ":BLANK_LINE:",

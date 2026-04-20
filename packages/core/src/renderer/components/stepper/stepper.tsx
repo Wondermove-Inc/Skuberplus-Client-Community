@@ -6,7 +6,7 @@
 
 import "./stepper.scss";
 
-import { cssNames } from "@skuberplus/utilities";
+import { cssNames } from "@k-lens/utilities";
 import React, { Component } from "react";
 
 export interface StepperProps extends React.HTMLProps<any> {

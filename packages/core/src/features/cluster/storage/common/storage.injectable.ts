@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
+import { iter } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { iter } from "@skuberplus/utilities";
 import { action, comparer } from "mobx";
 import { Cluster } from "../../../../common/cluster/cluster";
 import storeMigrationVersionInjectable from "../../../../common/vars/store-migration-version.injectable";

@@ -18,7 +18,7 @@
 import { AIMessage, BaseMessage, HumanMessage, SystemMessage, ToolMessage } from "@langchain/core/messages";
 import { estimateTotalTokens, PROVIDER_TOKEN_LIMITS } from "./message-trimmer";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { BaseChatModel } from "@langchain/core/language_models/chat_models";
 

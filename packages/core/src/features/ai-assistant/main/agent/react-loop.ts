@@ -34,7 +34,7 @@ import { PROVIDER_TOKEN_LIMITS, trimMessages } from "./utils/message-trimmer";
 import { createCachedSystemMessage } from "./utils/prefix-cache-helper";
 import { processToolResult } from "./utils/tool-result-processor";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { BaseChatModel } from "@langchain/core/language_models/chat_models";
 import type { StructuredToolInterface } from "@langchain/core/tools";

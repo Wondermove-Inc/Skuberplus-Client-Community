@@ -21,13 +21,13 @@
  * - 2025-10-30: shadcn UI 마이그레이션 (CommonTable 패턴)
  */
 
-import { Checkbox } from "@skuberplus/storybook-shadcn";
-import { Button } from "@skuberplus/storybook-shadcn/src/components/ui/button";
+import { Checkbox } from "@k-lens/storybook-shadcn";
+import { Button } from "@k-lens/storybook-shadcn/src/components/ui/button";
 import { ArrowUpDown } from "lucide-react";
 import React from "react";
 import { NamespaceSelectBadge } from "../namespaces/namespace-select-badge";
 
-import type { ResourceQuota } from "@skuberplus/kube-object";
+import type { ResourceQuota } from "@k-lens/kube-object";
 
 import type { ColumnDef } from "@tanstack/react-table";
 

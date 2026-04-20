@@ -6,7 +6,7 @@
 
 import cronstrue from "cronstrue";
 
-import type { CronJob } from "@skuberplus/kube-object";
+import type { CronJob } from "@k-lens/kube-object";
 
 export function humanizeSchedule(schedule: string): string {
   try {

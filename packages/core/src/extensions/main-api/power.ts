@@ -6,7 +6,7 @@
 
 import { powerMonitor } from "electron";
 
-import type { Disposer } from "@skuberplus/utilities";
+import type { Disposer } from "@k-lens/utilities";
 
 /**
  * Event listener for system power events

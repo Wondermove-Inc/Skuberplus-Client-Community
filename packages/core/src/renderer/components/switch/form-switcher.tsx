@@ -6,7 +6,7 @@
 
 import React from "react";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 interface FormControlLabelProps {
   control: React.ReactElement<any, any>;

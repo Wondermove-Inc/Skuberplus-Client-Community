@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { bytesToUnits, isDefined } from "@skuberplus/utilities";
+import { bytesToUnits, isDefined } from "@k-lens/utilities";
 
 import type { ChartOptions, ChartPoint } from "chart.js";
 

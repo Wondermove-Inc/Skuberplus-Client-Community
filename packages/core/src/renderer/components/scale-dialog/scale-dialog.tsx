@@ -7,16 +7,16 @@
  * - MobX observable 상태 관리와 통합
  *
  * 📝 주의사항:
- * - @skuberplus/storybook-shadcn 패키지 의존성 필요
+ * - @k-lens/storybook-shadcn 패키지 의존성 필요
  * - 부모 컴포넌트에서 API 호출 로직 구현 필요
  *
  * 🔄 변경이력:
  * - 2025-11-17: 초기 생성 (기존 Material-UI 기반 Scale Dialog를 shadcn으로 마이그레이션)
  */
 
-import { Alert, AlertDescription } from "@skuberplus/storybook-shadcn/src/components/ui/alert";
-import { Button } from "@skuberplus/storybook-shadcn/src/components/ui/button";
-import { ButtonGroup } from "@skuberplus/storybook-shadcn/src/components/ui/button-group";
+import { Alert, AlertDescription } from "@k-lens/storybook-shadcn/src/components/ui/alert";
+import { Button } from "@k-lens/storybook-shadcn/src/components/ui/button";
+import { ButtonGroup } from "@k-lens/storybook-shadcn/src/components/ui/button-group";
 import {
   Dialog,
   DialogContent,
@@ -24,8 +24,8 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@skuberplus/storybook-shadcn/src/components/ui/dialog";
-import { Slider } from "@skuberplus/storybook-shadcn/src/components/ui/slider";
+} from "@k-lens/storybook-shadcn/src/components/ui/dialog";
+import { Slider } from "@k-lens/storybook-shadcn/src/components/ui/slider";
 import { AlertTriangleIcon, MinusIcon, PlusIcon } from "lucide-react";
 import { observer } from "mobx-react";
 import React from "react";

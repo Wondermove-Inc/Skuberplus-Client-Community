@@ -4,6 +4,6 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getRequestChannel } from "@skuberplus/messaging";
+import { getRequestChannel } from "@k-lens/messaging";
 
 export const resolveSystemProxyChannel = getRequestChannel<string, string>("resolve-system-proxy-channel");

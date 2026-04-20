@@ -6,13 +6,13 @@
 
 import "./secret.scss";
 
-import { Icon } from "@skuberplus/icon";
-import { prevDefault } from "@skuberplus/utilities";
+import { Icon } from "@k-lens/icon";
+import { prevDefault } from "@k-lens/utilities";
 import moment from "moment";
 import React, { Component } from "react";
 
-import type { Secret } from "@skuberplus/kube-object";
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { Secret } from "@k-lens/kube-object";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 export interface ServiceAccountsSecretProps {
   secret: Secret | string;

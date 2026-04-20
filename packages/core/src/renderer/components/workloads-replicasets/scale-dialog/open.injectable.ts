@@ -7,7 +7,7 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import replicaSetScaleDialogStateInjectable from "./state.injectable";
 
-import type { ReplicaSet } from "@skuberplus/kube-object";
+import type { ReplicaSet } from "@k-lens/kube-object";
 
 export type OpenReplicaSetScaleDialog = (obj: ReplicaSet) => void;
 

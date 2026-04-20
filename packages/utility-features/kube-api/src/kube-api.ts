@@ -12,8 +12,8 @@ import {
   isKubeStatusData,
   isPartialJsonApiData,
   KubeStatus,
-} from "@skuberplus/kube-object";
-import { isDefined, noop, WrappedAbortController } from "@skuberplus/utilities";
+} from "@k-lens/kube-object";
+import { isDefined, noop, WrappedAbortController } from "@k-lens/utilities";
 import assert from "assert";
 import byline from "byline";
 import { merge } from "lodash";
@@ -31,10 +31,10 @@ import type {
   KubeObjectScope,
   Scale,
   ScaleCreateOptions,
-} from "@skuberplus/kube-object";
-import type { LogFunction } from "@skuberplus/logger";
-import type { RequestInit, Response } from "@skuberplus/node-fetch";
-import type { Disposer } from "@skuberplus/utilities";
+} from "@k-lens/kube-object";
+import type { LogFunction } from "@k-lens/logger";
+import type { RequestInit, Response } from "@k-lens/node-fetch";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { Patch } from "rfc6902";
 import type { PartialDeep } from "type-fest";

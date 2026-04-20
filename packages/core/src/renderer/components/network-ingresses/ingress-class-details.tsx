@@ -4,14 +4,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 // 🎯 shadcn UI 컴포넌트: DrawerItem/DrawerTitle 대체
-import {
-  DetailPanelField,
-  DetailPanelSection,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { stopPropagation } from "@skuberplus/utilities";
+import { DetailPanelField, DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { stopPropagation } from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { makeObservable } from "mobx";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
@@ -20,7 +17,7 @@ import apiManagerInjectable from "../../../common/k8s-api/api-manager/manager.in
 import getDetailsUrlInjectable, { type GetDetailsUrl } from "../kube-detail-params/get-details-url.injectable";
 import styles from "./ingress-class-details.module.scss";
 
-import type { IngressClass } from "@skuberplus/kube-object";
+import type { IngressClass } from "@k-lens/kube-object";
 
 import type { ApiManager } from "../../../common/k8s-api/api-manager";
 import type { KubeObjectDetailsProps } from "../kube-object-details";

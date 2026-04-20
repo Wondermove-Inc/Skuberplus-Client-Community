@@ -4,13 +4,13 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { MutatingWebhookConfiguration } from "@skuberplus/kube-object";
+import { MutatingWebhookConfiguration } from "@k-lens/kube-object";
 import React from "react";
 import { getDiForUnitTesting } from "../../getDiForUnitTesting";
 import { renderFor } from "../test-utils/renderFor";
 import { MutatingWebhookDetails } from "./mutating-webhook-configurations-details";
 
-import type { MutatingWebhookConfigurationData } from "@skuberplus/kube-object";
+import type { MutatingWebhookConfigurationData } from "@k-lens/kube-object";
 
 import type { RenderResult } from "@testing-library/react";
 

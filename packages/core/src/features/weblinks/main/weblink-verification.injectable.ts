@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { getStartableStoppable } from "@k-lens/startable-stoppable";
+import { delay, disposer } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { getStartableStoppable } from "@skuberplus/startable-stoppable";
-import { delay, disposer } from "@skuberplus/utilities";
 import { random } from "lodash";
 import { reaction, runInAction } from "mobx";
 import { WebLink } from "../../../common/catalog-entities";
@@ -14,7 +14,7 @@ import weblinksInjectable from "../common/weblinks.injectable";
 import validateWeblinkInjectable from "./validate-weblink.injectable";
 import weblinkVerificationsInjectable from "./weblink-verifications.injectable";
 
-import type { Disposer } from "@skuberplus/utilities";
+import type { Disposer } from "@k-lens/utilities";
 
 const sixtyMinutes = 60 * 60 * 1000;
 

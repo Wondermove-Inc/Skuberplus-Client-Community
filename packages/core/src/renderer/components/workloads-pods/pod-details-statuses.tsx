@@ -18,12 +18,12 @@
 
 import "./pod-details-statuses.scss";
 
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 import countBy from "lodash/countBy";
 import kebabCase from "lodash/kebabCase";
 import React from "react";
 
-import type { Pod } from "@skuberplus/kube-object";
+import type { Pod } from "@k-lens/kube-object";
 
 export interface PodDetailsStatusesProps {
   pods: Pod[];

@@ -6,17 +6,17 @@
 
 import "./notifications.scss";
 
+import { Animate } from "@k-lens/animate";
+import { Icon } from "@k-lens/icon";
+import { JsonApiErrorParsed } from "@k-lens/json-api";
+import { cssNames, prevDefault } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Animate } from "@skuberplus/animate";
-import { Icon } from "@skuberplus/icon";
-import { JsonApiErrorParsed } from "@skuberplus/json-api";
-import { cssNames, prevDefault } from "@skuberplus/utilities";
 import { reaction } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";
 import { notificationsStoreInjectable } from "./notifications-store.injectable";
 
-import type { Disposer } from "@skuberplus/utilities";
+import type { Disposer } from "@k-lens/utilities";
 
 import type {
   CreateNotificationOptions,

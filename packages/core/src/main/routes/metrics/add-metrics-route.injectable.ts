@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { getUnifiedQuery } from "@skuberplus/prometheus";
-import { isRequestError, object } from "@skuberplus/utilities";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { getUnifiedQuery } from "@k-lens/prometheus";
+import { isRequestError, object } from "@k-lens/utilities";
 import { isObject } from "lodash";
 import { runInAction } from "mobx";
 import { ClusterMetadataKey, initialFilesystemMountpoints } from "../../../common/cluster-types";
@@ -17,7 +17,7 @@ import getMetricsInjectable from "../../get-metrics.injectable";
 import { clusterRoute } from "../../router/route";
 import { getRouteInjectable } from "../../router/router.injectable";
 
-import type { QueryCategory } from "@skuberplus/prometheus";
+import type { QueryCategory } from "@k-lens/prometheus";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { ClusterPrometheusMetadata } from "../../../common/cluster-types";
@@ -101,9 +101,9 @@ const addMetricsRouteInjectable = getRouteInjectable({
           if (isObject(payload)) {
             const data = payload as Record<string, Record<string, string>>;
             // Import MetricsAdapter dynamically to avoid circular dependencies
-            const { MetricsAdapter } = await import("@skuberplus/kubernetes-metrics-server");
+            const { MetricsAdapter } = await import("@k-lens/kubernetes-metrics-server");
             const proxyConfig = await di.inject(loadProxyKubeconfigInjectable, cluster)();
-            const { CoreV1Api, CustomObjectsApi } = await import("@skuberplus/kubernetes-client-node");
+            const { CoreV1Api, CustomObjectsApi } = await import("@k-lens/kubernetes-client-node");
             const apiClient = proxyConfig.makeApiClient(CoreV1Api);
 
             // Create CustomObjectsApi for real metrics API calls

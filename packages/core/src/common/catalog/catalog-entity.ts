@@ -4,12 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { iter } from "@skuberplus/utilities";
+import { iter } from "@k-lens/utilities";
 import EventEmitter from "events";
 import { once } from "lodash";
 import { makeObservable, observable } from "mobx";
 
-import type { Disposer, StrictReactNode } from "@skuberplus/utilities";
+import type { Disposer, StrictReactNode } from "@k-lens/utilities";
 
 import type TypedEmitter from "typed-emitter";
 

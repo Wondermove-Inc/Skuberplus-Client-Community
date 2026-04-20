@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { isBoolean } from "@skuberplus/utilities";
+import { isBoolean } from "@k-lens/utilities";
 
 import type { IComputedValue } from "mobx";
 

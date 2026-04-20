@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { parseKubeApi } from "@skuberplus/kube-api";
-import { KubeStatus } from "@skuberplus/kube-object";
-import { includes, object, rejectPromiseBy, waitUntilDefined } from "@skuberplus/utilities";
+import { parseKubeApi } from "@k-lens/kube-api";
+import { KubeStatus } from "@k-lens/kube-object";
+import { includes, object, rejectPromiseBy, waitUntilDefined } from "@k-lens/utilities";
 import assert from "assert";
 import autoBind from "auto-bind";
 import { action, computed, makeObservable, observable, reaction } from "mobx";
@@ -19,11 +19,11 @@ import type {
   KubeApiPatchType,
   KubeApiQueryParams,
   KubeApiWatchCallback,
-} from "@skuberplus/kube-api";
-import type { KubeJsonApiDataFor, KubeObject } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
-import type { RequestInit } from "@skuberplus/node-fetch";
-import type { Disposer } from "@skuberplus/utilities";
+} from "@k-lens/kube-api";
+import type { KubeJsonApiDataFor, KubeObject } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
+import type { RequestInit } from "@k-lens/node-fetch";
+import type { Disposer } from "@k-lens/utilities";
 
 import type { Patch } from "rfc6902";
 import type { PartialDeep } from "type-fest";

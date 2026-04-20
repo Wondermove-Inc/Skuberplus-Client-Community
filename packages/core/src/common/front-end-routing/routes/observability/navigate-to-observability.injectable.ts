@@ -5,7 +5,7 @@
  */
 
 /**
- * 🎯 목적: Skuber+ Observability 화면으로 이동하는 함수
+ * 🎯 목적: k-o11y 화면으로 이동하는 함수
  *
  * 📝 사용 예시:
  * - Welcome 화면의 Hotbar에서 skuber-observability 버튼 클릭 시

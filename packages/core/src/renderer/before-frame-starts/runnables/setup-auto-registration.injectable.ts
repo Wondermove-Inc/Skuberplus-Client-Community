@@ -9,7 +9,7 @@ import autoRegistrationEmitterInjectable from "../../../common/k8s-api/api-manag
 import apiManagerInjectable from "../../../common/k8s-api/api-manager/manager.injectable";
 import { beforeClusterFrameStartsSecondInjectionToken } from "../tokens";
 
-import type { KubeApi } from "@skuberplus/kube-api";
+import type { KubeApi } from "@k-lens/kube-api";
 
 const setupAutoRegistrationInjectable = getInjectable({
   id: "setup-auto-registration",

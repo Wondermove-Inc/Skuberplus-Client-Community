@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { iter } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { iter } from "@skuberplus/utilities";
 import { action } from "mobx";
 import activeHotbarIdInjectable from "./active-id.injectable";
 import hotbarsStateInjectable from "./state.injectable";

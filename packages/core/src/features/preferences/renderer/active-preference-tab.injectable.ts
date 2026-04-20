@@ -16,8 +16,8 @@
  * - 기본 탭: "app" (Application 설정)
  */
 
+import { observableHistoryInjectionToken } from "@k-lens/routing";
 import { getInjectable } from "@ogre-tools/injectable";
-import { observableHistoryInjectionToken } from "@skuberplus/routing";
 import { action, computed } from "mobx";
 import preferencesCompositeInjectable from "./preference-items/preferences-composite.injectable";
 

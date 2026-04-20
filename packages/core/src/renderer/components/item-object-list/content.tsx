@@ -6,9 +6,9 @@
 
 import "./item-list-layout.scss";
 
+import { Spinner } from "@k-lens/spinner";
+import { cssNames, isDefined, isReactNode, noop, prevDefault, stopPropagation } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Spinner } from "@skuberplus/spinner";
-import { cssNames, isDefined, isReactNode, noop, prevDefault, stopPropagation } from "@skuberplus/utilities";
 import autoBindReact from "auto-bind/react";
 import { computed, makeObservable } from "mobx";
 import { Observer, observer } from "mobx-react";
@@ -25,8 +25,8 @@ import { NoItems } from "../no-items";
 import { Table, TableCell, TableHead, TableRow } from "../table";
 import pageFiltersStoreInjectable from "./page-filters/store.injectable";
 
-import type { ItemObject, TableCellProps } from "@skuberplus/list-layout";
-import type { IClassName, StrictReactNode } from "@skuberplus/utilities";
+import type { ItemObject, TableCellProps } from "@k-lens/list-layout";
+import type { IClassName, StrictReactNode } from "@k-lens/utilities";
 
 import type { IComputedValue } from "mobx";
 

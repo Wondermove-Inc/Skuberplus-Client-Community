@@ -6,11 +6,11 @@
 
 import "./volume-details-list.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { Spinner } from "@skuberplus/spinner";
+import { Spinner } from "@k-lens/spinner";
 // 🎯 shadcn UI 컴포넌트: DrawerTitle 대체
-import { DetailPanelSection } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { cssNames, prevDefault } from "@skuberplus/utilities";
+import { DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { cssNames, prevDefault } from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import kebabCase from "lodash/kebabCase";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
@@ -21,7 +21,7 @@ import { TableHead } from "../table/table-head";
 import { TableRow } from "../table/table-row";
 import persistentVolumeStoreInjectable from "./store.injectable";
 
-import type { PersistentVolume } from "@skuberplus/kube-object";
+import type { PersistentVolume } from "@k-lens/kube-object";
 
 import type { ShowDetails } from "../kube-detail-params/show-details.injectable";
 import type { PersistentVolumeStore } from "./store";

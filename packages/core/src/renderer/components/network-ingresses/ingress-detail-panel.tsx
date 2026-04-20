@@ -23,11 +23,11 @@
  *   - 2025-12-01: 닫힘 애니메이션 중 데이터 유지 패턴 적용
  */
 
+import { computeRuleDeclarations, Ingress } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { Table, TableBody, TableCell, TableHead, TableRow } from "@k-lens/storybook-shadcn";
+import { Separator } from "@k-lens/storybook-shadcn/src/components/ui/separator";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { computeRuleDeclarations, Ingress } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { Table, TableBody, TableCell, TableHead, TableRow } from "@skuberplus/storybook-shadcn";
-import { Separator } from "@skuberplus/storybook-shadcn/src/components/ui/separator";
 import { ExternalLink } from "lucide-react";
 import { observer } from "mobx-react";
 import React from "react";
@@ -41,8 +41,8 @@ import kubeObjectDeleteServiceInjectable from "../kube-object-menu/kube-object-d
 import { notificationPanelStore } from "../status-bar/items/notification-panel.store";
 import { IngressMetricsDetailsComponent } from "./metrics-details-component";
 
-import type { ILoadBalancerIngress, KubeObject } from "@skuberplus/kube-object";
-import type { Logger } from "@skuberplus/logger";
+import type { ILoadBalancerIngress, KubeObject } from "@k-lens/kube-object";
+import type { Logger } from "@k-lens/logger";
 
 import type { Cluster } from "../../../common/cluster/cluster";
 import type { OpenConfirmDialog } from "../confirm-dialog/open.injectable";

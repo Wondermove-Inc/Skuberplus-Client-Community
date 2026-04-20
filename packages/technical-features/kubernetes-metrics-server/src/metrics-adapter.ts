@@ -5,7 +5,7 @@
 
 import { MetricsServerApi } from "./metrics-server-api";
 
-import type { CoreV1Api } from "@skuberplus/kubernetes-client-node";
+import type { CoreV1Api } from "@k-lens/kubernetes-client-node";
 
 /**
  * Converts Kubernetes Metrics Server data to Prometheus-compatible format
@@ -247,7 +247,7 @@ export class MetricsAdapter {
           namespace,
           "pods",
         );
-        const { PodMetrics } = await import("@skuberplus/kube-object");
+        const { PodMetrics } = await import("@k-lens/kube-object");
         podMetrics = response.body.items.map((item: any) => new PodMetrics(item));
       } else {
         console.log(`⚠️  Using fallback mock API for simple pod metrics`);
@@ -423,7 +423,7 @@ export class MetricsAdapter {
           "pods",
         );
         // Convert response to PodMetrics objects
-        const { PodMetrics } = await import("@skuberplus/kube-object");
+        const { PodMetrics } = await import("@k-lens/kube-object");
         podMetrics = response.body.items.map((item: any) => new PodMetrics(item));
       } else {
         console.log(`⚠️  Using fallback mock API`);
@@ -485,7 +485,7 @@ export class MetricsAdapter {
           "pods",
         );
         // Convert response to PodMetrics objects
-        const { PodMetrics } = await import("@skuberplus/kube-object");
+        const { PodMetrics } = await import("@k-lens/kube-object");
         podMetrics = response.body.items.map((item: any) => new PodMetrics(item));
       } else {
         console.log(`⚠️  Using fallback mock API`);

@@ -10,8 +10,8 @@ import React from "react";
 import siblingTabsInjectable from "../../routes/sibling-tabs.injectable";
 import { TabLayout } from "./tab-layout-2";
 
-import type { SidebarItemDeclaration } from "@skuberplus/cluster-sidebar";
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { SidebarItemDeclaration } from "@k-lens/cluster-sidebar";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { IComputedValue } from "mobx";
 

@@ -12,7 +12,7 @@
  *
  * 📝 주의사항:
  * - 모든 프레임에 등록되지만 RootFrame에서만 실행됨 (handler 내부에서 조건 체크)
- * - @skuberplus/messaging 프레임워크가 IPC 자동 처리
+ * - @k-lens/messaging 프레임워크가 IPC 자동 처리
  * - 레거시 라우팅 패턴과 동일한 방식
  *
  * 🔄 변경이력:
@@ -20,7 +20,7 @@
  * - 2025-11-20: handler 내부 조건 체크로 RootFrame 전용 실행
  */
 
-import { getMessageChannelListenerInjectable } from "@skuberplus/messaging";
+import { getMessageChannelListenerInjectable } from "@k-lens/messaging";
 import { runInAction } from "mobx";
 import currentlyInClusterFrameInjectable from "../../../routes/currently-in-cluster-frame.injectable";
 import { addClusterDialogChannel } from "./add-cluster-dialog-channel";

@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import { Button } from "@skuberplus/storybook-shadcn/src/components/ui/button";
+import { Button } from "@k-lens/storybook-shadcn/src/components/ui/button";
 import React, { useEffect } from "react";
 import { createPortal } from "react-dom";
 

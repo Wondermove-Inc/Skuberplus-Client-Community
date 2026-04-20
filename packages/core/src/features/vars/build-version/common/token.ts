@@ -6,7 +6,7 @@
 
 import { getInitializable } from "../../../../common/initializable-state/create";
 
-import type { RequestChannel } from "@skuberplus/messaging";
+import type { RequestChannel } from "@k-lens/messaging";
 
 export const buildVersionInitializable = getInitializable<string>("build-version");
 

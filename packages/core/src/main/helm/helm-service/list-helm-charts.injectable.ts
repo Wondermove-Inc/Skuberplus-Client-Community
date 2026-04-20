@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { object } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { object } from "@skuberplus/utilities";
 import assert from "assert";
 import helmChartManagerInjectable from "../helm-chart-manager.injectable";
 import getActiveHelmRepositoriesInjectable from "../repositories/get-active-helm-repositories/get-active-helm-repositories.injectable";

@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { ClusterRoleBinding } from "@skuberplus/kube-object";
+import { ClusterRoleBinding } from "@k-lens/kube-object";
 import { KubeApi } from "../kube-api";
 
-import type { ClusterRoleBindingData } from "@skuberplus/kube-object";
+import type { ClusterRoleBindingData } from "@k-lens/kube-object";
 
 import type { DerivedKubeApiOptions, KubeApiDependencies } from "../kube-api";
 

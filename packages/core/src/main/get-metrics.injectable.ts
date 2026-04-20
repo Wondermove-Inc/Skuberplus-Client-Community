@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { object } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { object } from "@skuberplus/utilities";
 import k8sRequestInjectable from "./k8s-request.injectable";
 
 import type { Cluster } from "../common/cluster/cluster";

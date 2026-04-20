@@ -16,7 +16,7 @@ import type {
   V2PodsMetricStatus,
   V2ResourceMetricSource,
   V2ResourceMetricStatus,
-} from "@skuberplus/kube-object";
+} from "@k-lens/kube-object";
 
 export class HorizontalPodAutoscalerV2MetricParser {
   public getResource({

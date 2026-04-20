@@ -26,8 +26,8 @@
  * @packageDocumentation
  */
 
+import { Button } from "@k-lens/storybook-shadcn/src/components/ui/button";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Button } from "@skuberplus/storybook-shadcn/src/components/ui/button";
 import { observer } from "mobx-react-lite";
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AnySecurityFinding, FindingType, ScannerSource, Severity } from "../../../common/security/security-finding";

@@ -22,7 +22,7 @@
 
 import { action, computed, makeAutoObservable } from "mobx";
 
-import type { RequestFromChannel } from "@skuberplus/messaging";
+import type { RequestFromChannel } from "@k-lens/messaging";
 
 import type { ImageCveGroup } from "../common/daive-fix-engine/cve-image-grouper";
 
@@ -127,7 +127,7 @@ export const DAIVE_HITL_PREFERENCE_OPTIONS: Array<{
   { value: "normal", label: "Normal", description: "Approve High/Critical only", icon: "N" },
 ];
 
-const DAIVE_HITL_PREF_KEY = "skuberplus-daive-hitl-preference";
+const DAIVE_HITL_PREF_KEY = "k-lens-daive-hitl-preference";
 // ============================================
 // Remediation History
 // ============================================
@@ -681,7 +681,7 @@ export class SecurityScanStore {
       // Save to Main process file cache + record clusterId in localStorage as restore hint
       void this.persistToCache(payload.clusterId);
       try {
-        window.localStorage.setItem("skuberplus-last-scan-cluster", payload.clusterId);
+        window.localStorage.setItem("k-lens-last-scan-cluster", payload.clusterId);
       } catch {
         /* ignore */
       }
@@ -715,7 +715,7 @@ export class SecurityScanStore {
         // Persist even when one scanner errored/timed-out — findings from the other scanner must survive app restart
         void this.persistToCache(payload.clusterId);
         try {
-          window.localStorage.setItem("skuberplus-last-scan-cluster", payload.clusterId);
+          window.localStorage.setItem("k-lens-last-scan-cluster", payload.clusterId);
         } catch {
           /* ignore */
         }
@@ -842,7 +842,7 @@ export class SecurityScanStore {
     this.remediationHistory.set(clusterId, next);
     // sessionStorage 영속
     try {
-      sessionStorage.setItem(`skuberplus-remediation-history-${clusterId}`, JSON.stringify(next));
+      sessionStorage.setItem(`k-lens-remediation-history-${clusterId}`, JSON.stringify(next));
     } catch {
       /* ignore */
     }
@@ -856,7 +856,7 @@ export class SecurityScanStore {
     // 메모리에 없으면 sessionStorage에서 복원
     if (!this.remediationHistory.has(clusterId)) {
       try {
-        const raw = sessionStorage.getItem(`skuberplus-remediation-history-${clusterId}`);
+        const raw = sessionStorage.getItem(`k-lens-remediation-history-${clusterId}`);
         if (raw) {
           const parsed = JSON.parse(raw) as RemediationEvent[];
           if (Array.isArray(parsed)) {
@@ -877,7 +877,7 @@ export class SecurityScanStore {
   clearRemediationHistory(clusterId: string): void {
     this.remediationHistory.delete(clusterId);
     try {
-      sessionStorage.removeItem(`skuberplus-remediation-history-${clusterId}`);
+      sessionStorage.removeItem(`k-lens-remediation-history-${clusterId}`);
     } catch {
       /* ignore */
     }

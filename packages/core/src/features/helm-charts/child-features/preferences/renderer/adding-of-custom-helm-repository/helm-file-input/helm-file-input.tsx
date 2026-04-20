@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Icon } from "@k-lens/icon";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
 import React from "react";
 import { Input } from "../../../../../../../renderer/components/input";
 import isPathInjectable from "../../../../../../../renderer/components/input/validators/is-path.injectable";

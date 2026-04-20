@@ -6,11 +6,11 @@
 
 import "./dock.scss";
 
+import { ErrorBoundary } from "@k-lens/error-boundary";
+import { Icon } from "@k-lens/icon";
+import { ResizeDirection, ResizingAnchor } from "@k-lens/resizing-anchor";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { ErrorBoundary } from "@skuberplus/error-boundary";
-import { Icon } from "@skuberplus/icon";
-import { ResizeDirection, ResizingAnchor } from "@skuberplus/resizing-anchor";
-import { cssNames } from "@skuberplus/utilities";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 import { MenuItem } from "../menu";

@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getMessageChannelListenerInjectable } from "@skuberplus/messaging";
+import { getMessageChannelListenerInjectable } from "@k-lens/messaging";
 import { notificationPanelStore } from "../../../renderer/components/status-bar/items/notification-panel.store";
 import { shellSyncFailedChannel } from "../common/failure-channel";
 

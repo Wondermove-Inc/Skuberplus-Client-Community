@@ -34,7 +34,7 @@ import React from "react";
 import kubeObjectActionHandlerResolverInjectable from "../kube-object-details/kube-object-action-handlers/kube-object-action-handler-resolver.injectable";
 import { ContextMenuItem, ContextMenuSeparator } from "../shadcn-ui/context-menu";
 
-import type { KubeObject } from "@skuberplus/kube-object";
+import type { KubeObject } from "@k-lens/kube-object";
 
 import type { LucideIcon } from "lucide-react";
 

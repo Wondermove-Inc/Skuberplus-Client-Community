@@ -14,8 +14,8 @@
  * @packageDocumentation
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import { AgentModeController } from "./agent-mode-controller";
 
 /**

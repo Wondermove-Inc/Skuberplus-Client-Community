@@ -4,10 +4,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 
-import type { AuthorizationV1Api } from "@skuberplus/kubernetes-client-node";
+import type { AuthorizationV1Api } from "@k-lens/kubernetes-client-node";
 
 import type { KubeApiResource } from "../rbac";
 

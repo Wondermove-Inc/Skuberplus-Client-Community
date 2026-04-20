@@ -18,8 +18,8 @@
  * @packageDocumentation
  */
 
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { getRequestChannelListenerInjectable } from "@skuberplus/messaging";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { getRequestChannelListenerInjectable } from "@k-lens/messaging";
 import { app } from "electron";
 import * as fs from "fs";
 import * as path from "path";
@@ -40,7 +40,7 @@ import {
 import { KubescapeScanner } from "../../features/security/main/kubescape-scanner";
 import { TrivyScanner } from "../../features/security/main/trivy-scanner";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { BroadcastMessage } from "../../common/ipc/broadcast-message.injectable";
 import type { ScannerStatus } from "../../features/security/common/scanner-engine";

@@ -6,10 +6,10 @@
 
 import "./checkbox.scss";
 
-import { cssNames, noop } from "@skuberplus/utilities";
+import { cssNames, noop } from "@k-lens/utilities";
 import React from "react";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 export interface CheckboxProps {
   className?: string;

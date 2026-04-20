@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { historyInjectionToken } from "@k-lens/routing";
 import { DiContextProvider } from "@ogre-tools/injectable-react";
-import { historyInjectionToken } from "@skuberplus/routing";
 import { render as testingLibraryRender } from "@testing-library/react";
 import { computed } from "mobx";
 import React from "react";

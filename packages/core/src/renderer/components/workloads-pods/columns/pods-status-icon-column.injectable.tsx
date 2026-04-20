@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { podListLayoutColumnInjectionToken } from "@k-lens/list-layout";
 import { getInjectable } from "@ogre-tools/injectable";
-import { podListLayoutColumnInjectionToken } from "@skuberplus/list-layout";
 import React from "react";
 import { KubeObjectStatusIcon } from "../../kube-object-status-icon";
 import { COLUMN_PRIORITY } from "./column-priority";

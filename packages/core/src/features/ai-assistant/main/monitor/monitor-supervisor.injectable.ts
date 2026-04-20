@@ -3,8 +3,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { sendMessageToChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
-import { sendMessageToChannelInjectionToken } from "@skuberplus/messaging";
 import path from "path";
 import electronTrayInjectable from "../../../../main/tray/electron-tray/electron-tray.injectable";
 import getTrayIconPathInjectable from "../../../../main/tray/menu-icon/get-tray-icon-path.injectable";

@@ -9,9 +9,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Icon } from "@k-lens/icon";
+import { prevDefault } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { Icon } from "@skuberplus/icon";
-import { prevDefault } from "@skuberplus/utilities";
 import React from "react";
 import activeHotbarInjectable from "../../../../features/hotbar/storage/common/active.injectable";
 import { Avatar } from "../../avatar";

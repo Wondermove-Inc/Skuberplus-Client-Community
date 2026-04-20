@@ -18,15 +18,15 @@
 
 import "./drawer-param-toggler.scss";
 
-import { Icon } from "@skuberplus/icon";
+import { Icon } from "@k-lens/icon";
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@skuberplus/storybook-shadcn/src/components/ui/collapsible";
+} from "@k-lens/storybook-shadcn/src/components/ui/collapsible";
 import React from "react";
 
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 export interface DrawerParamTogglerProps {
   label: string | number;

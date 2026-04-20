@@ -20,12 +20,12 @@
  * - 2025-10-30: 초기 생성 (shadcn 마이그레이션)
  */
 
-import { formatDuration } from "@skuberplus/utilities/dist";
+import { formatDuration } from "@k-lens/utilities/dist";
 import React from "react";
 import { DurationAbsoluteTimestamp } from "../../events";
 import { WithTooltip } from "../../with-tooltip";
 
-import type { Job } from "@skuberplus/kube-object";
+import type { Job } from "@k-lens/kube-object";
 
 /**
  * 🎯 목적: Duration Tooltip 내용 생성

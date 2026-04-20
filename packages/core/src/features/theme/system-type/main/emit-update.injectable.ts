@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { sendMessageToChannelInjectionToken } from "@k-lens/messaging";
 import { getInjectable } from "@ogre-tools/injectable";
-import { sendMessageToChannelInjectionToken } from "@skuberplus/messaging";
 import { systemThemeTypeUpdateChannel } from "../common/channels";
 
 import type { SystemThemeType } from "../common/channels";

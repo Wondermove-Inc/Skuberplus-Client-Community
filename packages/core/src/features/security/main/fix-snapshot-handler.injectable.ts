@@ -15,8 +15,8 @@
  * @packageDocumentation
  */
 
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { getRequestChannelListenerInjectable, sendMessageToChannelInjectionToken } from "@skuberplus/messaging";
+import { loggerInjectionToken } from "@k-lens/logger";
+import { getRequestChannelListenerInjectable, sendMessageToChannelInjectionToken } from "@k-lens/messaging";
 import { spawn } from "child_process";
 import execFileInjectable from "../../../common/fs/exec-file.injectable";
 import kubeconfigManagerInjectable from "../../../main/kubeconfig-manager/kubeconfig-manager.injectable";

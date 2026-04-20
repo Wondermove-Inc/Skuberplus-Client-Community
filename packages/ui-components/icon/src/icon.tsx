@@ -6,10 +6,10 @@
 
 import "./icon.scss";
 
+import { loggerInjectionToken } from "@k-lens/logger";
+import { withTooltip } from "@k-lens/tooltip";
+import { cssNames } from "@k-lens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { loggerInjectionToken } from "@skuberplus/logger";
-import { withTooltip } from "@skuberplus/tooltip";
-import { cssNames } from "@skuberplus/utilities";
 import isNumber from "lodash/isNumber";
 import React, { createRef } from "react";
 import { NavLink } from "react-router-dom";
@@ -35,8 +35,8 @@ import Users from "../assets/users.svg";
 import Wheel from "../assets/wheel.svg";
 import Workloads from "../assets/workloads.svg";
 
-import type { Logger } from "@skuberplus/logger";
-import type { StrictReactNode } from "@skuberplus/utilities";
+import type { Logger } from "@k-lens/logger";
+import type { StrictReactNode } from "@k-lens/utilities";
 
 import type { LocationDescriptor } from "history";
 

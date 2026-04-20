@@ -26,7 +26,7 @@
 import { ipcRenderer } from "electron";
 import { action, computed, isObservable, makeObservable, observable, runInAction } from "mobx";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { UserPreferencesState } from "../../../../features/user-preferences/common/state.injectable";
 

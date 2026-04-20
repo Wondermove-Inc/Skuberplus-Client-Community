@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getMessageChannelListenerInjectable } from "@skuberplus/messaging";
-import { runManyFor } from "@skuberplus/run-many";
+import { getMessageChannelListenerInjectable } from "@k-lens/messaging";
+import { runManyFor } from "@k-lens/run-many";
 import { rootFrameHasRenderedChannel } from "../../../../common/root-frame/root-frame-rendered-channel";
 import { afterRootFrameIsReadyInjectionToken } from "../../runnable-tokens/phases";
 

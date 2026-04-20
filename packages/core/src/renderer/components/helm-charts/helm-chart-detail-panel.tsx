@@ -14,11 +14,11 @@
  *   - 2025-11-07: 초기 생성 (shadcn DetailPanel 기반, ReleaseDetailPanel 패턴 참조)
  */
 
+import { Spinner } from "@k-lens/spinner";
+import { Button, Table, TableBody, TableCell, TableRow } from "@k-lens/storybook-shadcn";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
 import { Tooltip } from "@mui/material";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Spinner } from "@skuberplus/spinner";
-import { Button, Table, TableBody, TableCell, TableRow } from "@skuberplus/storybook-shadcn";
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
 import assert from "assert";
 import { Download } from "lucide-react";
 import { observer } from "mobx-react";

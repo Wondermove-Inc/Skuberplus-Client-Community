@@ -10,7 +10,7 @@
  * The renderer sends alert context; main routes to AlertAnalyzeSkill.
  */
 
-import { getRequestChannel } from "@skuberplus/messaging";
+import { getRequestChannel } from "@k-lens/messaging";
 
 import type { AIProvider } from "../../../common/features/user-preferences/encrypt-api-key-channel";
 

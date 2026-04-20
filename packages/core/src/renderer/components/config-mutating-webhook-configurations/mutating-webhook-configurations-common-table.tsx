@@ -34,7 +34,7 @@ import { MutatingWebhookConfigurationDetailPanel } from "./mutating-webhook-conf
 import mutatingWebhookConfigurationsStoreInjectable from "./mutating-webhook-configuration-store.injectable";
 import { mutatingWebhookConfigurationColumns } from "./mutating-webhook-configurations-columns";
 
-import type { MutatingWebhookConfiguration } from "@skuberplus/kube-object";
+import type { MutatingWebhookConfiguration } from "@k-lens/kube-object";
 
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
 import type { MutatingWebhookConfigurationStore } from "./mutating-webhook-configuration-store";

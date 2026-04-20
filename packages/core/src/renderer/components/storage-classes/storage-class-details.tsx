@@ -6,15 +6,12 @@
 
 import "./storage-class-details.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { StorageClass } from "@skuberplus/kube-object";
-import { loggerInjectionToken } from "@skuberplus/logger";
+import { StorageClass } from "@k-lens/kube-object";
+import { loggerInjectionToken } from "@k-lens/logger";
 // 🎯 shadcn UI 컴포넌트: DrawerItem/DrawerTitle/Badge 대체
-import { Badge } from "@skuberplus/storybook-shadcn/src/components/ui/badge";
-import {
-  DetailPanelField,
-  DetailPanelSection,
-} from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
+import { Badge } from "@k-lens/storybook-shadcn/src/components/ui/badge";
+import { DetailPanelField, DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import startCase from "lodash/startCase";
 import { disposeOnUnmount, observer } from "mobx-react";
 import React, { Component } from "react";
@@ -23,7 +20,7 @@ import persistentVolumeStoreInjectable from "../storage-volumes/store.injectable
 import { VolumeDetailsList } from "../storage-volumes/volume-details-list";
 import storageClassStoreInjectable from "./store.injectable";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
 import type { KubeObjectDetailsProps } from "../kube-object-details";

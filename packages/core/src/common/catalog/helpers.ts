@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { hasOwnProperty, hasTypedProperty, isObject, isString, iter } from "@skuberplus/utilities";
+import { hasOwnProperty, hasTypedProperty, isObject, isString, iter } from "@k-lens/utilities";
 import GraphemeSplitter from "grapheme-splitter";
 
 import type { CatalogEntity } from "./catalog-entity";

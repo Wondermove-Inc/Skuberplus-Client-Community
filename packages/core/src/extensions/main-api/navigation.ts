@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getEnvironmentSpecificLegacyGlobalDiForExtensionApi } from "@skuberplus/legacy-global-di";
+import { getEnvironmentSpecificLegacyGlobalDiForExtensionApi } from "@k-lens/legacy-global-di";
 import navigateInjectable from "../../main/start-main-application/lens-window/navigate.injectable";
 
 export function navigate(url: string) {

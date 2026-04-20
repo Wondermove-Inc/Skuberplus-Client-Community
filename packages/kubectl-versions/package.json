@@ -1,5 +1,5 @@
 {
-  "name": "@skuberplus/kubectl-versions",
+  "name": "@k-lens/kubectl-versions",
   "private": false,
   "version": "1.5.4-0",
   "description": "Package of kubectl versions at build time",
@@ -13,11 +13,11 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "license": "MIT",
-  "homepage": "https://skuberplus.app",
+  "homepage": "https://k-lens.app",
   "scripts": {
     "precompute-versions": "tsc --pretty --project build",
     "compute-versions": "node ./build/compute-versions.mjs",
@@ -26,8 +26,8 @@
     "dev": "webpack --mode=development --watch"
   },
   "devDependencies": {
-    "@skuberplus/typescript": "workspace:^",
-    "@skuberplus/webpack": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
+    "@k-lens/webpack": "workspace:^",
     "@types/semver": "^7.7.1",
     "fast-xml-parser": "^5.2.5",
     "node-fetch": "^3.3.2",

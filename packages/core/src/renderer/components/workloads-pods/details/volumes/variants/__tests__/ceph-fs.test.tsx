@@ -4,14 +4,14 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Pod } from "@skuberplus/kube-object";
+import { Pod } from "@k-lens/kube-object";
 import React from "react";
 import { getDiForUnitTesting } from "../../../../../../getDiForUnitTesting";
 import storesAndApisCanBeCreatedInjectable from "../../../../../../stores-apis-can-be-created.injectable";
 import { renderFor } from "../../../../../test-utils/renderFor";
 import { CephFs } from "../ceph-fs";
 
-import type { CephfsSource } from "@skuberplus/kube-object";
+import type { CephfsSource } from "@k-lens/kube-object";
 
 import type { DiRender } from "../../../../../test-utils/renderFor";
 

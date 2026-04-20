@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { Icon } from "@k-lens/icon";
 import { getInjectable } from "@ogre-tools/injectable";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { Icon } from "@skuberplus/icon";
 import { computed } from "mobx";
 import React from "react";
 import hideDetailsInjectable from "../kube-detail-params/hide-details.injectable";
@@ -14,7 +14,7 @@ import { kubeObjectMenuItemInjectionToken } from "../kube-object-menu/kube-objec
 import { MenuItem } from "../menu";
 import { ingressClassSetDefaultInjectable } from "./ingress-class-set-default.injectable";
 
-import type { IngressClass } from "@skuberplus/kube-object";
+import type { IngressClass } from "@k-lens/kube-object";
 
 import type { KubeObjectMenuProps } from "../kube-object-menu";
 import type {

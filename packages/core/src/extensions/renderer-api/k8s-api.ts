@@ -4,12 +4,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import * as kubeApiSpecifics from "@skuberplus/kube-api-specifics";
+import * as kubeApiSpecifics from "@k-lens/kube-api-specifics";
 import {
   asLegacyGlobalForExtensionApi,
   asLegacyGlobalFunctionForExtensionApi,
   getLegacyGlobalDiForExtensionApi,
-} from "@skuberplus/legacy-global-di";
+} from "@k-lens/legacy-global-di";
 import requestMetricsInjectable from "../../common/k8s-api/endpoints/metrics.api/request-metrics.injectable";
 import { apiResourceRecord } from "../../common/rbac";
 import { shouldShowResourceInjectionToken } from "../../features/cluster/showing-kube-resources/common/allowed-resources-injection-token";
@@ -174,7 +174,7 @@ export type {
   StatefulSetApi,
   StorageClassApi,
   VerticalPodAutoscalerApi,
-} from "@skuberplus/kube-api";
+} from "@k-lens/kube-api";
 
 export const requestMetrics = asLegacyGlobalFunctionForExtensionApi(requestMetricsInjectable);
 

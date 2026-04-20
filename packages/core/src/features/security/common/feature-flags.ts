@@ -14,7 +14,7 @@
  *   When false, Security menu and /security route are disabled
  *
  * Environment variable override:
- * - SKUBERPLUS_FEATURE_SECURITY_SCAN_PANEL=true|false
+ * - KLENS_FEATURE_SECURITY_SCAN_PANEL=true|false
  *
  * @packageDocumentation
  */
@@ -110,17 +110,17 @@ export function getEnabledSecurityFeatures(): SecurityFeatureFlagKey[] {
 
 /**
  * Apply Security Feature Flag overrides from environment variables
- * Format: SKUBERPLUS_FEATURE_{FLAG_NAME}=true|false
+ * Format: KLENS_FEATURE_{FLAG_NAME}=true|false
  * Called once during app initialization
  *
  * @example
- * SKUBERPLUS_FEATURE_SECURITY_SCAN_PANEL=false pnpm start
+ * KLENS_FEATURE_SECURITY_SCAN_PANEL=false pnpm start
  */
 export function applySecurityFeatureEnvironmentOverrides(): void {
   if (typeof process === "undefined" || !process.env) {
     return;
   }
-  const prefix = "SKUBERPLUS_FEATURE_";
+  const prefix = "KLENS_FEATURE_";
   for (const key of Object.keys(currentFlags) as SecurityFeatureFlagKey[]) {
     const envKey = `${prefix}${key}`;
     const envValue = process.env[envKey];

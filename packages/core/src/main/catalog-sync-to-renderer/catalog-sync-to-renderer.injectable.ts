@@ -4,9 +4,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { getStartableStoppable } from "@k-lens/startable-stoppable";
+import { disposer } from "@k-lens/utilities";
 import { getInjectable } from "@ogre-tools/injectable";
-import { getStartableStoppable } from "@skuberplus/startable-stoppable";
-import { disposer } from "@skuberplus/utilities";
 import { reaction } from "mobx";
 import { catalogInitChannel } from "../../common/ipc/catalog";
 import ipcMainInjectionToken from "../../common/ipc/ipc-main-injection-token";

@@ -57,21 +57,21 @@ jobs:
 
       - name: Build app (Linux)
         if: matrix.platform == 'linux'
-        working-directory: skuberplus
+        working-directory: k-lens
         run: pnpm build:app:linux
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build app (macOS)
         if: matrix.platform == 'mac'
-        working-directory: skuberplus
+        working-directory: k-lens
         run: pnpm build:app:darwin
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build app (Windows)
         if: matrix.platform == 'win'
-        working-directory: skuberplus
+        working-directory: k-lens
         run: pnpm build:app:win32
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -81,13 +81,13 @@ jobs:
         with:
           name: release-${{ matrix.platform }}
           path: |
-            skuberplus/dist/**/*.dmg
-            skuberplus/dist/**/*.zip
-            skuberplus/dist/**/*.exe
-            skuberplus/dist/**/*.AppImage
-            skuberplus/dist/**/*.deb
-            skuberplus/dist/**/*.rpm
-            skuberplus/dist/**/latest*.yml
+            k-lens/dist/**/*.dmg
+            k-lens/dist/**/*.zip
+            k-lens/dist/**/*.exe
+            k-lens/dist/**/*.AppImage
+            k-lens/dist/**/*.deb
+            k-lens/dist/**/*.rpm
+            k-lens/dist/**/latest*.yml
           retention-days: 7
 
   # ============================================
@@ -118,7 +118,7 @@ jobs:
         run: |
           gh release create "${{ github.ref_name }}" \
             --repo "${{ github.repository }}" \
-            --title "Skuber+ Client v${{ steps.version.outputs.version }}" \
+            --title "K-Lens v${{ steps.version.outputs.version }}" \
             --draft \
             --generate-notes
 

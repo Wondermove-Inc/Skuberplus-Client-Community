@@ -1,5 +1,5 @@
+import { registerFeature } from "@k-lens/feature-core";
 import { createContainer, DiContainer } from "@ogre-tools/injectable";
-import { registerFeature } from "@skuberplus/feature-core";
 import { ipcRenderer } from "electron";
 import { messagingFeatureForRenderer } from "../feature";
 import invokeIpcInjectable from "./invoke-ipc.injectable";

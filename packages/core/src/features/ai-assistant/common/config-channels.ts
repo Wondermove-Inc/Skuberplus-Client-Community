@@ -11,7 +11,7 @@
  * - 설정 파일 리셋 (기본값 복원)
  */
 
-import { getRequestChannel } from "@skuberplus/messaging";
+import { getRequestChannel } from "@k-lens/messaging";
 
 // ============================================
 // 🎯 타입 정의

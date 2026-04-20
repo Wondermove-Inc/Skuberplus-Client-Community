@@ -44,7 +44,7 @@ import verticalPodAutoscalerStoreInjectable from "./store.injectable";
 import { verticalPodAutoscalerColumns } from "./vpa-columns";
 import { VpaDetailPanel } from "./vpa-detail-panel";
 
-import type { VerticalPodAutoscaler } from "@skuberplus/kube-object";
+import type { VerticalPodAutoscaler } from "@k-lens/kube-object";
 
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
 import type { VerticalPodAutoscalerStore } from "./store";

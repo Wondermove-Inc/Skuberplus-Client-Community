@@ -8,7 +8,7 @@ import { getInjectable } from "@ogre-tools/injectable";
 import { execFile } from "child_process";
 import type { ExecFileException, ExecFileOptions } from "child_process";
 
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { AsyncResult } from "@k-lens/utilities";
 
 export type ExecFileError = ExecFileException & { stderr: string };
 

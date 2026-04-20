@@ -14,12 +14,12 @@ const directoryForUserDataInjectable = getInjectable({
   id: "directory-for-user-data",
   instantiate: (di) => {
     if (
-      process.env.SKUBERPLUS_INTEGRATION_TESTING_DIR &&
-      process.env.SKUBERPLUS_INTEGRATION_TESTING_DIR.startsWith(os.tmpdir())
+      process.env.KLENS_INTEGRATION_TESTING_DIR &&
+      process.env.KLENS_INTEGRATION_TESTING_DIR.startsWith(os.tmpdir())
     ) {
       const appName = di.inject(appNameInjectable);
 
-      return path.join(process.env.SKUBERPLUS_INTEGRATION_TESTING_DIR, appName);
+      return path.join(process.env.KLENS_INTEGRATION_TESTING_DIR, appName);
     }
 
     return di.inject(appPathsInjectable).userData;

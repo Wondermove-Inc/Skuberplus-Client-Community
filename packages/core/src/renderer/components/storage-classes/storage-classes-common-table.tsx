@@ -23,7 +23,7 @@
  * - 2025-11-05: ResourceTableLayout 패턴으로 마이그레이션
  */
 
-// import { Button } from "@skuberplus/storybook-shadcn"; // Add 버튼 복구 시 주석 해제
+// import { Button } from "@k-lens/storybook-shadcn"; // Add 버튼 복구 시 주석 해제
 import { withInjectables } from "@ogre-tools/injectable-react";
 import { Trash2 } from "lucide-react";
 // import { Plus } from "lucide-react"; // Add 버튼 복구 시 주석 해제
@@ -50,7 +50,7 @@ import { StorageClassDetailPanel } from "./storage-class-detail-panel";
 import { storageClassColumns } from "./storage-classes-columns";
 import storageClassStoreInjectable from "./store.injectable";
 
-import type { StorageClass } from "@skuberplus/kube-object";
+import type { StorageClass } from "@k-lens/kube-object";
 
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
 import type { DockStore } from "../dock/dock/store";

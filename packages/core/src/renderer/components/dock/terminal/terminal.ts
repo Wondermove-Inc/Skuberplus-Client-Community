@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { disposer } from "@skuberplus/utilities";
+import { disposer } from "@k-lens/utilities";
 import { CanvasAddon } from "@xterm/addon-canvas";
 import { FitAddon } from "@xterm/addon-fit";
 import { type ISearchOptions, SearchAddon } from "@xterm/addon-search";
@@ -19,7 +19,7 @@ import { action, makeObservable, observable, reaction } from "mobx";
 import { TerminalChannels } from "../../../../common/terminal/channels";
 import { getXtermThemeFromCssVariables, watchThemeChange } from "./terminal-theme";
 
-import type { Logger } from "@skuberplus/logger";
+import type { Logger } from "@k-lens/logger";
 
 import type { IComputedValue } from "mobx";
 

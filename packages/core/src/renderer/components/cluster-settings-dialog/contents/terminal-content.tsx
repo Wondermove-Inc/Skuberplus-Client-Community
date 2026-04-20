@@ -17,15 +17,15 @@
  * - DI 패턴 유지 (withInjectables)
  */
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { Input } from "@skuberplus/storybook-shadcn/src/components/ui/input";
+import { Input } from "@k-lens/storybook-shadcn/src/components/ui/input";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
-} from "@skuberplus/storybook-shadcn/src/components/ui/input-group";
-import { Label } from "@skuberplus/storybook-shadcn/src/components/ui/label";
+} from "@k-lens/storybook-shadcn/src/components/ui/input-group";
+import { Label } from "@k-lens/storybook-shadcn/src/components/ui/label";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { FolderSearch } from "lucide-react";
 import { observer } from "mobx-react";
 import React from "react";

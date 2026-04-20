@@ -1,6 +1,6 @@
+import { byOrderNumber } from "@k-lens/utilities";
 import { getInjectable, type InjectionInstanceWithMeta } from "@ogre-tools/injectable";
 import { computedInjectManyWithMetaInjectable } from "@ogre-tools/injectable-extension-for-mobx";
-import { byOrderNumber } from "@skuberplus/utilities";
 import { computed } from "mobx";
 import sidebarItemsRefreshTriggerInjectable from "./sidebar-items-refresh-trigger.injectable";
 import { type SidebarItemDeclaration, type SidebarItemRegistration, sidebarItemInjectionToken } from "./tokens";

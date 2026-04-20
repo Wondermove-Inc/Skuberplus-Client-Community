@@ -73,7 +73,7 @@ export const ObservabilityConnect = ({ userPreferencesState }: ObservabilityConn
           <Empty className="w-[480px] gap-6 border-0 p-0 md:p-0">
             <EmptyHeader className="max-w-none gap-4">
               <div className="flex flex-col items-center gap-2">
-                <EmptyTitle className="text-foreground text-lg leading-7">Connect Skuber⁺ Observability</EmptyTitle>
+                <EmptyTitle className="text-foreground text-lg leading-7">Connect k-o11y</EmptyTitle>
 
                 <EmptyDescription className="text-muted-foreground text-center text-sm leading-[162.5%]">
                   Enter the Observability server URL to enable monitoring and diagnostics.

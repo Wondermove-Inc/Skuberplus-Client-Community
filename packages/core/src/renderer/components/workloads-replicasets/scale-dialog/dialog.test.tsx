@@ -4,8 +4,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { replicaSetApiInjectable } from "@skuberplus/kube-api-specifics";
-import { ReplicaSet } from "@skuberplus/kube-object";
+import { replicaSetApiInjectable } from "@k-lens/kube-api-specifics";
+import { ReplicaSet } from "@k-lens/kube-object";
 import { fireEvent, waitFor } from "@testing-library/react";
 import React from "react";
 import { getDiForUnitTesting } from "../../../getDiForUnitTesting";
@@ -14,7 +14,7 @@ import { type DiRender, renderFor } from "../../test-utils/renderFor";
 import { ReplicaSetScaleDialog } from "./dialog";
 import openReplicaSetScaleDialogInjectable from "./open.injectable";
 
-import type { ReplicaSetApi } from "@skuberplus/kube-api";
+import type { ReplicaSetApi } from "@k-lens/kube-api";
 
 import type { OpenReplicaSetScaleDialog } from "./open.injectable";
 

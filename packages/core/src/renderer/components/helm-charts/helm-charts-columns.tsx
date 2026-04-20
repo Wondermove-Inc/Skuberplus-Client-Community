@@ -23,7 +23,7 @@
  * - 2025-11-07: 초기 생성 (CronJobs/Events 패턴 기반, Helm Charts 적용)
  */
 
-import { Button, Checkbox } from "@skuberplus/storybook-shadcn";
+import { Button, Checkbox } from "@k-lens/storybook-shadcn";
 import { ArrowUpDown } from "lucide-react";
 import React from "react";
 import { WithTooltip } from "../with-tooltip";

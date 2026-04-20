@@ -4,13 +4,13 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { loggerInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@skuberplus/logger";
 import readYamlFileInjectable from "../../../../common/fs/read-yaml-file.injectable";
 import execHelmInjectable from "../../exec-helm/exec-helm.injectable";
 import getHelmEnvInjectable from "../../get-helm-env/get-helm-env.injectable";
 
-import type { AsyncResult } from "@skuberplus/utilities";
+import type { AsyncResult } from "@k-lens/utilities";
 
 import type { ReadYamlFile } from "../../../../common/fs/read-yaml-file.injectable";
 import type { HelmRepo } from "../../../../common/helm/helm-repo";

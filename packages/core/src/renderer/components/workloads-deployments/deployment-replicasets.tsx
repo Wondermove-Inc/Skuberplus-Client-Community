@@ -6,11 +6,11 @@
 
 import "./deployment-replicasets.scss";
 
-import { withInjectables } from "@ogre-tools/injectable-react";
-import { Spinner } from "@skuberplus/spinner";
+import { Spinner } from "@k-lens/spinner";
 // 🎯 shadcn UI 컴포넌트: DrawerTitle 대체
-import { DetailPanelSection } from "@skuberplus/storybook-shadcn/src/components/ui/detail-panel-section";
-import { prevDefault, stopPropagation } from "@skuberplus/utilities";
+import { DetailPanelSection } from "@k-lens/storybook-shadcn/src/components/ui/detail-panel-section";
+import { prevDefault, stopPropagation } from "@k-lens/utilities";
+import { withInjectables } from "@ogre-tools/injectable-react";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 import showDetailsInjectable from "../kube-detail-params/show-details.injectable";
@@ -22,7 +22,7 @@ import { Table, TableCell, TableHead, TableRow } from "../table";
 import { WithTooltip } from "../with-tooltip";
 import replicaSetStoreInjectable from "../workloads-replicasets/store.injectable";
 
-import type { ReplicaSet } from "@skuberplus/kube-object";
+import type { ReplicaSet } from "@k-lens/kube-object";
 
 import type { ShowDetails } from "../kube-detail-params/show-details.injectable";
 import type { ReplicaSetStore } from "../workloads-replicasets/store";

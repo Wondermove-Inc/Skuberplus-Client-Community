@@ -1,4 +1,4 @@
-import { cssNames } from "@skuberplus/utilities";
+import { cssNames } from "@k-lens/utilities";
 import yaml from "js-yaml";
 import { upperFirst } from "lodash/fp";
 import moment from "moment-timezone";
@@ -6,7 +6,7 @@ import React from "react";
 import { defaultYamlDumpOptions } from "../../../common/kube-helpers";
 import { DurationAbsoluteTimestamp } from "../events";
 
-import type { Condition } from "@skuberplus/kube-object";
+import type { Condition } from "@k-lens/kube-object";
 
 export function getTooltip(condition: Condition, id: string) {
   return (

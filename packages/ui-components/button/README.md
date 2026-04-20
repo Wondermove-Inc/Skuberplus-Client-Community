@@ -1,16 +1,16 @@
-# @skuberplus/button
+# @k-lens/button
 
 This package contains stuff related to creating Lens-applications. 
 
 ## Usage
 
 ```sh
-npm install @skuberplus/button
+npm install @k-lens/button
 ```
 
 ```typescript
-import type { ButtonProps } from "@skuberplus/button";
-import { Button } from "@skuberplus/button";
+import type { ButtonProps } from "@k-lens/button";
+import { Button } from "@k-lens/button";
 ```
 
 ## Extendability

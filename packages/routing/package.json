@@ -1,8 +1,8 @@
 {
-  "name": "@skuberplus/routing",
+  "name": "@k-lens/routing",
   "private": false,
   "version": "1.5.4-0",
-  "description": "Highly extendable routing in the SkuberPlus.",
+  "description": "Highly extendable routing in the KLens.",
   "type": "commonjs",
   "files": [
     "dist"
@@ -13,22 +13,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wondermove-Inc/Skuberplus-Client-Community.git"
+    "url": "git+https://github.com/Wondermove-Inc/Klens-Client-Community.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": {
-    "name": "SkuberPlus Authors",
+    "name": "KLens Authors",
     "email": "starlord@wondermove.net"
   },
   "license": "MIT",
-  "homepage": "https://skuberplus.app",
+  "homepage": "https://k-lens.app",
   "scripts": {
     "build": "lens-webpack-build",
     "clean:node_modules": "pnpm dlx rimraf@6.0.1 node_modules"
   },
   "dependencies": {
-    "@skuberplus/feature-core": "workspace:^",
+    "@k-lens/feature-core": "workspace:^",
     "@ogre-tools/fp": "^17.11.1",
     "@ogre-tools/injectable": "^17.11.1",
     "@ogre-tools/injectable-extension-for-auto-registration": "^17.11.1",
@@ -36,9 +36,9 @@
     "mobx-observable-history": "^2.0.3"
   },
   "devDependencies": {
-    "@skuberplus/jest": "workspace:^",
-    "@skuberplus/typescript": "workspace:^",
-    "@skuberplus/webpack": "workspace:^",
+    "@k-lens/jest": "workspace:^",
+    "@k-lens/typescript": "workspace:^",
+    "@k-lens/webpack": "workspace:^",
     "@types/history": "^4.7.11",
     "@types/webpack-env": "^1.18.8",
     "history": "^4.10.1",

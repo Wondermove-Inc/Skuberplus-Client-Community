@@ -16,8 +16,8 @@
  *   - 2026-01-06: 초기 생성 (클러스터 오버뷰 Warning 패널 개선)
  */
 
+import { KubeObject, KubeObjectMetadata, KubeObjectStatus } from "@k-lens/kube-object";
 import { getInjectable } from "@ogre-tools/injectable";
-import { KubeObject, KubeObjectMetadata, KubeObjectStatus } from "@skuberplus/kube-object";
 import { computed } from "mobx";
 import { KubeObjectConditionsDrawer } from "../../../kube-object-conditions/kube-object-conditions-drawer";
 import currentKubeObjectInDetailsInjectable from "../../current-kube-object-in-details.injectable";

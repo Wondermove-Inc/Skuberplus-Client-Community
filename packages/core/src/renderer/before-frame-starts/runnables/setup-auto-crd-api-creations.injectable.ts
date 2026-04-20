@@ -4,18 +4,18 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
+import { KubeApi } from "@k-lens/kube-api";
+import { maybeKubeApiInjectable } from "@k-lens/kube-api-specifics";
+import { KubeObject } from "@k-lens/kube-object";
+import { logErrorInjectionToken, logInfoInjectionToken, logWarningInjectionToken } from "@k-lens/logger";
 import { getInjectable } from "@ogre-tools/injectable";
-import { KubeApi } from "@skuberplus/kube-api";
-import { maybeKubeApiInjectable } from "@skuberplus/kube-api-specifics";
-import { KubeObject } from "@skuberplus/kube-object";
-import { logErrorInjectionToken, logInfoInjectionToken, logWarningInjectionToken } from "@skuberplus/logger";
 import { reaction } from "mobx";
 import { customResourceDefinitionApiInjectionToken } from "../../../common/k8s-api/api-manager/crd-api-token";
 import { injectableDifferencingRegistratorWith } from "../../../common/utils/registrator-helper";
 import customResourceDefinitionStoreInjectable from "../../components/custom-resource-definitions/store.injectable";
 import { beforeClusterFrameStartsSecondInjectionToken } from "../tokens";
 
-import type { CustomResourceDefinition } from "@skuberplus/kube-object";
+import type { CustomResourceDefinition } from "@k-lens/kube-object";
 
 const setupAutoCrdApiCreationsInjectable = getInjectable({
   id: "setup-auto-crd-api-creations",

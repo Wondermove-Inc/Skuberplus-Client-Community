@@ -4,7 +4,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Pod } from "@skuberplus/kube-object";
+import { Pod } from "@k-lens/kube-object";
 
 export const dockerPod = new Pod({
   apiVersion: "v1",
