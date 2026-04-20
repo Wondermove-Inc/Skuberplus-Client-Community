@@ -397,8 +397,8 @@ Please report bugs and feature requests on [GitHub Issues](https://github.com/Wo
     <td align="center"><a href="https://github.com/wondermoveheimdall"><img src="https://github.com/wondermoveheimdall.png" width="80px;" alt=""/><br /><sub><b>wondermoveheimdall</b></sub></a></td>
     <td align="center"><a href="https://github.com/wonder-captain"><img src="https://github.com/wonder-captain.png" width="80px;" alt=""/><br /><sub><b>wonder-captain</b></sub></a></td>
     <td align="center"><a href="https://github.com/flash-wondermove"><img src="https://github.com/flash-wondermove.png" width="80px;" alt=""/><br /><sub><b>flash-wondermove</b></sub></a></td>
-    <td align="center"><a href="https://github.com/superman"><img src="https://github.com/superman.png" width="80px;" alt=""/><br /><sub><b>superman</b></sub></a></td>
-    <td align="center"><a href="https://github.com/Mantis"><img src="https://github.com/Mantis.png" width="80px;" alt=""/><br /><sub><b>Mantis</b></sub></a></td>
+    <td align="center"><a href="https://github.com/ceo-tw"><img src="https://github.com/ceo-tw.png" width="80px;" alt=""/><br /><sub><b>ceo-tw</b></sub></a></td>
+    <td align="center"><a href="https://github.com/SeulkiMantis"><img src="https://github.com/SeulkiMantis.png" width="80px;" alt=""/><br /><sub><b>SeulkiMantis</b></sub></a></td>
   </tr>
 </table>
 
