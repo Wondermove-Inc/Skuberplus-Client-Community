@@ -84,7 +84,7 @@ Thumbs.db
 # 문서 (docs/는 Git 추적, scratch/는 일회성 문서 전용)
 # docs/
 docs/scratch/
-skuberplus/binaries/
+k-lens/binaries/
 
 # 🔧 Serena 설정 (프로젝트별 로컬 설정)
 .serena/
