@@ -31,6 +31,11 @@
   <a href="https://github.com/Wondermove-Inc/K-Lens/releases/download/v0.6.5/KLens-0.6.5-x86_64.rpm">Linux (rpm)</a>
 </p>
 
+> **macOS 참고**: K-Lens는 Apple 개발자 인증서로 서명되지 않아 macOS에서 앱이 차단될 수 있습니다. 다운로드 후 아래 명령어를 실행하세요:
+> ```bash
+> xattr -dr com.apple.quarantine /경로/KLens.dmg
+> ```
+
 ---
 
 ### 데모

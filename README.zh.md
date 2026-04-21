@@ -31,6 +31,11 @@
   <a href="https://github.com/Wondermove-Inc/K-Lens/releases/download/v0.6.5/KLens-0.6.5-x86_64.rpm">Linux (rpm)</a>
 </p>
 
+> **macOS 注意**: K-Lens 未使用 Apple 开发者证书签名，macOS 可能会阻止应用运行。下载后请执行以下命令：
+> ```bash
+> xattr -dr com.apple.quarantine /路径/KLens.dmg
+> ```
+
 ---
 
 ### 演示
