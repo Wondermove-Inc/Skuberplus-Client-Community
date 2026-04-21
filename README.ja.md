@@ -400,7 +400,6 @@ registerFeature(di, myFeature);
 
 ### コーディング規約
 
-- **コメント/ドキュメント**: 韓国語で記述
 - **コミットメッセージ**: Conventional Commits形式
 - **ファイル構成**: Injectableファイルは `*.injectable.ts` サフィックスを使用
 

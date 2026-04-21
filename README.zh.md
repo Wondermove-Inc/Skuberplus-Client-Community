@@ -400,7 +400,6 @@ registerFeature(di, myFeature);
 
 ### 代码规范
 
-- **注释/文档**：使用韩语编写
 - **提交信息**：遵循 Conventional Commits 规范
 - **文件结构**：Injectable 文件使用 `*.injectable.ts` 后缀
 

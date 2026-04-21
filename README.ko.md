@@ -402,7 +402,6 @@ registerFeature(di, myFeature);
 
 ### 코드 컨벤션
 
-- **주석/문서**: 한국어 작성 필수
 - **커밋 메시지**: Conventional Commits (한국어)
 - **파일 구조**: `*.injectable.ts` 접미사로 인젝터블 표시
 

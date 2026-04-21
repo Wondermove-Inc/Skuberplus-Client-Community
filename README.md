@@ -400,7 +400,6 @@ registerFeature(di, myFeature);
 
 ### Code Conventions
 
-- **Comments/Docs**: Written in Korean
 - **Commit Messages**: Conventional Commits
 - **File Structure**: `*.injectable.ts` suffix for injectables
 
