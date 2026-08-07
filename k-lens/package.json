@@ -205,7 +205,7 @@
     "copy-webpack-plugin": "^13.0.0",
     "cross-env": "^10.1.0",
     "css-loader": "^6.11.0",
-    "electron": "^35.7.5",
+    "electron": "^39.8.10",
     "electron-builder": "^26.0.12",
     "electron-builder-squirrel-windows": "26.0.12",
     "fork-ts-checker-webpack-plugin": "^9.1.0",
